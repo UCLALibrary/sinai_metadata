@@ -29,10 +29,10 @@ while read MS; do
 
     # Populate column 5 with specified values according to column 1 and save to output CSV
     awk -F, 'BEGIN{OFS=","}
-    $1~/sld_[a-z]{3}[0-9]{4}_[0-9]{4}_f_[0-9]{3}[a-z]*\.tif$/{$5="Text"}
-    $1~/sld_[a-z]{3}[0-9]{4}_[0-9]{4}_[a-b]_[0-9]{1,3}[a-z]*\.tif$/{$5="Front matter"}
-    $1~/sld_[a-z]{3}[0-9]{4}_[0-9]{4}_y_[0-9]{1,3}[a-z]*\.tif$/{$5="Back matter"}
-    $1~/sld_[a-z]{3}[0-9]{4}_[0-9]{4}_z_1[a-z]*\.tif$/{$5="Back matter"}
+    $1~/sld_[a-z]{3,}[0-9]{4}[a-z]*_[0-9]{4}_f_[0-9]{3}.*\.tif$/{$5="Text"}
+    $1~/sld_[a-z]{3,}[0-9]{4}[a-z]*_[0-9]{4}_[a-b]_[0-9]{1,3}.*\.tif$/{$5="Front matter"}
+    $1~/sld_[a-z]{3,}[0-9]{4}[a-z]*_[0-9]{4}_y_[0-9]{1,3}.*\.tif$/{$5="Back matter"}
+    $1~/sld_[a-z]{3,}[0-9]{4}[a-z]*_[0-9]{4}_z_1.*\.tif$/{$5="Back matter"}
     1' /$targetDIR/${PWD##*/}"_temp7.csv" > /$targetDIR/${PWD##*/}".csv"
 
     # Delete all temporary CSVs
