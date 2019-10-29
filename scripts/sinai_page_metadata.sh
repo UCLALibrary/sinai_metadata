@@ -20,6 +20,9 @@ sed -i '' 1,4d /$targetDIR/$CSVname"_temp2.csv"
 # Remove last row (original header, now last after sort)
 sed -i '' '$d' /$targetDIR/$CSVname"_temp2.csv"
 
+# Truncate the file path to begin with "Masters…"
+sed -i '' 's:^\/.*\/Masters:Masters:' /$targetDIR/$CSVname"_temp2.csv"
+
 # Remove MS name from Title info and prepend titles of folio images (i.e. _f_) with "f."
 awk 'BEGIN{FS=OFS=","} NF>2 && NR==1{s=$3} {sub("^" s "[[:blank:]]+", "", $2)} $1 ~ /_f_/{$2 = "f. " $2} 1' /$targetDIR/$CSVname"_temp2.csv" >> /$targetDIR/$CSVname"_temp3.csv"
 
