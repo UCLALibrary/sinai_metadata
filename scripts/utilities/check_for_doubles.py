@@ -14,7 +14,7 @@ columnNum = input('Column Number to check for duplicates (7 for SLDP): ')
 #strip starting and trailing spaces so we can simply drag and drop
 columnNum = columnNum.strip()
 columnInt = int(columnNum)
-key = itemgetter(columnInt)    #columns 0, 2 and 4 comprise the key
+key = itemgetter(columnInt)
 
 for csvFile in os.listdir(csvDirectory):
     finalList = []
