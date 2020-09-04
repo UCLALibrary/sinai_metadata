@@ -1,43 +1,27 @@
 File Name,status
-Visibility,?
-Parent ARK,?
-Object Type,?
-Type.typeOfResource,?
-Rights.statementLocal,?
-Rights.servicesContact,?
-Name.repository,?
-Title,Airtable is authority
-AltTitle.other,Airtable is authority
-AltTitle.uniform,Airtable is authority
-Scribe,Airtable is authority
-Author,Airtable is authority
-Translator,Airtable is authority
-Contents note,Airtable is authority
-References,Airtable is authority
-Type.genre,Airtable is authority
-Series,do we have any content?
-Summary,do we have any content?
-Signature,do we have any content?
-Physical Description,do we have any content?
-Collation,do we have any content?
-Page layout,do we have any content?
-Writing and hands,do we have any content?
-Ink color,do we have any content?
-Script note,do we have any content?
-Undertext object(s),for palimpsests - use ARK?
-Ms cataloger/scholar,for palimpsests currently
-Overtext mss,for UTOs - use ARK?
-Date.normalized,from workbook
-Date.creation,from workbook
-General note,from workbook - do we use this field in publication?
-Format.extent,from workbook - migrated to Airtable
-Format.dimensions,from workbook - migrated to Airtable
-Support,from workbook - migrated to Airtable
-AltIdentifier.local,in Airtable - key
-Illuminator,map to Associated name
-Rubricator,map to Associated name
-Commentator,map to Associated name
-Compiler,map to Associated name
+AltIdentifier.local,in Airtable - key (Shelfmark)
+Page layout,migrated to Airtable
+Writing and hands,migrated to Airtable
+Ink color,migrated to Airtable
+Features,migrated to Airtable
+Inscription,migrated to Airtable
+Additions,migrated to Airtable
+Date.normalized,migrated to Airtable
+Date.creation,migrated to Airtable
+General note,migrated to Airtable
+Script note,migrated to Airtable
+Format.extent,migrated to Airtable
+Format.dimensions,migrated to Airtable
+Support,migrated to Airtable
+Title,migrated to Airtable
+AltTitle.other,migrated to Airtable
+AltTitle.uniform,migrated to Airtable
+Scribe,migrated to Airtable
+Author,migrated to Airtable
+Translator,migrated to Airtable
+Contents note,migrated to Airtable
+References,migrated to Airtable
+Type.genre,migrated to Airtable
 viewingHint,migrated to Airtable
 Text direction,migrated to Airtable
 Place of origin,migrated to Airtable
@@ -58,15 +42,19 @@ Script,migrated to Airtable
 Collection (physical),migrated to Airtable
 Other version,migrated to Airtable
 IIIF Manifest URL,migrated to Airtable
-IIIF Range,NA
-Item Sequence,NA
-Motif,not using
-Bibliography,not using yet
-Features,not yet
-Inscription,review
-Additions,review
-Date binding,
-(originator of the digitized object),
-Lens make | Lens model,
-Aperature,
-Camera Operator,
+Illuminator,remove from work csvs
+Rubricator,remove from work csvs
+Commentator,remove from work csvs
+Compiler,remove from work csvs
+Series,remove from work csvs
+Summary,remove from work csvs
+Signature,remove from work csvs
+Physical Description,remove from work csvs
+Collation,remove from work csvs
+Visibility,will script to add to CSV on export from Airtable
+Parent ARK,will script to add to CSV on export from Airtable
+Object Type,will script to add to CSV on export from Airtable
+Type.typeOfResource,will script to add to CSV on export from Airtable
+Rights.statementLocal,will script to add to CSV on export from Airtable
+Rights.servicesContact,will script to add to CSV on export from Airtable
+Name.repository,will script to add to CSV on export from Airtable
