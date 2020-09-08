@@ -1,60 +1,60 @@
 File Name,status
-AltIdentifier.local,in Airtable - key (Shelfmark)
-Page layout,migrated to Airtable
-Writing and hands,migrated to Airtable
-Ink color,migrated to Airtable
-Features,migrated to Airtable
-Inscription,migrated to Airtable
-Additions,migrated to Airtable
-Date.normalized,migrated to Airtable
-Date.creation,migrated to Airtable
-General note,migrated to Airtable
-Script note,migrated to Airtable
-Format.extent,migrated to Airtable
-Format.dimensions,migrated to Airtable
-Support,migrated to Airtable
-Title,migrated to Airtable
-AltTitle.other,migrated to Airtable
-AltTitle.uniform,migrated to Airtable
-Scribe,migrated to Airtable
-Author,migrated to Airtable
-Translator,migrated to Airtable
-Contents note,migrated to Airtable
-References,migrated to Airtable
-Type.genre,migrated to Airtable
-viewingHint,migrated to Airtable
-Text direction,migrated to Airtable
-Place of origin,migrated to Airtable
-Colophon,migrated to Airtable
-Incipit,migrated to Airtable
-Explicit,migrated to Airtable
-Provenance,migrated to Airtable
-Foliation,migrated to Airtable
-Illustrations note,migrated to Airtable
-Binding note,migrated to Airtable
-Condition note,migrated to Airtable
-Thumbnail URL,migrated to Airtable
-Item ARK,migrated to Airtable
-Format,migrated to Airtable
-Language,migrated to Airtable
-Writing system,migrated to Airtable
-Script,migrated to Airtable
-Collection (physical),migrated to Airtable
-Other version,migrated to Airtable
-IIIF Manifest URL,migrated to Airtable
-Illuminator,remove from work csvs
-Rubricator,remove from work csvs
-Commentator,remove from work csvs
-Compiler,remove from work csvs
-Series,remove from work csvs
-Summary,remove from work csvs
-Signature,remove from work csvs
-Physical Description,remove from work csvs
-Collation,remove from work csvs
-Visibility,will script to add to CSV on export from Airtable
-Parent ARK,will script to add to CSV on export from Airtable
-Object Type,will script to add to CSV on export from Airtable
-Type.typeOfResource,will script to add to CSV on export from Airtable
-Rights.statementLocal,will script to add to CSV on export from Airtable
-Rights.servicesContact,will script to add to CSV on export from Airtable
-Name.repository,will script to add to CSV on export from Airtable
+AltIdentifier.local,value from Airtable - key (Shelfmark)
+Title,value from Airtable
+AltTitle.other,value from Airtable
+AltTitle.uniform,value from Airtable
+Contents note,value from Airtable
+Author,value from Airtable
+Scribe,value from Airtable
+Translator,value from Airtable
+Place of origin,value from Airtable
+Date.normalized,value from Airtable
+Date.creation,value from Airtable
+Type.genre,value from Airtable
+Features,value from Airtable
+Format.extent,value from Airtable
+Format.dimensions,value from Airtable
+Format,value from Airtable
+Support,value from Airtable
+Language,value from Airtable
+Writing system,value from Airtable
+Script,value from Airtable
+Script note,value from Airtable
+Text direction,value from Airtable
+viewingHint,value from Airtable
+Colophon,value from Airtable
+Incipit,value from Airtable
+Explicit,value from Airtable
+References,value from Airtable
+General note,value from Airtable
+Foliation,value from Airtable
+Page layout,value from Airtable
+Writing and hands,value from Airtable
+Ink color,value from Airtable
+Illustrations note,value from Airtable
+Binding note,value from Airtable
+Condition note,value from Airtable
+Inscription,value from Airtable
+Additions,value from Airtable
+Provenance,value from Airtable
+Thumbnail URL,value from Airtable
+Collection (physical),value from Airtable
+Other version,value from Airtable
+IIIF Manifest URL,value from Airtable
+Item ARK,value from Airtable
+Parent ARK,"supply value """""
+Visibility,"supply value ""sinai"""
+Object Type,"supply value ""Work"""
+Type.typeOfResource,"supply value ""text"""
+Rights.statementLocal,"supply value ""..."""
+Rights.servicesContact,"supply value ""..."""
+Name.repository,"supply value ""..."""
+Illuminator,do not add to CSV
+Rubricator,do not add to CSV
+Commentator,do not add to CSV
+Compiler,do not add to CSV
+Series,do not add to CSV
+Summary,do not add to CSV
+Signature,do not add to CSV
+Physical Description,do not add to CSV
+Collation,do not add to CSV
