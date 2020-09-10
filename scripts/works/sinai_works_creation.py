@@ -7,7 +7,6 @@ import csv
 import os
 from pathlib import Path
 from airtable import Airtable
-import pandas as pd
 
 #This is necessary to pull in long values from Pandas tables
 pd.options.display.max_colwidth = 100000
@@ -37,7 +36,7 @@ def sinaiDelimReplace (text):
     finalText = text
     return finalText
 
-base_key = 'XXXXXXXX'
+base_key = 'appBjMUh5e1Dgqj6p'
 
 allAirTableName = 'Old Collection mss'
 genresTableName = 'Genres'
@@ -51,7 +50,7 @@ supportTableName = 'Support'
 namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 
-personal_key = 'XXXXXXX'
+personal_key = 'keyaMF47wU6DgwfO8'
 
 print('Building from Airtables...')
 allAirTable = Airtable(base_key, allAirTableName, personal_key)
@@ -120,18 +119,18 @@ if progressWorkbook:
     workbookdf['Format'] = workbookdf["Form"]
 
 #create the main dataframe
-dfWorkbook = pd.DataFrame(columns=['File Name','Item Sequence','Visibility','Title','Thumbnail URL','IIIF Range','viewingHint',
-                          'Parent ARK', 'Item ARK', 'Object Type', 'AltTitle.other', 'AltTitle.uniform', 'Place of origin',
-                          'Date.normalized', 'Date binding', 'Date.creation', 'Scribe', 'Illuminator', 'Rubricator', 'Author',
-                          'Commentator', 'Compiler', 'Translator','Summary', 'Contents note', 'Colophon', 'Incipit', 'Explicit',
-                          'Motif', 'Bibliography', 'References', 'Provenance', 'Signature', 'General note', 'Physical Description',
-                          'Format.extent', 'Format', 'Format.dimensions', 'Support', 'Foliation', 'Collation', 'Page layout',
-                          'Writing and hands', 'Illustrations note', 'Inscription', 'Additions', 'Binding note', 'Ink color',
-                          'Features', 'Condition note', 'Type.typeOfResource', 'Type.genre', 'Language', 'Text direction',
-                          'Writing system', 'Script', 'Script note', 'Rights.statementLocal', 'Rights contact',
-                          'Name.repository', 'AltIdentifier.local', 'Series', 'Collection (physical)', 'Undertext object(s)',
-                          'Overtext mss', 'Other version', 'Ms cataloger/scholar', '(originator of the digitized object)',
-                          'Lens make | Lens model', 'Aperature', 'Camera Operator', 'IIIF Manifest URL'])
+dfWorkbook = pd.DataFrame(columns=['Title',
+'Item ARK',
+'Object Type',
+'Date.normalized',
+'Date.creation',
+'Format.extent',
+'Format',
+'Format.dimensions',
+'Support',
+'Language',
+'AltIdentifier.local',
+'delivery'])
 
 
 #strip out whitespace in column names so we can call columns
@@ -303,78 +302,19 @@ if imgDirectory:
             print("error with workbook")
 
         #populate the workbook
-        new_row = {'File Name':'',
-               'Item Sequence':'',
-               'Visibility':Visibility,
-               'Title': titlefin,
-               'Thumbnail URL':'',
-               'IIIF Range':'',
-               'viewingHint':viewingHint,
-               'Parent ARK':parentArk,
+        new_row = {
+               'Title': localTitle,
                'Item ARK':'',
                'Object Type':objectType,
-               'AltTitle.other':altTitleOther,
-               'AltTitle.uniform':uniformTitle,
-               'Place of origin':placeOfO,
                'Date.normalized': Date_normalized,
-               'Date binding':'',
                'Date.creation':humandate,
-               'Scribe': scribeText,
-               'Illuminator': IlluminatorText,
-               'Rubricator':RubricatorText,
-               'Author': AuthorText,
-               'Commentator': CommentatorText,
-               'Compiler': CompilerText,
-               'Translator': TranslatorText,
-               'Summary':'',
-               'Contents note':contentsText,
-               'Colophon':'',
-               'Incipit':IncipitText,
-               'Explicit':ExplicitText,
-               'Motif':'',
-               'Bibliography':BibliographyText,
-               'References':referenceText,
-               'Provenance':'',
-               'Signature':'',
-               'General note':'',
-               'Physical Description':'',
                'Format.extent': formatExtentValue,
                'Format': formatValue,
                'Format.dimensions': formatDimensionsValue,
                'Support': supportValue,
-               'Foliation':'',
-               'Collation':'',
-               'Page layout':'',
-               'Writing and hands':'',
-               'Illustrations note':'',
-               'Inscription':'',
-               'Additions':'',
-               'Binding note':'',
-               'Ink color':'',
-               'Features':'',
-               'Condition note':'',
-               'Type.typeOfResource': '',
-               'Type.genre': genreText,
                'Language': languageValue,
-               'Text direction':'',
-               'Writing system':'',
-               'Script':'',
-               'Script note':'',
-               'Rights.statementLocal': Rights_statementLocal,
-               'Rights contact':Rights_contact,
-               'Name.repository': Name_repository,
                'AltIdentifier.local':localTitle,
-               'Series':'',
-               'Collection (physical)':Collection_physical,
-               'Undertext object(s)':'',
-               'Overtext mss':'',
-               'Other version':'',
-               'Ms cataloger/scholar':'',
-               '(originator of the digitized object)':originator,
-               'Lens make | Lens model':'',
-               'Aperature':'',
-               'Camera Operator': cameraOperatorValue,
-               'IIIF Manifest URL': ''
+               'delivery': batchNum
               }
 
         dfWorkbook = dfWorkbook.append(new_row, ignore_index=True)
