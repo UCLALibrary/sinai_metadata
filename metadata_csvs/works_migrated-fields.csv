@@ -42,12 +42,12 @@ Collection (physical),value from Airtable
 Other version,value from Airtable
 IIIF Manifest URL,value from Airtable
 Item ARK,value from Airtable
-Parent ARK,"supply value """""
+Parent ARK,"supply value ""ark:/21198/z1bk2gmg"""
 Visibility,"supply value ""sinai"""
 Object Type,"supply value ""Work"""
 Type.typeOfResource,"supply value ""text"""
 Rights.statementLocal,"supply value ""..."""
-Rights.servicesContact,"supply value ""..."""
+Rights contact,"supply value ""..."""
 Name.repository,"supply value ""..."""
 Illuminator,do not add to CSV
 Rubricator,do not add to CSV

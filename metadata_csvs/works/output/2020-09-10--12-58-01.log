@@ -1,0 +1,4 @@
+2020-09-10 12:58:01,481 - root - INFO - STARTING at 2020-09-10 12:58:01...
+2020-09-10 12:58:02,035 - root - ERROR - Failed to upload works4-3.csv: Manifest generation failed: Unexpected object type: text (HTTP 400)
+2020-09-10 12:58:02,035 - root - ERROR - --------------------------------------------
+2020-09-10 12:58:02,036 - root - INFO - DONE at 2020-09-10 12:58:02.
