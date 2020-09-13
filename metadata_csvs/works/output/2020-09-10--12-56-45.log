@@ -1,4 +1,0 @@
-2020-09-10 12:56:45,520 - root - INFO - STARTING at 2020-09-10 12:56:45...
-2020-09-10 12:56:46,140 - root - ERROR - Failed to upload works4-3.csv: Manifest generation failed: Work row in the CSV is missing its "Parent ARK" value (HTTP 400)
-2020-09-10 12:56:46,140 - root - ERROR - --------------------------------------------
-2020-09-10 12:56:46,140 - root - INFO - DONE at 2020-09-10 12:56:46.
