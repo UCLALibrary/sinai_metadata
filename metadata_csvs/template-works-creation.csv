@@ -1,0 +1,15 @@
+Field name,note
+Item ARK,leave empty
+Object Type,"supply value ""Work"""
+delivery,supply delivery number
+AltIdentifier.local,supply the shelf mark
+Date.normalized,from progress workbook
+Date.creation,transformed from progress workbook
+Format.extent,transformed from progress workbook
+Format.dimensions,transformed from progress workbook
+Form,from progress workbook (transform value to lowercase)
+Support,from progress workbook
+Language,from progress workbook (multiple values separated by ;)
+Comments,from progress workbook
+User comments,from progress workbook
+Visibility,remove - we don't need it
