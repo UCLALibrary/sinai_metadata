@@ -27,41 +27,17 @@ def sinaiWorkbookTextReplace (text):
     text = text.replace(']', '')
     text = text.replace("('", '')
     text = text.replace("',)", '')
-    text = text.replace(', ', '|~|')
+    text = text.replace(', ', ';')
     finalText = text
     return finalText
 
 def sinaiDelimReplace (text):
-    text = text.replace(', ', '|~|')
+    text = text.replace(', ', ';')
     finalText = text
     return finalText
 
-base_key = 'XXXXXX'
 
-allAirTableName = 'Old Collection mss'
-genresTableName = 'Genres'
-referencesTableName = 'References'
-featuresTableName = 'Features'
-languagesTableName = 'Languages'
-writingsysTableName = 'Writing systems'
-scriptsTableName = 'Scripts'
-formTableName = 'Form'
-supportTableName = 'Support'
-namesTableName = 'Names'
-uniformtitlesTableName = 'Uniform titles'
-
-personal_key = 'XXXXXXX'
-
-print('Building from Airtables...')
-allAirTable = Airtable(base_key, allAirTableName, personal_key)
-NamesAirTable = Airtable(base_key, namesTableName, personal_key)
-UniformTitlesAirTable = Airtable(base_key, uniformtitlesTableName, personal_key)
-
-
-allAirRecords = allAirTable.get_all()
-allAirdf = pd.DataFrame.from_records((r['fields'] for r in allAirRecords))
-
-imgDirectory = input('Image Directory (blank if you are updating): ')
+imgDirectory = input('Directory that contains the delivery images: ')
 #strip starting and trailing spaces so we can simply drag and drop
 imgDirectory = imgDirectory.strip()
 
@@ -87,20 +63,6 @@ if progressWorkbook:
     workbookdf.dropna(subset=['Shelfmark'], inplace=True)
     workbookdf = workbookdf.fillna('')
 
-#clean up the airtable incase there are strange errors in the data, extra spaces, etc
-allAirdf['Shelfmark'].replace('', np.nan, inplace=True)
-allAirdf.dropna(subset=['Shelfmark'], inplace=True)
-allAirdf = allAirdf.fillna('')
-allAirdf['Author'] = allAirdf['Author'].astype(str)
-allAirdf['Author'] = allAirdf['Author'].fillna('')
-allAirdf['Uniform title'] = allAirdf['Uniform title'].astype(str)
-allAirdf['Uniform title'] = allAirdf['Uniform title'].fillna('')
-allAirdf['Scribe'] = allAirdf['Scribe'].astype(str)
-allAirdf['Scribe'] = allAirdf['Scribe'].fillna('')
-
-
-
-if progressWorkbook:
     # Fill in values that would otherwise stop the merging
     workbookdf["Height"] = workbookdf["Height"].fillna(0)
     workbookdf["Width"] = workbookdf["Width"].fillna(0)
@@ -109,7 +71,7 @@ if progressWorkbook:
     #clean up comma separated cells to have the |~| convention
     workbookdf["Language"] = workbookdf["Language"].str.strip()
     #there may be some spaces inbeteween the different languages, yet still spaces in each entry....
-    workbookdf["Language"] = workbookdf["Language"].str.replace(' / ','|~|')
+    workbookdf["Language"] = workbookdf["Language"].str.replace(' / ',';')
 
     #Putting together the values that are displayed in the website. These almost certainly should be their own columns in the future
     workbookdf['Format.dimensions'] = workbookdf["Height"].astype(int).astype(str) +' x '+ workbookdf["Width"].astype(int).astype(str) +' x '+ workbookdf["Thickness"].astype(int).astype(str) +' mm'
@@ -130,7 +92,9 @@ dfWorkbook = pd.DataFrame(columns=['Title',
 'Support',
 'Language',
 'AltIdentifier.local',
-'delivery'])
+'delivery',
+'Comments',
+'User Comments'])
 
 
 #strip out whitespace in column names so we can call columns
@@ -152,19 +116,16 @@ if imgDirectory:
     imglister = os.listdir(imgDirectory)
     for workentryName in imglister:
         splitlist = workentryName.split('_')
-        entryname = splitlist[0].strip().capitalize()
-        entrynum = splitlist[1].strip().lstrip("0")
-        workentryfinal = "{entryname} {entrynum}".format(entryname = entryname, entrynum = entrynum)
-
-        result = allAirdf.loc[allAirdf['Shelfmark'].str.lower().isin([workentryfinal.lower()])]
-        print(result)
+        splitlistresult = [ele.lstrip('0') for ele in splitlist]
+        splitlistresultCaps = [ele.upper() for ele in splitlistresult]
+        shelftitle = str(splitlistresultCaps[0].title())
+        shelfend = splitlistresultCaps[1:]
+        shelfend = ' '.join(shelfend)
+        shelfmark = shelftitle + ' ' + shelfend
+        print(shelfmark)
         if progressWorkbook:
-            workbookRow = workbookdf.loc[workbookdf['Shelfmark'].str.lower().isin([workentryfinal.lower()])]
+            workbookRow = workbookdf.loc[workbookdf['Shelfmark'].str.lower().isin([shelfmark.lower()])]
 
-
-        shelfmark = result['Shelfmark'].to_string(index=False).strip()
-
-        if progressWorkbook:
             if workbookRow["Date In"].to_string(index=False).strip() == workbookRow["Date Out"].to_string(index=False).strip():
                 Date_normalized = workbookRow["Date In"].to_string(index=False).strip()
                 humandate = Date_normalized
@@ -189,101 +150,11 @@ if imgDirectory:
                 else:
                     humandate = humandatestart[0]
 
-        uniformTitle = ''
-        uniformHolder = []
-
-        if result['Uniform title'].any():
-             textEntry = result['Uniform title'].item()
-             textEntry = textEntry.replace(', ', ',')
-             textEntry = textEntry.replace('[', '')
-             textEntry = textEntry.replace(']', '')
-             textEntry = textEntry.replace("'", '')
-             textLst = textEntry.split(',')
-             for entry in textLst:
-                 if entry != 'nan':
-                     titleinfo = UniformTitlesAirTable.get(entry)
-                     uniformHolder.append(titleinfo['fields']['Uniform title'])
-        uniformTitle = '|~|'.join(uniformHolder)
 
 
-        AuthorText =  ''
-        authorHolder = []
-
-        if result['Author'].any():
-             textEntry = result['Author'].item()
-             textEntry = textEntry.replace(', ', ',')
-             textEntry = textEntry.replace('[', '')
-             textEntry = textEntry.replace(']', '')
-             textEntry = textEntry.replace("'", '')
-             textLst = textEntry.split(',')
-             for entry in textLst:
-                 if entry != 'nan':
-                     authorinfo = NamesAirTable.get(entry)
-                     authorHolder.append(authorinfo['fields']['Name'])
-        AuthorText = '|~|'.join(authorHolder)
-
-
-        scribeText =  ''
-        scribeHolder = []
-
-        if result['Scribe'].any():
-             textEntry = result['Scribe'].item()
-             textEntry = textEntry.replace(', ', ',')
-             textEntry = textEntry.replace('[', '')
-             textEntry = textEntry.replace(']', '')
-             textEntry = textEntry.replace("'", '')
-             textLst = textEntry.split(',')
-             for entry in textLst:
-                 if entry != 'nan':
-                     scribeinfo = NamesAirTable.get(entry)
-                     scribeHolder.append(scribeinfo['fields']['Name'])
-        scribeText = '|~|'.join(scribeHolder)
-
-
-        altTitleOther = ''
-        placeOfO = ''
-        IlluminatorText = ''
-        RubricatorText =  ''
-        CommentatorText =  ''
-        CompilerText =  ''
-        TranslatorText =  ''
-        IncipitText =  ''
-        ExplicitText =  ''
-        BibliographyText =  ''
-
-
-        title  = result['Title'].to_string(index=False).strip()
-        title = title.replace('[', '')
-        title = title.replace(']', '')
-
-        localTitle = 'Sinai ' + workentryfinal
-        titlefin = localTitle + '. ' + title +' : manuscript, '
-
-
-        if humandate.isnumeric() == True:
-            titlefin = titlefin + humandate + '.'
-        else:
-            titlefin = titlefin + '[' + humandate + '].'
-        titlefin = titlefin +" St. Catherine's Monastery, Sinai, Egypt"
-
-
-        genreText = result['Genre (from Genres)'].to_string(index=False).strip()
-        genreText = genreText.replace('[', '')
-        genreText = genreText.replace(']', '')
-        genreText = genreText.replace(', ', '|~|')
-
-        referenceText = result['Reference (from References)'].to_string(index=False).strip()
-        referenceText = referenceText.replace('[', '')
-        referenceText = referenceText.replace(']', '')
-        referenceText = referenceText.replace(', ','|~|')
-
-        contentsText = ''
-
-        if result['Contents note'].any():
-            contentsText = result['Contents note'].to_string(index=False).strip()
-
+        localTitle = 'Sinai ' + shelfmark
         if progressWorkbook:
-            print('Updating with Airtable and Progress Notebook')
+            print('Updating with Progress Notebook')
 
             formatExtentValue = workbookRow['Format.extent'].to_string(index=False).strip()
             formatExtentValue = sinaiWorkbookTextReplace(formatExtentValue)
@@ -294,29 +165,31 @@ if imgDirectory:
             supportValue = workbookRow['Support'].to_string(index=False).strip()
             supportValue = sinaiWorkbookTextReplace(supportValue)
             languageValue = workbookRow['Language'].to_string(index=False).strip()
-            languageValue = sinaiWorkbookTextReplace(languageValue)
-            cameraOperatorValue = workbookRow["Camera Operator"].to_string(index=False).strip()
-            cameraOperatorValue = sinaiWorkbookTextReplace(cameraOperatorValue)
+            languageValue = sinaiDelimReplace(languageValue)
+            commentsValue = workbookRow['Comments'].to_string(index=False).strip()
+            userCommentsValue = workbookRow['User Comments'].to_string(index=False).strip()
 
         else:
             print("error with workbook")
 
         #populate the workbook
         new_row = {
-               'Title': localTitle,
+               'Title': localTitle.rstrip('\r\n'),
                'Item ARK':'',
-               'Object Type':objectType,
-               'Date.normalized': Date_normalized,
-               'Date.creation':humandate,
-               'Format.extent': formatExtentValue,
-               'Format': formatValue,
-               'Format.dimensions': formatDimensionsValue,
-               'Support': supportValue,
-               'Language': languageValue,
-               'AltIdentifier.local':localTitle,
-               'delivery': batchNum
+               'Object Type':objectType.rstrip('\r\n'),
+               'Date.normalized': Date_normalized.rstrip('\r\n'),
+               'Date.creation':humandate.rstrip('\r\n'),
+               'Format.extent': formatExtentValue.rstrip('\r\n'),
+               'Format': formatValue.lower().rstrip('\r\n'),
+               'Format.dimensions': formatDimensionsValue.rstrip('\r\n'),
+               'Support': supportValue.rstrip('\r\n'),
+               'Language': languageValue.rstrip('\r\n'),
+               'AltIdentifier.local':localTitle.rstrip('\r\n'),
+               'delivery': batchNum.rstrip('\r\n'),
+               'Comments': commentsValue.rstrip('\r\n'),
+               'User Comments': userCommentsValue.rstrip('\r\n')
               }
 
         dfWorkbook = dfWorkbook.append(new_row, ignore_index=True)
 
-dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False)
+dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False, line_terminator='\n', encoding='utf-8')

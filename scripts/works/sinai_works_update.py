@@ -54,7 +54,7 @@ def airTableEntry (textEntry, fieldName, tableName):
     return textFinalOutput
 
 
-base_key = 'XXXXXXX'
+base_key = 'XXXXXXXXXXX'
 
 allAirTableName = 'Old Collection mss'
 genresTableName = 'Genres'
@@ -69,7 +69,7 @@ namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
 
-personal_key = 'XXXXXXX'
+personal_key = 'XXXXXXXXXXX'
 
 print('Building from Airtables...')
 allAirTable = Airtable(base_key, allAirTableName, personal_key)
@@ -104,10 +104,13 @@ allAirdf['AltTitle.uniform'] = allAirdf['AltTitle.uniform'].astype(str)
 allAirdf['AltTitle.uniform'] = allAirdf['AltTitle.uniform'].fillna('')
 allAirdf['Scribe'] = allAirdf['Scribe'].astype(str)
 allAirdf['Scribe'] = allAirdf['Scribe'].fillna('')
+allAirdf['Associated name'] = allAirdf['Associated name'].astype(str)
+allAirdf['Associated name'] = allAirdf['Associated name'].fillna('')
+
 
 workbook_columns = ['File Name',
 'Item Sequence',
-'Visibility',
+#'Visibility',
 'Title',
 'Thumbnail URL',
 'viewingHint',
@@ -122,6 +125,7 @@ workbook_columns = ['File Name',
 'Date.creation',
 'Scribe',
 'Author',
+'Associated name',
 'Translator',
 'Contents note',
 'Colophon',
@@ -152,7 +156,7 @@ workbook_columns = ['File Name',
 'Script',
 'Script note',
 'Rights.statementLocal',
-'Rights.servicesContact',
+'Rights contact',
 'Name.repository',
 'AltIdentifier.local',
 'Collection (physical)',
@@ -176,7 +180,7 @@ dfWorkbook = dfWorkbook.rename(columns=lambda x: x.strip())
 #set the dataframe constants; this can be modified for a different project (or even better made a config)
 parentArk = 'ark:/21198/z1bk2gmg'
 viewingHint = 'paged'
-Visibility = 'sinai'
+#Visibility = 'sinai'
 typeOfResource = 'text'
 Rights_statementLocal = "Images: Contact the Monastery of St. Catherine's of the Sinai. Metadata: Unless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
 Rights_contact = "To inquire about image rights, contact St. Catherine's Monastery, https://www.sinaimonastery.com, sinaimonastery@gmail.com."
@@ -251,6 +255,11 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_AuthorText = ''
     if row['Author']:
         final_AuthorText = airTableEntry(row['Author'], 'Name', NamesAirTable)
+
+    final_AssociatedText = ''
+    if row['Associated name']:
+        final_AssociatedText = airTableEntry(row['Associated name'], 'Name', NamesAirTable)
+
 
     final_TranslatorText = ''
     if row['Translator']:
@@ -373,61 +382,64 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
         final_IIIF_Manifest_URL = row['IIIF Manifest URL']
 
     new_row = {
-    'File Name': final_file_name,
-    'Item Sequence': final_item_sequence,
-    'Visibility': Visibility,
-    'Title': final_title,
-    'Thumbnail URL': final_Thumbnail_URL,
-    'viewingHint': viewingHint,
-    'Parent ARK': parentArk,
-    'Item ARK': final_Item_ARK,
-    'Object Type': typeOfResource,
-    'AltTitle.other': final_AltTitle_other,
-    'AltTitle.uniform': uniformTitle,
-    'Place of origin': final_Place_of_origin,
-    'Date.normalized': final_Date_normalized,
-    'Date binding': final_Date_binding,
-    'Date.creation': final_Date_creation,
-    'Scribe': final_scribeText,
-    'Author': final_AuthorText,
-    'Translator': final_TranslatorText,
-    'Contents note': final_Contents_note,
-    'Colophon': final_Colophon,
-    'Incipit': final_Incipit,
-    'Explicit': final_Explicit,
-    'References': final_References,
-    'Provenance': final_Provenance,
-    'General note': final_Provenance,
-    'Format.extent': final_Format_extent,
-    'Form': final_form,
-    'Format.dimensions': final_Format_dimensions,
-    'Support': final_Support,
-    'Foliation': final_Foliation,
-    'Page layout': final_Page_layout,
-    'Writing and hands': final_Writing_and_hands,
-    'Illustrations note': final_Illustrations_note,
-    'Inscription': final_Inscription,
-    'Additions': final_Additions,
-    'Binding note': final_Binding_note,
-    'Ink color': final_Ink_color,
-    'Features': final_Features,
-    'Condition note': final_Condition_note,
-    'Type.typeOfResource': typeOfResource,
-    'Type.genre': final_Type_genre,
-    'Language': final_Language,
-    'Text direction': final_Text_direction,
-    'Writing system': final_Writing_system,
-    'Script': final_Script,
-    'Script note': final_Script_note,
-    'Rights.statementLocal': Rights_statementLocal,
-    'Rights.servicesContact': Rights_contact,
-    'Name.repository': Name_repository,
-    'AltIdentifier.local': shelfmarkFinal,
-    'Collection (physical)': Collection_physical,
-    'Other version': final_Other_version,
-    'IIIF Manifest URL': final_IIIF_Manifest_URL,
-    'delivery': final_delivery}
+    'File Name': final_file_name.rstrip('\r\n'),
+    'Item Sequence': final_item_sequence.rstrip('\r\n'),
+    #'Visibility': Visibility.rstrip('\r\n'),
+    'Title': final_title.rstrip('\r\n'),
+    'Thumbnail URL': final_Thumbnail_URL.rstrip('\r\n'),
+    'viewingHint': viewingHint.rstrip('\r\n'),
+    'Parent ARK': parentArk.rstrip('\r\n'),
+    'Item ARK': final_Item_ARK.rstrip('\r\n'),
+    'Object Type': objectType.rstrip('\r\n'),
+    'AltTitle.other': final_AltTitle_other.rstrip('\r\n'),
+    'AltTitle.uniform': uniformTitle.rstrip('\r\n'),
+    'Place of origin': final_Place_of_origin.rstrip('\r\n'),
+    'Date.normalized': final_Date_normalized.rstrip('\r\n'),
+    'Date binding': final_Date_binding.rstrip('\r\n'),
+    'Date.creation': final_Date_creation.rstrip('\r\n'),
+    'Scribe': final_scribeText.rstrip('\r\n'),
+    'Author': final_AuthorText.rstrip('\r\n'),
+    'Associated name': final_AssociatedText .rstrip('\r\n'),
+    'Translator': final_TranslatorText.rstrip('\r\n'),
+    'Contents note': final_Contents_note.rstrip('\r\n'),
+    'Colophon': final_Colophon.rstrip('\r\n'),
+    'Incipit': final_Incipit.rstrip('\r\n'),
+    'Explicit': final_Explicit.rstrip('\r\n'),
+    'References': final_References.rstrip('\r\n'),
+    'Provenance': final_Provenance.rstrip('\r\n'),
+    'General note': final_Provenance.rstrip('\r\n'),
+    'Format.extent': final_Format_extent.rstrip('\r\n'),
+    'Form': final_form.rstrip('\r\n'),
+    'Format.dimensions': final_Format_dimensions.rstrip('\r\n'),
+    'Support': final_Support.rstrip('\r\n'),
+    'Foliation': final_Foliation.rstrip('\r\n'),
+    'Page layout': final_Page_layout.rstrip('\r\n'),
+    'Writing and hands': final_Writing_and_hands.rstrip('\r\n'),
+    'Illustrations note': final_Illustrations_note.rstrip('\r\n'),
+    'Inscription': final_Inscription.rstrip('\r\n'),
+    'Additions': final_Additions.rstrip('\r\n'),
+    'Binding note': final_Binding_note.rstrip('\r\n'),
+    'Ink color': final_Ink_color.rstrip('\r\n'),
+    'Features': final_Features.rstrip('\r\n'),
+    'Condition note': final_Condition_note.rstrip('\r\n'),
+    'Type.typeOfResource': typeOfResource.rstrip('\r\n'),
+    'Type.genre': final_Type_genre.rstrip('\r\n'),
+    'Language': final_Language.rstrip('\r\n'),
+    'Text direction': final_Text_direction.rstrip('\r\n'),
+    'Writing system': final_Writing_system.rstrip('\r\n'),
+    'Script': final_Script.rstrip('\r\n'),
+    'Script note': final_Script_note.rstrip('\r\n'),
+    'Rights.statementLocal': Rights_statementLocal.rstrip('\r\n'),
+    'Rights contact': Rights_contact.rstrip('\r\n'),
+    'Name.repository': Name_repository.rstrip('\r\n'),
+    'AltIdentifier.local': shelfmarkFinal.rstrip('\r\n'),
+    'Collection (physical)': Collection_physical.rstrip('\r\n'),
+    'Other version': final_Other_version.rstrip('\r\n'),
+    'IIIF Manifest URL': final_IIIF_Manifest_URL.rstrip('\r\n'),
+    'delivery': final_delivery.rstrip('\r\n')}
 
     dfWorkbook = dfWorkbook.append(new_row, ignore_index=True)
 
-dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False)
+batchNum = batchNum.replace(".", "-")
+
+dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False, line_terminator='\n', encoding='utf-8')
