@@ -53,7 +53,6 @@ def airTableEntry (textEntry, fieldName, tableName):
     textFinalOutput = '|~|'.join(textHolder)
     return textFinalOutput
 
-
 base_key = 'XXXXXXXXXXX'
 
 allAirTableName = 'Old Collection mss'
@@ -90,11 +89,12 @@ textDirectionTable =  Airtable(base_key, textDirectionTableName, personal_key)
 allAirRecords = allAirTable.get_all()
 allAirdf = pd.DataFrame.from_records((r['fields'] for r in allAirRecords))
 
-batchNum = input('Batch Number: ')
+batchNum = input('Input batch number, or leave blank for a full export of all published works: ')
+#clean up any extraneous characters
 batchNum = batchNum.strip()
 
 
-#clean up the airtable incase there are strange errors in the data, extra spaces, etc
+#clean up the airtable to catch any strange errors in the data, extra spaces, etc
 allAirdf['Shelfmark'].replace('', np.nan, inplace=True)
 allAirdf.dropna(subset=['Shelfmark'], inplace=True)
 allAirdf = allAirdf.fillna('')
@@ -189,8 +189,12 @@ Collection_physical = "Sinai. Old Collection"
 originator = "Statement of responsibility: Imaging performed under the auspices of His Eminence Archbishop Damianos and The Holy Council, Father Justin Sinaites Librarian, Early Manuscripts Electronic Library. Phelps Michael B. Project Director; Kasotakis Damianos. Imaging Director"
 objectType = 'Work'
 
+if batchNum == '':
+    dfDelivery = allAirdf[allAirdf['published']== 'true']
+else:
+    dfDelivery = allAirdf[allAirdf['delivery']== batchNum]
 
-dfDelivery = allAirdf[allAirdf['delivery']== batchNum]
+
 for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
 
     final_file_name = ''
