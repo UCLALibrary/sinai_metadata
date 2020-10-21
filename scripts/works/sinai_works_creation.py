@@ -6,7 +6,6 @@ import re
 import csv
 import os
 from pathlib import Path
-from airtable import Airtable
 
 #This is necessary to pull in long values from Pandas tables
 pd.options.display.max_colwidth = 100000
@@ -74,7 +73,7 @@ if progressWorkbook:
     workbookdf["Language"] = workbookdf["Language"].str.replace(' / ',';')
 
     #Putting together the values that are displayed in the website. These almost certainly should be their own columns in the future
-    workbookdf['Format.dimensions'] = workbookdf["Height"].astype(int).astype(str) +' x '+ workbookdf["Width"].astype(int).astype(str) +' x '+ workbookdf["Thickness"].astype(int).astype(str) +' mm'
+    workbookdf['Format.dimensions'] = workbookdf["Height"].astype(int).astype(str) +' x '+ workbookdf["Width"].astype(int).astype(str) +' x '+ workbookdf["Thickness"].astype(float).astype(str) +' mm'
     workbookdf["Folia"] = workbookdf["Folia"].str.strip()
     workbookdf['Format.extent'] = workbookdf["Folia"].astype(str) +' ff. ; '+ workbookdf["Weight (g)"].astype(str) +' g'
     workbookdf['Support'] = workbookdf["Material"]

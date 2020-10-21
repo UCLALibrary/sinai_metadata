@@ -5,6 +5,8 @@ import subprocess
 import csv
 import os
 import exifread
+from datetime import datetime
+startTime = datetime.now()
 
 sinsplit = '|~|'
 #This is necessary to pull in long values from Pandas tables
@@ -15,8 +17,16 @@ filenamepreamble = 'Masters/sinaimasters/'
 RightsstatementLocal = "Images: Contact the Monastery of St. Catherine's of the Sinai. Metadata: Unless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
 visibility = 'discovery'
 objectType = 'Page'
+#outputdirectory
+finaloutputDir = input('Path to output directory: ')
+#strip starting and trailing spaces so we can simply drag and drop
+finaloutputDir = finaloutputDir.strip()
+#filelist
+textFileInput = input('Path to MSS list: ')
+#strip starting and trailing spaces so we can simply drag and drop
+textFileInput = textFileInput.strip()
 #directory where we get the images
-mainDirectory = input('Folder Directory: ')
+mainDirectory = input('Image Masters Directory: ')
 #strip starting and trailing spaces so we can simply drag and drop
 mainDirectory = mainDirectory.strip()
 
@@ -27,46 +37,52 @@ infoDict = {} #Creating the dict to get the metadata tags
 
 i3frange = ''
 
-
-
 #iterate through the directory
-for root,dirs,files in os.walk(mainDirectory):
-    for rootSub,dirsSub,filesSub in os.walk(root):
-        counter = 1
+with open(textFileInput) as tfile:
+    tfilelines = tfile.read().splitlines()
+    for csventryName in tfilelines:
         #grab info for each file in the directory
-        topcolumns = ['File name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
+        topcolumns = ['File Name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
         #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])
         dfWorkbook = []
         dfendWorkbook =[]
-        csvName = os.path.basename(os.path.normpath(rootSub))
+        csvlangName = csventryName.split("_")[0]
 
         #get the correct language and entry name that we are using
         langEntry = ''
-        if ("arb" in csvName):
-            langEntry ='ara/{name}/'.format(name = csvName)
-        elif ("syr" in csvName):
-            langEntry ='syr/{name}/'.format(name = csvName)
-        elif ("grk" in csvName):
-            langEntry ='grk/{name}/'.format(name = csvName)
+        if ("ara" in csvlangName):
+            langEntry ='ara/{name}/'.format(name = csventryName)
+            langEntryPath =os.path.join('ara',csventryName)
+        elif ("syr" in csvlangName):
+            langEntry ='syr/{name}/'.format(name = csventryName)
+            langEntryPath =os.path.join('syr',csventryName)
+        elif ("gre" in csvlangName):
+            langEntry ='grk/{name}/'.format(name = csventryName)
+            langEntryPath =os.path.join('grk',csventryName)
         else:
             langEntry = ''
 
-        if csvName != 'tiff' and csvName != 'tiffs':
+        if csvlangName != '':
             sequenceCounter = 1
+            imgDirectory = os.path.join(mainDirectory,langEntry)
             df = pd.DataFrame(topcolumns)
-            for sinaifilename in filesSub:
+            for sinaifilename in os.listdir(imgDirectory):
                 print(sinaifilename)
+                entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
                 #so we can open the image
-                imgPath = os.path.join(rootSub,sinaifilename)
+                imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
                 #subprocess to run the tool and get the outputs
                 process = subprocess.Popen([exifToolPath,imgPath],stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True)
                 for tag in process.stdout:
                     line = tag.strip().split(':')
                     infoDict[line[0].strip()] = line[-1].strip()
                 #get the correct entry name that we are using
-                entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
                 #now to format the title
                 titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
+                viewingHint = ''
+                if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
+                    viewingHint = 'non-paged'
+
                 #we need to add a .f to titles that are folios
                 if (sinaifilename.split("_")[0] == 'sld'):
                     if sinaifilename.split("_")[3] == 'a' or sinaifilename.split("_")[3] == 'b':
@@ -83,13 +99,19 @@ for root,dirs,files in os.walk(mainDirectory):
                             i3frange = ' '
                     else:
                         i3frange = ''
-                if sinaifilename.startswith("sld"):
-                    dfWorkbook.append([str(entryName), sequenceCounter,'discovery',titlefinal, i3frange, '','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
+                    dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
                     sequenceCounter = sequenceCounter + 1
                 else:
-                    dfendWorkbook.append([str(entryName), 'non_paged',titlefinal, i3frange, '','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                    if str(entryName).split('.')[-1] == 'tif':
+                        dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
             for row in dfendWorkbook:
                 dfWorkbook.append([row[0],sequenceCounter,row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]])
                 sequenceCounter = sequenceCounter +1
             df = pd.DataFrame(dfWorkbook, columns = topcolumns)
-            df.to_csv("{batchNum}.csv".format(batchNum = csvName),index=False)
+            sourceValue = df['Source'].value_counts().idxmax()
+            df = df.assign(Source=sourceValue)
+            fileOutName =  os.path.join(finaloutputDir,csventryName)
+            df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
+
+print(datetime.now() - startTime)
