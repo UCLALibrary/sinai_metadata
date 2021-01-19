@@ -75,7 +75,6 @@ if progressWorkbook:
     #Putting together the values that are displayed in the website. These almost certainly should be their own columns in the future
     workbookdf['Format.dimensions'] = workbookdf["Height"].astype(int).astype(str) +' x '+ workbookdf["Width"].astype(int).astype(str) +' x '+ workbookdf["Thickness"].astype(float).astype(str) +' mm'
     workbookdf["Folia"] = workbookdf["Folia"].str.strip()
-    workbookdf['Format.extent'] = workbookdf["Folia"].astype(str) +' ff. ; '+ workbookdf["Weight (g)"].astype(str) +' g'
     workbookdf['Support'] = workbookdf["Material"]
     workbookdf['Format'] = workbookdf["Form"]
 
@@ -86,6 +85,7 @@ dfWorkbook = pd.DataFrame(columns=['Title',
 'Date.normalized',
 'Date.creation',
 'Format.extent',
+'Format.weight',
 'Format',
 'Format.dimensions',
 'Support',
@@ -155,8 +155,11 @@ if imgDirectory:
         if progressWorkbook:
             print('Updating with Progress Notebook')
 
-            formatExtentValue = workbookRow['Format.extent'].to_string(index=False).strip()
+            formatExtentValue = workbookRow['Folia'].to_string(index=False).strip()
+            formatExtentValue = formatExtentValue +' ff.'
             formatExtentValue = sinaiWorkbookTextReplace(formatExtentValue)
+            formatWeightValue = workbookRow['Weight (g)'].to_string(index=False).strip()
+            formatWeightValue = formatWeightValue +' g'
             formatValue =  workbookRow['Format'].to_string(index=False).strip()
             formatValue = sinaiWorkbookTextReplace(formatValue)
             formatDimensionsValue =  workbookRow['Format.dimensions'].to_string(index=False).strip()
@@ -179,6 +182,7 @@ if imgDirectory:
                'Date.normalized': Date_normalized.rstrip('\r\n'),
                'Date.creation':humandate.rstrip('\r\n'),
                'Format.extent': formatExtentValue.rstrip('\r\n'),
+               'Format.weight': formatWeightValue.rstrip('\r\n'),
                'Format': formatValue.lower().rstrip('\r\n'),
                'Format.dimensions': formatDimensionsValue.rstrip('\r\n'),
                'Support': supportValue.rstrip('\r\n'),

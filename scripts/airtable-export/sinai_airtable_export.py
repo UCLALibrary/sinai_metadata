@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import json
 import pandas as pd
 import numpy as np
 import re
@@ -7,7 +8,6 @@ import csv
 import os
 from pathlib import Path
 from airtable import Airtable
-import pandas as pd
 
 #This is necessary to pull in long values from Pandas tables
 pd.options.display.max_colwidth = 100000
@@ -53,7 +53,6 @@ def airTableEntry (textEntry, fieldName, tableName):
     textFinalOutput = '|~|'.join(textHolder)
     return textFinalOutput
 
-base_key = 'XXXXXXXXXXX'
 
 allAirTableName = 'Old Collection mss'
 genresTableName = 'Genres'
@@ -68,7 +67,16 @@ namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
 
-personal_key = 'XXXXXXXXXXXX'
+airtableInfoFile = input('Airtable Login JSON file:')
+#strip starting and trailing spaces so we can simply drag and drop
+airtableInfoFile = airtableInfoFile.strip()
+#open the file straightaway and read the object
+airtable_file = open(airtableInfoFile)
+airtableInfo = json.load(airtable_file)
+
+base_key = airtableInfo['airtable']['base_key']
+personal_key = airtableInfo['airtable']['personal_key']
+
 
 print('Building from Airtables...')
 allAirTable = Airtable(base_key, allAirTableName, personal_key)
