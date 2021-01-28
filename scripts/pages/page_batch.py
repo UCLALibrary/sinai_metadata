@@ -22,7 +22,7 @@ finaloutputDir = input('Path to output directory: ')
 #strip starting and trailing spaces so we can simply drag and drop
 finaloutputDir = finaloutputDir.strip()
 #filelist
-textFileInput = input('Path to MSS list: ')
+textFileInput = input('Path to delivery directory: ')
 #strip starting and trailing spaces so we can simply drag and drop
 textFileInput = textFileInput.strip()
 #directory where we get the images
@@ -38,9 +38,10 @@ infoDict = {} #Creating the dict to get the metadata tags
 i3frange = ''
 
 #iterate through the directory
-with open(textFileInput) as tfile:
-    tfilelines = tfile.read().splitlines()
-    for csventryName in tfilelines:
+if textFileInput:
+    imglister = os.listdir(textFileInput)
+    #for csventryName in imglister:
+    for csventryName in os.walk( os.path.join(imglister,'.')).next()[1]:
         #grab info for each file in the directory
         topcolumns = ['File Name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
         #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])

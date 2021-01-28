@@ -120,6 +120,7 @@ workbook_columns = ['File Name',
 'Item Sequence',
 #'Visibility',
 'Title',
+'Descriptive title',
 'Thumbnail URL',
 'viewingHint',
 'Parent ARK',
@@ -143,12 +144,13 @@ workbook_columns = ['File Name',
 'Provenance',
 'General note',
 'Format.extent',
+'Format.weight',
 'Form',
 'Format.dimensions',
 'Support',
 'Foliation',
 'Page layout',
-'Writing and hands',
+'Hand note',
 'Illustrations note',
 'Inscription',
 'Additions',
@@ -166,11 +168,12 @@ workbook_columns = ['File Name',
 'Rights.statementLocal',
 'Rights contact',
 'Name.repository',
-'AltIdentifier.local',
+'Shelfmark',
 'Collection (physical)',
-'Other version',
+'Other version(s)',
 'IIIF Manifest URL',
-'delivery']
+'delivery',
+'image count']
 
 
 for col in workbook_columns:
@@ -216,10 +219,11 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     #shelfmarkFinal = title.replace(']', '')
     shelfmarkFinal = row['Shelfmark']
     print(shelfmarkFinal)
-    final_title = shelfmarkFinal + '. ' + row['Title']
-    #final_title = title.replace('[', '')
-    #final_title = title.replace(']', '')
-    final_title = final_title + ' : manuscript, '
+    final_title = 'St. Catherine’s Monastery,' + shelfmarkFinal
+
+    final_descriptive_title = ''
+    if row['Descriptive title']:
+        final_descriptive_title = row['Descriptive title']
 
     final_Thumbnail_URL = ''
     if row['Thumbnail URL']:
@@ -252,13 +256,6 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_Date_creation =''
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
-        #this part of the title is dependent on the date; we will only use it if it already is there
-        if row['Date.creation'].isnumeric() == True:
-            final_title = final_title + row['Date.creation'] + '.'
-        else:
-            final_title = final_title + '[' + row['Date.creation'] + '].'
-    #the final part of the title is not dependent on the date
-    final_title = final_title +" St. Catherine's Monastery, Sinai, Egypt"
 
     final_scribeText =''
     if row['Scribe']:
@@ -309,6 +306,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Format.extent']:
         final_Format_extent = row['Format.extent']
 
+    final_Format_weight = ''
+    if row['Format.weight']:
+        final_Format_weight = row['Format.weight']
+
     final_form = ''
     if row['Form']:
         final_form = airTableEntry(row['Form'],'Name', formTable)
@@ -330,8 +331,8 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
         final_Page_layout = row['Page layout']
 
     final_Writing_and_hands = ''
-    if row['Writing and hands']:
-        final_Writing_and_hands = row['Writing and hands']
+    if row['Hand note']:
+        final_Writing_and_hands = row['Hand note']
 
     final_Illustrations_note = ''
     if row['Illustrations note']:
@@ -386,18 +387,23 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
         final_Script_note = row['Script note']
 
     final_Other_version = ''
-    if row['Other version']:
-        final_Other_version = row['Other version']
+    if row['Other version(s)']:
+        final_Other_version = row['Other version(s)']
 
     final_IIIF_Manifest_URL = ''
     if row['IIIF Manifest URL']:
         final_IIIF_Manifest_URL = row['IIIF Manifest URL']
+
+    final_image_count = ''
+    if row['image count']:
+        final_image_count = row['image count']
 
     new_row = {
     'File Name': final_file_name.rstrip('\r\n'),
     'Item Sequence': final_item_sequence.rstrip('\r\n'),
     #'Visibility': Visibility.rstrip('\r\n'),
     'Title': final_title.rstrip('\r\n'),
+    'Descriptive title': final_descriptive_title.rstrip('\r\n'),
     'Thumbnail URL': final_Thumbnail_URL.rstrip('\r\n'),
     'viewingHint': viewingHint.rstrip('\r\n'),
     'Parent ARK': parentArk.rstrip('\r\n'),
@@ -421,12 +427,13 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Provenance': final_Provenance.rstrip('\r\n'),
     'General note': final_Provenance.rstrip('\r\n'),
     'Format.extent': final_Format_extent.rstrip('\r\n'),
+    'Format.weight': final_Format_weight.rstrip('\r\n'),
     'Form': final_form.rstrip('\r\n'),
     'Format.dimensions': final_Format_dimensions.rstrip('\r\n'),
     'Support': final_Support.rstrip('\r\n'),
     'Foliation': final_Foliation.rstrip('\r\n'),
     'Page layout': final_Page_layout.rstrip('\r\n'),
-    'Writing and hands': final_Writing_and_hands.rstrip('\r\n'),
+    'Hand note': final_Writing_and_hands.rstrip('\r\n'),
     'Illustrations note': final_Illustrations_note.rstrip('\r\n'),
     'Inscription': final_Inscription.rstrip('\r\n'),
     'Additions': final_Additions.rstrip('\r\n'),
@@ -444,11 +451,12 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Rights.statementLocal': Rights_statementLocal.rstrip('\r\n'),
     'Rights contact': Rights_contact.rstrip('\r\n'),
     'Name.repository': Name_repository.rstrip('\r\n'),
-    'AltIdentifier.local': shelfmarkFinal.rstrip('\r\n'),
+    'Shelfmark': shelfmarkFinal.rstrip('\r\n'),
     'Collection (physical)': Collection_physical.rstrip('\r\n'),
-    'Other version': final_Other_version.rstrip('\r\n'),
+    'Other version(s)': final_Other_version.rstrip('\r\n'),
     'IIIF Manifest URL': final_IIIF_Manifest_URL.rstrip('\r\n'),
-    'delivery': final_delivery.rstrip('\r\n')}
+    'delivery': final_delivery.rstrip('\r\n'),
+    'image count': str(final_image_count).rstrip('\r\n')}
 
     dfWorkbook = dfWorkbook.append(new_row, ignore_index=True)
 
