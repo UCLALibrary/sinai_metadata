@@ -40,79 +40,80 @@ i3frange = ''
 #iterate through the directory
 if textFileInput:
     imglister = os.listdir(textFileInput)
-    #for csventryName in imglister:
-    for csventryName in os.walk( os.path.join(imglister,'.')).next()[1]:
-        #grab info for each file in the directory
-        topcolumns = ['File Name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
-        #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])
-        dfWorkbook = []
-        dfendWorkbook =[]
-        csvlangName = csventryName.split("_")[0]
+    for csventryName in imglister:
+        if os.path.isdir(os.path.join(textFileInput,csventryName)):
+            print(csventryName)
+            #grab info for each file in the directory
+            topcolumns = ['File Name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
+            #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])
+            dfWorkbook = []
+            dfendWorkbook =[]
+            csvlangName = csventryName.split("_")[0]
 
-        #get the correct language and entry name that we are using
-        langEntry = ''
-        if ("ara" in csvlangName):
-            langEntry ='ara/{name}/'.format(name = csventryName)
-            langEntryPath =os.path.join('ara',csventryName)
-        elif ("syr" in csvlangName):
-            langEntry ='syr/{name}/'.format(name = csventryName)
-            langEntryPath =os.path.join('syr',csventryName)
-        elif ("gre" in csvlangName):
-            langEntry ='grk/{name}/'.format(name = csventryName)
-            langEntryPath =os.path.join('grk',csventryName)
-        else:
+            #get the correct language and entry name that we are using
             langEntry = ''
+            if ("ara" in csvlangName):
+                langEntry ='ara/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('ara',csventryName)
+            elif ("syr" in csvlangName):
+                langEntry ='syr/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('syr',csventryName)
+            elif ("gre" in csvlangName):
+                langEntry ='grk/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('grk',csventryName)
+            else:
+                langEntry = ''
 
-        if csvlangName != '':
-            sequenceCounter = 1
-            imgDirectory = os.path.join(mainDirectory,langEntry)
-            df = pd.DataFrame(topcolumns)
-            for sinaifilename in os.listdir(imgDirectory):
-                print(sinaifilename)
-                entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
-                #so we can open the image
-                imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
-                #subprocess to run the tool and get the outputs
-                process = subprocess.Popen([exifToolPath,imgPath],stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True)
-                for tag in process.stdout:
-                    line = tag.strip().split(':')
-                    infoDict[line[0].strip()] = line[-1].strip()
-                #get the correct entry name that we are using
-                #now to format the title
-                titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
-                viewingHint = ''
-                if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
-                    viewingHint = 'non-paged'
+            if csvlangName != '':
+                sequenceCounter = 1
+                imgDirectory = os.path.join(mainDirectory,langEntry)
+                df = pd.DataFrame(topcolumns)
+                for sinaifilename in os.listdir(imgDirectory):
+                    print(sinaifilename)
+                    entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
+                    #so we can open the image
+                    imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
+                    #subprocess to run the tool and get the outputs
+                    process = subprocess.Popen([exifToolPath,imgPath],stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True)
+                    for tag in process.stdout:
+                        line = tag.strip().split(':')
+                        infoDict[line[0].strip()] = line[-1].strip()
+                    #get the correct entry name that we are using
+                    #now to format the title
+                    titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
+                    viewingHint = ''
+                    if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
+                        viewingHint = 'non-paged'
 
-                #we need to add a .f to titles that are folios
-                if (sinaifilename.split("_")[0] == 'sld'):
-                    if sinaifilename.split("_")[3] == 'a' or sinaifilename.split("_")[3] == 'b':
-                        i3frange = 'Front matter'
-                    elif sinaifilename.split("_")[3] == 'f':
-                        i3frange = 'Text'
-                        titlefinal = "f. " + titlefinal
-                    elif sinaifilename.split("_")[3] == 'y':
-                        i3frange = 'Back matter'
-                    elif sinaifilename.split("_")[3] == 'z':
-                        if str(sinaifilename.split("_")[4].split(".")[0]) == "1":
+                    #we need to add a .f to titles that are folios
+                    if (sinaifilename.split("_")[0] == 'sld'):
+                        if sinaifilename.split("_")[3] == 'a' or sinaifilename.split("_")[3] == 'b':
+                            i3frange = 'Front matter'
+                        elif sinaifilename.split("_")[3] == 'f':
+                            i3frange = 'Text'
+                            titlefinal = "f. " + titlefinal
+                        elif sinaifilename.split("_")[3] == 'y':
                             i3frange = 'Back matter'
+                        elif sinaifilename.split("_")[3] == 'z':
+                            if str(sinaifilename.split("_")[4].split(".")[0]) == "1":
+                                i3frange = 'Back matter'
+                            else:
+                                i3frange = ' '
                         else:
-                            i3frange = ' '
+                            i3frange = ''
+                    if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
+                        dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                        sequenceCounter = sequenceCounter + 1
                     else:
-                        i3frange = ''
-                if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
-                    dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
-                    sequenceCounter = sequenceCounter + 1
-                else:
-                    if str(entryName).split('.')[-1] == 'tif':
-                        dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
-            for row in dfendWorkbook:
-                dfWorkbook.append([row[0],sequenceCounter,row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]])
-                sequenceCounter = sequenceCounter +1
-            df = pd.DataFrame(dfWorkbook, columns = topcolumns)
-            sourceValue = df['Source'].value_counts().idxmax()
-            df = df.assign(Source=sourceValue)
-            fileOutName =  os.path.join(finaloutputDir,csventryName)
-            df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
+                        if str(entryName).split('.')[-1] == 'tif':
+                            dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                for row in dfendWorkbook:
+                    dfWorkbook.append([row[0],sequenceCounter,row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]])
+                    sequenceCounter = sequenceCounter +1
+                df = pd.DataFrame(dfWorkbook, columns = topcolumns)
+                sourceValue = df['Source'].value_counts().idxmax()
+                df = df.assign(Source=sourceValue)
+                fileOutName =  os.path.join(finaloutputDir,csventryName)
+                df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
 
 print(datetime.now() - startTime)
