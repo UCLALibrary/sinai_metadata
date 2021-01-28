@@ -33,7 +33,6 @@ mainDirectory = mainDirectory.strip()
 #point to the exiftool Path
 exifToolPath = input('exiftool Path (command): ')
 infoDict = {} #Creating the dict to get the metadata tags
-#exifToolPath = "exiftool"
 
 i3frange = ''
 
@@ -41,6 +40,7 @@ i3frange = ''
 if textFileInput:
     imglister = os.listdir(textFileInput)
     for csventryName in imglister:
+        #we only want directories, as there can be extraneous files sometimes
         if os.path.isdir(os.path.join(textFileInput,csventryName)):
             print(csventryName)
             #grab info for each file in the directory
