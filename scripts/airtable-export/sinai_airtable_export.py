@@ -217,7 +217,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     #shelfmarkFinal = title.replace(']', '')
     shelfmarkFinal = row['Shelfmark']
     print(shelfmarkFinal)
-    final_title = 'St. Catherine’s Monastery,' + shelfmarkFinal
+    final_title = 'St. Catherine’s Monastery, ' + shelfmarkFinal
 
     final_descriptive_title = ''
     if row['Descriptive title']:
