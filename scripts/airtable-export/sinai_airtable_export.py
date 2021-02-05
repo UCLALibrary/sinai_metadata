@@ -130,12 +130,10 @@ workbook_columns = ['File Name',
 'AltTitle.uniform',
 'Place of origin',
 'Date.normalized',
-'Date binding',
 'Date.creation',
 'Scribe',
 'Author',
 'Associated name',
-'Translator',
 'Contents note',
 'Colophon',
 'Incipit',
@@ -249,10 +247,6 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Date.normalized']:
         final_Date_normalized = row['Date.normalized']
 
-    final_Date_binding =''
-    if row['Date binding']:
-        final_Date_binding = row['Date binding']
-
     final_Date_creation =''
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
@@ -268,11 +262,6 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_AssociatedText = ''
     if row['Associated name']:
         final_AssociatedText = airTableEntry(row['Associated name'], 'Name', NamesAirTable)
-
-
-    final_TranslatorText = ''
-    if row['Translator']:
-        final_TranslatorText = airTableEntry(row['Translator'], 'Name', NamesAirTable)
 
     final_Contents_note =''
     if row['Contents note']:
@@ -413,19 +402,17 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'AltTitle.uniform': uniformTitle.rstrip('\r\n'),
     'Place of origin': final_Place_of_origin.rstrip('\r\n'),
     'Date.normalized': final_Date_normalized.rstrip('\r\n'),
-    'Date binding': final_Date_binding.rstrip('\r\n'),
     'Date.creation': final_Date_creation.rstrip('\r\n'),
     'Scribe': final_scribeText.rstrip('\r\n'),
     'Author': final_AuthorText.rstrip('\r\n'),
     'Associated name': final_AssociatedText .rstrip('\r\n'),
-    'Translator': final_TranslatorText.rstrip('\r\n'),
     'Contents note': final_Contents_note.rstrip('\r\n'),
     'Colophon': final_Colophon.rstrip('\r\n'),
     'Incipit': final_Incipit.rstrip('\r\n'),
     'Explicit': final_Explicit.rstrip('\r\n'),
     'References': final_References.rstrip('\r\n'),
     'Provenance': final_Provenance.rstrip('\r\n'),
-    'General note': final_Provenance.rstrip('\r\n'),
+    'General note': final_General_note.rstrip('\r\n'),
     'Format.extent': final_Format_extent.rstrip('\r\n'),
     'Format.weight': final_Format_weight.rstrip('\r\n'),
     'Form': final_form.rstrip('\r\n'),
