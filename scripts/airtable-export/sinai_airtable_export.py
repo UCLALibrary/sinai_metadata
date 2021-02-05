@@ -385,7 +385,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
 
     final_image_count = ''
     if row['image count']:
-        final_image_count = row['image count']
+        final_image_count = int(row['image count'])
 
     new_row = {
     'File Name': final_file_name.rstrip('\r\n'),
