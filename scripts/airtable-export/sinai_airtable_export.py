@@ -209,15 +209,13 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_file_name = ''
     final_item_sequence = ''
 
-    #final_delivery = row['delivery'].to_string(index=False).strip()
-    final_delivery = row['delivery']
+    final_delivery = 'delivery ' + row['delivery']
 
-    #shelfmarkFinal = row['Shelfmark'].to_string(index=False).strip()
-    #shelfmarkFinal = title.replace('[', '')
-    #shelfmarkFinal = title.replace(']', '')
     shelfmarkFinal = row['Shelfmark']
     print(shelfmarkFinal)
-    final_title = 'St. Catherine’s Monastery, ' + shelfmarkFinal
+    #strip Sinai from shelfmark for the title
+    shelffmark_for_title = shelfmarkFinal.replace('Sinai', '')
+    final_title = 'Sinai, St. Catherine’s Monastery,' + shelffmark_for_title
 
     final_descriptive_title = ''
     if row['Descriptive title']:
