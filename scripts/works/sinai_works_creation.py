@@ -151,8 +151,6 @@ if imgDirectory:
 
 
         if progressWorkbook:
-            print('Updating with Progress Notebook')
-
             formatExtentValue = workbookRow['Folia'].to_string(index=False).strip()
             formatExtentValue = formatExtentValue +' ff.'
             formatExtentValue = sinaiWorkbookTextReplace(formatExtentValue)
