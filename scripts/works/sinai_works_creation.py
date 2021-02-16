@@ -79,7 +79,7 @@ if progressWorkbook:
     workbookdf['Format'] = workbookdf["Form"]
 
 #create the main dataframe
-dfWorkbook = pd.DataFrame(columns=['Title',
+dfWorkbook = pd.DataFrame(columns=['Shelfmark',
 'Item ARK',
 'Object Type',
 'Date.normalized',
@@ -90,7 +90,6 @@ dfWorkbook = pd.DataFrame(columns=['Title',
 'Format.dimensions',
 'Support',
 'Language',
-'Shelfmark',
 'delivery',
 'Comments',
 'User Comments'])
