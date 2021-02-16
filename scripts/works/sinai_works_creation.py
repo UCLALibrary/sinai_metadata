@@ -90,7 +90,7 @@ dfWorkbook = pd.DataFrame(columns=['Title',
 'Format.dimensions',
 'Support',
 'Language',
-'AltIdentifier.local',
+'Shelfmark',
 'delivery',
 'Comments',
 'User Comments'])
@@ -151,7 +151,6 @@ if imgDirectory:
 
 
 
-        localTitle = 'Sinai ' + shelfmark
         if progressWorkbook:
             print('Updating with Progress Notebook')
 
@@ -176,7 +175,7 @@ if imgDirectory:
 
         #populate the workbook
         new_row = {
-               'Title': localTitle.rstrip('\r\n'),
+               'Shelfmark':shelfmark.rstrip('\r\n'),
                'Item ARK':'',
                'Object Type':objectType.rstrip('\r\n'),
                'Date.normalized': Date_normalized.rstrip('\r\n'),
@@ -187,7 +186,6 @@ if imgDirectory:
                'Format.dimensions': formatDimensionsValue.rstrip('\r\n'),
                'Support': supportValue.rstrip('\r\n'),
                'Language': languageValue.rstrip('\r\n'),
-               'AltIdentifier.local':localTitle.rstrip('\r\n'),
                'delivery': batchNum.rstrip('\r\n'),
                'Comments': commentsValue.rstrip('\r\n'),
                'User Comments': userCommentsValue.rstrip('\r\n')
