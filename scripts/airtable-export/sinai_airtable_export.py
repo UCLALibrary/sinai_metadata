@@ -66,6 +66,7 @@ supportTableName = 'Support'
 namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
+viewingHintTableName = 'viewingHint'
 
 airtableInfoFile = input('Airtable Login JSON file:')
 #strip starting and trailing spaces so we can simply drag and drop
@@ -91,6 +92,7 @@ scriptsTable =  Airtable(base_key, scriptsTableName, personal_key)
 formTable =  Airtable(base_key, formTableName, personal_key)
 supportTable =  Airtable(base_key, supportTableName, personal_key)
 textDirectionTable =  Airtable(base_key, textDirectionTableName, personal_key)
+viewingHintTable =  Airtable(base_key, viewingHintTableName, personal_key)
 
 
 
@@ -188,7 +190,6 @@ dfWorkbook = dfWorkbook.rename(columns=lambda x: x.strip())
 
 #set the dataframe constants; this can be modified for a different project (or even better made a config)
 parentArk = 'ark:/21198/z1bk2gmg'
-viewingHint = 'paged'
 #Visibility = 'sinai'
 typeOfResource = 'text'
 Rights_statementLocal = "Images: Contact the Monastery of St. Catherine's of the Sinai. Metadata: Unless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
@@ -249,6 +250,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
 
+    final_viewingHint =''
+    if row['viewingHint']:
+        final_viewingHint = airTableEntry(row['viewingHint'], 'Name', viewingHintTable)
+        
     final_scribeText =''
     if row['Scribe']:
         final_scribeText = airTableEntry(row['Scribe'], 'Name', NamesAirTable)
@@ -392,7 +397,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Title': final_title.rstrip('\r\n'),
     'Descriptive title': final_descriptive_title.rstrip('\r\n'),
     'Thumbnail URL': final_Thumbnail_URL.rstrip('\r\n'),
-    'viewingHint': viewingHint.rstrip('\r\n'),
+    'viewingHint': final_viewingHint.rstrip('\r\n'),
     'Parent ARK': parentArk.rstrip('\r\n'),
     'Item ARK': final_Item_ARK.rstrip('\r\n'),
     'Object Type': objectType.rstrip('\r\n'),
