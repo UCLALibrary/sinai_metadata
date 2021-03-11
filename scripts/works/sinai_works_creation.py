@@ -172,7 +172,7 @@ if imgDirectory:
 
         #populate the workbook
         new_row = {
-               'Shelfmark':shelfmark.rstrip('\r\n'),
+               'Shelfmark':'Sinai '+ shelfmark.rstrip('\r\n'),
                'Item ARK':'',
                'Object Type':objectType.rstrip('\r\n'),
                'Date.normalized': Date_normalized.rstrip('\r\n'),
