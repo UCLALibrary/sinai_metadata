@@ -116,6 +116,9 @@ allAirdf['Scribe'] = allAirdf['Scribe'].astype(str)
 allAirdf['Scribe'] = allAirdf['Scribe'].fillna('')
 allAirdf['Associated name'] = allAirdf['Associated name'].astype(str)
 allAirdf['Associated name'] = allAirdf['Associated name'].fillna('')
+allAirdf['Contributors'] = allAirdf['Contributors'].astype(str)
+allAirdf['Contributors'] = allAirdf['Contributors'].fillna('')
+
 
 
 workbook_columns = ['File Name',
@@ -136,6 +139,7 @@ workbook_columns = ['File Name',
 'Scribe',
 'Author',
 'Associated name',
+'Contributors',
 'Contents note',
 'Colophon',
 'Incipit',
@@ -253,7 +257,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_viewingHint =''
     if row['viewingHint']:
         final_viewingHint = airTableEntry(row['viewingHint'], 'Name', viewingHintTable)
-        
+
     final_scribeText =''
     if row['Scribe']:
         final_scribeText = airTableEntry(row['Scribe'], 'Name', NamesAirTable)
@@ -265,6 +269,11 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_AssociatedText = ''
     if row['Associated name']:
         final_AssociatedText = airTableEntry(row['Associated name'], 'Name', NamesAirTable)
+
+    final_ContributorsText = ''
+    if row['Contributors']:
+        final_ContributorsText = airTableEntry(row['Contributors'], 'Name', NamesAirTable)
+
 
     final_Contents_note =''
     if row['Contents note']:
@@ -409,8 +418,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Scribe': final_scribeText.rstrip('\r\n'),
     'Author': final_AuthorText.rstrip('\r\n'),
     'Associated name': final_AssociatedText .rstrip('\r\n'),
+    'Contributors': final_ContributorsText .rstrip('\r\n'),
     'Contents note': final_Contents_note.rstrip('\r\n'),
-    'Colophon': final_Colophon.rstrip('\r\n'),
+    'Colophon': final_Colophon.rstrip('\r\nfr'),
     'Incipit': final_Incipit.rstrip('\r\n'),
     'Explicit': final_Explicit.rstrip('\r\n'),
     'References': final_References.rstrip('\r\n'),
