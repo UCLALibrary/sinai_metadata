@@ -76,8 +76,6 @@ if textFileInput:
                     #subprocess to run the tool and get the outputs
                     process = subprocess.Popen([exifToolPath,imgPath],stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True)
                     for tag in process.stdout:
-                        #debugging here
-                        print(tag)
                         line = tag.strip().split(':')
                         infoDict[line[0].strip()] = line[-1].strip()
                     #get the correct entry name that we are using
