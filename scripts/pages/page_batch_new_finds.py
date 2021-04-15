@@ -53,14 +53,14 @@ if textFileInput:
             #get the correct language and entry name that we are using
             langEntry = ''
             if ("ara" in csvlangName):
-                langEntry ='aranf/{name}/'.format(name = csventryName)
-                langEntryPath =os.path.join('ara',csventryName)
+                langEntry ='ara/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('aranf',csventryName)
             elif ("syr" in csvlangName):
-                langEntry ='syrnf/{name}/'.format(name = csventryName)
-                langEntryPath =os.path.join('syr',csventryName)
+                langEntry ='syr/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('syrnf',csventryName)
             elif ("gre" in csvlangName):
-                langEntry ='grknf/{name}/'.format(name = csventryName)
-                langEntryPath =os.path.join('grk',csventryName)
+                langEntry ='grk/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('grknf',csventryName)
             else:
                 langEntry = ''
 
