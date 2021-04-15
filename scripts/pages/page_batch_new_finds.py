@@ -80,6 +80,10 @@ if textFileInput:
                         infoDict[line[0].strip()] = line[-1].strip()
                     #get the correct entry name that we are using
                     #now to format the title
+                    #debugging here
+                    for i in infoDict:
+                        print i, infoDict[i]
+
                     titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
                     viewingHint = ''
                     if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
