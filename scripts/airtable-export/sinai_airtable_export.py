@@ -249,10 +249,12 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_Date_normalized =''
     if row['Date.normalized']:
         final_Date_normalized = row['Date.normalized']
+        final_Date_normalized = final_Date_normalized + ' C.E.'
 
     final_Date_creation =''
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
+        final_Date_creation = final_Date_creation + ' C.E.'
 
     final_viewingHint =''
     if row['viewingHint']:
