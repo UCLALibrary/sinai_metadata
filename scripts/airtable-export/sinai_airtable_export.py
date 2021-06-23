@@ -253,7 +253,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_Date_creation =''
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
-        final_Date_creation = final_Date_creation + ' C.E.'
+        final_Date_creation = final_Date_creation + ' CE'
 
     final_viewingHint =''
     if row['viewingHint']:
