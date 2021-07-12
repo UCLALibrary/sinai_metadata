@@ -81,6 +81,8 @@ if textFileInput:
                     #get the correct entry name that we are using
                     #now to format the title
                     titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
+                    if pd.isna(titlefinal):
+                            titlefinal = ''
                     viewingHint = ''
                     if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
                         viewingHint = 'non-paged'
