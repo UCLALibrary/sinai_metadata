@@ -67,6 +67,8 @@ namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
 viewingHintTableName = 'viewingHint'
+CollectionTableName = 'Collection'
+
 
 airtableInfoFile = input('Airtable Login JSON file:')
 #strip starting and trailing spaces so we can simply drag and drop
@@ -93,6 +95,7 @@ formTable =  Airtable(base_key, formTableName, personal_key)
 supportTable =  Airtable(base_key, supportTableName, personal_key)
 textDirectionTable =  Airtable(base_key, textDirectionTableName, personal_key)
 viewingHintTable =  Airtable(base_key, viewingHintTableName, personal_key)
+CollectionTable =  Airtable(base_key, CollectionTableName, personal_key)
 
 
 
@@ -173,7 +176,7 @@ workbook_columns = ['File Name',
 'Rights contact',
 'Name.repository',
 'Shelfmark',
-'Collection (physical)',
+'Collection',
 'Other version(s)',
 'IIIF Manifest URL',
 'delivery',
@@ -199,7 +202,6 @@ typeOfResource = 'text'
 Rights_statementLocal = "Images: Contact the Monastery of St. Catherine's of the Sinai. Metadata: Unless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
 Rights_contact = "To inquire about image rights, contact St. Catherine's Monastery, https://www.sinaimonastery.com, sinaimonastery@gmail.com."
 Name_repository = "Saint Catherine (Monastery : Mount Sinai)"
-Collection_physical = "Sinai. Old Collection"
 originator = "Statement of responsibility: Imaging performed under the auspices of His Eminence Archbishop Damianos and The Holy Council, Father Justin Sinaites Librarian, Early Manuscripts Electronic Library. Phelps Michael B. Project Director; Kasotakis Damianos. Imaging Director"
 objectType = 'Work'
 
@@ -400,6 +402,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['image count']:
         final_image_count = int(row['image count'])
 
+    final_Collection = ''
+    if row['Collection']:
+        final_Collection = airTableEntry(row['Collection'], 'Name', CollectionTable)
+
     new_row = {
     'File Name': final_file_name.rstrip('\r\n'),
     'Item Sequence': final_item_sequence.rstrip('\r\n'),
@@ -453,7 +459,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Rights contact': Rights_contact.rstrip('\r\n'),
     'Name.repository': Name_repository.rstrip('\r\n'),
     'Shelfmark': shelfmarkFinal.rstrip('\r\n'),
-    'Collection (physical)': Collection_physical.rstrip('\r\n'),
+    'Collection': final_Collection.rstrip('\r\n'),
     'Other version(s)': final_Other_version.rstrip('\r\n'),
     'IIIF Manifest URL': final_IIIF_Manifest_URL.rstrip('\r\n'),
     'delivery': final_delivery.rstrip('\r\n'),
