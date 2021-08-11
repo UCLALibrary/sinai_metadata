@@ -64,13 +64,14 @@ if textFileInput:
             else:
                 langEntry = ''
 
-            if csvlangName != '':
-                sequenceCounter = 1
-                imgDirectory = os.path.join(mainDirectory,langEntry)
-                df = pd.DataFrame(topcolumns)
-                for sinaifilename in os.listdir(imgDirectory):
-                    print(sinaifilename)
-                    if 'lcc' not in sinaifilename:
+            if 'lcc' not in csventryName:
+
+                if csvlangName != '':
+                    sequenceCounter = 1
+                    imgDirectory = os.path.join(mainDirectory,langEntry)
+                    df = pd.DataFrame(topcolumns)
+                    for sinaifilename in os.listdir(imgDirectory):
+                        print(sinaifilename)
                         entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
                         #so we can open the image
                         imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
