@@ -102,8 +102,6 @@ if textFileInput:
                                 i3frange = ' '
                         else:
                             i3frange = ''
-                    print(sinaifilename)
-                    print('TESTER')
                     if 'lcc' not in str(sinaifilename).lower():
                         if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
                             dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
