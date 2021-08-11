@@ -102,7 +102,7 @@ if textFileInput:
                                 i3frange = ' '
                         else:
                             i3frange = ''
-                    if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif' and 'LCC' not in entryName and 'lcc' not in entryName:
+                    if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif' and 'LCC' not in str(sinaifilename) and 'lcc' not in str(sinaifilename):
                         dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
                         sequenceCounter = sequenceCounter + 1
                     else:
