@@ -102,12 +102,14 @@ if textFileInput:
                                 i3frange = ' '
                         else:
                             i3frange = ''
-                    if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif' and 'LCC' not in str(sinaifilename) and 'lcc' not in str(sinaifilename):
-                        dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
-                        sequenceCounter = sequenceCounter + 1
-                    else:
-                        if str(entryName).split('.')[-1] == 'tif':
-                            dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                    if 'lcc' not in str(entryName).lower():
+
+                        if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
+                            dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                            sequenceCounter = sequenceCounter + 1
+                        else:
+                            if str(entryName).split('.')[-1] == 'tif':
+                                dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
                 for row in dfendWorkbook:
                     dfWorkbook.append([row[0],sequenceCounter,row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]])
                     sequenceCounter = sequenceCounter +1
