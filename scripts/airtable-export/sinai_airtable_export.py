@@ -180,7 +180,8 @@ workbook_columns = ['File Name',
 'Other version(s)',
 'IIIF Manifest URL',
 'delivery',
-'image count']
+'image count',
+'Viscodex']
 
 
 for col in workbook_columns:
@@ -406,6 +407,11 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Collection']:
         final_Collection = airTableEntry(row['Collection'], 'Name', CollectionTable)
 
+    final_viscodex = ''
+    if row['Viscodex']:
+        final_viscodex = row['Viscodex']
+
+
     new_row = {
     'File Name': final_file_name.rstrip('\r\n'),
     'Item Sequence': final_item_sequence.rstrip('\r\n'),
@@ -463,7 +469,8 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Other version(s)': final_Other_version.rstrip('\r\n'),
     'IIIF Manifest URL': final_IIIF_Manifest_URL.rstrip('\r\n'),
     'delivery': final_delivery.rstrip('\r\n'),
-    'image count': str(final_image_count).rstrip('\r\n')}
+    'image count': str(final_image_count).rstrip('\r\n'),
+    'Viscodex': final_viscodex.rstrip('\r\n')}
 
     dfWorkbook = dfWorkbook.append(new_row, ignore_index=True)
 
