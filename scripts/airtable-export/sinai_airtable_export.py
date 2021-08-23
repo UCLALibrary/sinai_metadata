@@ -253,7 +253,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Date.normalized']:
         final_Date_normalized = row['Date.normalized']
 
-    final_Date_creation =''
+    final_Date_creation ='n.d.'
     if row['Date.creation']:
         final_Date_creation = row['Date.creation']
         final_Date_creation = final_Date_creation + ' CE'
