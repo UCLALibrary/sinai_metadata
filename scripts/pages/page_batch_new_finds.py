@@ -81,6 +81,7 @@ if textFileInput:
             else:
                 langEntryPath = ''
 
+            print(langEntryPath)
             if csvlangName != '':
                 try:
                     sequenceCounter = 1
