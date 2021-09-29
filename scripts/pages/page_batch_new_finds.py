@@ -141,8 +141,10 @@ if textFileInput:
                     print("Error in {csvlangName}".format(csvlangName = csvlangName))
                     errorList.append(csvlangName)
 if errorList:
+    errorName = "errors"
+    fileOutName =  os.path.join(finaloutputDir,errorName)
     dferror = pd.DataFrame(errorList, columns = error_columns)
-    dferror.to_csv("errors.csv",index=False)
+    dferror.to_csv("{fileOutName}.csv"format(fileOutName = fileOutName),index=False)
 
 
 
