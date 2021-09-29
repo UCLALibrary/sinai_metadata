@@ -144,7 +144,7 @@ if errorList:
     errorName = "errors"
     fileOutName =  os.path.join(finaloutputDir,errorName)
     dferror = pd.DataFrame(errorList, columns = error_columns)
-    dferror.to_csv("{fileOutName}.csv"format(fileOutName = fileOutName),index=False)
+    dferror.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
 
 
 
