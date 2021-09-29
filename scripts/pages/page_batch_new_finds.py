@@ -138,8 +138,8 @@ if textFileInput:
                     fileOutName =  os.path.join(finaloutputDir,csventryName)
                     df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
                 except:
-                    print("Error in {sinaifilename}".format(sinaifilename = csvlangName))
-                    errorList.append(sinaifilename)
+                    print("Error in {csventryName}".format(csventryName = csventryName))
+                    errorList.append(csventryName)
 if errorList:
     errorName = "errors"
     fileOutName =  os.path.join(finaloutputDir,errorName)
