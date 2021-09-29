@@ -138,10 +138,11 @@ if textFileInput:
                     fileOutName =  os.path.join(finaloutputDir,csventryName)
                     df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
                 except:
+                    print("Error in {csvlangName}".format(csvlangName = csvlangName))
                     errorList.append(csvlangName)
-                if errorList:
-                    dferror = pd.DataFrame(errorList, columns = error_columns)
-                    df.to_csv("errors.csv",index=False)
+if errorList:
+    dferror = pd.DataFrame(errorList, columns = error_columns)
+    df.to_csv("errors.csv",index=False)
 
 
 
