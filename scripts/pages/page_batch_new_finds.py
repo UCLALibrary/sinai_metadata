@@ -57,14 +57,14 @@ if textFileInput:
             #get the correct language and entry name that we are using
             langEntryPath = ''
             if ("ara" in csventryName):
-                if ("nfm" in csventryName):
+                if ("nf" in csventryName):
                     #langEntry ='aranf/{name}/'.format(name = csventryName)
                     langEntryPath = os.path.join('aranf',csventryName)
                 else:
                     #langEntry ='ara/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('ara',csventryName)
             elif ("syr" in csventryName):
-                if ("nfm" in csventryName):
+                if ("nf" in csventryName):
                     #langEntry ='syrnf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('syrnf',csventryName)
                 else:
@@ -72,7 +72,7 @@ if textFileInput:
                     langEntryPath =os.path.join('syr',csventryName)
 
             elif ("gre" in csventryName):
-                if ("nfm" in csventryName):
+                if ("nf" in csventryName):
                     #langEntry ='grknf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('grknf',csventryName)
                 else:
