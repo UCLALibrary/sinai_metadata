@@ -142,7 +142,7 @@ if textFileInput:
                     errorList.append(csvlangName)
 if errorList:
     dferror = pd.DataFrame(errorList, columns = error_columns)
-    df.to_csv("errors.csv",index=False)
+    dferror.to_csv("errors.csv",index=False)
 
 
 
