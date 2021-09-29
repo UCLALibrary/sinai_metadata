@@ -12,23 +12,14 @@ sinsplit = '|~|'
 #This is necessary to pull in long values from Pandas tables
 pd.options.display.max_colwidth = 100000
 
-#constants. We could probably pull all of these into a single .json or python file for all of our sctips....
-filenamepreamble = 'Masters/sinaimasters/'
-RightsstatementLocal = "Images: Contact the Monastery of St. Catherine's of the Sinai. Metadata: Unless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
-visibility = 'discovery'
-objectType = 'Page'
-#outputdirectory
-finaloutputDir = input('Path to output directory: ')
+#location of csv file
+csvlocdir = input('Path to csv directory: ')
 #strip starting and trailing spaces so we can simply drag and drop
-finaloutputDir = finaloutputDir.strip()
-#filelist
-textFileInput = input('Path to delivery directory: ')
+csvlocdir = finaloutputDir.strip()
+#image file directory
+imgfiledir = input('Path to image folders: ')
 #strip starting and trailing spaces so we can simply drag and drop
-textFileInput = textFileInput.strip()
-#directory where we get the images
-mainDirectory = input('Image Masters Directory: ')
-#strip starting and trailing spaces so we can simply drag and drop
-mainDirectory = mainDirectory.strip()
+imgfiledir = textFileInput.strip()
 
 #point to the exiftool Path
 exifToolPath = input('exiftool Path (command): ')
@@ -36,56 +27,41 @@ infoDict = {} #Creating the dict to get the metadata tags
 
 i3frange = ''
 
-#iterate through the directory
-if textFileInput:
-    imglister = os.listdir(textFileInput)
-    for csventryName in imglister:
+#iterate through the image directory and then subdirectories as necessary
+if imgfiledir:
+    imglister = os.listdir(imgfiledir)
+    for directoryName in imglister:
         #we only want directories, as there can be extraneous files sometimes
-        if os.path.isdir(os.path.join(textFileInput,csventryName)):
-            print(csventryName)
+        if os.path.isdir(os.path.join(imgfiledir,directoryName)):
+            print(directoryName)
             #grab info for each file in the directory
-            topcolumns = ['File Name','Item Sequence','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source']
+            topcolumns = ['SourceFile','XMP-dc:Title','XMP-exif:Usercomment','LensInfo','LensMake','LensModel','ApertureValue','IPTC:Keywords','XMP-exif:Artist','XMP-dc:Identifier','XMP-dc:Language','XMP-dc:Description','XMP-dc:Publisher','XMP-dc:Rights','XMP-dc:Source','XMP-dc:Subject','XMP-dc:Format','XMP-dc:Relation','XMP-dc:Type']
             #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])
             dfWorkbook = []
             dfendWorkbook =[]
             csvlangName = csventryName.split("_")[0]
 
             #get the correct language and entry name that we are using
-            langEntryPath = ''
+            langEntry = ''
             if ("ara" in csvlangName):
-                if ("nfm" in csvlangName):
-                    #langEntry ='aranf/{name}/'.format(name = csventryName)
-                    langEntryPath = os.path.join('aranf',csventryName)
-                else:
-                    #langEntry ='ara/{name}/'.format(name = csventryName)
-                    langEntryPath =os.path.join('ara',csventryName)
+                langEntry ='ara/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('ara',csventryName)
             elif ("syr" in csvlangName):
-                if ("nfm" in csvlangName):
-                    #langEntry ='syrnf/{name}/'.format(name = csventryName)
-                    langEntryPath =os.path.join('syrnf',csventryName)
-                else:
-                    #langEntry ='syrnf/{name}/'.format(name = csventryName)
-                    langEntryPath =os.path.join('syr',csventryName)
-
+                langEntry ='syr/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('syr',csventryName)
             elif ("gre" in csvlangName):
-                if ("nfm" in csvlangName):
-                    #langEntry ='grknf/{name}/'.format(name = csventryName)
-                    langEntryPath =os.path.join('grknf',csventryName)
-                else:
-                    langEntryPath =os.path.join('grk',csventryName)
-
+                langEntry ='grk/{name}/'.format(name = csventryName)
+                langEntryPath =os.path.join('grk',csventryName)
             else:
-                langEntryPath = ''
+                langEntry = ''
 
             if csvlangName != '':
                 sequenceCounter = 1
-                #imgDirectory = os.path.join(mainDirectory,langEntry)
-                imgDirectory = os.path.join(mainDirectory,langEntryPath)
+                imgDirectory = os.path.join(mainDirectory,langEntry)
                 df = pd.DataFrame(topcolumns)
                 for sinaifilename in os.listdir(imgDirectory):
                     print(sinaifilename)
-                    #entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
-                    entryName = '{filenamepreamble}{langEntryPath}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntryPath, sinaifilename = sinaifilename )
+                    entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
                     #so we can open the image
                     imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
                     #subprocess to run the tool and get the outputs
@@ -95,8 +71,9 @@ if textFileInput:
                         infoDict[line[0].strip()] = line[-1].strip()
                     #get the correct entry name that we are using
                     #now to format the title
-
                     titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
+                    if pd.isna(titlefinal):
+                            titlefinal = ''
                     viewingHint = ''
                     if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
                         viewingHint = 'non-paged'
@@ -117,13 +94,12 @@ if textFileInput:
                                 i3frange = ' '
                         else:
                             i3frange = ''
-                    if 'lcc' not in str(sinaifilename).lower():
-                        if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
-                            dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
-                            sequenceCounter = sequenceCounter + 1
-                        else:
-                            if str(entryName).split('.')[-1] == 'tif':
-                                dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                    if sinaifilename.startswith("sld") and str(entryName).split('.')[-1] == 'tif':
+                        dfWorkbook.append([str(entryName), sequenceCounter,'sinai',titlefinal, i3frange, viewingHint,'','','Page',RightsstatementLocal,infoDict['Source'].strip()])
+                        sequenceCounter = sequenceCounter + 1
+                    else:
+                        if str(entryName).split('.')[-1] == 'tif':
+                            dfendWorkbook.append([str(entryName), 'sinai',titlefinal, i3frange, 'non-paged','','','Page',RightsstatementLocal,infoDict['Source'].strip()])
                 for row in dfendWorkbook:
                     dfWorkbook.append([row[0],sequenceCounter,row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9]])
                     sequenceCounter = sequenceCounter +1
