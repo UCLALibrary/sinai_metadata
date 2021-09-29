@@ -36,6 +36,10 @@ infoDict = {} #Creating the dict to get the metadata tags
 
 i3frange = ''
 
+#create dataframe for any errors
+error_columns = ["entry"]
+errorList = []
+
 #iterate through the directory
 if textFileInput:
     imglister = os.listdir(textFileInput)
@@ -49,10 +53,6 @@ if textFileInput:
             dfWorkbook = []
             dfendWorkbook =[]
             csvlangName = csventryName.split("_")[0]
-
-            #create dataframe for any errors
-            error_columns = ["entry"]
-            errorList = []
 
             #get the correct language and entry name that we are using
             langEntryPath = ''
