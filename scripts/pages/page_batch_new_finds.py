@@ -85,7 +85,7 @@ if textFileInput:
                 for sinaifilename in os.listdir(imgDirectory):
                     print(sinaifilename)
                     #entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
-                    entryName = '{filenamepreamble}{langEntryPath}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntryPath, sinaifilename = sinaifilename )
+                    entryName = '{filenamepreamble}{langEntryPath}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntryPath = langEntryPath, sinaifilename = sinaifilename )
                     #so we can open the image
                     imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
                     #subprocess to run the tool and get the outputs
