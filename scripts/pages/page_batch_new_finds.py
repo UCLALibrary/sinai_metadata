@@ -52,27 +52,27 @@ if textFileInput:
             #dfendWorkbook = pd.DataFrame(columns=['File name','Visibility','Title','IIIF Range','viewingHint','Parent ARK','Item ARK','Object Type','Rights.statementLocal','Source'])
             dfWorkbook = []
             dfendWorkbook =[]
-            csvlangName = csventryName.split("_")[0]
+            #csvlangName = csventryName.split("_")[0]
 
             #get the correct language and entry name that we are using
             langEntryPath = ''
-            if ("ara" in csvlangName):
-                if ("nfm" in csvlangName):
+            if ("ara" in csventryName):
+                if ("nfm" in csventryName):
                     #langEntry ='aranf/{name}/'.format(name = csventryName)
                     langEntryPath = os.path.join('aranf',csventryName)
                 else:
                     #langEntry ='ara/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('ara',csventryName)
-            elif ("syr" in csvlangName):
-                if ("nfm" in csvlangName):
+            elif ("syr" in csventryName):
+                if ("nfm" in csventryName):
                     #langEntry ='syrnf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('syrnf',csventryName)
                 else:
                     #langEntry ='syrnf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('syr',csventryName)
 
-            elif ("gre" in csvlangName):
-                if ("nfm" in csvlangName):
+            elif ("gre" in csventryName):
+                if ("nfm" in csventryName):
                     #langEntry ='grknf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('grknf',csventryName)
                 else:
@@ -82,7 +82,7 @@ if textFileInput:
                 langEntryPath = ''
 
             print(langEntryPath)
-            if csvlangName != '':
+            if langEntryPath != '':
                 try:
                     sequenceCounter = 1
                     #imgDirectory = os.path.join(mainDirectory,langEntry)
