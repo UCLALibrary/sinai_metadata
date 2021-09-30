@@ -7,7 +7,7 @@ import os
 import exifread
 from datetime import datetime
 startTime = datetime.now()
-
+#The standard sinai delimiter
 sinsplit = '|~|'
 #This is necessary to pull in long values from Pandas tables
 pd.options.display.max_colwidth = 100000
@@ -34,7 +34,7 @@ mainDirectory = mainDirectory.strip()
 exifToolPath = input('exiftool Path (command): ')
 infoDict = {} #Creating the dict to get the metadata tags
 
-i3frange = ''
+i3frange = '' #setting this to empty for later use
 
 #create dataframe for any errors
 error_columns = ["entry"]
@@ -55,25 +55,21 @@ if textFileInput:
             #csvlangName = csventryName.split("_")[0]
 
             #get the correct language and entry name that we are using
+            #check for the language, then check to see if it is new finds or not (as these are in different directories)
+            #this section will need to be updated if the directory structure changes
             langEntryPath = ''
             if ("ara" in csventryName):
                 if ("nf" in csventryName):
-                    #langEntry ='aranf/{name}/'.format(name = csventryName)
                     langEntryPath = os.path.join('aranf',csventryName)
                 else:
-                    #langEntry ='ara/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('ara',csventryName)
             elif ("syr" in csventryName):
                 if ("nf" in csventryName):
-                    #langEntry ='syrnf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('syrnf',csventryName)
                 else:
-                    #langEntry ='syrnf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('syr',csventryName)
-
             elif ("gre" in csventryName):
                 if ("nf" in csventryName):
-                    #langEntry ='grknf/{name}/'.format(name = csventryName)
                     langEntryPath =os.path.join('grknf',csventryName)
                 else:
                     langEntryPath =os.path.join('grk',csventryName)
@@ -84,13 +80,11 @@ if textFileInput:
             print(langEntryPath)
             if langEntryPath != '':
                 try:
-                    sequenceCounter = 1
-                    #imgDirectory = os.path.join(mainDirectory,langEntry)
+                    sequenceCounter = 1 #needed for numbering
                     imgDirectory = os.path.join(mainDirectory,langEntryPath)
                     df = pd.DataFrame(topcolumns)
                     for sinaifilename in os.listdir(imgDirectory):
                         print(sinaifilename)
-                        #entryName = '{filenamepreamble}{langEntry}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntry = langEntry, sinaifilename = sinaifilename )
                         entryName = '{filenamepreamble}{langEntryPath}{sinaifilename}'.format(filenamepreamble = filenamepreamble,langEntryPath = langEntryPath, sinaifilename = sinaifilename )
                         #so we can open the image
                         imgPath = os.path.join(mainDirectory,langEntryPath,sinaifilename)
@@ -99,14 +93,11 @@ if textFileInput:
                         for tag in process.stdout:
                             line = tag.strip().split(':')
                             infoDict[line[0].strip()] = line[-1].strip()
-                        #get the correct entry name that we are using
                         #now to format the title
-
                         titlefinal = infoDict['Title'].replace(infoDict['Source'],'').strip()
                         viewingHint = ''
                         if titlefinal == 'Spine' or titlefinal == 'Fore edge' or titlefinal == 'Head' or titlefinal == 'Tail':
                             viewingHint = 'non-paged'
-
                         #we need to add a .f to titles that are folios
                         if (sinaifilename.split("_")[0] == 'sld'):
                             if sinaifilename.split("_")[3] == 'a' or sinaifilename.split("_")[3] == 'b':
@@ -139,16 +130,15 @@ if textFileInput:
                     fileOutName =  os.path.join(finaloutputDir,csventryName)
                     df.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
                 except:
+                    #if there is an error in matching a delivery directory to an image directory, list the delivery directory here
                     print("Error in {csventryName}".format(csventryName = csventryName))
                     errorList.append(csventryName)
+#now output an error file if there are errors
 if errorList:
     errorName = "errors"
     fileOutName =  os.path.join(finaloutputDir,errorName)
     dferror = pd.DataFrame(errorList, columns = error_columns)
     dferror.to_csv("{fileOutName}.csv".format(fileOutName = fileOutName),index=False)
 
-
-
-
-
+#show script runtime
 print(datetime.now() - startTime)
