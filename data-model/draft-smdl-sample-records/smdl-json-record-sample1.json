@@ -1,0 +1,447 @@
+{
+  "id": "ark:/21198/z1x07bdf",
+  "type": "Manuscript Object",
+  "label": "Sinai Syriac 2A",
+  "form": "Codex",
+  "has_binding": true,
+  "binding_note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
+  "condition_note": "",
+  "references"://could give these types as well (e.g., 'catalogue entry', 'facsimile', 'intro to an edition', etc.)
+    [
+      {
+        "citation": "Lewis",
+        "cited_range": [{"unit": "p", "range": "1-2"}]
+      },
+      {
+        "citation": "Kamil",
+        "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+      },
+      {
+        "citation": "Géhin",
+        "cited_range": [{"unit": "p", "range": "28-30"}]
+      }
+    ],
+  "bibliography": ["Brock"],//may need to make these sub-objects rather than just a list of abbreviations/Zotero IDs
+  "language": ["Syriac"],
+  "hand_description": [//should these refer in some way to the corresponding codicological units or at least the folios of those units to give a sense of the extent of each hand?
+    {
+      "writing_system": ["Syriac"],
+      "script": ["Estrangela"],
+      "ink_color": "black",
+      "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
+      "is_garshuni": false
+    },
+    {
+      "writing_system": ["Syriac"],
+      "script": ["Estrangela"],
+      "ink_color": "black",
+      "note": ["Slightly more cursive than the preceding unit"],
+      "is_garshuni": false
+    }
+  ],
+  "extent": "180 ff.",
+  "weight": "3788.3 g",
+  "dimensions": [
+    {
+      "type": "object",
+      "value": "328 x 255 x 97 mm"
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "collection": "Old Collection",
+  "repository": "Saint Catherine (Monastery : Mount Sinai)",//should this be a place record instead?
+  "provenance": ["Created and remained in Saint Catherine's Monastery"],
+  "viscodex": "",
+  "contributor": ["gkessel"],
+  "codicological_units":
+    [{
+      "id": "ark:/21198/a310jfBd",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 2A, ff. 1-152",
+      "origin_date": "6th c. CE",
+      "associated_persons"://how do we link these persons with the evidence for them (e.g., in the doxology or colophon)
+        [{
+          "preferred_name": "Jacob bar Basil",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/1",
+          "name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
+          "name": "Ya'qub bar d-Basil",
+          "role": "unknown"
+        },
+        {
+          "preferred_name": "Bar-Shabbon bar Basil",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/2",
+          "name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
+          "name": "Bar-Shabon bar d-Basil",
+          "role": "unknown"
+        }],
+      "associated_places":
+      [{
+        "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+        "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+        "name_NS": "ܛܘܪ ܣܝܢܝ",
+        "name": "Mount Sinai",
+        "role": "origin-place"
+        },
+        {
+          "preferred_name": "Yw (village)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/2",
+          "name_NS": "ܐܝܘ ܩܪܝܬܐ",
+          "name": "The Village Yw",
+          "role": "unknown",
+          "note": "Provided in connection with Jacob and Bar-Shabbon in the doxology on f. 114v"
+          }],
+        "language": ["Syriac"],
+        "hand_description": [//can a single codicological unit have multiple hands? If two scribes were commissioned to work on the same manuscript, does that constitute a single unit or two units?
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
+            "is_garshuni": false
+          }],
+      "condition_note": "Quire signatures at beginning and end of most quires. Quire 20 is paper.",
+      "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)"],
+      "references":
+        [
+          {
+            "citation": "Lewis",
+            "cited_range": [{"unit": "p", "range": "1-2"}]
+          },
+          {
+            "citation": "Kamil",
+            "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+          },
+          {
+            "citation": "Géhin",
+            "cited_range": [{"unit": "p", "range": "28-30"}]
+          }
+        ],
+      "bibliography": [],
+      "extent": "152ff",
+      "dimensions": [
+        {
+          "type": "average-folio",
+          "value": "320 x 250 x 92 mm"
+        }
+      ],
+      "collation_formula": "Pastedown+flyleaf, Quire 1: 1x10 (10), Quire 2: 1x6 (16), Quire 3: 1x8 (24), Quire 4: 1+1x8 (33), Quires 5-12: 8x8 (97), Quire 13: 1x8+1 (106), Quire 14: 1x6+1+1 (114), Quire 15: 1x8 (122), Quire 16: 6x1 (128), Quire 17: 1x6+1 (135), Quire 18: 1x6+1 (142), Quire 19: 1x6 (148), Quire 20 (paper): 1x4 (152).",
+      "collation_note": [""],
+      "decorations": ["Geometric decorations surround the rubrics (e.g., f. 114r)."],
+      "page_layout": [{"columns": 1, "notes": [""]}],
+      "colophon": {},
+      "provenance": ["Created at Sinai, and remained there."],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["gkessel"],
+      "parent_objects": ["ark:/21198/z1x07bdf"],
+      "textual_artifacts":
+        [{
+          "id": "ark:/21198/adf20c1f",
+          "label": "Sinai Syriac 2A, ff. 1-152v, Gospels",
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/1",
+              "preferred_title": "The Gospels, according to the Peshitta Version",
+              "original_lange": "Syriac",
+              "creation_date": "3rd c. CE",
+              "genre": "Bibl, NT"
+            },
+          "author": [],
+          "attributed_author": [{"author_name_ns": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ", "author_name": "Qadisho Mar Yuhanon"}],// maybe this person should be listed as an associated person with a role of attributed_author?
+          "rubric": {}, //rubrics, incipits, quotes, explicits, and final rubrics are in many ways all types of excerpts from the artifact, so we could treat these similarly to how we do associated persons (with a type rather than a role and shared properties like transcription, translation, location, and note)
+          "incipit": {},
+          "quotes": [],
+          "explicit": {"transcription": "ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ ", "translation": "There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written.", "location": "f. 152v"},
+          "final_rubric": {"transcription": "ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ", "translation": "Finished is the Gospel of Saint John which he spoke in Greek in Ephesus.", "location": "f. 152v"},
+          "associated_persons": [],
+          "defective": true,
+          "condition_note": "Incomplete at the beginning. Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana).",
+          "language": "Syriac",
+          "hand_description": [//do textual artifacts need hand descriptions? I suppose if a codicological unit can have multiple hands, then we'd maybe want to distinguish at the artifact level as well
+            {
+              "writing_system": ["Syriac"],
+              "script": ["Estrangela"],
+              "ink_color": "black",
+              "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
+              "is_garshuni": false
+            }],
+          "toc": ["Matthew, f. 1r-32v (incomplete at the beginning)", "Mark, f. 32v-70r", "Luke, f. 70r-105v", "John, f. 106r-152v"],
+          //note: one thought I had was to list the textual artifacts we identify as linear children of the codicological unit. We could then use the toc key:value pair to either identify sub-texts with simple string arrays or have the array be URIs/ARK IDs for the nested child textual artificats
+          // further, if we wanted to avoid overwhelming the SMDL user, we could convert the nested IDs into simple title, author, f. range strings that are indented as an outline and only show the top-most textual artifacts. We should discuss this.
+          "references":
+            [
+              {
+                "citation": "Lewis",
+                "cited_range": [{"unit": "p", "range": "1-2"}]
+              },
+              {
+                "citation": "Kamil",
+                "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+              },
+              {
+                "citation": "Géhin",
+                "cited_range": [{"unit": "p", "range": "28-30"}]
+              }
+            ],
+          "bibliography": ["Kamil"],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["gkessel"],
+          "parent_objects": ["ark:/21198/a310jfBd"]
+        }]
+    },
+    {
+      "id": "ark:/21198/t493kf6d",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 2A, ff. 153-179",
+      "origin_date": "6th c. CE",
+      "associated_persons":
+        [{
+          "preferred_name": "John bar Me'sam",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/3",
+          "name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
+          "name": "Dayro Yohanan bar Me'sam",
+          "role": "scribe"
+        }],
+      "associated_places":
+      [{
+        "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+        "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+        "name_NS": "ܛܘܪ ܣܝܢܝ",
+        "name": "Mount Sinai",
+        "role": "origin-place"
+        }],
+        "language": ["Syriac"],
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "note": ["Slightly more cursive than the preceding unit"],
+            "is_garshuni": false
+          }],
+      "condition_note": "Quire signatures at beginning and end of most quires.",
+      "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)"],
+      "references":
+        [
+          {
+            "citation": "Lewis",
+            "cited_range": [{"unit": "p", "range": "1-2"}]
+          },
+          {
+            "citation": "Kamil",
+            "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+          },
+          {
+            "citation": "Géhin",
+            "cited_range": [{"unit": "p", "range": "28-30"}]
+          }
+        ],
+      "bibliography": [],
+      "extent": "180ff",
+      "dimensions": [
+        {
+          "type": "average-folio",
+          "value": "320 x 250 x 92 mm"
+        }
+      ],
+      "collation_formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",
+      "collation_note": [""],
+      "decorations": ["Geometric decorations surround the rubrics on f. 179."],
+      "page_layout": [{"columns": 2, "notes": []}],
+      "colophon": {"location": "179r", "transcription": "ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…", "translation": "With the Lord's aid is completed the Synaxarion for..."},
+      "provenance": ["Created at Sinai, and remained there."],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["gkessel"],
+      "parent_objects": ["ark:/21198/z1x07bdf"],
+      "textual_artifacts":
+      [{
+        "id": "ark:/21198/bef15e4p",
+        "label": "Sinai Syriac 2A, ff. 153r-165v, Lectionary Table",
+        "work":
+          {
+            "id": "https://sinaimanuscripts/library.ucla.edu/work/2",
+            "preferred_title": "Lectionary Table",
+            "original_lange": "Syriac",
+            "creation_date": "",
+            "genre": "Lectionaries"
+          },
+        "author": [],
+        "attributed_author": [],
+        "rubric": {"transcription": "ܒܫܡܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܟܬܒܝܢܢ ܡܬܝܕܥܢܬܐ ܡܐ ܕܐܝܬ ܒܟܬܒܐ ܗܢܐ ܩܕܝܫܐ. ܡܫܬܡܠ ܥܠ ܟܠܗ̇ ܫܢܬܐ", "translation": "In the name of the Holy Trinity we have written knowingly what is in this holy book. Services for the whole year", "location": "f. 153r"},
+        "incipit": {},
+        "quotes": [],
+        "explicit": {},
+        "final_rubric": {},
+        "associated_persons": [],
+        "defective": false,
+        "condition_note": "",
+        "language": "Syriac",
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "note": ["Slightly more cursive than the preceding unit"],
+            "is_garshuni": false
+          }],
+        "toc": [],
+        "references":
+          [
+            {
+              "citation": "Lewis",
+              "cited_range": [{"unit": "p", "range": "1-2"}]
+            },
+            {
+              "citation": "Kamil",
+              "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+            },
+            {
+              "citation": "Géhin",
+              "cited_range": [{"unit": "p", "range": "28-30"}]
+            }
+          ],
+        "bibliography": ["Kamil"],//for textual artifacts on the SMDL, we should probably import bibliography regarding the work which the ta is a witness for? (i.e., we'll likely have bibliography listed under the work record that we'll want to display to the user on SMDL when they're looking at the textual artifact)
+        "iiif": {
+          "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+          "text_direction": "right-to-left",
+          "viewing_hint": "paged",
+          "range": ""
+        },
+        "contributor": ["gkessel"],
+        "parent_objects": ["ark:/21198/t493kf6d"]
+      },
+      {
+        "id": "ark:/21198/dfat3415s",
+        "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
+        "work":
+          {
+            "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
+            "preferred_title": "Lectionary for the Whole Year",
+            "original_lange": "Syriac",
+            "creation_date": "",
+            "genre": "Lectionaries"
+          },
+        "author": [],
+        "attributed_author": [],
+        "rubric": {},
+        "incipit": {},
+        "quotes": [],
+        "explicit": {},
+        "final_rubric": {},
+        "associated_persons": [],
+        "defective": false,
+        "condition_note": "",
+        "language": "Syriac",
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "note": ["Slightly more cursive than the preceding unit"],
+            "is_garshuni": false
+          }],
+          "toc": ["September, f. 166r", "October, f. 166v", "November, 167r", "December, 167r"],
+        "references":
+          [
+            {
+              "citation": "Lewis",
+              "cited_range": [{"unit": "p", "range": "1-2"}]
+            },
+            {
+              "citation": "Kamil",
+              "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+            },
+            {
+              "citation": "Géhin",
+              "cited_range": [{"unit": "p", "range": "28-30"}]
+            }
+          ],
+        "bibliography": ["Kamil"],
+        "iiif": {
+          "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+          "text_direction": "right-to-left",
+          "viewing_hint": "paged",
+          "range": ""
+        },
+        "contributor": ["gkessel"],
+        "parent_objects": ["ark:/21198/t493kf6d"]
+        },
+        {
+          "id": "ark:/21198/dfat3415s",
+          "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
+              "preferred_title": "Lectionary for the Whole Year",
+              "original_lange": "Syriac",
+              "creation_date": "",
+              "genre": "Lectionaries"
+            },
+          "author": [],
+          "attributed_author": [],
+          "rubric": {},
+          "incipit": {},
+          "quotes": [],
+          "explicit": {},
+          "final_rubric": {},
+          "associated_persons": [],
+          "defective": false,
+          "condition_note": "",
+          "language": "Syriac",
+          "hand_description": [
+            {
+              "writing_system": ["Syriac"],
+              "script": ["Estrangela"],
+              "ink_color": "black",
+              "note": ["Slightly more cursive than the preceding unit"],
+              "is_garshuni": false
+            }],
+            "toc": ["First sunday of the nativity, f. 166r"],
+          "references":
+            [
+              {
+                "citation": "Lewis",
+                "cited_range": [{"unit": "p", "range": "1-2"}]
+              },
+              {
+                "citation": "Kamil",
+                "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
+              },
+              {
+                "citation": "Géhin",
+                "cited_range": [{"unit": "p", "range": "28-30"}]
+              }
+            ],
+          "bibliography": ["Kamil"],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["gkessel"],
+          "parent_objects": ["ark:/21198/t493kf6d"]
+          }]
+    }]
+}

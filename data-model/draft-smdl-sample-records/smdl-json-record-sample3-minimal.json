@@ -1,0 +1,124 @@
+{
+  "id": "ark:/21198/55555555",//this record is an exmaple of the minimal data we would want to ensure each record has
+  "type": "Manuscript Object",
+  "label": "Sinai Syriac 5555",
+  "form": "Codex",
+  "has_binding": true,
+  "binding_note": [""],
+  "condition_note": "",
+  "references":[],
+  "bibliography": [],
+  "language": ["Syriac"],
+  "hand_description": [
+    {
+      "writing_system": ["Syriac"],
+      "script": ["Estrangela"],
+      "ink_color": "",
+      "note": [""],
+      "is_garshuni": false
+    }
+  ],
+  "extent": "119 ff.",
+  "weight": "1228 g",//not necessary but every record will have this, right?
+  "dimensions": [//not necessary but every record will have this, right?
+    {
+      "type": "object",
+      "value": "249 x 178 x 70.0 mm"
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2F55555555/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "collection": "Old Collection",
+  "repository": "Saint Catherine (Monastery : Mount Sinai)",
+  "provenance": [],
+  "viscodex": "",
+  "contributor": ["wpotter"],
+  "codicological_units":
+    [{
+      "id": "ark:/21198/666666666",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 555, ff. 1-119",
+      "origin_date": "",
+      "associated_persons":
+        [],
+      "associated_places":
+      [],
+        "language": ["Syriac"],
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "",
+            "note": [],
+            "is_garshuni": false
+          }],
+      "condition_note": "",
+      "features": [],
+      "references": [],
+      "bibliography": [],
+      "extent": "119ff",
+      "dimensions": [],
+      "collation_formula": "",
+      "collation_note": [""],
+      "decorations": [],
+      "page_layout": [],
+      "colophon": {},
+      "provenance": [""],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2F666666666/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["wpotter"],
+      "parent_objects": ["ark:/21198/55555555"],
+      "textual_artifacts":
+        [{
+          "id": "ark:/21198/77777777",
+          "label": "Sinai Syriac 555, ff. 1-119, The Book of Job, according to the Peshitta",
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/10",
+              "preferred_title": "The Book of Job, according to the Peshitta",
+              "original_lange": "Syriac",
+              "creation_date": "3rd c. CE",
+              "genre": "Bible, OT"
+            },
+          "author": [],
+          "attributed_author": [],
+          "rubric": {},
+          "incipit": {},
+          "quotes": [],
+          "explicit": {},
+          "final_rubric": {},
+          "associated_persons": [],
+          "defective": true,
+          "condition_note": "",
+          "language": "Syriac",
+          "hand_description": [
+            {
+              "writing_system": ["Syriac"],
+              "script": ["Estrangela"],
+              "ink_color": "",
+              "note": [],
+              "is_garshuni": false
+            }],
+          "toc": [],
+          "references":[],
+          "bibliography": [],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2F77777777/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["wpotter"],
+          "parent_objects": ["ark:/21198/666666666"]
+        }]
+    }]
+}
