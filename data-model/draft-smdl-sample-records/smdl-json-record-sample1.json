@@ -6,39 +6,10 @@
   "has_binding": true,
   "binding_note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
   "condition_note": "",
-  "references"://could give these types as well (e.g., 'catalogue entry', 'facsimile', 'intro to an edition', etc.)
-    [
-      {
-        "citation": "Lewis",
-        "cited_range": [{"unit": "p", "range": "1-2"}]
-      },
-      {
-        "citation": "Kamil",
-        "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-      },
-      {
-        "citation": "Géhin",
-        "cited_range": [{"unit": "p", "range": "28-30"}]
-      }
-    ],
-  "bibliography": ["Brock"],//may need to make these sub-objects rather than just a list of abbreviations/Zotero IDs
+  "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+  "bibliography": ["Brock 1995, p. 30"],
   "language": ["Syriac"],
-  "hand_description": [//should these refer in some way to the corresponding codicological units or at least the folios of those units to give a sense of the extent of each hand?
-    {
-      "writing_system": ["Syriac"],
-      "script": ["Estrangela"],
-      "ink_color": "black",
-      "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
-      "is_garshuni": false
-    },
-    {
-      "writing_system": ["Syriac"],
-      "script": ["Estrangela"],
-      "ink_color": "black",
-      "note": ["Slightly more cursive than the preceding unit"],
-      "is_garshuni": false
-    }
-  ],
+  "writing_system_and_script": ["Syriac:Estrangela"],
   "extent": "180 ff.",
   "weight": "3788.3 g",
   "dimensions": [
@@ -63,6 +34,14 @@
       "id": "ark:/21198/a310jfBd",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 2A, ff. 1-152",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "1"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "152"
+      },
       "origin_date": "6th c. CE",
       "associated_persons"://how do we link these persons with the evidence for them (e.g., in the doxology or colophon)
         [{
@@ -70,57 +49,41 @@
           "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/1",
           "name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
           "name": "Ya'qub bar d-Basil",
-          "role": "unknown"
+          "souce": "Attested in the doxology on f. 114v"
         },
         {
           "preferred_name": "Bar-Shabbon bar Basil",
           "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/2",
           "name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
           "name": "Bar-Shabon bar d-Basil",
-          "role": "unknown"
+          "souce": "Attested in the doxology on f. 114v"
         }],
-      "associated_places":
-      [{
-        "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
-        "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
-        "name_NS": "ܛܘܪ ܣܝܢܝ",
-        "name": "Mount Sinai",
-        "role": "origin-place"
-        },
+      "origin_place":
         {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "name_NS": "ܛܘܪ ܣܝܢܝ",
+          "name": "Mount Sinai"
+          },
+      "associated_places":
+      [        {
           "preferred_name": "Yw (village)",
           "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/2",
           "name_NS": "ܐܝܘ ܩܪܝܬܐ",
           "name": "The Village Yw",
-          "role": "unknown",
-          "note": "Provided in connection with Jacob and Bar-Shabbon in the doxology on f. 114v"
+          "source": "Provided in connection with Jacob and Bar-Shabbon in the doxology on f. 114v"
           }],
         "language": ["Syriac"],
-        "hand_description": [//can a single codicological unit have multiple hands? If two scribes were commissioned to work on the same manuscript, does that constitute a single unit or two units?
+        "hand_description": [
           {
             "writing_system": ["Syriac"],
             "script": ["Estrangela"],
             "ink_color": "black",
-            "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
-            "is_garshuni": false
+            "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."]
           }],
       "condition_note": "Quire signatures at beginning and end of most quires. Quire 20 is paper.",
       "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)"],
-      "references":
-        [
-          {
-            "citation": "Lewis",
-            "cited_range": [{"unit": "p", "range": "1-2"}]
-          },
-          {
-            "citation": "Kamil",
-            "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-          },
-          {
-            "citation": "Géhin",
-            "cited_range": [{"unit": "p", "range": "28-30"}]
-          }
-        ],
+      "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
       "bibliography": [],
       "extent": "152ff",
       "dimensions": [
@@ -147,6 +110,7 @@
       "textual_artifacts":
         [{
           "id": "ark:/21198/adf20c1f",
+          "type": "Textual Artifact",
           "label": "Sinai Syriac 2A, ff. 1-152v, Gospels",
           "work":
             {
@@ -157,8 +121,8 @@
               "genre": "Bibl, NT"
             },
           "author": [],
-          "attributed_author": [{"author_name_ns": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ", "author_name": "Qadisho Mar Yuhanon"}],// maybe this person should be listed as an associated person with a role of attributed_author?
-          "rubric": {}, //rubrics, incipits, quotes, explicits, and final rubrics are in many ways all types of excerpts from the artifact, so we could treat these similarly to how we do associated persons (with a type rather than a role and shared properties like transcription, translation, location, and note)
+          "attributed_author": [{"author_name_ns": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ", "author_name": "Qadisho Mar Yuhanon"}],
+          "rubric": {},
           "incipit": {},
           "quotes": [],
           "explicit": {"transcription": "ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ ", "translation": "There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written.", "location": "f. 152v"},
@@ -167,33 +131,11 @@
           "defective": true,
           "condition_note": "Incomplete at the beginning. Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana).",
           "language": "Syriac",
-          "hand_description": [//do textual artifacts need hand descriptions? I suppose if a codicological unit can have multiple hands, then we'd maybe want to distinguish at the artifact level as well
-            {
-              "writing_system": ["Syriac"],
-              "script": ["Estrangela"],
-              "ink_color": "black",
-              "note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
-              "is_garshuni": false
-            }],
           "toc": ["Matthew, f. 1r-32v (incomplete at the beginning)", "Mark, f. 32v-70r", "Luke, f. 70r-105v", "John, f. 106r-152v"],
           //note: one thought I had was to list the textual artifacts we identify as linear children of the codicological unit. We could then use the toc key:value pair to either identify sub-texts with simple string arrays or have the array be URIs/ARK IDs for the nested child textual artificats
           // further, if we wanted to avoid overwhelming the SMDL user, we could convert the nested IDs into simple title, author, f. range strings that are indented as an outline and only show the top-most textual artifacts. We should discuss this.
-          "references":
-            [
-              {
-                "citation": "Lewis",
-                "cited_range": [{"unit": "p", "range": "1-2"}]
-              },
-              {
-                "citation": "Kamil",
-                "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-              },
-              {
-                "citation": "Géhin",
-                "cited_range": [{"unit": "p", "range": "28-30"}]
-              }
-            ],
-          "bibliography": ["Kamil"],
+          "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+          "bibliography": ["Kamil 1970, p. 152, number 38"],
           "iiif": {
             "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
             "text_direction": "right-to-left",
@@ -208,49 +150,43 @@
       "id": "ark:/21198/t493kf6d",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 2A, ff. 153-179",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "153"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "179"
+      },
       "origin_date": "6th c. CE",
-      "associated_persons":
+      "scribe":
         [{
           "preferred_name": "John bar Me'sam",
           "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/3",
           "name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
           "name": "Dayro Yohanan bar Me'sam",
-          "role": "scribe"
+          "source": "Colophon, f. 179r"
         }],
-      "associated_places":
-      [{
-        "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
-        "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
-        "name_NS": "ܛܘܪ ܣܝܢܝ",
-        "name": "Mount Sinai",
-        "role": "origin-place"
-        }],
+      "origin_place":
+        {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "name_NS": "ܛܘܪ ܣܝܢܝ",
+          "name": "Mount Sinai",
+          "soruce": "Colophon, f. 179r"
+          },
+      "associated_places": [],
         "language": ["Syriac"],
         "hand_description": [
           {
             "writing_system": ["Syriac"],
             "script": ["Estrangela"],
             "ink_color": "black",
-            "note": ["Slightly more cursive than the preceding unit"],
-            "is_garshuni": false
+            "note": ["Slightly more cursive than the preceding unit"]
           }],
       "condition_note": "Quire signatures at beginning and end of most quires.",
       "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)"],
-      "references":
-        [
-          {
-            "citation": "Lewis",
-            "cited_range": [{"unit": "p", "range": "1-2"}]
-          },
-          {
-            "citation": "Kamil",
-            "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-          },
-          {
-            "citation": "Géhin",
-            "cited_range": [{"unit": "p", "range": "28-30"}]
-          }
-        ],
+      "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
       "bibliography": [],
       "extent": "180ff",
       "dimensions": [
@@ -277,6 +213,7 @@
       "textual_artifacts":
       [{
         "id": "ark:/21198/bef15e4p",
+        "type": "Textual Artifact",
         "label": "Sinai Syriac 2A, ff. 153r-165v, Lectionary Table",
         "work":
           {
@@ -297,31 +234,9 @@
         "defective": false,
         "condition_note": "",
         "language": "Syriac",
-        "hand_description": [
-          {
-            "writing_system": ["Syriac"],
-            "script": ["Estrangela"],
-            "ink_color": "black",
-            "note": ["Slightly more cursive than the preceding unit"],
-            "is_garshuni": false
-          }],
         "toc": [],
-        "references":
-          [
-            {
-              "citation": "Lewis",
-              "cited_range": [{"unit": "p", "range": "1-2"}]
-            },
-            {
-              "citation": "Kamil",
-              "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-            },
-            {
-              "citation": "Géhin",
-              "cited_range": [{"unit": "p", "range": "28-30"}]
-            }
-          ],
-        "bibliography": ["Kamil"],//for textual artifacts on the SMDL, we should probably import bibliography regarding the work which the ta is a witness for? (i.e., we'll likely have bibliography listed under the work record that we'll want to display to the user on SMDL when they're looking at the textual artifact)
+        "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+        "bibliography": [],
         "iiif": {
           "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
           "text_direction": "right-to-left",
@@ -333,6 +248,7 @@
       },
       {
         "id": "ark:/21198/dfat3415s",
+        "type": "Textual Artifact",
         "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
         "work":
           {
@@ -353,31 +269,9 @@
         "defective": false,
         "condition_note": "",
         "language": "Syriac",
-        "hand_description": [
-          {
-            "writing_system": ["Syriac"],
-            "script": ["Estrangela"],
-            "ink_color": "black",
-            "note": ["Slightly more cursive than the preceding unit"],
-            "is_garshuni": false
-          }],
           "toc": ["September, f. 166r", "October, f. 166v", "November, 167r", "December, 167r"],
-        "references":
-          [
-            {
-              "citation": "Lewis",
-              "cited_range": [{"unit": "p", "range": "1-2"}]
-            },
-            {
-              "citation": "Kamil",
-              "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-            },
-            {
-              "citation": "Géhin",
-              "cited_range": [{"unit": "p", "range": "28-30"}]
-            }
-          ],
-        "bibliography": ["Kamil"],
+          "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+          "bibliography": [],
         "iiif": {
           "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
           "text_direction": "right-to-left",
@@ -389,6 +283,7 @@
         },
         {
           "id": "ark:/21198/dfat3415s",
+          "type": "Textual Artifact",
           "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
           "work":
             {
@@ -409,31 +304,9 @@
           "defective": false,
           "condition_note": "",
           "language": "Syriac",
-          "hand_description": [
-            {
-              "writing_system": ["Syriac"],
-              "script": ["Estrangela"],
-              "ink_color": "black",
-              "note": ["Slightly more cursive than the preceding unit"],
-              "is_garshuni": false
-            }],
             "toc": ["First sunday of the nativity, f. 166r"],
-          "references":
-            [
-              {
-                "citation": "Lewis",
-                "cited_range": [{"unit": "p", "range": "1-2"}]
-              },
-              {
-                "citation": "Kamil",
-                "cited_range": [{"unit": "p", "range": "152"}, {"unit": "number", "range": "38"}]
-              },
-              {
-                "citation": "Géhin",
-                "cited_range": [{"unit": "p", "range": "28-30"}]
-              }
-            ],
-          "bibliography": ["Kamil"],
+            "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+            "bibliography": [],
           "iiif": {
             "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
             "text_direction": "right-to-left",
@@ -444,4 +317,4 @@
           "parent_objects": ["ark:/21198/t493kf6d"]
           }]
     }]
-}
+}//NOTE: a change log will accompany these records with dated revisions to the data

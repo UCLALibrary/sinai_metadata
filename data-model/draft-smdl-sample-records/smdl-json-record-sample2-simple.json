@@ -5,30 +5,11 @@
   "form": "Codex",
   "has_binding": true,
   "binding_note": ["Leather on wood showing much wear, back cover missing. Spine slightly damaged."],
-  "condition_note": "Fintal two leaves quite torn due to lack of back cover. The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript.",
-  // This one is interesting since Gehin gives info about the colophon, etc. which appear in the fragments in Milan. How do we deal with codicological units that are then fragmentary? The 'production' and 'circulation' distinction I've had in my head seems to break down here.
-  "references":
-    [
-      {
-        "citation": "Kamil",
-        "cited_range": [{"unit": "p", "range": "153"}, {"unit": "number", "range": "56"}]
-      },
-      {
-        "citation": "Géhin",
-        "cited_range": [{"unit": "p", "range": "40-41"}]
-      }
-    ],
-  "bibliography": ["Brock"],
+  "condition_note": "Final two leaves quite torn due to lack of back cover.",
+  "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+  "bibliography": ["Brock 1995, p. 23"],
   "language": ["Syriac"],
-  "hand_description": [
-    {
-      "writing_system": ["Syriac"],
-      "script": ["Estrangela"],
-      "ink_color": "black",
-      "note": [""],
-      "is_garshuni": false
-    }
-  ],
+  "writing_system_and_script": ["Syriac:Estrangela"],
   "extent": "119 ff.",
   "weight": "1228 g",
   "dimensions": [
@@ -53,6 +34,14 @@
       "id": "ark:/21198/xyd42035",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 9, ff. 1-119",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 9",
+        "locus": "1"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 9",
+        "locus": "119"
+      },
       "origin_date": "8th c. CE",
       "associated_persons":
         [],
@@ -64,23 +53,12 @@
             "writing_system": ["Syriac"],
             "script": ["Estrangela"],
             "ink_color": "black",
-            "note": [],
-            "is_garshuni": false
+            "note": []
           }],
-      "condition_note": "Final two leaves quite torn.",
+      "condition_note": "The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript.",
       "features": ["Rubrication", "Marginalia"],
-      "references":
-        [
-          {
-            "citation": "Kamil",
-            "cited_range": [{"unit": "p", "range": "153"}, {"unit": "number", "range": "56"}]
-          },
-          {
-            "citation": "Géhin",
-            "cited_range": [{"unit": "p", "range": "40-41"}]
-          }
-        ],
-      "bibliography": ["Brock"],
+      "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+      "bibliography": ["Brock 1995, p. 23"],
       "extent": "119ff",
       "dimensions": [
         {
@@ -106,6 +84,7 @@
       "textual_artifacts":
         [{
           "id": "ark:/21198/dfdi53234x",
+          "type": "Textual Artifact",
           "label": "Sinai Syriac 9, ff. 1-119, Basil of Caesarea: Hexaemeron",
           "work":
             {
@@ -128,29 +107,11 @@
           "final_rubric": {},
           "associated_persons": [],
           "defective": true,
-          "condition_note": "Incomplete at the end. The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript.",//I think one way to deal with the fragments is to say that the codicological unit is the composite of the various fragments (so we can label it Sinai Syraic 9 + London Bl Or. 8608/I...etc. for the unit level), and it has 5 different parent objects (where each fragment is its own parent object). And then maybe we'd have a hypothetical reconstruction of the rebound fragments as a separate parent object. We would need some way to indicate the proper sequence of the parent objects I think, or maybe that is taken care of in the hypothetical reconstruction?
+          "condition_note": "Incomplete at the end. The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript.",
           "language": "Syriac",
-          "hand_description": [
-            {
-              "writing_system": ["Syriac"],
-              "script": ["Estrangela"],
-              "ink_color": "black",
-              "note": [],
-              "is_garshuni": false
-            }],
           "toc": ["Memra 1, f. 2v", "Memra 2, f. 18r", "Memra 3, f. 30v", "Memra 8, f. 98v", "Memra 9, f. 112v"],
-          "references":
-            [
-              {
-                "citation": "Kamil",
-                "cited_range": [{"unit": "p", "range": "153"}, {"unit": "number", "range": "56"}]
-              },
-              {
-                "citation": "Géhin",
-                "cited_range": [{"unit": "p", "range": "40-41"}]
-              }
-            ],
-          "bibliography": ["Mingana III", "Vergani 2016"],
+          "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+          "bibliography": ["Mingana III, p. 124", "Vergani 2016"],
           "iiif": {
             "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
             "text_direction": "right-to-left",
@@ -161,4 +122,4 @@
           "parent_objects": ["ark:/21198/xyd42035"]
         }]
     }]
-}
+}//NOTE: a change log will accompany these records with dated revisions to the data
