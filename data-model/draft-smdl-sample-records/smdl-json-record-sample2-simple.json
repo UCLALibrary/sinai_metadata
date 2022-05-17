@@ -1,0 +1,125 @@
+{
+  "id": "ark:/21198/Fz18k8ttz",
+  "type": "Manuscript Object",
+  "shelfmark": "Sinai Syriac 9",
+  "form": "Codex",
+  "has_binding": true,
+  "binding_note": ["Leather on wood showing much wear, back cover missing. Spine slightly damaged."],
+  "condition_note": "Final two leaves quite torn due to lack of back cover.",
+  "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+  "bibliography": ["Brock 1995, p. 23"],
+  "language": ["Syriac"],
+  "writing_system_and_script": ["Syriac:Estrangela"],
+  "extent": "119 ff.",
+  "weight": "1228 g",
+  "dimensions": [
+    {
+      "type": "object",
+      "value": "249 x 178 x 70.0 mm"
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz18k8ttz/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "collection": "Old Collection",
+  "repository": "Saint Catherine (Monastery : Mount Sinai)",
+  "provenance": [],
+  "viscodex": "",
+  "contributor": ["gkessel"],
+  "codicological_units":
+    [{
+      "id": "ark:/21198/xyd42035",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 9, ff. 1-119",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 9",
+        "locus": "1"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 9",
+        "locus": "119"
+      },
+      "origin_date": "8th c. CE",
+      "associated_persons":
+        [],
+      "associated_places":
+      [],
+        "language": ["Syriac"],
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "hand_note": []
+          }],
+      "condition_note": "The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript.",
+      "features": ["Rubrication", "Marginalia"],
+      "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+      "bibliography": ["Brock 1995, p. 23"],
+      "extent": "119 ff.",
+      "dimensions": [
+        {
+          "type": "average-folio",
+          "value": "245 x 165 mm"
+        }
+      ],
+      "collation_formula": "Pastedown+flyleaf, Quire 1: 1x10 (10), Quire 2: 1x6 (16), Quire 3: 1x8 (24), Quire 4: 1+1x8 (33), Quires 5-12: 8x8 (97), Quire 13: 1x8+1 (106), Quire 14: 1x6+1+1 (114), Quire 15: 1x8 (122), Quire 16: 6x1 (128), Quire 17: 1x6+1 (135), Quire 18: 1x6+1 (142), Quire 19: 1x6 (148), Quire 20 (paper): 1x4 (152).",
+      "collation_note": [""],
+      "decorations": [],
+      "page_layout": [{"columns": 2, "page_layout_note": ["32-36 lines per column"]}],
+      "colophon": {},
+      "provenance": ["Missing fragments are: London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37"],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["gkessel"],
+      "parent_objects": ["ark:/21198/Fz18k8ttz"],
+      "textual_artifacts":
+        [{
+          "id": "ark:/21198/dfdi53234x",
+          "type": "Textual Artifact",
+          "label": "Sinai Syriac 9, ff. 1-119, Basil of Caesarea: Hexaemeron",
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/10",
+              "preferred_title": "Hexaemeron",
+              "original_lange": "Greek",
+              "creation_date": "mid-4th c. CE",
+              "genre": "Commentary, OT"
+            },
+          "author": [
+            {"author_id": "https://sinaimanuscripts/library.ucla.edu/person/55",
+             "preferred_author_name": "Basil, Saint, Bishop of Caesarea, approximately 329-379"
+           }
+            ],
+          "attributed_author": [{"attested_name_NS": "ܡܪܝ ܒܣܝܠܝܣ ܐܦܣܩܦܐ", "attested_name": "Mar Basil the Bishop"}],//needs some way of indicating that this is correctly attributed?
+          "rubric": {"transcription": "ܡܐܡܪܐ ܕܡܪܝ ܒܣܝܠܝܣ ܐܦܣܩܦܐ ܥܠ ܐܫ̈ܬܬܝܘܡܐ ܕܡܠܠܗ ܒܫܒܬܐ ܪܒܬܐ ܕܦܛܝܪ̈ܐ", "translation_en": "Mimra of Mar Basil the Bishop on the Hexaemeron which he gave on the Great Sunday of Easter", "location": "running"},//how do we handle running titles?
+          "incipit": {"transcription": "ܫܡܥܢܢ ܡܢ ܟܬܒܐ ܕܐܡܪ ܕܒܪܫܝܬ ܠܡ", "translation_en": "Let us listen to the reading from Genesis:", "location": "f. 2v"},
+          "quotes": [],
+          "explicit": {},
+          "final_rubric": {},
+          "associated_persons": [],
+          "defective": true,
+          "condition_note": "Incomplete at the end. The fragments London BL Or. 8608/I + Birmhingham Mingana sry. 652 + Milan BA Chabot 37 originally belong with this manuscript and contain the remaining portions of this text.",
+          "language": "Syriac",
+          "toc": ["Memra 1, f. 2v", "Memra 2, f. 18r", "Memra 3, f. 30v", "Memra 8, f. 98v", "Memra 9, f. 112v"],
+          "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
+          "bibliography": ["Mingana 1915, vol. III, p. 124", "Vergani 2016"],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["gkessel"],
+          "parent_objects": ["ark:/21198/xyd42035"]
+        }]
+    }]
+}//NOTE: a change log will accompany these records with dated revisions to the data
