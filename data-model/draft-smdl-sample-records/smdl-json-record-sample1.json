@@ -1,0 +1,321 @@
+{
+  "id": "ark:/21198/z1x07bdf",
+  "type": "Manuscript Object",
+  "shelfmark": "Sinai Syriac 2A",//is it fine to have 'shelfmark' as a field only at the MS object level, whereas 'label' or some other field is used for cod units and text arts?
+  "form": "Codex",
+  "has_binding": true,
+  "binding_note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
+  "condition_note": "",
+  "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+  "bibliography": ["Brock 1995, p. 30"],
+  "language": ["Syriac"],
+  "writing_system_and_script": ["Syriac:Estrangela"],//better field name for this compiled field? (the issue is the same as the entity relationship diagram where we need rolled up fields to associate the permutations)
+  "extent": "180 ff.",
+  "weight": "3788.3 g",
+  "dimensions": [
+    {
+      "type": "object",
+      "value": "328 x 255 x 97 mm"
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "collection": "Old Collection",
+  "repository": "Saint Catherine (Monastery : Mount Sinai)",//should this be a place record instead? Or should we separate out country, city, organization, etc. for the repository?
+  "provenance": ["Created and remained in Saint Catherine's Monastery"],
+  "viscodex": "",
+  "contributor": ["gkessel"],
+  "codicological_units":
+    [{
+      "id": "ark:/21198/a310jfBd",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 2A, ff. 1-152",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 2A",//change label for shelfmark. maybe parent_shelfmark? but not clear for text arts.
+        "locus": "1"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "152"
+      },
+      "origin_date": "6th c. CE",//we need both human and machine-readable right? how will we handle approximate for faceting, etc.?
+      "associated_persons":
+        [{
+          "preferred_name": "Jacob bar Basil",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/1",
+          "attested_name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
+          "attested_name": "Ya'qub bar d-Basil",
+          "souce": "Attested in the doxology on f. 114v"
+        },
+        {
+          "preferred_name": "Bar-Shabbon bar Basil",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/2",
+          "attested_name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
+          "attested_name": "Bar-Shabon bar d-Basil",
+          "souce": "Attested in the doxology on f. 114v"
+        }],
+      "origin_place":
+        {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+          "attested_name": "Mount Sinai"
+          },
+      "associated_places":
+      [        {
+          "preferred_name": "Yw (village)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/2",
+          "attested_name_NS": "ܐܝܘ ܩܪܝܬܐ",
+          "attested_name": "The Village Yw",
+          "source": "Provided in connection with Jacob and Bar-Shabbon in the doxology on f. 114v"
+          }],
+        "language": ["Syriac"],
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "hand_note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."]
+          }],
+      "condition_note": "Quire signatures at beginning and end of most quires. Quire 20 is paper.",
+      "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)", "Doxology"], //does a doxology, which is similar to a colophon but without the identifying info of a colophon. Is doxology the right term? Syriaca is using this term from Wright for the BL catalogue, and we are identifying these with a controlled vocabulary -- what would we call the text on 114v that asks for the reader to pray for the scribe and the two brothers noted in associated_persons? Would mss with these kinds of notes be a feature? Or are they too common to be useful as a facet?
+      "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+      "bibliography": [],
+      "extent": "152 ff.",
+      "dimensions": [
+        {
+          "type": "average-folio",
+          "value": "320 x 250 x 92 mm"
+        }
+      ],
+      "collation_formula": "Pastedown+flyleaf, Quire 1: 1x10 (10), Quire 2: 1x6 (16), Quire 3: 1x8 (24), Quire 4: 1+1x8 (33), Quires 5-12: 8x8 (97), Quire 13: 1x8+1 (106), Quire 14: 1x6+1+1 (114), Quire 15: 1x8 (122), Quire 16: 6x1 (128), Quire 17: 1x6+1 (135), Quire 18: 1x6+1 (142), Quire 19: 1x6 (148), Quire 20 (paper): 1x4 (152).",//should we have more control over the what goes in a collation_formula field? I know there are a few various notation standards, though I'm not an expert in any and have no preferences. Ideally something that could be machine-converted into a viscodex link would probably be ideal.
+      "collation_note": [""],
+      "decorations": ["Geometric decorations surround the rubrics (e.g., f. 114r)."],
+      "page_layout": [{"columns": 1, "page_layout_note": [""]}],
+      "colophon": {},
+      "provenance": ["Created at Sinai, and remained there."],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["gkessel"],
+      "parent_objects": ["ark:/21198/z1x07bdf"],
+      "textual_artifacts":
+        [{
+          "id": "ark:/21198/adf20c1f",
+          "type": "Textual Artifact",
+          "label": "Sinai Syriac 2A, ff. 1-152v, Gospels",
+          // do textual artifacts need unit_start and unit_end fields?
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/1",
+              "preferred_title": "The Gospels, according to the Peshitta Version",
+              "original_lange": "Syriac",
+              "creation_date": "3rd c. CE",
+              "genre": "Bibl, NT"
+            },
+          "author": [],
+          "attributed_author": [{"attested_name_NS": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ", "attested_name": "Qadisho Mar Yuhanon"}],//add authority file info and preferred name?
+          "rubric": {},
+          "incipit": {},
+          "quotes": [],
+          "explicit": {"transcription": "ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ ", "translation_en": "There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written.", "locus": "f. 152v"},//added a langcode to the translation to specify it's an English translation
+          "final_rubric": {"transcription": "ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ", "translation_en": "Finished is the Gospel of Saint John which he spoke in Greek in Ephesus.", "locus": "f. 152v"},
+          "associated_persons": [],
+          "defective": true,
+          "condition_note": "Incomplete at the beginning. Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana).",
+          "language": "Syriac",
+          "toc": ["Matthew, f. 1r-32v (incomplete at the beginning)", "Mark, f. 32v-70r", "Luke, f. 70r-105v", "John, f. 106r-152v"],
+          //note: one thought I had was to list the textual artifacts we identify as linear children of the codicological unit. We could then use the toc key:value pair to either identify sub-texts with simple string arrays or have the array be URIs/ARK IDs for the nested child textual artificats
+          // further, if we wanted to avoid overwhelming the SMDL user, we could convert the nested IDs into simple title, author, f. range strings that are indented as an outline and only show the top-most textual artifacts. We should discuss this.
+          "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+          "bibliography": ["Kamil 1970, p. 152, number 38"],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["gkessel"],
+          "parent_objects": ["ark:/21198/a310jfBd"]
+        }]
+    },
+    {
+      "id": "ark:/21198/t493kf6d",
+      "type": "Codicological Unit",
+      "label": "Sinai Syriac 2A, ff. 153-179",
+      "unit_start": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "153"
+      },
+      "unit_end": {
+        "shelfmark": "Sinai Syriac 2A",
+        "locus": "179"
+      },
+      "origin_date": "6th c. CE",
+      "scribe":
+        [{
+          "preferred_name": "John bar Me'sam",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/3",
+          "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
+          "attested_name": "Dayro Yohanan bar Me'sam",
+          "source": "Colophon, f. 179r"
+        }],
+      "origin_place":
+        {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+          "attested_name": "Mount Sinai",
+          "soruce": "Colophon, f. 179r"
+          },
+      "associated_places": [],
+        "language": ["Syriac"],
+        "hand_description": [
+          {
+            "writing_system": ["Syriac"],
+            "script": ["Estrangela"],
+            "ink_color": "black",
+            "hand_note": ["Slightly more cursive than the preceding unit"]
+          }],
+      "condition_note": "Quire signatures at beginning and end of most quires.",
+      "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)", "Colophon"],
+      "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+      "bibliography": [],
+      "extent": "180 ff.",
+      "dimensions": [
+        {
+          "type": "average-folio",
+          "value": "320 x 250 x 92 mm"
+        }
+      ],
+      "collation_formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",//are the fly-leaves part of the cod unit's collation?
+      "collation_note": [""],
+      "decorations": ["Geometric decorations surround the rubrics on f. 179."],
+      "page_layout": [{"columns": 2, "page_layout_note": []}],
+      "colophon": {"location": "179r", "transcription": "ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…", "translation_en": "With the Lord's aid is completed the Synaxarion for..."},
+      "provenance": ["Created at Sinai, and remained there."],
+      "viscodex": "",
+      "iiif": {
+        "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+        "text_direction": "right-to-left",
+        "viewing_hint": "paged",
+        "range": ""
+      },
+      "contributor": ["gkessel"],
+      "parent_objects": ["ark:/21198/z1x07bdf"],
+      "textual_artifacts":
+      [{
+        "id": "ark:/21198/bef15e4p",
+        "type": "Textual Artifact",
+        "label": "Sinai Syriac 2A, ff. 153r-165v, Lectionary Table",
+        "work":
+          {
+            "id": "https://sinaimanuscripts/library.ucla.edu/work/2",
+            "preferred_title": "Lectionary Table",//maybe this should be preferred_name? do we want to have different fields for person, work, author, scribe, etc. when it comes to the preferred/uniform name?
+            "original_lang": "Syriac",
+            "creation_date": "",
+            "genre": "Lectionaries"
+          },
+        "author": [],
+        "attributed_author": [],
+        "rubric": {"transcription": "ܒܫܡܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܟܬܒܝܢܢ ܡܬܝܕܥܢܬܐ ܡܐ ܕܐܝܬ ܒܟܬܒܐ ܗܢܐ ܩܕܝܫܐ. ܡܫܬܡܠ ܥܠ ܟܠܗ̇ ܫܢܬܐ", "translation_en": "In the name of the Holy Trinity we have written knowingly what is in this holy book. Services for the whole year", "location": "f. 153r"},
+        "incipit": {},
+        "quotes": [],
+        "explicit": {},
+        "final_rubric": {},
+        "associated_persons": [],
+        "defective": false,
+        "condition_note": "",
+        "language": "Syriac",
+        "toc": [],
+        "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+        "bibliography": [],
+        "iiif": {
+          "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+          "text_direction": "right-to-left",
+          "viewing_hint": "paged",
+          "range": ""
+        },
+        "contributor": ["gkessel"],
+        "parent_objects": ["ark:/21198/t493kf6d"]
+      },
+      {
+        "id": "ark:/21198/dfat3415s",
+        "type": "Textual Artifact",
+        "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
+        "work":
+          {
+            "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
+            "preferred_title": "Lectionary for the Whole Year",
+            "original_lang": "Syriac",
+            "creation_date": "",
+            "genre": "Lectionaries"
+          },
+        "author": [],
+        "attributed_author": [],
+        "rubric": {},
+        "incipit": {},
+        "quotes": [],
+        "explicit": {},
+        "final_rubric": {},
+        "associated_persons": [],
+        "defective": false,
+        "condition_note": "",
+        "language": "Syriac",
+          "toc": ["September, f. 166r", "October, f. 166v", "November, 167r", "December, 167r"],
+          "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+          "bibliography": [],
+        "iiif": {
+          "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+          "text_direction": "right-to-left",
+          "viewing_hint": "paged",
+          "range": ""
+        },
+        "contributor": ["gkessel"],
+        "parent_objects": ["ark:/21198/t493kf6d"]
+        },
+        {
+          "id": "ark:/21198/dfat3415s",
+          "type": "Textual Artifact",
+          "label": "Sinai Syriac 2A, ff. 166r-179r, Readings for the Fixed Feast Days from September to August",
+          "work":
+            {
+              "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
+              "preferred_title": "Lectionary for the Whole Year",
+              "original_lang": "Syriac",
+              "creation_date": "",
+              "genre": "Lectionaries"
+            },
+          "author": [],
+          "attributed_author": [],
+          "rubric": {},
+          "incipit": {},
+          "quotes": [],
+          "explicit": {},
+          "final_rubric": {},
+          "associated_persons": [],
+          "defective": false,
+          "condition_note": "",
+          "language": "Syriac",
+            "toc": ["First sunday of the nativity, f. 166r"],
+            "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
+            "bibliography": [],
+          "iiif": {
+            "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+            "text_direction": "right-to-left",
+            "viewing_hint": "paged",
+            "range": ""
+          },
+          "contributor": ["gkessel"],
+          "parent_objects": ["ark:/21198/t493kf6d"]
+          }]
+    }]
+}//NOTE: a change log will accompany these records with dated revisions to the data
