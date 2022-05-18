@@ -9,7 +9,8 @@
   "references": ["Kamil 1970, p. 153, number 56", "Géhin 2017, p. 40-41"],
   "bibliography": ["Brock 1995, p. 23"],
   "language": ["Syriac"],
-  "writing_system_and_script": ["Syriac:Estrangela"],
+  "writing_system": ["Syriac"],
+  "script": ["Estrangela"],
   "extent": "119 ff.",
   "weight": "1228 g",
   "dimensions": [
@@ -29,11 +30,12 @@
   "provenance": [],
   "viscodex": "",
   "contributor": ["gkessel"],
-  "codicological_units":
+  "parts":
     [{
       "id": "ark:/21198/xyd42035",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 9, ff. 1-119",
+      "part_number": 1,
       "unit_start": {
         "shelfmark": "Sinai Syriac 9",
         "locus": "1"
@@ -42,7 +44,11 @@
         "shelfmark": "Sinai Syriac 9",
         "locus": "119"
       },
-      "origin_date": "8th c. CE",
+      "origin": {
+        "date_human-readable": "8th c. CE",
+        "date_normalized": "0700/0800",
+        "place": {}
+      },
       "associated_persons":
         [],
       "associated_places":
@@ -90,8 +96,12 @@
             {
               "id": "https://sinaimanuscripts/library.ucla.edu/work/10",
               "preferred_title": "Hexaemeron",
-              "original_lange": "Greek",
-              "creation_date": "mid-4th c. CE",
+              "creation": {
+                "date_human-readable": "mid-4th c. CE",
+                "date_normalized": "0325/0375",
+                "language": "Syriac",
+                "place": {}
+              },
               "genre": "Commentary, OT"
             },
           "author": [

@@ -1,7 +1,7 @@
 {
   "id": "ark:/21198/z1x07bdf",
   "type": "Manuscript Object",
-  "shelfmark": "Sinai Syriac 2A",//is it fine to have 'shelfmark' as a field only at the MS object level, whereas 'label' or some other field is used for cod units and text arts?
+  "shelfmark": "Sinai Syriac 2A",
   "form": "Codex",
   "has_binding": true,
   "binding_note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
@@ -9,7 +9,8 @@
   "references": [ "Lewis 1894, p. 1-2", "Kamil 1970, p. 152, number 38", "Géhin 2017, p. 28-30"],
   "bibliography": ["Brock 1995, p. 30"],
   "language": ["Syriac"],
-  "writing_system_and_script": ["Syriac:Estrangela"],//better field name for this compiled field? (the issue is the same as the entity relationship diagram where we need rolled up fields to associate the permutations)
+  "writing_system": ["Syriac"],
+  "script": ["Estrangela"],
   "extent": "180 ff.",
   "weight": "3788.3 g",
   "dimensions": [
@@ -29,11 +30,12 @@
   "provenance": ["Created and remained in Saint Catherine's Monastery"],
   "viscodex": "",
   "contributor": ["gkessel"],
-  "codicological_units":
+  "parts":
     [{
       "id": "ark:/21198/a310jfBd",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 2A, ff. 1-152",
+      "part_number": 1,
       "unit_start": {
         "shelfmark": "Sinai Syriac 2A",//change label for shelfmark. maybe parent_shelfmark? but not clear for text arts.
         "locus": "1"
@@ -42,7 +44,16 @@
         "shelfmark": "Sinai Syriac 2A",
         "locus": "152"
       },
-      "origin_date": "6th c. CE",//we need both human and machine-readable right? how will we handle approximate for faceting, etc.?
+      "origin": {
+        "date_human-readable": "6th c. CE",
+        "date_normalized": "0500/0600",
+        "place": {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+          "attested_name": "Mount Sinai"
+          }
+      },
       "associated_persons":
         [{
           "preferred_name": "Jacob bar Basil",
@@ -58,15 +69,8 @@
           "attested_name": "Bar-Shabon bar d-Basil",
           "souce": "Attested in the doxology on f. 114v"
         }],
-      "origin_place":
-        {
-          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
-          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
-          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
-          "attested_name": "Mount Sinai"
-          },
       "associated_places":
-      [        {
+      [{
           "preferred_name": "Yw (village)",
           "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/2",
           "attested_name_NS": "ܐܝܘ ܩܪܝܬܐ",
@@ -117,8 +121,11 @@
             {
               "id": "https://sinaimanuscripts/library.ucla.edu/work/1",
               "preferred_title": "The Gospels, according to the Peshitta Version",
-              "original_lange": "Syriac",
-              "creation_date": "3rd c. CE",
+              "creation": {
+                "date_human-readable": "3rd c. CE",
+                "date_normalized": "0200/0300",
+                "language": "Syriac"
+              },
               "genre": "Bibl, NT"
             },
           "author": [],
@@ -151,6 +158,7 @@
       "id": "ark:/21198/t493kf6d",
       "type": "Codicological Unit",
       "label": "Sinai Syriac 2A, ff. 153-179",
+      "part_number": 1,
       "unit_start": {
         "shelfmark": "Sinai Syriac 2A",
         "locus": "153"
@@ -159,7 +167,16 @@
         "shelfmark": "Sinai Syriac 2A",
         "locus": "179"
       },
-      "origin_date": "6th c. CE",
+      "origin": {
+        "date_human-readable": "6th c. CE",
+        "date_normalized": "0500/0600",
+        "place": {
+          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
+          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+          "attested_name": "Mount Sinai"
+          }
+      },
       "scribe":
         [{
           "preferred_name": "John bar Me'sam",
@@ -168,14 +185,6 @@
           "attested_name": "Dayro Yohanan bar Me'sam",
           "source": "Colophon, f. 179r"
         }],
-      "origin_place":
-        {
-          "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
-          "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
-          "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
-          "attested_name": "Mount Sinai",
-          "soruce": "Colophon, f. 179r"
-          },
       "associated_places": [],
         "language": ["Syriac"],
         "hand_description": [
@@ -220,8 +229,8 @@
           {
             "id": "https://sinaimanuscripts/library.ucla.edu/work/2",
             "preferred_title": "Lectionary Table",//maybe this should be preferred_name? do we want to have different fields for person, work, author, scribe, etc. when it comes to the preferred/uniform name?
-            "original_lang": "Syriac",
-            "creation_date": "",
+            "creation":
+            {"date_human-readable": "","date_normalized": "","language": "Syriac", "place": {}},
             "genre": "Lectionaries"
           },
         "author": [],
@@ -255,8 +264,8 @@
           {
             "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
             "preferred_title": "Lectionary for the Whole Year",
-            "original_lang": "Syriac",
-            "creation_date": "",
+            "creation":
+            {"date_human-readable": "","date_normalized": "","language": "Syriac", "place": {}},
             "genre": "Lectionaries"
           },
         "author": [],
@@ -290,8 +299,8 @@
             {
               "id": "https://sinaimanuscripts/library.ucla.edu/work/3",
               "preferred_title": "Lectionary for the Whole Year",
-              "original_lang": "Syriac",
-              "creation_date": "",
+              "creation":
+              {"date_human-readable": "","date_normalized": "","language": "Syriac", "place": {}},
               "genre": "Lectionaries"
             },
           "author": [],
