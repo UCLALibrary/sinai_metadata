@@ -1,0 +1,65 @@
+{
+  "id": "ark:/21198/adf20c1f",
+  "type": "Textual Artifact",
+  "label": "Sinai Syriac 2A, ff. 1-152v, Gospels",
+  "unit_start": {
+    "parent_id": "ark:/21198/z1x07bdf",
+    "locus": "1"
+  },
+  "unit_end": {
+    "parent_id": "ark:/21198/z1x07bdf",
+    "locus": "152"
+  },
+  "work": "https://sinaimanuscripts/library.ucla.edu/work/1",
+  "associated_persons": [
+    {
+      "id": "https://sinaimanuscripts/library.ucla.edu/person/42",
+      "attested_name_NS": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ",
+      "attested_name": "Qadisho Mar Yuhanon",
+      "role": "attributed-author",
+      "source": "Final rubric on f. 152v"}
+  ],
+  "rubric": {},
+  "incipit": {},
+  "quotes": [],
+  "explicit": {
+    "locus": "f. 152v",
+    "transcription": {"syr": ["ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ "]},
+    "translation": {"en": ["There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written."]}
+  },
+  "final_rubric": {
+    "locus": "f. 152v",
+    "transcription": {"syr": ["ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ"]},
+    "translation": {"en": ["Finished is the Gospel of Saint John which he spoke in Greek in Ephesus."]}
+  },
+  "defective": true,
+  "condition_note": "Incomplete at the beginning. Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana).",
+  "language": "Syriac",
+  "toc": ["Matthew, f. 1r-32v (incomplete at the beginning)", "Mark, f. 32v-70r", "Luke, f. 70r-105v", "John, f. 106r-152v"],
+  "references": [
+    {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+     "citation_key": "Lewis 1894",
+     "cited_range": [{"unit": "p.", "range": "1-2"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+     "citation_key": "Kamil 1970",
+     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+     "citation_key": "Géhin 2017",
+     "cited_range": [{"unit": "p.", "range": "28-30"}]
+    }],
+  "bibliography": [
+    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+     "citation_key": "Kamil 1970",
+     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
+    }],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "contributor": ["gkessel"],
+  "parent_objects": ["ark:/21198/a310jfBd"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ark:/21198/z1x07bdf",
+  "type": "Manuscript Object",
+  "shelfmark": "Sinai Syriac 2A",
+  "form": "Codex",
+  "has_binding": true,
+  "binding_note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
+  "condition_note": "",
+  "references": [
+    {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+     "citation_key": "Lewis 1894",
+     "cited_range": [{"unit": "p.", "range": "1-2"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+     "citation_key": "Kamil 1970",
+     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+     "citation_key": "Géhin 2017",
+     "cited_range": [{"unit": "p.", "range": "28-30"}]
+    }],
+  "bibliography": [
+    {"uri": "https://www.zotero.org/groups/2276183/items/9JPCDM9J",
+   "citation_key": "Brock 1995",
+   "cited_range": [{"unit": "p.", "range": "30"}]
+   }],
+  "language": ["Syriac"],
+  "extent": "180 ff.",
+  "weight": "3788.3 g",
+  "dimensions": [
+    {
+      "type": "object",
+      "value": "328 x 255 x 97 mm"
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "collection": "Old Collection",
+  "repository": "https://sinaimanuscripts.library.ucla.edu/place/1",
+  "provenance": ["Created and remained in Saint Catherine's Monastery"],
+  "viscodex": "",
+  "contributor": ["gkessel"],
+  "parts": ["ark:/21198/a310jfBd", "ark:/21198/t493kf6d"]
+}

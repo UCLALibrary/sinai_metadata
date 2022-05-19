@@ -1,0 +1,95 @@
+{
+  "id": "ark:/21198/a310jfBd",
+  "type": "Codicological Unit",
+  "label": "Sinai Syriac 2A, ff. 1-152",
+  "unit_start": {
+    "parent_id": "ark:/21198/z1x07bdf",
+    "locus": "1"
+  },
+  "unit_end": {
+    "parent_id": "ark:/21198/z1x07bdf",
+    "locus": "152"
+  },
+  "origin": {
+    "date_human-readable": "6th c. CE",
+    "date_normalized": "0500/0600",
+    "place": {
+      "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
+      "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+      "attested_name": "Mount Sinai",
+      "source": "Attested in the colophon on f. 152v"
+      }
+  },
+  "associated_persons":
+    [{
+      "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/1",
+      "attested_name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
+      "attested_name": "Ya'qub bar d-Basil",
+      "souce": "Attested in the note on f. 114v"
+    },
+    {
+      "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/2",
+      "attested_name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
+      "attested_name": "Bar-Shabon bar d-Basil",
+      "souce": "Attested in the note on f. 114v"
+    }],
+  "associated_places":
+  [{
+      "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/2",
+      "attested_name_NS": "ܐܝܘ ܩܪܝܬܐ",
+      "attested_name": "The Village Yw",
+      "source": "Provided in connection with Jacob and Bar-Shabbon in the note on f. 114v"
+      }],
+    "language": ["Syriac"],
+    "writing_and_hands": [
+      {
+        "writing_system": ["Syriac"],
+        "script": ["Estrangela"],
+        "ink_color": "black",
+        "hand_note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."]
+      }],
+  "support": "Parchment",
+  "condition_note": "Quire signatures at beginning and end of most quires. Quire 20 is paper.",
+  "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)"],
+  "references": [
+    {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+     "citation_key": "Lewis 1894",
+     "cited_range": [{"unit": "p.", "range": "1-2"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+     "citation_key": "Kamil 1970",
+     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
+    },
+    {"uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+     "citation_key": "Géhin 2017",
+     "cited_range": [{"unit": "p.", "range": "28-30"}]
+    }],
+  "bibliography": [],
+  "extent": "152 ff.",
+  "dimensions": [
+    {
+      "type": "average-folio",
+      "value": "320 x 250 x 92 mm"
+    }
+  ],
+  "collation_formula": "Pastedown+flyleaf, Quire 1: 1x10 (10), Quire 2: 1x6 (16), Quire 3: 1x8 (24), Quire 4: 1+1x8 (33), Quires 5-12: 8x8 (97), Quire 13: 1x8+1 (106), Quire 14: 1x6+1+1 (114), Quire 15: 1x8 (122), Quire 16: 6x1 (128), Quire 17: 1x6+1 (135), Quire 18: 1x6+1 (142), Quire 19: 1x6 (148), Quire 20 (paper): 1x4 (152).",
+  "collation_note": [""],
+  "decorations": ["Geometric decorations surround the rubrics (e.g., f. 114r)."],
+  "page_layout": [
+    {"columns": 1,
+      "number_of_lines": 26,
+      "page_layout_note": [""]
+      }],
+  "colophon": {},
+  "provenance": [],
+  "viscodex": "",
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "contributor": ["gkessel"],
+  "parent_objects": ["ark:/21198/z1x07bdf"],
+  "textual_artifacts": ["ark:/21198/z1x07bdf"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/place/2",
+  "label": "Edessa",
+  "uniform_name": "Urfa",
+  "type": "settlement",
+  "authority_files":[
+    {
+      "id": "https://w3id.org/haf/place/448748963866",
+      "uniform_name": "Urfa"
+    },
+    {
+      "id": "http://syriaca.org/place/78",
+      "uniform_name": "Edessa - ܐܘܪܗܝ"
+    }
+  ],
+  "location": ["Lat. 37.15° Long. 38.8°"],
+  "associated_places": [],
+  "references": [],
+  "contributor": ["gkessel"]
+}

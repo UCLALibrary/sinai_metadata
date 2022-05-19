@@ -1,0 +1,11 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/script/1",
+  "label": "Serto (script)",
+  "associated_writing_systems": ["Syriac"],
+  "temporal_coverage": {
+    "date_human-readable": "post-7th c. - present",
+    "date_normalized": "0650/"
+  },
+  "geographic_coverage": "Typically used in West Syrian manuscripts",
+  "contributor": ["gkessel"]
+}
