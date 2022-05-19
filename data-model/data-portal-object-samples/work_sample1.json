@@ -1,0 +1,36 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/work/10",
+  "label": "Hexaemeron (Basil of Caesarea)",//separate label needed or just use uniform_title?
+  "uniform_title": "Basil, Saint, Bishop of Caesarea, approximately 329-379. Hexaemeron",
+  "origin": {
+    "date_human-readable": "mid-4th c. CE",
+    "date_normalized": "0325/0375",
+    "language": "Greek",//controlled vocabulary. This does raise the question of if we will have different work authorities for the various translations of a text? (e.g., will we have one for the Greek original, Syriac translations, Arabic translations, etc.) Will we have 'translation_of' relationships set between these work records? Likely a discussion for the ad board, but my instinct is that we should have separate records for the versions of ancient texts, especially since we have multiple languages represented in the mss and presumably could have Greek, Arabic, and Syriac versions of Basil's Hexaemeron. The question here would be how to model relationships where tranmission direction isn't clear (i.e., when the translation from and into directions aren't clear-cut). At the same time, this distinction between translations may break down distinctions between work and expression, etc. I'm not sure I want to introduce a whole other object type though (e.g., expression, which somehow in between work and textual artifact?). Definitely need to reflect and discuss further.
+    "place": {}
+  },
+  "genre": ["Theological Works", "Commentary, Biblical", "Commentary, Old Testament", "Commentary, Genesis"],//controlled vocabulary
+  "authors": [
+    {
+      "id": "https://sinaimanuscripts.library.ucla.edu/person/55",
+      //include a person name? Or is the ID sufficient
+      "role": "author"//controlled vocabulary
+    }
+  ],
+  "associated_persons": [],//e.g., for commemorated saints? In SDP do we have separate field for authors? Or just use a role field to specify authorship, correct/disputed attribution,
+  "authority_files": [
+    {
+      "id": "https://haf.vhmml.org/work/320756617003",
+      "uniform_title": "Basil, Saint, Bishop of Caesarea, approximately 329-379. Hexaemeron"//maybe just need an array of IDs? (it may be good to have a title to pull in case an authority file lacks a reliable API)
+    },
+    {
+      "id": "https://viaf.org/viaf/181934772",
+      "uniform_title": "Basil, Saint, Bishop of Caesarea, approximately 329-379. | Hexaemeron"//maybe need both an array for these titles (VIAF has several), and maybe need to use JSON's language mapping.
+      //could also have a uniform and alternate_title field from authority files (again, only if we decide we need them in the record)
+    }
+  ],
+  "witnesses": ["ark:/21198/dfdi53234x"],//Do we need links in both directions or would it be sufficient for the user to be able to query which textual artifacts have the work ID in the 'work' field?
+  //These would be textual artifact IDs that attest this work -- could also call this field 'textual_artifacts', not sure we need more sophisticated fields? The only main relationships would be 'has_witness'?
+  //need field relating works? (dcterms:isPartOf for part-to-whole like the Gospels and a Gospel; 'comments_on' for relating Hexaemeron to Genesis, etc.)
+  //incipits, explicits, etc. from a standard edition (or an authority file like Syriaca?)? This gets tricky and probably unnecessary as these are more to provide authority control for the witnesses we come across in Sinai mss. (interested users could pull the incipits together from the witnesses/textual_artifacts)
+  "references": []//for editions, translations, discussions? Need separate fields? Maybe here 'references' is edition and translation; 'bibliography' is discussion of this text?
+}

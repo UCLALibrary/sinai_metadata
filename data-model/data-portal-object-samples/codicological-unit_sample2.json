@@ -25,7 +25,7 @@
     [{
       "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/3",
       "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
-      "attested_name": "Dayro Yohanan bar Me'sam",
+      "attested_name": "Dayroyo Yohanan bar Me'sam",
       "role": "scribe",//controlled vocabulary
       "source": "Colophon, f. 179r"
     }],

@@ -1,0 +1,20 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/place/2",
+  "label": "Edessa",
+  "uniform_name": "Urfa",
+  "type": "settlement",//controlled vocabulary
+  "authority_files":[
+    {
+      "id": "https://w3id.org/haf/place/448748963866",
+      "uniform_name": "Urfa"
+    },
+    {
+      "id": "http://syriaca.org/place/78",
+      "uniform_name": "Edessa - ܐܘܪܗܝ"
+    }
+  ],
+  "location": ["Lat. 37.15° Long. 38.8°"],//maybe follow GeoJson or KML for these?
+  "associated_places": [],//this could also be 'related' places, or more specific relations like 'within', etc. to relate cities to countries, etc.
+  "references": []
+  //do we need to have 'repository_for', 'origin_place_of', etc. for ms objects or codicological units? Or will these computed fields remain one-way relationships from the other object to the place record?
+}
