@@ -1,0 +1,27 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/person/3",
+  "label": "Basil of Caesarea (approximately 329-379)",
+  "uniform_name": "Basil, Saint, Bishop of Caesarea, approximately 329-379",
+  "authority_files": [
+    {
+      "id": "https://w3id.org/haf/person/641569108508",
+      "uniform_name": "Basil, Saint, Bishop of Caesarea, approximately 329-379"
+    },
+    {
+      "id": "https://viaf.org/viaf/88967224",
+      "uniform_name":"Basil, Saint, Bishop of Caesarea, approximately 329-379"
+    },
+    {"id":"http://syriaca.org/person/376", "uniform_name": "Basil of Caesarea"}//all of the names should probably be listed with JSON language mappings
+  ],
+  "dates": {
+    "birth": {"date_human-readable": "approximately 329", "date_normalized": "0320/340"},
+    "death": {"date_human-readable": "approximately 379", "date_normalized": "0370/0390"},
+    "floruit": {}
+  },
+  //abstract? description?
+  "sex": "male",//controlled vocabulary. How do we want to represent and label this field?
+  "associated_places": ["https://sinaimanuscripts.librar.ucla.edu/place/100"],
+  "associated_persons": [],//e.g., for familial or other relationships?
+  "references": []
+  //there are a lot of computed fields we could have: attested_roles, authored_works, manuscript_attestations, etc. but I'm not sure if those need to be contained in the record or if they would be computed via a user query or when we go to output a data dump like for SMDL or JSON-LD?
+}
