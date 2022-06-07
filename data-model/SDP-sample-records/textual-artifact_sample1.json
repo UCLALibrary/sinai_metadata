@@ -1,41 +1,72 @@
 {
   "id": "ark:/21198/adf20c1f",
   "type": "Textual Artifact",
-  "label": "Sinai Syriac 2A, ff. 1-152v, Gospels",
-  "unit_start": {
-    "parent_id": "ark:/21198/z1x07bdf",
-    "locus": "1"
-  },
-  "unit_end": {
-    "parent_id": "ark:/21198/z1x07bdf",
-    "locus": "152"
-  },
+  "label": "Gospels",
+  "extent": ["f. 1-152"],//must be of the form 'f\. \d+[rv]?-?\d*[rv]?' with the caveat that the number after the - must be greater than or equal to the number before.
   "work": "https://sinaimanuscripts/library.ucla.edu/work/1",
   "associated_persons": [
     {
+      "type": "attributed-author",
       "id": "https://sinaimanuscripts/library.ucla.edu/person/42",
       "attested_name_NS": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ",
       "attested_name": "Qadisho Mar Yuhanon",
-      "role": "attributed-author",
       "source": "Final rubric on f. 152v"}
   ],
-  "rubric": {},
-  "incipit": {},
-  "quotes": [],
-  "explicit": {
-    "locus": "f. 152v",
-    "transcription": {"syr": ["ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ "]},
-    "translation": {"en": ["There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written."]}
-  },
-  "final_rubric": {
-    "locus": "f. 152v",
-    "transcription": {"syr": ["ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ"]},
-    "translation": {"en": ["Finished is the Gospel of Saint John which he spoke in Greek in Ephesus."]}
-  },
+  "paratexts": [
+    {
+      "type": "explicit",
+      "locus": "f. 152v",
+      "transcription": {"syr": ["ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ "]},
+      "translation": {"en": ["There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written."]}
+    },
+    {
+      "type": "final rubric",
+      "locus": "f. 152v",
+      "transcription": {"syr": ["ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ"]},
+      "translation": {"en": ["Finished is the Gospel of Saint John which he spoke in Greek in Ephesus."]}
+    }
+  ],
   "defective": true,
-  "condition_note": "Incomplete at the beginning. Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana).",
-  "language": "Syriac",
-  "toc": ["Matthew, f. 1r-32v (incomplete at the beginning)", "Mark, f. 32v-70r", "Luke, f. 70r-105v", "John, f. 106r-152v"],
+  "condition":
+  {
+    "note": ["Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana)."],
+    "features": []
+  },
+  "contents":
+  {
+    "note": ["Incomplete at the beginning, missing portions of the Gospel of Matthew"],
+    "features": [],
+    "toc": [
+      {
+        "title": "Gospel of Matthew",
+        "work": "https://sinaimanuscripts/library.ucla.edu/work/2",
+        "extent": ["f. 1r-32v"],
+        //could also include paratextual content or attested author information, etc. if it's interesting?
+        "note": ["Incomplete at the beginning."],
+        "features": []
+      },
+      {
+        "title": "Gospel of Mark",
+        "work": "https://sinaimanuscripts/library.ucla.edu/work/3",
+        "extent": ["f. 32v-70r"],
+        "note": [],
+        "features": []
+      },
+      {
+        "title": "Gospel of Luke",
+        "work": "https://sinaimanuscripts/library.ucla.edu/work/4",
+        "extent": ["f. 70r-105v"],
+        "note": [],
+        "features": ["Marginalia"]
+      },
+      {
+        "title": "Gospel of John",
+        "work": "https://sinaimanuscripts/library.ucla.edu/work/5",
+        "extent": ["f. 106r-152v"],
+        "note": [],
+        "features": []
+      }]
+    },
   "references": [
     {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
      "citation_key": "Lewis 1894",
