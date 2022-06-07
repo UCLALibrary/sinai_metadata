@@ -1,81 +1,119 @@
-
-  {
+{
   "id": "ark:/21198/t493kf6d",
   "type": "Codicological Unit",
-  "label": "Sinai Syriac 2A, ff. 153-179",
-  "unit_start": {
-    "parent_id": "ark:/21198/z1x07bdf",
-    "locus": "153"
+  "label": "Part 2",
+  "extent": "f. 153-179",
+  "dimensions": [{
+    "type": "average-folio",
+    "value": "320 x 250 x 92 mm"
+  }],
+  "support": {
+    "type": "Parchment",
+    "features": [],
+    "note": []
   },
-  "unit_end": {
-    "parent_id": "ark:/21198/z1x07bdf",
-    "locus": "179"
+  "condition": {
+    "note": [],
+    "features": []
   },
-  "origin": {
-    "date_human-readable": "6th c. CE",
-    "date_normalized": "0500/0600",
-    "place": {
-      "preferred_name": "Saint Catherine (Monastery : Mount Sinai)",
-      "authority_file": "https://sinaimanuscripts/library.ucla.edu/place/1",
-      "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
-      "attested_name": "Mount Sinai"
-      }
+  "writing_and_hands": [{
+    "language": "Syriac",
+    "writing_system": "Syriac",
+    "script": "Estrangela",
+    "ink_color": "black",
+    "hand_note": ["Slightly cursive"],
+    "textual_artifacts": ["ark:/21198/bef15e4p", "ark:/21198/dfat3415s", "ark:/21198/dfat3415s"],
+    "extent": ["f. 153-179"]
+  }],
+  "page_layout": [{
+    "columns": 1,
+    "number_of_lines": 26,
+    "column_width": "",
+    "margin_width": "",
+    "features": [],
+    "note": [""],
+    "extent": ["f. 153-179"]
+  }],
+  "collation": {
+    "viscodex": "",
+    "formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",
+    "note": ["Quire signatures at beginning and end of most quires."],
+    "features": ["Signatures"]
   },
-  "associated_persons":
-    [{
-      "authority_file": "https://sinaimanuscripts/library.ucla.edu/person/3",
-      "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
-      "attested_name": "Dayroyo Yohanan bar Me'sam",
-      "role": "scribe",
-      "source": "Colophon, f. 179r"
-    }],
-  "associated_places": [],
-    "language": ["Syriac"],
-    "hand_description": [
-      {
-        "writing_system": ["Syriac"],
-        "script": ["Estrangela"],
-        "ink_color": "black",
-        "hand_note": ["Slightly cursive"]
-      }],
-  "condition_note": "Quire signatures at beginning and end of most quires.",
-  "features": ["Rubrication", "Decoration, Geometric", "Marginalia", "Headpiece(s)", "Colophon"],
-  "references": [
-    {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
-     "citation_key": "Lewis 1894",
-     "cited_range": [{"unit": "p.", "range": "1-2"}]
-    },
-    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
-     "citation_key": "Kamil 1970",
-     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
-    },
-    {"uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
-     "citation_key": "Géhin 2017",
-     "cited_range": [{"unit": "p.", "range": "28-30"}]
-    }],
-  "bibliography": [],
-  "extent": "180 ff.",
-  "dimensions": [
+  "paratexts": [
     {
-      "type": "average-folio",
-      "value": "320 x 250 x 92 mm"
+      "type": "colophon",
+      "locus": "179r",
+      "transcription": {
+        "syr": ["ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…"]
+      },
+      "translation": {
+        "en": ["With the Lord's aid is completed the Synaxarion for..."]
+      },
+      "note": [],
+      "features": ["Colophon"]
     }
   ],
-  "collation_formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",
-  "collation_note": [""],
-  "decorations": ["Geometric decorations surround the rubrics on f. 179."],
-  "page_layout": [
-    {"columns": 1,
-      "number_of_lines": 26,
-      "page_layout_note": [""]
-      }],
-  "colophon": {
-    "locus": "179r",
-    "transcription": {"syr": ["ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…"]},
-    "translation": {"en": ["With the Lord's aid is completed the Synaxarion for..."]}
-  },
+  "associated_dates": [
+    {
+      "type": "production",
+      "date_human_readable": "6th c. CE",
+      "date_normalized": "0500/0600",
+      "source": ["Kamil 1970, based on paleographic data."]
+    }
+  ],
+  "associated_persons": [{
+    "type": "scribe",
+    "id": "https://sinaimanuscripts/library.ucla.edu/person/3",
+    "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
+    "attested_name": "Dayroyo Yohanan bar Me'sam",
+    "source": ["Colophon, f. 179r."]
+  }],
+  "associated_places": [
+    {
+      "type": "production",
+      "id": "https://sinaimanuscripts/library.ucla.edu/place/1",
+      "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+      "attested_name": "Mount Sinai",
+      "source": ["Colophon, f. 179r."]
+    }
+  ],
   "provenance": ["Created at Sinai, and remained there."],
-  "viscodex": "",
+  "decorations": [{
+    "note": ["Geometric decorations surround the rubrics on f. 179."],
+    "features": ["Decoration, Geometric"],
+    "extent": ["f. 179r"]
+  }],
+  "features": ["Rubrication", "Marginalia", "Headpiece(s)"],
+  "references": [{
+      "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+      "citation_key": "Lewis 1894",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "1-2"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+      "citation_key": "Kamil 1970",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "152"
+      }, {
+        "unit": "number",
+        "range": "38"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+      "citation_key": "Géhin 2017",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "28-30"
+      }]
+    }
+  ],
+  "bibliography": [],
   "iiif": {
     "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
     "text_direction": "right-to-left",
@@ -84,5 +122,20 @@
   },
   "contributor": ["gkessel"],
   "parent_objects": ["ark:/21198/z1x07bdf"],
-  "textual_artifacts": ["ark:/21198/bef15e4p", "ark:/21198/dfat3415s", "ark:/21198/dfat3415s"]
+  "textual_artifacts": [{
+      "id": "ark:/21198/bef15e4p",
+      "sequence": 1,
+      "layer": 0
+    },
+    {
+      "id": "ark:/21198/dfat3415s",
+      "sequence": 2,
+      "layer": 0
+    },
+    {
+      "id": "ark:/21198/dfat3415s",
+      "sequence": 3,
+      "layer": 0
+    }
+  ]
 }
