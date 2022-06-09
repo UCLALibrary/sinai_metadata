@@ -2,16 +2,24 @@ import pandas as pd
 import os
 import exifread
 from pathlib import Path
-from pathlib import PureWindowsPath, PurePosixPath
 
-def find_full_path(filename, file_location):
+def get_candidate_files(file_location):
+    '''Starting at file_location, return list of all files in subdirectories.'''
+    file_list = []
     for root, dirs, files in os.walk(file_location):
         for file in files:
-            if filename in file:
-                return (os.path.join(root, file)), True
+            file_list.append(os.path.join(root, file))
+    return file_list
+
+def find_full_path(filename, file_list):
+    '''Given file name and full file list, find matches'''
+    for file in file_list:
+        if filename in file:
+            return (file), True
     return ('No match found for ' + str(filename)), False
 
 def make_output_df():
+    '''Create empty pandas DF to put metadata in'''
     destination_cols=['File Path','Title', 'Object Type',
                       'Source','Parent ARK', 'Item ARK']
     output_df = pd.DataFrame(columns=destination_cols)
@@ -28,35 +36,46 @@ def main():
     #create dataframe to use for final .csv output
     output_df = make_output_df()
 
-    #get full list of files in directory, then loop through for the ones we want
+    #get full list of files in directory ahead of time
     full_filenames = []
     sources = []
     titles = []
-    print('Looking for files')
-    #keep track of how far we've gotten
+    print('Getting directory files')
+    candidate_files = get_candidate_files(file_location)
+    print('Found ' + str(len(candidate_files)) + ' candidate files')
+
+    #get file names from csv
+    files_to_find = filename_csv['files']
+    print('Finding matches for ' + str(len(files_to_find)) + ' desired files')
+    #variables for tracking % completion
     done_counter = 0
-    total_files = len(filename_csv['files'])
     old_pct = 0
-    for filename in filename_csv['files']:
-        full_name, found = find_full_path(filename, file_location)
+    #main loop: iterate through desired filenames to find paths
+    for filename in files_to_find:
+        #find paths using helper function, add to list
+        full_name, found = find_full_path(filename, candidate_files)
         full_filenames.append(full_name)
-        sources.append(os.path.split(full_name)[0])
+        #for found items, add TIFF metadata and source column (folder path)      
         if found:
             img = open(full_name, 'rb')
             tags = exifread.process_file(img)
             title = tags['Image ImageDescription']
             titles.append(title)
+            sources.append(os.path.split(full_name)[0])
+        #for non-found items, add dummy metadata to keep rows aligned
+        else:
+            titles.append("File not found")
+            sources.append()
+        #counter logic: calculate new % done, print if we've reached a new 5%
         done_counter += 1
-        pct_done = done_counter/total_files
+        pct_done = done_counter/len(files_to_find)
         if pct_done > old_pct + .05:
             print(str(round(pct_done *100)) + ' percent done')
-        old_pct = pct_done
+            old_pct = pct_done
         
-
-
     #add new column values to output dataframe
     output_df['File Path'] = full_filenames
-    output_df['Object Type'] = 'page'
+    output_df['Object Type'] = 'page' #constant for now
     output_df['Source'] = sources
     output_df['Title'] = titles
 
