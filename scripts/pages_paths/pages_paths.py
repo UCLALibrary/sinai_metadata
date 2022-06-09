@@ -65,7 +65,7 @@ def main():
         #for non-found items, add dummy metadata to keep rows aligned
         else:
             titles.append("File not found")
-            sources.append()
+            sources.append("Folder not found")
         #counter logic: calculate new % done, print if we've reached a new 5%
         done_counter += 1
         pct_done = done_counter/len(files_to_find)
