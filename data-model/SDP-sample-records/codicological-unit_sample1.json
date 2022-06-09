@@ -22,7 +22,7 @@
     "script": "Estrangela",
     "ink_color": "black",
     "hand_note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
-    "textual_artifacts": ["ark:/21198/z1x07bdf"], //re-using the field name with different data format...
+    "textual_artifacts": ["ark:/21198/z1x07bdf"],
     "extent": ["f. 1-152"]
   }],
   "page_layout": [{
@@ -30,7 +30,7 @@
     "number_of_lines": 26,
     "column_width": "",
     "margin_width": "",
-    "features": [], //e.g., 'Ruling'
+    "features": [],
     "note": [""],
     "extent": ["f. 1-152"]
   }],
@@ -41,7 +41,7 @@
     "features": ["Signatures"]
   },
   "paratexts": [{
-      "type": "reader-note", //it's not clear if this is truly a reader's note. Not sure of the typology here? But it seems more about the book and its possession than about it being the Gospels. Andrist 2018 would maybe suggest 'book paratext'?
+      "type": "reader-note",
       "locus": "f. 114v",
       "transcription": {
         "syr": ["ܢܗܘܐ ܕܘܟܪܢܐ ܛܒܐ ܩܕܡ ܐܠܗܐ ܘܡܫܝܚܗ ܠܝܥܩܘܒ ܘܠܒܪ ܫܒܘܢ ܒܢ̈ܘܗܝ ܕܒܣܝܠ ܕܡܢ ܐܝܘ ܩܪܝܬܐ"]
@@ -52,9 +52,8 @@
       "note": ["The association between these persons and the scribe, or the production of the manuscript more generally, remains unclear."],
       "features": []
     }
-    //colophon would go here as well, if there were one.
   ],
-  "associated_dates": [ //just 'date' or 'dates'?
+  "associated_dates": [
     {
       "type": "production",
       "date_human_readable": "6th c. CE",
@@ -96,7 +95,7 @@
   "decorations": [{
     "note": ["Geometric decorations surround the rubrics (e.g., f. 114r)."],
     "features": ["Decoration, Geometric"],
-    "extent": ["f. 114r"] //what do we do with 'throughout'?
+    "extent": ["f. 114r"]
   }],
   "features": ["Rubrication", "Headpiece(s)"],
   "references": [{

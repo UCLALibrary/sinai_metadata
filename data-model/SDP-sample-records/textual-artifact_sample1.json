@@ -2,7 +2,7 @@
   "id": "ark:/21198/adf20c1f",
   "type": "Textual Artifact",
   "label": "Gospels",
-  "extent": ["f. 1-152"],//must be of the form 'f\. \d+[rv]?-?\d*[rv]?' with the caveat that the number after the - must be greater than or equal to the number before.
+  "extent": ["f. 1-152"],
   "work": "https://sinaimanuscripts/library.ucla.edu/work/1",
   "associated_persons": [
     {
@@ -41,7 +41,6 @@
         "title": "Gospel of Matthew",
         "work": "https://sinaimanuscripts/library.ucla.edu/work/2",
         "extent": ["f. 1r-32v"],
-        //could also include paratextual content or attested author information, etc. if it's interesting?
         "note": ["Incomplete at the beginning."],
         "features": []
       },
