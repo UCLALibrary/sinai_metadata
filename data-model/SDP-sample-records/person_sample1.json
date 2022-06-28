@@ -1,16 +1,24 @@
 {
   "id": "https://sinaimanuscripts.library.ucla.edu/person/1",
   "label": "John bar Me'sam (6th c. CE)",
+  "entity_type": "person",
   "uniform_name": "John bar Me'sam, Monk, 6th c. CE",
+  "description": "A scribe, operating at the Monastery on Mount Sinai around the 6th century.",
   "authority_files": [],
-  "dates": {
-    "birth": {},
-    "death": {},
-    "floruit": {"date_human-readable": "6th c. CE", "date_normalized": "0500/0600"}
-  },
+  "associated_dates": [{
+    "type": "floruit",
+    "date_human_readable": "6th c. CE",
+    "date_normalized": "0500/0600"
+  }],
+  "associated_entities": [{
+      "type": "place",
+      "relation": "inhabited",
+      "id": "https://sinaimanuscripts.librar.ucla.edu/place/1",
+      "notes": []
+    }
+  ],
   "sex": "male",
-  "associated_places": ["https://sinaimanuscripts.librar.ucla.edu/place/1"],
-  "associated_persons": [],
+  "notes": [],
   "references": [],
   "contributor": ["gkessel"]
 }
