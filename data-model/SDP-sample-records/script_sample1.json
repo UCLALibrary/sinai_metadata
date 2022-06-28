@@ -1,11 +1,22 @@
 {
   "id": "https://sinaimanuscripts.library.ucla.edu/script/1",
   "label": "Serto (script)",
-  "associated_writing_systems": ["Syriac"],
-  "temporal_coverage": {
-    "date_human-readable": "post-7th c. - present",
+  "entity_type": "script",
+  "uniform_name": "Serto (script)",
+  "description": "Serto is a cursive Syriac script that developed throughout the 7th century (CE) and became the dominant script in West Syrian manuscripts.",
+  "authority_files": [],
+  "associated_dates": [{
+    "type": "temporal-coverage",
+    "date_human_readable": "post-7th c. - present",
     "date_normalized": "0650/"
-  },
+  }],
   "geographic_coverage": "Typically used in West Syrian manuscripts",
+  "associated_entities": [{
+    "type": "writing_system",
+    "realtion": "script-type-of",
+    "id": "https://sinaimanuscripts.library.ucla.edu/writing-system/1"
+  }],
+  "notes": [],
+  "references": [],
   "contributor": ["gkessel"]
 }
