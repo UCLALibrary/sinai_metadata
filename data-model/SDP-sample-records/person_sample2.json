@@ -36,7 +36,7 @@
       "id": "https://sinaimanuscripts.librar.ucla.edu/place/100",
       "notes": []
     },
-    {//this would likely be a backlink from the work record rather than specified in the author record
+    {
       "type": "work",
       "relation": "author-of",
       "id": "https://sinaimanuscripts.library.ucla.edu/work/10"
