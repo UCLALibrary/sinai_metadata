@@ -14,7 +14,7 @@ Then, to run commands inside the new virtual environment, you can either enter `
 You can then use the script to export individual deliveries from Airtable into a CSV for ingest into the Sinai solr index:
 
 ```
-pipenv run sinai_airtable_export.py
+pipenv run python sinai_airtable_export.py
 ```
 
 The script will prompt for a delivery number (ex. 4.4) for export. The resulting CSV will save to the airtable_export folder.
