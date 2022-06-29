@@ -1,31 +1,36 @@
 {
   "id": "ark:/21198/z1x07bdf",
-  "type": "Manuscript Object",
+  "type": "ms_object",
   "shelfmark": "Sinai Syriac 2A",
   "collection": "Old Collection",
   "repository": "https://sinaimanuscripts.library.ucla.edu/place/1",
-  "form": "Codex",
+  "form": "codex",
   "binding": {
-    "exists": true,
-    "type": "",
+    "has_binding": true,
     "note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
     "features": []
   },
-  "extent": ["f. 1-180"],
+  "extent": "180 ff.",
   "weight": "3788.3 g",
-  "dimensions": [{
-    "type": "object",
-    "value": "328 x 255 x 97 mm"
-  }],
+  "dimensions": ["328 x 255 x 97 mm"],
   "condition": {
     "note": [],
     "features": []
   },
-  "provenance": [{
+  "foliation": ["ff. 1-180"],
+  "collation": {
+    "viscodex": "",
+    "formula": [],
+    "note": ["Quire signatures at beginning and end of most quires."],
+    "features": ["signatures"]
+  },
+  "events": [{
+    "id": "$ARKID$",
     "type": "acquisition",
-    "note": ["Created and remained in Saint Catherine's Monastery"],
-    "features": [],
-    "source": []
+    "note": ["This manuscript was created at Saint Cahterine's Monastery, and appears to have remained there."],
+    "associated_dates": [],
+    "associated_entities": [],
+    "sources": []
   }],
   "paratexts": [],
   "associated_persons": [],
@@ -73,7 +78,6 @@
     "viewing_hint": "paged",
     "range": ""
   },
-  "viscodex": "",
   "contributor": ["gkessel"],
   "parts": [{
     "id": "ark:/21198/a310jfBd",
