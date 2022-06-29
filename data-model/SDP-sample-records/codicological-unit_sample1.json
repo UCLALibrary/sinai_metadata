@@ -1,29 +1,27 @@
 {
   "id": "ark:/21198/a310jfBd",
-  "type": "Codicological Unit",
+  "type": "part",
   "label": "Part 1",
-  "extent": ["f. 1-152"],
-  "dimensions": [{
-    "type": "average-folio",
-    "value": "320 x 250 x 92 mm"
-  }],
-  "support": {
-    "type": "Parchment",
+  "foliation": ["ff. 1-152"],
+  "extent": ["152 ff."],
+  "dimensions": ["320 x 250 x 92 mm"],
+  "support": [{
+    "type": "parchment",
     "features": [],
     "note": ["Quire 20 is paper."]
-  },
+  }],
   "condition": {
     "note": [],
     "features": []
   },
   "writing_and_hands": [{
-    "language": "Syriac",
-    "writing_system": "Syriac",
-    "script": "Estrangela",
+    "language": "syriac",
+    "writing_system": "syriac",
+    "script": "estrangela",
     "ink_color": "black",
     "hand_note": ["Taw, Alaph, and Dalath/Resh all exhibit features of Serto."],
-    "textual_artifacts": ["ark:/21198/z1x07bdf"],
-    "extent": ["f. 1-152"]
+    "corresponding_textual_artifacts": ["ark:/21198/z1x07bdf"],
+    "range": ["ff. 1-152"]
   }],
   "page_layout": [{
     "columns": 1,
@@ -32,72 +30,69 @@
     "margin_width": "",
     "features": [],
     "note": [""],
-    "extent": ["f. 1-152"]
+    "range": ["ff. 1-152"]
   }],
   "collation": {
     "viscodex": "",
     "formula": ["Pastedown+flyleaf, Quire 1: 1x10 (10), Quire 2: 1x6 (16), Quire 3: 1x8 (24), Quire 4: 1+1x8 (33), Quires 5-12: 8x8 (97), Quire 13: 1x8+1 (106), Quire 14: 1x6+1+1 (114), Quire 15: 1x8 (122), Quire 16: 6x1 (128), Quire 17: 1x6+1 (135), Quire 18: 1x6+1 (142), Quire 19: 1x6 (148), Quire 20 (paper): 1x4 (152)."],
     "note": ["Quire signatures at beginning and end of most quires."],
-    "features": ["Signatures"]
+    "features": ["signatures"]
   },
-  "paratexts": [{
-      "type": "reader-note",
-      "locus": "f. 114v",
-      "transcription": {
-        "syr": ["ܢܗܘܐ ܕܘܟܪܢܐ ܛܒܐ ܩܕܡ ܐܠܗܐ ܘܡܫܝܚܗ ܠܝܥܩܘܒ ܘܠܒܪ ܫܒܘܢ ܒܢ̈ܘܗܝ ܕܒܣܝܠ ܕܡܢ ܐܝܘ ܩܪܝܬܐ"]
-      },
-      "translation": {
-        "en": ["May there be a blessed rememberance before God and his Christ for Jacob and Bar-Shabbon, sons of Basil, from the village of Yw."]
-      },
-      "note": ["The association between these persons and the scribe, or the production of the manuscript more generally, remains unclear."],
-      "features": []
-    }
-  ],
-  "associated_dates": [
-    {
-      "type": "production",
+  "events": [{
+    "id": "$ARKID$",
+    "type": "production",
+    "notes": [],
+    "associated_dates": [{
       "date_human_readable": "6th c. CE",
       "date_normalized": "0500/0600",
-      "source": "Kamil 1970, based on paleographic data."
-    }
-  ],
-  "associated_persons": [{
-      "type": "unknown",
-      "id": "https://sinaimanuscripts/library.ucla.edu/person/1",
-      "attested_name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
-      "attested_name": "Ya'qub bar d-Basil",
-      "source": "Attested in the note on f. 114v"
+      "notes": ["See Kamil 1970. Dating based on paleographic data."]
+    }],
+    "associated_entities": [],
+    "sources": ["Kamil 1970"]
+  }],
+  "paratexts": [{
+    "id": "$ARKID$",
+    "type": "reader-note",
+    "locus": "f. 114v",
+    "transcription": {
+      "syr": ["ܢܗܘܐ ܕܘܟܪܢܐ ܛܒܐ ܩܕܡ ܐܠܗܐ ܘܡܫܝܚܗ ܠܝܥܩܘܒ ܘܠܒܪ ܫܒܘܢ ܒܢ̈ܘܗܝ ܕܒܣܝܠ ܕܡܢ ܐܝܘ ܩܪܝܬܐ"]
     },
-    {
-      "type": "unknown",
-      "id": "https://sinaimanuscripts/library.ucla.edu/person/2",
-      "attested_name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
-      "attested_name": "Bar-Shabon bar d-Basil",
-      "source": "Attested in the note on f. 114v"
-    }
-  ],
-  "associated_places": [{
-      "type": "production",
-      "id": "https://sinaimanuscripts/library.ucla.edu/place/1",
-      "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
-      "attested_name": "Mount Sinai",
-      "source": "Attested in the colophon on f. 152v"
+    "translation": {
+      "en": ["May there be a blessed rememberance before God and his Christ for Jacob and Bar-Shabbon, sons of Basil, from the village of Yw."]
     },
-    {
-      "type": "unknown",
-      "id": "https://sinaimanuscripts/library.ucla.edu/place/2",
-      "attested_name_NS": "ܐܝܘ ܩܪܝܬܐ",
-      "attested_name": "The Village Yw",
-      "source": "Provided in connection with Jacob and Bar-Shabbon in the note on f. 114v"
-    }
-  ],
-  "provenance": [],
+    "note": ["The association between the persons mentioned herein and the scribe, or the production of the manuscript more generally, remains unclear."],
+    "attested_entities": [{
+        "entity_type": "person",
+        "role": "unknown",
+        "id": "https://sinaimanuscripts/library.ucla.edu/person/1",
+        "attested_name_NS": "ܝܥܩܘܒ ܒܪܐ ܕܒܣܝܠ",
+        "attested_name": "Ya'qub bar d-Basil"
+      },
+      {
+        "entity_type": "person",
+        "role": "unknown",
+        "id": "https://sinaimanuscripts/library.ucla.edu/person/2",
+        "attested_name_NS": "ܒܪ ܫܒܘܢ ܒܪܐ ܕܒܣܝܠ",
+        "attested_name": "Bar-Shabon bar d-Basil"
+      },
+      {
+        "entity_type": "place",
+        "role": "unknown",
+        "id": "https://sinaimanuscripts/library.ucla.edu/place/2",
+        "attested_name_NS": "ܐܝܘ ܩܪܝܬܐ",
+        "attested_name": "The Village Yw"
+      }
+    ]
+  }],
+  "associated_dates": [],
+  "associated_persons": [],
+  "associated_places": [],
   "decorations": [{
     "note": ["Geometric decorations surround the rubrics (e.g., f. 114r)."],
-    "features": ["Decoration, Geometric"],
-    "extent": ["f. 114r"]
+    "features": ["deco_geom"],
+    "locus": ["f. 114r"]
   }],
-  "features": ["Rubrication", "Headpiece(s)"],
+  "features": ["rubrication"],
   "references": [{
       "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
       "citation_key": "Lewis 1894",
@@ -137,7 +132,6 @@
   "parent_objects": ["ark:/21198/z1x07bdf"],
   "textual_artifacts": [{
     "id": "ark:/21198/z1x07bdf",
-    "sequence": 1,
-    "layer": 0
+    "sequence": 1
   }]
 }

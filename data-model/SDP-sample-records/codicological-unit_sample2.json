@@ -1,29 +1,27 @@
 {
   "id": "ark:/21198/t493kf6d",
-  "type": "Codicological Unit",
+  "type": "part",
   "label": "Part 2",
-  "extent": "f. 153-179",
-  "dimensions": [{
-    "type": "average-folio",
-    "value": "320 x 250 x 92 mm"
-  }],
-  "support": {
-    "type": "Parchment",
+  "foliation": "ff. 153-179",
+  "extent": "27 ff.",
+  "dimensions": ["320 x 250 x 92 mm"],
+  "support": [{
+    "type": "parchment",
     "features": [],
     "note": []
-  },
+  }],
   "condition": {
     "note": [],
     "features": []
   },
   "writing_and_hands": [{
-    "language": "Syriac",
-    "writing_system": "Syriac",
-    "script": "Estrangela",
+    "language": "syriac",
+    "writing_system": "syriac",
+    "script": "estrangela",
     "ink_color": "black",
-    "hand_note": ["Slightly cursive"],
-    "textual_artifacts": ["ark:/21198/bef15e4p", "ark:/21198/dfat3415s", "ark:/21198/dfat3415s"],
-    "extent": ["f. 153-179"]
+    "hand_note": ["Slightly cursive."],
+    "corresponding_textual_artifacts": ["ark:/21198/bef15e4p", "ark:/21198/dfat3415s", "ark:/21198/dfat3415s"],
+    "range": ["ff. 153-179"]
   }],
   "page_layout": [{
     "columns": 1,
@@ -32,59 +30,73 @@
     "margin_width": "",
     "features": [],
     "note": [""],
-    "extent": ["f. 153-179"]
+    "range": ["ff. 153-179"]
   }],
   "collation": {
     "viscodex": "",
     "formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",
     "note": ["Quire signatures at beginning and end of most quires."],
-    "features": ["Signatures"]
+    "features": ["signatures"]
   },
-  "paratexts": [
-    {
-      "type": "colophon",
-      "locus": "179r",
-      "transcription": {
-        "syr": ["ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…"]
-      },
-      "translation": {
-        "en": ["With the Lord's aid is completed the Synaxarion for..."]
-      },
-      "note": [],
-      "features": ["Colophon"]
-    }
-  ],
-  "associated_dates": [
-    {
+  "events": [{
+      "id": "$ARKID$",
       "type": "production",
-      "date_human_readable": "6th c. CE",
-      "date_normalized": "0500/0600",
-      "source": ["Kamil 1970, based on paleographic data."]
+      "notes": [],
+      "associated_dates": [{
+        "date_human_readable": "6th c. CE",
+        "date_normalized": "0500/0600",
+        "notes": ["See Kamil 1970. Dating based on paleographic data."]
+      }],
+      "associated_entities": [],
+      "sources": ["colophonARKID"]
+    },
+    {
+      "id": "$ARKID$",
+      "type": "acquisition",
+      "notes": ["This manuscript part was created at Saint Cahterine's Monastery, and appears to have remained there."],
+      "associated_dates": [],
+      "associated_entities": [],
+      "sources": []
     }
   ],
-  "associated_persons": [{
-    "type": "scribe",
-    "id": "https://sinaimanuscripts/library.ucla.edu/person/3",
-    "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
-    "attested_name": "Dayroyo Yohanan bar Me'sam",
-    "source": ["Colophon, f. 179r."]
+  "paratexts": [{
+    "id": "$ARKID$",
+    "type": "colophon",
+    "locus": "f. 179r",
+    "transcription": {
+      "syr": ["ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…"]
+    },
+    "translation": {
+      "en": ["With the Lord's aid is completed the Synaxarion for..."]
+    },
+    "notes": [],
+    "features": ["colophon"],
+    "attested_dates": [],
+    "attested_entities": [{
+        "entity_type": "person",
+        "role": "scribe",
+        "id": "https://sinaimanuscripts/library.ucla.edu/person/3",
+        "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
+        "attested_name": "Dayroyo Yohanan bar Me'sam"
+      },
+      {
+        "entity_type": "place",
+        "role": "production",
+        "id": "https://sinaimanuscripts/library.ucla.edu/place/1",
+        "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+        "attested_name": "Mount Sinai"
+      }
+    ]
   }],
-  "associated_places": [
-    {
-      "type": "production",
-      "id": "https://sinaimanuscripts/library.ucla.edu/place/1",
-      "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
-      "attested_name": "Mount Sinai",
-      "source": ["Colophon, f. 179r."]
-    }
-  ],
-  "provenance": ["Created at Sinai, and remained there."],
+  "associated_dates": [],
+  "associated_persons": [],
+  "associated_places": [],
   "decorations": [{
     "note": ["Geometric decorations surround the rubrics on f. 179."],
-    "features": ["Decoration, Geometric"],
-    "extent": ["f. 179r"]
+    "features": ["deco_geom"],
+    "locus": ["f. 179r"]
   }],
-  "features": ["Rubrication", "Marginalia", "Headpiece(s)"],
+  "features": ["rubrication", "marginalia"],
   "references": [{
       "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
       "citation_key": "Lewis 1894",
@@ -124,18 +136,15 @@
   "parent_objects": ["ark:/21198/z1x07bdf"],
   "textual_artifacts": [{
       "id": "ark:/21198/bef15e4p",
-      "sequence": 1,
-      "layer": 0
+      "sequence": 1
     },
     {
       "id": "ark:/21198/dfat3415s",
-      "sequence": 2,
-      "layer": 0
+      "sequence": 2
     },
     {
       "id": "ark:/21198/dfat3415s",
-      "sequence": 3,
-      "layer": 0
+      "sequence": 3
     }
   ]
 }
