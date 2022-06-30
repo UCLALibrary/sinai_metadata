@@ -3,7 +3,7 @@
   "type": "part",
   "label": "Part 1",
   "foliation": ["ff. 1-152"],
-  "extent": ["152 ff."],
+  "extent": "152 ff.",
   "dimensions": ["320 x 250 x 92 mm"],
   "support": [{
     "type": "parchment",
