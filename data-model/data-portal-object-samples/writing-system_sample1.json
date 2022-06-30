@@ -1,9 +1,0 @@
-{
-  "id": "https://sinaimanuscripts.library.ucla.edu/writing-system/1",
-  "label": "Syriac (writing system)",
-  "associated_languages": ["Syriac", "Arabic", "Turkish", "Malayalam"]//controlled vocabulary
-  //ISO 15924? But these are called 'script codes', and what we call script are 'typographic variants'. Cf. https://en.wikipedia.org/wiki/ISO_15924#Syrc
-  //some kind of 'dates in use'?
-  //employed scripts could be included here? (this is that same question of where we need to specify two-way vs one-way connections, and which direction one-way connections should flow)
-  //I'm honestly sure what else to include here?
-}
