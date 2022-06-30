@@ -1,0 +1,27 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/place/2",
+  "label": "Edessa",
+  "entity_type": "place",
+  "uniform_name": "Urfa (settlement)",
+  "type": "settlement",
+  "description": "A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.",
+  "authority_files": [{
+      "id": "https://w3id.org/haf/place/448748963866",
+      "uniform_name": "Urfa"
+    },
+    {
+      "id": "http://syriaca.org/place/78",
+      "uniform_name": "Edessa - ܐܘܪܗܝ"
+    }
+  ],
+  "associated_dates": [],
+  "location": [{
+    "type": "gps",
+    "coordinates": "37.15 38.8",
+    "source": "Pleiades"
+  }],
+  "associated_entities": [],
+  "notes": [],
+  "references": [],
+  "contributor": ["gkessel"]
+}

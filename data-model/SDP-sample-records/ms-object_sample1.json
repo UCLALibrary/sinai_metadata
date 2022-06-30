@@ -1,0 +1,89 @@
+{
+  "id": "ark:/21198/z1x07bdf",
+  "type": "ms_object",
+  "shelfmark": "Sinai Syriac 2A",
+  "collection": "Old Collection",
+  "repository": "https://sinaimanuscripts.library.ucla.edu/place/1",
+  "form": "codex",
+  "binding": {
+    "has_binding": true,
+    "note": ["Relatively recent; leather on wood showing signs of repair; metal studs (some missing) on front and back and along edges; remnants of clasps (four total, two for edge and one each at top and bottom)"],
+    "features": []
+  },
+  "extent": "180 ff.",
+  "weight": "3788.3 g",
+  "dimensions": ["328 x 255 x 97 mm"],
+  "condition": {
+    "note": [],
+    "features": []
+  },
+  "foliation": ["ff. 1-180"],
+  "collation": {
+    "viscodex": "",
+    "formula": [],
+    "note": ["Quire signatures at beginning and end of most quires."],
+    "features": ["signatures"]
+  },
+  "events": [{
+    "id": "$ARKID$",
+    "type": "acquisition",
+    "note": ["This manuscript was created at Saint Cahterine's Monastery, and appears to have remained there."],
+    "associated_dates": [],
+    "associated_entities": [],
+    "sources": []
+  }],
+  "paratexts": [],
+  "associated_persons": [],
+  "associated_places": [],
+  "associated_dates": [],
+  "references": [{
+      "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+      "citation_key": "Lewis 1894",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "1-2"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+      "citation_key": "Kamil 1970",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "152"
+      }, {
+        "unit": "number",
+        "range": "38"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+      "citation_key": "Géhin 2017",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "28-30"
+      }]
+    }
+  ],
+  "bibliography": [{
+    "uri": "https://www.zotero.org/groups/2276183/items/9JPCDM9J",
+    "citation_key": "Brock 1995",
+    "cited_range": [{
+      "unit": "p.",
+      "range": "30"
+    }]
+  }],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "contributor": ["gkessel"],
+  "parts": [{
+    "id": "ark:/21198/a310jfBd",
+    "sequence": 1
+  }, {
+    "id": "ark:/21198/t493kf6d",
+    "sequence": 2
+  }]
+}

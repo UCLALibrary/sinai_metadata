@@ -1,0 +1,150 @@
+{
+  "id": "ark:/21198/t493kf6d",
+  "type": "part",
+  "label": "Part 2",
+  "foliation": "ff. 153-179",
+  "extent": "27 ff.",
+  "dimensions": ["320 x 250 x 92 mm"],
+  "support": [{
+    "type": "parchment",
+    "features": [],
+    "note": []
+  }],
+  "condition": {
+    "note": [],
+    "features": []
+  },
+  "writing_and_hands": [{
+    "language": "syriac",
+    "writing_system": "syriac",
+    "script": "estrangela",
+    "ink_color": "black",
+    "hand_note": ["Slightly cursive."],
+    "corresponding_textual_artifacts": ["ark:/21198/bef15e4p", "ark:/21198/dfat3415s", "ark:/21198/dfat3415s"],
+    "range": ["ff. 153-179"]
+  }],
+  "page_layout": [{
+    "columns": 1,
+    "number_of_lines": 26,
+    "column_width": "",
+    "margin_width": "",
+    "features": [],
+    "note": [""],
+    "range": ["ff. 153-179"]
+  }],
+  "collation": {
+    "viscodex": "",
+    "formula": "Quire 21: 8x1 (160), Quire 22: 6x1 (166), Quire 23 (paper): 1x8, Quire 24 (paper): 1x6 (180), flyleaf+pastedown.",
+    "note": ["Quire signatures at beginning and end of most quires."],
+    "features": ["signatures"]
+  },
+  "events": [{
+      "id": "$ARKID$",
+      "type": "production",
+      "notes": [],
+      "associated_dates": [{
+        "date_human_readable": "6th c. CE",
+        "date_normalized": "0500/0600",
+        "notes": ["See Kamil 1970. Dating based on paleographic data."]
+      }],
+      "associated_entities": [],
+      "sources": ["colophonARKID"]
+    },
+    {
+      "id": "$ARKID$",
+      "type": "acquisition",
+      "notes": ["This manuscript part was created at Saint Cahterine's Monastery, and appears to have remained there."],
+      "associated_dates": [],
+      "associated_entities": [],
+      "sources": []
+    }
+  ],
+  "paratexts": [{
+    "id": "$ARKID$",
+    "type": "colophon",
+    "locus": "f. 179r",
+    "transcription": {
+      "syr": ["ܐܫܛܠܡ ܒܥܘܕܪܢ ܡܪܝܐ ܣܘܢܟܣܪܝܢ ܝܘܡ…"]
+    },
+    "translation": {
+      "en": ["With the Lord's aid is completed the Synaxarion for..."]
+    },
+    "notes": [],
+    "features": ["colophon"],
+    "attested_dates": [],
+    "attested_entities": [{
+        "entity_type": "person",
+        "role": "scribe",
+        "id": "https://sinaimanuscripts/library.ucla.edu/person/3",
+        "attested_name_NS": "ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܥܨܡ",
+        "attested_name": "Dayroyo Yohanan bar Me'sam"
+      },
+      {
+        "entity_type": "place",
+        "role": "production",
+        "id": "https://sinaimanuscripts/library.ucla.edu/place/1",
+        "attested_name_NS": "ܛܘܪ ܣܝܢܝ",
+        "attested_name": "Mount Sinai"
+      }
+    ]
+  }],
+  "associated_dates": [],
+  "associated_persons": [],
+  "associated_places": [],
+  "decorations": [{
+    "note": ["Geometric decorations surround the rubrics on f. 179."],
+    "features": ["deco_geom"],
+    "locus": ["f. 179r"]
+  }],
+  "features": ["rubrication", "marginalia"],
+  "references": [{
+      "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+      "citation_key": "Lewis 1894",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "1-2"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+      "citation_key": "Kamil 1970",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "152"
+      }, {
+        "unit": "number",
+        "range": "38"
+      }]
+    },
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+      "citation_key": "Géhin 2017",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "28-30"
+      }]
+    }
+  ],
+  "bibliography": [],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "range": ""
+  },
+  "contributor": ["gkessel"],
+  "parent_objects": ["ark:/21198/z1x07bdf"],
+  "textual_artifacts": [{
+      "id": "ark:/21198/bef15e4p",
+      "sequence": 1
+    },
+    {
+      "id": "ark:/21198/dfat3415s",
+      "sequence": 2
+    },
+    {
+      "id": "ark:/21198/dfat3415s",
+      "sequence": 3
+    }
+  ]
+}

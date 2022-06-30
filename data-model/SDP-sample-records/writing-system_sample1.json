@@ -1,0 +1,18 @@
+{
+  "id": "https://sinaimanuscripts.library.ucla.edu/writing-system/1",
+  "label": "Syriac (writing system)",
+  "entity_type": "writing system",
+  "uniform_name": "Syriac (writing system)",
+  "description": "The Syriac writing system developed in Edessa ca. 150 CE. It is attested by inscriptions in Edessa and came to be used as a literary writing system for several eastern Christian communities in the first millenium CE. It has remained in use until the present day and has been used to write Syriac natively as well as several other languages such as Arabic and Turkish.",
+  "authority_files": [],
+  "associated_dates": [{
+    "type": "in-use",
+    "date_human_readable": "2nd c. CE to present day",
+    "date_normalized": "0100/"
+  }],
+  "associated_languages": ["Syriac", "Arabic", "Turkish", "Malayalam"],
+  "associated_entities": [],
+  "notes": [],
+  "references": [],
+  "contributor": ["gkessel"]
+}
