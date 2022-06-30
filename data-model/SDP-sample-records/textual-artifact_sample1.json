@@ -1,89 +1,132 @@
 {
   "id": "ark:/21198/adf20c1f",
-  "type": "Textual Artifact",
+  "type": "text",
   "label": "Gospels",
-  "extent": ["f. 1-152"],
+  "foliation": ["ff. 1-152"],
+  "extent": "152 ff.",
   "work": "https://sinaimanuscripts/library.ucla.edu/work/1",
-  "associated_persons": [
-    {
-      "type": "attributed-author",
-      "id": "https://sinaimanuscripts/library.ucla.edu/person/42",
-      "attested_name_NS": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ",
-      "attested_name": "Qadisho Mar Yuhanon",
-      "source": "Final rubric on f. 152v"}
-  ],
-  "paratexts": [
-    {
-      "type": "explicit",
-      "locus": "f. 152v",
-      "transcription": {"syr": ["ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ "]},
-      "translation": {"en": ["There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written."]}
-    },
-    {
-      "type": "final rubric",
-      "locus": "f. 152v",
-      "transcription": {"syr": ["ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ"]},
-      "translation": {"en": ["Finished is the Gospel of Saint John which he spoke in Greek in Ephesus."]}
-    }
-  ],
-  "defective": true,
-  "condition":
-  {
+  "condition": {
+    "defective": true,
     "note": ["Syriac 2A originally belonged together with ms. Chabot 12 (Milan, Biblioteca Ambrosiana)."],
     "features": []
   },
-  "contents":
-  {
+  "contents": {
     "note": ["Incomplete at the beginning, missing portions of the Gospel of Matthew"],
     "features": [],
-    "toc": [
-      {
+    "toc": [{
         "title": "Gospel of Matthew",
         "work": "https://sinaimanuscripts/library.ucla.edu/work/2",
-        "extent": ["f. 1r-32v"],
+        "locus": ["f. 1r-32v"],
         "note": ["Incomplete at the beginning."],
-        "features": []
+        "features": [],
+        "paratexts": []
       },
       {
         "title": "Gospel of Mark",
         "work": "https://sinaimanuscripts/library.ucla.edu/work/3",
-        "extent": ["f. 32v-70r"],
+        "locus": ["f. 32v-70r"],
         "note": [],
-        "features": []
+        "features": [],
+        "paratexts": []
       },
       {
         "title": "Gospel of Luke",
         "work": "https://sinaimanuscripts/library.ucla.edu/work/4",
-        "extent": ["f. 70r-105v"],
+        "locus": ["f. 70r-105v"],
         "note": [],
-        "features": ["Marginalia"]
+        "features": ["marginalia"],
+        "paratexts": []
       },
       {
         "title": "Gospel of John",
         "work": "https://sinaimanuscripts/library.ucla.edu/work/5",
-        "extent": ["f. 106r-152v"],
+        "locus": ["f. 106r-152v"],
         "note": [],
-        "features": []
+        "features": [],
+        "paratexts": [{
+            "id": "$ARIKID$",
+            "type": "explicit",
+            "locus": "f. 152v",
+            "transcription": {
+              "syr": ["ܐܝܬ ܕܝܢ ܐܦ ܐܚܪ̈ܢܝܬܐ ܣܓ̈ܝܬܐ ܕܥܒܕ ܝܫܘܥ ܐܝܠܝܢ ܕܐܠܘ ܚܕܐ ܚܕܐ ܡܬܟܬܒܢ ܗܘ̈ܝ. ܐܦ ܠܐ  ܗܘ ܥܠܡܐ ܐܝܟ ܕܣܒܪ ܐܢܐ. ܣܦܩ ܗܘܐ ܠܟܬܒ̈ܐ ܕܡܬܟܬ̈ܒܝܢ "]
+            },
+            "translation": {
+              "en": ["There were also many other things which Jesus did that, were each one written, I believe, not even the world would be sufficient for the books which would be written."]
+            },
+            "notes": [],
+            "features": [],
+            "attested_dates": [],
+            "attested_entities": []
+          },
+          {
+            "id": "$ARIKID$",
+            "type": "final rubric",
+            "locus": "f. 152v",
+            "transcription": {
+              "syr": ["ܫܠܡ ܐܘܢܓܠܝܘܢ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ"]
+            },
+            "translation": {
+              "en": ["Finished is the Gospel of Saint John which he spoke in Greek in Ephesus."]
+            },
+            "notes": [],
+            "features": [],
+            "attested_dates": [],
+            "attested_entities": [{
+              "entity_type": "person",
+              "role": "attributed-author",
+              "id": "https://sinaimanuscripts/library.ucla.edu/person/42",
+              "attested_name_NS": "ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ",
+              "attested_name": "Qadisho Mar Yuhanon"
+            }]
+          }
+        ]
+      }
+    ]
+  },
+  "events": [],
+  "paratexts": [],
+  "associated_dates": [],
+  "associated_persons": [],
+  "associated_places": [],
+  "references": [{
+      "uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
+      "citation_key": "Lewis 1894",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "1-2"
       }]
     },
-  "references": [
-    {"uri": "https://www.zotero.org/groups/2276183/items/EUCERC5C",
-     "citation_key": "Lewis 1894",
-     "cited_range": [{"unit": "p.", "range": "1-2"}]
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+      "citation_key": "Kamil 1970",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "152"
+      }, {
+        "unit": "number",
+        "range": "38"
+      }]
     },
-    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
-     "citation_key": "Kamil 1970",
-     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
-    },
-    {"uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
-     "citation_key": "Géhin 2017",
-     "cited_range": [{"unit": "p.", "range": "28-30"}]
-    }],
-  "bibliography": [
-    {"uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
-     "citation_key": "Kamil 1970",
-     "cited_range": [{"unit": "p.", "range": "152"}, {"unit": "number", "range": "38"}]
-    }],
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/MPHJNWZL",
+      "citation_key": "Géhin 2017",
+      "cited_range": [{
+        "unit": "p.",
+        "range": "28-30"
+      }]
+    }
+  ],
+  "bibliography": [{
+    "uri": "https://www.zotero.org/groups/2276183/items/9IEZ55UL",
+    "citation_key": "Kamil 1970",
+    "cited_range": [{
+      "unit": "p.",
+      "range": "152"
+    }, {
+      "unit": "number",
+      "range": "38"
+    }]
+  }],
   "iiif": {
     "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1x07bdf/manifest",
     "text_direction": "right-to-left",
