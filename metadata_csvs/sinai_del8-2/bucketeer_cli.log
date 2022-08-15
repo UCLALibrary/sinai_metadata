@@ -1,0 +1,37 @@
+2022-Aug-11 13:54:05 PM (PDT) | INFO     | --- START ---
+2022-Aug-11 13:54:05 PM (PDT) | INFO     | Bucketeer CLI v0.1.0, sending batch job requests to https://sinai-bucketeer.library.ucla.edu
+2022-Aug-11 13:54:06 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0020.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:07 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0022.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:07 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0030.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:07 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0031.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:08 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0042.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:08 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0043.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:09 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0044.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:09 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0045.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:09 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0046.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:10 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0047.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:10 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0048.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:11 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0050.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:11 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0051.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:11 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0052.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:12 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0053.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:12 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0055.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:13 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0062.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:13 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0063.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:13 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0064.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:14 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0065.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:14 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0067.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:15 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0068.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:15 PM (PDT) | INFO     | SUCCESS! CSV arabic_nf_m_0070.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:15 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0036.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:16 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0044.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:16 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0045.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:17 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0046.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:17 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0047.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:18 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0048.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:19 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0050.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:19 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0051.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:19 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0053.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:20 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0057.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:20 PM (PDT) | INFO     | SUCCESS! CSV syriac_nf_m_0058.csv accepted for processing. You will be notified in Slack when it's done.
+2022-Aug-11 13:54:20 PM (PDT) | INFO     | ---- END ----
