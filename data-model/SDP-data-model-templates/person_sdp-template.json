@@ -1,0 +1,72 @@
+{
+  "id": "ARK/URI(?)",
+  "label": "",
+  "type": "CV",
+  "uniform_name": "",
+  "description": [
+    "array of strings"
+  ],
+  "authority_files": [
+    {
+      "id": "URI",
+      "uniform_name": ""
+    }
+  ],
+  "associated_entities": [
+    {
+      "entity_type": "CV",
+      "relation": "CV",
+      "id": "URI/ARK",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "associated_dates": [
+    {
+      "date_type": "CV",
+      "date_human_readable": "",
+      "date_normalized": "ISO-8601 Dates",
+      "note": [
+        ""
+      ]
+    }
+  ],
+  "sex": "CV",
+  "note": [
+    "array of strings"
+  ],
+  "references": [
+    {
+      "uri": "URI (Zotero)",
+      "citation_key": "CV",
+      "cited_range": [
+        {
+          "unit": "CV",
+          "range": ""
+        }
+      ],
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "bibliography": [
+    {
+      "uri": "URI (Zotero)",
+      "citation_key": "CV",
+      "cited_range": [
+        {
+          "unit": "CV",
+          "range": ""
+        }
+      ],
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "contributor": [
+    "array of strings (CV)"
+  ]
+}
