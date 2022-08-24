@@ -1,0 +1,161 @@
+{
+  "id": "ARK",
+  "type": "CV",
+  "label": "",
+  "foliation": [
+    "array of strings"
+  ],
+  "extent": "",
+  "work": "URI",
+  "condition": {
+    "note": [
+      "array of strings"
+    ],
+    "features": [
+      "array of CV"
+    ]
+  },
+  "contents": {
+    "note": [
+      "array of strings"
+    ],
+    "features": [
+      "array of CV terms"
+    ],
+    "toc": [
+      ""
+    ]
+  },
+  "events": [
+    {
+      "id": "ARK",
+      "type": "CV",
+      "note": [
+        "array of strings"
+      ],
+      "associated_dates": [
+        {
+          "date_human_readable": "",
+          "date_normalized": "ISO-8601 Dates",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ],
+      "associated_entities": [
+        {
+          "entity_type": "CV",
+          "role": "CV",
+          "id": "URI/ARK",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ],
+      "sources": [
+        "ARK?"
+      ]
+    }
+  ],
+  "paratexts": [
+    {
+      "id": "ARK",
+      "type": "CV",
+      "locus": "",
+      "transcription": {
+        "$langCode": "Note: lang code refers to the language of transcribed text. transcription object may have multiple $langCode fields."
+      },
+      "translation": {
+        "$langCode": "Note: lang code refers to the language of translated text. translation object may have multiple $langCode fields."
+      },
+      "note": [
+        ""
+      ],
+      "attested_entities": [
+        {
+          "entity_type": "CV",
+          "role": "CV",
+          "id": "URI/ARK",
+          "attested_name_NS": "",
+          "attested_name": "",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ]
+    }
+  ],
+  "associated_entities": [
+    {
+      "entity_type": "CV",
+      "relation": "CV",
+      "id": "URI/ARK",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "associated_dates": [
+    {
+      "date_type": "CV",
+      "date_human_readable": "",
+      "date_normalized": "ISO-8601 Dates",
+      "note": [
+        ""
+      ]
+    }
+  ],
+  "features": [
+    "array of CV terms"
+  ],
+  "note": [
+    "array of strings"
+  ],
+  "references": [
+    {
+      "uri": "URI (Zotero)",
+      "citation_key": "CV",
+      "cited_range": [
+        {
+          "unit": "CV",
+          "range": ""
+        }
+      ],
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "bibliography": [
+    {
+      "uri": "URI (Zotero)",
+      "citation_key": "CV",
+      "cited_range": [
+        {
+          "unit": "CV",
+          "range": ""
+        }
+      ],
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "Manifest URL",
+    "text_direction": "CV",
+    "viewing_hint": "CV",
+    "range": "???"
+  },
+  "contributor": [
+    "array of strings (CV)"
+  ],
+  "related_objects": [
+    {
+      "relationship_type": "CV",
+      "object": "ARK",
+      "position": "int",
+      "layer": "int"
+    }
+  ]
+}
