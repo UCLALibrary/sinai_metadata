@@ -1,8 +1,15 @@
 {
-  "id": "ARK/URI(?)",
+  "id": "URI",
   "label": "",
   "type": "CV",
   "uniform_name": "",
+  "ns_name": "",
+  "alt_name": [
+    "array of strings"
+    ],
+  "role": [
+    "array populated by text artifact records"
+    ],
   "description": [
     "array of strings"
   ],
@@ -16,7 +23,7 @@
     {
       "entity_type": "CV",
       "relation": "CV",
-      "id": "URI/ARK",
+      "id": "URI",
       "note": [
         "array of strings"
       ]
@@ -68,5 +75,8 @@
   ],
   "contributor": [
     "array of strings (CV)"
-  ]
+  ],
+  "assoc_ms (or assoc_witness)": [
+    "array of IDs"
+    ]
 }
