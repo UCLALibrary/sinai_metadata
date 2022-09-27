@@ -11,14 +11,17 @@
   "authority_files": [
     {
       "id": "URI",
-      "uniform_name": ""
+      "label": "uniform name from authority",
+      "ns_label": "ns name from authority",
     }
   ],
+  "cpg": "",
+  "tlg": "",
   "associated_entities": [
     {
       "entity_type": "CV",
       "relation": "CV",
-      "id": "URI/ARK",
+      "id": "URI",
       "note": [
         "array of strings"
       ]
@@ -34,7 +37,7 @@
       ]
     }
   ],
-  "language": "CV",
+  "orig_language": "CV",
   "genre": [
     "array of CV terms"
   ],
@@ -76,9 +79,9 @@
   ],
   "expression": [ "array of "
   ],
-  "witness": [ "array of IDs"
+  "text_artifacts": [ "array of IDs (public view would be something more meaningful, such as "ms + ff")"
   ],
-  "hasPart": [],
-  "isPartOf": [],
-  "related": []
+  "hasPart": [?],
+  "isPartOf": [?],
+  "related": [?]
 }
