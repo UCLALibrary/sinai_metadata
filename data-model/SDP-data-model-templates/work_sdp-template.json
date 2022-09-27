@@ -1,8 +1,10 @@
 {
-  "id": "ARK/URI(?)",
+  "id": "URI",
   "label": "",
   "type": "CV",
   "uniform_name": "",
+  "ns_name": "",
+  "alt_name": [""],
   "description": [
     "array of strings"
   ],
@@ -71,5 +73,12 @@
   ],
   "contributor": [
     "array of strings (CV)"
-  ]
+  ],
+  "expression": [ "array of "
+  ],
+  "witness": [ "array of IDs"
+  ],
+  "hasPart": [],
+  "isPartOf": [],
+  "related": []
 }
