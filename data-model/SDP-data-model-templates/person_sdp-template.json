@@ -8,8 +8,13 @@
     "array of strings"
     ],
   "role": [
-    "array populated by text artifact records"
-    ],
+    {
+      "type": "CV of role types",
+      "associated_objects": [
+        "Array of Object ARKs. CMS will pull in the label/shelfmark and the person's attributed name information"
+      ]
+    }
+  ],
   "description": [
     "array of strings"
   ],
@@ -19,9 +24,26 @@
       "uniform_name": ""
     }
   ],
-  "associated_entities": [
+  "related_persons": [
     {
-      "entity_type": "CV",
+      "relation": "CV",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "related_places": [
+    {
+      "relation": "CV",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "related_works": [
+    {
       "relation": "CV",
       "id": "URI",
       "note": [
@@ -39,7 +61,9 @@
       ]
     }
   ],
-  "sex": "CV",
+  "sex": [
+    "array of CV terms"
+  ],
   "note": [
     "array of strings"
   ],
@@ -73,10 +97,18 @@
       ]
     }
   ],
-  "contributor": [
-    "array of strings (CV)"
-  ],
-  "assoc_ms (or assoc_witness)": [
-    "array of IDs"
-    ]
+  "meta": {
+    "contributor": [
+      "array of strings (CV); auto-populated based on the change_log?"
+    ],
+    "last_updated": "xsd:dateTime",
+    "change_log": [
+      {
+        "date": "xsd:dateTime",
+        "contributor": "CV of Contributor Name (or URI?). Auto-populated based on user account (though needs to be editable to credit a contributing scholar rather than a data entry person)",
+        "change": "string describing what change was made?"
+      }
+    ],
+    "created": "xsd:dateTime"
+  }
 }

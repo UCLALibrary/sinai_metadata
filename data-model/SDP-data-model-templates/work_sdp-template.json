@@ -4,7 +4,7 @@
   "type": "CV",
   "uniform_name": "",
   "ns_name": "",
-  "alt_name": [""],
+  "alt_name": ["array of strings"],
   "description": [
     "array of strings"
   ],
@@ -12,15 +12,29 @@
     {
       "id": "URI",
       "label": "uniform name from authority",
-      "ns_label": "ns name from authority",
+      "ns_label": "ns name from authority"
     }
   ],
-  "cpg": "",
-  "tlg": "",
-  "associated_entities": [
+  "related_persons": [
+      {
+      "relation": "CV (includes authorship relationship)",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }],
+  "related_places": [
     {
-      "entity_type": "CV",
       "relation": "CV",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "related_works": [
+    {
+      "relation": "CV (includes part_of and has_part relationships)",
       "id": "URI",
       "note": [
         "array of strings"
@@ -38,6 +52,47 @@
     }
   ],
   "orig_language": "CV",
+  "expression": [ {
+      "id": "URI (needed for expression?)",
+      "language": "CV",
+      "uniform_name": "",
+      "ns_name": "",
+      "authority_files": [
+        {
+          "id": "URI",
+          "label": "uniform name from authority",
+          "ns_label": "ns name from authority"
+        }
+      ],
+      "related_persons": [
+        {
+          "relation": "CV (primarily for translator relationship)",
+          "id": "URI",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ],
+      "related_places": [
+        {
+          "relation": "CV",
+          "id": "URI",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ],
+      "related_works": [
+        {
+          "relation": "CV (primarily expression_of relationship)",
+          "id": "URI",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ]
+    }
+  ],
   "genre": [
     "array of CV terms"
   ],
@@ -74,14 +129,19 @@
       ]
     }
   ],
-  "contributor": [
-    "array of strings (CV)"
+  "text_artifacts": [ "array of Object Arks"],
+  "meta": {
+    "contributor": [
+    "array of strings (CV); auto-populated based on the change_log?"
   ],
-  "expression": [ "array of "
-  ],
-  "text_artifacts": [ "array of IDs (public view would be something more meaningful, such as "ms + ff")"
-  ],
-  "hasPart": [?],
-  "isPartOf": [?],
-  "related": [?]
+  "last_updated": "xsd:dateTime",
+    "change_log": [
+      {
+        "date": "xsd:dateTime",
+        "contributor": "CV of Contributor Name (or URI?). Auto-populated based on user account (though needs to be editable to credit a contributing scholar rather than a data entry person)",
+        "change": "string describing what change was made?"
+      }
+    ],
+    "created": "xsd:dateTime"
+  }
 }
