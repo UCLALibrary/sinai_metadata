@@ -67,7 +67,7 @@
     }
   ],
   "associated_entities": {
-    "associated_persons": [
+    "associated_person": [
       {
         "relation": "CV",
         "id": "URI",
@@ -76,7 +76,7 @@
         ]
       }
     ],
-    "associated_places": [
+    "associated_place": [
       {
         "relation": "CV",
         "id": "URI",
