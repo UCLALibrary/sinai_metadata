@@ -15,6 +15,9 @@
       ],
       "features": [
         "array of CV"
+      ],
+      "range": [
+        "array of strings"
       ]
     }
   ],
@@ -32,7 +35,10 @@
       "writing_system": "CV",
       "script": "CV",
       "ink_color": "CV",
-      "note": [
+      "script_note": [
+        "array of strings"
+      ],
+      "hand_note": [
         "array of strings"
       ],
       "features": [
@@ -77,11 +83,9 @@
     {
       "id": "URI",
       "type": "CV",
-      "note": [
-        "array of strings"
-      ],
-      "associated_dates": [
+      "associated_date": [
         {
+          "date_type": "CV",
           "date_human_readable": "",
           "date_normalized": "ISO-8601 Dates",
           "note": [
@@ -89,40 +93,66 @@
           ]
         }
       ],
-      "associated_entities": [
+      "associated_person": [
         {
-          "entity_type": "CV",
-          "role": "CV",
-          "id": "URI/ARK",
+          "relation": "CV",
+          "id": "URI",
           "note": [
             "array of strings"
           ]
         }
       ],
+      "associated_place": [
+        {
+          "relation": "CV",
+          "id": "URI",
+          "note": [
+            "array of strings"
+          ]
+        }
+      ],
+      "note": [
+        "array of strings"
+      ],
       "sources": [
-        "ARK/ID of a Paratext? URI of a Zotero Bibl?"
+        "Paratext ARKs | Zotero URI(?)"
       ]
     }
   ],
-  "paratexts": [
-    {
-      "id": "ARK",
-      "type": "CV",
-      "locus": "",
-      "transcription": {
-        "$langCode": "Note: lang code refers to the language of transcribed text. transcription object may have multiple $langCode fields."
-      },
-      "translation": {
-        "$langCode": "Note: lang code refers to the language of translated text. translation object may have multiple $langCode fields."
-      },
-      "note": [
-        ""
-      ],
-      "attested_entities": {
+  "paratexts": {
+    "colophon": [
+      {
+        "id": "ARK",
+        "type": "CV",
+        "locus": [
+          "array of strings"
+        ],
+        "transcription": [
+          {
+            "syr": "note: field name is an ISO language code"
+          }
+        ],
+        "translation": [
+          {
+            "en": "note: field name is an ISO langcode"
+          }
+        ],
         "attested_person": [
           {
             "relation": "CV",
             "id": "URI",
+            "attested_name": {
+              "transcription": [
+                {
+                  "syr": "note: field name is an ISO language code"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "note: field name is an ISO langcode"
+                }
+              ]
+            },
             "note": [
               "array of strings"
             ]
@@ -132,35 +162,142 @@
           {
             "relation": "CV",
             "id": "URI",
+            "attested_name": {
+              "transcription": [
+                {
+                  "syr": "note: field name is an ISO language code"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "note: field name is an ISO langcode"
+                }
+              ]
+            },
             "note": [
               "array of strings"
             ]
           }
-        ]
-      }
-    }
-  ],
-  "associated_entities": {
-    "associated_person": [
-      {
-        "relation": "CV",
-        "id": "URI",
-        "note": [
-          "array of strings"
+        ],
+        "attested_date": [
+          {
+            "type": "CV",
+            "dating_method": "CV",
+            "transcription": [
+              {
+                "syr": "note: field name is an ISO language code"
+              }
+            ],
+            "translation": [
+              {
+                "en": "note: field name is an ISO langcode"
+              }
+            ],
+            "date_human_readable": "Conversion of the date into a Gregorian calendar system, but still a human readable label",
+            "date_normalized": "ISO 8601 date/date range"
+          }
         ]
       }
     ],
-    "associated_place": [
+    "inscription": [
       {
-        "relation": "CV",
-        "id": "URI",
-        "note": [
+        "id": "ARK",
+        "type": "CV",
+        "locus": [
           "array of strings"
+        ],
+        "transcription": [
+          {
+            "syr": "note: field name is an ISO language code"
+          }
+        ],
+        "translation": [
+          {
+            "en": "note: field name is an ISO langcode"
+          }
+        ],
+        "attested_person": [
+          {
+            "relation": "CV",
+            "id": "URI",
+            "attested_name": {
+              "transcription": [
+                {
+                  "syr": "note: field name is an ISO language code"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "note: field name is an ISO langcode"
+                }
+              ]
+            },
+            "note": [
+              "array of strings"
+            ]
+          }
+        ],
+        "attested_place": [
+          {
+            "relation": "CV",
+            "id": "URI",
+            "attested_name": {
+              "transcription": [
+                {
+                  "syr": "note: field name is an ISO language code"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "note: field name is an ISO langcode"
+                }
+              ]
+            },
+            "note": [
+              "array of strings"
+            ]
+          }
+        ],
+        "attested_date": [
+          {
+            "type": "CV",
+            "dating_method": "CV",
+            "transcription": [
+              {
+                "syr": "note: field name is an ISO language code"
+              }
+            ],
+            "translation": [
+              {
+                "en": "note: field name is an ISO langcode"
+              }
+            ],
+            "date_human_readable": "Conversion of the date into a Gregorian calendar system, but still a human readable label",
+            "date_normalized": "ISO 8601 date/date range"
+          }
         ]
       }
     ]
   },
-  "associated_dates": [
+  "associated_person": [
+    {
+      "relation": "CV",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "associated_place": [
+    {
+      "relation": "CV",
+      "id": "URI",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "associated_date": [
     {
       "date_type": "CV",
       "date_human_readable": "",
@@ -219,11 +356,13 @@
       ]
     }
   ],
+  "other_versions": [
+    "array of URIs"
+  ],
   "iiif": {
     "iiif_manifest": "Manifest URL",
     "text_direction": "CV",
-    "viewing_hint": "CV",
-    "range": "???"
+    "viewing_hint": "CV"
   },
   "related_objects": {
     "has_content": [
