@@ -26,46 +26,16 @@
     "note": null,
     "features": null
   },
-  "events": [
-    {
-      "id": "ARK",
-      "type": "CV",
-      "note": [
-        "array of strings"
-      ],
-      "associated_dates": [
-        {
-          "date_human_readable": "",
-          "date_normalized": "ISO-8601 Dates",
-          "note": [
-            "array of strings"
-          ]
-        }
-      ],
-      "associated_entities": [
-        {
-          "entity_type": "CV",
-          "role": "CV",
-          "id": "URI/ARK",
-          "note": [
-            "array of strings"
-          ]
-        }
-      ],
-      "sources": [
-        "ARK?"
-      ]
-    }
-  ],
-    "associated_entities": {
-    "associated_person": null,
-    "associated_place": null
-  },  "associated_dates": null,
+  "events": null,
+  "paratexts": null,
+  "associated_person": null,
+  "associated_place": null,
+  "associated_dates": null,
   "features": null,
   "note": null,
   "references": [
     {
-      "uri": "$$$$$",
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
       "citation_key": "Kamil",
       "cited_range": [
         {
@@ -81,10 +51,14 @@
     }
   ],
   "bibliography": null,
+  "other_versions": [
+    "https://www.loc.gov/item/00279384088-ms/"
+  ],
   "iiif": {
     "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F99999%2Fz18s67k3/manifest",
     "text_direction": "right-to-left",
-    "viewing_hint": "paged"
+    "viewing_hint": "paged",
+    "thumnail_url": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F99999%2Fz18s67k3%2F76301r6v/full/!200,200/0/default.jpg"
   },
     "related_objects": {
     "has_part": [
@@ -114,6 +88,7 @@
         "change": "CREATED: Manuscript Object ark:/99999/z18s67k3 for Sinai Arabic 320"
       }
     ],
-    "created": "2022-10-24T08:44:09.96-07:00"
+    "created": "2022-10-24T08:44:09.96-07:00",
+    "delivery": "5.1"
   }
 }
