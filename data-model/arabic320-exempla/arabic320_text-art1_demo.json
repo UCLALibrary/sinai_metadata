@@ -7,6 +7,8 @@
   ],
   "extent": "193 ff.",
   "embodies": "https://sinaiportal.library.ucla.edu/work/999",
+  "attested_title": null,
+  "supplied_title": null,
   "condition": null,
   "contents": {
     "note": [
@@ -18,104 +20,112 @@
     "toc": null
   },
   "events": null,
-  "paratexts": [
-    {
-      "id": "ark:/99999/z1999998/parat1",
-      "type": "rubric",
-      "locus": "f. 3r",
-      "transcription": null,
-      "translation": null,
-      "note": [
-        "A rubricated abstracted precedes the prologue"
-      ],
-      "attested_entities": {
+  "paratexts": {
+    "rubric": [
+      {
+        "id": "ark:/99999/z1999998/parat1",
+        "type": "rubric",
+        "locus": "f. 3r",
+        "transcription": null,
+        "translation": null,
+        "note": [
+          "A rubricated abstract precedes the prologue"
+        ],
         "attested_person": [
           {
-            "relation": "CV",
-            "id": "URI",
-            "note": [
-              "array of strings"
-            ]
+            "relation": "attributed_author",
+            "id": "https://sinaiportal.library.ucla.edu/person/998",
+            "attested_name": {
+              "transcription": [
+                {
+                  "ar": "يحنا الراهب"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "John the Monk"
+                }
+              ]
+            },
+            "note": null
           }
         ],
-        "attested_place": [
-          {
-            "relation": "CV",
-            "id": "URI",
-            "note": [
-              "array of strings"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "ark:/99999/z1999998/parat2",
-      "type": "prologue",
-      "locus": "ff. 3r-4r",
-      "transcription": null,
-      "translation": null,
-      "note": null,
-      "attested_entities": null
-    },
-    {
-      "id": "ark:/99999/z1999998/parat3",
-      "type": "incipit",
-      "locus": "f. 4r",
-      "transcription": {
-        "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
-      },
-      "translation": null,
-      "note": null,
-      "attested_entities": null
-    },
-    {
-      "id": "ark:/99999/z1999998/parat4",
-      "type": "explicit",
-      "locus": "f. 194",
-      "transcription": {
-        "ar": "وكل الذين عاينوا وسمعوا سيد يواصيف المشاهبة الملائكة وشوقه الى الله الخار الذي منذ صبايه تعجبوا ومجدوا على كل حال الله الذي يعاين محبيه دائما وبجاء فيهم يمواهب"
-      },
-      "translation": null,
-      "note": null,
-      "attested_entities": null
-    },
-    {
-      "id": "ark:/99999/z1999998/parat5",
-      "type": "subscription",
-      "locus": "ff. 194v-195r",
-      "transcription": {
-        "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
-      },
-      "translation": null,
-      "note": [
-        "The long subscription, beginning on 194v, has been only partially transcribed. It is preceded by a scribal colophon"
-      ],
-      "attested_entities": null
-    }
-  ],
-  "associated_entities": {
-    "associated_person": [
-      {
-        "relation": "attributed_author",
-        "id": "https://sinaiportal.library.ucla.edu/person/998",
-        "name": "John the Monk",
-        "ns_name": "يحنا الراهب",
-        "note": [
-          "f. 3r"
-        ]
+        "attested_place": null,
+        "attested_date": null
       }
     ],
-    "associated_place": null
+    "prologue": [
+      {
+        "id": "ark:/99999/z1999998/parat2",
+        "type": "prologue",
+        "locus": "ff. 3r-4r",
+        "transcription": null,
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "incipit": [
+      {
+        "id": "ark:/99999/z1999998/parat3",
+        "type": "incipit",
+        "locus": "f. 4r",
+        "transcription": {
+          "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "explicit": [
+      {
+        "id": "ark:/99999/z1999998/parat4",
+        "type": "explicit",
+        "locus": "f. 194",
+        "transcription": {
+          "ar": "وكل الذين عاينوا وسمعوا سيد يواصيف المشاهبة الملائكة وشوقه الى الله الخار الذي منذ صبايه تعجبوا ومجدوا على كل حال الله الذي يعاين محبيه دائما وبجاء فيهم يمواهب"
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "subscription": [
+      {
+        "id": "ark:/99999/z1999998/parat5",
+        "type": "subscription",
+        "locus": "ff. 194v-195r",
+        "transcription": {
+          "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
+        },
+        "translation": null,
+        "note": [
+          "The long subscription, beginning on 194v, has been only partially transcribed. It is preceded by a scribal colophon"
+        ],
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "marginalia": null
   },
-  "associated_dates": null,
+  "associated_person": null,
+  "associated_place": null,
+  "associated_date": null,
   "features": null,
   "note": [
     "The text has a long history of adaptation into different languages, all seemingly adapted from the story Kitāb Bilawhar wa-Yūdāsaf ( Būd̲h̲āsaf ). The origins and original languages of the story are contested: the proposals are that the Arabic versions, of which this Christian version in AR320 is one, came into Arabic from Pahlavi or from Central Asian Manicheans (writing in New Persian in Manichean script)."
   ],
   "references": [
     {
-      "uri": "$$$$$",
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
       "citation_key": "Kamil",
       "cited_range": [
         {

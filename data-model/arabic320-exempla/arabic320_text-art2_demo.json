@@ -7,6 +7,20 @@
   ],
   "extent": "14 ff.",
   "embodies": "https://sinaiportal.library.ucla.edu/work/998",
+  "attested_title": {
+    "transcription": [
+      {
+        "ar": "مسائل سأل عنهم بعض التلاميذ من معلميه"
+      }
+    ],
+    "translation": [
+      {
+        "en": "Questions that one of the disciples asked of his master"
+      }
+    ],
+    "locus": "f. 196r"
+  },
+  "supplied_title": "Ten questions that one of the disciples asked of his master\n",
   "condition": {
     "note": [
       "The text is incomplete at the end. It is missing after question 7"
@@ -15,41 +29,54 @@
   },
   "contents": null,
   "events": null,
-  "paratexts": [
-    {
-      "id": "ark:/99999/z1999997/parat1",
-      "type": "rubric",
-      "locus": "f. 196r",
-      "transcription": {
-        "ar": "مسائل سأل عنهم بعض التلاميذ من معلميه"
-      },
-      "translation": {
-        "en": "Questions that one of the disciples asked of his master"
-      },
-      "note": null,
-      "attested_entities": null
-    },
-    {
-      "id": "ARK",
-      "type": "incipit",
-      "locus": "f. 196v",
-      "transcription": {
-        "ar": " قال التلميذ لجب منك يا معلّم كلام تختصر بيان العلماء يبيّن القليلين المعرفة الشيء المعني قولنا أنّ المسيح ابن الله وابن مريم العذري لان الحنفاء اذا سمعونا نقول ذلك يظنّوا ان(نا)  نعتقد ان الله بروح مريم"
-      },
-      "translation": null,
-      "note": null,
-      "attested_entities": null
-    }
-  ],
-  "associated_entities": null,
-  "associated_dates": null,
+  "paratexts": {
+    "rubric": [
+      {
+        "id": "ark:/99999/z1999997/parat1",
+        "type": "rubric",
+        "locus": "f. 196r",
+        "transcription": {
+          "ar": "مسائل سأل عنهم بعض التلاميذ من معلميه"
+        },
+        "translation": {
+          "en": "Questions that one of the disciples asked of his master"
+        },
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "prologue": null,
+    "incipit": [
+      {
+        "id": "ark:/99999/z1999997/parat2",
+        "type": "incipit",
+        "locus": "f. 196v",
+        "transcription": {
+          "ar": " قال التلميذ لجب منك يا معلّم كلام تختصر بيان العلماء يبيّن القليلين المعرفة الشيء المعني قولنا أنّ المسيح ابن الله وابن مريم العذري لان الحنفاء اذا سمعونا نقول ذلك يظنّوا ان(نا)  نعتقد ان الله بروح مريم"
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "explicit": null,
+    "subscription": null,
+    "marginalia": null
+  },
+  "associated_person": null,
+  "associated_place": null,
+  "associated_date": null,
   "features": [
     "Rubrication"
   ],
   "note": null,
   "references": [
     {
-      "uri": "$$$$$",
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
       "citation_key": "Kamil",
       "cited_range": [
         {
