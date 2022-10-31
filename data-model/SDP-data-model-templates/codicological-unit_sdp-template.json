@@ -54,8 +54,8 @@
   ],
   "page_layout": [
     {
-      "columns": "int",
-      "number_of_lines": "int",
+      "columns": "",
+      "number_of_lines": "",
       "column_width": "",
       "margin_width": "",
       "note": [
