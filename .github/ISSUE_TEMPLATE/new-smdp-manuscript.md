@@ -1,6 +1,6 @@
 ---
-name: New SMDP Manuscript
-about: For creating an issue to track initial RA work on a manuscript
+name: New SMDP Manuscript for Text ID
+about: For creating an issue to track RA work on text identification for an SMDP manuscript
 title: Sinai {{SHELFMARK}}
 assignees: ''
 
