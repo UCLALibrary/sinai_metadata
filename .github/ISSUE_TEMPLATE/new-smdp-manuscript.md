@@ -2,7 +2,6 @@
 name: New SMDP Manuscript
 about: For creating an issue to track initial RA work on a manuscript
 title: Sinai {{SHELFMARK}}
-project: https://github.com/orgs/UCLALibrary/projects/1
 assignees: ''
 
 ---
@@ -10,3 +9,14 @@ assignees: ''
 SMDL Link: 
 
 Metadata Gathering Document: 
+
+<!--
+INSTRUCTIONS:
+1. Replace "{{SHELFMARK}}" in the title with the manuscript's shelfmark, e.g. "Arabic 1"
+2. Assign yourself to this issue
+3. Add this issue to the Project "Sinai Data Collection: Primary Texts and Colophons"
+  - note: make sure to use the one listed under "UCLA Library" rather than "UCLALibrary/sinai_metadata"
+4. Add the SMDL Link, e.g. "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz18w4z1w"
+5. Add a link to the Google Doc for the metadata. If you have not created this document yet, you may leave that field blank and update it once the doc is created.
+6. You may delete these instructions (anything between the < >) before creating the issue.
+-->
