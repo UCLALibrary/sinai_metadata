@@ -164,6 +164,7 @@ workbook_columns = ['File Name',
 'Inscription',
 'Additions',
 'Binding note',
+'Binding condition',
 'Ink color',
 'Features',
 'Condition note',
@@ -365,6 +366,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Binding note']:
         final_Binding_note = row['Binding note']
 
+    final_Binding_condition = ''
+    if row['Binding condition']:
+        final_Binding_condition = row['Binding condition']
     final_Ink_color = ''
     if row['Ink color']:
         final_Ink_color = row['Ink color']
@@ -463,6 +467,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Inscription': final_Inscription.rstrip('\r\n'),
     'Additions': final_Additions.rstrip('\r\n'),
     'Binding note': final_Binding_note.rstrip('\r\n'),
+    'Binding condition': final_Binding_condition.rstrip('\r\n'),
     'Ink color': final_Ink_color.rstrip('\r\n'),
     'Features': final_Features.rstrip('\r\n'),
     'Condition note': final_Condition_note.rstrip('\r\n'),
