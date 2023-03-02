@@ -155,14 +155,17 @@ workbook_columns = ['File Name',
 'Format.weight',
 'Form',
 'Format.dimensions',
+'Folio dimensions',
 'Support',
 'Foliation',
+'Collation',
 'Page layout',
 'Hand note',
 'Illustrations note',
 'Inscription',
 'Additions',
 'Binding note',
+'Binding condition',
 'Ink color',
 'Features',
 'Condition note',
@@ -328,6 +331,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Format.dimensions']:
         final_Format_dimensions = row['Format.dimensions']
 
+    final_Folio_dimensions = ''
+    if row['Folio dimensions']:
+        final_Folio_dimensions = row['Folio dimensions']
     final_Support = ''
     if row['Support']:
         final_Support = airTableEntry(row['Support'], 'Name', supportTable)
@@ -335,6 +341,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     final_Foliation =''
     if row['Foliation']:
         final_Foliation = row['Foliation']
+
+    final_Collation =''
+    if row['Collation']:
+        final_Collation = row['Collation']
 
     final_Page_layout = ''
     if row['Page layout']:
@@ -360,6 +370,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Binding note']:
         final_Binding_note = row['Binding note']
 
+    final_Binding_condition = ''
+    if row['Binding condition']:
+        final_Binding_condition = row['Binding condition']
     final_Ink_color = ''
     if row['Ink color']:
         final_Ink_color = row['Ink color']
@@ -449,14 +462,17 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Format.weight': final_Format_weight.rstrip('\r\n'),
     'Form': final_form.rstrip('\r\n'),
     'Format.dimensions': final_Format_dimensions.rstrip('\r\n'),
+    'Folio dimensions': final_Folio_dimensions.rstrip('\r\n'),
     'Support': final_Support.rstrip('\r\n'),
     'Foliation': final_Foliation.rstrip('\r\n'),
+    'Collation': final_Collation.rstrip('\r\n'),
     'Page layout': final_Page_layout.rstrip('\r\n'),
     'Hand note': final_Writing_and_hands.rstrip('\r\n'),
     'Illustrations note': final_Illustrations_note.rstrip('\r\n'),
     'Inscription': final_Inscription.rstrip('\r\n'),
     'Additions': final_Additions.rstrip('\r\n'),
     'Binding note': final_Binding_note.rstrip('\r\n'),
+    'Binding condition': final_Binding_condition.rstrip('\r\n'),
     'Ink color': final_Ink_color.rstrip('\r\n'),
     'Features': final_Features.rstrip('\r\n'),
     'Condition note': final_Condition_note.rstrip('\r\n'),
