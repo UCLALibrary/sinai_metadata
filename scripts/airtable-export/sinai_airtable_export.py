@@ -157,6 +157,7 @@ workbook_columns = ['File Name',
 'Format.dimensions',
 'Support',
 'Foliation',
+'Collation',
 'Page layout',
 'Hand note',
 'Illustrations note',
@@ -336,6 +337,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Foliation']:
         final_Foliation = row['Foliation']
 
+    final_Collation =''
+    if row['Collation']:
+        final_Collation = row['Collation']
+
     final_Page_layout = ''
     if row['Page layout']:
         final_Page_layout = row['Page layout']
@@ -451,6 +456,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Format.dimensions': final_Format_dimensions.rstrip('\r\n'),
     'Support': final_Support.rstrip('\r\n'),
     'Foliation': final_Foliation.rstrip('\r\n'),
+    'Collation': final_Collation.rstrip('\r\n'),
     'Page layout': final_Page_layout.rstrip('\r\n'),
     'Hand note': final_Writing_and_hands.rstrip('\r\n'),
     'Illustrations note': final_Illustrations_note.rstrip('\r\n'),
