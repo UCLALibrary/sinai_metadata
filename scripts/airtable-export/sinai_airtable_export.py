@@ -155,6 +155,7 @@ workbook_columns = ['File Name',
 'Format.weight',
 'Form',
 'Format.dimensions',
+'Folio dimensions',
 'Support',
 'Foliation',
 'Collation',
@@ -330,6 +331,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Format.dimensions']:
         final_Format_dimensions = row['Format.dimensions']
 
+    final_Folio_dimensions = ''
+    if row['Folio dimensions']:
+        final_Folio_dimensions = row['Folio dimensions']
     final_Support = ''
     if row['Support']:
         final_Support = airTableEntry(row['Support'], 'Name', supportTable)
@@ -458,6 +462,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Format.weight': final_Format_weight.rstrip('\r\n'),
     'Form': final_form.rstrip('\r\n'),
     'Format.dimensions': final_Format_dimensions.rstrip('\r\n'),
+    'Folio dimensions': final_Folio_dimensions.rstrip('\r\n'),
     'Support': final_Support.rstrip('\r\n'),
     'Foliation': final_Foliation.rstrip('\r\n'),
     'Collation': final_Collation.rstrip('\r\n'),
