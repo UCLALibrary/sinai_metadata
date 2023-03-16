@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-# Set the folder path where the CSVs are located
-folder_path = "/Users/kirschbombe/Sites/sinai_metadata/metadata_csvs"
+# Take the folder path as input
+folder_path = input("Enter the folder path: ")
 
 # Create an empty dataframe to store the filtered rows
 filtered_df = pd.DataFrame()
@@ -22,4 +22,5 @@ for root, dirs, files in os.walk(folder_path):
 
 # Write the filtered dataframe to a new CSV file
 filtered_df.to_csv("no_title_rows.csv", index=False)
+
 
