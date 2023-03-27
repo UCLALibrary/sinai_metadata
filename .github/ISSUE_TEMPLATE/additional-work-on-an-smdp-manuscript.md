@@ -23,13 +23,12 @@ Sub-tasks:
 <!--
 INSTRUCTIONS:
 1. Replace "{{SHELFMARK}}" in the title with the manuscript's shelfmark, e.g. "Arabic 1"; replace "{{Short Summary of the work}}" with a less than 10 word summary of the needed work, e.g. "Create records for paratexts"
-2. Assign yourself to this issue
-3. Add the previous issue number. Type "#", which should allow you to search by shelfmark. Otherwise, you can find the issue number from the project page, https://github.com/orgs/UCLALibrary/projects/1/views/1, listed above the issue title in the card, e.g. "#80".
-4. Add the SMDL Link, e.g. "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz18w4z1w"
-5. Add a link to the Google Doc for the metadata.
-6. You may provide a summary of the work to be done under "Summary"
-7. You may provide a checklist of tasks to be completed under "Sub-tasks"
-8. You may delete these instructions (anything between the < >) before creating the issue.
+2. Add the previous issue number. Type "#", which should allow you to search by shelfmark. Otherwise, you can find the issue number from the project page, https://github.com/orgs/UCLALibrary/projects/1/views/1, listed above the issue title in the card, e.g. "#80".
+3. Add the SMDL Link, e.g. "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz18w4z1w"
+4. Add a link to the Google Doc for the metadata.
+5. You may provide a summary of the work to be done under "Summary"
+6. You may provide a checklist of tasks to be completed under "Sub-tasks"
+7. You may delete these instructions (anything between the < >) before creating the issue.
 
 You may create different issues, as needed, for each of the following work categories:
 - additional description needed for the textual artifacts
