@@ -137,6 +137,8 @@ workbook_columns = ['File Name',
 'Object Type',
 'AltTitle.other',
 'AltTitle.uniform',
+'Undertext Objects',
+'Overtext Manuscripts',
 'Place of origin',
 'Date.normalized',
 'Date.creation',
@@ -252,6 +254,14 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     uniformTitle =''
     if row['AltTitle.uniform']:
         uniformTitle = airTableEntry(row['AltTitle.uniform'], 'Uniform title', UniformTitlesAirTable)
+    
+    final_Undertext_Objects = ''
+    if row['Undertext Objects']:
+        final_Undertext_Objects = row['Undertext Objects']
+
+    final_Overtext_Manuscripts = ''
+    if row['Overtext Manuscripts']:
+        final_Overtext_Manuscripts = row['Overtext Manuscripts']
 
     final_Place_of_origin =''
     if row['Place of origin']:
@@ -444,6 +454,8 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Object Type': objectType.rstrip('\r\n'),
     'AltTitle.other': final_AltTitle_other.rstrip('\r\n'),
     'AltTitle.uniform': uniformTitle.rstrip('\r\n'),
+    'Undertext Objects': final_Undertext_Objects.rstrip('\r\n'),
+    'Overtext Manuscripts': final_Overtext_Manuscripts.rstrip('\r\n'),
     'Place of origin': final_Place_of_origin.rstrip('\r\n'),
     'Date.normalized': final_Date_normalized.rstrip('\r\n'),
     'Date.creation': final_Date_creation.rstrip('\r\n'),
