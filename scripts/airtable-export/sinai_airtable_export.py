@@ -138,7 +138,7 @@ workbook_columns = ['File Name',
 'AltTitle.other',
 'AltTitle.uniform',
 'Undertext Objects',
-'Overtext Manuscripts',
+'Overtext Manuscript',
 'Place of origin',
 'Date.normalized',
 'Date.creation',
@@ -259,9 +259,9 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Undertext Objects']:
         final_Undertext_Objects = row['Undertext Objects']
 
-    final_Overtext_Manuscripts = ''
-    if row['Overtext Manuscripts']:
-        final_Overtext_Manuscripts = row['Overtext Manuscripts']
+    final_Overtext_Manuscript = ''
+    if row['Overtext Manuscript']:
+        final_Overtext_Manuscript = row['Overtext Manuscript']
 
     final_Place_of_origin =''
     if row['Place of origin']:
@@ -455,7 +455,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'AltTitle.other': final_AltTitle_other.rstrip('\r\n'),
     'AltTitle.uniform': uniformTitle.rstrip('\r\n'),
     'Undertext Objects': final_Undertext_Objects.rstrip('\r\n'),
-    'Overtext Manuscripts': final_Overtext_Manuscripts.rstrip('\r\n'),
+    'Overtext Manuscript': final_Overtext_Manuscript.rstrip('\r\n'),
     'Place of origin': final_Place_of_origin.rstrip('\r\n'),
     'Date.normalized': final_Date_normalized.rstrip('\r\n'),
     'Date.creation': final_Date_creation.rstrip('\r\n'),
