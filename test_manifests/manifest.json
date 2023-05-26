@@ -11792,107 +11792,76 @@
         {
             "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0",
             "@type": "sc:Range",
-            "label": "Sinai, St. Catherine’s Monastery, Syriac 44: Textual Artifacts",
+            "label": "Table of Contents",
             "viewingHint": "top",
             "ranges": [
                 "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-0",
                 "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",
                 "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-2",
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-3"
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-3",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-4",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-5"
             ]
         },
         {
             "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-0",
             "@type": "sc:Range",
-            "label": "Binding - Front",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0",
+            "label": "Front Matter",            
             "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/p9188w3f"
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/p9188w3f",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/dt31vw5c"
             ]
         },
         {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",
-            "@type": "sc:Range",
-            "viewingHint": "top",
-            "label": "Menaion for September, October, and November (Byzantine, with local variations of the Antiochene region)",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0",
-            "ranges": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0",
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-1",
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-2"
-            ]
-        },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0",
+            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",            
             "@type": "sc:Range",
             "label": "<Ēlūl (September)>",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",
-            "ranges": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0"
-            ]
-        },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0",
-            "@type": "sc:Range",
-            "label": "<Ēlūl (September) 1 - Simeon the Stylite>",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0",
-            "ranges": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0-0",
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0-1"
-            ]
-        },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0-0",
-            "@type": "sc:Range",
-            "label": "<Kathismata, various modes>",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0",
             "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/8c130b34"
-            ]
-        },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0-1",
-            "@type": "sc:Range",
-            "label": "Stichera, various modes",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-0-0",
-            "canvases": [
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/8c130b34",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/xb18fn8d",
                 "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/fv794n0x"
             ]
         },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-1",
-            "@type": "sc:Range",
-            "label": "Teshrīn I (October)",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",
-            "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/pb91m02z"
-            ]
-        },
-        {
-            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1-2",
-            "@type": "sc:Range",
-            "label": "Teshrīn II (November)",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-1",
-            "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/jj94zk9q"
-            ]
-        },
-        {
+        {           
             "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-2",
             "@type": "sc:Range",
-            "label": "Binding - Back",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0",
+            "label": "Teshrīn I (October)",
             "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/3p25rg6d"
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/pb91m02z",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/xx53q78n",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/4p37099d"
             ]
         },
         {
             "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-3",
             "@type": "sc:Range",
-            "label": "Fragments",
-            "within": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0",
+            "label": "Teshrīn II (November)",
             "canvases": [
-                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/d0045m5p"
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/jj94zk9q",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/8f429v41",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/nt12wf8c"
+            ]
+        },
+        {
+            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-4",
+            "@type": "sc:Range",
+            "label": "Back Matter",
+            "canvases": [
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/3p25rg6d",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/cg859802"
+            ]
+        },
+        {
+            "@id": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/range/r0-5",
+            "@type": "sc:Range",
+            "label": "Fragments",            
+            "canvases": [
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/d0045m5p",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/gk37tw70",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/9627wx7x",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/wv74fr98",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/z0549846",
+                "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1fv04p5/manifest/canvas/18116g2n"
             ]
         }
     ]
