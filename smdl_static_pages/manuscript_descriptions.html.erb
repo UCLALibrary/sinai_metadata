@@ -1,0 +1,106 @@
+<div class='content-container--static-page'>
+  <!--Content container to hold Sinai static page navigation-->
+  <div class='content-container--sinai-static-page'>
+    <!--Navigation-->
+    <%= render 'sinai_secondary_nav' %>
+    <!--Start static content-->
+    <div class="sinai-static-page-inner-container">
+      <div class='static-page__title-row'>
+        <h1 class='static-page__title--sinai'>Manuscript Descriptions</h1>
+      </div>
+
+      <div class='static-page__row'>
+        <p class='static-page__text static-page__text--sinai'>
+        During Phase 1 of the Sinai Manuscripts Digital Library project, our primary focus has been providing access to the Arabic and Syriac manuscripts of St. Catherine’s Monastery. As of Spring 2023, 923 of the approximately 1,175 Arabic and Syriac manuscripts are accessible and discoverable through our web portal, comprising roughly 355,000 page images. Along with the manuscript images, we provide basic manuscript descriptions compiled primarily from existing catalogues and handlists, as well as from data collected onsite during digitization. The supplied descriptions provide information on both the codicological and textual aspects of the manuscripts and have been enhanced and standardized where feasible to increase discoverability within the collection. Since our manuscript data originates from several sources, we outline a few of the fields and their sources below.
+        </p>
+      </div>
+
+      <hr class='divider'>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Data Collected Onsite in Sinai</h3>
+        <p class='static-page__text static-page__text--sinai'>
+        During preparation for imaging, the Monastery Librarian, onsite consulting conservators and imaging specialists review manuscripts for their condition and record data for each manuscript, including the date created, language(s), object dimensions, weight, support, and any relevant notes on the physical condition. This data is incorporated into the manuscript descriptions and provides the most up-to-date measurements and assessments of the Sinai manuscripts.
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Shelfmark and Collection</h2>
+        <p class='static-page__text static-page__text--sinai'>
+          Shelfmarks on the Sinai Manuscripts Digital Library site follow the Monastery’s system, which sometimes differs from those used in other catalogues and handlists. For example, Murad Kamil’s <i>Catalogue of all Manuscripts in the Monastery of St. Catharine</i> (1970) provides an alternate numbering system for the manuscripts, though he provides the Monastery’s shelf marks in square brackets next to his numbers. Philothée du Sinaï's <i>Nouveaux manuscrits syriaques du Sinaï</i> (2008) at times treats under a single shelf mark what are two or more manuscripts according to the Monastery’s shelf marks. In such cases we provide reference to the shelf mark under which Philothée catalogued a given manuscript.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          Manuscripts at Sinai fall into two collections, the Old Collection and the New Finds. The collection to which a manuscript belongs is noted in the “Collection” field. As well, the New Finds manuscripts include "NF" in their shelfmark (i.e. Arabic NF M 6).
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Works</h2>
+        <p class='static-page__text static-page__text--sinai'>
+          The “Works” field lists the known titles for textual works contained within a manuscript. The work titles may be general, descriptive titles compiled from existing catalogues of the Sinai collections. These titles are gathered from a few of the more comprehensive catalogues and handlists for the Monastery’s Arabic and Syriac manuscripts. For manuscripts from the Old Collection, work titles derive from Murad Kamil’s <i>Catalogue of all Manuscripts in the Monastery of St. Catharine</i> (1970). For Sinai New Finds, work titles derive from Yiannis Meimaris' <i>Katalogos ton neon aravikon cheirographon tes Hieras Mones Hagias Aikaterines tou Orous Sinai</i> [<i>Catalogue of the Arabic New Finds Manuscripts of the Holy Monastery of Saint Catherine on Mount Sinai</i>] (1985), Philothée du Sinaï's <i>Nouveaux manuscrits syriaques du Sinaï</i> (2008), and Sebastian Brock’s <i>Catalogue of Syriac Fragments (New Finds) in the Library of the Monastery of St Catherine</i>, Mount Sinai (1995).
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          We recognize that there are more up-to-date and detailed catalogues available by respected scholars in this area; however, Kamil, Meimaris, Philothée, and Brock were chosen for their comprehensiveness as, together, they include all but a few of the manuscripts in the Monastery’s two collections. In some cases, we have supplemented descriptions of the Syriac New Finds manuscripts with Paul Géhin’s <i>Les manuscrits syriaques de parchemin du Sinaï et leurs membra disjecta</i> (2017) and Sebastian Brock’s “The Syriac ‘New Finds’ at St. Catherine’s Monastery, Sinai, and Their Significance” (2011), and will continue to update the work titles over time.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          Additionally, and where feasible, we supply uniform titles for textual works. Providing an authoritative form for titles allows a user to collocate all versions for a given work, especially where the title or spelling might differ between versions. In some cases we may also supply an alternative title for a work, such as a supplied title or if the work is known by one or several different names. Our sources for uniform titles are the Library of Congress Name Authority File (LCNAF), the Virtual International Authority File (VIAF), and the <i>Clavis Patrum Graecorum</i> and <i>Clavis Patrum Latinorum</i>. In some cases, we have established project-specific uniform titles. To date, we have supplied uniform titles for all biblical and liturgical texts. The work on uniform titles for theological, historical, and other texts is ongoing and these are applied only where feasible and where uniform titles are already established. The uniform titles applied during this phase of the project will lay the foundation for a comprehensive title index that we plan to implement as we undertake additional scholar-led description activities.
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Contents Note</h3>
+        <p class='static-page__text static-page__text--sinai'>
+          The “Contents note” field allows us to provide more expansive descriptions of a manuscript's textual works. In many cases, especially where there are multiple works within a single bound manuscript object, Kamil’s entries provide more of a description than a title. In these cases, we use in the “Works” field what appears to be the primary work (or works) within Kamil’s entry. We then add Kamil’s longer description to the “Contents note” field. When primary works cannot be identified, or where there are too many to include in the “Works” field, we opt for the general title, Varia, following Kamil’s practice, leaving Kamil’s full description in “Contents note.” Similarly, Meimaris often provides both a general thema and a listing of contents for a manuscript. In some cases we are able to include each of the contents as titles in the “Works” field. In many others, however, we can only include the thema in “Works,” adding the fuller contents list to the “Contents note” field.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          When performing a “Title” search on the Sinai Manuscripts Digital Library website, both the “Works” field and the “Contents note” fields are searched.
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Genre</h3>
+        <p class='static-page__text static-page__text--sinai'>
+          The genre terms used are based on the categories in Kamil’s handlist. Kamil groups the manuscripts into five distinct categories, some with subcategories: Biblia, Liturgica, Theologica, Historical Accounts, Canons, and Varia. Each of these categories and their subcategories have been mapped to authoritative genre terms from the Getty’s Art & Architecture Thesaurus (AAT) and are applied to the manuscript descriptions according to their placement in one of the categories in Kamil.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          Since many of the manuscripts contain multiple works and these often fall outside of Kamil’s assigned category, we apply additional genre terms from our list where appropriate and where the works are sufficiently identified. We have also added a few additional genre terms to our list to supplement Kamil’s categories where these might be beneficial. For example, we apply the genre term “gospel books” to all manuscripts containing any of the four Gospels, whether categorized as biblical or liturgical by Kamil. The primary goal of the genre terms is to allow for more faceted browsing within the collection.
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Names</h3>
+        <p class='static-page__text static-page__text--sinai'>
+          We record names of authors and other associated names where they are supplied in Kamil, Meimaris, Philothée, or Brock. When an author or other associated name is noted, we source authoritative name forms from LCNAF and VIAF. The authoritative form is supplied in the appropriate field, such as the “Author,” “Associated name,” or “Scribe” field. For associated names where the role is unclear or no authority exists, we either create a new authority record or we record the name in an appropriate note field. The work to supply authoritative name forms is ongoing and only a subset of the manuscripts have been enhanced to-date.
+        </p>
+      </div>
+
+      <div class='static-page__row'>
+        <h3 class='static-page__subtitle static-page__subtitle--sinai'>Features</h3>
+        <p class='static-page__text static-page__text--sinai'>
+          To facilitate browsing by manuscript features, such as decoration and illustrations, colophons, headpieces, and marginalia, we are piloting a “Features” descriptive field. The list of features and their definitions are based on Adam Gacek’s Arabic Manuscripts: A Vademecum for Readers and have been added to the descriptions for a subset of manuscripts in the collection. This work is ongoing.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          Two additional feature terms that can be used to narrow a search are “Dated” and “Multispectral Images.” Manuscripts that have been precisely dated through textual evidence, such as colophons, are assigned the feature term “Dated”; Palimpsests that have been imaged using multispectral imaging techniques—primarily through the Sinai Palimpsests Project—are assigned the “Multispectral Images” feature term.
+        </p>
+      </div>
+
+      <hr class='divider'>
+
+      <div class='static-page__row'>
+        <p class='static-page__text static-page__text--sinai'>
+        In the current phase, manuscript descriptions are more bibliographic in nature, providing basic enumeration of titles where they are identified in Kamil and the other sources mentioned above. In cooperation with the Monastery, we plan to organize scholarly cataloging projects to provide more complete descriptions of the imaged manuscripts, where our goal will be to catalogue and describe each work within a bound manuscript to meet contemporary manuscript cataloguing standards. Our first cataloguing project, generously funded by the National Endowment for the Humanities, focuses on the Syriac parchment manuscripts and is currently underway.
+        </p>
+
+        <p class='static-page__text static-page__text--sinai'>
+          We welcome suggestions and feedback from the community, so please feel free to reach out to the project team at dlp@library.ucla.edu.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
