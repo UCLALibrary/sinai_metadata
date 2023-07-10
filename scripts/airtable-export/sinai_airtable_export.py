@@ -117,8 +117,8 @@ allAirdf['AltTitle.uniform'] = allAirdf['AltTitle.uniform'].astype(str)
 allAirdf['AltTitle.uniform'] = allAirdf['AltTitle.uniform'].fillna('')
 allAirdf['Scribe'] = allAirdf['Scribe'].astype(str)
 allAirdf['Scribe'] = allAirdf['Scribe'].fillna('')
-allAirdf['Associated name'] = allAirdf['Associated name'].astype(str)
-allAirdf['Associated name'] = allAirdf['Associated name'].fillna('')
+allAirdf['Associated Name'] = allAirdf['Associated Name'].astype(str)
+allAirdf['Associated Name'] = allAirdf['Associated Name'].fillna('')
 allAirdf['Contributors'] = allAirdf['Contributors'].astype(str)
 allAirdf['Contributors'] = allAirdf['Contributors'].fillna('')
 
@@ -141,7 +141,7 @@ workbook_columns = ['File Name',
 'Date.creation',
 'Scribe',
 'Author',
-'Associated name',
+'Associated Name',
 'Contributors',
 'Contents note',
 'Colophon',
@@ -271,8 +271,8 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
         final_AuthorText = airTableEntry(row['Author'], 'Name', NamesAirTable)
 
     final_AssociatedText = ''
-    if row['Associated name']:
-        final_AssociatedText = airTableEntry(row['Associated name'], 'Name', NamesAirTable)
+    if row['Associated Name']:
+        final_AssociatedText = airTableEntry(row['Associated Name'], 'Name', NamesAirTable)
 
     final_ContributorsText = ''
     if row['Contributors']:
@@ -430,7 +430,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Date.creation': final_Date_creation.rstrip('\r\n'),
     'Scribe': final_scribeText.rstrip('\r\n'),
     'Author': final_AuthorText.rstrip('\r\n'),
-    'Associated name': final_AssociatedText .rstrip('\r\n'),
+    'Associated Name': final_AssociatedText .rstrip('\r\n'),
     'Contributors': final_ContributorsText .rstrip('\r\n'),
     'Contents note': final_Contents_note.rstrip('\r\n'),
     'Colophon': final_Colophon.rstrip('\r\nfr'),
