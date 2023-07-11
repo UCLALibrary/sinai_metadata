@@ -147,6 +147,7 @@ workbook_columns = ['File Name',
 'Associated Name',
 'Contributors',
 'Contents note',
+'Contents',
 'Colophon',
 'Incipit',
 'Explicit',
@@ -296,10 +297,13 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['Contributors']:
         final_ContributorsText = airTableEntry(row['Contributors'], 'Name', NamesAirTable)
 
-
     final_Contents_note =''
     if row['Contents note']:
         final_Contents_note = row['Contents note']
+
+    final_Contents =''
+    if row['Contents']:
+        final_Contents = row['Contents']
 
     final_Colophon = ''
     if row['Colophon']:
@@ -464,6 +468,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Associated Name': final_AssociatedText .rstrip('\r\n'),
     'Contributors': final_ContributorsText .rstrip('\r\n'),
     'Contents note': final_Contents_note.rstrip('\r\n'),
+    'Contents': final_Contents.rstrip('\r\n'),
     'Colophon': final_Colophon.rstrip('\r\nfr'),
     'Incipit': final_Incipit.rstrip('\r\n'),
     'Explicit': final_Explicit.rstrip('\r\n'),
