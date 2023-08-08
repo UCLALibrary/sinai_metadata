@@ -221,6 +221,9 @@ else:
 
 for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
 
+    #normalize whitespace by collapsing new lines or multiple spaces into a single space
+    row = row.str.replace("\s\s*\s", " ", regex=True)
+
     final_file_name = ''
     final_item_sequence = ''
 
