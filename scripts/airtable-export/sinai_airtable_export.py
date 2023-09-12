@@ -510,6 +510,11 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'delivery': final_delivery.rstrip('\r\n'),
     'image count': str(final_image_count).rstrip('\r\n'),
     'Viscodex': final_viscodex.rstrip('\r\n')}
+
+    # collapse whitespace
+    for field in new_row:
+        new_row[field] = ' '.join(new_row[field].split())
+
     dfNewRow = pd.DataFrame([new_row])
     dfWorkbook = pd.concat([dfWorkbook, dfNewRow], ignore_index=True)
 
