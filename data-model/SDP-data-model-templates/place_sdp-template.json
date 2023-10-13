@@ -1,9 +1,19 @@
 {
-  "id": "ARK/URI(?)",
-  "label": "",
+  "id": "URI",
   "type": "CV",
   "place_type": "CV",
   "uniform_name": "",
+  "alt_name": [
+    "array of language-mapped strings"
+  ],
+  "role": [
+    {
+      "type": "CV of role types",
+      "associated_objects": [
+        "Array of Object ARKs. CMS will pull in the object's label/shelfmark and the place's attributed name information"
+      ]
+    }
+  ],
   "description": [
     "array of strings"
   ],
@@ -13,9 +23,26 @@
       "uniform_name": ""
     }
   ],
-  "associated_entities": [
+  "related_persons": [
     {
-      "entity_type": "CV",
+      "relation": "CV",
+      "id": "URI/ARK",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "related_places": [
+    {
+      "relation": "CV",
+      "id": "URI/ARK",
+      "note": [
+        "array of strings"
+      ]
+    }
+  ],
+  "related_works": [
+    {
       "relation": "CV",
       "id": "URI/ARK",
       "note": [
@@ -31,13 +58,6 @@
       "note": [
         ""
       ]
-    }
-  ],
-  "location": [
-    {
-      "type": "CV",
-      "coordinates": "",
-      "source": "URI?"
     }
   ],
   "note": [
@@ -73,7 +93,18 @@
       ]
     }
   ],
-  "contributor": [
-    "array of strings (CV)"
-  ]
+  "meta": {
+    "contributor": [
+      "array of strings (CV); auto-populated based on the change_log?"
+    ],
+    "last_updated": "xsd:dateTime",
+    "change_log": [
+      {
+        "date": "xsd:dateTime",
+        "contributor": "CV of Contributor Name (or URI?). Auto-populated based on user account (though needs to be editable to credit a contributing scholar rather than a data entry person)",
+        "change": "string describing what change was made?"
+      }
+    ],
+    "created": "xsd:dateTime"
+  }
 }
