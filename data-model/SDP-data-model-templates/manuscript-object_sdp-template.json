@@ -3,15 +3,12 @@
   "type": "CV",
   "shelfmark": "",
   "collection": "CV",
-  "repository": "URI/ARK",
+  "repository": "URI",
   "form": "CV",
   "binding": {
     "has_binding": "boolean",
     "note": [
       "array of strings"
-    ],
-    "features": [
-      "array of CV terms"
     ]
   },
   "extent": "",
@@ -40,7 +37,7 @@
   },
   "events": [
     {
-      "id": "ARK",
+      "id": "URI",
       "type": "CV",
       "note": [
         "array of strings"
@@ -65,48 +62,30 @@
         }
       ],
       "sources": [
-        "ARK?"
+        "ARK/ID of a Paratext? URI of a Zotero Bibl?"
       ]
     }
   ],
-  "paratexts": [
-    {
-      "id": "ARK",
-      "type": "CV",
-      "locus": "",
-      "transcription": {
-        "$langCode": "Note: lang code refers to the language of transcribed text. transcription object may have multiple $langCode fields."
-      },
-      "translation": {
-        "$langCode": "Note: lang code refers to the language of translated text. translation object may have multiple $langCode fields."
-      },
-      "note": [
-        ""
-      ],
-      "attested_entities": [
-        {
-          "entity_type": "CV",
-          "role": "CV",
-          "id": "URI/ARK",
-          "attested_name_NS": "",
-          "attested_name": "",
-          "note": [
-            "array of strings"
-          ]
-        }
-      ]
-    }
-  ],
-  "associated_entities": [
-    {
-      "entity_type": "CV",
-      "relation": "CV",
-      "id": "URI/ARK",
-      "note": [
-        "array of strings"
-      ]
-    }
-  ],
+  "associated_entities": {
+    "associated_person": [
+      {
+        "relation": "CV",
+        "id": "URI",
+        "note": [
+          "array of strings"
+        ]
+      }
+    ],
+    "associated_place": [
+      {
+        "relation": "CV",
+        "id": "URI",
+        "note": [
+          "array of strings"
+        ]
+      }
+    ]
+  },
   "associated_dates": [
     {
       "date_type": "CV",
@@ -159,15 +138,28 @@
     "viewing_hint": "CV",
     "range": "???"
   },
-  "contributor": [
-    "array of strings (CV)"
-  ],
-  "related_objects": [
-    {
-      "relationship_type": "CV",
-      "object": "ARK",
-      "position": "int",
-      "layer": "int"
-    }
-  ]
+  "related_objects": {
+    "has_part": [
+      {
+        "type": "CV",
+        "object": "ARK",
+        "position": "int",
+        "layer": "int"
+      }
+    ]
+  },
+  "meta": {
+    "contributor": [
+      "array of strings (CV); auto-populated based on the change_log?"
+    ],
+    "last_updated": "xsd:dateTime",
+    "change_log": [
+      {
+        "date": "xsd:dateTime",
+        "contributor": "CV of Contributor Name (or URI?). Auto-populated based on user account (though needs to be editable to credit a contributing scholar rather than a data entry person)",
+        "change": "string describing what change was made?"
+      }
+    ],
+    "created": "xsd:dateTime"
+  }
 }
