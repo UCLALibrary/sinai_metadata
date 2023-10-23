@@ -20,26 +20,26 @@
 				},
 				{
 					"id": "0e3668f8-8a47-480c-9cbd-5d6f124877c2",
-					"name": "preferred_title",
+					"name": "pref_title",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": true,
-					"comment": "",
+					"comment": "Preferred Title: The form of the work's title used as the primary label for the work",
 					"defaultvalue": "",
-					"data": "",
+					"data": "Bible. Acts",
 					"list": false,
 					"enum": "",
 					"validate": ""
 				},
 				{
 					"id": "7493c7d2-b222-4b3a-baf6-797a7b27b788",
-					"name": "alternative_title",
+					"name": "alt_title",
 					"datatype": "e95cc697-26b2-4907-b65c-41932c3647dd",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Alternative Title: Variant forms of the work's title, including the language code",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -48,12 +48,12 @@
 				},
 				{
 					"id": "a11cc5f8-a46c-4198-b383-0382536e8ed2",
-					"name": "original_language",
+					"name": "orig_lang",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Original Language: The language in which the work was originally composed. Must be an objectId of a corresponding language object",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -62,12 +62,12 @@
 				},
 				{
 					"id": "75968c9b-258e-4629-9c99-be141b911a5f",
-					"name": "original_language_title",
+					"name": "orig_lang_title",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Original Language Title: An expression of the work's title given in the language in which the work was originally composed",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -81,7 +81,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Creation Date: The time span during which the work was composed; expressed in both human- and machine-readable formats",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -90,12 +90,12 @@
 				},
 				{
 					"id": "25a43248-8ab5-42ab-9574-4fa5e1671f1d",
-					"name": "description",
+					"name": "desc",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Description: A brief, prose summary of the contents, context, or subjects of the work. Use for disambiguation.",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -109,7 +109,7 @@
 					"param": "",
 					"pk": false,
 					"nn": true,
-					"comment": "",
+					"comment": "Genre: The stylistic type or category to which the work belongs. Must be an objectId of an existing Genre object.",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -132,12 +132,12 @@
 				},
 				{
 					"id": "dc8460c3-a868-4d24-aabe-68d178502dca",
-					"name": "references",
+					"name": "bibl",
 					"datatype": "4993d4cb-71d1-4088-8033-35fa32e1ad02",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -146,12 +146,12 @@
 				},
 				{
 					"id": "6f77d8eb-435c-4274-b616-cc0cd634d283",
-					"name": "related_concept",
+					"name": "rel_con",
 					"datatype": "7c8863f9-957d-4058-a61f-1efe7f7285e3",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Related Concept: An equivalent or close matching concept in an external authority file",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -160,12 +160,12 @@
 				},
 				{
 					"id": "0231fdab-ebbe-491d-b6e4-837358e46cc0",
-					"name": "reference_number",
+					"name": "refno",
 					"datatype": "47a2d53c-f84b-4282-8aba-e7c65319cf7d",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Reference Number: Contains the uniform title, entry number, and source for the work in a standard reference list",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -174,12 +174,12 @@
 				},
 				{
 					"id": "33a0c305-b406-458b-8733-894a319fa654",
-					"name": "associated_person",
+					"name": "assoc_pers",
 					"datatype": "56f061f7-ef9b-4eb4-8413-81966b99dfa4",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Associated Person: A person entity connected to the work resource through a given role",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -189,12 +189,12 @@
 				},
 				{
 					"id": "3aaa90e2-b386-4e54-85e0-e710e7af7426",
-					"name": "related_works",
+					"name": "rel_work",
 					"datatype": "d990e50e-611e-45b3-bdf4-79ba68941a41",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Related Work: A work entity with an associative or hierarchical link to a given work",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -258,7 +258,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Title (Related Concept): The uniform or prefererd title form for the related concept from an external authority file",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -272,25 +272,26 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "URI: The Uniform Resource Identifier for the related concept",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "Must be a URI"
 				},
 				{
 					"id": "aabeac1a-f595-4dee-afab-7bfca7180c15",
 					"name": "source",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Source (Related Concept): The authority service or database containing the related concept entry",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['VIAF', 'LoC', 'Syriaca', 'HAF', 'Pinakes']",
 					"validate": ""
 				}
 			],
@@ -318,12 +319,12 @@
 			"cols": [
 				{
 					"id": "d1c7d05a-2e1e-4571-96ca-8cae0e399138",
-					"name": "person_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier (Associated Person): The objectId of the associated person record. Must be an objectId of an existing Person object ",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -334,15 +335,15 @@
 				{
 					"id": "66de5bc6-8866-486a-aa4b-908282742694",
 					"name": "role",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Role (Associated Person): Describes the kind of association between the person and work",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['author', 'translator', 'editor', 'subject', null]",
 					"validate": ""
 				}
 			],
@@ -460,12 +461,12 @@
 				},
 				{
 					"id": "ba9f9c9d-2cbc-4721-bd62-e8433e986dba",
-					"name": "preferred_name",
+					"name": "pref_name",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": true,
-					"comment": "",
+					"comment": "Preferred Nam: The form of the person's name used as the primary label for the person",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -474,12 +475,12 @@
 				},
 				{
 					"id": "6073c3af-981f-4c34-911a-8f5a5f296113",
-					"name": "alternative_name",
+					"name": "alt_name",
 					"datatype": "e414bc16-7388-45f0-b330-108a835446a9",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Alternative Name: Variant forms of the person's name, including the language code",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -488,12 +489,12 @@
 				},
 				{
 					"id": "316b290e-ac0b-4ff3-9772-0e7385dbf384",
-					"name": "description",
+					"name": "desc",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Description: A brief, prose summary of the person's salient bibliographic details. Use for disambiguation.",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -502,12 +503,12 @@
 				},
 				{
 					"id": "44a07d01-b7a9-40ba-a7f3-5a802817a26d",
-					"name": "related_concept",
+					"name": "rel_con",
 					"datatype": "43cd0dc8-4905-4079-aea0-e0e79eccf2e0",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Related Concept: An equivalent or close matching concept in an external authority file",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -516,12 +517,12 @@
 				},
 				{
 					"id": "13f56d34-4b5f-4f74-9d63-4550d6f8a062",
-					"name": "associated_person",
+					"name": "assoc_pers",
 					"datatype": "d1566b44-98b7-4ee1-b117-7d39cec08e88",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Associated Person: A person entity connected to the person resource through a given role",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -531,12 +532,12 @@
 				},
 				{
 					"id": "a102b272-9180-4f54-9277-d537b28490df",
-					"name": "associated_date",
+					"name": "assoc_date",
 					"datatype": "90064f04-99fa-45a5-9c39-3472e17d66cb",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Associated Date: The time span defining an event or events in a person's life; expressed in both human- and machine-readable formats",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -546,11 +547,11 @@
 				{
 					"id": "9db3a5a7-fdef-4683-86e4-a19859a54c1a",
 					"name": "gender",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Gender: Specifies the gender identity of a person",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -559,12 +560,12 @@
 				},
 				{
 					"id": "844ebc47-fba2-4485-b623-93d2079d66e5",
-					"name": "references",
+					"name": "bibl",
 					"datatype": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -573,12 +574,12 @@
 				},
 				{
 					"id": "90769eb1-b258-4287-b929-67fe90b3fa6c",
-					"name": "reference_number",
+					"name": "refno",
 					"datatype": "9b7dc03e-efe4-41c7-893e-0dd3a609b022",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Reference Number: Contains the uniform name, entry number, and source for the person in a standard reference list",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -587,22 +588,24 @@
 				},
 				{
 					"id": "4c4d4fab-502a-49e0-82d3-61e4f164c334",
-					"name": "associated_place",
+					"name": "assoc_place",
 					"datatype": "f99ca0ef-f393-44e7-a22b-a8094f19c25b",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Associated Place: A place entity connected to the person resource through a given role",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"fk": true
 				}
 			],
 			"relations": [
 				"ba6869fd-bc2a-4df6-9084-1554f8074dc7",
-				"5eb8b96d-f6d8-434d-b8ae-ad4ea80dc9da"
+				"5eb8b96d-f6d8-434d-b8ae-ad4ea80dc9da",
+				"58dde7b9-a975-4f23-b7a7-6eb6a9da03c9"
 			],
 			"lines": [],
 			"keys": [
@@ -636,17 +639,18 @@
 			"cols": [
 				{
 					"id": "47dfaf8e-dd6a-45e3-9498-91f53bb02bd0",
-					"name": "language",
+					"name": "lang",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Language: The language code representing the language of the corresponding title",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "ISO 639-1 or ISO 639-2 language code"
 				},
 				{
 					"id": "f2beeea6-fbf0-4bd8-a41c-a70a9f0f1c05",
@@ -687,12 +691,12 @@
 			"cols": [
 				{
 					"id": "aebdc0dd-6243-44e4-9927-f44aea597ab4",
-					"name": "reference",
+					"name": "ref",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -702,25 +706,25 @@
 				{
 					"id": "1e3d96e9-dd5f-4a4b-8b32-9ab51ca95eeb",
 					"name": "type",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Type (Bibliography): The type of bibliographic item cited, i.e. 'edition', translation', or 'other'.",
 					"defaultvalue": "",
 					"data": "",
-					"list": false,
-					"enum": "",
+					"list": true,
+					"enum": "['edition', 'translation', 'other', null]",
 					"validate": ""
 				},
 				{
 					"id": "b32e7183-f285-4214-8c5b-51ca6e972c61",
-					"name": "cited_range",
+					"name": "range",
 					"datatype": "938b6915-2fc0-4e7a-a271-bd0dda7dff5c",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -753,15 +757,15 @@
 				{
 					"id": "f59cebf9-0bda-45bc-ac37-104db09088db",
 					"name": "unit",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Unit (Cited Range): The unit of measurement defining the cited range",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['page', 'chapter', 'book', 'section', 'figure', 'folio', 'map', 'entry']",
 					"validate": ""
 				},
 				{
@@ -771,7 +775,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Range (Cited Range)",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -808,7 +812,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Label (Creation Date): A human-readable expression of the timespan during which the work was composed",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -822,12 +826,13 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Normalized (Creation Date): A machine-readable expression of the timespan during which the work was composed",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "An ISO 8601 date or date range"
 				}
 			],
 			"relations": [],
@@ -859,7 +864,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Title (Reference Number): The uniform title provided in the standardized reference work entry",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -873,7 +878,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier: The entry number or other standard identifier for the work in a standard reference work",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -883,15 +888,15 @@
 				{
 					"id": "90d6485d-5601-4a09-b5a3-1c9b8d4128a4",
 					"name": "source",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Source (Reference Number): The reference work in which the entity is found ",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['CPG', 'CPL', 'BHO', 'BHG', null]",
 					"validate": ""
 				}
 			],
@@ -920,25 +925,25 @@
 				{
 					"id": "8151919c-2729-4357-a42f-ef24c7c9d536",
 					"name": "type",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Type (Related Work): Describes the kind of relation asserted between two work entities.",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['isPartOf', null]",
 					"validate": ""
 				},
 				{
 					"id": "e93ffbc7-9f32-4b7f-a6cc-16d7db97ebe4",
-					"name": "work_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier (Related Work): The objectId of the related work entity. Must be an objectId of an existing Work object",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -971,17 +976,18 @@
 			"cols": [
 				{
 					"id": "a1df708f-18f5-45cc-a11e-330c0a1953b8",
-					"name": "language",
+					"name": "lang",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Language: The language code representing the language of the corresponding name",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "ISO 639-1 or ISO 639-2 language code"
 				},
 				{
 					"id": "b82f9059-1982-4c61-89dc-4155b376de7c",
@@ -1027,7 +1033,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Name (Related Concept): The uniform or prefererd name form for the related concept from an external authority file",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1041,12 +1047,13 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "URI: The Uniform Resource Identifier for the related concept",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "Must be a URI"
 				},
 				{
 					"id": "076895fa-df1a-454d-a322-4cf6274575d0",
@@ -1055,12 +1062,13 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Source (Related Concept): The authority service or database containing the related concept entry",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "['VIAF', 'LoC', 'Syriaca', 'HAF', 'Pinakes']"
 				}
 			],
 			"relations": [],
@@ -1087,12 +1095,12 @@
 			"cols": [
 				{
 					"id": "70d85a0c-27bd-4583-b510-c9b48471e3bb",
-					"name": "person_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier (Associated Person): The objectId of the associated person record. Must be an objectId of an existing Person object ",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1102,11 +1110,11 @@
 				{
 					"id": "d0008f39-85d6-41e4-8397-757f258a7120",
 					"name": "role",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Role (Associated Person): Describes the kind of association between the person entities",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1139,15 +1147,15 @@
 				{
 					"id": "0df63ec3-3222-47d1-8020-deb04547e3ee",
 					"name": "type",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Type (Associated Date): The life event which the time span represents",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['birth', 'death', 'floruit', 'birth-death']",
 					"validate": ""
 				},
 				{
@@ -1157,7 +1165,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Label (Associated Date): A human-readable expression of the timespan representing an event in the person's life",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1171,12 +1179,13 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Normalized (Associated Date): A machine-readable expression of the timespan representing an event in the person's life",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validate": "",
+					"validation": "An ISO 8601 date or date range"
 				}
 			],
 			"relations": [],
@@ -1184,57 +1193,6 @@
 			"keys": [
 				{
 					"id": "5b80709a-cdba-450a-8b29-b6d63554a1ef",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true
-		},
-		"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
-			"id": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [
-				{
-					"id": "40f3cda7-e5ab-4808-a49c-1bb7190e4624",
-					"name": "reference",
-					"datatype": "objectId",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "681705e6-08dc-4c7a-b2ef-b00f404819fb",
-					"name": "cited_range",
-					"datatype": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validate": ""
-				}
-			],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "e7b4168d-67c5-4ded-b5cc-bfdc57eb6246",
 					"name": "Primary key",
 					"isPk": true,
 					"cols": []
@@ -1259,7 +1217,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Name (Reference Number): The uniform name provided in the standardized reference work entry",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1273,7 +1231,7 @@
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier: The entry number or other standard identifier for the person in a standard reference work",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1283,11 +1241,11 @@
 				{
 					"id": "39826b27-055f-4839-bba8-8b9a2a693fb6",
 					"name": "source",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Source (Reference Number): The reference work in which the entity is found ",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1319,12 +1277,12 @@
 			"cols": [
 				{
 					"id": "fc01f293-14b9-4b2b-b156-206c6a39ef72",
-					"name": "place_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Identifier (Associated Place): The objectId of the associated place record. Must be an objectId of an existing Place object ",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1334,15 +1292,15 @@
 				{
 					"id": "3a352fab-49d0-4a6e-af30-17dca6bb17cb",
 					"name": "role",
-					"datatype": "string",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Role (Associated Person): Describes the kind of association between the person and place. Null means unspecified relationship between a person and place",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
-					"enum": "",
+					"enum": "['placeOfBirth', 'placeOfDeath', null]",
 					"validate": ""
 				}
 			],
@@ -1351,57 +1309,6 @@
 			"keys": [
 				{
 					"id": "b3d4108b-0915-4769-996c-8dd86f591215",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true
-		},
-		"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
-			"id": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [
-				{
-					"id": "71083db5-1898-439e-95a3-e40995733f42",
-					"name": "unit",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "84564f84-3661-48ee-8d31-ee66d9f54bde",
-					"name": "range",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				}
-			],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "20375fe5-ccbd-4e78-8449-6905527de885",
 					"name": "Primary key",
 					"isPk": true,
 					"cols": []
@@ -1432,7 +1339,7 @@
 				},
 				{
 					"id": "ba9f9c9d-2cbc-4721-bd62-e8433e986dba",
-					"name": "preferred_name",
+					"name": "pref_name",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -1446,12 +1353,12 @@
 				},
 				{
 					"id": "9db3a5a7-fdef-4683-86e4-a19859a54c1a",
-					"name": "place_type",
-					"datatype": "string",
+					"name": "type",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Place Type: The kind of place. (Note: use Pleiades place type vocabulary for term list)",
 					"defaultvalue": "",
 					"data": "",
 					"list": false,
@@ -1460,7 +1367,7 @@
 				},
 				{
 					"id": "6073c3af-981f-4c34-911a-8f5a5f296113",
-					"name": "alternative_name",
+					"name": "alt_name",
 					"datatype": "56b24b3f-7fd2-4000-a5b7-479458e3edf8",
 					"param": "",
 					"pk": false,
@@ -1474,7 +1381,7 @@
 				},
 				{
 					"id": "316b290e-ac0b-4ff3-9772-0e7385dbf384",
-					"name": "description",
+					"name": "desc",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -1488,12 +1395,12 @@
 				},
 				{
 					"id": "74ff7ffd-ced3-411d-8d13-3b2863f578d6",
-					"name": "location",
+					"name": "loc",
 					"datatype": "d8479cfd-c32d-445f-8d6b-e35ad6da9e73",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"comment": "",
+					"comment": "Location: The geographic location",
 					"defaultvalue": "",
 					"data": "",
 					"list": true,
@@ -1502,7 +1409,7 @@
 				},
 				{
 					"id": "a102b272-9180-4f54-9277-d537b28490df",
-					"name": "associated_date",
+					"name": "assoc_date",
 					"datatype": "4c8bf1b5-1a88-4e00-b9bb-0e9593f23d64",
 					"param": "",
 					"pk": false,
@@ -1516,7 +1423,7 @@
 				},
 				{
 					"id": "44a07d01-b7a9-40ba-a7f3-5a802817a26d",
-					"name": "related_concept",
+					"name": "rel_con",
 					"datatype": "383fe13e-b829-4558-aec8-a6b5ac1fd591",
 					"param": "",
 					"pk": false,
@@ -1530,7 +1437,7 @@
 				},
 				{
 					"id": "90769eb1-b258-4287-b929-67fe90b3fa6c",
-					"name": "reference_number",
+					"name": "refno",
 					"datatype": "2ce8fb9b-9da9-425f-9f11-1ddbbd2c5d96",
 					"param": "",
 					"pk": false,
@@ -1544,8 +1451,22 @@
 				},
 				{
 					"id": "844ebc47-fba2-4485-b623-93d2079d66e5",
-					"name": "references",
+					"name": "bibl",
 					"datatype": "55253603-5d60-43e8-830d-b17c68541224",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "0623ef77-a3bb-44da-949a-e4b9d6e91ed1",
+					"name": "assoc_place",
+					"datatype": "5fccafab-ac1a-4d49-ae5e-b39516cff85b",
 					"param": "",
 					"pk": false,
 					"nn": false,
@@ -1557,7 +1478,9 @@
 					"validate": ""
 				}
 			],
-			"relations": [],
+			"relations": [
+				"58dde7b9-a975-4f23-b7a7-6eb6a9da03c9"
+			],
 			"lines": [],
 			"keys": [
 				{
@@ -1952,7 +1875,7 @@
 				},
 				{
 					"id": "2558f046-f843-4152-942c-078906568f90",
-					"name": "coordinates",
+					"name": "gps",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -1979,6 +1902,159 @@
 			"embeddable": true,
 			"generate": true,
 			"generateCustomCode": true
+		},
+		"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
+			"id": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "40f3cda7-e5ab-4808-a49c-1bb7190e4624",
+					"name": "ref",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "681705e6-08dc-4c7a-b2ef-b00f404819fb",
+					"name": "range",
+					"datatype": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "e7b4168d-67c5-4ded-b5cc-bfdc57eb6246",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
+			"id": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "71083db5-1898-439e-95a3-e40995733f42",
+					"name": "unit",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Unit (Cited Range): The unit of measurement defining the cited range",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "['page', 'chapter', 'book', 'section', 'figure', 'folio', 'map', 'entry']",
+					"validate": ""
+				},
+				{
+					"id": "84564f84-3661-48ee-8d31-ee66d9f54bde",
+					"name": "range",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Range (Cited Range)",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "20375fe5-ccbd-4e78-8449-6905527de885",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"5fccafab-ac1a-4d49-ae5e-b39516cff85b": {
+			"id": "5fccafab-ac1a-4d49-ae5e-b39516cff85b",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "ca6a9f22-406e-4b99-849b-7e62df824e20",
+					"name": "id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "865d0715-1f61-4650-89e0-082b92ecf52d",
+					"name": "role",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "f500be8d-c96d-4e95-9fc8-c9ab4ff71504",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
 		}
 	},
 	"relations": {
@@ -1991,8 +2067,8 @@
 			"parent_key": "33a71ef6-673e-47f0-94b2-91764ff6df99",
 			"parent": "4455ccfa-a4b8-4825-ad20-cdda8f42e107",
 			"child": "4455ccfa-a4b8-4825-ad20-cdda8f42e107",
-			"c_mp": "true",
-			"c_mch": "true",
+			"c_mp": "false",
+			"c_mch": "false",
 			"c_p": "many",
 			"c_ch": "many",
 			"c_cp": "",
@@ -2016,8 +2092,8 @@
 			"parent_key": "ec029d25-f306-44de-abd3-fe4313c592d8",
 			"parent": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
 			"child": "4455ccfa-a4b8-4825-ad20-cdda8f42e107",
-			"c_mp": "true",
-			"c_mch": "true",
+			"c_mp": "false",
+			"c_mch": "false",
 			"c_p": "many",
 			"c_ch": "many",
 			"c_cp": "",
@@ -2041,8 +2117,8 @@
 			"parent_key": "ec029d25-f306-44de-abd3-fe4313c592d8",
 			"parent": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
 			"child": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
-			"c_mp": "true",
-			"c_mch": "true",
+			"c_mp": "false",
+			"c_mch": "false",
 			"c_p": "many",
 			"c_ch": "many",
 			"c_cp": "",
@@ -2052,6 +2128,31 @@
 					"id": "4581401d-bdf2-4a51-bba5-0a5ac500a7b8",
 					"parentcol": "d81d60de-3886-4abf-a2e8-de9c6b6755e0",
 					"childcol": "13f56d34-4b5f-4f74-9d63-4550d6f8a062"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"58dde7b9-a975-4f23-b7a7-6eb6a9da03c9": {
+			"id": "58dde7b9-a975-4f23-b7a7-6eb6a9da03c9",
+			"visible": true,
+			"name": "place_person",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "3f9785df-bc7a-4604-b142-b2ffdb8b7226",
+			"parent": "a5623c8d-0e67-46bd-af68-bfceecd44ed3",
+			"child": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
+			"c_mp": "false",
+			"c_mch": "false",
+			"c_p": "many",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "3dd893f7-33c9-4e1f-977a-162641659144",
+					"parentcol": "d81d60de-3886-4abf-a2e8-de9c6b6755e0",
+					"childcol": "4c4d4fab-502a-49e0-82d3-61e4f164c334"
 				}
 			],
 			"generate": true,
@@ -2073,7 +2174,7 @@
 		"replaceSpace": "_",
 		"color": "transparent",
 		"sideSelections": true,
-		"isDirty": true,
+		"isDirty": false,
 		"storedin": {
 			"major": 3,
 			"minor": 5,
@@ -2089,7 +2190,7 @@
 		"embeddedInParentsIsDisplayed": true,
 		"currentDisplayMode": "metadata",
 		"cardinalityIsDisplayed": false,
-		"lastSaved": "Thu Oct 05 2023 13:46:47 GMT-0500 (Central Daylight Time)"
+		"lastSaved": "Mon Oct 23 2023 11:54:58 GMT-0500 (Central Daylight Time)"
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -2107,13 +2208,13 @@
 			"diagramItems": {
 				"4455ccfa-a4b8-4825-ad20-cdda8f42e107": {
 					"referencedItemId": "4455ccfa-a4b8-4825-ad20-cdda8f42e107",
-					"x": 50,
-					"y": 40,
-					"gHeight": 297,
-					"gWidth": 277,
+					"x": 52,
+					"y": 44,
+					"gHeight": 388,
+					"gWidth": 244,
 					"color": "#ffffff",
 					"background": "#03a9f4",
-					"resized": false,
+					"resized": true,
 					"autoExpand": true
 				},
 				"7c8863f9-957d-4058-a61f-1efe7f7285e3": {
@@ -2138,7 +2239,7 @@
 					"background": "#8bc34a",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false
 				},
 				"8f3f696d-b395-41a7-8ccc-300bce6c944c": {
 					"referencedItemId": "8f3f696d-b395-41a7-8ccc-300bce6c944c",
@@ -2154,13 +2255,13 @@
 				},
 				"e12c1108-4f1c-47b5-8ff9-5f8d7b81134e": {
 					"referencedItemId": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
-					"x": 1280,
-					"y": 256,
-					"gHeight": 261,
-					"gWidth": 270,
+					"x": 545,
+					"y": 76,
+					"gHeight": 226,
+					"gWidth": 260,
 					"color": "#ffffff",
 					"background": "#03a9f4",
-					"resized": false,
+					"resized": true,
 					"autoExpand": true
 				},
 				"e95cc697-26b2-4907-b65c-41932c3647dd": {
@@ -2221,7 +2322,7 @@
 					"background": "#8bc34a",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false
 				},
 				"d990e50e-611e-45b3-bdf4-79ba68941a41": {
 					"referencedItemId": "d990e50e-611e-45b3-bdf4-79ba68941a41",
@@ -2245,7 +2346,7 @@
 					"background": "#8bc34a",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": false
+					"collapsed": true
 				},
 				"43cd0dc8-4905-4079-aea0-e0e79eccf2e0": {
 					"referencedItemId": "43cd0dc8-4905-4079-aea0-e0e79eccf2e0",
@@ -2283,18 +2384,6 @@
 					"autoExpand": true,
 					"collapsed": true
 				},
-				"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
-					"referencedItemId": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
-					"resized": false,
-					"autoExpand": true,
-					"collapsed": true
-				},
 				"9b7dc03e-efe4-41c7-893e-0dd3a609b022": {
 					"referencedItemId": "9b7dc03e-efe4-41c7-893e-0dd3a609b022",
 					"x": 400,
@@ -2319,27 +2408,15 @@
 					"autoExpand": true,
 					"collapsed": true
 				},
-				"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
-					"referencedItemId": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
-					"resized": false,
-					"autoExpand": true,
-					"collapsed": true
-				},
 				"a5623c8d-0e67-46bd-af68-bfceecd44ed3": {
 					"referencedItemId": "a5623c8d-0e67-46bd-af68-bfceecd44ed3",
 					"x": 50,
 					"y": 547,
-					"gHeight": 207,
-					"gWidth": 270,
+					"gHeight": 262,
+					"gWidth": 232,
 					"color": "#ffffff",
 					"background": "#03a9f4",
-					"resized": false,
+					"resized": true,
 					"autoExpand": true
 				},
 				"56b24b3f-7fd2-4000-a5b7-479458e3edf8": {
@@ -2416,6 +2493,42 @@
 				},
 				"d8479cfd-c32d-445f-8d6b-e35ad6da9e73": {
 					"referencedItemId": "d8479cfd-c32d-445f-8d6b-e35ad6da9e73",
+					"x": 600,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": false
+				},
+				"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
+					"referencedItemId": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
+					"x": 400,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": true
+				},
+				"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
+					"referencedItemId": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
+					"x": 400,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": true
+				},
+				"5fccafab-ac1a-4d49-ae5e-b39516cff85b": {
+					"referencedItemId": "5fccafab-ac1a-4d49-ae5e-b39516cff85b",
 					"x": 600,
 					"y": 40,
 					"gHeight": 60,
