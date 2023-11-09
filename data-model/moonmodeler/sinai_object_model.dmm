@@ -7208,7 +7208,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1699307777277,
+		"lastSaved": 1699395721544,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -7228,7 +7228,7 @@
 			"id": "201c3c44-34f2-4204-a31f-393015dc6f9f",
 			"keysgraphics": true,
 			"linegraphics": "detailed",
-			"zoom": 1.3,
+			"zoom": 0.8,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -7236,21 +7236,21 @@
 			"diagramItems": {
 				"56894fe5-0a18-4ada-ad8f-cbb3b56ae68a": {
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
-					"x": 1980,
+					"x": 2111,
 					"y": 40,
-					"gHeight": 1862,
+					"gHeight": 1891,
 					"gWidth": 246,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"gWidthRootEnvelop": 745,
-					"gHeightRootEnvelop": 1862
+					"gWidthRootEnvelop": 844,
+					"gHeightRootEnvelop": 1891
 				},
 				"3c9e4fbf-132c-4a3e-94b3-8d94c02e1b39": {
 					"referencedItemId": "3c9e4fbf-132c-4a3e-94b3-8d94c02e1b39",
-					"x": 1141,
+					"x": 1172,
 					"y": 40,
 					"gHeight": 2584,
 					"gWidth": 255,
@@ -7259,22 +7259,22 @@
 					"resized": true,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"gWidthRootEnvelop": 754,
+					"gWidthRootEnvelop": 853,
 					"gHeightRootEnvelop": 2584
 				},
 				"c8bf0cb5-02d1-49ab-a642-b6be010d309c": {
 					"referencedItemId": "c8bf0cb5-02d1-49ab-a642-b6be010d309c",
 					"x": 135,
 					"y": 40,
-					"gHeight": 2423,
-					"gWidth": 242,
+					"gHeight": 1828,
+					"gWidth": 244,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"gWidthRootEnvelop": 921,
-					"gHeightRootEnvelop": 2423
+					"gWidthRootEnvelop": 953,
+					"gHeightRootEnvelop": 1631
 				},
 				"8a113756-a58e-4a15-a06f-d5bab1267a15": {
 					"referencedItemId": "8a113756-a58e-4a15-a06f-d5bab1267a15",
@@ -7466,7 +7466,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"7702ac6e-72f7-46e3-9cac-52c9ca7b7a8f": {
 					"referencedItemId": "7702ac6e-72f7-46e3-9cac-52c9ca7b7a8f",
