@@ -15,8 +15,13 @@
 					"pk": true,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
-					"data": ""
+					"data": "",
+					"enum": "",
+					"list": false,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "0e3668f8-8a47-480c-9cbd-5d6f124877c2",
@@ -26,11 +31,13 @@
 					"pk": false,
 					"nn": true,
 					"comment": "Preferred Title: The form of the work's title used as the primary label for the work",
-					"defaultvalue": "",
 					"data": "Bible. Acts",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "7493c7d2-b222-4b3a-baf6-797a7b27b788",
@@ -40,11 +47,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Alternative Title: Variant forms of the work's title, including the language code",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "a11cc5f8-a46c-4198-b383-0382536e8ed2",
@@ -54,11 +63,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Original Language: The language in which the work was originally composed. Must be an objectId of a corresponding language object",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "75968c9b-258e-4629-9c99-be141b911a5f",
@@ -68,11 +79,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Original Language Title: An expression of the work's title given in the language in which the work was originally composed",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "2e443259-9491-42de-813f-0cd1715584af",
@@ -82,11 +95,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Creation Date: The time span during which the work was composed; expressed in both human- and machine-readable formats",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "25a43248-8ab5-42ab-9574-4fa5e1671f1d",
@@ -96,11 +111,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Description: A brief, prose summary of the contents, context, or subjects of the work. Use for disambiguation.",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "dd28d0d6-a9bc-4685-88c3-712203815bb3",
@@ -110,11 +127,13 @@
 					"pk": false,
 					"nn": true,
 					"comment": "Genre: The stylistic type or category to which the work belongs. Must be an objectId of an existing Genre object.",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "4700f3a7-5a8d-4523-9014-31579f83336b",
@@ -124,11 +143,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "dc8460c3-a868-4d24-aabe-68d178502dca",
@@ -138,11 +159,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "6f77d8eb-435c-4274-b616-cc0cd634d283",
@@ -152,11 +175,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Related Concept: An equivalent or close matching concept in an external authority file",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "0231fdab-ebbe-491d-b6e4-837358e46cc0",
@@ -166,11 +191,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Reference Number: Contains the uniform title, entry number, and source for the work in a standard reference list",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "33a0c305-b406-458b-8733-894a319fa654",
@@ -180,12 +207,14 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Associated Person: A person entity connected to the work resource through a given role",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": "",
-					"fk": true
+					"fk": true,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "3aaa90e2-b386-4e54-85e0-e710e7af7426",
@@ -195,12 +224,14 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Related Work: A work entity with an associative or hierarchical link to a given work",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": "",
-					"fk": true
+					"fk": true,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "393b8808-9d40-424c-8994-18467a9fe47a",
@@ -210,11 +241,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -242,7 +275,12 @@
 			"validationLevel": "na",
 			"validationAction": "na",
 			"collation": "",
-			"others": ""
+			"others": "",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"validation": "",
+			"customCode": ""
 		},
 		"7c8863f9-957d-4058-a61f-1efe7f7285e3": {
 			"id": "7c8863f9-957d-4058-a61f-1efe7f7285e3",
@@ -259,11 +297,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Title (Related Concept): The uniform or prefererd title form for the related concept from an external authority file",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "e44c7d87-00bf-4047-8ae3-4d6bd007d118",
@@ -273,12 +313,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "URI: The Uniform Resource Identifier for the related concept",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "Must be a URI"
+					"validation": "Must be a URI",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "aabeac1a-f595-4dee-afab-7bfca7180c15",
@@ -288,11 +329,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Source (Related Concept): The authority service or database containing the related concept entry",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['VIAF', 'LoC', 'Syriaca', 'HAF', 'Pinakes']",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -308,7 +351,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"56f061f7-ef9b-4eb4-8413-81966b99dfa4": {
 			"id": "56f061f7-ef9b-4eb4-8413-81966b99dfa4",
@@ -325,12 +377,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier (Associated Person): The objectId of the associated person record. Must be an objectId of an existing Person object ",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"pattern": false
+					"pattern": false,
+					"validation": "",
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "66de5bc6-8866-486a-aa4b-908282742694",
@@ -340,11 +393,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Role (Associated Person): Describes the kind of association between the person and work",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['author', 'translator', 'editor', 'subject', null]",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -360,7 +415,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"8f3f696d-b395-41a7-8ccc-300bce6c944c": {
 			"id": "8f3f696d-b395-41a7-8ccc-300bce6c944c",
@@ -377,11 +441,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "afe8d59a-b331-43dc-8547-04266e244458",
@@ -391,11 +457,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "4bc1f494-5a94-4b0f-a6e7-93794c1629dc",
@@ -405,11 +473,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "b13ce9de-b882-495d-8ef7-7b0fd1489282",
@@ -419,11 +489,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -439,7 +511,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"e12c1108-4f1c-47b5-8ff9-5f8d7b81134e": {
 			"id": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
@@ -456,8 +537,13 @@
 					"pk": true,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
-					"data": ""
+					"data": "",
+					"enum": "",
+					"list": false,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "ba9f9c9d-2cbc-4721-bd62-e8433e986dba",
@@ -467,11 +553,13 @@
 					"pk": false,
 					"nn": true,
 					"comment": "Preferred Nam: The form of the person's name used as the primary label for the person",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "6073c3af-981f-4c34-911a-8f5a5f296113",
@@ -481,11 +569,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Alternative Name: Variant forms of the person's name, including the language code",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "316b290e-ac0b-4ff3-9772-0e7385dbf384",
@@ -495,11 +585,30 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Description: A brief, prose summary of the person's salient bibliographic details. Use for disambiguation.",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
+				},
+				{
+					"id": "1d91830d-3785-4838-8daa-7d6cfbf4fd71",
+					"name": "bibl",
+					"datatype": "fe8aa771-910f-491b-ad63-c20bc42d6e4b",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
 				},
 				{
 					"id": "44a07d01-b7a9-40ba-a7f3-5a802817a26d",
@@ -509,11 +618,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Related Concept: An equivalent or close matching concept in an external authority file",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "13f56d34-4b5f-4f74-9d63-4550d6f8a062",
@@ -523,12 +634,14 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Associated Person: A person entity connected to the person resource through a given role",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": "",
-					"fk": true
+					"fk": true,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "a102b272-9180-4f54-9277-d537b28490df",
@@ -538,11 +651,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Associated Date: The time span defining an event or events in a person's life; expressed in both human- and machine-readable formats",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "9db3a5a7-fdef-4683-86e4-a19859a54c1a",
@@ -552,25 +667,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Gender: Specifies the gender identity of a person",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "844ebc47-fba2-4485-b623-93d2079d66e5",
-					"name": "bibl",
-					"datatype": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
-					"defaultvalue": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "90769eb1-b258-4287-b929-67fe90b3fa6c",
@@ -580,11 +683,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Reference Number: Contains the uniform name, entry number, and source for the person in a standard reference list",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "4c4d4fab-502a-49e0-82d3-61e4f164c334",
@@ -594,12 +699,14 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Associated Place: A place entity connected to the person resource through a given role",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": "",
-					"fk": true
+					"fk": true,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -628,7 +735,12 @@
 			"validationLevel": "na",
 			"validationAction": "na",
 			"collation": "",
-			"others": ""
+			"others": "",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"validation": "",
+			"customCode": ""
 		},
 		"e95cc697-26b2-4907-b65c-41932c3647dd": {
 			"id": "e95cc697-26b2-4907-b65c-41932c3647dd",
@@ -645,12 +757,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Language: The language code representing the language of the corresponding title",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "ISO 639-1 or ISO 639-2 language code"
+					"validation": "ISO 639-1 or ISO 639-2 language code",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "f2beeea6-fbf0-4bd8-a41c-a70a9f0f1c05",
@@ -660,11 +773,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -680,7 +795,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"4993d4cb-71d1-4088-8033-35fa32e1ad02": {
 			"id": "4993d4cb-71d1-4088-8033-35fa32e1ad02",
@@ -697,11 +821,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "1e3d96e9-dd5f-4a4b-8b32-9ab51ca95eeb",
@@ -711,25 +837,29 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Type (Bibliography): The type of bibliographic item cited, i.e. 'edition', translation', or 'other'.",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "['edition', 'translation', 'other', null]",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "b32e7183-f285-4214-8c5b-51ca6e972c61",
-					"name": "range",
-					"datatype": "938b6915-2fc0-4e7a-a271-bd0dda7dff5c",
+					"name": "cite_rg",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
 					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
-					"defaultvalue": "",
 					"data": "",
-					"list": true,
+					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -745,58 +875,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
-		},
-		"938b6915-2fc0-4e7a-a271-bd0dda7dff5c": {
-			"id": "938b6915-2fc0-4e7a-a271-bd0dda7dff5c",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [
-				{
-					"id": "f59cebf9-0bda-45bc-ac37-104db09088db",
-					"name": "unit",
-					"datatype": "enum",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Unit (Cited Range): The unit of measurement defining the cited range",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "['page', 'chapter', 'book', 'section', 'figure', 'folio', 'map', 'entry']",
-					"validate": ""
-				},
-				{
-					"id": "de94cb0b-8b9b-41ee-973c-e5ad97ddd8e8",
-					"name": "range",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Range (Cited Range)",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				}
-			],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "50e36083-63ab-44b2-ae6a-b7e9aea569d2",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"79181524-6294-4cef-9c31-6ec9111ad30b": {
 			"id": "79181524-6294-4cef-9c31-6ec9111ad30b",
@@ -813,11 +901,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Label (Creation Date): A human-readable expression of the timespan during which the work was composed",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "f70e2041-7bd1-4227-ab28-ed99327212df",
@@ -827,12 +917,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Normalized (Creation Date): A machine-readable expression of the timespan during which the work was composed",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "An ISO 8601 date or date range"
+					"validation": "An ISO 8601 date or date range",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -848,7 +939,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"47a2d53c-f84b-4282-8aba-e7c65319cf7d": {
 			"id": "47a2d53c-f84b-4282-8aba-e7c65319cf7d",
@@ -865,11 +965,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Title (Reference Number): The uniform title provided in the standardized reference work entry",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "83f7c627-5696-4e77-ab49-923152f06e4e",
@@ -879,11 +981,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier: The entry number or other standard identifier for the work in a standard reference work",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "90d6485d-5601-4a09-b5a3-1c9b8d4128a4",
@@ -893,11 +997,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Source (Reference Number): The reference work in which the entity is found ",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['CPG', 'CPL', 'BHO', 'BHG', null]",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -913,7 +1019,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"d990e50e-611e-45b3-bdf4-79ba68941a41": {
 			"id": "d990e50e-611e-45b3-bdf4-79ba68941a41",
@@ -930,11 +1045,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Type (Related Work): Describes the kind of relation asserted between two work entities.",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['isPartOf', null]",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "e93ffbc7-9f32-4b7f-a6cc-16d7db97ebe4",
@@ -944,12 +1061,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier (Related Work): The objectId of the related work entity. Must be an objectId of an existing Work object",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"pattern": false
+					"pattern": false,
+					"validation": "",
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -965,7 +1083,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"e414bc16-7388-45f0-b330-108a835446a9": {
 			"id": "e414bc16-7388-45f0-b330-108a835446a9",
@@ -982,12 +1109,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Language: The language code representing the language of the corresponding name",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "ISO 639-1 or ISO 639-2 language code"
+					"validation": "ISO 639-1 or ISO 639-2 language code",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "b82f9059-1982-4c61-89dc-4155b376de7c",
@@ -997,11 +1125,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1017,7 +1147,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"43cd0dc8-4905-4079-aea0-e0e79eccf2e0": {
 			"id": "43cd0dc8-4905-4079-aea0-e0e79eccf2e0",
@@ -1034,11 +1173,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Name (Related Concept): The uniform or prefererd name form for the related concept from an external authority file",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "c5637bef-4eb6-4848-9398-d8a04145ebdf",
@@ -1048,12 +1189,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "URI: The Uniform Resource Identifier for the related concept",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "Must be a URI"
+					"validation": "Must be a URI",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "076895fa-df1a-454d-a322-4cf6274575d0",
@@ -1063,12 +1205,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Source (Related Concept): The authority service or database containing the related concept entry",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "['VIAF', 'LoC', 'Syriaca', 'HAF', 'Pinakes']"
+					"validation": "['VIAF', 'LoC', 'Syriaca', 'HAF', 'Pinakes']",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1084,7 +1227,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"d1566b44-98b7-4ee1-b117-7d39cec08e88": {
 			"id": "d1566b44-98b7-4ee1-b117-7d39cec08e88",
@@ -1101,11 +1253,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier (Associated Person): The objectId of the associated person record. Must be an objectId of an existing Person object ",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "d0008f39-85d6-41e4-8397-757f258a7120",
@@ -1115,11 +1269,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Role (Associated Person): Describes the kind of association between the person entities",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1135,7 +1291,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"90064f04-99fa-45a5-9c39-3472e17d66cb": {
 			"id": "90064f04-99fa-45a5-9c39-3472e17d66cb",
@@ -1152,11 +1317,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Type (Associated Date): The life event which the time span represents",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['birth', 'death', 'floruit', 'birth-death']",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "52cb5c93-2354-4766-a9a9-4f1d62b09859",
@@ -1166,11 +1333,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Label (Associated Date): A human-readable expression of the timespan representing an event in the person's life",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "9742b36f-cb60-418f-a5bb-c3a15a1710b1",
@@ -1180,12 +1349,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Normalized (Associated Date): A machine-readable expression of the timespan representing an event in the person's life",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": "",
-					"validation": "An ISO 8601 date or date range"
+					"validation": "An ISO 8601 date or date range",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1201,7 +1371,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"9b7dc03e-efe4-41c7-893e-0dd3a609b022": {
 			"id": "9b7dc03e-efe4-41c7-893e-0dd3a609b022",
@@ -1218,11 +1397,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Name (Reference Number): The uniform name provided in the standardized reference work entry",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "6bdb2cf3-e91a-4a9d-bfbf-6e2123835606",
@@ -1232,11 +1413,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier: The entry number or other standard identifier for the person in a standard reference work",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "39826b27-055f-4839-bba8-8b9a2a693fb6",
@@ -1246,11 +1429,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Source (Reference Number): The reference work in which the entity is found ",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1266,7 +1451,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"f99ca0ef-f393-44e7-a22b-a8094f19c25b": {
 			"id": "f99ca0ef-f393-44e7-a22b-a8094f19c25b",
@@ -1283,11 +1477,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Identifier (Associated Place): The objectId of the associated place record. Must be an objectId of an existing Place object ",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "3a352fab-49d0-4a6e-af30-17dca6bb17cb",
@@ -1297,11 +1493,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Role (Associated Person): Describes the kind of association between the person and place. Null means unspecified relationship between a person and place",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "['placeOfBirth', 'placeOfDeath', null]",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1317,7 +1515,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"a5623c8d-0e67-46bd-af68-bfceecd44ed3": {
 			"id": "a5623c8d-0e67-46bd-af68-bfceecd44ed3",
@@ -1334,8 +1541,13 @@
 					"pk": true,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
-					"data": ""
+					"data": "",
+					"enum": "",
+					"list": false,
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "ba9f9c9d-2cbc-4721-bd62-e8433e986dba",
@@ -1345,11 +1557,13 @@
 					"pk": false,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "9db3a5a7-fdef-4683-86e4-a19859a54c1a",
@@ -1359,11 +1573,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Place Type: The kind of place. (Note: use Pleiades place type vocabulary for term list)",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "6073c3af-981f-4c34-911a-8f5a5f296113",
@@ -1373,11 +1589,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "316b290e-ac0b-4ff3-9772-0e7385dbf384",
@@ -1387,11 +1605,30 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
+				},
+				{
+					"id": "681b2101-64a5-40ec-b547-668d4d0981d9",
+					"name": "bibl",
+					"datatype": "9b474ad8-df02-4a10-92cf-2d1126a4d8e5",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Bibliography: A secondary scholarly source that provides information about the work ",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
 				},
 				{
 					"id": "74ff7ffd-ced3-411d-8d13-3b2863f578d6",
@@ -1401,11 +1638,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "Location: The geographic location",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "a102b272-9180-4f54-9277-d537b28490df",
@@ -1415,11 +1654,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "44a07d01-b7a9-40ba-a7f3-5a802817a26d",
@@ -1429,11 +1670,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "90769eb1-b258-4287-b929-67fe90b3fa6c",
@@ -1443,25 +1686,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "844ebc47-fba2-4485-b623-93d2079d66e5",
-					"name": "bibl",
-					"datatype": "55253603-5d60-43e8-830d-b17c68541224",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "0623ef77-a3bb-44da-949a-e4b9d6e91ed1",
@@ -1471,11 +1702,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -1502,7 +1735,12 @@
 			"validationLevel": "na",
 			"validationAction": "na",
 			"collation": "",
-			"others": ""
+			"others": "",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"validation": "",
+			"customCode": ""
 		},
 		"56b24b3f-7fd2-4000-a5b7-479458e3edf8": {
 			"id": "56b24b3f-7fd2-4000-a5b7-479458e3edf8",
@@ -1519,11 +1757,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "b82f9059-1982-4c61-89dc-4155b376de7c",
@@ -1533,11 +1773,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1553,7 +1795,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"383fe13e-b829-4558-aec8-a6b5ac1fd591": {
 			"id": "383fe13e-b829-4558-aec8-a6b5ac1fd591",
@@ -1570,11 +1821,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "c5637bef-4eb6-4848-9398-d8a04145ebdf",
@@ -1584,11 +1837,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "076895fa-df1a-454d-a322-4cf6274575d0",
@@ -1598,11 +1853,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1618,7 +1875,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"f58f33a0-1263-4d28-a107-3f91ebf59407": {
 			"id": "f58f33a0-1263-4d28-a107-3f91ebf59407",
@@ -1635,11 +1901,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "d0008f39-85d6-41e4-8397-757f258a7120",
@@ -1649,11 +1917,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1669,7 +1939,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"4c8bf1b5-1a88-4e00-b9bb-0e9593f23d64": {
 			"id": "4c8bf1b5-1a88-4e00-b9bb-0e9593f23d64",
@@ -1686,11 +1965,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "52cb5c93-2354-4766-a9a9-4f1d62b09859",
@@ -1700,11 +1981,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "9742b36f-cb60-418f-a5bb-c3a15a1710b1",
@@ -1714,11 +1997,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1734,7 +2019,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"55253603-5d60-43e8-830d-b17c68541224": {
 			"id": "55253603-5d60-43e8-830d-b17c68541224",
@@ -1751,25 +2045,29 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "681705e6-08dc-4c7a-b2ef-b00f404819fb",
 					"name": "cited_range",
-					"datatype": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": true,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1785,7 +2083,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"2ce8fb9b-9da9-425f-9f11-1ddbbd2c5d96": {
 			"id": "2ce8fb9b-9da9-425f-9f11-1ddbbd2c5d96",
@@ -1802,11 +2109,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "6bdb2cf3-e91a-4a9d-bfbf-6e2123835606",
@@ -1816,11 +2125,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "39826b27-055f-4839-bba8-8b9a2a693fb6",
@@ -1830,11 +2141,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1850,7 +2163,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"d8479cfd-c32d-445f-8d6b-e35ad6da9e73": {
 			"id": "d8479cfd-c32d-445f-8d6b-e35ad6da9e73",
@@ -1867,11 +2189,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "2558f046-f843-4152-942c-078906568f90",
@@ -1881,11 +2205,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -1901,109 +2227,16 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
-		},
-		"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
-			"id": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [
-				{
-					"id": "40f3cda7-e5ab-4808-a49c-1bb7190e4624",
-					"name": "ref",
-					"datatype": "objectId",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "681705e6-08dc-4c7a-b2ef-b00f404819fb",
-					"name": "range",
-					"datatype": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
-					"defaultvalue": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validate": ""
-				}
-			],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "e7b4168d-67c5-4ded-b5cc-bfdc57eb6246",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true
-		},
-		"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
-			"id": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [
-				{
-					"id": "71083db5-1898-439e-95a3-e40995733f42",
-					"name": "unit",
-					"datatype": "enum",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Unit (Cited Range): The unit of measurement defining the cited range",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "['page', 'chapter', 'book', 'section', 'figure', 'folio', 'map', 'entry']",
-					"validate": ""
-				},
-				{
-					"id": "84564f84-3661-48ee-8d31-ee66d9f54bde",
-					"name": "range",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "Range (Cited Range)",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				}
-			],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "20375fe5-ccbd-4e78-8449-6905527de885",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		},
 		"5fccafab-ac1a-4d49-ae5e-b39516cff85b": {
 			"id": "5fccafab-ac1a-4d49-ae5e-b39516cff85b",
@@ -2020,11 +2253,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				},
 				{
 					"id": "865d0715-1f61-4650-89e0-082b92ecf52d",
@@ -2034,11 +2269,13 @@
 					"pk": false,
 					"nn": false,
 					"comment": "",
-					"defaultvalue": "",
 					"data": "",
 					"list": false,
 					"enum": "",
-					"validate": ""
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [],
@@ -2054,7 +2291,182 @@
 			"indexes": [],
 			"embeddable": true,
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
+		},
+		"fe8aa771-910f-491b-ad63-c20bc42d6e4b": {
+			"id": "fe8aa771-910f-491b-ad63-c20bc42d6e4b",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "bfb071e2-be38-4697-9a41-d25ddda728fa",
+					"name": "ref",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "a80f2dd4-2edb-453f-a452-446ac8c2b66b",
+					"name": "type",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Type (Bibliography): The type of bibliographic item cited, i.e. 'edition', translation', or 'other'.",
+					"data": "",
+					"list": true,
+					"enum": "['edition', 'translation', 'other', null]",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "f4031bc9-11a7-4b2d-a8c5-3a5f2b64f237",
+					"name": "cite_rg",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "0a3e791b-77ce-4525-bc55-0468d933890c",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
+		},
+		"9b474ad8-df02-4a10-92cf-2d1126a4d8e5": {
+			"id": "9b474ad8-df02-4a10-92cf-2d1126a4d8e5",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "01ff493d-2577-4f91-9054-b9afb43e9f11",
+					"name": "ref",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "bc0aa14a-10a9-4d0e-81a2-2c5b54c871af",
+					"name": "type",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Type (Bibliography): The type of bibliographic item cited, i.e. 'edition', translation', or 'other'.",
+					"data": "",
+					"list": true,
+					"enum": "['edition', 'translation', 'other', null]",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "edf97977-5e57-4335-a42a-c2538ff76b06",
+					"name": "cite_rg",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Cited Range: The logic subsection of the bibliographic item being referenced",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "99e81c61-f421-4d8a-838b-628c9d45a965",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"collation": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"size": "",
+			"max": "",
+			"capped": false,
+			"others": "",
+			"validation": "",
+			"customCode": ""
 		}
 	},
 	"relations": {
@@ -2081,7 +2493,9 @@
 				}
 			],
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
 		},
 		"ba6869fd-bc2a-4df6-9084-1554f8074dc7": {
 			"id": "ba6869fd-bc2a-4df6-9084-1554f8074dc7",
@@ -2106,7 +2520,9 @@
 				}
 			],
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
 		},
 		"5eb8b96d-f6d8-434d-b8ae-ad4ea80dc9da": {
 			"id": "5eb8b96d-f6d8-434d-b8ae-ad4ea80dc9da",
@@ -2131,7 +2547,9 @@
 				}
 			],
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
 		},
 		"58dde7b9-a975-4f23-b7a7-6eb6a9da03c9": {
 			"id": "58dde7b9-a975-4f23-b7a7-6eb6a9da03c9",
@@ -2156,7 +2574,9 @@
 				}
 			],
 			"generate": true,
-			"generateCustomCode": true
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
 		}
 	},
 	"notes": {},
@@ -2186,11 +2606,15 @@
 		"def_collation": "",
 		"def_others": "",
 		"writeFileParam": false,
-		"schemaContainerIsDisplayed": false,
-		"embeddedInParentsIsDisplayed": true,
-		"currentDisplayMode": "metadata",
-		"cardinalityIsDisplayed": false,
-		"lastSaved": "Mon Oct 23 2023 11:54:58 GMT-0500 (Central Daylight Time)"
+		"lastSaved": 1700067315125,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"laststoredin": {
+			"major": 7,
+			"minor": 4,
+			"extra": 2
+		}
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -2208,343 +2632,378 @@
 			"diagramItems": {
 				"4455ccfa-a4b8-4825-ad20-cdda8f42e107": {
 					"referencedItemId": "4455ccfa-a4b8-4825-ad20-cdda8f42e107",
-					"x": 52,
-					"y": 44,
-					"gHeight": 388,
+					"x": 747,
+					"y": 30,
+					"gHeight": 676,
 					"gWidth": 244,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
-					"autoExpand": true
+					"autoExpand": true,
+					"backgroundOpacity": "10"
 				},
 				"7c8863f9-957d-4058-a61f-1efe7f7285e3": {
 					"referencedItemId": "7c8863f9-957d-4058-a61f-1efe7f7285e3",
-					"x": 200,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"56f061f7-ef9b-4eb4-8413-81966b99dfa4": {
 					"referencedItemId": "56f061f7-ef9b-4eb4-8413-81966b99dfa4",
-					"x": 200,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": false
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"8f3f696d-b395-41a7-8ccc-300bce6c944c": {
 					"referencedItemId": "8f3f696d-b395-41a7-8ccc-300bce6c944c",
-					"x": 200,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"e12c1108-4f1c-47b5-8ff9-5f8d7b81134e": {
 					"referencedItemId": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
-					"x": 545,
-					"y": 76,
-					"gHeight": 226,
+					"x": 168,
+					"y": 44,
+					"gHeight": 550,
 					"gWidth": 260,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
-					"autoExpand": true
+					"autoExpand": true,
+					"backgroundOpacity": "10"
 				},
 				"e95cc697-26b2-4907-b65c-41932c3647dd": {
 					"referencedItemId": "e95cc697-26b2-4907-b65c-41932c3647dd",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"4993d4cb-71d1-4088-8033-35fa32e1ad02": {
 					"referencedItemId": "4993d4cb-71d1-4088-8033-35fa32e1ad02",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
-				},
-				"938b6915-2fc0-4e7a-a271-bd0dda7dff5c": {
-					"referencedItemId": "938b6915-2fc0-4e7a-a271-bd0dda7dff5c",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
-					"resized": false,
-					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"79181524-6294-4cef-9c31-6ec9111ad30b": {
 					"referencedItemId": "79181524-6294-4cef-9c31-6ec9111ad30b",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"47a2d53c-f84b-4282-8aba-e7c65319cf7d": {
 					"referencedItemId": "47a2d53c-f84b-4282-8aba-e7c65319cf7d",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": false
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"d990e50e-611e-45b3-bdf4-79ba68941a41": {
 					"referencedItemId": "d990e50e-611e-45b3-bdf4-79ba68941a41",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"e414bc16-7388-45f0-b330-108a835446a9": {
 					"referencedItemId": "e414bc16-7388-45f0-b330-108a835446a9",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"43cd0dc8-4905-4079-aea0-e0e79eccf2e0": {
 					"referencedItemId": "43cd0dc8-4905-4079-aea0-e0e79eccf2e0",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"d1566b44-98b7-4ee1-b117-7d39cec08e88": {
 					"referencedItemId": "d1566b44-98b7-4ee1-b117-7d39cec08e88",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"90064f04-99fa-45a5-9c39-3472e17d66cb": {
 					"referencedItemId": "90064f04-99fa-45a5-9c39-3472e17d66cb",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"9b7dc03e-efe4-41c7-893e-0dd3a609b022": {
 					"referencedItemId": "9b7dc03e-efe4-41c7-893e-0dd3a609b022",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"f99ca0ef-f393-44e7-a22b-a8094f19c25b": {
 					"referencedItemId": "f99ca0ef-f393-44e7-a22b-a8094f19c25b",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"a5623c8d-0e67-46bd-af68-bfceecd44ed3": {
 					"referencedItemId": "a5623c8d-0e67-46bd-af68-bfceecd44ed3",
-					"x": 50,
-					"y": 547,
-					"gHeight": 262,
+					"x": 184,
+					"y": 671,
+					"gHeight": 550,
 					"gWidth": 232,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
-					"autoExpand": true
+					"autoExpand": true,
+					"backgroundOpacity": "10"
 				},
 				"56b24b3f-7fd2-4000-a5b7-479458e3edf8": {
 					"referencedItemId": "56b24b3f-7fd2-4000-a5b7-479458e3edf8",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"383fe13e-b829-4558-aec8-a6b5ac1fd591": {
 					"referencedItemId": "383fe13e-b829-4558-aec8-a6b5ac1fd591",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"f58f33a0-1263-4d28-a107-3f91ebf59407": {
 					"referencedItemId": "f58f33a0-1263-4d28-a107-3f91ebf59407",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": true,
+					"backgroundOpacity": "10"
 				},
 				"4c8bf1b5-1a88-4e00-b9bb-0e9593f23d64": {
 					"referencedItemId": "4c8bf1b5-1a88-4e00-b9bb-0e9593f23d64",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"55253603-5d60-43e8-830d-b17c68541224": {
 					"referencedItemId": "55253603-5d60-43e8-830d-b17c68541224",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"2ce8fb9b-9da9-425f-9f11-1ddbbd2c5d96": {
 					"referencedItemId": "2ce8fb9b-9da9-425f-9f11-1ddbbd2c5d96",
-					"x": 440,
-					"y": 80,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"d8479cfd-c32d-445f-8d6b-e35ad6da9e73": {
 					"referencedItemId": "d8479cfd-c32d-445f-8d6b-e35ad6da9e73",
-					"x": 600,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": false
-				},
-				"cdd490ac-d97c-42ca-8882-2960a4ef32ff": {
-					"referencedItemId": "cdd490ac-d97c-42ca-8882-2960a4ef32ff",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
-					"resized": false,
-					"autoExpand": true,
-					"collapsed": true
-				},
-				"3844b4fc-765e-48f1-82ec-3a8f8db247e2": {
-					"referencedItemId": "3844b4fc-765e-48f1-82ec-3a8f8db247e2",
-					"x": 400,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
-					"resized": false,
-					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				},
 				"5fccafab-ac1a-4d49-ae5e-b39516cff85b": {
 					"referencedItemId": "5fccafab-ac1a-4d49-ae5e-b39516cff85b",
-					"x": 600,
-					"y": 40,
-					"gHeight": 60,
-					"gWidth": 160,
-					"color": "#ffffff",
-					"background": "#8bc34a",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
-					"collapsed": true
+					"collapsed": false,
+					"backgroundOpacity": "10"
+				},
+				"fe8aa771-910f-491b-ad63-c20bc42d6e4b": {
+					"referencedItemId": "fe8aa771-910f-491b-ad63-c20bc42d6e4b",
+					"x": 29,
+					"y": 29,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": false,
+					"backgroundOpacity": "10"
+				},
+				"9b474ad8-df02-4a10-92cf-2d1126a4d8e5": {
+					"referencedItemId": "9b474ad8-df02-4a10-92cf-2d1126a4d8e5",
+					"x": 29,
+					"y": 29,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "transparent",
+					"background": "transparent",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": false,
+					"backgroundOpacity": "10"
 				}
 			},
 			"scroll": {
 				"x": 0,
 				"y": 0
 			},
-			"type": "erd"
+			"type": "erd",
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"showHorizontal": true,
+			"showDescriptions": false,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"showIndicatorCaptions": true,
+			"embeddedSpacing": "2"
 		}
 	},
 	"order": [],
