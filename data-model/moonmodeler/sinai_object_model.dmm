@@ -216,22 +216,6 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "2a874dcf-5283-4ff1-82c6-292b3e4e17aa",
-					"name": "paratext",
-					"datatype": "fba36529-6be8-4396-b426-f30fccf9dd3a",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"any": "",
-					"estimatedSize": ""
-				},
-				{
 					"id": "3235c02d-762f-42d1-9dc1-c9ec8fe88e13",
 					"name": "has_bind",
 					"datatype": "bool",
@@ -297,6 +281,38 @@
 					"fk": false
 				},
 				{
+					"id": "073e0a1d-305a-4162-8a86-51f24ef70431",
+					"name": "note",
+					"datatype": "8ac1debe-9504-4773-a089-c9f2361aad65",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "286bcd8e-d0d3-4199-a38a-5f8610a43ddc",
+					"name": "related",
+					"datatype": "e82316d1-6436-4799-8b16-46d512c8e8b6",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
 					"id": "3833e79d-e9f6-403e-8bae-c39775e4221e",
 					"name": "viscodex",
 					"datatype": "f2b230b8-44fe-4993-8a39-7062939dc205",
@@ -345,20 +361,20 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "073e0a1d-305a-4162-8a86-51f24ef70431",
-					"name": "note",
-					"datatype": "8ac1debe-9504-4773-a089-c9f2361aad65",
+					"id": "2a874dcf-5283-4ff1-82c6-292b3e4e17aa",
+					"name": "paratext",
+					"datatype": "fba36529-6be8-4396-b426-f30fccf9dd3a",
 					"param": "",
 					"pk": false,
 					"nn": false,
-					"list": true,
 					"comment": "",
 					"data": "",
+					"list": true,
 					"enum": "",
 					"validation": "",
 					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
+					"any": "",
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -1450,7 +1466,7 @@
 			"cols": [
 				{
 					"id": "7b800c9d-6f5a-403c-b584-550c94e57807",
-					"name": "manifest_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -1466,7 +1482,7 @@
 				},
 				{
 					"id": "6752d344-70f2-4edc-a4fb-61d92dcbe5cf",
-					"name": "iiif_manifest",
+					"name": "manifest",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -1819,7 +1835,7 @@
 				},
 				{
 					"id": "12789a09-1729-4644-bd05-57f6cc71f3c6",
-					"name": "shmk_alt",
+					"name": "alt_shelf",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -3777,7 +3793,7 @@
 			"cols": [
 				{
 					"id": "5556cd06-7e8e-4d97-9937-49b7fedd2d16",
-					"name": "date_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -3794,7 +3810,7 @@
 				},
 				{
 					"id": "fe540afa-62d4-4f03-8e61-e464f4e0e01c",
-					"name": "date_normalized",
+					"name": "iso",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -3810,7 +3826,7 @@
 				},
 				{
 					"id": "e87778a0-b091-44bc-be55-d2c8b3a2a394",
-					"name": "date",
+					"name": "value",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -4707,22 +4723,6 @@
 					"id": "cde3ef2b-0b54-46c5-83a8-69c8f3313bf8",
 					"name": "id",
 					"datatype": "objectId",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
-				},
-				{
-					"id": "9f6d3940-2c2d-47c3-900f-8c520d10fe90",
-					"name": "type",
-					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -7131,6 +7131,104 @@
 			"max": "",
 			"validation": "",
 			"capped": false
+		},
+		"e82316d1-6436-4799-8b16-46d512c8e8b6": {
+			"id": "e82316d1-6436-4799-8b16-46d512c8e8b6",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "44540528-648e-443d-9d0f-fa9461ab4882",
+					"name": "type",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "ed3989e6-b351-444d-9f04-0a56fb18d56a",
+					"name": "url",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "306c32df-37ff-4742-838b-1f0c9748f514",
+					"name": "label",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "0f1601b1-ac1e-4756-8961-d22a9b84a27d",
+					"name": "note",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b205573d-1be8-4163-82a8-2b96651880ee",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": "",
+			"size": "",
+			"max": "",
+			"validation": "",
+			"capped": false
 		}
 	},
 	"relations": {
@@ -7190,14 +7288,6 @@
 		}
 	},
 	"notes": {
-		"81dc643f-e09b-4847-9ec0-6f73d786ea78": {
-			"id": "81dc643f-e09b-4847-9ec0-6f73d786ea78",
-			"visible": true,
-			"name": "note1",
-			"desc": "<p>For dates: possibly remove \"date_\" from \"date_type\" and \"date_normalized\"? Change \"date\" to \"label\"?</p>",
-			"lines": [],
-			"type": "Note"
-		},
 		"17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3": {
 			"id": "17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3",
 			"visible": true,
@@ -7211,6 +7301,22 @@
 			"visible": true,
 			"name": "note3",
 			"desc": "<p>idno will be used for shelfmarks and reconstruction 'shelfmarks'; possibly also include ark as an idno rather than a separate field</p>",
+			"lines": [],
+			"type": "Note"
+		},
+		"3fa9e88d-6e31-40c8-bea2-1e9834855a19": {
+			"id": "3fa9e88d-6e31-40c8-bea2-1e9834855a19",
+			"visible": true,
+			"name": "note4",
+			"desc": "<p>paratext object will be defined later. any paratextual notes can be added to the note.type:paratext property</p>",
+			"lines": [],
+			"type": "Note"
+		},
+		"f89fd375-706c-4e77-9cee-dc47c9614f05": {
+			"id": "f89fd375-706c-4e77-9cee-dc47c9614f05",
+			"visible": true,
+			"name": "note1",
+			"desc": "<p>need to add related.type:otherversions - think about the uses for related and what is the diff between that and bib - does our currentl Other versions data fit under bib.type:otherversions? (or whatever type we decide to use)?</p>",
 			"lines": [],
 			"type": "Note"
 		}
@@ -7229,7 +7335,7 @@
 		"replaceSpace": "_",
 		"color": "transparent",
 		"sideSelections": true,
-		"isDirty": false,
+		"isDirty": true,
 		"storedin": {
 			"major": 3,
 			"minor": 5,
@@ -7240,7 +7346,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1709160508499,
+		"lastSaved": 1709168637959,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -7249,7 +7355,7 @@
 		"laststoredin": {
 			"major": 7,
 			"minor": 5,
-			"extra": 1
+			"extra": 2
 		}
 	},
 	"otherObjects": {},
@@ -7270,8 +7376,8 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 1741,
 					"y": 30,
-					"gHeight": 1072,
-					"gWidth": 258,
+					"gHeight": 1182,
+					"gWidth": 241,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -8103,19 +8209,6 @@
 					"backgroundOpacity": "10",
 					"collapsed": false
 				},
-				"81dc643f-e09b-4847-9ec0-6f73d786ea78": {
-					"referencedItemId": "81dc643f-e09b-4847-9ec0-6f73d786ea78",
-					"x": 2346,
-					"y": 651,
-					"gHeight": 24,
-					"gWidth": 577,
-					"color": "#333",
-					"background": "#f9e79f",
-					"resized": false,
-					"autoExpand": true,
-					"backgroundOpacity": "10",
-					"collapsed": false
-				},
 				"17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3": {
 					"referencedItemId": "17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3",
 					"x": 2268,
@@ -8138,6 +8231,45 @@
 					"color": "#333",
 					"background": "#f9e79f",
 					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"3fa9e88d-6e31-40c8-bea2-1e9834855a19": {
+					"referencedItemId": "3fa9e88d-6e31-40c8-bea2-1e9834855a19",
+					"x": 2016,
+					"y": 1179,
+					"gHeight": 24,
+					"gWidth": 607,
+					"color": "#333",
+					"background": "#f9e79f",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"f89fd375-706c-4e77-9cee-dc47c9614f05": {
+					"referencedItemId": "f89fd375-706c-4e77-9cee-dc47c9614f05",
+					"x": 2225,
+					"y": 811,
+					"gHeight": 24,
+					"gWidth": 1258,
+					"color": "#333",
+					"background": "#f9e79f",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"e82316d1-6436-4799-8b16-46d512c8e8b6": {
+					"referencedItemId": "e82316d1-6436-4799-8b16-46d512c8e8b6",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "#ffffff",
+					"background": "transparent",
+					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
 					"collapsed": false
