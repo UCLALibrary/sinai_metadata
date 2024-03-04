@@ -184,6 +184,22 @@
 					"any": ""
 				},
 				{
+					"id": "ea33ac6d-f378-47da-a3a1-2d102733cd04",
+					"name": "coll",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
 					"id": "e8fad6bd-7874-44f2-a743-54b85f60b783",
 					"name": "features",
 					"datatype": "enum",
@@ -298,7 +314,7 @@
 				},
 				{
 					"id": "286bcd8e-d0d3-4199-a38a-5f8610a43ddc",
-					"name": "related",
+					"name": "related_mss",
 					"datatype": "e82316d1-6436-4799-8b16-46d512c8e8b6",
 					"param": "",
 					"pk": false,
@@ -362,7 +378,7 @@
 				},
 				{
 					"id": "2a874dcf-5283-4ff1-82c6-292b3e4e17aa",
-					"name": "paratext",
+					"name": "paratext (tbd-next phase)",
 					"datatype": "fba36529-6be8-4396-b426-f30fccf9dd3a",
 					"param": "",
 					"pk": false,
@@ -1836,6 +1852,22 @@
 				{
 					"id": "12789a09-1729-4644-bd05-57f6cc71f3c6",
 					"name": "alt_shelf",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "25924995-ecb6-4e10-afd8-45f34b6bcb17",
+					"name": "url",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -4638,22 +4670,6 @@
 			"estimatedSize": "",
 			"cols": [
 				{
-					"id": "7988fe93-0293-4697-8085-8157117a1ed6",
-					"name": "collection",
-					"datatype": "enum",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
-				},
-				{
 					"id": "38ae911f-f7d8-43e1-b73c-42bcb2dacce6",
 					"name": "repository",
 					"datatype": "objectId",
@@ -4670,9 +4686,9 @@
 					"any": ""
 				},
 				{
-					"id": "79973f6b-fd3a-490a-bd8c-213e0fcfbbf1",
-					"name": "settlement",
-					"datatype": "string",
+					"id": "7988fe93-0293-4697-8085-8157117a1ed6",
+					"name": "collection",
+					"datatype": "enum",
 					"param": "",
 					"pk": false,
 					"nn": false,
@@ -7145,22 +7161,6 @@
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
-				},
-				{
-					"id": "ed3989e6-b351-444d-9f04-0a56fb18d56a",
-					"name": "url",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
 					"nn": false,
 					"list": false,
 					"comment": "",
@@ -7179,6 +7179,22 @@
 					"pk": false,
 					"nn": false,
 					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "ed3989e6-b351-444d-9f04-0a56fb18d56a",
+					"name": "url",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -7288,14 +7304,6 @@
 		}
 	},
 	"notes": {
-		"17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3": {
-			"id": "17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3",
-			"visible": true,
-			"name": "note2",
-			"desc": "<p>Do location.repository and location.settlement point to associated places? (I can't remember how we wanted to express this info) Also should the order be settlement, repository, collection (broad --&gt; narrow)?</p>",
-			"lines": [],
-			"type": "Note"
-		},
 		"aaa0fdb8-28b2-4436-bb7f-2818067f01c0": {
 			"id": "aaa0fdb8-28b2-4436-bb7f-2818067f01c0",
 			"visible": true,
@@ -7309,14 +7317,6 @@
 			"visible": true,
 			"name": "note4",
 			"desc": "<p>paratext object will be defined later. any paratextual notes can be added to the note.type:paratext property</p>",
-			"lines": [],
-			"type": "Note"
-		},
-		"f89fd375-706c-4e77-9cee-dc47c9614f05": {
-			"id": "f89fd375-706c-4e77-9cee-dc47c9614f05",
-			"visible": true,
-			"name": "note1",
-			"desc": "<p>need to add related.type:otherversions - think about the uses for related and what is the diff between that and bib - does our currentl Other versions data fit under bib.type:otherversions? (or whatever type we decide to use)?</p>",
 			"lines": [],
 			"type": "Note"
 		}
@@ -7346,7 +7346,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1709168637959,
+		"lastSaved": 1709236395636,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -7376,8 +7376,8 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 1741,
 					"y": 30,
-					"gHeight": 1182,
-					"gWidth": 241,
+					"gHeight": 1217,
+					"gWidth": 288,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -7400,8 +7400,8 @@
 					"referencedItemId": "c8bf0cb5-02d1-49ab-a642-b6be010d309c",
 					"x": 138,
 					"y": 51,
-					"gHeight": 1774,
-					"gWidth": 271,
+					"gHeight": 1066,
+					"gWidth": 254,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -8209,19 +8209,6 @@
 					"backgroundOpacity": "10",
 					"collapsed": false
 				},
-				"17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3": {
-					"referencedItemId": "17caa253-e8fb-47a1-9ef1-5b82e0a8dcc3",
-					"x": 2268,
-					"y": 575,
-					"gHeight": 38,
-					"gWidth": 685,
-					"color": "#333",
-					"background": "#f9e79f",
-					"resized": true,
-					"autoExpand": true,
-					"backgroundOpacity": "10",
-					"collapsed": false
-				},
 				"aaa0fdb8-28b2-4436-bb7f-2818067f01c0": {
 					"referencedItemId": "aaa0fdb8-28b2-4436-bb7f-2818067f01c0",
 					"x": 2251,
@@ -8241,19 +8228,6 @@
 					"y": 1179,
 					"gHeight": 24,
 					"gWidth": 607,
-					"color": "#333",
-					"background": "#f9e79f",
-					"resized": false,
-					"autoExpand": true,
-					"backgroundOpacity": "10",
-					"collapsed": false
-				},
-				"f89fd375-706c-4e77-9cee-dc47c9614f05": {
-					"referencedItemId": "f89fd375-706c-4e77-9cee-dc47c9614f05",
-					"x": 2225,
-					"y": 811,
-					"gHeight": 24,
-					"gWidth": 1258,
 					"color": "#333",
 					"background": "#f9e79f",
 					"resized": false,
