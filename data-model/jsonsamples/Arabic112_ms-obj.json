@@ -1,0 +1,115 @@
+{
+    "id": "1",
+    "ark": "ark:/21198/z1np3p1j",
+    "type": "shelf",
+    "idno": [
+        {
+            "type": "shelfmark",
+            "value": "Sinai Arabic 112"
+        }
+    ],
+    "summary": "Four Gospels manuscript, dated 1259 CE",
+    "extent": "168 ff.",
+    "weight": "717.8 g",
+    "dim": {
+        "type": "ms_block",
+        "value": "231 x 165 x 42 mm"
+    },
+    "state": "Codex",
+    "form": "Codex",
+    "fol": "",
+    "features": [
+        "Dated",
+        "Colophon"
+    ],
+    "parts": [
+        {
+            "id": "1-1",
+            "sequence": "1"
+        }
+    ],
+    "has_bind": false,
+    "iiif": [
+        {
+            "type": "main",
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1np3p1j/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1np3p1j%2F2812bv2m/full/!200,200/0/default.jpg"
+        }
+    ],
+    "location": [
+        {
+            "collection": "Old Collection",
+            "repository": "$id-for-St-Catherines",
+            "settlement": "Saint Catherine"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": "creation",
+            "iso": "1259",
+            "value": "1259",
+            "as-written": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": "",
+            "value": ""
+        }
+    ],
+    "related": [
+        {
+            "type": "",
+            "url": "",
+            "label": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "viscodex": [
+        {
+            "type": "ms_obj",
+            "label": "Sinai Arabic 112",
+            "url": "https://viscodex.library.utoronto.ca/project/60c18ea186a72250fa7ca176/viewOnly"
+        }
+    ],
+    "bib": [
+        {
+            "id": "$id-for-Kamil",
+            "type": "ref",
+            "range": "[104], pg. 15",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-LOC",
+            "type": "version",
+            "range": "https://www.loc.gov/item/00279386784-ms/",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "cataloguer": [
+        {
+            "cataloguer_id": "$id-for-wpotter",
+            "timestamp": "2024-03-04T16:44:28.062Z",
+            "comment": "Created sample record by hand from Airtable data."
+        }
+    ],
+    "paratext": [
+    ]
+}
