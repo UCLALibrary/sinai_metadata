@@ -1,5 +1,5 @@
 {
-    "id": "1",
+    "id": "$locally-generated-id",
     "ark": "ark:/21198/z1np3p1j",
     "type": "shelf",
     "idno": [
@@ -24,7 +24,7 @@
     ],
     "parts": [
         {
-            "id": "1-1",
+            "id": "$locally-generated-id-for-part1",
             "sequence": "1"
         }
     ],
@@ -41,15 +41,14 @@
     "location": [
         {
             "collection": "Old Collection",
-            "repository": "$id-for-St-Catherines",
-            "settlement": "Saint Catherine"
+            "repository": "$id-for-St-Catherines"
         }
     ],
     "assoc_date": [
         {
-            "type": "creation",
-            "iso": "1259",
-            "value": "1259",
+            "type": "",
+            "iso": "",
+            "value": "",
             "as-written": "",
             "note": {
                 "type": "",
@@ -63,7 +62,7 @@
             "value": ""
         }
     ],
-    "related": [
+    "related_mss": [
         {
             "type": "",
             "url": "",
@@ -76,16 +75,17 @@
     ],
     "viscodex": [
         {
-            "type": "ms_obj",
-            "label": "Sinai Arabic 112",
-            "url": "https://viscodex.library.utoronto.ca/project/60c18ea186a72250fa7ca176/viewOnly"
+            "type": "",
+            "label": "",
+            "url": ""
         }
     ],
     "bib": [
         {
             "id": "$id-for-Kamil",
             "type": "ref",
-            "range": "[104], pg. 15",
+            "range": "[104], p. 15",
+            "url": "",
             "alt_shelf": "",
             "note": {
                 "type": "",
@@ -95,7 +95,8 @@
         {
             "id": "$id-for-LOC",
             "type": "version",
-            "range": "https://www.loc.gov/item/00279386784-ms/",
+            "range": "",
+            "url": "https://www.loc.gov/item/00279386784-ms/",
             "alt_shelf": "",
             "note": {
                 "type": "",
