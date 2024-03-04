@@ -1,0 +1,103 @@
+{
+    "id": "",
+    "ark": "",
+    "type": "",
+    "idno": [
+        {
+            "type": "",
+            "value": ""
+        }
+    ],
+    "summary": "",
+    "extent": "",
+    "weight": "",
+    "dim": {
+        "type": "",
+        "value": ""
+    },
+    "state": "",
+    "form": "",
+    "fol": "",
+    "features": [
+        ""
+    ],
+    "parts": [
+        {
+            "id": "",
+            "sequence": ""
+        }
+    ],
+    "has_bind": true,
+    "iiif": [
+        {
+            "type": "",
+            "manifest": "",
+            "text_direction": "",
+            "behavior": ""
+        }
+    ],
+    "location": [
+        {
+            "collection": "",
+            "repository": "",
+            "settlement": ""
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": "",
+            "iso": "",
+            "value": "",
+            "as-written": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": "",
+            "value": ""
+        }
+    ],
+    "related": [
+        {
+            "type": "",
+            "url": "",
+            "label": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "viscodex": [
+        {
+            "type": "",
+            "label": "",
+            "url": ""
+        }
+    ],
+    "bib": [
+        {
+            "id": "",
+            "type": "",
+            "range": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "cataloguer": [
+        {
+            "cataloguer_id": "",
+            "timestamp": "",
+            "comment": ""
+        }
+    ],
+    "paratext": [
+    ]
+}
