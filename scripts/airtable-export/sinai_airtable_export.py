@@ -68,6 +68,7 @@ uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
 viewingHintTableName = 'viewingHint'
 CollectionTableName = 'Collection'
+programTableName = 'Program'
 
 
 airtableInfoFile = input('Airtable Login JSON file:')
@@ -96,6 +97,7 @@ supportTable =  Airtable(base_key, supportTableName, personal_key)
 textDirectionTable =  Airtable(base_key, textDirectionTableName, personal_key)
 viewingHintTable =  Airtable(base_key, viewingHintTableName, personal_key)
 CollectionTable =  Airtable(base_key, CollectionTableName, personal_key)
+programTable = Airtable(base_key, programTableName, personal_key)
 
 
 
@@ -121,6 +123,8 @@ allAirdf['Associated Name'] = allAirdf['Associated Name'].astype(str)
 allAirdf['Associated Name'] = allAirdf['Associated Name'].fillna('')
 allAirdf['Contributors'] = allAirdf['Contributors'].astype(str)
 allAirdf['Contributors'] = allAirdf['Contributors'].fillna('')
+allAirdf['Program'] = allAirdf['Program'].astype(str)
+allAirdf['Program'] = allAirdf['Program'].fillna('')
 
 
 
@@ -182,6 +186,7 @@ workbook_columns = ['File Name',
 'Rights.statementLocal',
 'Rights contact',
 'Name.repository',
+'Program Statement',
 'Shelfmark',
 'Collection',
 'Other version(s)',
@@ -435,6 +440,10 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     if row['image count']:
         final_image_count = int(row['image count'])
 
+    final_program_statement = ''
+    if row['Program']:
+        final_program_statement = airTableEntry(row['Program'], 'Program statement', programTable)
+
     final_Collection = ''
     if row['Collection']:
         final_Collection = airTableEntry(row['Collection'], 'Name', CollectionTable)
@@ -503,6 +512,7 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
     'Rights.statementLocal': Rights_statementLocal.rstrip('\r\n'),
     'Rights contact': Rights_contact.rstrip('\r\n'),
     'Name.repository': Name_repository.rstrip('\r\n'),
+    'Program Statement': final_program_statement.rstrip('\r\n'),
     'Shelfmark': shelfmarkFinal.rstrip('\r\n'),
     'Collection': final_Collection.rstrip('\r\n'),
     'Other version(s)': final_Other_version.rstrip('\r\n'),
