@@ -375,6 +375,22 @@
 					"pattern": false,
 					"any": "",
 					"estimatedSize": ""
+				},
+				{
+					"id": "7ec89768-a7f2-4156-8642-67f2c64362bb",
+					"name": "dig_provenance (tbd)",
+					"datatype": "6b377f99-57ef-48e5-88df-9dab6dfa45b0",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
 				}
 			],
 			"relations": [
@@ -7396,6 +7412,39 @@
 			"max": "",
 			"validation": "",
 			"capped": false
+		},
+		"6b377f99-57ef-48e5-88df-9dab6dfa45b0": {
+			"id": "6b377f99-57ef-48e5-88df-9dab6dfa45b0",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d2f12401-0f7c-4bec-8ca5-4311a998fd87",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": "",
+			"size": "",
+			"max": "",
+			"validation": "",
+			"capped": false
 		}
 	},
 	"relations": {
@@ -7497,7 +7546,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1709677090719,
+		"lastSaved": 1709754031591,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -7517,7 +7566,7 @@
 			"id": "201c3c44-34f2-4204-a31f-393015dc6f9f",
 			"keysgraphics": true,
 			"linegraphics": "detailed",
-			"zoom": 1.5,
+			"zoom": 1.1,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -7527,8 +7576,8 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 1746,
 					"y": 30,
-					"gHeight": 2116,
-					"gWidth": 288,
+					"gHeight": 1307,
+					"gWidth": 293,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -8362,8 +8411,8 @@
 				},
 				"aaa0fdb8-28b2-4436-bb7f-2818067f01c0": {
 					"referencedItemId": "aaa0fdb8-28b2-4436-bb7f-2818067f01c0",
-					"x": 2251,
-					"y": 124,
+					"x": 2082,
+					"y": 37,
 					"gHeight": 57,
 					"gWidth": 349,
 					"color": "#333",
@@ -8375,8 +8424,8 @@
 				},
 				"3fa9e88d-6e31-40c8-bea2-1e9834855a19": {
 					"referencedItemId": "3fa9e88d-6e31-40c8-bea2-1e9834855a19",
-					"x": 2144,
-					"y": 1275,
+					"x": 2074,
+					"y": 1308,
 					"gHeight": 38,
 					"gWidth": 403,
 					"color": "#333",
@@ -8424,6 +8473,19 @@
 					"autoExpand": true,
 					"backgroundOpacity": "10",
 					"collapsed": false
+				},
+				"6b377f99-57ef-48e5-88df-9dab6dfa45b0": {
+					"referencedItemId": "6b377f99-57ef-48e5-88df-9dab6dfa45b0",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "#ffffff",
+					"background": "transparent",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": true
 				}
 			},
 			"scroll": {
