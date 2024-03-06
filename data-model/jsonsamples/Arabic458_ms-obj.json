@@ -1,0 +1,124 @@
+{
+    "id": "$locally-generated-id",
+    "ark": "ark:/21198/z1418fs6",
+    "type": "shelf",
+    "idno": [
+        {
+            "type": "shelfmark",
+            "value": "Sinai Arabic 485"
+        }
+    ],
+    "summary": "",
+    "extent": "II + 216 ff. + I",
+    "weight": "582.4 g",
+    "dim": {
+        "type": "ms_obj",
+        "value": "170 x 134 x 58.0 mm"
+    },
+    "state": "Codex",
+    "form": "Codex",
+    "fol": "II + Ff. 1-198, 200-217 + I",
+    "features": [
+        "Inscription(s)"
+    ],
+    "parts": [
+        {
+            "id": "$id-for-part1",
+            "sequence": "1"
+        }
+    ],
+    "has_bind": true,
+    "iiif": [
+        {
+            "type": "main",
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1418fs6/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1418fs6%2Fkn658c2f/full/!200,200/0/default.jpg"
+        }
+    ],
+    "location": [
+        {
+            "collection": "Old Collection",
+            "repository": "$id-for-StCatherines"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": "",
+            "iso": "",
+            "value": "",
+            "as-written": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": "paratext",
+            "value": "On flyleaf 1r, Moses the scribe is mentioned"
+        },
+        {
+            "type": "paratext",
+            "value": "Backboard inside has a pasted in Syriac text, partially damaged"
+        },
+        {
+            "type": "foliation",
+            "value": "F. 198 is foliated as '198-199', as '199' is skipped in the sequence"
+        }
+    ],
+    "related": [
+        {
+            "id": "$id-for-Arabic539",
+            "type": "filiation",
+            "url": "",
+            "label": "Sinai Arabic 539",
+            "note": {
+                "type": "related_mss",
+                "value": "The Gospel of Bartholomew and Andrew (ff. 1r-28v) is also found in Sinai Arabic 539 ff 72v-88r apparently from different manuscript traditions"
+            }
+        }
+    ],
+    "viscodex": [
+        {
+            "type": "",
+            "label": "",
+            "url": ""
+        }
+    ],
+    "bib": [
+        {
+            "id": "$id-for-Kamil",
+            "type": "ref",
+            "range": "[525], pg. 44",
+            "url": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-LOC",
+            "type": "version",
+            "range": "Entry: Arabic Manuscripts 485. Hagiographica and Varia",
+            "url": "https://www.loc.gov/item/00279391238-ms/",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "cataloguer": [
+        {
+            "cataloguer_id": "$id-for-ChrisPreJean",
+            "timestamp": "2024-03-06T17:37:21.915Z",
+            "comment": ""
+        }
+    ],
+    "paratext": [
+    ]
+}

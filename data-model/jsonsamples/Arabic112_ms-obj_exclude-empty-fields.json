@@ -17,7 +17,6 @@
     },
     "state": "Codex",
     "form": "Codex",
-    "fol": "",
     "features": [
         "Dated",
         "Colophon"
@@ -44,65 +43,16 @@
             "repository": "$id-for-St-Catherines"
         }
     ],
-    "assoc_date": [
-        {
-            "type": "",
-            "iso": "",
-            "value": "",
-            "as-written": "",
-            "note": {
-                "type": "",
-                "value": ""
-            }
-        }
-    ],
-    "note": [
-        {
-            "type": "",
-            "value": ""
-        }
-    ],
-    "related_mss": [
-        {
-            "id": "",
-            "type": "",
-            "url": "",
-            "label": "",
-            "note": {
-                "type": "",
-                "value": ""
-            }
-        }
-    ],
-    "viscodex": [
-        {
-            "type": "",
-            "label": "",
-            "url": ""
-        }
-    ],
     "bib": [
         {
             "id": "$id-for-Kamil",
             "type": "ref",
-            "range": "[104], p. 15",
-            "url": "",
-            "alt_shelf": "",
-            "note": {
-                "type": "",
-                "value": ""
-            }
+            "range": "[104], p. 15"
         },
         {
             "id": "$id-for-LOC",
             "type": "version",
-            "range": "",
-            "url": "https://www.loc.gov/item/00279386784-ms/",
-            "alt_shelf": "",
-            "note": {
-                "type": "",
-                "value": ""
-            }
+            "url": "https://www.loc.gov/item/00279386784-ms/"
         }
     ],
     "cataloguer": [
@@ -111,7 +61,5 @@
             "timestamp": "2024-03-04T16:44:28.062Z",
             "comment": "Created sample record by hand from Airtable data."
         }
-    ],
-    "paratext": [
     ]
 }

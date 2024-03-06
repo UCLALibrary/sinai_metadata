@@ -1,0 +1,161 @@
+{
+    "id": "$locally-generated-id",
+    "ark": "ark:/21198/z1c26f2j",
+    "type": "shelf",
+    "idno": [
+        {
+            "type": "shelfmark",
+            "value": "Sinai Syriac 7"
+        }
+    ],
+    "summary": "Gospel Lectionary; Evangelion (Byzantine rite)",
+    "extent": "73 ff.",
+    "weight": "591.5 g",
+    "dim": {
+        "type": "ms_obj",
+        "value": "261 x 208 x 37 mm"
+    },
+    "state": "Codex",
+    "form": "Codex",
+    "fol": "",
+    "features": [
+        "Palimpsest"
+    ],
+    "parts": [
+        {
+            "id": "$id-for-part1",
+            "sequence": "1"
+        }
+    ],
+    "has_bind": false,
+    "iiif": [
+        {
+            "type": "main",
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1c26f2j/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1c26f2j%2F7q70t309/full/!200,200/0/default.jpg"
+        }
+    ],
+    "location": [
+        {
+            "collection": "Old Collection",
+            "repository": "$id-for-StCatherines"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": "",
+            "iso": "",
+            "value": "",
+            "as-written": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": "foliation",
+            "value": "Pencil numbered sequence of first folios: 1a, 1b, 2"
+        },
+        {
+            "type": "binding",
+            "value": "Boards missing"
+        },
+        {
+            "type": "paratext",
+            "value": "Note in Arabic (f. 39v)"
+        },
+        {
+            "type": "condition",
+            "value": "Quires, partially detached"
+        }
+    ],
+    "related_mss": [
+        {
+            "id": "",
+            "type": "disjecta",
+            "url": "",
+            "label": "",
+            "note": {
+                "type": "related_mss",
+                "value": "Syriac 7 originally belonged together with Sinai NF frag 55, Sinai NF frag 56, Sinai NF frag 57, London BL Or. 8609/II, Chabot 26-27 (Milan, Biblioteca Ambrosiana), Paris BNF syr. 382/I, Houghton syr. 171 (Cambridge, Harvard University), Hiersemann 500/10 (lost)"
+            }
+        }
+    ],
+    "viscodex": [
+        {
+            "type": "",
+            "label": "",
+            "url": ""
+        }
+    ],
+    "bib": [
+        {
+            "id": "$id-for-Lewis",
+            "type": "ref",
+            "range": "p. 3",
+            "url": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-Kamil",
+            "type": "ref",
+            "range": "[78], p. 154",
+            "url": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-Gehin2017",
+            "type": "ref",
+            "range": "pp. 37-38",
+            "url": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-Clark",
+            "type": "ref",
+            "range": "p. 17",
+            "url": "",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        },
+        {
+            "id": "$id-for-LOC",
+            "type": "version",
+            "range": "Entry: Syriac Manuscripts 7. Lectionary (Gospels)",
+            "url": "https://www.loc.gov/item/00279386231-ms/",
+            "alt_shelf": "",
+            "note": {
+                "type": "",
+                "value": ""
+            }
+        }
+    ],
+    "cataloguer": [
+        {
+            "cataloguer_id": "$id-for-GrigoryKessel",
+            "timestamp": "2024-03-06T19:04:28.286Z",
+            "comment": "Data entered by Will Potter on behalf of Grigory Kessel"
+        }
+    ],
+    "paratext": [
+    ]
+}

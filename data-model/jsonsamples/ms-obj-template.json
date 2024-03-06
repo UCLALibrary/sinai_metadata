@@ -33,14 +33,14 @@
             "type": "",
             "manifest": "",
             "text_direction": "",
-            "behavior": ""
+            "behavior": "",
+            "thumbnail": ""
         }
     ],
     "location": [
         {
             "collection": "",
-            "repository": "",
-            "settlement": ""
+            "repository": ""
         }
     ],
     "assoc_date": [
@@ -63,6 +63,7 @@
     ],
     "related": [
         {
+            "id": "",
             "type": "",
             "url": "",
             "label": "",
@@ -84,6 +85,7 @@
             "id": "",
             "type": "",
             "range": "",
+            "url": "",
             "alt_shelf": "",
             "note": {
                 "type": "",
