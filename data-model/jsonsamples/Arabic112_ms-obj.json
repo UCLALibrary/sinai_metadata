@@ -64,14 +64,20 @@
     ],
     "related_mss": [
         {
-            "id": "",
             "type": "",
-            "url": "",
             "label": "",
             "note": {
                 "type": "",
                 "value": ""
             }
+        ,
+            "mss": [
+                {
+                    "label": "",
+                    "id": "",
+                    "url": ""
+                }
+            ]
         }
     ],
     "viscodex": [

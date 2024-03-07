@@ -81,15 +81,21 @@
             "value": "Flyleaves: paper flyleaf (f. 1) with writing in Arabic; paper flyleaf (f. 2) with writing in Melkite script."
         }
     ],
-    "related": [
+    "related_mss": [
         {
             "type": "",
-            "url": "",
             "label": "",
             "note": {
                 "type": "",
                 "value": ""
-            }
+            },
+            "mss": [
+                {
+                    "label": "",
+                    "id": "",
+                    "url": ""
+                }
+            ]
         }
     ],
     "viscodex": [

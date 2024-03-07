@@ -81,15 +81,22 @@
             "value": "Flyleaves: paper flyleaf (f. 1) with writing in Arabic; paper flyleaf (f. 2) with writing in Melkite script."
         }
     ],
-    "related": [
+    "related_mss": [
         {
             "type": "filiation",
-            "url": "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz1nw19cs",
             "label": "Sinai Syriac NF M 39",
             "note": {
                 "type": "related_mss",
                 "value": "Syriac 12 was used as an exemplar for Syriac NF M 39"
             }
+        ,
+            "mss": [
+                {
+                    "label": "Sinai Syriac NF M 39",
+                    "id": "$id-for-nfm39",
+                    "url": "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz1nw19cs"
+                }
+            ]
         }
     ],
     "viscodex": [

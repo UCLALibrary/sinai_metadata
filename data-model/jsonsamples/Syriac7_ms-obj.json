@@ -75,14 +75,50 @@
     ],
     "related_mss": [
         {
-            "id": "",
             "type": "disjecta",
-            "url": "",
             "label": "",
             "note": {
                 "type": "related_mss",
                 "value": "Syriac 7 originally belonged together with Sinai NF frag 55, Sinai NF frag 56, Sinai NF frag 57, London BL Or. 8609/II, Chabot 26-27 (Milan, Biblioteca Ambrosiana), Paris BNF syr. 382/I, Houghton syr. 171 (Cambridge, Harvard University), Hiersemann 500/10 (lost)"
             }
+        ,
+            "mss": [
+                {
+                    "label": "Sinai Syriac NF frag 55",
+                    "id": "$id-for-nff55",
+                    "url": ""
+                },
+                {
+                    "label": "Sinai Syriac NF frag 56",
+                    "id": "$id-for-nff56",
+                    "url": ""
+                },
+                {
+                    "label": "London BL Or. 8609/II",
+                    "id": "",
+                    "url": ""
+                },
+                {
+                    "label": "Milan, Biblioteca Ambrosiana, Chabot 26-27",
+                    "id": "",
+                    "url": ""
+                },
+                {
+                    "label": "Paris BNF syr. 382/I",
+                    "id": "",
+                    "url": ""
+                },
+                {
+                    "label": "Cambridge, Harvard University, Houghton syr. 171",
+                    "id": "",
+                    "url": "https://fragmentarium.ms/overview/F-xhx7"
+                },
+                {
+                    "label": "Hiersemann 500/10 (lost)",
+                    "id": "",
+                    "url": ""
+                }
+            ]
         }
     ],
     "viscodex": [
