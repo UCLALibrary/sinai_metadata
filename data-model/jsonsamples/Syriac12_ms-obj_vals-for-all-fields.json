@@ -12,7 +12,7 @@
     "extent": "146 ff.",
     "weight": "1287.7 g",
     "dim": {
-        "type": "ms_obj",
+        "type": "ms_block",
         "value": "240 x 159 x 81.0 mm"
     },
     "state": "Codex",
@@ -24,11 +24,11 @@
     "parts": [
         {
             "id": "$local-id-for-part1",
-            "sequence": "1"
+            "sequence": 1
         },
         {
             "id": "$local-id-for-part2",
-            "sequence": "2"
+            "sequence": 2
         }
     ],
     "has_bind": true,
@@ -52,7 +52,7 @@
             "type": "binding",
             "iso": "1201/1700",
             "value": "Between 13th - 17th c. CE",
-            "as-written": "Lorem ipsum",
+            "as_written": "Lorem ipsum",
             "note": {
                 "type": "assoc_date",
                 "value": "Binding date estimated from production dates of the two codicological units"
@@ -101,7 +101,7 @@
     ],
     "viscodex": [
         {
-            "type": "object",
+            "type": "ms_obj",
             "label": "Codicological Structure of the Two Parts",
             "url": "https://viscodex.library.utoronto.ca/project/60c18ea186a72250fa7ca176/viewOnly"
         }
@@ -132,12 +132,12 @@
     ],
     "cataloguer": [
         {
-            "cataloguer_id": "$id-for-GrigoryKessel",
+            "id": "$id-for-GrigoryKessel",
             "timestamp": "2024-03-06T16:42:09.616Z",
             "comment": "Manuscript description by Grigory Kessel"
         },
         {
-            "cataloguer_id": "$id-for-WillPotter",
+            "id": "$id-for-WillPotter",
             "timestamp": "2024-03-06T16:43:13.017Z",
             "comment": "Descriptive metadata entered by Will Potter on behalf of Grigory Kessel"
         }
