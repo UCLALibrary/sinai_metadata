@@ -47,16 +47,18 @@
             "unevaluatedItems": false
         },
         "summary": {
-            "type": "string"
+            "type": ["string", "null"],
+            "minLength": 1
         },
         "extent": {
             "description": "The extent, expressed in number of folios, which comprise the manuscript object",
-            "type": "string"
+            "type": "string",
+            "minLength": 1
         },
         "weight": {
             "description": "A string expression of the manuscript object's weight",
             "type": "string",
-            "$comment": "pattern parameter is specific to Sinai's use of grams, possibly remove"
+            "minLength": 1
         },
         "dim": {
             "type": "object",
@@ -69,7 +71,8 @@
                     ]
                 },
                 "value": {
-                    "type": "string"
+                    "type": "string",
+                    "minLength": 1
                 }
             },
             "required": [
@@ -101,8 +104,9 @@
         },
         "fol": {
             "description": "A string expressing the foliation of the object in a semi-controlled format",
-            "type": "string",
-            "$comment": "should require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
+            "type": ["string", "null"],
+            "minLength": 1,
+            "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
         },
         "features": {
             "type": "array",
@@ -139,7 +143,8 @@
             "unevaluatedItems": false
         },
         "has_bind": {
-            "type": "boolean"
+            "type": "boolean",
+            "$comment": "Perhaps allow 'null' for cases where we are not sure if there is a binding?"
         },
         "iiif": {
             "type": "array",
@@ -155,7 +160,8 @@
                     },
                     "manifest": {
                         "type": "string",
-                        "format": "uri"
+                        "format": "uri",
+                        "minLength": 1
                     },
                     "text_direction": {
                         "type": "string",
@@ -172,7 +178,8 @@
                         ]
                     },
                     "thumbnail": {
-                        "type": "string",
+                        "type": ["string", "null"],
+                        "minLength": 1,
                         "format": "uri"
                     }
                 },
@@ -190,7 +197,7 @@
                 "type": "object",
                 "properties": {
                     "repository": {
-                        "type": "string"
+                        "type": "integer"
                     },
                     "collection": {
                         "type": "string",
@@ -209,7 +216,7 @@
             "unevaluatedItems": false
         },
         "assoc_date": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
@@ -219,20 +226,24 @@
                             "creation",
                             "binding",
                             "purchase"
-                        ]
+                        ],
+                        "$comment": "TBD full list of types"
                     },
                     "iso": {
                         "type": "string",
-                        "format": "date"
+                        "format": "date",
+                        "minLength": 3
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "minLength": 1
                     },
                     "as_written": {
-                        "type": "string"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "note": {
-                        "type": "object",
+                        "type": ["object", "null"],
                         "properties": {
                             "type": {
                                 "type": "string",
@@ -241,7 +252,8 @@
                                 ]
                             },
                             "value": {
-                                "type": "string"
+                                "type": "string",
+                                "minLength": 1
                             }
                         },
                         "required": [
@@ -261,7 +273,7 @@
             "unevaluatedItems": false
         },
         "note": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
@@ -280,7 +292,8 @@
                         ]
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "minLength": 1
                     }
                 },
                 "required": [
@@ -292,7 +305,7 @@
             "unevaluatedItems": false
         },
         "related_mss": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
@@ -304,10 +317,11 @@
                         ]
                     },
                     "label": {
-                        "type": "string"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "note": {
-                        "type": "object",
+                        "type": ["object", "null"],
                         "properties": {
                             "type": {
                                 "type": "string",
@@ -316,7 +330,8 @@
                                 ]
                             },
                             "value": {
-                                "type": "string"
+                                "type": "string",
+                                "minLength": 1
                             }
                         },
                         "required": [
@@ -331,14 +346,16 @@
                             "type": "object",
                             "properties": {
                                 "label": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "minLength": 1
                                 },
                                 "id": {
-                                    "type": "string"
+                                    "type": ["integer", "null"]
                                 },
                                 "url": {
-                                    "type": "string",
-                                    "format": "uri"
+                                    "type": ["string", "null"],
+                                    "format": "uri",
+                                    "minLength": 1
                                 }
                             },
                             "$comment": "Possible x-or logic for id and url",
@@ -360,7 +377,7 @@
             "unevaluatedItems": false
         },
         "viscodex": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
@@ -372,11 +389,13 @@
                         ]
                     },
                     "label": {
-                        "type": "string"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "url": {
                         "type": "string",
-                        "format": "uri"
+                        "format": "uri",
+                        "minLength": 1
                     }
                 },
                 "required": [
@@ -388,12 +407,12 @@
             "unevaluatedItems": false
         },
         "bib": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
                     "id": {
-                        "type": "string"
+                        "type": "integer"
                     },
                     "type": {
                         "type": "string",
@@ -406,17 +425,19 @@
                         ]
                     },
                     "range": {
-                        "type": "string"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "alt_shelf": {
-                        "type": "string"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "url": {
-                        "type": "string",
-                        "format": "uri"
+                        "type": ["string", "null"],
+                        "minLength": 1
                     },
                     "note": {
-                        "type": "object",
+                        "type": ["object", "null"],
                         "properties": {
                             "type": {
                                 "type": "string",
@@ -425,7 +446,8 @@
                                 ]
                             },
                             "value": {
-                                "type": "string"
+                                "type": ["string", "null"],
+                                "minLength": 1
                             }
                         },
                         "required": [
@@ -446,7 +468,7 @@
             "$comment": "In Moon Modeler this is not-null; is at least one bibl required?"
         },
         "cataloguer": {
-                "type": "array",
+                "type": ["array", "null"],
                 "items": {
                     "type": "object",
                     "properties": {
@@ -455,10 +477,13 @@
                         },
                         "timestamp": {
                             "type": "string",
-                            "format": "date-time"
+                            "format": "date-time",
+                            "minLength": 1,
+                            "$comment": "possibly can set min-length based on ISO timestamp length?"
                         },
                         "comment": {
-                            "type": "string"
+                            "type": ["string", "null"],
+                            "minLength": 1
                         }
                     },
                     "required": ["id", "timestamp"],
