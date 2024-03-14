@@ -57,7 +57,7 @@
     ],
     "cataloguer": [
         {
-            "cataloguer_id": "$id-for-wpotter",
+            "id": "$id-for-wpotter",
             "timestamp": "2024-03-04T16:44:28.062Z",
             "comment": "Created sample record by hand from Airtable data."
         }
