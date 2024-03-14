@@ -52,7 +52,7 @@
             "type": "binding",
             "iso": "1201/1700",
             "value": "Between 13th - 17th c. CE",
-            "as_written": "Lorem ipsum",
+            "as_written": {"en": "Lorem ipsum"},
             "note": {
                 "type": "assoc_date",
                 "value": "Binding date estimated from production dates of the two codicological units"
@@ -84,7 +84,7 @@
     "related_mss": [
         {
             "type": "filiation",
-            "label": "Sinai Syriac NF M 39",
+            "label": {"ar": "الكتاب"},
             "note": {
                 "type": "related_mss",
                 "value": "Syriac 12 was used as an exemplar for Syriac NF M 39"
@@ -92,8 +92,8 @@
         ,
             "mss": [
                 {
-                    "label": "Sinai Syriac NF M 39",
                     "id": "$id-for-nfm39",
+                    "label": {"en": "Sinai Syriac NF M 39"},
                     "url": "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz1nw19cs"
                 }
             ]
@@ -102,7 +102,7 @@
     "viscodex": [
         {
             "type": "ms_obj",
-            "label": "Codicological Structure of the Two Parts",
+            "label": {"en": "Codicological Structure of the Two Parts", "fr": "La syntaxe du codex"},
             "url": "https://viscodex.library.utoronto.ca/project/60c18ea186a72250fa7ca176/viewOnly"
         }
     ],
