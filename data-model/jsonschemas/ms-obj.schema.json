@@ -239,8 +239,7 @@
                         "minLength": 1
                     },
                     "as_written": {
-                        "type": ["string", "null"],
-                        "minLength": 1
+                        "$ref": "#/$defs/language_map"
                     },
                     "note": {
                         "type": ["object", "null"],
@@ -317,8 +316,7 @@
                         ]
                     },
                     "label": {
-                        "type": ["string", "null"],
-                        "minLength": 1
+                        "$ref": "#/$defs/language_map"
                     },
                     "note": {
                         "type": ["object", "null"],
@@ -346,8 +344,7 @@
                             "type": "object",
                             "properties": {
                                 "label": {
-                                    "type": "string",
-                                    "minLength": 1
+                                    "$ref": "#/$defs/language_map"
                                 },
                                 "id": {
                                     "type": ["integer", "null"]
@@ -389,8 +386,7 @@
                         ]
                     },
                     "label": {
-                        "type": ["string", "null"],
-                        "minLength": 1
+                        "$ref": "#/$defs/language_map"
                     },
                     "url": {
                         "type": "string",
@@ -505,5 +501,56 @@
             "has_bind",
             "location"
         ],
-        "unevaluatedProperties": false
+        "unevaluatedProperties": false,
+        "$defs": {
+            "language_map": {
+                 "title": "Language Map",
+                 "description": "Sub-schema pattern for fields that require JSON-LD 1.1-style language maps",
+                 "$comment": "Initial list from SMDL Airtable values as well as common languages of modern scholarship",
+                 "type": ["object", "null"],
+                 "properties": {
+                     "ar": {
+                         "type": ["string", "null"]
+                     },
+                     "cu": {
+                         "type": ["string", "null"],
+                         "$comment": "Old Church Slavonic"
+                     },
+                     "de": {
+                         "type": ["string", "null"]
+                     },
+                     "en": {
+                         "type": ["string", "null"]
+                     },
+                     "el": {
+                         "type": ["string", "null"],
+                         "$comment": "Modern Greek"
+                     },
+                     "es": {
+                         "type": ["string", "null"]
+                     },
+                     "fr": {
+                         "type": ["string", "null"]
+                     },
+                     "grc": {
+                         "type": ["string", "null"]
+                     },
+                     "hy": {
+                         "type": ["string", "null"],
+                         "$comment": "Armenian"
+                     },
+                     "la": {
+                         "type": ["string", "null"]
+                     },
+                     "ka": {
+                         "type": ["string", "null"],
+                         "$comment": "Georgian"
+                     },
+                     "tr": {
+                         "type": ["string", "null"]
+                     }
+                 },
+                 "unevaluatedProperties": false
+            }
+        }
     }
