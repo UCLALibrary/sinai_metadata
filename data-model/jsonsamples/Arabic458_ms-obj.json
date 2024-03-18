@@ -71,14 +71,20 @@
     ],
     "related": [
         {
-            "id": "$id-for-Arabic539",
             "type": "filiation",
-            "url": "",
-            "label": "Sinai Arabic 539",
+            "label": "",
             "note": {
                 "type": "related_mss",
                 "value": "The Gospel of Bartholomew and Andrew (ff. 1r-28v) is also found in Sinai Arabic 539 ff 72v-88r apparently from different manuscript traditions"
             }
+        ,
+            "mss": [
+                {
+                    "label": "Sinai Arabic 539, ff. 72v-88r",
+                    "id": "$id-for-Arabic539",
+                    "url": ""
+                }
+            ]
         }
     ],
     "viscodex": [
