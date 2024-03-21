@@ -1,0 +1,474 @@
+{
+    "title": "Manuscript Object",
+    "description": "A manuscript or codex, either real or a hypothetical reconstruction",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "A unique identifer, supplied by the database",
+            "type": "integer"
+        },
+        "ark": {
+            "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
+            "type": "string",
+            "pattern": "^ark:/21198/z1.{6}"
+        },
+        "type": {
+            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
+            "type": "string",
+            "enum": [
+                "real",
+                "rebind"
+            ]
+        },
+        "idno": {
+            "description": "An identifier for the manuscript, including shelfmarks or other identifier schemas",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "enum": [
+                            "shelfmark",
+                            "reconstr"
+                        ]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "summary": {
+            "type": "string"
+        },
+        "extent": {
+            "description": "The extent, expressed in number of folios, which comprise the manuscript object",
+            "type": "string"
+        },
+        "weight": {
+            "description": "A string expression of the manuscript object's weight",
+            "type": "string"
+        },
+        "dim": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "ms_obj"
+                    ]
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "value"
+            ],
+            "unevaluatedProperties": false
+        },
+        "state": {
+            "description": "The original form of the manuscript object",
+            "enum": [
+                "Codex",
+                "Scroll",
+                "Bifolim",
+                "Folium",
+                "Quire(s)",
+                "Undertext object"
+            ]
+        },
+        "form": {
+            "description": "The original form of the manuscript object",
+            "enum": [
+                "Codex",
+                "Scroll",
+                "Bifolim",
+                "Folium",
+                "Quire(s)"
+            ]
+        },
+        "fol": {
+            "description": "A string expressing the foliation of the object in a semi-controlled format",
+            "type": "string"
+        },
+        "features": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Dated",
+                    "Colophon",
+                    "Inscription(s)"
+                ]
+            },
+            "unevaluatedItems": false
+        },
+        "parts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "sequence": {
+                        "type": "integer",
+                        "minimum": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "sequence"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "has_bind": {
+            "type": "boolean"
+        },
+        "iiif": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "main",
+                            "reordered"
+                        ]
+                    },
+                    "manifest": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "text_direction": {
+                        "type": "string",
+                        "enum": [
+                            "right-to-left",
+                            null
+                        ]
+                    },
+                    "behavior": {
+                        "type": "string",
+                        "enum": [
+                            "paged",
+                            "individuals"
+                        ]
+                    },
+                    "thumbnail": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                },
+                "required": [
+                    "type",
+                    "manifest"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "location": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "repository": {
+                        "type": "string"
+                    },
+                    "collection": {
+                        "type": "string",
+                        "enum": [
+                            "Old Collection",
+                            "New Finds",
+                            "Reconstructions"
+                        ]
+                    }
+                },
+                "required": [
+                    "repository"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_date": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "creation",
+                            "binding",
+                            "purchase"
+                        ]
+                    },
+                    "iso": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "as_written": {
+                        "type": "string"
+                    },
+                    "note": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "assoc_date"
+                                ]
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "unevaluatedProperties": false
+                    }
+                },
+                "required": [
+                    "type",
+                    "iso",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "note": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "condition",
+                            "foliation",
+                            "ornamentation",
+                            "binding",
+                            "cataloguer",
+                            "paratext",
+                            "provenance"
+                        ]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "related_mss": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "filiation",
+                            "disjecta"
+                        ]
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "note": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "related_mss"
+                                ]
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "mss": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "label": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "format": "uri"
+                                }
+                            },
+                            "required": [
+                                "label"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "minItems": 1,
+                        "unevaluatedItems": false
+                    }
+                },
+                "required": [
+                    "type",
+                    "mss"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "viscodex": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "ms_obj",
+                            "reconstruction"
+                        ]
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                },
+                "required": [
+                    "type",
+                    "url"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "bib": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "ref",
+                            "bib",
+                            "version",
+                            "edition",
+                            "translation"
+                        ]
+                    },
+                    "range": {
+                        "type": "string"
+                    },
+                    "alt_shelf": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "note": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "bib"
+                                ]
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "unevaluatedProperties": false
+                    }
+                },
+                "required": [
+                    "id",
+                    "type"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "cataloguer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "comment": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "timestamp"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "ark",
+        "type",
+        "idno",
+        "extent",
+        "dim",
+        "state",
+        "form",
+        "parts",
+        "has_bind",
+        "location"
+    ],
+    "unevaluatedProperties": false
+}
+

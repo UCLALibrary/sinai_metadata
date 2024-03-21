@@ -1,0 +1,127 @@
+{
+  "type": "Group",
+  "elements": [
+    {
+      "type": "Label",
+      "text": "Manuscript Objects Input Form"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/id"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/ark"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "options": {
+        "format": "radio"
+      }
+    },
+    {
+      "type": "Label",
+      "text": "Identifier No."
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/idno"
+    },
+    
+    {
+      "type": "Control",
+      "scope": "#/properties/summary"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/extent"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/weight"
+    },
+    {
+      "type": "Label",
+      "text": "Dimensions"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        
+        {
+          "type": "Control",
+          "scope": "#/properties/dim/properties/type"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dim/properties/value"
+        }
+      ]
+      
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/state"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/form"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/fol"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/features"
+    },
+    {
+      "type": "Label",
+      "text": "Parts"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/parts"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/has_bind"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/iiif"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/location"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/assoc_date"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/note"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/related_mss"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/viscodex"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/bib"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/cataloguer"
+    }
+
+
+    
+  ]
+}
