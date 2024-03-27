@@ -707,6 +707,39 @@
 					"fk": false
 				},
 				{
+					"id": "a3a81d54-f663-461c-8112-2ef8cdb3ffd6",
+					"name": "para",
+					"datatype": "05a97724-4a5b-43d7-a97c-acb2431f2134",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "64a25358-6ee7-4fa7-ab27-fbe3cb0b0f18",
+					"name": "layers",
+					"datatype": "991d7870-c6a7-48e8-a86e-1ee1648eacc9",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
 					"id": "358decea-2870-4528-8b17-da28de34542e",
 					"name": "layout",
 					"datatype": "5920217c-6bb9-4df7-913d-4fe2bcea2500",
@@ -878,23 +911,6 @@
 					"id": "fd99f05c-48d8-49f6-ab1d-fbbb38a41ed5",
 					"name": "iiif",
 					"datatype": "855e0643-c21a-4778-8c9e-6e9a94955ecf",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"any": "",
-					"estimatedSize": "",
-					"fk": false
-				},
-				{
-					"id": "a3a81d54-f663-461c-8112-2ef8cdb3ffd6",
-					"name": "para",
-					"datatype": "05a97724-4a5b-43d7-a97c-acb2431f2134",
 					"param": "",
 					"pk": false,
 					"nn": false,
@@ -3318,6 +3334,22 @@
 			"estimatedSize": "",
 			"cols": [
 				{
+					"id": "1b74aef9-df4d-49cb-bccd-e353f231dd8b",
+					"name": "type",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
 					"id": "9c184f04-2023-4ec0-86fc-ae3bb9b7e077",
 					"name": "id",
 					"datatype": "objectId",
@@ -5662,7 +5694,7 @@
 			"cols": [
 				{
 					"id": "251bdcf4-f21f-4812-a08a-1ec69b3d2069",
-					"name": "para_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -5864,7 +5896,7 @@
 			"cols": [
 				{
 					"id": "d0bbff96-c1e1-4e02-9ddf-d48a4ae0d6e0",
-					"name": "person_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
@@ -6032,7 +6064,7 @@
 			"cols": [
 				{
 					"id": "6610a7a0-3968-4d4a-a399-d9c9b96c2826",
-					"name": "place_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
@@ -6200,7 +6232,7 @@
 			"cols": [
 				{
 					"id": "528c14b8-f018-4b1b-b244-f3f7add0a2e9",
-					"name": "date_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -7244,7 +7276,7 @@
 			"cols": [
 				{
 					"id": "f4158c7c-7c42-4188-b840-88c76cbe0e2e",
-					"name": "para_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -7446,7 +7478,7 @@
 			"cols": [
 				{
 					"id": "d7607a55-894f-45d7-a4dc-fdceef083ec7",
-					"name": "person_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
@@ -7614,7 +7646,7 @@
 			"cols": [
 				{
 					"id": "7c75efc8-50ff-4d0e-8bf6-ed856bf94936",
-					"name": "place_id",
+					"name": "id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
@@ -7782,7 +7814,7 @@
 			"cols": [
 				{
 					"id": "6f2601ef-195c-4ac4-bb4d-593794f69b54",
-					"name": "date_type",
+					"name": "type",
 					"datatype": "enum",
 					"param": "",
 					"pk": false,
@@ -8008,6 +8040,72 @@
 			"max": "",
 			"validation": "",
 			"capped": false
+		},
+		"991d7870-c6a7-48e8-a86e-1ee1648eacc9": {
+			"id": "991d7870-c6a7-48e8-a86e-1ee1648eacc9",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "dc924f13-a39e-4f1c-bc2d-7fde2107a8ca",
+					"name": "id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "70654b05-9bfa-49d8-9cbc-7b08ef90a155",
+					"name": "sequence",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "43a3406a-de8c-4937-bf19-b9eea140602d",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": "",
+			"size": "",
+			"max": "",
+			"validation": "",
+			"capped": false
 		}
 	},
 	"relations": {
@@ -8101,7 +8199,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1711136566958,
+		"lastSaved": 1711488264630,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -8121,7 +8219,7 @@
 			"id": "201c3c44-34f2-4204-a31f-393015dc6f9f",
 			"keysgraphics": true,
 			"linegraphics": "detailed",
-			"zoom": 1.1,
+			"zoom": 0.9,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -8129,10 +8227,10 @@
 			"diagramItems": {
 				"56894fe5-0a18-4ada-ad8f-cbb3b56ae68a": {
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
-					"x": 1690,
-					"y": 30,
+					"x": 2034,
+					"y": 38,
 					"gHeight": 1810,
-					"gWidth": 324,
+					"gWidth": 287,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -8141,10 +8239,10 @@
 				},
 				"3c9e4fbf-132c-4a3e-94b3-8d94c02e1b39": {
 					"referencedItemId": "3c9e4fbf-132c-4a3e-94b3-8d94c02e1b39",
-					"x": 1100,
-					"y": 31,
-					"gHeight": 2486,
-					"gWidth": 315,
+					"x": 950,
+					"y": 30,
+					"gHeight": 2332,
+					"gWidth": 308,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -8693,8 +8791,8 @@
 				},
 				"aaa0fdb8-28b2-4436-bb7f-2818067f01c0": {
 					"referencedItemId": "aaa0fdb8-28b2-4436-bb7f-2818067f01c0",
-					"x": 2082,
-					"y": 37,
+					"x": 1665,
+					"y": 89,
 					"gHeight": 57,
 					"gWidth": 349,
 					"color": "#333",
@@ -9166,6 +9264,19 @@
 					"gHeight": -1,
 					"gWidth": -1,
 					"color": "transparent",
+					"background": "transparent",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"991d7870-c6a7-48e8-a86e-1ee1648eacc9": {
+					"referencedItemId": "991d7870-c6a7-48e8-a86e-1ee1648eacc9",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "#ffffff",
 					"background": "transparent",
 					"resized": false,
 					"autoExpand": true,
