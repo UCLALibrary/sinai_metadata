@@ -97,7 +97,7 @@
 					"datatype": "record",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
 					"comment": "",
 					"defaultvalue": "",
@@ -118,8 +118,29 @@
 					"datatype": "record",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "39edd880-56ad-43f2-8fa1-b750fa41b996",
+					"name": "assoc_person",
+					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
 					"comment": "",
 					"defaultvalue": "",
 					"data": "",
@@ -224,7 +245,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1709676892857
+		"lastSaved": 1709677261517
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -242,10 +263,10 @@
 			"diagramItems": {
 				"2bb46fe6-69e4-4190-83d0-b235087da2ef": {
 					"referencedItemId": "2bb46fe6-69e4-4190-83d0-b235087da2ef",
-					"x": 87,
-					"y": 112,
-					"gHeight": 135,
-					"gWidth": 209,
+					"x": 211,
+					"y": 114,
+					"gHeight": 153,
+					"gWidth": 211,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
