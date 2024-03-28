@@ -534,6 +534,7 @@
                         "$ref": "#/$defs/assoc_date"
                     },
                     "note": {
+                        "$ref": "#/$defs/note"
                     }
                 },
                 "required": [
@@ -649,27 +650,7 @@
                         "$ref": "#/$defs/language_map"
                     },
                     "note": {
-                        "type": [
-                            "object",
-                            "null"
-                        ],
-                        "properties": {
-                            "type": {
-                                "type": "string",
-                                "enum": [
-                                    "assoc_date"
-                                ]
-                            },
-                            "value": {
-                                "type": "string",
-                                "minLength": 1
-                            }
-                        },
-                        "required": [
-                            "type",
-                            "value"
-                        ],
-                        "unevaluatedProperties": false
+                        "$ref": "#/$defs/note"
                     }
                 },
                 "required": [
