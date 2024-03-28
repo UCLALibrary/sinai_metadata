@@ -6,7 +6,8 @@ import re
 directory_path = input("Enter the directory path: ")
 
 # Define a regular expression pattern to match "f. " followed by anything up to the first number between 1 and 9
-pattern = r"(f\.\s*)([^1-9]*)([1-9])"
+fpattern = r"(f\.\s*)([^1-9]*)([1-9])"
+flyleafpattern = r"(Flyleaf\s*) ([^1-9]*)([1-9])"
 
 # Loop through all CSV files in the directory
 for file_name in os.listdir(directory_path):
@@ -18,7 +19,8 @@ for file_name in os.listdir(directory_path):
             rows = []
             for row in reader:
                 # Remove anything between "f. " and the first number between 1 and 9 in the 'Title' column
-                row['Title'] = re.sub(pattern, r"\1\3", row['Title'])
+                row['Title'] = re.sub(fpattern, r"\1\3", row['Title'])
+                row['Title'] = re.sub(flyleafpattern, r"\1\3", row['Title'])
                 rows.append(row)
         # Write the updated rows to the CSV file
         with open(file_path, 'w', newline='') as csvfile:
