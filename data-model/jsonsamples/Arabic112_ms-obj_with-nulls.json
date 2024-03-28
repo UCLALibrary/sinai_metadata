@@ -11,10 +11,10 @@
     "summary": "Four Gospels manuscript, dated 1259 CE",
     "extent": "168 ff.",
     "weight": "717.8 g",
-    "dim": {
+    "dim": [{
         "type": "ms_block",
         "value": "231 x 165 x 42 mm"
-    },
+    }],
     "state": "Codex",
     "form": "Codex",
     "fol": null,
@@ -25,9 +25,10 @@
     "parts": [
         {
             "id": "$locally-generated-id-for-part1",
-            "sequence": "1"
+            "sequence": 1
         }
     ],
+    "para": null,
     "has_bind": false,
     "iiif": [
         {
