@@ -504,6 +504,7 @@
                     "type": {
                         "type": "string",
                         "enum": [
+                            "endowment"
                         ],
                         "$comment": "Initial enum for paracontent needed"
                     },
@@ -515,6 +516,9 @@
                     "lang": {
                         "type": "string",
                         "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
+                    },
+                    "label": {
+                        "type": "string"
                     },
                     "transcription": {
                         "$ref": "#/$defs/language_map",
