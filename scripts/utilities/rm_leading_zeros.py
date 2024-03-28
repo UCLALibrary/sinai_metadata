@@ -7,6 +7,7 @@ directory_path = input("Enter the directory path: ")
 
 # Define a regular expression pattern to match "f. " followed by anything up to the first number between 1 and 9
 fpattern = r"(f\.\s*)([^1-9]*)([1-9])"
+fpatternwithstub = r"(f\.\s*)(stub[+-])([^1-9]*)([1-9])"
 flyleafpattern = r"(Flyleaf\s*)([^1-9]*)([1-9])"
 
 
@@ -20,10 +21,13 @@ for file_name in os.listdir(directory_path):
             reader = csv.DictReader(csvfile)
             rows = []
             for row in reader:
-                #if re.match(fpattern, row['Title']):
-                #    row['Title'] = re.sub(fpattern, r"\1\3", row['Title'])
-                #    rows.append (row)
-                if re.match(flyleafpattern, row["Title"]):
+                if re.match(fpattern, row['Title']) and "stub" not in row['Title']:
+                    row['Title'] = re.sub(fpattern, r"\1\3", row['Title'])
+                    rows.append(row)
+                elif re.match(fpattern, row['Title']):
+                    row['Title'] = re.sub(fpatternwithstub, r"\1\2\4", row['Title'])
+                    rows.append(row)
+                elif re.match(flyleafpattern, row["Title"]):
                     row['Title'] = re.sub(flyleafpattern, r"\1\3", row['Title'])
                     rows.append(row)
                 else:
