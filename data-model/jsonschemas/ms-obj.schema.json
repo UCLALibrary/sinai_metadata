@@ -47,7 +47,10 @@
             "unevaluatedItems": false
         },
         "summary": {
-            "type": ["string", "null"],
+            "type": [
+                "string",
+                "null"
+            ],
             "minLength": 1
         },
         "extent": {
@@ -61,25 +64,30 @@
             "minLength": 1
         },
         "dim": {
-            "type": "object",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "ms_block",
-                        "folio",
-                        "av_folio"
-                    ]
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "enum": [
+                            "ms_block",
+                            "folio",
+                            "av_folio"
+                        ]
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1
+                    }
                 },
-                "value": {
-                    "type": "string",
-                    "minLength": 1
-                }
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
             },
-            "required": [
-                "type",
-                "value"
-            ],
-            "unevaluatedProperties": false
+            "minItems": 1,
+            "unevaluatedItems": false
         },
         "state": {
             "description": "The original form of the manuscript object",
@@ -104,7 +112,10 @@
         },
         "fol": {
             "description": "A string expressing the foliation of the object in a semi-controlled format",
-            "type": ["string", "null"],
+            "type": [
+                "string",
+                "null"
+            ],
             "minLength": 1,
             "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
         },
@@ -142,9 +153,14 @@
             },
             "unevaluatedItems": false
         },
+        "para": {
+            "$ref": "#/$defs/paracontent"
+        },
         "has_bind": {
-            "type": "boolean",
-            "$comment": "Perhaps allow 'null' for cases where we are not sure if there is a binding?"
+            "type": [
+                "boolean",
+                "null"
+            ]
         },
         "iiif": {
             "type": "array",
@@ -178,7 +194,10 @@
                         ]
                     },
                     "thumbnail": {
-                        "type": ["string", "null"],
+                        "type": [
+                            "string",
+                            "null"
+                        ],
                         "minLength": 1,
                         "format": "uri"
                     }
@@ -216,7 +235,400 @@
             "unevaluatedItems": false
         },
         "assoc_date": {
-            "type": ["array", "null"],
+            "$ref": "#/$defs/assoc_date"
+        },
+        "note": {
+            "$ref": "#/$defs/note"
+        },
+        "related_mss": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "filiation",
+                            "disjecta"
+                        ]
+                    },
+                    "label": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "note": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "related_mss"
+                                ]
+                            },
+                            "value": {
+                                "type": "string",
+                                "minLength": 1
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "mss": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "label": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "id": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "url": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "format": "uri",
+                                    "minLength": 1
+                                }
+                            },
+                            "$comment": "Possible x-or logic for id and url",
+                            "required": [
+                                "label"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "minItems": 1,
+                        "unevaluatedItems": false
+                    }
+                },
+                "required": [
+                    "type",
+                    "mss"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "viscodex": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "ms_obj",
+                            "reconstruction"
+                        ]
+                    },
+                    "label": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "type",
+                    "url"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "bib": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "ref",
+                            "bib",
+                            "version",
+                            "edition",
+                            "translation"
+                        ]
+                    },
+                    "range": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "alt_shelf": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "note": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "bib"
+                                ]
+                            },
+                            "value": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "minLength": 1
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "unevaluatedProperties": false
+                    }
+                },
+                "required": [
+                    "id",
+                    "type"
+                ],
+                "$comment": "Possible x-or logic between range and url, and perhaps alt_shelf? I.e., must have at least one",
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "cataloguer": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "minLength": 1,
+                        "$comment": "possibly can set min-length based on ISO timestamp length?"
+                    },
+                    "comment": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "timestamp"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "ark",
+        "type",
+        "idno",
+        "extent",
+        "dim",
+        "state",
+        "form",
+        "parts",
+        "has_bind",
+        "location"
+    ],
+    "unevaluatedProperties": false,
+    "$defs": {
+        "paracontent": {
+            "title": "Paracontent",
+            "description": "Sub-schema pattern for paracontent, to be reused across object types",
+            "$comment": "provide an id or convert to a separate schema to facilitate reuse",
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "endowment"
+                        ],
+                        "$comment": "Initial enum for paracontent needed"
+                    },
+                    "locus": {
+                        "type": "string",
+                        "minLength": 1,
+                        "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+                    },
+                    "lang": {
+                        "type": "string",
+                        "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "transcription": {
+                        "$ref": "#/$defs/language_map",
+                        "$comment": "Problem here with constraining the available langs to ancient vs modern, likely need a separate snippet?"
+                    },
+                    "translation": {
+                        "$ref": "#/$defs/language_map",
+                        "$comment": "Problem here with constraining the available langs to ancient vs modern, likely need a separate snippet?"
+                    },
+                    "assoc_person": {
+                        "$ref": "#/$defs/assoc_person"
+                    },
+                    "assoc_place": {
+                        "$ref": "#/$defs/assoc_place"
+                    },
+                    "assoc_date": {
+                        "$ref": "#/$defs/assoc_date"
+                    },
+                    "note": {
+                        "$ref": "#/$defs/note"
+                    }
+                },
+                "required": [
+                    "type",
+                    "locus",
+                    "lang"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_person": {
+            "title": "Associated Person",
+            "description": "Sub-schema pattern for a person that is associated with a given object.",
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "as_written": {
+                        "$ref": "#/$defs/language_map"
+                    },
+                    "role": {
+                        "type": "string",
+                        "enum": [
+                            "creator",
+                            "binder",
+                            "owner"
+                        ]
+                    },
+                    "note": {
+                        "$ref": "#/$defs/note"
+                    }
+                },
+                "required": [
+                    "id",
+                    "role"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_place": {
+            "title": "Associated Place",
+            "description": "Sub-schema pattern for a place that is associated with a given object.",
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "as_written": {
+                        "$ref": "#/$defs/language_map"
+                    },
+                    "event": {
+                        "type": "string",
+                        "enum": [
+                            "origin",
+                            "previous_repository"
+                        ]
+                    },
+                    "note": {
+                        "$ref": "#/$defs/note"
+                    }
+                },
+                "required": [
+                    "id",
+                    "event"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_date": {
+            "title": "Associated Date",
+            "description": "Sub-schema pattern for a date that is associated with a given object, to be reused across object types and contexts",
+            "$comment": "challenge is with the date types being used across objects...",
+            "type": [
+                "array",
+                "null"
+            ],
             "items": {
                 "type": "object",
                 "properties": {
@@ -242,24 +654,7 @@
                         "$ref": "#/$defs/language_map"
                     },
                     "note": {
-                        "type": ["object", "null"],
-                        "properties": {
-                            "type": {
-                                "type": "string",
-                                "enum": [
-                                    "assoc_date"
-                                ]
-                            },
-                            "value": {
-                                "type": "string",
-                                "minLength": 1
-                            }
-                        },
-                        "required": [
-                            "type",
-                            "value"
-                        ],
-                        "unevaluatedProperties": false
+                        "$ref": "#/$defs/note"
                     }
                 },
                 "required": [
@@ -272,7 +667,11 @@
             "unevaluatedItems": false
         },
         "note": {
-            "type": ["array", "null"],
+            "title": "Note",
+            "type": [
+                "array",
+                "null"
+            ],
             "items": {
                 "type": "object",
                 "properties": {
@@ -287,7 +686,8 @@
                             "collation",
                             "paratext",
                             "provenance",
-                            "general"
+                            "general",
+                            "assoc_date"
                         ]
                     },
                     "value": {
@@ -303,254 +703,93 @@
             },
             "unevaluatedItems": false
         },
-        "related_mss": {
-            "type": ["array", "null"],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "filiation",
-                            "disjecta"
-                        ]
-                    },
-                    "label": {
-                        "$ref": "#/$defs/language_map"
-                    },
-                    "note": {
-                        "type": ["object", "null"],
-                        "properties": {
-                            "type": {
-                                "type": "string",
-                                "enum": [
-                                    "related_mss"
-                                ]
-                            },
-                            "value": {
-                                "type": "string",
-                                "minLength": 1
-                            }
-                        },
-                        "required": [
-                            "type",
-                            "value"
-                        ],
-                        "unevaluatedProperties": false
-                    },
-                    "mss": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "label": {
-                                    "$ref": "#/$defs/language_map"
-                                },
-                                "id": {
-                                    "type": ["integer", "null"]
-                                },
-                                "url": {
-                                    "type": ["string", "null"],
-                                    "format": "uri",
-                                    "minLength": 1
-                                }
-                            },
-                            "$comment": "Possible x-or logic for id and url",
-                            "required": [
-                                "label"
-                            ],
-                            "unevaluatedProperties": false
-                        },
-                        "minItems": 1,
-                        "unevaluatedItems": false
-                    }
+        "language_map": {
+            "title": "Language Map",
+            "description": "Sub-schema pattern for fields that require JSON-LD 1.1-style language maps",
+            "$comment": "Initial list from SMDL Airtable values as well as common languages of modern scholarship",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "ar": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
-                "required": [
-                    "type",
-                    "mss"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "viscodex": {
-            "type": ["array", "null"],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "ms_obj",
-                            "reconstruction"
-                        ]
-                    },
-                    "label": {
-                        "$ref": "#/$defs/language_map"
-                    },
-                    "url": {
-                        "type": "string",
-                        "format": "uri",
-                        "minLength": 1
-                    }
-                },
-                "required": [
-                    "type",
-                    "url"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "bib": {
-            "type": ["array", "null"],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "ref",
-                            "bib",
-                            "version",
-                            "edition",
-                            "translation"
-                        ]
-                    },
-                    "range": {
-                        "type": ["string", "null"],
-                        "minLength": 1
-                    },
-                    "alt_shelf": {
-                        "type": ["string", "null"],
-                        "minLength": 1
-                    },
-                    "url": {
-                        "type": ["string", "null"],
-                        "minLength": 1
-                    },
-                    "note": {
-                        "type": ["object", "null"],
-                        "properties": {
-                            "type": {
-                                "type": "string",
-                                "enum": [
-                                    "bib"
-                                ]
-                            },
-                            "value": {
-                                "type": ["string", "null"],
-                                "minLength": 1
-                            }
-                        },
-                        "required": [
-                            "type",
-                            "value"
-                        ],
-                        "unevaluatedProperties": false
-                    }
-                },
-                "required": [
-                        "id",
-                        "type"
+                "cu": {
+                    "type": [
+                        "string",
+                        "null"
                     ],
-                    "$comment": "Possible x-or logic between range and url, and perhaps alt_shelf? I.e., must have at least one",
-                    "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false,
-            "$comment": "In Moon Modeler this is not-null; is at least one bibl required?"
-        },
-        "cataloguer": {
-                "type": ["array", "null"],
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "id": {
-                            "type": "integer"
-                        },
-                        "timestamp": {
-                            "type": "string",
-                            "format": "date-time",
-                            "minLength": 1,
-                            "$comment": "possibly can set min-length based on ISO timestamp length?"
-                        },
-                        "comment": {
-                            "type": ["string", "null"],
-                            "minLength": 1
-                        }
-                    },
-                    "required": ["id", "timestamp"],
-                    "unevaluatedProperties": false
+                    "$comment": "Old Church Slavonic"
                 },
-                "unevaluatedItems": false
-            }
-        },
-        "required": [
-            "id",
-            "ark",
-            "type",
-            "idno",
-            "extent",
-            "dim",
-            "state",
-            "form",
-            "parts",
-            "has_bind",
-            "location"
-        ],
-        "unevaluatedProperties": false,
-        "$defs": {
-            "language_map": {
-                 "title": "Language Map",
-                 "description": "Sub-schema pattern for fields that require JSON-LD 1.1-style language maps",
-                 "$comment": "Initial list from SMDL Airtable values as well as common languages of modern scholarship",
-                 "type": ["object", "null"],
-                 "properties": {
-                     "ar": {
-                         "type": ["string", "null"]
-                     },
-                     "cu": {
-                         "type": ["string", "null"],
-                         "$comment": "Old Church Slavonic"
-                     },
-                     "de": {
-                         "type": ["string", "null"]
-                     },
-                     "en": {
-                         "type": ["string", "null"]
-                     },
-                     "el": {
-                         "type": ["string", "null"],
-                         "$comment": "Modern Greek"
-                     },
-                     "es": {
-                         "type": ["string", "null"]
-                     },
-                     "fr": {
-                         "type": ["string", "null"]
-                     },
-                     "grc": {
-                         "type": ["string", "null"]
-                     },
-                     "hy": {
-                         "type": ["string", "null"],
-                         "$comment": "Armenian"
-                     },
-                     "la": {
-                         "type": ["string", "null"]
-                     },
-                     "ka": {
-                         "type": ["string", "null"],
-                         "$comment": "Georgian"
-                     },
-                     "tr": {
-                         "type": ["string", "null"]
-                     }
-                 },
-                 "unevaluatedProperties": false
-            }
+                "de": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "en": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "el": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "$comment": "Modern Greek"
+                },
+                "es": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fr": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "grc": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "hy": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "$comment": "Armenian"
+                },
+                "la": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ka": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "$comment": "Georgian"
+                },
+                "tr": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "unevaluatedProperties": false
         }
     }
+}

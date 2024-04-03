@@ -11,10 +11,10 @@
     "summary": "",
     "extent": "",
     "weight": "",
-    "dim": {
+    "dim": [{
         "type": "",
         "value": ""
-    },
+    }],
     "state": "",
     "form": "",
     "fol": "",

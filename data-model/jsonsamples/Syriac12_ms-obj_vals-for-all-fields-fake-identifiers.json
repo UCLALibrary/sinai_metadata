@@ -1,5 +1,5 @@
 {
-    "id": "$locally-generated-id",
+    "id": 0,
     "ark": "ark:/21198/z15f0f9b",
     "type": "shelf",
     "idno": [
@@ -23,11 +23,11 @@
     ],
     "parts": [
         {
-            "id": "$local-id-for-part1",
+            "id": 0,
             "sequence": 1
         },
         {
-            "id": "$local-id-for-part2",
+            "id": 0,
             "sequence": 2
         }
     ],
@@ -45,11 +45,11 @@
             },
             "assoc_person": [
                 {
-                    "id": "$id-for-person-record",
+                    "id": 0,
                     "as_written": {
                         "ar": "ابجد"
                     },
-                    "role": ["owner"],
+                    "role": "owner",
                     "note": [
                         {
                             "type": "general",
@@ -58,11 +58,11 @@
                 }],
             "assoc_place": [
                 {
-                    "id": "$id-for-place",
+                    "id": 0,
                     "as_written": {
                         "ar": "يبشيبشل"
                         },
-                    "event": ["previous_repository"],
+                    "event": "previous_repository",
                     "note": [
                         {
                             "type": "general",
@@ -102,7 +102,7 @@
     "location": [
         {
             "collection": "Old Collection",
-            "repository": "$id-for-St-Catherines"
+            "repository": 0
         }
     ],
     "assoc_date": [
@@ -110,7 +110,7 @@
             "type": "binding",
             "iso": "1201/1700",
             "value": "Between 13th - 17th c. CE",
-            "as_written": {"en": "Lorem ipsum"},
+            "as_written": {"la": "Lorem ipsum"},
             "note": [{
                 "type": "assoc_date",
                 "value": "Binding date estimated from production dates of the two codicological units"
@@ -150,7 +150,7 @@
         ,
             "mss": [
                 {
-                    "id": "$id-for-nfm39",
+                    "id": 0,
                     "label": "Sinai Syriac NF M 39",
                     "url": "https://sinaimanuscripts.library.ucla.edu/catalog/ark:%2F21198%2Fz1nw19cs"
                 }
@@ -166,7 +166,7 @@
     ],
     "bib": [
         {
-            "id": "$id-for-Kamil",
+            "id": 0,
             "type": "ref",
             "range": "[50], pg. 152",
             "url": "https://search.worldcat.org/title/101411",
@@ -177,7 +177,7 @@
             }
         },
         {
-            "id": "$id-for-LOC",
+            "id": 0,
             "type": "version",
             "range": "Entry: Syriac Manuscripts 12. Lectionary and Gospel of Luke",
             "url": "https://www.loc.gov/item/00279386334-ms/",
@@ -190,12 +190,12 @@
     ],
     "cataloguer": [
         {
-            "id": "$id-for-GrigoryKessel",
+            "id": 0,
             "timestamp": "2024-03-06T16:42:09.616Z",
             "comment": "Manuscript description by Grigory Kessel"
         },
         {
-            "id": "$id-for-WillPotter",
+            "id": 0,
             "timestamp": "2024-03-06T16:43:13.017Z",
             "comment": "Descriptive metadata entered by Will Potter on behalf of Grigory Kessel"
         }
