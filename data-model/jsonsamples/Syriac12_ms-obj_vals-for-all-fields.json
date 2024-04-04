@@ -41,11 +41,11 @@
             "label": "Waqf Note",
             "transcription": "وقف الكتاب",
             "translation": "The book is endowed",
-            "assoc_person": [
+            "assoc_name": [
                 {
                     "id": "$id-for-person-record",
                     "as_written": "ابجد",
-                    "role": ["owner"],
+                    "role": "owner",
                     "note": [
                         {
                             "type": "general",
@@ -56,7 +56,7 @@
                 {
                     "id": "$id-for-place",
                     "as_written": "يبشيبشل",
-                    "event": ["previous_repository"],
+                    "event": "previous_repository",
                     "note": [
                         {
                             "type": "general",
