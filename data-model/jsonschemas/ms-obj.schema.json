@@ -214,16 +214,16 @@
                         "type": "string",
                         "minLength": 1
                     },
-                    "assoc_person": {
+                    "assoc_name": {
                         "type": [
                             "array",
                             "null"
                         ],
                         "items": {
                             "$schema": "https://json-schema.org/draft/2020-12/schema",
-                            "$id": "assoc_person.json",
-                            "title": "Associated Person",
-                            "description": "A person entity connected with an object via a given role",
+                            "$id": "assoc_name.json",
+                            "title": "Associated Name",
+                            "description": "A person, group, or organization entity connected with an object via a given role",
                             "type": "object",
                             "properties": {
                                 "id": {
@@ -260,7 +260,7 @@
                                                 "type": "string",
                                                 "enum": [
                                                     "assoc_date",
-                                                    "assoc_person",
+                                                    "assoc_name",
                                                     "assoc_place",
                                                     "bib",
                                                     "binding",
@@ -345,7 +345,7 @@
                                                 "type": "string",
                                                 "enum": [
                                                     "assoc_date",
-                                                    "assoc_person",
+                                                    "assoc_name",
                                                     "assoc_place",
                                                     "bib",
                                                     "binding",
@@ -438,7 +438,7 @@
                                                 "type": "string",
                                                 "enum": [
                                                     "assoc_date",
-                                                    "assoc_person",
+                                                    "assoc_name",
                                                     "assoc_place",
                                                     "bib",
                                                     "binding",
@@ -495,7 +495,7 @@
                                     "type": "string",
                                     "enum": [
                                         "assoc_date",
-                                        "assoc_person",
+                                        "assoc_name",
                                         "assoc_place",
                                         "bib",
                                         "binding",
@@ -671,7 +671,7 @@
                                     "type": "string",
                                     "enum": [
                                         "assoc_date",
-                                        "assoc_person",
+                                        "assoc_name",
                                         "assoc_place",
                                         "bib",
                                         "binding",
@@ -728,7 +728,7 @@
                         "type": "string",
                         "enum": [
                             "assoc_date",
-                            "assoc_person",
+                            "assoc_name",
                             "assoc_place",
                             "bib",
                             "binding",
@@ -796,7 +796,7 @@
                                 "type": "string",
                                 "enum": [
                                     "assoc_date",
-                                    "assoc_person",
+                                    "assoc_name",
                                     "assoc_place",
                                     "bib",
                                     "binding",
@@ -966,7 +966,7 @@
                                 "type": "string",
                                 "enum": [
                                     "assoc_date",
-                                    "assoc_person",
+                                    "assoc_name",
                                     "assoc_place",
                                     "bib",
                                     "binding",
