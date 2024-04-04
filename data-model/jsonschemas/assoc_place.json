@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
+    "title": "Associated Place",
+    "description": "A place entity connected with an object via a given role",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "as_written": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "event": {
+            "type": "string",
+            "enum": [
+                "origin",
+                "previous_repository"
+            ]
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "event"
+    ],
+    "unevaluatedProperties": false
+}

@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/related_mss.json",
+    "title": "Related Manuscripts",
+    "description": "A set of manuscripts that share a relation to the object context in which they are declared",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "filiation",
+                "disjecta"
+            ]
+        },
+        "label": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "note": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+        },
+        "mss": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri",
+                        "minLength": 1
+                    }
+                },
+                "$comment": "Possible x-or logic for id and url",
+                "required": [
+                    "label"
+                ],
+                "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "type",
+        "mss"
+    ],
+    "unevaluatedProperties": false
+}

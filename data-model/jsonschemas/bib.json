@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/bib.json",
+    "title": "Bibliography",
+    "description": "A bibliographic citation connected with an object or entity",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "$comment": "Foreign key referring to the bibliographic item in the database"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "ref",
+                "bib",
+                "version",
+                "edition",
+                "translation"
+            ]
+        },
+        "range": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "alt_shelf": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "url": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "note": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+        }
+    },
+    "required": [
+        "id",
+        "type"
+    ],
+    "$comment": "Possible x-or logic between range and url, and perhaps alt_shelf? I.e., must have at least one",
+    "unevaluatedProperties": false
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layout.json",
+    "title": "Layout",
+    "description": "The page layout for a given range of folios in an object",
+    "type": "object",
+    "properties": 
+    {
+        "$comment": "Perhaps needs a type to let us know if this is 'average', 'representative', 'max/min', etc.? or maybe just for num_lines?",
+        "locus": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+        },
+        "columns": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "num_lines": {
+            "type": "integer",
+            "minimum": 0,
+            "$comment": "Perhaps should be string to allow for expression of a range?"
+        },
+        "dim": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dim"
+            },
+            "unevaluatedItems": false
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "unevaluatedProperties": false
+}

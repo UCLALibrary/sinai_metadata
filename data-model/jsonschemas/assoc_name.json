@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
+    "title": "Associated Name",
+    "description": "A person, group, or organization entity connected with an object via a given role",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "as_written": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "role": {
+            "type": "string",
+            "enum": [
+                "creator",
+                "binder",
+                "owner"
+            ]
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "role"
+    ],
+    "unevaluatedProperties": false
+}

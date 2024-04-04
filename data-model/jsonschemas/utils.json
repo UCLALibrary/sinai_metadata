@@ -1,0 +1,157 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json",
+    "title": "Utilities",
+    "description": "A collection of simple sub-schemas used across object types",
+    "type": "null",
+    "$defs": {
+        "id": {
+            "description": "A unique identifer, supplied by the database",
+            "type": "integer"
+        },
+        "ark": {
+            "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
+            "type": "string",
+            "pattern": "^ark:/21198/z1.{6}"
+        },
+        "summary": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "extent": {
+            "description": "The extent, expressed in number of folios, which comprise the manuscript object",
+            "type": "string",
+            "minLength": 1
+        },
+        "weight": {
+            "description": "A string expression of the manuscript object's weight",
+            "type": "string",
+            "minLength": 1
+        },
+        "state": {
+            "description": "The original form of the manuscript object",
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/form"
+                },
+                {
+                    "enum": ["Undertext object"],
+                    "$comment": "State allows the same enumerated value list as form with the addition of Undertext object"
+                }
+            ]
+        },
+        "form": {
+            "description": "The original form of the manuscript object",
+            "enum": [
+                "Codex",
+                "Scroll",
+                "Bifolim",
+                "Folium",
+                "Quire(s)"
+            ]
+        },
+        "fol": {
+            "description": "A string expressing the foliation of the object in a semi-controlled format",
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1,
+            "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
+        },
+        "features": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Dated",
+                    "Colophon",
+                    "Inscription(s)"
+                ]
+            },
+            "unevaluatedItems": false,
+            "$comment": "TBD list of features"
+        },
+        "cataloguer": {
+            "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "minLength": 1,
+                        "$comment": "possibly can set min-length based on ISO timestamp length?"
+                    },
+                    "comment": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "timestamp"
+                ],
+                "unevaluatedProperties": false
+        },
+        "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+        },
+        "coll": {
+            "description": "A string expressing the collation of the object following a semi-controlled format, such as a collational formula",
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1,
+            "$comment": "could require a pattern to conform these to a specific collational formula scheme"
+        },
+        "script": {
+            "description": "A term from a controlled list categorizing the writing system and script used in a given instance of writing",
+            "enum": [
+                "Perlschrift",
+                "Christian Palestinian Aramaic",
+                "Naskh",
+                "Kufic",
+                "Thuluth",
+                "Greek minuscule",
+                "Serto",
+                "Estrangela",
+                "East Syriac"
+            ],
+            "$comment": "enum not complete. Will eventually be references to script records"
+        },
+        "dim": {
+            "type": "object",
+                "properties": {
+                    "type": {
+                        "enum": [
+                            "ms_block",
+                            "folio",
+                            "av_folio",
+                            "writing_area",
+                            "margins"
+                        ]
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+        }
+    }
+}

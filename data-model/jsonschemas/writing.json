@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json",
+    "title": "Writing",
+    "description": "Collected information about an instance of hand writing",
+    "type": "object",
+    "properties": 
+    {
+        "script": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/script"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "locus": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "script"
+    ],
+    "unevaluatedProperties": false
+}

@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/iiif.json",
+    "title": "IIIF",
+    "description": "Information related to a IIIF manifest for a given object",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "main",
+                "reordered"
+            ]
+        },
+        "manifest": {
+            "type": "string",
+            "format": "uri",
+            "minLength": 1
+        },
+        "text_direction": {
+            "type": "string",
+            "enum": [
+                "right-to-left",
+                null
+            ]
+        },
+        "behavior": {
+            "type": "string",
+            "enum": [
+                "paged",
+                "individuals"
+            ]
+        },
+        "thumbnail": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1,
+            "format": "uri"
+        }
+    },
+    "required": [
+        "type",
+        "manifest"
+    ],
+    "unevaluatedProperties": false
+}

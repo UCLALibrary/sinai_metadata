@@ -1,0 +1,226 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/cod_unit.json",
+    "title": "Codicological Unit",
+    "description": "A codicological unit represents a distinctly produced book (REVISE)",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        },
+        "ark": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+        },
+        "ms_objs": {},
+        "type": {
+            "description": "The type of codicological unit, e.g. a part, layer, etc.",
+            "enum": [
+                "part",
+                "layer",
+                "uto"
+            ]
+        },
+        "idno": {
+            "description": "An identifier for the codicological unit, according to a given scheme",
+            "$comment": "What enum needed here?",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "enum": [
+                        ]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "summary": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
+        },
+        "locus": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/extent"
+        },
+        "support": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "Paper",
+                    "Papyrus",
+                    "Parchment"
+                ],
+                "$comment": "Should these point to a record rather than being enum strings?"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "extent": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/extent"
+        },
+        "dim": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dim"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "state": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/state"
+        },
+        "fol": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/fol"
+        },
+        "coll": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/coll"
+        },
+        "writing": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "origin": {
+
+        },
+        "text_art": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "sequence": {
+                        "type": "integer",
+                        "minimum": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "sequence"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "para": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/paracontent.json"
+            },
+            "unevaluatedItems": false
+        },
+        "layers": {},
+        "layout": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layout.json"
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_name": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json"
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_date": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json"
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_place": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json"
+            },
+            "unevaluatedItems": false
+        },
+        "features": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/features"
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        },
+        "related_mss": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/related_mss.json"
+            },
+            "unevaluatedItems": false
+        },
+        "viscodex": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/viscodex.json"
+            },
+            "unevaluatedItems": false
+        },
+        "bib": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/bib.json"
+            },
+            "unevaluatedItems": false
+        },
+        "cataloguer": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/cataloguer"
+            },
+            "unevaluatedItems": false
+        },
+        "iiif": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/iiif.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "ark",
+        "type",
+        "idno",
+        "locus",
+        "support",
+        "extent",
+        "dim",
+        "state",
+        "writing",
+        "origin",
+        "text_art"
+    ]
+}
