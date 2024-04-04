@@ -21,13 +21,15 @@
     "features": [
         "Inscription(s)"
     ],
-    "parts": [
+    "cod_units": [
         {
             "id": "$local-id-for-part1",
+            "type": "part",
             "sequence": 1
         },
         {
             "id": "$local-id-for-part2",
+            "type": "part",
             "sequence": 2
         }
     ],
@@ -35,20 +37,14 @@
         {
             "type": "endowment",
             "locus": "F. 1v",
-            "lang": "",
+            "lang": "Arabic",
             "label": "Waqf Note",
-            "transcription": {
-                "ar": "وقف الكتاب"
-            },
-            "translation": {
-                "en": "The book is endowed"
-            },
+            "transcription": "وقف الكتاب",
+            "translation": "The book is endowed",
             "assoc_person": [
                 {
                     "id": "$id-for-person-record",
-                    "as_written": {
-                        "ar": "ابجد"
-                    },
+                    "as_written": "ابجد",
                     "role": ["owner"],
                     "note": [
                         {
@@ -59,9 +55,7 @@
             "assoc_place": [
                 {
                     "id": "$id-for-place",
-                    "as_written": {
-                        "ar": "يبشيبشل"
-                        },
+                    "as_written": "يبشيبشل",
                     "event": ["previous_repository"],
                     "note": [
                         {
@@ -74,9 +68,7 @@
                     "type": "purchase",
                     "iso": "1564",
                     "value": "1564 CE",
-                    "as_written": {
-                        "ar": "1564"
-                    },
+                    "as_written": "1564",
                     "note": [
                         {
                             "type": "assoc_date",
@@ -110,7 +102,7 @@
             "type": "binding",
             "iso": "1201/1700",
             "value": "Between 13th - 17th c. CE",
-            "as_written": {"en": "Lorem ipsum"},
+            "as_written": "Lorem ipsum",
             "note": [{
                 "type": "assoc_date",
                 "value": "Binding date estimated from production dates of the two codicological units"
