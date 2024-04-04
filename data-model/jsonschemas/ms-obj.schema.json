@@ -23,6 +23,7 @@
         },
         "idno": {
             "description": "An identifier for the manuscript, including shelfmarks or other identifier schemas",
+            "$comment": "Would add to util, but enum may vary by object type",
             "type": "array",
             "items": {
                 "type": "object",
@@ -72,7 +73,9 @@
                         "enum": [
                             "ms_block",
                             "folio",
-                            "av_folio"
+                            "av_folio",
+                            "writing_area",
+                            "margins"
                         ]
                     },
                     "value": {
@@ -91,13 +94,23 @@
         },
         "state": {
             "description": "The original form of the manuscript object",
-            "enum": [
-                "Codex",
-                "Scroll",
-                "Bifolim",
-                "Folium",
-                "Quire(s)",
-                "Undertext object"
+            "oneOf": [
+                {
+                    "description": "The original form of the manuscript object",
+                    "enum": [
+                        "Codex",
+                        "Scroll",
+                        "Bifolim",
+                        "Folium",
+                        "Quire(s)"
+                    ]
+                },
+                {
+                    "enum": [
+                        "Undertext object"
+                    ],
+                    "$comment": "State allows the same enumerated value list as form with the addition of Undertext object"
+                }
             ]
         },
         "form": {
@@ -130,15 +143,22 @@
                 ]
             },
             "unevaluatedItems": false,
-            "$comment": "TBD list of features. Likely move as a ref to define all together"
+            "$comment": "TBD list of features"
         },
-        "parts": {
+        "cod_units": {
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
                     "id": {
                         "type": "integer"
+                    },
+                    "type": {
+                        "enum": [
+                            "part",
+                            "uto",
+                            "reconstr"
+                        ]
                     },
                     "sequence": {
                         "type": "integer",
@@ -147,6 +167,7 @@
                 },
                 "required": [
                     "id",
+                    "type",
                     "sequence"
                 ],
                 "unevaluatedProperties": false
@@ -154,7 +175,366 @@
             "unevaluatedItems": false
         },
         "para": {
-            "$ref": "#/$defs/paracontent"
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "paracontent.json",
+                "title": "Paracontent",
+                "description": "An item of paracontent related to a manuscript object, codicological unit, or textual artifact",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "endowment"
+                        ],
+                        "$comment": "Initial enum for paracontent needed"
+                    },
+                    "locus": {
+                        "type": "string",
+                        "minLength": 1,
+                        "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+                    },
+                    "lang": {
+                        "type": "string",
+                        "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
+                    },
+                    "label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "transcription": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "translation": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "assoc_person": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "$schema": "https://json-schema.org/draft/2020-12/schema",
+                            "$id": "assoc_person.json",
+                            "title": "Associated Person",
+                            "description": "A person entity connected with an object via a given role",
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "as_written": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "minLength": 1
+                                },
+                                "role": {
+                                    "type": "string",
+                                    "enum": [
+                                        "creator",
+                                        "binder",
+                                        "owner"
+                                    ]
+                                },
+                                "note": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "$schema": "https://json-schema.org/draft/2020-12/schema",
+                                        "$id": "note.json",
+                                        "title": "Note",
+                                        "description": "A prose note of a specified type",
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "assoc_date",
+                                                    "assoc_person",
+                                                    "assoc_place",
+                                                    "bib",
+                                                    "binding",
+                                                    "cataloguer",
+                                                    "collation",
+                                                    "condition",
+                                                    "foliation",
+                                                    "general",
+                                                    "ornamentation",
+                                                    "paratext",
+                                                    "provenance",
+                                                    "related_mss"
+                                                ]
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "minLength": 1
+                                            }
+                                        },
+                                        "required": [
+                                            "type",
+                                            "value"
+                                        ],
+                                        "unevaluatedProperties": false
+                                    },
+                                    "unevaluatedItems": false
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "role"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "assoc_place": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "$schema": "https://json-schema.org/draft/2020-12/schema",
+                            "$id": "assoc_place.json",
+                            "title": "Associated Place",
+                            "description": "A place entity connected with an object via a given role",
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "as_written": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "minLength": 1
+                                },
+                                "event": {
+                                    "type": "string",
+                                    "enum": [
+                                        "origin",
+                                        "previous_repository"
+                                    ]
+                                },
+                                "note": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "$schema": "https://json-schema.org/draft/2020-12/schema",
+                                        "$id": "note.json",
+                                        "title": "Note",
+                                        "description": "A prose note of a specified type",
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "assoc_date",
+                                                    "assoc_person",
+                                                    "assoc_place",
+                                                    "bib",
+                                                    "binding",
+                                                    "cataloguer",
+                                                    "collation",
+                                                    "condition",
+                                                    "foliation",
+                                                    "general",
+                                                    "ornamentation",
+                                                    "paratext",
+                                                    "provenance",
+                                                    "related_mss"
+                                                ]
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "minLength": 1
+                                            }
+                                        },
+                                        "required": [
+                                            "type",
+                                            "value"
+                                        ],
+                                        "unevaluatedProperties": false
+                                    },
+                                    "unevaluatedItems": false
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "event"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "assoc_date": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "$schema": "https://json-schema.org/draft/2020-12/schema",
+                            "$id": "assoc_date.json",
+                            "title": "Associated Date",
+                            "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "creation",
+                                        "binding",
+                                        "purchase"
+                                    ],
+                                    "$comment": "TBD full list of types"
+                                },
+                                "iso": {
+                                    "type": "string",
+                                    "format": "date",
+                                    "minLength": 3
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "as_written": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "minLength": 1
+                                },
+                                "note": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "$schema": "https://json-schema.org/draft/2020-12/schema",
+                                        "$id": "note.json",
+                                        "title": "Note",
+                                        "description": "A prose note of a specified type",
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "assoc_date",
+                                                    "assoc_person",
+                                                    "assoc_place",
+                                                    "bib",
+                                                    "binding",
+                                                    "cataloguer",
+                                                    "collation",
+                                                    "condition",
+                                                    "foliation",
+                                                    "general",
+                                                    "ornamentation",
+                                                    "paratext",
+                                                    "provenance",
+                                                    "related_mss"
+                                                ]
+                                            },
+                                            "value": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "minLength": 1
+                                            }
+                                        },
+                                        "required": [
+                                            "type",
+                                            "value"
+                                        ],
+                                        "unevaluatedProperties": false
+                                    },
+                                    "unevaluatedItems": false
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "iso",
+                                "value"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "note": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "$schema": "https://json-schema.org/draft/2020-12/schema",
+                            "$id": "note.json",
+                            "title": "Note",
+                            "description": "A prose note of a specified type",
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "assoc_date",
+                                        "assoc_person",
+                                        "assoc_place",
+                                        "bib",
+                                        "binding",
+                                        "cataloguer",
+                                        "collation",
+                                        "condition",
+                                        "foliation",
+                                        "general",
+                                        "ornamentation",
+                                        "paratext",
+                                        "provenance",
+                                        "related_mss"
+                                    ]
+                                },
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "minLength": 1
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "value"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    }
+                },
+                "required": [
+                    "type",
+                    "locus",
+                    "lang"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
         },
         "has_bind": {
             "type": [
@@ -165,6 +545,10 @@
         "iiif": {
             "type": "array",
             "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "iiif.json",
+                "title": "IIIF",
+                "description": "Information related to a IIIF manifest for a given object",
                 "type": "object",
                 "properties": {
                     "type": {
@@ -235,10 +619,145 @@
             "unevaluatedItems": false
         },
         "assoc_date": {
-            "$ref": "#/$defs/assoc_date"
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "assoc_date.json",
+                "title": "Associated Date",
+                "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "creation",
+                            "binding",
+                            "purchase"
+                        ],
+                        "$comment": "TBD full list of types"
+                    },
+                    "iso": {
+                        "type": "string",
+                        "format": "date",
+                        "minLength": 3
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "as_written": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    },
+                    "note": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "$schema": "https://json-schema.org/draft/2020-12/schema",
+                            "$id": "note.json",
+                            "title": "Note",
+                            "description": "A prose note of a specified type",
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "assoc_date",
+                                        "assoc_person",
+                                        "assoc_place",
+                                        "bib",
+                                        "binding",
+                                        "cataloguer",
+                                        "collation",
+                                        "condition",
+                                        "foliation",
+                                        "general",
+                                        "ornamentation",
+                                        "paratext",
+                                        "provenance",
+                                        "related_mss"
+                                    ]
+                                },
+                                "value": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "minLength": 1
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "value"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    }
+                },
+                "required": [
+                    "type",
+                    "iso",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
         },
         "note": {
-            "$ref": "#/$defs/note"
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "note.json",
+                "title": "Note",
+                "description": "A prose note of a specified type",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "assoc_date",
+                            "assoc_person",
+                            "assoc_place",
+                            "bib",
+                            "binding",
+                            "cataloguer",
+                            "collation",
+                            "condition",
+                            "foliation",
+                            "general",
+                            "ornamentation",
+                            "paratext",
+                            "provenance",
+                            "related_mss"
+                        ]
+                    },
+                    "value": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
         },
         "related_mss": {
             "type": [
@@ -246,6 +765,10 @@
                 "null"
             ],
             "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "related_mss.json",
+                "title": "Related Manuscripts",
+                "description": "A set of manuscripts that share a relation to the object context in which they are declared",
                 "type": "object",
                 "properties": {
                     "type": {
@@ -263,19 +786,36 @@
                         "minLength": 1
                     },
                     "note": {
-                        "type": [
-                            "object",
-                            "null"
-                        ],
+                        "$schema": "https://json-schema.org/draft/2020-12/schema",
+                        "$id": "note.json",
+                        "title": "Note",
+                        "description": "A prose note of a specified type",
+                        "type": "object",
                         "properties": {
                             "type": {
                                 "type": "string",
                                 "enum": [
+                                    "assoc_date",
+                                    "assoc_person",
+                                    "assoc_place",
+                                    "bib",
+                                    "binding",
+                                    "cataloguer",
+                                    "collation",
+                                    "condition",
+                                    "foliation",
+                                    "general",
+                                    "ornamentation",
+                                    "paratext",
+                                    "provenance",
                                     "related_mss"
                                 ]
                             },
                             "value": {
-                                "type": "string",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
                                 "minLength": 1
                             }
                         },
@@ -333,6 +873,10 @@
                 "null"
             ],
             "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "viscodex.json",
+                "title": "Viscodex",
+                "description": "A link to a Viscodex visualization of the object",
                 "type": "object",
                 "properties": {
                     "type": {
@@ -340,7 +884,8 @@
                         "enum": [
                             "ms_obj",
                             "reconstruction"
-                        ]
+                        ],
+                        "$comment": "Likely expand this enum?"
                     },
                     "label": {
                         "type": [
@@ -369,10 +914,15 @@
                 "null"
             ],
             "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "bib.json",
+                "title": "Bibliography",
+                "description": "A bibliographic citation connected with an object or entity",
                 "type": "object",
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "integer",
+                        "$comment": "Foreign key referring to the bibliographic item in the database"
                     },
                     "type": {
                         "type": "string",
@@ -406,15 +956,29 @@
                         "minLength": 1
                     },
                     "note": {
-                        "type": [
-                            "object",
-                            "null"
-                        ],
+                        "$schema": "https://json-schema.org/draft/2020-12/schema",
+                        "$id": "note.json",
+                        "title": "Note",
+                        "description": "A prose note of a specified type",
+                        "type": "object",
                         "properties": {
                             "type": {
                                 "type": "string",
                                 "enum": [
-                                    "bib"
+                                    "assoc_date",
+                                    "assoc_person",
+                                    "assoc_place",
+                                    "bib",
+                                    "binding",
+                                    "cataloguer",
+                                    "collation",
+                                    "condition",
+                                    "foliation",
+                                    "general",
+                                    "ornamentation",
+                                    "paratext",
+                                    "provenance",
+                                    "related_mss"
                                 ]
                             },
                             "value": {
@@ -484,312 +1048,9 @@
         "dim",
         "state",
         "form",
-        "parts",
+        "cod_units",
         "has_bind",
         "location"
     ],
-    "unevaluatedProperties": false,
-    "$defs": {
-        "paracontent": {
-            "title": "Paracontent",
-            "description": "Sub-schema pattern for paracontent, to be reused across object types",
-            "$comment": "provide an id or convert to a separate schema to facilitate reuse",
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "endowment"
-                        ],
-                        "$comment": "Initial enum for paracontent needed"
-                    },
-                    "locus": {
-                        "type": "string",
-                        "minLength": 1,
-                        "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
-                    },
-                    "lang": {
-                        "type": "string",
-                        "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
-                    },
-                    "label": {
-                        "type": "string"
-                    },
-                    "transcription": {
-                        "$ref": "#/$defs/language_map",
-                        "$comment": "Problem here with constraining the available langs to ancient vs modern, likely need a separate snippet?"
-                    },
-                    "translation": {
-                        "$ref": "#/$defs/language_map",
-                        "$comment": "Problem here with constraining the available langs to ancient vs modern, likely need a separate snippet?"
-                    },
-                    "assoc_person": {
-                        "$ref": "#/$defs/assoc_person"
-                    },
-                    "assoc_place": {
-                        "$ref": "#/$defs/assoc_place"
-                    },
-                    "assoc_date": {
-                        "$ref": "#/$defs/assoc_date"
-                    },
-                    "note": {
-                        "$ref": "#/$defs/note"
-                    }
-                },
-                "required": [
-                    "type",
-                    "locus",
-                    "lang"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_person": {
-            "title": "Associated Person",
-            "description": "Sub-schema pattern for a person that is associated with a given object.",
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "as_written": {
-                        "$ref": "#/$defs/language_map"
-                    },
-                    "role": {
-                        "type": "string",
-                        "enum": [
-                            "creator",
-                            "binder",
-                            "owner"
-                        ]
-                    },
-                    "note": {
-                        "$ref": "#/$defs/note"
-                    }
-                },
-                "required": [
-                    "id",
-                    "role"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_place": {
-            "title": "Associated Place",
-            "description": "Sub-schema pattern for a place that is associated with a given object.",
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "as_written": {
-                        "$ref": "#/$defs/language_map"
-                    },
-                    "event": {
-                        "type": "string",
-                        "enum": [
-                            "origin",
-                            "previous_repository"
-                        ]
-                    },
-                    "note": {
-                        "$ref": "#/$defs/note"
-                    }
-                },
-                "required": [
-                    "id",
-                    "event"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_date": {
-            "title": "Associated Date",
-            "description": "Sub-schema pattern for a date that is associated with a given object, to be reused across object types and contexts",
-            "$comment": "challenge is with the date types being used across objects...",
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "creation",
-                            "binding",
-                            "purchase"
-                        ],
-                        "$comment": "TBD full list of types"
-                    },
-                    "iso": {
-                        "type": "string",
-                        "format": "date",
-                        "minLength": 3
-                    },
-                    "value": {
-                        "type": "string",
-                        "minLength": 1
-                    },
-                    "as_written": {
-                        "$ref": "#/$defs/language_map"
-                    },
-                    "note": {
-                        "$ref": "#/$defs/note"
-                    }
-                },
-                "required": [
-                    "type",
-                    "iso",
-                    "value"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "note": {
-            "title": "Note",
-            "type": [
-                "array",
-                "null"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "condition",
-                            "foliation",
-                            "ornamentation",
-                            "binding",
-                            "cataloguer",
-                            "collation",
-                            "paratext",
-                            "provenance",
-                            "general",
-                            "assoc_date"
-                        ]
-                    },
-                    "value": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-        },
-        "language_map": {
-            "title": "Language Map",
-            "description": "Sub-schema pattern for fields that require JSON-LD 1.1-style language maps",
-            "$comment": "Initial list from SMDL Airtable values as well as common languages of modern scholarship",
-            "type": [
-                "object",
-                "null"
-            ],
-            "properties": {
-                "ar": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "cu": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "$comment": "Old Church Slavonic"
-                },
-                "de": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "en": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "el": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "$comment": "Modern Greek"
-                },
-                "es": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "fr": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "grc": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "hy": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "$comment": "Armenian"
-                },
-                "la": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "ka": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "$comment": "Georgian"
-                },
-                "tr": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "unevaluatedProperties": false
-        }
-    }
+    "unevaluatedProperties": false
 }
