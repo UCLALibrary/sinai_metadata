@@ -1,6 +1,6 @@
 Links:
 
-Form wireframe in Balsamiq: https://balsamiq.cloud/s19uya4/p5gxy38
+Form wireframe in Balsamiq: https://balsamiq.cloud/s19uya4/p5gxy38/r1D80
 
 JSON Forms live demo (ms_object): https://ngoziharrison.github.io/sinai_metadata_jsonform/ 
 
