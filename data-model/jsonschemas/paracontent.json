@@ -19,6 +19,14 @@
             "type": "string",
             "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
         },
+        "writing": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
         "label": {
             "type": "string",
             "minLength": 1
