@@ -10,7 +10,8 @@
             "enum": [
                 "creation",
                 "binding",
-                "purchase"
+                "purchase",
+                "other"
             ],
             "$comment": "TBD full list of types"
         },
@@ -23,14 +24,13 @@
                     "minLength": 3
                 },
                 "not_after": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "format": "date",
                     "minLength": 3
                 }
                 },
             "required": [
-                "not_before",
-                "not_after"
+                "not_before"
             ],
             "unevaluatedProperties": false
         },

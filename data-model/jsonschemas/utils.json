@@ -23,7 +23,7 @@
         },
         "extent": {
             "description": "The extent, expressed in number of folios, which comprise the manuscript object",
-            "type": "string",
+            "type": ["string", "null"],
             "minLength": 1
         },
         "weight": {
@@ -50,7 +50,8 @@
                 "Scroll",
                 "Bifolim",
                 "Folium",
-                "Quire(s)"
+                "Quire(s)",
+                null
             ]
         },
         "fol": {

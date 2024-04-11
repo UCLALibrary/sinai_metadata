@@ -13,10 +13,7 @@
             ]
         },
         "label": {
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": "string",
             "minLength": 1
         },
         "note": {
@@ -61,6 +58,7 @@
         }
     },
     "required": [
+        "label",
         "type",
         "mss"
     ],

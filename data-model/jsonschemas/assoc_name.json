@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "type": "integer"
+            "type": ["integer", "null"]
         },
         "as_written": {
             "type": [
@@ -20,7 +20,8 @@
             "enum": [
                 "creator",
                 "binder",
-                "owner"
+                "owner",
+                "not known"
             ]
         },
         "note": {
@@ -32,7 +33,6 @@
         }
     },
     "required": [
-        "id",
         "role"
     ],
     "unevaluatedProperties": false
