@@ -102,6 +102,12 @@
                     "id": {
                         "type": "integer"
                     },
+                    "type": {
+                        "enum": [
+                            "primary",
+                            "secondary"
+                        ]
+                    },
                     "sequence": {
                         "type": "integer",
                         "minimum": 1
@@ -109,6 +115,7 @@
                 },
                 "required": [
                     "id",
+                    "type",
                     "sequence"
                 ],
                 "unevaluatedProperties": false
@@ -122,7 +129,32 @@
             },
             "unevaluatedItems": false
         },
-        "layers": {},
+        "cod_units": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "enum": ["part", "uto", "reconstr"],
+                        "$comment": "For cod_units referenced by other cod_units, the type cannot be the same as that selected for $.type"
+                    },
+                    "sequence": {
+                        "type": "integer",
+                        "minimum": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "type",
+                    "sequence"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
         "layout": {
             "type": ["array", "null"],
             "items": {
