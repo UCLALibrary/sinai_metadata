@@ -7864,7 +7864,7 @@
 			"cols": [
 				{
 					"id": "97659a7a-e459-44a3-bcc6-96a7cabb329f",
-					"name": "begin",
+					"name": "not_before",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -7880,7 +7880,7 @@
 				},
 				{
 					"id": "ef951923-4c5c-40c2-9111-519bb21ea983",
-					"name": "end",
+					"name": "not_after",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -7930,7 +7930,7 @@
 			"cols": [
 				{
 					"id": "75b722df-5fd5-4969-b101-38e68e0d4df8",
-					"name": "begin",
+					"name": "not_before",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -7947,7 +7947,7 @@
 				},
 				{
 					"id": "bf2d5b72-bb7b-4523-bda1-a7a1bce8e2b5",
-					"name": "end",
+					"name": "not_after",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -8115,7 +8115,7 @@
 			"cols": [
 				{
 					"id": "a4aa7935-fb0b-4130-8743-cd02070c0a5a",
-					"name": "begin",
+					"name": "not_before",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -8132,7 +8132,7 @@
 				},
 				{
 					"id": "e3745179-14a6-41c2-87af-d37cbe63f228",
-					"name": "end",
+					"name": "not_after",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -8368,7 +8368,7 @@
 			"cols": [
 				{
 					"id": "4401d747-4dce-471f-83f9-f4ca34f11ccd",
-					"name": "begin",
+					"name": "not_before",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -8385,7 +8385,7 @@
 				},
 				{
 					"id": "d4bd1750-8340-4edf-b487-15965e4473fe",
-					"name": "end",
+					"name": "not_after",
 					"datatype": "date",
 					"param": "",
 					"pk": false,
@@ -9025,7 +9025,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1712796923466,
+		"lastSaved": 1712852930770,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -9055,7 +9055,7 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 2033,
 					"y": 39,
-					"gHeight": 2026,
+					"gHeight": 2044,
 					"gWidth": 287,
 					"color": "#ffffff",
 					"background": "#03a9f4",
