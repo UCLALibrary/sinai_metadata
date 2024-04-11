@@ -15,9 +15,24 @@
             "$comment": "TBD full list of types"
         },
         "iso": {
-            "type": "string",
-            "format": "date",
-            "minLength": 3
+            "type": "object",
+            "properties": {
+                "not_before": {
+                    "type": "string",
+                    "format": "date",
+                    "minLength": 3
+                },
+                "not_after": {
+                    "type": "string",
+                    "format": "date",
+                    "minLength": 3
+                }
+                },
+            "required": [
+                "not_before",
+                "not_after"
+            ],
+            "unevaluatedProperties": false
         },
         "value": {
             "type": "string",

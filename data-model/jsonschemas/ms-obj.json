@@ -27,9 +27,9 @@
                 "properties": {
                     "type": {
                         "enum": [
-                            "shelfmark",
-                            "reconstr"
-                        ]
+                            "shelfmark"
+                        ],
+                        "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
                     },
                     "value": {
                         "type": "string"
