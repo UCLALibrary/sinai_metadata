@@ -48,7 +48,7 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
         },
         "locus": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/extent"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
         },
         "support": {
             "type": "array",
@@ -94,7 +94,7 @@
         "origin": {
 
         },
-        "text_art": {
+        "content_units": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -104,7 +104,7 @@
                     },
                     "type": {
                         "enum": [
-                            "primary",
+                            "core",
                             "secondary"
                         ]
                     },
