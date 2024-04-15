@@ -66,7 +66,10 @@
             "assoc_date": [
                 {
                     "type": "purchase",
-                    "iso": "1564",
+                    "iso": {
+                        "not_before": "1564",
+                        "not_after": "1564"
+                    },
                     "value": "1564 CE",
                     "as_written": "1564",
                     "note": [
@@ -100,7 +103,10 @@
     "assoc_date": [
         {
             "type": "binding",
-            "iso": "1201/1700",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1700"
+            },
             "value": "Between 13th - 17th c. CE",
             "as_written": "Lorem ipsum",
             "note": [{
@@ -135,10 +141,10 @@
         {
             "type": "filiation",
             "label": "Exemplar for Syriac NF M 39",
-            "note": {
+            "note": [{
                 "type": "related_mss",
                 "value": "Syriac 12 was used as an exemplar for Syriac NF M 39"
-            }
+            }]
         ,
             "mss": [
                 {
@@ -163,21 +169,21 @@
             "range": "[50], pg. 152",
             "url": "https://search.worldcat.org/title/101411",
             "alt_shelf": "Lorem ipsum",
-            "note": {
+            "note": [{
                 "type": "bib",
                 "value": "Kamil inadvertently dated this manuscript to the 10th century, not realizing there are two parts."
-            }
+            }]
         },
         {
             "id": "$id-for-LOC",
-            "type": "version",
+            "type": "otherdigversion",
             "range": "Entry: Syriac Manuscripts 12. Lectionary and Gospel of Luke",
             "url": "https://www.loc.gov/item/00279386334-ms/",
             "alt_shelf": "Syriac Manuscripts 12",
-            "note": {
+            "note": [{
                 "type": "bib",
                 "value": "The LOC provides the incorrect date of 7th c. for this manuscript, which is only true of the first part."
-            }
+            }]
         }
     ],
     "cataloguer": [
