@@ -6,18 +6,14 @@
     "type": "object",
     "properties": 
     {
-        "$comment": "Perhaps needs a type to let us know if this is 'average', 'representative', 'max/min', etc.? or maybe just for num_lines?",
         "locus": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
         },
         "columns": {
-            "type": "integer",
-            "minimum": 1
+            "type": "string"
         },
         "num_lines": {
-            "type": "integer",
-            "minimum": 0,
-            "$comment": "Perhaps should be string to allow for expression of a range?"
+            "type": "string"
         },
         "dim": {
             "type": ["array", "null"],
