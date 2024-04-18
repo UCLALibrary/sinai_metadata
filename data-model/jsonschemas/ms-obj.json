@@ -19,27 +19,9 @@
             ]
         },
         "idno": {
-            "description": "An identifier for the manuscript, including shelfmarks or other identifier schemas",
-            "$comment": "Would add to util, but enum may vary by object type",
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "enum": [
-                            "shelfmark"
-                        ],
-                        "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/idno"
             },
             "minItems": 1,
             "unevaluatedItems": false

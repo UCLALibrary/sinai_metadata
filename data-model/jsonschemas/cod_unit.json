@@ -21,25 +21,9 @@
             ]
         },
         "idno": {
-            "description": "An identifier for the codicological unit, according to a given scheme",
-            "$comment": "What enum needed here?",
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "enum": [
-                        ]
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/idno"
             },
             "minItems": 1,
             "unevaluatedItems": false

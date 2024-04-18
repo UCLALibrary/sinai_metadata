@@ -153,6 +153,29 @@
                     "value"
                 ],
                 "unevaluatedProperties": false
+        },
+        "idno": {
+            "description": "An identifier, according to a given scheme",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "shelfmark",
+                        "part_no",
+                        "uto_mark"
+                    ],
+                    "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
+                },
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "type",
+                "value"
+            ],
+            "unevaluatedProperties": false
         }
     }
 }
