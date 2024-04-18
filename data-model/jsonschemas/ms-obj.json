@@ -58,7 +58,6 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dim"
             },
-            "minItems": 1,
             "unevaluatedItems": false
         },
         "state": {
@@ -136,7 +135,8 @@
                     }
                 },
                 "required": [
-                    "repository"
+                    "repository",
+                    "collection"
                 ],
                 "unevaluatedProperties": false
             },
@@ -202,13 +202,7 @@
         "ark",
         "type",
         "idno",
-        "extent",
-        "dim",
-        "state",
-        "form",
-        "cod_units",
-        "has_bind",
-        "location"
+        "cod_units"
     ],
     "unevaluatedProperties": false
 }

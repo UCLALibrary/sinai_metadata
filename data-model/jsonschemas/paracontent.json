@@ -20,23 +20,22 @@
             "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
         },
         "writing": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json"
             },
-            "minItems": 1,
             "unevaluatedItems": false
         },
         "label": {
-            "type": "string",
+            "type": ["string", "null"],
             "minLength": 1
         },
         "transcription": {
-            "type": "string",
+            "type": ["string", "null"],
             "minLength": 1
         },
         "translation": {
-            "type": "string",
+            "type": ["string", "null"],
             "minLength": 1
         },
         "assoc_name": {
@@ -70,8 +69,7 @@
     },
     "required": [
         "type",
-        "locus",
-        "lang"
+        "locus"
     ],
         "unevaluatedProperties": false
 }

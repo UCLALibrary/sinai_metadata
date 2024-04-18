@@ -16,7 +16,8 @@
                 "bib",
                 "version",
                 "edition",
-                "translation"
+                "translation",
+                "otherdigversion"
             ]
         },
         "range": {
@@ -52,6 +53,24 @@
         "id",
         "type"
     ],
-    "$comment": "Possible x-or logic between range and url, and perhaps alt_shelf? I.e., must have at least one",
+    "if": {
+        "properties": {
+            "type": {"const": "otherdigversion"}
+        },
+        "required": ["type"]
+    },
+    "then": {
+        "properties": {
+            "url": {
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "required": [
+            "id",
+            "type",
+            "url"
+        ]
+    },
     "unevaluatedProperties": false
 }

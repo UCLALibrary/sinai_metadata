@@ -14,10 +14,7 @@
                 "$comment": "Likely expand this enum?"
             },
             "label": {
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": "string",
                 "minLength": 1
             },
             "url": {
@@ -28,6 +25,7 @@
         },
         "required": [
             "type",
+            "label",
             "url"
         ],
         "unevaluatedProperties": false

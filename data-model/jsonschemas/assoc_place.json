@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "type": "integer"
+            "type": ["integer", "null"]
         },
         "as_written": {
             "type": [
@@ -19,7 +19,8 @@
             "type": "string",
             "enum": [
                 "origin",
-                "previous_repository"
+                "previous_repository",
+                "not known"
             ]
         },
         "note": {
@@ -31,7 +32,6 @@
         }
     },
     "required": [
-        "id",
         "event"
     ],
     "unevaluatedProperties": false
