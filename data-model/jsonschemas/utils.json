@@ -64,7 +64,7 @@
             "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
         },
         "features": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "type": "string",
                 "enum": [
@@ -153,6 +153,29 @@
                     "value"
                 ],
                 "unevaluatedProperties": false
+        },
+        "idno": {
+            "description": "An identifier, according to a given scheme",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "shelfmark",
+                        "part_no",
+                        "uto_mark"
+                    ],
+                    "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
+                },
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "type",
+                "value"
+            ],
+            "unevaluatedProperties": false
         }
     }
 }

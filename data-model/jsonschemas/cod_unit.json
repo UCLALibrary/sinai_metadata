@@ -11,35 +11,27 @@
         "ark": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
-        "ms_objs": {},
+        "ms_objs": {
+            "description": "The database identifiers for the ms objects that reference this codicological unit record",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
         "type": {
             "description": "The type of codicological unit, e.g. a part, layer, etc.",
             "enum": [
                 "part",
-                "layer",
-                "uto"
+                "uto",
+                "rebind"
             ]
         },
         "idno": {
-            "description": "An identifier for the codicological unit, according to a given scheme",
-            "$comment": "What enum needed here?",
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "enum": [
-                        ]
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/idno"
             },
             "minItems": 1,
             "unevaluatedItems": false
@@ -67,21 +59,21 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/extent"
         },
         "dim": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dim"
             },
-            "minItems": 1,
             "unevaluatedItems": false
-        },
-        "state": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/state"
         },
         "fol": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/fol"
         },
         "coll": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/coll"
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/coll"
+            },
+            "unevaluatedItems": false
         },
         "writing": {
             "type": "array",
@@ -90,9 +82,6 @@
             },
             "minItems": 1,
             "unevaluatedItems": false
-        },
-        "origin": {
-
         },
         "content_units": {
             "type": "array",
@@ -120,6 +109,7 @@
                 ],
                 "unevaluatedProperties": false
             },
+            "minItems": 1,
             "unevaluatedItems": false
         },
         "para": {
@@ -138,7 +128,7 @@
                         "type": "integer"
                     },
                     "type": {
-                        "enum": ["part", "uto", "reconstr"],
+                        "enum": ["part", "uto", "rebind"],
                         "$comment": "For cod_units referenced by other cod_units, the type cannot be the same as that selected for $.type"
                     },
                     "sequence": {
@@ -234,7 +224,7 @@
             "unevaluatedItems": false
         },
         "iiif": {
-            "type": "array",
+            "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/iiif.json"
             },
@@ -244,15 +234,11 @@
     "required": [
         "id",
         "ark",
+        "ms_objs",
         "type",
         "idno",
-        "locus",
         "support",
-        "extent",
-        "dim",
-        "state",
         "writing",
-        "origin",
-        "text_art"
+        "content_units"
     ]
 }
