@@ -407,8 +407,29 @@
 				},
 				{
 					"id": "853399af-f195-4f5a-8aea-7c2956f67cd9",
-					"name": "text_arts",
+					"name": "content_units",
 					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "dec90b24-59ad-4ea5-8577-611dce3a2757",
+					"name": "scripts",
+					"datatype": "text",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -625,7 +646,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1712689194361
+		"lastSaved": 1713557111667
 	},
 	"otherObjects": {},
 	"diagrams": {
