@@ -236,9 +236,6 @@
         "ark",
         "ms_objs",
         "type",
-        "idno",
-        "support",
-        "writing",
-        "content_units"
+        "idno"
     ]
 }
