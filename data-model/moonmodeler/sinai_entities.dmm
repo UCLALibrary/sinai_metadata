@@ -600,6 +600,23 @@
 					"fk": false
 				},
 				{
+					"id": "7eb539a3-4221-4e74-a9bf-5b8818ca8b5b",
+					"name": "assoc_date",
+					"datatype": "ca1d36f4-49dd-4e3f-b693-8f1418abd0a3",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
 					"id": "13f56d34-4b5f-4f74-9d63-4550d6f8a062",
 					"name": "assoc_name",
 					"datatype": "d1566b44-98b7-4ee1-b117-7d39cec08e88",
@@ -632,23 +649,6 @@
 					"pattern": false,
 					"any": "",
 					"estimatedSize": ""
-				},
-				{
-					"id": "7eb539a3-4221-4e74-a9bf-5b8818ca8b5b",
-					"name": "assoc_date",
-					"datatype": "ca1d36f4-49dd-4e3f-b693-8f1418abd0a3",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"any": "",
-					"estimatedSize": "",
-					"fk": false
 				}
 			],
 			"relations": [
@@ -4150,7 +4150,7 @@
 		"def_collation": "",
 		"def_others": "",
 		"writeFileParam": false,
-		"lastSaved": 1716237132673,
+		"lastSaved": 1716237625077,
 		"authorName": "Dawn Childress, William Potter",
 		"companyDetails": "",
 		"companyUrl": "",
@@ -4215,7 +4215,7 @@
 				"e12c1108-4f1c-47b5-8ff9-5f8d7b81134e": {
 					"referencedItemId": "e12c1108-4f1c-47b5-8ff9-5f8d7b81134e",
 					"x": 919,
-					"y": 179,
+					"y": 180,
 					"gHeight": 928,
 					"gWidth": 260,
 					"color": "#ffffff",
