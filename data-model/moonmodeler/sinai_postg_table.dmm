@@ -588,6 +588,173 @@
 				"partition": "",
 				"partitionNames": []
 			}
+		},
+		"f78b74d2-db80-4a13-a0ea-390a40d704fe": {
+			"id": "f78b74d2-db80-4a13-a0ea-390a40d704fe",
+			"visible": true,
+			"name": "scripts",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "68f459ce-d76c-45b0-a100-2281ccf93a07",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "73086f21-2f4f-41a5-ab81-9c26a7352812",
+					"name": "label",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "b4d4fc64-80c3-4177-9d6a-10a4dfa094f9",
+					"name": "writing_system",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "89b82c68-11eb-4899-ae28-b14965990b10",
+					"name": "dates_in_use",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "cadfb065-a232-445e-acee-4ca403061fa7",
+					"name": "geo_scope",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "aa588f9d-c521-4bcd-a875-983babb39eef",
+					"name": "note",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "78cbdf69-0490-444e-9427-ef7620c63358",
+					"name": "scripts_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "4ea70bc2-8dd4-49fc-a0e4-6fce0d421784",
+							"colid": "68f459ce-d76c-45b0-a100-2281ccf93a07"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
 		}
 	},
 	"relations": {},
@@ -646,7 +813,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1713557111667
+		"lastSaved": 1715890425179
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -687,6 +854,19 @@
 					"autoExpand": true,
 					"backgroundOpacity": "10",
 					"collapsed": false
+				},
+				"f78b74d2-db80-4a13-a0ea-390a40d704fe": {
+					"referencedItemId": "f78b74d2-db80-4a13-a0ea-390a40d704fe",
+					"x": 57,
+					"y": 342,
+					"gHeight": 135,
+					"gWidth": 221,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
 				}
 			},
 			"scroll": {
@@ -723,7 +903,8 @@
 	"diagramsOrder": [],
 	"order": [
 		"eb442ee4-a9d9-4a32-a3f7-c4e6d691535f",
-		"2bb46fe6-69e4-4190-83d0-b235087da2ef"
+		"2bb46fe6-69e4-4190-83d0-b235087da2ef",
+		"f78b74d2-db80-4a13-a0ea-390a40d704fe"
 	],
 	"collapsedTreeItems": [],
 	"reverseStats": {}
