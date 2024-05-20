@@ -176,6 +176,53 @@
                 "value"
             ],
             "unevaluatedProperties": false
+        },
+        "alt_title_or_name": {
+            "description": "An alternate title (for Work entities) or name (for Agent or Place entities), including a language code",
+            "type": "object",
+            "properties": {
+                "lang": {
+                    "enum": ["English", "French", "Latin", "Greek", "Syriac", "Arabic"]
+                },
+                "value": {
+                    "type": "string",
+                    "minLeng": 1
+                }
+            },
+            "required": [
+                "lang",
+                "value"
+            ]
+        },
+        "rel_con": {
+            "description": "A related concept to a given entity provided by another authority file. May be connected via a skos:closeMatch property",
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "uri": {
+                    "type": "string",
+                    "format": "uri",
+                    "minLength": 1
+                },
+                "source": {
+                    "type": "string",
+                    "enum": [
+                        "VIAF",
+                        "Syriaca",
+                        "HAF",
+                        "LoC"
+                    ],
+                    "$comment": "Finalize enum"
+                }
+            },
+            "required": [
+                "label",
+                "uri",
+                "source"
+            ]
         }
     }
 }
