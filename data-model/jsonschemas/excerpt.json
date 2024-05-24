@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/excerpt.json",
+    "title": "Excerpt",
+    "description": "An excerpt from a larger work or text, such as the incipit",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "incipit",
+                "explicit",
+                "prologue"
+            ]
+        },
+        "transcription": {
+            "type": "string",
+            "minLength": 1
+        },
+        "translation": {
+            "$comment": "Could reuse the pattern from utils.json for alt_title_or_name though lang enum might vary; possibly rework into generic 'modern', 'ancient', and 'ancient-and-modern' lang/value pattern?",
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "lang": {
+                        "type": "string",
+                        "enum": ["English", "Arabic", "French"]
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "lang",
+                    "value"
+                ]
+            }
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "type",
+        "transcription"
+    ]
+}
