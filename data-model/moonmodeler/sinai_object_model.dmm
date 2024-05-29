@@ -1148,22 +1148,6 @@
 					"fk": false
 				},
 				{
-					"id": "7034c58b-152b-48e2-9143-51f72ace2211",
-					"name": "defective",
-					"datatype": "bool",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": ""
-				},
-				{
 					"id": "a21c339c-3b9d-40bf-be34-78c6524d6982",
 					"name": "features",
 					"datatype": "enum",
@@ -9819,7 +9803,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1716576155309,
+		"lastSaved": 1716579141200,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",

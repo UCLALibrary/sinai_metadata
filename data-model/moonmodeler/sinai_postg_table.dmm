@@ -755,6 +755,244 @@
 				"partition": "",
 				"partitionNames": []
 			}
+		},
+		"278b610b-889c-410b-8b92-40483a2c231f": {
+			"id": "278b610b-889c-410b-8b92-40483a2c231f",
+			"visible": true,
+			"name": "content_units",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "b8ab9c99-918c-4917-8e03-8f8b52cdc2a7",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "c84b9f90-9fec-4488-85eb-2eaf8265f74e",
+					"name": "content_unit_json",
+					"datatype": "jsonb",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "d48ea108-47de-4758-8713-94336f93f247",
+					"name": "ark",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "82595a7b-8023-47d0-b01c-5cf83badd492",
+					"name": "cod_unit_type",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "9ee65861-64df-47b5-98ab-f7fe8e001058",
+					"name": "langs",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "f427af2e-4996-4813-b92c-4b05ebb77746",
+					"name": "works",
+					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "8de056e4-d285-4524-823d-481bdba262f8",
+					"name": "assoc_names",
+					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "069f79aa-28e7-4564-962e-60297c035d0b",
+					"name": "assoc_places",
+					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "e42fec6c-6ac4-47a0-9bb0-8e863644d057",
+					"name": "features",
+					"datatype": "record",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b8b9614e-8552-4afa-b5ae-6096e4b0f410",
+					"name": "content_units_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "d35d6d4a-dcc2-4fbf-b98f-d1d6e688c0c2",
+							"colid": "b8ab9c99-918c-4917-8e03-8f8b52cdc2a7"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
 		}
 	},
 	"relations": {},
@@ -813,7 +1051,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1715890425179
+		"lastSaved": 1716229081839
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -867,6 +1105,19 @@
 					"autoExpand": true,
 					"backgroundOpacity": "10",
 					"collapsed": false
+				},
+				"278b610b-889c-410b-8b92-40483a2c231f": {
+					"referencedItemId": "278b610b-889c-410b-8b92-40483a2c231f",
+					"x": 631,
+					"y": 31,
+					"gHeight": 264,
+					"gWidth": 269,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
 				}
 			},
 			"scroll": {
@@ -903,6 +1154,7 @@
 	"diagramsOrder": [],
 	"order": [
 		"eb442ee4-a9d9-4a32-a3f7-c4e6d691535f",
+		"278b610b-889c-410b-8b92-40483a2c231f",
 		"2bb46fe6-69e4-4190-83d0-b235087da2ef",
 		"f78b74d2-db80-4a13-a0ea-390a40d704fe"
 	],
