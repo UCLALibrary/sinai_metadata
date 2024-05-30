@@ -192,7 +192,8 @@
             "required": [
                 "lang",
                 "value"
-            ]
+            ],
+            "unevaluatedProperties": false
         },
         "rel_con": {
             "description": "A related concept to a given entity provided by another authority file. May be connected via a skos:closeMatch property",
@@ -222,7 +223,32 @@
                 "label",
                 "uri",
                 "source"
-            ]
+            ],
+            "unevaluatedProperties": false
+        },
+        "contents": {
+            "description": "A list of the contents, such as the chapter or book divisions, of a work witness",
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "work_id": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+                },
+                "locus": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+                },
+                "sequence": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "label",
+                "sequence"
+            ],
+            "unevaluatedProperties": false
         }
     }
 }
