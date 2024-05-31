@@ -1,0 +1,105 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/content_unit.json",
+    "title": "Content Unit",
+    "description": "A Content Unit defines a piece or pieces of content presented in a given manuscript in a unified form; may contain one or more work witnesses (REVISE)",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        },
+        "ark": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+        },
+        "cod_units": {
+            "description": "The database identifiers for the codicological units that reference this content unit record",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "type": {
+            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
+            "enum": [
+                "core",
+                "guest"
+            ]
+        },
+        "summary": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
+        },
+        "locus": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+        },
+        "lang": {
+            "enum": [
+                "Arabic",
+                "Armenian",
+                "Caucasian Albanian",
+                "Church Slavonic",
+                "CPA",
+                "Ethiopic",
+                "Georgian",
+                "Greek",
+                "Latin",
+                "Syriac",
+                "Turkish"
+            ]
+        },
+        "work_wit": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/work_witness.json"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "para": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/paracontent.json"
+            },
+            "unevaluatedItems": false
+        },
+        "features": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/features"
+        },
+        "note": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+            },
+            "unevaluatedItems": false
+        },
+        "bib": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/bib.json"
+            },
+            "unevaluatedItems": false
+        },
+        "cataloguer": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/cataloguer"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "id",
+        "ark",
+        "cod_units",
+        "type",
+        "work_wit"
+    ],
+    "unevaluatedProperties": false
+}

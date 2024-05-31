@@ -1,0 +1,109 @@
+{
+    "id": "$locally-generated-id",
+    "type": "mountain",
+    "pref_name": "Mount Sinai",
+    "alt_name": [
+    {
+        "lang": "English",
+        "value": "Sinai"
+    },
+    {
+        "lang": "Syriac",
+        "value": "ܛܘܪܐ ܕܣܝܢܝ"
+    }
+    ],
+    "desc": "A mountain in the Sinai Peninsula.",
+    "rel_con": [
+        {
+            "label": "Mount Sinai",
+            "uri": "http://syriaca.org/place/563",
+            "source": "Syriaca"
+        },
+        {
+            "label": "Syna M.",
+            "uri": "https://pleiades.stoa.org/places/746815",
+            "source": "Pleiades"
+        },
+        {
+            "label": "Sinai, Mount",
+            "uri": "https://w3id.org/haf/place/445637422551",
+            "source": "HAF"
+        },
+        {
+            "label": "Mūsá, Jabal (mountain) ",
+            "uri": "http://vocab.getty.edu/page/tgn/7001247",
+            "source": "TGN"
+        },
+        {
+            "label": "Sinai, Mount (Egypt)",
+            "uri": "http://viaf.org/viaf/315149342",
+            "source": "VIAF"
+        }
+    ],
+    "bib": [
+        {
+            "id": "$id-for-Barsoum-Scattered-Perals",
+            "type": "bibl",
+            "range": "p. 567",
+            "note": [
+                {
+                    "type": "bib",
+                    "value": "A note about this bibliography item"
+                }
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": "admin",
+            "value": "Add contained-within relationship to the Sinai Peninsula"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": "inhabitation",
+            "iso": {
+                "notBefore": "0575",
+                "notAfter": "2024"
+            },
+            "value": "from the 6th century onward",
+            "note": [
+                {
+                    "type": "assoc_date",
+                    "value": "The region around the mountain has been continuously inhabited by the monks of St. Catherine, as well as people in surrounding villages, since the 6th c. CE"
+                }
+            ]
+        }
+    ],
+    "assoc_name": [
+        {
+            "id": "id-for-an-assoc-name",
+            "role": "birthPlaceOf",
+            "note": [
+                {
+                    "type": "assoc_name",
+                    "value": "A note about the person association. Note that thi is example data; these kinds of relations would likely be made instead from the person to the associated place record"
+                }
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "id": "id-for-Egypt",
+            "event": "partOf",
+            "note": [
+                {
+                    "type": "assoc_place",
+                    "value": "Mount Sinai is located within the Sinai penninsula, which is part of the modern state of Egypt"
+                }
+            ]
+        }
+    ],
+    "cataloguer": [
+        {
+            "id": "$id-for-Will",
+            "timestamp": "2024-05-21T15:27:32.728Z",
+            "comment": "Created record and added metadata"
+        }
+    ]
+}
