@@ -13,7 +13,10 @@
                 "prologue"
             ]
         },
-        "transcription": {
+        "locus": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+        },
+        "as_written": {
             "type": "string",
             "minLength": 1
         },
