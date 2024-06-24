@@ -16,8 +16,24 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
         },
         "lang": {
-            "type": "string",
-            "$comment": "Should point to a record in the languages table. Perhaps use format validation for a uuid?"
+            "type": "array",
+            "items": {
+                "enum": [
+                    "Arabic",
+                    "Armenian",
+                    "Caucasian Albanian",
+                    "Church Slavonic",
+                    "CPA",
+                    "Ethiopic",
+                    "Georgian",
+                    "Greek",
+                    "Latin",
+                    "Syriac",
+                    "Turkish"
+                ]
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
         },
         "writing": {
             "type": ["array", "null"],

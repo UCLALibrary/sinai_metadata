@@ -37,7 +37,9 @@
         {
             "type": "endowment",
             "locus": "F. 1v",
-            "lang": "Arabic",
+            "lang": [
+                "Arabic"
+            ],
             "label": "Waqf Note",
             "transcription": "وقف الكتاب",
             "translation": "The book is endowed",

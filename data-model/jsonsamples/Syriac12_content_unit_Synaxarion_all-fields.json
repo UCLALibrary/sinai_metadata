@@ -112,7 +112,9 @@
         {
             "type": "rubric",
             "locus": "f. 3r",
-            "lang": "Syriac",
+            "lang": [
+                "Syriac"
+            ],
             "writing": [
             ],
             "label": "Rubric for the Synaxarion",
