@@ -46,13 +46,16 @@
             "type": ["string", "null"],
             "minLength": 1
         },
-        "transcription": {
+        "as_written": {
             "type": ["string", "null"],
             "minLength": 1
         },
         "translation": {
-            "type": ["string", "null"],
-            "minLength": 1
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/translation"
+            },
+            "unevaluatedItems": false
         },
         "assoc_name": {
             "type": ["array", "null"],

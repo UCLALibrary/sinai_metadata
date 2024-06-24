@@ -21,25 +21,11 @@
             "minLength": 1
         },
         "translation": {
-            "$comment": "Could reuse the pattern from utils.json for alt_title_or_name though lang enum might vary; possibly rework into generic 'modern', 'ancient', and 'ancient-and-modern' lang/value pattern?",
             "type": ["array", "null"],
             "items": {
-                "type": "object",
-                "properties": {
-                    "lang": {
-                        "type": "string",
-                        "enum": ["English", "Arabic", "French"]
-                    },
-                    "value": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
-                "required": [
-                    "lang",
-                    "value"
-                ]
-            }
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/translation"
+            },
+            "unevaluatedItems": false
         },
         "note": {
             "type": ["array", "null"],
@@ -51,6 +37,6 @@
     },
     "required": [
         "type",
-        "transcription"
+        "as_written"
     ]
 }

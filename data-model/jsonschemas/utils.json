@@ -256,6 +256,22 @@
                 "sequence"
             ],
             "unevaluatedProperties": false
+        },
+        "translation": {
+            "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
+            "properties": {
+                "lang": {
+                    "enum": ["English", "French", "Latin", "Greek", "Syriac", "Arabic"]
+                },
+                "value": {
+                    "type": "string",
+                    "minLeng": 1
+                }
+            },
+            "required": [
+                "lang",
+                "value"
+            ]
         }
     }
 }
