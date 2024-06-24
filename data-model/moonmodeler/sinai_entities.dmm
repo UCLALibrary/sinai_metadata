@@ -2149,7 +2149,7 @@
 				},
 				{
 					"id": "c44f19f7-ec63-4911-8290-f607c9865269",
-					"name": "transcription",
+					"name": "as_written",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -4150,7 +4150,7 @@
 		"def_collation": "",
 		"def_others": "",
 		"writeFileParam": false,
-		"lastSaved": 1716237625077,
+		"lastSaved": 1716238129657,
 		"authorName": "Dawn Childress, William Potter",
 		"companyDetails": "",
 		"companyUrl": "",
