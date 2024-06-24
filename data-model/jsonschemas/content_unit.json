@@ -23,8 +23,8 @@
         "type": {
             "description": "The type of manuscript object, whether real or hypothetical reconstructions",
             "enum": [
-                "core",
-                "guest"
+                "shelf",
+                "rebind"
             ]
         },
         "summary": {
