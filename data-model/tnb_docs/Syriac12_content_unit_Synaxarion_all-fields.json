@@ -1,0 +1,161 @@
+{
+    "id": "$locally-generated-id",
+    "ark": "ark://21198/z1t99999",
+    "cod_units": [
+        "ark:/21198/z1999999"
+    ],
+    "type": "shelf",
+    "summary": "Synaxarion, Gospel Lectionary for the moveable feast days according to the Byzantine rite.",
+    "locus": "ff. 3r-54v",
+    "lang": [
+        "Syriac"
+    ],
+    "work_wit": [
+        {
+            "work_id": "$local-id-for-Synaxarion",
+            "label": "Synaxarion (Gospel Lectionary for the movable feast days according to the Byzantine rite)",
+            "as_written": "ܣܘܢܟܣܪܝܢ ܕܫܢܬܐ ܟܠܗ̇ ܐܝܟ ܛܟܣܐ ܕܝܘ̈ܢܝܐ",
+            "sequence": 1,
+            "locus": "ff. 3r-54v",
+            "excerpt": [
+                {
+                    "type": "incipit",
+                    "locus": "f. 3r",
+                    "as_written": "ܩܕܡܝܐܝܬ ܚܕܒܫ‍(‍ܒܐ) ܪܒܐ ܕܦܨܚܐ ܣܒܪܬܐ ܒܟܘܗܢܐ ܡܢ ܝܘܚܢܢ ܒܪܫܝܬ ܐܝܬܘܗܝ ܗܘܐ ܡܠܬܐ",
+                    "translation": [
+                        {
+                            "lang": "English",
+                            "value": "First, The Great Sunday of Easter. The Gospel, [read by] the Priest from John, 'In the beginning was the Word...'"
+                        }
+                    ],
+                    "note": [
+                        {
+                            "type": "excerpt",
+                            "value": "John 1:1"
+                        }
+                    ]
+                }
+            ],
+            "contents": [
+                {
+                    "label": "Easter",
+                     "work_id": "$local-id-for-services-for-easter",
+                    "locus": "ff. 3r-4r",
+                    "sequence": 1,
+                    "note": [
+                        {
+                            "type": "admin",
+                            "value": "This would not have a work record, demo purposes only"
+                        }
+                    ]
+                },
+                {
+                    "label": "1st Week after Easter",
+                    "locus": "ff. 4r-5r",
+                    "sequence": 2,
+                    "note": [
+                        {
+                            "type": "admin",
+                            "value": "This would not have a work record, demo purposes only"
+                        }
+                    ]
+                },
+                {
+                    "label": "2nd Week after Easter",
+                    "locus": "ff. 5r-7v",
+                    "sequence": 3,
+                    "note": [
+                        {
+                            "type": "contents",
+                            "value": "Sunday, f. 5r; Saturday, f. 6r"
+                        }
+                    ]
+                }
+            ],
+            "assoc_name": [
+                {
+                    "id": "John the Evangelist",
+                    "as_written": "ܝܘܚܢܢ",
+                    "role": "attributed-author",
+                    "note": [
+                        {
+                            "type": "assoc_name",
+                            "value": "Data for test purposes only, this manuscript is not attributing authorship to John."
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "contents",
+                    "value": "Services from Easter through the 1st Week after the Feast of the Cross."
+                }
+            ],
+            "bib": [
+                {
+                    "id": "$local-id-for-an-edition",
+                    "type": "translation",
+                    "range": "pp. 53-157",
+                    "alt_shelf": null,
+                    "url": "VALUE",
+                    "note": [
+                        {
+                            "type": "bib",
+                            "value": "This manuscript was used as the source for a translation produced by the Syrian Orthodox Patriarchate."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "para": [
+        {
+            "type": "rubric",
+            "locus": "f. 3r",
+            "lang": [
+                "Syriac"
+            ],
+            "writing": [
+            ],
+            "label": "Rubric for the Synaxarion",
+            "as_written": "ܒܫܡܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܆ ܟܬܒܝܢܢ ܣܘܢܟܣܪܝܢ ܕܫܢܬܐ ܟܠܗ̇ ܐܝܟ ܛܟܣܐ ܕܝܘ̈ܢܝܐ",
+            "translation": [
+                {
+                    "lang": "English",
+                    "value": "In the name of the Holy Trinity we write the Synaxarion for the whole year according to the rite of the Greeks"
+                }
+            ]
+        }
+    ],
+    "features": [
+        "Headpiece(s)"
+    ],
+    "note": [
+        {
+            "type": "condition",
+            "value": "Imperfect at the end."
+        }
+    ],
+    "bib": [
+        {
+            "id": "$local-id-for-an-edition",
+            "type": "translation",
+            "range": "pp. 53-157",
+            "alt_shelf": null,
+            "url": "VALUE",
+            "note": [
+                {
+                    "type": "bib",
+                    "value": "This manuscript was used as the source for a translation produced by the Syrian Orthodox Patriarchate."
+                }
+            ]
+        }
+    ],
+    "cataloguer": [
+        {
+            "id": "$id-for-Grigory",
+            "timestamp": "2024-06-20T13:27:32.728Z",
+            "comment": "Created record and added metadata"
+        }
+    ]
+}
