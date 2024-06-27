@@ -36,19 +36,7 @@
         "lang": {
             "type": "array",
             "items": {
-                "enum": [
-                    "Arabic",
-                    "Armenian",
-                    "Caucasian Albanian",
-                    "Church Slavonic",
-                    "CPA",
-                    "Ethiopic",
-                    "Georgian",
-                    "Greek",
-                    "Latin",
-                    "Syriac",
-                    "Turkish"
-                ]
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
             },
             "minItems": 1,
             "unevaluatedItems": false

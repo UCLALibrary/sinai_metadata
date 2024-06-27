@@ -14,14 +14,7 @@
             "$comment": "Possibly rename as pref_name; add to util.json"
         },
         "orig_lang": {
-            "enum": [
-                "Greek",
-                "Syriac",
-                "Arabic",
-                "Latin",
-                null
-            ],
-            "$comment": "Finalize enum"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
         },
         "orig_lang_title": {
             "type": [

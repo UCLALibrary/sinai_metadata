@@ -1,0 +1,72 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json",
+    "title": "Utilities",
+    "description": "A collection of sub-schemas containing the controlled vocabularies and enumerated value lists for the Sinai Manuscripts Data Portal",
+    "type": "null",
+    "$defs": {
+        "dimension_types": {
+            "enum": [
+                "ms_block",
+                "folio",
+                "av_folio",
+                "writing_area",
+                "margins"
+            ]
+        },
+        "idno_types": {
+            "enum": [
+                "shelfmark",
+                "part_no",
+                "uto_mark"
+            ],
+            "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
+        },
+        "langs_all": {
+            "description": "All names available in the Sinai Manuscripts Data Portal, both ancient and modern",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/langs_ancient"
+                },
+                {
+                    "$ref": "#/$defs/langs_modern"
+                }
+            ]
+        },
+        "langs_ancient": {
+            "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
+            "enum": [
+                "Arabic",
+                "Armenian",
+                "Caucasian Albanian",
+                "Church Slavonic",
+                "CPA",
+                "Ethiopic",
+                "Georgian",
+                "Greek",
+                "Latin",
+                "Syriac",
+                "Turkish"
+            ]
+        },
+        "langs_modern": {
+            "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
+            "enum": [
+                "Arabic",
+                "English", 
+                "French", 
+                "German",
+                "Greek"
+            ]
+        },
+        "rel_con_source_types": {
+            "enum": [
+                "VIAF",
+                "Syriaca",
+                "HAF",
+                "LoC"
+            ],
+            "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+        }
+    }
+}
