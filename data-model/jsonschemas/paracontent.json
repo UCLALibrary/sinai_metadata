@@ -6,12 +6,7 @@
     "type": "object",
     "properties": {
         "type": {
-            "type": "string",
-            "enum": [
-                "endowment",
-                "rubric"
-            ],
-            "$comment": "Initial enum for paracontent needed"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/paracontent_types"
         },
         "locus": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"

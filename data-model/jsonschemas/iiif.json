@@ -6,11 +6,7 @@
     "type": "object",
     "properties": {
         "type": {
-            "type": "string",
-            "enum": [
-                "main",
-                "reordered"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/iiif_types"
         },
         "manifest": {
             "type": "string",
@@ -18,18 +14,10 @@
             "minLength": 1
         },
         "text_direction": {
-            "type": "string",
-            "enum": [
-                "right-to-left",
-                null
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/iiif_text_directions"
         },
         "behavior": {
-            "type": "string",
-            "enum": [
-                "paged",
-                "individuals"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/iiif_behaviors"
         },
         "thumbnail": {
             "type": [

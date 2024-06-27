@@ -5,6 +5,66 @@
     "description": "A collection of sub-schemas containing the controlled vocabularies and enumerated value lists for the Sinai Manuscripts Data Portal",
     "type": "null",
     "$defs": {
+        "agent_types": {
+            "enum": [
+                "individual",
+                "organization"
+            ]
+        },
+        "assoc_date_types": {
+            "enum": [
+                "creation",
+                "binding",
+                "purchase",
+                "other"
+            ],
+            "$comment": "TBD full list of types"
+        },
+        "assoc_name_roles": {
+            "type": "string",
+            "enum": [
+                "attributed-author",
+                "creator",
+                "binder",
+                "owner",
+                "not known"
+            ]
+        },
+        "assoc_place_events": {
+            "type": "string",
+            "enum": [
+                "origin",
+                "previous_repository",
+                "not known"
+            ]
+        },
+        "bib_types": {
+            "type": "string",
+            "enum": [
+                "ref",
+                "bib",
+                "version",
+                "edition",
+                "translation",
+                "otherdigversion"
+            ]
+        },
+        "cod_unit_types": {
+            "description": "The type of codicological unit, e.g. a part, layer, etc.",
+            "enum": [
+                "part",
+                "uto",
+                "rebind"
+            ]
+        },
+        "content_unit_types": {
+            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
+            "enum": [
+                "shelf",
+                "rebind"
+            ],
+            "$comment": "Is this the same set as #/$defs/ms_obj_types?"
+        },
         "dimension_types": {
             "enum": [
                 "ms_block",
@@ -12,6 +72,14 @@
                 "av_folio",
                 "writing_area",
                 "margins"
+            ]
+        },
+        "excerpt_types": {
+            "type": "string",
+            "enum": [
+                "incipit",
+                "explicit",
+                "prologue"
             ]
         },
         "features": {
@@ -35,6 +103,25 @@
             ],
             "$comment": "This enum is reused and expanded in #/$defs/states"
         },
+        "genders": {
+            "enum": [
+                "female",
+                "male"
+            ],
+            "$comment": "Finalize enum"
+        },
+        "genres": {
+            "description": "The genre of the work record",
+            "type": ["array", "null"],
+            "item": {
+                "enum": [
+                    "Account books",
+                    "Apophthegmata",
+                    "Biblical texts"
+                ]
+            },
+            "unevaluatedItems": false
+        },
         "idno_types": {
             "enum": [
                 "shelfmark",
@@ -42,6 +129,27 @@
                 "uto_mark"
             ],
             "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
+        },
+        "iiif_types": {
+            "type": "string",
+            "enum": [
+                "main",
+                "reordered"
+            ]
+        },
+        "iiif_text_directions": {
+            "type": "string",
+            "enum": [
+                "right-to-left",
+                null
+            ]
+        },
+        "iiif_behaviors": {
+            "type": "string",
+            "enum": [
+                "paged",
+                "individuals"
+            ]
         },
         "langs_all": {
             "description": "All names available in the Sinai Manuscripts Data Portal, both ancient and modern",
@@ -80,6 +188,53 @@
                 "Greek"
             ]
         },
+        "ms_obj_types": {
+            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
+            "enum": [
+                "shelf",
+                "rebind"
+            ],
+            "$comment": "Is this the same set as #/$defs/cod_unit_types and #/$defs/content_unit_types?"
+        },
+        "note_types": {
+            "type": "string",
+            "enum": [
+                "admin",
+                "assoc_date",
+                "assoc_name",
+                "assoc_place",
+                "bib",
+                "binding",
+                "cataloguer",
+                "collation",
+                "condition",
+                "contents",
+                "excerpt",
+                "foliation",
+                "general",
+                "ornamentation",
+                "paratext",
+                "provenance",
+                "related_mss"
+            ]
+        },
+        "paracontent_types": {
+            "type": "string",
+            "enum": [
+                "endowment",
+                "rubric"
+            ],
+            "$comment": "Initial enum for paracontent needed | Also considerations of 'para' vs 'guest' in same field?"
+        },
+        "place_types": {
+            "enum": [
+                "settlement",
+                "region",
+                "building",
+                "river"
+            ],
+            "$comment": "Fill out enum with Pleiades or Syriaca place types"
+        },
         "rel_con_source_types": {
             "enum": [
                 "HAF",
@@ -88,6 +243,13 @@
                 "VIAF"
             ],
             "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+        },
+        "related_mss_types": {
+            "type": "string",
+            "enum": [
+                "filiation",
+                "disjecta"
+            ]
         },
         "scripts": {
             "description": "Term list categorizing the writing system and script used in a given instance of writing",
@@ -115,6 +277,22 @@
                 }
             ],
             "$comment": "State allows the same enumerated value list as #/$defs/forms with the addition of Undertext object"
+        },
+        "supports": {
+            "enum": [
+                "Paper",
+                "Papyrus",
+                "Parchment"
+            ],
+            "$comment": "Should these point to a record rather than being enum strings?"
+        },
+        "viscodex_types": {
+            "type": "string",
+                "enum": [
+                    "ms_obj",
+                    "reconstruction"
+                ],
+                "$comment": "Likely expand this enum?"
         }
     }
 }

@@ -16,14 +16,7 @@
             "minLength": 1
         },
         "role": {
-            "type": "string",
-            "enum": [
-                "attributed-author",
-                "creator",
-                "binder",
-                "owner",
-                "not known"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/assoc_name_roles"
         },
         "note": {
             "type": ["array", "null"],

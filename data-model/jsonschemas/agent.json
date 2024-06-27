@@ -9,10 +9,7 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
         },
         "type": {
-            "enum": [
-                "individual",
-                "organization"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/agent_types"
         },
         "pref_name": {
             "type": "string",
@@ -29,11 +26,7 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
         },
         "gender": {
-            "enum": [
-                "female",
-                "male"
-            ],
-            "$comment": "Finalize enum"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/genders"
         },
         "rel_con": {
             "type": ["array", "null"],
