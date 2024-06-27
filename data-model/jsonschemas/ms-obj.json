@@ -115,12 +115,7 @@
                         "type": "integer"
                     },
                     "collection": {
-                        "type": "string",
-                        "enum": [
-                            "Old Collection",
-                            "New Finds",
-                            "Reconstructions"
-                        ]
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/collections"
                     }
                 },
                 "required": [

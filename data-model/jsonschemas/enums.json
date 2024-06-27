@@ -57,6 +57,14 @@
                 "rebind"
             ]
         },
+        "collections": {
+            "type": "string",
+            "enum": [
+                "Old Collection",
+                "New Finds",
+                "Reconstructions"
+            ]
+        },
         "content_unit_types": {
             "description": "The type of manuscript object, whether real or hypothetical reconstructions",
             "enum": [
