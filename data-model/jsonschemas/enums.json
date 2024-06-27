@@ -33,7 +33,7 @@
                 "Scroll",
                 null
             ],
-            "$comment": "This enum is reused and expanded in #/$defs/state"
+            "$comment": "This enum is reused and expanded in #/$defs/states"
         },
         "idno_types": {
             "enum": [
@@ -108,13 +108,13 @@
             "description": "The current state of the manuscript object",
             "anyOf": [
                 {
-                    "$ref": "#/$defs/form"
+                    "$ref": "#/$defs/forms"
                 },
                 {
                     "enum": ["Undertext object"]
                 }
             ],
-            "$comment": "State allows the same enumerated value list as #/$defs/form with the addition of Undertext object"
+            "$comment": "State allows the same enumerated value list as #/$defs/forms with the addition of Undertext object"
         }
     }
 }
