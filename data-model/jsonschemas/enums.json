@@ -14,6 +14,27 @@
                 "margins"
             ]
         },
+        "features": {
+            "enum": [
+                "Dated",
+                "Colophon",
+                "Inscription(s)",
+                null
+            ],
+            "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
+        },
+        "forms": {
+            "description": "The original form of the manuscript object",
+            "enum": [
+                "Bifolim",
+                "Codex",
+                "Folium",
+                "Quire(s)",
+                "Scroll",
+                null
+            ],
+            "$comment": "This enum is reused and expanded in #/$defs/state"
+        },
         "idno_types": {
             "enum": [
                 "shelfmark",
@@ -61,12 +82,39 @@
         },
         "rel_con_source_types": {
             "enum": [
-                "VIAF",
-                "Syriaca",
                 "HAF",
-                "LoC"
+                "LoC",
+                "Syriaca",
+                "VIAF"
             ],
             "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+        },
+        "scripts": {
+            "description": "Term list categorizing the writing system and script used in a given instance of writing",
+            "enum": [
+                "Christian Palestinian Aramaic",
+                "East Syriac",
+                "Estrangela",
+                "Greek minuscule",
+                "Kufic",
+                "Naskh",
+                "Perlschrift",
+                "Serto",
+                "Thuluth"
+            ],
+            "$comment": "enum not complete. Will eventually be references to script records"
+        },
+        "states": {
+            "description": "The current state of the manuscript object",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/form"
+                },
+                {
+                    "enum": ["Undertext object"]
+                }
+            ],
+            "$comment": "State allows the same enumerated value list as #/$defs/form with the addition of Undertext object"
         }
     }
 }
