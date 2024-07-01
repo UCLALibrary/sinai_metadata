@@ -15,19 +15,24 @@
             "enum": [
                 "creation",
                 "binding",
+                "origin",
                 "purchase",
-                "other"
+                "birth",
+                "death",
+                "floruit",
+                "unknown"
             ],
             "$comment": "TBD full list of types"
         },
         "assoc_name_roles": {
             "type": "string",
             "enum": [
+                "author",
                 "attributed-author",
                 "creator",
                 "binder",
                 "owner",
-                "not known"
+                "unknown"
             ]
         },
         "assoc_place_events": {
@@ -35,18 +40,18 @@
             "enum": [
                 "origin",
                 "previous_repository",
-                "not known"
+                "unknown"
             ]
         },
         "bib_types": {
             "type": "string",
             "enum": [
-                "ref",
-                "bib",
-                "version",
+                "cite",
                 "edition",
-                "translation",
-                "otherdigversion"
+                "otherdigversion",
+                "ref",
+                "refno",
+                "translation"
             ]
         },
         "cod_unit_types": {
@@ -92,9 +97,39 @@
         },
         "features": {
             "enum": [
-                "Dated",
+                "Border(s)",
+                "Border(s), Decorative",
+                "Calligraphic Practice",
+                "Catchwords",
                 "Colophon",
+                "Dated",
+                "Decoration, Anthropomorphic",
+                "Decoration, Architectural",
+                "Decoration, Calligraphic",
+                "Decoration, Full-page",
+                "Decoration, Geometric",
+                "Decoration, Vegetative",
+                "Decoration, Zoomorphic",
+                "Fragment",
+                "Headpiece(s)",
+                "Illumination(s)",
+                "Illustration(s)",
+                "Initial(s), Anthropomorphic",
+                "Initial(s), Decorated",
+                "Initial(s), Gymnastic",
+                "Initial(s), Historiated",
+                "Initial(s), Inhabited",
+                "Initial(s), Zoomorphic",
                 "Inscription(s)",
+                "Miniature(s)",
+                "Multispectral Imaging",
+                "Music notation",
+                "Palimpsest",
+                "Parallel text",
+                "Signatures",
+                "Table(s)",
+                "Table(s) of Contents",
+                "Unidentified text",
                 null
             ],
             "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
@@ -124,8 +159,29 @@
             "item": {
                 "enum": [
                     "Account books",
+                    "Apocrypha",
                     "Apophthegmata",
-                    "Biblical texts"
+                    "Biblical texts",
+                    "Blessings",
+                    "Calendars",
+                    "Canon law",
+                    "Charters",
+                    "Commentaries",
+                    "Dictionaries",
+                    "Gospel books",
+                    "Hagiographies",
+                    "Historical works",
+                    "Hymnals",
+                    "Lectionaries",
+                    "Liturgical texts",
+                    "Martyrologies",
+                    "Mimars",
+                    "Philosophical works",
+                    "Poetry",
+                    "Prayers",
+                    "Scientific works",
+                    "Sermons",
+                    "Theological works"
                 ]
             },
             "unevaluatedItems": false
@@ -149,6 +205,8 @@
             "type": "string",
             "enum": [
                 "right-to-left",
+                "top-to-bottom",
+                "bottom-to-top",
                 null
             ]
         },
@@ -177,6 +235,7 @@
                 "Armenian",
                 "Caucasian Albanian",
                 "Church Slavonic",
+                "Coptic",
                 "CPA",
                 "Ethiopic",
                 "Georgian",
@@ -214,16 +273,20 @@
                 "bib",
                 "binding",
                 "cataloguer",
-                "collation",
+                "coll",
                 "condition",
                 "contents",
                 "excerpt",
                 "foliation",
                 "general",
+                "layout",
                 "ornamentation",
-                "paratext",
+                "para",
                 "provenance",
-                "related_mss"
+                "rel_work",
+                "related_mss",
+                "support",
+                "writing"
             ]
         },
         "paracontent_types": {
@@ -236,17 +299,39 @@
         },
         "place_types": {
             "enum": [
-                "settlement",
-                "region",
                 "building",
-                "river"
+                "church",
+                "composite",
+                "designated-space",
+                "diocese",
+                "fortification",
+                "island",
+                "madrasa",
+                "monastery",
+                "mosque",
+                "mountain",
+                "natural feature",
+                "open-water",
+                "parish",
+                "province",
+                "quarter",
+                "region",
+                "river",
+                "settlement",
+                "state",
+                "synagogue",
+                "temple",
+                "unknown"
             ],
-            "$comment": "Fill out enum with Pleiades or Syriaca place types"
+            "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
         },
         "rel_con_source_types": {
             "enum": [
                 "HAF",
                 "LoC",
+                "Perseus",
+                "Pinakes",
+                "Pleiades",
                 "Syriaca",
                 "VIAF"
             ],
@@ -262,12 +347,26 @@
         "scripts": {
             "description": "Term list categorizing the writing system and script used in a given instance of writing",
             "enum": [
+                "Asomtavruli",
+                "Carolingian majuscule",
+                "Carolingian minuscule",
                 "Christian Palestinian Aramaic",
                 "East Syriac",
+                "Erkatagir",
                 "Estrangela",
+                "Geʽez abjad",
+                "Geʽez abugida",
+                "Glagolitic",
+                "Greek majuscule",
                 "Greek minuscule",
+                "Khutsuri",
                 "Kufic",
+                "Melkite",
+                "Minuscule bouclée",
+                "Mkhedruli",
                 "Naskh",
+                "Nastaliq",
+                "Nuskhurimt",
                 "Perlschrift",
                 "Serto",
                 "Thuluth"
