@@ -21,12 +21,7 @@
             "unevaluatedItems": false
         },
         "type": {
-            "description": "The type of codicological unit, e.g. a part, layer, etc.",
-            "enum": [
-                "part",
-                "uto",
-                "rebind"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/cod_unit_types"
         },
         "idno": {
             "type": "array",
@@ -45,12 +40,7 @@
         "support": {
             "type": "array",
             "items": {
-                "enum": [
-                    "Paper",
-                    "Papyrus",
-                    "Parchment"
-                ],
-                "$comment": "Should these point to a record rather than being enum strings?"
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/supports"
             },
             "minItems": 1,
             "unevaluatedItems": false
@@ -174,7 +164,11 @@
             "unevaluatedItems": false
         },
         "features": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/features"
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/features"
+            },
+            "unevaluatedItems": false
         },
         "note": {
             "type": ["array", "null"],

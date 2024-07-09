@@ -37,10 +37,17 @@
         {
             "type": "endowment",
             "locus": "F. 1v",
-            "lang": "Arabic",
+            "lang": [
+                "Arabic"
+            ],
             "label": "Waqf Note",
-            "transcription": "وقف الكتاب",
-            "translation": "The book is endowed",
+            "as_written": "وقف الكتاب",
+            "translation": [
+                {
+                    "lang": "English",
+                    "value": "The book is endowed"
+                }
+            ],
             "assoc_name": [
                 {
                     "id": "$id-for-person-record",

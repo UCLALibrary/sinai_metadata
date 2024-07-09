@@ -6,11 +6,7 @@
     "type": "object",
     "properties": {
         "type": {
-            "type": "string",
-            "enum": [
-                "filiation",
-                "disjecta"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/related_mss_types"
         },
         "label": {
             "type": "string",

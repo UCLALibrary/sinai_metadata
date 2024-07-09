@@ -14,14 +14,7 @@
             "$comment": "Possibly rename as pref_name; add to util.json"
         },
         "orig_lang": {
-            "enum": [
-                "Greek",
-                "Syriac",
-                "Arabic",
-                "Latin",
-                null
-            ],
-            "$comment": "Finalize enum"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
         },
         "orig_lang_title": {
             "type": [
@@ -41,16 +34,7 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
         },
         "genre": {
-            "description": "The genre of the work record",
-            "type": ["array", "null"],
-            "item": {
-                "enum": [
-                    "Account books",
-                    "Apophthegmata",
-                    "Biblical texts"
-                ]
-            },
-            "unevaluatedItems": false
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/genres"
         },
         "excerpt": {
             "type": ["array", "null"],

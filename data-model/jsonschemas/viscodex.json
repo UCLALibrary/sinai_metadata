@@ -6,12 +6,7 @@
     "type": "object",
         "properties": {
             "type": {
-                "type": "string",
-                "enum": [
-                    "ms_obj",
-                    "reconstruction"
-                ],
-                "$comment": "Likely expand this enum?"
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/viscodex_types"
             },
             "label": {
                 "type": "string",

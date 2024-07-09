@@ -9,7 +9,7 @@
         "script": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/script"
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/scripts"
             },
             "minItems": 1,
             "unevaluatedItems": false

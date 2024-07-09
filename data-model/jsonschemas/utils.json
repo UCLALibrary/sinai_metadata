@@ -5,76 +5,28 @@
     "description": "A collection of simple sub-schemas used across object types",
     "type": "null",
     "$defs": {
-        "id": {
-            "description": "A unique identifer, supplied by the database",
-            "type": "integer"
+        "alt_title_or_name": {
+            "description": "An alternate title (for Work entities) or name (for Agent or Place entities), including a language code",
+            "type": "object",
+            "properties": {
+                "lang": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_all"
+                },
+                "value": {
+                    "type": "string",
+                    "minLeng": 1
+                }
+            },
+            "required": [
+                "lang",
+                "value"
+            ],
+            "unevaluatedProperties": false
         },
         "ark": {
             "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
             "type": "string",
             "pattern": "^ark:/21198/z1.{6}"
-        },
-        "summary": {
-            "type": [
-                "string",
-                "null"
-            ],
-            "minLength": 1
-        },
-        "extent": {
-            "description": "The extent, expressed in number of folios, which comprise the manuscript object",
-            "type": ["string", "null"],
-            "minLength": 1
-        },
-        "weight": {
-            "description": "A string expression of the manuscript object's weight",
-            "type": "string",
-            "minLength": 1
-        },
-        "state": {
-            "description": "The original form of the manuscript object",
-            "oneOf": [
-                {
-                    "$ref": "#/$defs/form"
-                },
-                {
-                    "enum": ["Undertext object"],
-                    "$comment": "State allows the same enumerated value list as form with the addition of Undertext object"
-                }
-            ]
-        },
-        "form": {
-            "description": "The original form of the manuscript object",
-            "enum": [
-                "Codex",
-                "Scroll",
-                "Bifolim",
-                "Folium",
-                "Quire(s)",
-                null
-            ]
-        },
-        "fol": {
-            "description": "A string expressing the foliation of the object in a semi-controlled format",
-            "type": [
-                "string",
-                "null"
-            ],
-            "minLength": 1,
-            "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
-        },
-        "features": {
-            "type": ["array", "null"],
-            "items": {
-                "type": "string",
-                "enum": [
-                    "Dated",
-                    "Colophon",
-                    "Inscription(s)"
-                ]
-            },
-            "unevaluatedItems": false,
-            "$comment": "TBD list of features"
         },
         "cataloguer": {
             "type": "object",
@@ -102,11 +54,6 @@
                 ],
                 "unevaluatedProperties": false
         },
-        "locus": {
-            "type": "string",
-            "minLength": 1,
-            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
-        },
         "coll": {
             "description": "A string expressing the collation of the object following a semi-controlled format, such as a collational formula",
             "type": [
@@ -115,116 +62,6 @@
             ],
             "minLength": 1,
             "$comment": "could require a pattern to conform these to a specific collational formula scheme"
-        },
-        "script": {
-            "description": "A term from a controlled list categorizing the writing system and script used in a given instance of writing",
-            "enum": [
-                "Perlschrift",
-                "Christian Palestinian Aramaic",
-                "Naskh",
-                "Kufic",
-                "Thuluth",
-                "Greek minuscule",
-                "Serto",
-                "Estrangela",
-                "East Syriac"
-            ],
-            "$comment": "enum not complete. Will eventually be references to script records"
-        },
-        "dim": {
-            "type": "object",
-                "properties": {
-                    "type": {
-                        "enum": [
-                            "ms_block",
-                            "folio",
-                            "av_folio",
-                            "writing_area",
-                            "margins"
-                        ]
-                    },
-                    "value": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
-        },
-        "idno": {
-            "description": "An identifier, according to a given scheme",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "shelfmark",
-                        "part_no",
-                        "uto_mark"
-                    ],
-                    "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
-                },
-                "value": {
-                    "type": "string",
-                    "minLength": 1
-                }
-            },
-            "required": [
-                "type",
-                "value"
-            ],
-            "unevaluatedProperties": false
-        },
-        "alt_title_or_name": {
-            "description": "An alternate title (for Work entities) or name (for Agent or Place entities), including a language code",
-            "type": "object",
-            "properties": {
-                "lang": {
-                    "enum": ["English", "French", "Latin", "Greek", "Syriac", "Arabic"]
-                },
-                "value": {
-                    "type": "string",
-                    "minLeng": 1
-                }
-            },
-            "required": [
-                "lang",
-                "value"
-            ],
-            "unevaluatedProperties": false
-        },
-        "rel_con": {
-            "description": "A related concept to a given entity provided by another authority file. May be connected via a skos:closeMatch property",
-            "type": "object",
-            "properties": {
-                "label": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "uri": {
-                    "type": "string",
-                    "format": "uri",
-                    "minLength": 1
-                },
-                "source": {
-                    "type": "string",
-                    "enum": [
-                        "VIAF",
-                        "Syriaca",
-                        "HAF",
-                        "LoC"
-                    ],
-                    "$comment": "Finalize enum"
-                }
-            },
-            "required": [
-                "label",
-                "uri",
-                "source"
-            ],
-            "unevaluatedProperties": false
         },
         "contents": {
             "description": "A list of the contents, such as the chapter or book divisions, of a work witness",
@@ -256,6 +93,116 @@
                 "sequence"
             ],
             "unevaluatedProperties": false
+        },
+        "dim": {
+            "type": "object",
+                "properties": {
+                    "type": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/dimension_types"
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "unevaluatedProperties": false
+        },
+        "extent": {
+            "description": "The extent, expressed in number of folios, which comprise the manuscript object",
+            "type": ["string", "null"],
+            "minLength": 1
+        },
+        "fol": {
+            "description": "A string expressing the foliation of the object in a semi-controlled format",
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1,
+            "$comment": "could require a pattern to capture the style of input we require. e.g. 'ff. 1-24 + flyleaves I-III'"
+        },
+        "id": {
+            "description": "A unique identifer, supplied by the database",
+            "type": "integer"
+        },
+        "idno": {
+            "description": "An identifier, according to a given scheme",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/idno_types"
+                },
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "type",
+                "value"
+            ],
+            "unevaluatedProperties": false
+        },
+        "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+        },
+        "rel_con": {
+            "description": "A related concept to a given entity provided by another authority file. May be connected via a skos:closeMatch property",
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "uri": {
+                    "type": "string",
+                    "format": "uri",
+                    "minLength": 1
+                },
+                "source": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/rel_con_source_types"
+                }
+            },
+            "required": [
+                "label",
+                "uri",
+                "source"
+            ],
+            "unevaluatedProperties": false
+        },
+        "summary": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
+        "translation": {
+            "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
+            "properties": {
+                "lang": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_modern"
+                },
+                "value": {
+                    "type": "string",
+                    "minLeng": 1
+                }
+            },
+            "required": [
+                "lang",
+                "value"
+            ]
+        },
+        "weight": {
+            "description": "A string expression of the manuscript object's weight",
+            "type": "string",
+            "minLength": 1
         }
     }
 }

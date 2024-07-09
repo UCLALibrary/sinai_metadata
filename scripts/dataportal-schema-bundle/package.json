@@ -1,0 +1,9 @@
+{ 
+    "type": "module",
+    "description": "Node Module for parsing and bundling JSON Schemas into a single dereferenced Schema for Sinai Manuscripts Data Portal",
+    "author": "William L. Potter <williampotter@library.ucla.edu>",
+    "main": "dataportal-schema-bundle.js",
+    "dependencies": {
+        "@apidevtools/json-schema-ref-parser": "11.5.4"
+    }
+ }

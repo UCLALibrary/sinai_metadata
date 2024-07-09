@@ -16,12 +16,7 @@
             "minLength": 1
         },
         "event": {
-            "type": "string",
-            "enum": [
-                "origin",
-                "previous_repository",
-                "not known"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/assoc_place_events"
         },
         "note": {
             "type": ["array", "null"],

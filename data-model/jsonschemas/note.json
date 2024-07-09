@@ -7,23 +7,7 @@
     "properties": 
     {
         "type": {
-            "type": "string",
-            "enum": [
-                "assoc_date",
-                "assoc_name",
-                "assoc_place",
-                "bib",
-                "binding",
-                "cataloguer",
-                "collation",
-                "condition",
-                "foliation",
-                "general",
-                "ornamentation",
-                "paratext",
-                "provenance",
-                "related_mss"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/note_types"
         },
         "value": {
             "type": [

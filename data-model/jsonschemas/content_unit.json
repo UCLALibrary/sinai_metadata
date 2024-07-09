@@ -21,11 +21,7 @@
             "unevaluatedItems": false
         },
         "type": {
-            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
-            "enum": [
-                "core",
-                "guest"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/content_unit_types"
         },
         "summary": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
@@ -34,19 +30,12 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
         },
         "lang": {
-            "enum": [
-                "Arabic",
-                "Armenian",
-                "Caucasian Albanian",
-                "Church Slavonic",
-                "CPA",
-                "Ethiopic",
-                "Georgian",
-                "Greek",
-                "Latin",
-                "Syriac",
-                "Turkish"
-            ]
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
         },
         "work_wit": {
             "type": "array",
@@ -64,7 +53,11 @@
             "unevaluatedItems": false
         },
         "features": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/features"
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/features"
+            },
+            "unevaluatedItems": false
         },
         "note": {
             "type": ["array", "null"],

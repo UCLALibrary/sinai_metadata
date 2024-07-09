@@ -12,11 +12,7 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
         "type": {
-            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
-            "enum": [
-                "shelf",
-                "rebind"
-            ]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_types"
         },
         "idno": {
             "type": "array",
@@ -43,10 +39,10 @@
             "unevaluatedItems": false
         },
         "state": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/state"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/states"
         },
         "form": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/form"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/forms"
         },
         "fol": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/fol"
@@ -59,7 +55,11 @@
             "unevaluatedItems": false
         },
         "features": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/features"
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/features"
+            },
+            "unevaluatedItems": false
         },
         "cod_units": {
             "type": "array",
@@ -115,12 +115,7 @@
                         "type": "integer"
                     },
                     "collection": {
-                        "type": "string",
-                        "enum": [
-                            "Old Collection",
-                            "New Finds",
-                            "Reconstructions"
-                        ]
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/collections"
                     }
                 },
                 "required": [
