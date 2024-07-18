@@ -29,13 +29,35 @@
         "type": "object",
         "properties": {
           "lang": {
-            "enum": [
-              "English",
-              "French",
-              "Latin",
-              "Greek",
-              "Syriac",
-              "Arabic"
+            "description": "All names available in the Sinai Manuscripts Data Portal, both ancient and modern",
+            "anyOf": [
+              {
+                "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
+                "enum": [
+                  "Arabic",
+                  "Armenian",
+                  "Caucasian Albanian",
+                  "Church Slavonic",
+                  "Coptic",
+                  "CPA",
+                  "Ethiopic",
+                  "Georgian",
+                  "Greek",
+                  "Latin",
+                  "Syriac",
+                  "Turkish"
+                ]
+              },
+              {
+                "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
+                "enum": [
+                  "Arabic",
+                  "English",
+                  "French",
+                  "German",
+                  "Greek"
+                ]
+              }
             ]
           },
           "value": {
@@ -84,14 +106,16 @@
             "minLength": 1
           },
           "source": {
-            "type": "string",
             "enum": [
-              "VIAF",
-              "Syriaca",
               "HAF",
-              "LoC"
+              "LoC",
+              "Perseus",
+              "Pinakes",
+              "Pleiades",
+              "Syriaca",
+              "VIAF"
             ],
-            "$comment": "Finalize enum"
+            "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
           }
         },
         "required": [
@@ -122,12 +146,12 @@
           "type": {
             "type": "string",
             "enum": [
-              "ref",
-              "bib",
-              "version",
+              "cite",
               "edition",
-              "translation",
-              "otherdigversion"
+              "otherdigversion",
+              "ref",
+              "refno",
+              "translation"
             ]
           },
           "range": {
@@ -173,16 +197,20 @@
                     "bib",
                     "binding",
                     "cataloguer",
-                    "collation",
+                    "coll",
                     "condition",
                     "contents",
                     "excerpt",
                     "foliation",
                     "general",
+                    "layout",
                     "ornamentation",
-                    "paratext",
+                    "para",
                     "provenance",
-                    "related_mss"
+                    "rel_work",
+                    "related_mss",
+                    "support",
+                    "writing"
                   ]
                 },
                 "value": {
@@ -255,16 +283,20 @@
               "bib",
               "binding",
               "cataloguer",
-              "collation",
+              "coll",
               "condition",
               "contents",
               "excerpt",
               "foliation",
               "general",
+              "layout",
               "ornamentation",
-              "paratext",
+              "para",
               "provenance",
-              "related_mss"
+              "rel_work",
+              "related_mss",
+              "support",
+              "writing"
             ]
           },
           "value": {
@@ -296,12 +328,15 @@
         "type": "object",
         "properties": {
           "type": {
-            "type": "string",
             "enum": [
               "creation",
               "binding",
+              "origin",
               "purchase",
-              "other"
+              "birth",
+              "death",
+              "floruit",
+              "unknown"
             ],
             "$comment": "TBD full list of types"
           },
@@ -360,16 +395,20 @@
                     "bib",
                     "binding",
                     "cataloguer",
-                    "collation",
+                    "coll",
                     "condition",
                     "contents",
                     "excerpt",
                     "foliation",
                     "general",
+                    "layout",
                     "ornamentation",
-                    "paratext",
+                    "para",
                     "provenance",
-                    "related_mss"
+                    "rel_work",
+                    "related_mss",
+                    "support",
+                    "writing"
                   ]
                 },
                 "value": {
@@ -426,11 +465,12 @@
           "role": {
             "type": "string",
             "enum": [
+              "author",
               "attributed-author",
               "creator",
               "binder",
               "owner",
-              "not known"
+              "unknown"
             ]
           },
           "note": {
@@ -455,16 +495,20 @@
                     "bib",
                     "binding",
                     "cataloguer",
-                    "collation",
+                    "coll",
                     "condition",
                     "contents",
                     "excerpt",
                     "foliation",
                     "general",
+                    "layout",
                     "ornamentation",
-                    "paratext",
+                    "para",
                     "provenance",
-                    "related_mss"
+                    "rel_work",
+                    "related_mss",
+                    "support",
+                    "writing"
                   ]
                 },
                 "value": {
@@ -521,7 +565,7 @@
             "enum": [
               "origin",
               "previous_repository",
-              "not known"
+              "unknown"
             ]
           },
           "note": {
@@ -546,16 +590,20 @@
                     "bib",
                     "binding",
                     "cataloguer",
-                    "collation",
+                    "coll",
                     "condition",
                     "contents",
                     "excerpt",
                     "foliation",
                     "general",
+                    "layout",
                     "ornamentation",
-                    "paratext",
+                    "para",
                     "provenance",
-                    "related_mss"
+                    "rel_work",
+                    "related_mss",
+                    "support",
+                    "writing"
                   ]
                 },
                 "value": {
