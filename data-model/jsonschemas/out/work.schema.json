@@ -105,7 +105,7 @@
         "array",
         "null"
       ],
-      "item": {
+      "items": {
         "enum": [
           "Account books",
           "Apocrypha",
