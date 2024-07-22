@@ -156,7 +156,7 @@
         "genres": {
             "description": "The genre of the work record",
             "type": ["array", "null"],
-            "item": {
+            "items": {
                 "enum": [
                     "Account books",
                     "Apocrypha",
