@@ -1,0 +1,94 @@
+{
+  "id": "ark:/99999/z18s67k3",
+  "type": "ms_obj",
+  "shelfmark": "Sinai Arabic 320",
+  "collection": "Old Collection",
+  "repository": "https://sinaiportal.library.ucla.edu/place/1",
+  "form": "codex",
+  "binding": {
+    "has_binding": "true",
+    "note": null,
+    "features": null
+  },
+  "extent": "217 ff.",
+  "weight": "794.6 g",
+  "dimensions": "193 x 141 x 68 mm",
+  "condition": {
+    "note": null,
+    "features": null
+  },
+  "foliation": [
+    "ff. 1a, 1b-216"
+  ],
+  "collation": {
+    "viscodex": null,
+    "formula": null,
+    "note": null,
+    "features": null
+  },
+  "events": null,
+  "paratexts": null,
+  "associated_person": null,
+  "associated_place": null,
+  "associated_dates": null,
+  "features": null,
+  "note": null,
+  "references": [
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
+      "citation_key": "Kamil",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "511"
+        },
+        {
+          "unit": "page",
+          "range": "42"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "bibliography": null,
+  "other_versions": [
+    "https://www.loc.gov/item/00279384088-ms/"
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F99999%2Fz18s67k3/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged",
+    "thumnail_url": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F99999%2Fz18s67k3%2F76301r6v/full/!200,200/0/default.jpg"
+  },
+    "related_objects": {
+    "has_part": [
+      {
+        "type": "uni_prod",
+        "object": "ark:/99999/z1999999",
+        "position": "1",
+        "layer": "0"
+      }
+    ]
+  },
+  "meta": {
+    "contributor": [
+      "William Potter",
+      "Chris PreJean"
+    ],
+    "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "EDITED: Added existing physical description metadata"
+      },
+      {
+        "date": "2022-10-24T08:44:09.96-07:00",
+        "contributor": "Chris PreJean",
+        "change": "CREATED: Manuscript Object ark:/99999/z18s67k3 for Sinai Arabic 320"
+      }
+    ],
+    "created": "2022-10-24T08:44:09.96-07:00",
+    "delivery": "5.1"
+  }
+}
