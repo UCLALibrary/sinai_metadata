@@ -5,9 +5,10 @@
   "description": "A record for an agent, either an individual or an organization, capable of acting in the production of material objects or creation of conceptual works",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "A unique identifer, supplied by the database",
-      "type": "integer"
+    "ark": {
+      "description": "A unique Archival Resource Key (ARK)",
+      "type": "string",
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
       "enum": [

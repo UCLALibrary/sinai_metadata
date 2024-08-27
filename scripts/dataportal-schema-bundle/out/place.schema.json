@@ -5,9 +5,10 @@
   "description": "A record for a place, including both physical spaces and mental/conceptual places that may not be locatable on a geospatial system",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "A unique identifer, supplied by the database",
-      "type": "integer"
+    "ark": {
+      "description": "A unique Archival Resource Key (ARK)",
+      "type": "string",
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
       "enum": [

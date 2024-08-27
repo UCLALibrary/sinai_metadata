@@ -5,9 +5,10 @@
   "description": "A record for a conceptual work, which may be carried or embodied by a textual artifact or work witness",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "A unique identifer, supplied by the database",
-      "type": "integer"
+    "ark": {
+      "description": "A unique Archival Resource Key (ARK)",
+      "type": "string",
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "pref_title": {
       "type": "string",
