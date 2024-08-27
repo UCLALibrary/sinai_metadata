@@ -10,9 +10,9 @@
       "type": "integer"
     },
     "ark": {
-      "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
+      "description": "A unique Archival Resource Key (ARK)",
       "type": "string",
-      "pattern": "^ark:/21198/z1.{6}"
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
       "description": "The type of manuscript object, whether real or hypothetical reconstructions",
