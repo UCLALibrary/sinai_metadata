@@ -12,7 +12,7 @@
     },
     "type": {
       "enum": [
-        "individual",
+        "person",
         "organization"
       ]
     },
@@ -40,10 +40,10 @@
     },
     "gender": {
       "enum": [
-        "female",
-        "male"
-      ],
-      "$comment": "Finalize enum"
+        "Man",
+        "Woman",
+        "Other"
+      ]
     },
     "rel_con": {
       "type": [
