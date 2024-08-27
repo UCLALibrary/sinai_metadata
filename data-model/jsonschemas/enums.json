@@ -148,10 +148,10 @@
         },
         "genders": {
             "enum": [
-                "female",
-                "male"
-            ],
-            "$comment": "Finalize enum"
+                "Man",
+                "Woman",
+                "Other"
+            ]
         },
         "genres": {
             "description": "The genre of the work record",
