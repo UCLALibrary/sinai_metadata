@@ -78,6 +78,13 @@
             ],
             "$comment": "Is this the same set as #/$defs/ms_obj_types?"
         },
+        "creator_roles": {
+            "enum": [
+                "author",
+                "editor",
+                "translator"
+            ]
+        },
         "dimension_types": {
             "enum": [
                 "ms_block",
