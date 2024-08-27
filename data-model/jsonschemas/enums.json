@@ -7,7 +7,7 @@
     "$defs": {
         "agent_types": {
             "enum": [
-                "individual",
+                "person",
                 "organization"
             ]
         },
