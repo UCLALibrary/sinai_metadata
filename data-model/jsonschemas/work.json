@@ -133,7 +133,7 @@
         }
     },
     "required": [
-        "id",
+        "ark",
         "pref_title"
     ],
     "unevaluatedProperties": false

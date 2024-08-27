@@ -83,7 +83,7 @@
         }
     },
     "required": [
-        "id",
+        "ark",
         "type",
         "pref_name"
     ],
