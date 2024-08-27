@@ -5,24 +5,6 @@
     "description": "A collection of simple sub-schemas used across object types",
     "type": "null",
     "$defs": {
-        "alt_title_or_name": {
-            "description": "An alternate title (for Work entities) or name (for Agent or Place entities), including a language code",
-            "type": "object",
-            "properties": {
-                "lang": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_all"
-                },
-                "value": {
-                    "type": "string",
-                    "minLeng": 1
-                }
-            },
-            "required": [
-                "lang",
-                "value"
-            ],
-            "unevaluatedProperties": false
-        },
         "ark": {
             "description": "A unique Archival Resource Key (ARK)",
             "type": "string",

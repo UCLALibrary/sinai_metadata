@@ -26,7 +26,8 @@
         "alt_title": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/alt_title_or_name"
+                "type": "string",
+                "minLength": 1
             },
             "unevaluatedItems": false        
         },
