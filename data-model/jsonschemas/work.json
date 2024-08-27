@@ -37,6 +37,10 @@
         "genre": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/genres"
         },
+        "creation": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "unevaluatedProperties": false
+        },
         "excerpt": {
             "type": ["array", "null"],
             "items": {
@@ -65,13 +69,6 @@
             "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_date": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json"
             },
             "unevaluatedItems": false
         },
