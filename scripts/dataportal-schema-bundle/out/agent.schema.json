@@ -26,51 +26,8 @@
         "null"
       ],
       "items": {
-        "description": "An alternate title (for Work entities) or name (for Agent or Place entities), including a language code",
-        "type": "object",
-        "properties": {
-          "lang": {
-            "description": "All names available in the Sinai Manuscripts Data Portal, both ancient and modern",
-            "anyOf": [
-              {
-                "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
-                "enum": [
-                  "Arabic",
-                  "Armenian",
-                  "Caucasian Albanian",
-                  "Church Slavonic",
-                  "Coptic",
-                  "CPA",
-                  "Ethiopic",
-                  "Georgian",
-                  "Greek",
-                  "Latin",
-                  "Syriac",
-                  "Turkish"
-                ]
-              },
-              {
-                "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
-                "enum": [
-                  "Arabic",
-                  "English",
-                  "French",
-                  "German",
-                  "Greek"
-                ]
-              }
-            ]
-          },
-          "value": {
-            "type": "string",
-            "minLeng": 1
-          }
-        },
-        "required": [
-          "lang",
-          "value"
-        ],
-        "unevaluatedProperties": false
+        "type": "string",
+        "minLength": 1
       },
       "unevaluatedItems": false
     },
