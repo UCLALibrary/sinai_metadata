@@ -45,6 +45,276 @@
         "Other"
       ]
     },
+    "birth": {
+      "unevaluatedProperties": false,
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iso": {
+          "type": "object",
+          "properties": {
+            "not_before": {
+              "type": "string",
+              "format": "date",
+              "minLength": 3
+            },
+            "not_after": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date",
+              "minLength": 3
+            }
+          },
+          "required": [
+            "not_before"
+          ],
+          "unevaluatedProperties": false
+        },
+        "note": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
+            "title": "Note",
+            "description": "A prose note of a specified type",
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "admin",
+                  "assoc_date",
+                  "assoc_name",
+                  "assoc_place",
+                  "bib",
+                  "binding",
+                  "cataloguer",
+                  "coll",
+                  "condition",
+                  "contents",
+                  "excerpt",
+                  "foliation",
+                  "general",
+                  "layout",
+                  "ornamentation",
+                  "para",
+                  "provenance",
+                  "rel_work",
+                  "related_mss",
+                  "support",
+                  "writing"
+                ]
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "type",
+              "value"
+            ],
+            "unevaluatedProperties": false
+          },
+          "unevaluatedItems": false
+        }
+      },
+      "required": [
+        "value",
+        "iso"
+      ]
+    },
+    "death": {
+      "unevaluatedProperties": false,
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iso": {
+          "type": "object",
+          "properties": {
+            "not_before": {
+              "type": "string",
+              "format": "date",
+              "minLength": 3
+            },
+            "not_after": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date",
+              "minLength": 3
+            }
+          },
+          "required": [
+            "not_before"
+          ],
+          "unevaluatedProperties": false
+        },
+        "note": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
+            "title": "Note",
+            "description": "A prose note of a specified type",
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "admin",
+                  "assoc_date",
+                  "assoc_name",
+                  "assoc_place",
+                  "bib",
+                  "binding",
+                  "cataloguer",
+                  "coll",
+                  "condition",
+                  "contents",
+                  "excerpt",
+                  "foliation",
+                  "general",
+                  "layout",
+                  "ornamentation",
+                  "para",
+                  "provenance",
+                  "rel_work",
+                  "related_mss",
+                  "support",
+                  "writing"
+                ]
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "type",
+              "value"
+            ],
+            "unevaluatedProperties": false
+          },
+          "unevaluatedItems": false
+        }
+      },
+      "required": [
+        "value",
+        "iso"
+      ]
+    },
+    "floruit": {
+      "unevaluatedProperties": false,
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iso": {
+          "type": "object",
+          "properties": {
+            "not_before": {
+              "type": "string",
+              "format": "date",
+              "minLength": 3
+            },
+            "not_after": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date",
+              "minLength": 3
+            }
+          },
+          "required": [
+            "not_before"
+          ],
+          "unevaluatedProperties": false
+        },
+        "note": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
+            "title": "Note",
+            "description": "A prose note of a specified type",
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "admin",
+                  "assoc_date",
+                  "assoc_name",
+                  "assoc_place",
+                  "bib",
+                  "binding",
+                  "cataloguer",
+                  "coll",
+                  "condition",
+                  "contents",
+                  "excerpt",
+                  "foliation",
+                  "general",
+                  "layout",
+                  "ornamentation",
+                  "para",
+                  "provenance",
+                  "rel_work",
+                  "related_mss",
+                  "support",
+                  "writing"
+                ]
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "type",
+              "value"
+            ],
+            "unevaluatedProperties": false
+          },
+          "unevaluatedItems": false
+        }
+      },
+      "required": [
+        "value",
+        "iso"
+      ]
+    },
     "rel_con": {
       "type": [
         "array",
@@ -267,128 +537,6 @@
         },
         "required": [
           "type",
-          "value"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "assoc_date": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json",
-        "title": "Associated Date",
-        "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
-        "type": "object",
-        "properties": {
-          "type": {
-            "enum": [
-              "creation",
-              "binding",
-              "origin",
-              "purchase",
-              "birth",
-              "death",
-              "floruit",
-              "unknown"
-            ],
-            "$comment": "TBD full list of types"
-          },
-          "iso": {
-            "type": "object",
-            "properties": {
-              "not_before": {
-                "type": "string",
-                "format": "date",
-                "minLength": 3
-              },
-              "not_after": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "format": "date",
-                "minLength": 3
-              }
-            },
-            "required": [
-              "not_before"
-            ],
-            "unevaluatedProperties": false
-          },
-          "value": {
-            "type": "string",
-            "minLength": 1
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "coll",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "layout",
-                    "ornamentation",
-                    "para",
-                    "provenance",
-                    "rel_work",
-                    "related_mss",
-                    "support",
-                    "writing"
-                  ]
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "type",
-          "iso",
           "value"
         ],
         "unevaluatedProperties": false
@@ -623,7 +771,7 @@
     }
   },
   "required": [
-    "id",
+    "ark",
     "type",
     "pref_name"
   ],
