@@ -76,6 +76,46 @@
             ],
             "unevaluatedProperties": false
         },
+        "date_core": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "iso": {
+                    "type": "object",
+                    "properties": {
+                        "not_before": {
+                            "type": "string",
+                            "format": "date",
+                            "minLength": 3
+                        },
+                        "not_after": {
+                            "type": ["string", "null"],
+                            "format": "date",
+                            "minLength": 3
+                        }
+                        },
+                    "required": [
+                        "not_before"
+                    ],
+                    "unevaluatedProperties": false
+                },
+                "note": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "value",
+                "iso"
+            ],
+            "unevaluatedProperties": false
+        },
         "dim": {
             "type": "object",
                 "properties": {

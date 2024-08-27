@@ -4,32 +4,14 @@
     "title": "Associated Date",
     "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core"
+        }
+    ],
     "properties": {
         "type": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/assoc_date_types"
-        },
-        "iso": {
-            "type": "object",
-            "properties": {
-                "not_before": {
-                    "type": "string",
-                    "format": "date",
-                    "minLength": 3
-                },
-                "not_after": {
-                    "type": ["string", "null"],
-                    "format": "date",
-                    "minLength": 3
-                }
-                },
-            "required": [
-                "not_before"
-            ],
-            "unevaluatedProperties": false
-        },
-        "value": {
-            "type": "string",
-            "minLength": 1
         },
         "as_written": {
             "type": [
@@ -37,19 +19,10 @@
                 "null"
             ],
             "minLength": 1
-        },
-        "note": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
-            },
-            "unevaluatedItems": false
         }
     },
     "required": [
-        "type",
-        "iso",
-        "value"
+        "type"
     ],
     "unevaluatedProperties": false
 }
