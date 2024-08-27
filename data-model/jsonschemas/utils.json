@@ -113,8 +113,7 @@
             "required": [
                 "value",
                 "iso"
-            ],
-            "unevaluatedProperties": false
+            ]
         },
         "dim": {
             "type": "object",
