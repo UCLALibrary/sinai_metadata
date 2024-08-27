@@ -24,9 +24,9 @@
             "unevaluatedProperties": false
         },
         "ark": {
-            "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
+            "description": "A unique Archival Resource Key (ARK)",
             "type": "string",
-            "pattern": "^ark:/21198/z1.{6}"
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
         },
         "cataloguer": {
             "type": "object",

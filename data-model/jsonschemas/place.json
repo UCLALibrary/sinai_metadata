@@ -5,8 +5,8 @@
     "description": "A record for a place, including both physical spaces and mental/conceptual places that may not be locatable on a geospatial system",
     "type": "object",
     "properties": {
-        "id": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        "ark": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
         "type": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/place_types"

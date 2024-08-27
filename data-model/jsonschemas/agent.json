@@ -5,8 +5,8 @@
     "description": "A record for an agent, either an individual or an organization, capable of acting in the production of material objects or creation of conceptual works",
     "type": "object",
     "properties": {
-        "id": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        "ark": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
         "type": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/agent_types"
