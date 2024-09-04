@@ -219,7 +219,7 @@
         },
         "required": [
           "label",
-          "uri",
+          "idno",
           "source"
         ],
         "unevaluatedProperties": false
