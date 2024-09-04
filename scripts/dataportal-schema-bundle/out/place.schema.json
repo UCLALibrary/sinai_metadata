@@ -87,8 +87,7 @@
               "Pleiades",
               "Syriaca",
               "VIAF"
-            ],
-            "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+            ]
           }
         },
         "required": [
