@@ -127,6 +127,16 @@
             },
             "unevaluatedItems": false
         },
+        "internal": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "string"
+            },
+            "unevaluatedItems": false
+        },
         "cataloguer": {
             "type": [
                 "array",
