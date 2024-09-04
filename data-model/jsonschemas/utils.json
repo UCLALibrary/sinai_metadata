@@ -166,6 +166,29 @@
             "minLength": 1,
             "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
         },
+        "refno": {
+            "description": "A reference number in a standard reference work, such as the Corpus Clavium Graecorum (CPG)",
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "idno": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "source": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/refno_source_types"
+                }
+            },
+            "required": [
+                "label",
+                "uri",
+                "source"
+            ],
+            "unevaluatedProperties": false
+        },
         "rel_con": {
             "description": "A related concept to a given entity provided by another authority file. May be connected via a skos:closeMatch property",
             "type": "object",

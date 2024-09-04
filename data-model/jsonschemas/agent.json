@@ -48,6 +48,13 @@
             },
             "unevaluatedItems": false
         },
+        "refno": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/refno"
+            },
+            "unevaluatedItems": false
+        },
         "bib": {
             "type": [
                 "array",

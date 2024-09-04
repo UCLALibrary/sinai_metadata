@@ -332,6 +332,13 @@
             ],
             "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
         },
+        "refno_source_types": {
+            "enum": [
+                "CPG",
+                "CPL",
+                "TLG"
+            ]
+        },
         "rel_agent_rels": {
             "enum": [
                 "familyMember",
@@ -347,8 +354,7 @@
                 "Pleiades",
                 "Syriaca",
                 "VIAF"
-            ],
-            "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+            ]
         },
         "rel_place_rels": {
             "enum": [
