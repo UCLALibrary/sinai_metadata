@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1h01q",
+    "type": "person",
+    "pref_name": "Diadochus of Photice",
+    "alt_name": [
+        "Diadochus, Bishop of Photice, active 5th century"
+    ],
+    "gender": "Man",
+    "floruit": {
+        "value": "active 5th century",
+        "iso": {
+            "not_before": "0401",
+            "not_after": "0500"
+        }
+    },
+    "rel_con": [
+        {
+            "label": "Diadochus, Bishop of Photice, active 5th century",
+            "uri": "http://viaf.org/viaf/32806504",
+            "source": "VIAF"
+        },
+        {
+            "label": "Diadochus Photicensis",
+            "uri": "https://pinakes.irht.cnrs.fr/notices/auteur/895/",
+            "source": "Pinakes"
+        }
+    ]
+}

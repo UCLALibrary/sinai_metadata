@@ -1,0 +1,21 @@
+{
+    "ark": "ark:/21198/s1g595",
+    "type": "person",
+    "pref_name": "Antiochus of Sulcis",
+    "alt_name": [],
+    "gender": "Man",
+    "floruit": {
+        "value": "active 1st century-2nd century",
+        "iso": {
+            "not_before": "0001",
+            "not_after": "0200"
+        }
+    },
+    "rel_con": [
+        {
+            "label": "Antiochus, of Sulcis, Saint, active 1st century-2nd century",
+            "uri": "http://viaf.org/viaf/73357861",
+            "source": "VIAF"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "ark": "ark:/21198/s18g68",
+    "type": "person",
+    "pref_name": "Babai the Great",
+    "alt_name": [
+        "Babai the Great",
+        "Mar Babai",
+        "ܒܒܝ ܪܒܐ"
+    ],
+    "gender": "Man",
+    "floruit": {
+        "value": "553-628",
+        "iso": {
+            "not_before": "0553",
+            "not_after": "0628"
+        }
+    },
+    "rel_con": [
+        {
+            "label": "Babai, Mar, active 553-628",
+            "uri": "http://viaf.org/viaf/76706750",
+            "source": "VIAF"
+        },
+        {
+            "label": "Babai, Mar, active 553-628",
+            "uri": "https://id.loc.gov/authorities/names/n85044888",
+            "source": "LoC"
+        },
+        {
+            "label": "Babai, Mar, active 553-628",
+            "uri": "https://w3id.org/haf/person/706952503553",
+            "source": "HAF"
+        },
+        {
+            "label": "Babai the Great",
+            "uri": "https://syriaca.org/person/359",
+            "source": "Syriaca"
+        }
+    ]
+}

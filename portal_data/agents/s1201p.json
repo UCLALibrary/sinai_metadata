@@ -1,0 +1,16 @@
+{
+    "ark": "ark:/21198/s1201p",
+    "type": "person",
+    "pref_name": "Chariton of Theotokos Aršāyā",
+    "alt_name": [
+        "Chariton of the Monastery of the Theotokos Aršāyā"
+    ],
+    "gender": "Man",
+    "rel_con": [
+        {
+            "label": "Chariton ab. in Palaestina",
+            "uri": "https://pinakes.irht.cnrs.fr/notices/saint/170/",
+            "source": "Pinakes"
+        }
+    ]
+}

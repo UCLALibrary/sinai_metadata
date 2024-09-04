@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s1w88j",
+    "type": "person",
+    "pref_name": "Cyril of Scythopolis",
+    "alt_name": [
+        "Cyrillus Scythopolitanus",
+        "Κύριλλος ο Σκυθοπολίτης"
+    ],
+    "gender": "Man",
+    "floruit": {
+        "value": "approximately 524-approximately 558",
+        "iso": {
+            "not_before": "0499",
+            "not_after": "0583"
+        }
+    },
+    "rel_con": [
+        {
+            "label": "Cyril, of Scythopolis, approximately 524-approximately 558",
+            "uri": "http://viaf.org/viaf/8181483",
+            "source": "VIAF"
+        },
+        {
+            "label": "Cyril, of Scythopolis, approximately 524-approximately 558",
+            "uri": "https://id.loc.gov/authorities/names/n83228458",
+            "source": "LoC"
+        },
+        {
+            "label": "Cyril, of Scythopolis, approximately 524-approximately 558",
+            "uri": "https://w3id.org/haf/person/542390235937",
+            "source": "HAF"
+        },
+        {
+            "label": "Cyril of Scythopolis ",
+            "uri": "http://syriaca.org/person/2806",
+            "source": "Syriaca"
+        },
+        {
+            "label": "Cyrillus Scythopolitanus",
+            "uri": "https://pinakes.irht.cnrs.fr/notices/auteur/843/",
+            "source": "Pinakes"
+        }
+    ]
+}
