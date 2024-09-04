@@ -74,60 +74,6 @@
             "not_before"
           ],
           "unevaluatedProperties": false
-        },
-        "note": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-            "title": "Note",
-            "description": "A prose note of a specified type",
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "admin",
-                  "assoc_date",
-                  "assoc_name",
-                  "assoc_place",
-                  "bib",
-                  "binding",
-                  "cataloguer",
-                  "coll",
-                  "condition",
-                  "contents",
-                  "excerpt",
-                  "foliation",
-                  "general",
-                  "layout",
-                  "ornamentation",
-                  "para",
-                  "provenance",
-                  "rel_work",
-                  "related_mss",
-                  "support",
-                  "writing"
-                ]
-              },
-              "value": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "minLength": 1
-              }
-            },
-            "required": [
-              "type",
-              "value"
-            ],
-            "unevaluatedProperties": false
-          },
-          "unevaluatedItems": false
         }
       },
       "required": [
@@ -164,60 +110,6 @@
             "not_before"
           ],
           "unevaluatedProperties": false
-        },
-        "note": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-            "title": "Note",
-            "description": "A prose note of a specified type",
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "admin",
-                  "assoc_date",
-                  "assoc_name",
-                  "assoc_place",
-                  "bib",
-                  "binding",
-                  "cataloguer",
-                  "coll",
-                  "condition",
-                  "contents",
-                  "excerpt",
-                  "foliation",
-                  "general",
-                  "layout",
-                  "ornamentation",
-                  "para",
-                  "provenance",
-                  "rel_work",
-                  "related_mss",
-                  "support",
-                  "writing"
-                ]
-              },
-              "value": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "minLength": 1
-              }
-            },
-            "required": [
-              "type",
-              "value"
-            ],
-            "unevaluatedProperties": false
-          },
-          "unevaluatedItems": false
         }
       },
       "required": [
@@ -254,60 +146,6 @@
             "not_before"
           ],
           "unevaluatedProperties": false
-        },
-        "note": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-            "title": "Note",
-            "description": "A prose note of a specified type",
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "admin",
-                  "assoc_date",
-                  "assoc_name",
-                  "assoc_place",
-                  "bib",
-                  "binding",
-                  "cataloguer",
-                  "coll",
-                  "condition",
-                  "contents",
-                  "excerpt",
-                  "foliation",
-                  "general",
-                  "layout",
-                  "ornamentation",
-                  "para",
-                  "provenance",
-                  "rel_work",
-                  "related_mss",
-                  "support",
-                  "writing"
-                ]
-              },
-              "value": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "minLength": 1
-              }
-            },
-            "required": [
-              "type",
-              "value"
-            ],
-            "unevaluatedProperties": false
-          },
-          "unevaluatedItems": false
         }
       },
       "required": [
@@ -543,196 +381,97 @@
       },
       "unevaluatedItems": false
     },
-    "assoc_name": {
+    "rel_agent": {
       "type": [
         "array",
         "null"
       ],
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
-        "title": "Associated Name",
-        "description": "A person, group, or organization entity connected with an object via a given role",
         "type": "object",
         "properties": {
           "id": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "role": {
+            "description": "A unique Archival Resource Key (ARK)",
             "type": "string",
-            "enum": [
-              "author",
-              "attributed-author",
-              "creator",
-              "binder",
-              "owner",
-              "unknown"
-            ]
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
           },
-          "note": {
+          "rel": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "familyMember",
+                "memberOf"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "source": {
             "type": [
               "array",
               "null"
             ],
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "coll",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "layout",
-                    "ornamentation",
-                    "para",
-                    "provenance",
-                    "rel_work",
-                    "related_mss",
-                    "support",
-                    "writing"
-                  ]
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
+              "type": "string"
             },
             "unevaluatedItems": false
           }
         },
+        "unevaluatedProperties": false,
         "required": [
-          "role"
-        ],
-        "unevaluatedProperties": false
+          "id",
+          "rel"
+        ]
       },
       "unevaluatedItems": false
     },
-    "assoc_place": {
+    "rel_place": {
       "type": [
         "array",
         "null"
       ],
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
-        "title": "Associated Place",
-        "description": "A place entity connected with an object via a given role",
         "type": "object",
         "properties": {
           "id": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "event": {
+            "description": "A unique Archival Resource Key (ARK)",
             "type": "string",
-            "enum": [
-              "origin",
-              "previous_repository",
-              "unknown"
-            ]
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
           },
-          "note": {
+          "rel": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "birthPlace",
+                "deathPlace"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "source": {
             "type": [
               "array",
               "null"
             ],
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "coll",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "layout",
-                    "ornamentation",
-                    "para",
-                    "provenance",
-                    "rel_work",
-                    "related_mss",
-                    "support",
-                    "writing"
-                  ]
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
+              "type": "string"
             },
             "unevaluatedItems": false
           }
         },
+        "unevaluatedProperties": false,
         "required": [
-          "event"
-        ],
-        "unevaluatedProperties": false
+          "id",
+          "rel"
+        ]
+      },
+      "unevaluatedItems": false
+    },
+    "internal": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
       },
       "unevaluatedItems": false
     },
