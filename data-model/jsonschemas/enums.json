@@ -332,6 +332,12 @@
             ],
             "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
         },
+        "rel_agent_rels": {
+            "enum": [
+                "familyMember",
+                "memberOf"
+            ]
+        },
         "rel_con_source_types": {
             "enum": [
                 "HAF",
@@ -343,6 +349,12 @@
                 "VIAF"
             ],
             "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+        },
+        "rel_place_rels": {
+            "enum": [
+                "birthPlace",
+                "deathPlace"
+            ]
         },
         "related_mss_types": {
             "type": "string",
