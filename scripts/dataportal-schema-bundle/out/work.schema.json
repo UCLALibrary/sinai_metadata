@@ -145,60 +145,6 @@
             "not_before"
           ],
           "unevaluatedProperties": false
-        },
-        "note": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-            "title": "Note",
-            "description": "A prose note of a specified type",
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "admin",
-                  "assoc_date",
-                  "assoc_name",
-                  "assoc_place",
-                  "bib",
-                  "binding",
-                  "cataloguer",
-                  "coll",
-                  "condition",
-                  "contents",
-                  "excerpt",
-                  "foliation",
-                  "general",
-                  "layout",
-                  "ornamentation",
-                  "para",
-                  "provenance",
-                  "rel_work",
-                  "related_mss",
-                  "support",
-                  "writing"
-                ]
-              },
-              "value": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "minLength": 1
-              }
-            },
-            "required": [
-              "type",
-              "value"
-            ],
-            "unevaluatedProperties": false
-          },
-          "unevaluatedItems": false
         }
       },
       "required": [
