@@ -7,7 +7,7 @@
     ],
     "gender": "Man",
     "floruit": {
-        "value": "ca. 1025 CE - ca. 1100 CE",
+        "value": "ca. 1025 CE-ca. 1100 CE",
         "iso": {
             "not_before": "1010",
             "not_after": "1115"

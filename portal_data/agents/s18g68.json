@@ -9,7 +9,7 @@
     ],
     "gender": "Man",
     "floruit": {
-        "value": "553 CE - 628 CE",
+        "value": "553 CE-628 CE",
         "iso": {
             "not_before": "0553",
             "not_after": "0628"
