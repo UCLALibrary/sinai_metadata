@@ -10,7 +10,7 @@
             "$comment": "Foreign key referring to the bibliographic item in the database"
         },
         "type": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/bib_types"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
         },
         "range": {
             "type": [

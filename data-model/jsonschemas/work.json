@@ -5,8 +5,8 @@
     "description": "A record for a conceptual work, which may be carried or embodied by a textual artifact or work witness",
     "type": "object",
     "properties": {
-        "id": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        "ark": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
         "pref_title": {
             "type": "string",
@@ -26,7 +26,8 @@
         "alt_title": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/alt_title_or_name"
+                "type": "string",
+                "minLength": 1
             },
             "unevaluatedItems": false        
         },
@@ -35,6 +36,25 @@
         },
         "genre": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/genres"
+        },
+        "creator": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                    },
+                    "role": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/creator_roles"
+                    }
+                }
+            }
+
+        },
+        "creation": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "unevaluatedProperties": false
         },
         "excerpt": {
             "type": ["array", "null"],
@@ -64,20 +84,6 @@
             "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_date": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json"
-            },
-            "unevaluatedItems": false
-        },
-        "assoc_name": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json"
             },
             "unevaluatedItems": false
         },
@@ -132,7 +138,7 @@
         }
     },
     "required": [
-        "id",
+        "ark",
         "pref_title"
     ],
     "unevaluatedProperties": false

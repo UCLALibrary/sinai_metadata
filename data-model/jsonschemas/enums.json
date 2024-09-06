@@ -7,7 +7,7 @@
     "$defs": {
         "agent_types": {
             "enum": [
-                "individual",
+                "person",
                 "organization"
             ]
         },
@@ -77,6 +77,13 @@
                 "rebind"
             ],
             "$comment": "Is this the same set as #/$defs/ms_obj_types?"
+        },
+        "creator_roles": {
+            "enum": [
+                "author",
+                "editor",
+                "translator"
+            ]
         },
         "dimension_types": {
             "enum": [
@@ -148,15 +155,15 @@
         },
         "genders": {
             "enum": [
-                "female",
-                "male"
-            ],
-            "$comment": "Finalize enum"
+                "Man",
+                "Woman",
+                "Other"
+            ]
         },
         "genres": {
             "description": "The genre of the work record",
             "type": ["array", "null"],
-            "item": {
+            "items": {
                 "enum": [
                     "Account books",
                     "Apocrypha",
@@ -325,6 +332,19 @@
             ],
             "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
         },
+        "refno_source_types": {
+            "enum": [
+                "CPG",
+                "CPL",
+                "TLG"
+            ]
+        },
+        "rel_agent_rels": {
+            "enum": [
+                "familyMember",
+                "memberOf"
+            ]
+        },
         "rel_con_source_types": {
             "enum": [
                 "HAF",
@@ -334,8 +354,13 @@
                 "Pleiades",
                 "Syriaca",
                 "VIAF"
-            ],
-            "$comment": "Finalize enum | sources have associated scope, e.g. Syriaca for any entity but Pinakes only works and agents"
+            ]
+        },
+        "rel_place_rels": {
+            "enum": [
+                "birthPlace",
+                "deathPlace"
+            ]
         },
         "related_mss_types": {
             "type": "string",

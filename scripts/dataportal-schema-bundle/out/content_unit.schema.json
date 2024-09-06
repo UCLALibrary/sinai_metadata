@@ -10,9 +10,9 @@
       "type": "integer"
     },
     "ark": {
-      "description": "A unique Archival Resource Key (ARK) describing the manuscript object",
+      "description": "A unique Archival Resource Key (ARK)",
       "type": "string",
-      "pattern": "^ark:/21198/z1.{6}"
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "cod_units": {
       "description": "The database identifiers for the codicological units that reference this content unit record",
@@ -29,7 +29,8 @@
       "enum": [
         "shelf",
         "rebind"
-      ]
+      ],
+      "$comment": "Is this the same set as #/$defs/ms_obj_types?"
     },
     "summary": {
       "type": [
@@ -46,11 +47,13 @@
     "lang": {
       "type": "array",
       "items": {
+        "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
         "enum": [
           "Arabic",
           "Armenian",
           "Caucasian Albanian",
           "Church Slavonic",
+          "Coptic",
           "CPA",
           "Ethiopic",
           "Georgian",
@@ -136,13 +139,13 @@
                     "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
                     "properties": {
                       "lang": {
+                        "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
                         "enum": [
+                          "Arabic",
                           "English",
                           "French",
-                          "Latin",
-                          "Greek",
-                          "Syriac",
-                          "Arabic"
+                          "German",
+                          "Greek"
                         ]
                       },
                       "value": {
@@ -170,26 +173,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -254,26 +254,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -328,11 +325,12 @@
                 "role": {
                   "type": "string",
                   "enum": [
+                    "author",
                     "attributed-author",
                     "creator",
                     "binder",
                     "owner",
-                    "not known"
+                    "unknown"
                   ]
                 },
                 "note": {
@@ -348,26 +346,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -406,26 +401,23 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "collation",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "ornamentation",
-                    "paratext",
-                    "provenance",
-                    "related_mss"
-                  ]
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
                 },
                 "value": {
                   "type": [
@@ -460,15 +452,23 @@
                   "$comment": "Foreign key referring to the bibliographic item in the database"
                 },
                 "type": {
-                  "type": "string",
-                  "enum": [
-                    "ref",
-                    "bib",
-                    "version",
-                    "edition",
-                    "translation",
-                    "otherdigversion"
-                  ]
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
                 },
                 "range": {
                   "type": [
@@ -504,26 +504,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -601,7 +598,7 @@
               "endowment",
               "rubric"
             ],
-            "$comment": "Initial enum for paracontent needed"
+            "$comment": "Initial enum for paracontent needed | Also considerations of 'para' vs 'guest' in same field?"
           },
           "locus": {
             "type": "string",
@@ -611,11 +608,13 @@
           "lang": {
             "type": "array",
             "items": {
+              "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
               "enum": [
                 "Arabic",
                 "Armenian",
                 "Caucasian Albanian",
                 "Church Slavonic",
+                "Coptic",
                 "CPA",
                 "Ethiopic",
                 "Georgian",
@@ -643,17 +642,31 @@
                 "script": {
                   "type": "array",
                   "items": {
-                    "description": "A term from a controlled list categorizing the writing system and script used in a given instance of writing",
+                    "description": "Term list categorizing the writing system and script used in a given instance of writing",
                     "enum": [
-                      "Perlschrift",
+                      "Asomtavruli",
+                      "Carolingian majuscule",
+                      "Carolingian minuscule",
                       "Christian Palestinian Aramaic",
-                      "Naskh",
-                      "Kufic",
-                      "Thuluth",
-                      "Greek minuscule",
-                      "Serto",
+                      "East Syriac",
+                      "Erkatagir",
                       "Estrangela",
-                      "East Syriac"
+                      "Geʽez abjad",
+                      "Geʽez abugida",
+                      "Glagolitic",
+                      "Greek majuscule",
+                      "Greek minuscule",
+                      "Khutsuri",
+                      "Kufic",
+                      "Melkite",
+                      "Minuscule bouclée",
+                      "Mkhedruli",
+                      "Naskh",
+                      "Nastaliq",
+                      "Nuskhurimt",
+                      "Perlschrift",
+                      "Serto",
+                      "Thuluth"
                     ],
                     "$comment": "enum not complete. Will eventually be references to script records"
                   },
@@ -678,26 +691,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -746,13 +756,13 @@
               "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
               "properties": {
                 "lang": {
+                  "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
                   "enum": [
+                    "Arabic",
                     "English",
                     "French",
-                    "Latin",
-                    "Greek",
-                    "Syriac",
-                    "Arabic"
+                    "German",
+                    "Greek"
                   ]
                 },
                 "value": {
@@ -795,11 +805,12 @@
                 "role": {
                   "type": "string",
                   "enum": [
+                    "author",
                     "attributed-author",
                     "creator",
                     "binder",
                     "owner",
-                    "not known"
+                    "unknown"
                   ]
                 },
                 "note": {
@@ -815,26 +826,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -890,7 +898,7 @@
                   "enum": [
                     "origin",
                     "previous_repository",
-                    "not known"
+                    "unknown"
                   ]
                 },
                 "note": {
@@ -906,26 +914,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -962,42 +967,56 @@
               "title": "Associated Date",
               "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
               "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "creation",
-                    "binding",
-                    "purchase",
-                    "other"
-                  ],
-                  "$comment": "TBD full list of types"
-                },
-                "iso": {
+              "allOf": [
+                {
                   "type": "object",
                   "properties": {
-                    "not_before": {
+                    "value": {
                       "type": "string",
-                      "format": "date",
-                      "minLength": 3
+                      "minLength": 1
                     },
-                    "not_after": {
-                      "type": [
-                        "string",
-                        "null"
+                    "iso": {
+                      "type": "object",
+                      "properties": {
+                        "not_before": {
+                          "type": "string",
+                          "format": "date",
+                          "minLength": 3
+                        },
+                        "not_after": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date",
+                          "minLength": 3
+                        }
+                      },
+                      "required": [
+                        "not_before"
                       ],
-                      "format": "date",
-                      "minLength": 3
+                      "unevaluatedProperties": false
                     }
                   },
                   "required": [
-                    "not_before"
+                    "value",
+                    "iso"
+                  ]
+                }
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "creation",
+                    "binding",
+                    "origin",
+                    "purchase",
+                    "birth",
+                    "death",
+                    "floruit",
+                    "unknown"
                   ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": "string",
-                  "minLength": 1
+                  "$comment": "TBD full list of types"
                 },
                 "as_written": {
                   "type": [
@@ -1019,26 +1038,23 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "type": "string",
-                        "enum": [
-                          "admin",
-                          "assoc_date",
-                          "assoc_name",
-                          "assoc_place",
-                          "bib",
-                          "binding",
-                          "cataloguer",
-                          "collation",
-                          "condition",
-                          "contents",
-                          "excerpt",
-                          "foliation",
-                          "general",
-                          "ornamentation",
-                          "paratext",
-                          "provenance",
-                          "related_mss"
-                        ]
+                        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label"
+                        ],
+                        "unevaluatedProperties": false
                       },
                       "value": {
                         "type": [
@@ -1058,9 +1074,7 @@
                 }
               },
               "required": [
-                "type",
-                "iso",
-                "value"
+                "type"
               ],
               "unevaluatedProperties": false
             },
@@ -1079,26 +1093,23 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "collation",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "ornamentation",
-                    "paratext",
-                    "provenance",
-                    "related_mss"
-                  ]
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
                 },
                 "value": {
                   "type": [
@@ -1131,15 +1142,45 @@
         "null"
       ],
       "items": {
-        "type": "string",
         "enum": [
-          "Dated",
+          "Border(s)",
+          "Border(s), Decorative",
+          "Calligraphic Practice",
+          "Catchwords",
           "Colophon",
-          "Inscription(s)"
-        ]
+          "Dated",
+          "Decoration, Anthropomorphic",
+          "Decoration, Architectural",
+          "Decoration, Calligraphic",
+          "Decoration, Full-page",
+          "Decoration, Geometric",
+          "Decoration, Vegetative",
+          "Decoration, Zoomorphic",
+          "Fragment",
+          "Headpiece(s)",
+          "Illumination(s)",
+          "Illustration(s)",
+          "Initial(s), Anthropomorphic",
+          "Initial(s), Decorated",
+          "Initial(s), Gymnastic",
+          "Initial(s), Historiated",
+          "Initial(s), Inhabited",
+          "Initial(s), Zoomorphic",
+          "Inscription(s)",
+          "Miniature(s)",
+          "Multispectral Imaging",
+          "Music notation",
+          "Palimpsest",
+          "Parallel text",
+          "Signatures",
+          "Table(s)",
+          "Table(s) of Contents",
+          "Unidentified text",
+          null
+        ],
+        "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
       },
-      "unevaluatedItems": false,
-      "$comment": "TBD list of features"
+      "unevaluatedItems": false
     },
     "note": {
       "type": [
@@ -1154,26 +1195,23 @@
         "type": "object",
         "properties": {
           "type": {
-            "type": "string",
-            "enum": [
-              "admin",
-              "assoc_date",
-              "assoc_name",
-              "assoc_place",
-              "bib",
-              "binding",
-              "cataloguer",
-              "collation",
-              "condition",
-              "contents",
-              "excerpt",
-              "foliation",
-              "general",
-              "ornamentation",
-              "paratext",
-              "provenance",
-              "related_mss"
-            ]
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
           },
           "value": {
             "type": [
@@ -1208,15 +1246,23 @@
             "$comment": "Foreign key referring to the bibliographic item in the database"
           },
           "type": {
-            "type": "string",
-            "enum": [
-              "ref",
-              "bib",
-              "version",
-              "edition",
-              "translation",
-              "otherdigversion"
-            ]
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
           },
           "range": {
             "type": [
@@ -1252,26 +1298,23 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "type": "string",
-                  "enum": [
-                    "admin",
-                    "assoc_date",
-                    "assoc_name",
-                    "assoc_place",
-                    "bib",
-                    "binding",
-                    "cataloguer",
-                    "collation",
-                    "condition",
-                    "contents",
-                    "excerpt",
-                    "foliation",
-                    "general",
-                    "ornamentation",
-                    "paratext",
-                    "provenance",
-                    "related_mss"
-                  ]
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
                 },
                 "value": {
                   "type": [
