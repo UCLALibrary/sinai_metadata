@@ -7,7 +7,7 @@
     ],
     "gender": "Man",
     "floruit": {
-        "value": "active 4th century",
+        "value": "active 4th century CE",
         "iso": {
             "not_before": "0301",
             "not_after": "0400"
