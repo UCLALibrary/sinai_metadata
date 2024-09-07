@@ -981,7 +981,7 @@
 			"cols": [
 				{
 					"id": "766ca6af-6d34-4f93-8b02-fb2759ec4bc2",
-					"name": "id",
+					"name": "ark",
 					"datatype": "integer",
 					"param": "",
 					"pk": true,
@@ -1064,6 +1064,48 @@
 					"estimatedSize": ""
 				},
 				{
+					"id": "05093878-5fd3-496c-aae1-ef0fea885d5a",
+					"name": "creator",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "f4d4ae2b-c8fd-4c03-a9e5-40cc33061fa6",
+					"name": "creation",
+					"datatype": "daterange",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
 					"id": "ed84cb87-eebd-46c7-b48f-4c0cb72bdc36",
 					"name": "genres",
 					"datatype": "text",
@@ -1086,7 +1128,7 @@
 				},
 				{
 					"id": "6859acc7-a4cb-44bd-9610-eef1c9eb9c70",
-					"name": "assoc_names",
+					"name": "rel_agents",
 					"datatype": "record",
 					"param": "",
 					"pk": false,
@@ -1107,7 +1149,7 @@
 				},
 				{
 					"id": "ed8ebf69-15f7-488c-997f-0c9fe20b9876",
-					"name": "assoc_places",
+					"name": "rel_places",
 					"datatype": "record",
 					"param": "",
 					"pk": false,
@@ -2088,7 +2130,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1722312492483
+		"lastSaved": 1725585701706
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -2159,8 +2201,8 @@
 				"4ca05745-547f-4a23-a18f-14407016f92d": {
 					"referencedItemId": "4ca05745-547f-4a23-a18f-14407016f92d",
 					"x": 65,
-					"y": 392,
-					"gHeight": 179,
+					"y": 393,
+					"gHeight": 208,
 					"gWidth": 233,
 					"color": "#ffffff",
 					"background": "#03a9f4",
