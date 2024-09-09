@@ -305,6 +305,40 @@
       },
       "unevaluatedItems": false
     },
+    "refno": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "description": "A reference number in a standard reference work, such as the Corpus Clavium Graecorum (CPG)",
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "idno": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "enum": [
+              "CPG",
+              "CPL",
+              "TLG"
+            ]
+          }
+        },
+        "required": [
+          "label",
+          "idno",
+          "source"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
     "bib": {
       "type": [
         "array",
@@ -583,70 +617,132 @@
       "items": {
         "type": "object",
         "properties": {
-          "type": {
-            "enum": [
-              "partOf",
-              "hasPart",
-              "hasVersion"
-            ]
-          },
           "id": {
+            "description": "A unique Archival Resource Key (ARK)",
             "type": "string",
-            "minLength": 1
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
           },
-          "note": {
+          "rel": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "partOf",
+                "hasPart",
+                "hasVersion"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "source": {
             "type": [
               "array",
               "null"
             ],
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
+              "type": "string"
             },
             "unevaluatedItems": false
           }
         },
         "required": [
-          "type",
-          "id"
+          "id",
+          "rel"
         ],
         "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "rel_agent": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+          },
+          "rel": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "familyMember",
+                "memberOf"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "source": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "unevaluatedProperties": false,
+        "required": [
+          "id",
+          "rel"
+        ]
+      },
+      "unevaluatedItems": false
+    },
+    "rel_place": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+          },
+          "rel": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "birthPlace",
+                "deathPlace"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "source": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "unevaluatedProperties": false,
+        "required": [
+          "id",
+          "rel"
+        ]
+      },
+      "unevaluatedItems": false
+    },
+    "internal": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
       },
       "unevaluatedItems": false
     },
