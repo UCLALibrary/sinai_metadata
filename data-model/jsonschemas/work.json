@@ -14,7 +14,7 @@
             "$comment": "Possibly rename as pref_name; add to util.json"
         },
         "orig_lang": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
         },
         "orig_lang_title": {
             "type": [
