@@ -259,6 +259,33 @@
             "description": "A string expression of the manuscript object's weight",
             "type": "string",
             "minLength": 1
+        },
+        "work_excerpt": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "translation": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                },
+                "source": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "value"
+            ],
+            "unevaluatedProperties": false
         }
     }
 }

@@ -55,12 +55,13 @@
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
             "unevaluatedProperties": false
         },
-        "excerpt": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/excerpt.json"
-            },
-            "unevaluatedItems": false
+        "incipit": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/work_excerpt",
+            "unevaluatedProperties": false
+        },
+        "explicit": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/work_excerpt",
+            "unevaluatedProperties": false
         },
         "rel_con": {
             "type": ["array", "null"],
