@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1vp4v",
+    "pref_title": "Dialogi quatuor‏",
+    "alt_title": [
+        "Four Dialogues",
+        "Quaestiones et responsiones",
+        "Caesarius, of Nazianzus, Saint, -369. Dialogi quatuor‏"
+    ],
+    "genre": [
+        "Apophthegmata"
+    ],
+    "creator": [
+        {
+            "id": "ark:/21198/s1j011",
+            "role": "author"
+        }
+    ],
+    "rel_con": [
+        {
+            "label": "Caesarii Dialogi quatuor",
+            "uri": "http://viaf.org/viaf/181110100",
+            "source": "VIAF"
+        },
+        {
+            "label": "Caesarii Dialogi quatuor",
+            "uri": "http://id.loc.gov/authorities/names/n91012876",
+            "source": "LoC"
+        }
+    ],
+    "refno": [],
+    "bib": []
+}

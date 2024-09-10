@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s1630k",
+    "pref_title": "Mark",
+    "alt_title": [
+        "Bible. Mark"
+    ],
+    "genre": [
+        "Biblical texts",
+        "Gospel books"
+    ],
+    "rel_con": [
+        {
+            "label": "Bible. Mark",
+            "uri": "https://viaf.org/viaf/179823714",
+            "source": "VIAF"
+        },
+        {
+            "label": "Bible. Mark",
+            "uri": "http://id.loc.gov/authorities/names/n78095773",
+            "source": "LoC"
+        }
+    ],
+    "refno": [],
+    "bib": []
+}
