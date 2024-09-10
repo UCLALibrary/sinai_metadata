@@ -14,7 +14,7 @@
             "$comment": "Possibly rename as pref_name; add to util.json"
         },
         "orig_lang": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_ancient"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
         },
         "orig_lang_title": {
             "type": [
@@ -50,7 +50,6 @@
                     }
                 }
             }
-
         },
         "creation": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
@@ -67,6 +66,13 @@
             "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/rel_con"
+            },
+            "unevaluatedItems": false
+        },
+        "refno": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/refno"
             },
             "unevaluatedItems": false
         },
@@ -87,42 +93,106 @@
             },
             "unevaluatedItems": false
         },
-        "assoc_place": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json"
-            },
-            "unevaluatedItems": false
-        },
         "rel_work": {
             "type": ["array", "null"],
             "items": {
                 "type": "object",
                 "properties": {
-                    "type" :{
-                        "enum": [
-                            "partOf",
-                            "hasPart",
-                            "hasVersion"
-                        ]
-                    },
                     "id": {
-                        "type": "string",
-                        "minLength": 1
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
                     },
-                    "note": {
+                    "rel": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/rel_work_rels"
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "source": {
                         "type": ["array", "null"],
                         "items": {
-                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                            "type": "string"
                         },
                         "unevaluatedItems": false
                     }
                 },
                 "required": [
-                    "type",
-                    "id"
+                    "id",
+                    "rel"
                 ],
                 "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "rel_agent": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                    },
+                    "rel": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/rel_agent_rels"
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "source": {
+                        "type": ["array", "null"],
+                        "items": {
+                            "type": "string"
+                        },
+                        "unevaluatedItems": false
+                    }
+                },
+                "unevaluatedProperties": false,
+                "required": [
+                    "id",
+                    "rel"
+                ]
+            },
+            "unevaluatedItems": false
+        },
+        "rel_place": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                    },
+                    "rel": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/rel_place_rels"
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "source": {
+                        "type": ["array", "null"],
+                        "items": {
+                            "type": "string"
+                        },
+                        "unevaluatedItems": false
+                    }
+                },
+                "unevaluatedProperties": false,
+                "required": [
+                    "id",
+                    "rel"
+                ]
+            },
+            "unevaluatedItems": false
+        },
+        "internal": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "type": "string"
             },
             "unevaluatedItems": false
         },

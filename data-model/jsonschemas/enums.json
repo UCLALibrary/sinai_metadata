@@ -362,6 +362,13 @@
                 "deathPlace"
             ]
         },
+        "rel_work_rels": {
+            "enum": [
+                "partOf",
+                "hasPart",
+                "hasVersion"
+            ]
+        },
         "related_mss_types": {
             "type": "string",
             "enum": [
