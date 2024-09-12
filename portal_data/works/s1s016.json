@@ -1,0 +1,24 @@
+{
+    "ark": "ark:/21198/s1s016",
+    "pref_title": "Ecclesiasticus",
+    "alt_title": [
+        "Bible. Ecclesiasticus"
+    ],
+    "genre": [
+        "Biblical texts"
+    ],
+    "rel_con": [
+        {
+            "label": "Biblioteka \"Sirak\"",
+            "uri": "http://viaf.org/viaf/293200012",
+            "source": "VIAF"
+        },
+        {
+            "label": "Bible. Ecclesiasticus",
+            "uri": "https://id.loc.gov/authorities/names/n80008474.html",
+            "source": "LoC"
+        }
+    ],
+    "refno": [],
+    "bib": []
+}
