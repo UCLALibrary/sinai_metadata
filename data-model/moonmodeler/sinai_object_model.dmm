@@ -7,27 +7,11 @@
 			"desc": "the general manuscript object, usually has a shelfmark, is a codex (or part of one)",
 			"cols": [
 				{
-					"id": "ef150c2f-0ae9-48e0-8cd4-099a2ae60d00",
-					"name": "id",
-					"datatype": "objectId",
-					"param": "",
-					"pk": true,
-					"nn": true,
-					"comment": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"any": "",
-					"estimatedSize": ""
-				},
-				{
 					"id": "d26ad8c4-dce2-4446-835c-7cc61ac94280",
 					"name": "ark",
 					"datatype": "string",
 					"param": "",
-					"pk": false,
+					"pk": true,
 					"nn": true,
 					"list": false,
 					"comment": "",
@@ -71,22 +55,6 @@
 					"any": ""
 				},
 				{
-					"id": "15d177ed-d4cb-41d1-8bbc-f211286f29f6",
-					"name": "idno",
-					"datatype": "94e98b1f-694c-412a-87a5-d7502cc17a9a",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"data": "",
-					"list": true,
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"any": "",
-					"estimatedSize": ""
-				},
-				{
 					"id": "019303ab-799f-491a-9b30-9e567e50a4b4",
 					"name": "summary",
 					"datatype": "string",
@@ -96,6 +64,22 @@
 					"comment": "",
 					"data": "",
 					"list": false,
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"any": "",
+					"estimatedSize": ""
+				},
+				{
+					"id": "15d177ed-d4cb-41d1-8bbc-f211286f29f6",
+					"name": "idno (refno?)",
+					"datatype": "94e98b1f-694c-412a-87a5-d7502cc17a9a",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"data": "",
+					"list": true,
 					"enum": "",
 					"validation": "",
 					"pattern": false,
@@ -155,7 +139,7 @@
 					"id": "fea06990-e6b0-452d-b2fe-c12d9e888334",
 					"name": "state",
 					"datatype": "enum",
-					"param": "",
+					"param": "codex, bifolium, folio, quire",
 					"pk": false,
 					"nn": true,
 					"list": false,
@@ -171,7 +155,7 @@
 					"id": "c8097c8f-7527-4f53-b04e-b242fcde839d",
 					"name": "form",
 					"datatype": "enum",
-					"param": "",
+					"param": "codex, scroll",
 					"pk": false,
 					"nn": true,
 					"comment": "",
@@ -217,7 +201,7 @@
 				},
 				{
 					"id": "6889a664-f5f9-40a6-b9ac-de1c753d8b62",
-					"name": "cod_units",
+					"name": "cod_unit",
 					"datatype": "a1dfe7fc-7cb6-4417-be29-2ad7c7dbe726",
 					"param": "",
 					"pk": false,
@@ -230,6 +214,22 @@
 					"pattern": false,
 					"any": "",
 					"estimatedSize": ""
+				},
+				{
+					"id": "b6abde5c-3e4c-43c1-96ba-655a5539a9b0",
+					"name": "layer",
+					"datatype": "2a7587cb-0725-43c4-8217-426d939de769",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": true,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
 				},
 				{
 					"id": "9bfa8319-23f1-472c-9842-111cc8a9d7a8",
@@ -421,8 +421,8 @@
 					"isPk": true,
 					"cols": [
 						{
-							"id": "322cbb7c-afe0-4f1a-8ece-b70599e6b235",
-							"colid": "ef150c2f-0ae9-48e0-8cd4-099a2ae60d00"
+							"id": "db3e2440-81b1-4692-9947-a3224201f25b",
+							"colid": "d26ad8c4-dce2-4446-835c-7cc61ac94280"
 						}
 					]
 				},
@@ -2872,7 +2872,7 @@
 					"id": "ca08a4b2-376b-4af5-8d6b-aec1eb614463",
 					"name": "type",
 					"datatype": "enum",
-					"param": "",
+					"param": "part",
 					"pk": false,
 					"nn": true,
 					"list": false,
@@ -3218,7 +3218,7 @@
 					"id": "0662ba87-ef17-4a47-a10b-b613951bbbb6",
 					"name": "type",
 					"datatype": "enum",
-					"param": "",
+					"param": "msblock",
 					"pk": false,
 					"nn": true,
 					"list": false,
@@ -9573,6 +9573,88 @@
 			"max": "",
 			"validation": "",
 			"capped": false
+		},
+		"2a7587cb-0725-43c4-8217-426d939de769": {
+			"id": "2a7587cb-0725-43c4-8217-426d939de769",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "0936e1a3-94b7-4acc-9844-08de213aa3d2",
+					"name": "id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "7b229031-4aad-4aa4-b36d-f549d12012c3",
+					"name": "type",
+					"datatype": "enum",
+					"param": "ot, uto, guest",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "d049df60-b3b2-48b7-8153-070603e4f38a",
+					"name": "seq",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "fb71f0da-38e2-4c70-86c1-84e5ef044d81",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": "",
+			"size": "",
+			"max": "",
+			"validation": "",
+			"capped": false
 		}
 	},
 	"relations": {
@@ -9666,7 +9748,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1720552559468,
+		"lastSaved": 1725660739170,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -9696,8 +9778,8 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 2153,
 					"y": 30,
-					"gHeight": 2080,
-					"gWidth": 287,
+					"gHeight": 2134,
+					"gWidth": 305,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
@@ -10397,7 +10479,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": false
+					"collapsed": true
 				},
 				"7a89bedb-1313-4202-a080-effd15068403": {
 					"referencedItemId": "7a89bedb-1313-4202-a080-effd15068403",
@@ -11008,6 +11090,19 @@
 				},
 				"e0c1195d-4220-4d49-9663-9f2d0f6178fe": {
 					"referencedItemId": "e0c1195d-4220-4d49-9663-9f2d0f6178fe",
+					"x": -1,
+					"y": -1,
+					"gHeight": -1,
+					"gWidth": -1,
+					"color": "#ffffff",
+					"background": "transparent",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"2a7587cb-0725-43c4-8217-426d939de769": {
+					"referencedItemId": "2a7587cb-0725-43c4-8217-426d939de769",
 					"x": -1,
 					"y": -1,
 					"gHeight": -1,
