@@ -188,6 +188,7 @@
         "ark",
         "type",
         "shelfmark",
+        "extent",
         "part",
         "location"
     ],
