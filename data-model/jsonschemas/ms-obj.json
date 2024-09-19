@@ -54,29 +54,12 @@
             },
             "unevaluatedItems": false
         },
-        "cod_units": {
+        "part": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "type": {
-                        "enum": ["part", "uto", "reconstr"]
-                    },
-                    "sequence": {
-                        "type": "integer",
-                        "minimum": 1
-                    }
-                },
-                "required": [
-                    "id",
-                    "type",
-                    "sequence"
-                ],
-                "unevaluatedProperties": false
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/part.json"
             },
+            "minItems": 1,
             "unevaluatedItems": false
         },
         "para": {
