@@ -141,18 +141,6 @@
             ],
             "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
         },
-        "forms": {
-            "description": "The original form of the manuscript object",
-            "enum": [
-                "Bifolim",
-                "Codex",
-                "Folium",
-                "Quire(s)",
-                "Scroll",
-                null
-            ],
-            "$comment": "This enum is reused and expanded in #/$defs/states"
-        },
         "genders": {
             "enum": [
                 "Man",
@@ -407,15 +395,14 @@
         },
         "states": {
             "description": "The current state of the manuscript object",
-            "anyOf": [
-                {
-                    "$ref": "#/$defs/forms"
-                },
-                {
-                    "enum": ["Undertext object"]
-                }
-            ],
-            "$comment": "State allows the same enumerated value list as #/$defs/forms with the addition of Undertext object"
+            "enum": [
+                "Bifolim",
+                "Codex",
+                "Folium",
+                "Quire(s)",
+                "Scroll",
+                "Undertext object"
+            ]
         },
         "supports": {
             "enum": [
