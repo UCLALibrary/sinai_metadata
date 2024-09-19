@@ -55,6 +55,39 @@
             "minItems": 1,
             "unevaluatedItems": false
         },
+        "layer": {
+            "type": ["array"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                    },
+                    "label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "type": {
+                        "enum": [
+                            "overtext",
+                            "undertext",
+                            "guest"
+                        ]
+                    },
+                    "locus": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
+                    }
+                },
+                "required": [
+                    "id",
+                    "label",
+                    "type"
+                ],
+                "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
         "para": {
             "type": ["array", "null"],
             "items": {
