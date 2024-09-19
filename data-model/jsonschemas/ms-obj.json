@@ -186,8 +186,10 @@
     },
     "required": [
         "ark",
+        "type",
         "shelfmark",
-        "type"
+        "part",
+        "location"
     ],
     "unevaluatedProperties": false
 }
