@@ -34,18 +34,11 @@
         "state": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/states"
         },
-        "form": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/forms"
-        },
         "fol": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/fol"
         },
         "coll": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/coll"
-            },
-            "unevaluatedItems": false
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/coll"
         },
         "features": {
             "type": ["array", "null"],
@@ -54,29 +47,45 @@
             },
             "unevaluatedItems": false
         },
-        "cod_units": {
+        "part": {
             "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/part.json"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "layer": {
+            "type": ["array"],
             "items": {
                 "type": "object",
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                    },
+                    "label": {
+                        "type": "string",
+                        "minLength": 1
                     },
                     "type": {
-                        "enum": ["part", "uto", "reconstr"]
+                        "enum": [
+                            "overtext",
+                            "undertext",
+                            "guest"
+                        ]
                     },
-                    "sequence": {
-                        "type": "integer",
-                        "minimum": 1
+                    "locus": {
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
                     }
                 },
                 "required": [
                     "id",
-                    "type",
-                    "sequence"
+                    "label",
+                    "type"
                 ],
                 "unevaluatedProperties": false
             },
+            "minItems": 1,
             "unevaluatedItems": false
         },
         "para": {
@@ -177,8 +186,11 @@
     },
     "required": [
         "ark",
+        "type",
         "shelfmark",
-        "type"
+        "extent",
+        "part",
+        "location"
     ],
     "unevaluatedProperties": false
 }
