@@ -29,10 +29,7 @@
                         "minLength": 1
                     },
                     "id": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
                     },
                     "url": {
                         "type": [
