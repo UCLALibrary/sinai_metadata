@@ -6,8 +6,8 @@
     "type": "object",
     "properties": {
         "id": {
-            "type": "integer",
-            "$comment": "Foreign key referring to the bibliographic item in the database"
+            "type": "string",
+            "format": "uuid"
         },
         "type": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
