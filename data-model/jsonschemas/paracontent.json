@@ -19,11 +19,12 @@
             "minItems": 1,
             "unevaluatedItems": false
         },
-        "writing": {
-            "type": ["array", "null"],
+        "script": {
+            "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json"
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/scripts"
             },
+            "minItems": 1,
             "unevaluatedItems": false
         },
         "label": {
@@ -37,7 +38,7 @@
         "translation": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/translation"
+                "type": "string"
             },
             "unevaluatedItems": false
         },
@@ -65,14 +66,15 @@
         "note": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                "type": "string"
             },
             "unevaluatedItems": false
         }
     },
     "required": [
         "type",
-        "locus"
+        "locus",
+        "lang"
     ],
         "unevaluatedProperties": false
 }
