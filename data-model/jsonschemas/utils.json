@@ -128,21 +128,9 @@
             ]
         },
         "dim": {
-            "type": "object",
-                "properties": {
-                    "type": {
-                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/dimension_types"
-                    },
-                    "value": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
-                "required": [
-                    "type",
-                    "value"
-                ],
-                "unevaluatedProperties": false
+            "description": "A string expression of an object's dimensions, whether manuscript block, folio, or writing area",
+            "type": ["string", "null"],
+            "minLength": 1
         },
         "extent": {
             "description": "The extent, expressed in number of folios, which comprise the manuscript object",
