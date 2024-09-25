@@ -168,6 +168,13 @@
             },
             "unevaluatedItems": false
         },
+        "internal": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "unevaluatedItems": false
+        },
         "cataloguer": {
             "type": [
                 "array",
