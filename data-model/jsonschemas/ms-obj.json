@@ -8,8 +8,8 @@
         "ark": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
-        "type": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_types"
+        "reconstruction": {
+            "type": "boolean"
         },
         "shelfmark": {
             "type": "string",
@@ -188,7 +188,7 @@
     },
     "required": [
         "ark",
-        "type",
+        "reconstruction",
         "shelfmark",
         "extent",
         "part",
