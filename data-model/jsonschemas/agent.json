@@ -68,7 +68,7 @@
         "note": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                "type": "string"
             },
             "unevaluatedItems": false
         },
