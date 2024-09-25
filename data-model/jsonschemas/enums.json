@@ -396,9 +396,10 @@
         "states": {
             "description": "The current state of the manuscript object",
             "enum": [
-                "Bifolim",
+                "Bifolio(s)",
                 "Codex",
-                "Folium",
+                "Folio(s)",
+                "Folio Fragment(s)",
                 "Quire(s)",
                 "Scroll",
                 "Undertext object"
