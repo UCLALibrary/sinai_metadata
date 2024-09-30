@@ -90,10 +90,26 @@
             "$comment": "Is this the same set as #/$defs/ms_obj_types?"
         },
         "creator_roles": {
-            "enum": [
-                "author",
-                "editor",
-                "translator"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "author",
+                        "label": "Author"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "editor",
+                        "label": "Editor"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "translator",
+                        "label": "Translator"
+                    }
+                }
             ]
         },
         "dimension_types": {
@@ -176,37 +192,153 @@
             ]
         },
         "genres": {
-            "description": "The genre of the work record",
-            "type": ["array", "null"],
-            "items": {
-                "enum": [
-                    "Account books",
-                    "Apocrypha",
-                    "Apophthegmata",
-                    "Biblical texts",
-                    "Blessings",
-                    "Calendars",
-                    "Canon law",
-                    "Charters",
-                    "Commentaries",
-                    "Dictionaries",
-                    "Gospel books",
-                    "Hagiographies",
-                    "Historical works",
-                    "Hymnals",
-                    "Lectionaries",
-                    "Liturgical texts",
-                    "Martyrologies",
-                    "Mimars",
-                    "Philosophical works",
-                    "Poetry",
-                    "Prayers",
-                    "Scientific works",
-                    "Sermons",
-                    "Theological works"
-                ]
-            },
-            "unevaluatedItems": false
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "account-books",
+                        "label": "Account books"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "apocrypha",
+                        "label": "Apocrypha"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "biblical-texts",
+                        "label": "Biblical texts"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "blessings",
+                        "label": "Blessings"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "calendars",
+                        "label": "Calendars"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "canon-law",
+                        "label": "Canon law"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "charters",
+                        "label": "Charters"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "dictionaries",
+                        "label": "Dictionaries"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "gospel-books",
+                        "label": "Gospel books"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "hymnals",
+                        "label": "Hymnals"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "lectionaries",
+                        "label": "Lectionaries"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "martyrologies",
+                        "label": "Martyrologies"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "philosophical-works",
+                        "label": "Philosophical works"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "poetry",
+                        "label": "Poetry"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "prayers",
+                        "label": "Prayers"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "scientific-works",
+                        "label": "Scientific works"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "sermons",
+                        "label": "Sermons"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                }
+            ]
         },
         "idno_types": {
             "enum": [
