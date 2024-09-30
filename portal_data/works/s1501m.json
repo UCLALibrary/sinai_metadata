@@ -10,7 +10,7 @@
     "creator": [
         {
             "id": "ark:/21198/s15k50",
-            "role": "author"
+            "role": {"id": "author", "label": "Author"}
         }
     ],
     "rel_con": [

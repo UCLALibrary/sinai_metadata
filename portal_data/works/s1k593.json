@@ -13,7 +13,7 @@
     "creator": [
         {
             "id": "ark:/21198/s1b88k",
-            "role": "author"
+            "role": {"id": "author", "label": "Author"}
         }
     ],
     "creation": {
