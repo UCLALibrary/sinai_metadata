@@ -1,7 +1,7 @@
-import json, csv, os
+import json, csv, sys
 
 # I/O and CSV Parameters
-path_to_csv = "/Users/wpotter/Desktop/agent_types.csv"
+path_to_csv = sys.argv[1] # specify CSV file to use as terminal parameter
 csv_has_header = True
 # optionally set the ordered field names of the CSV -- N.B. overriden by has_header being true
 headers = []
