@@ -11,10 +11,37 @@
       "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
-      "enum": [
-        "person",
-        "organization"
-      ]
+      "oneOf": [
+        {
+          "const": {
+            "id": "person",
+            "label": "Person"
+          }
+        },
+        {
+          "const": {
+            "id": "organization",
+            "label": "Organization"
+          }
+        }
+      ],
+      "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "unevaluatedProperties": false
     },
     "pref_name": {
       "type": "string",
@@ -39,11 +66,43 @@
       "minLength": 1
     },
     "gender": {
-      "enum": [
-        "Man",
-        "Woman",
-        "Other"
-      ]
+      "oneOf": [
+        {
+          "const": {
+            "id": "man",
+            "label": "Man"
+          }
+        },
+        {
+          "const": {
+            "id": "woman",
+            "label": "Woman"
+          }
+        },
+        {
+          "const": {
+            "id": "other",
+            "label": "Other"
+          }
+        }
+      ],
+      "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "unevaluatedProperties": false
     },
     "birth": {
       "unevaluatedProperties": false,
@@ -239,8 +298,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "$comment": "Foreign key referring to the bibliographic item in the database"
+            "type": "string",
+            "format": "uuid"
           },
           "type": {
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -288,44 +347,7 @@
               "null"
             ],
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
+              "type": "string"
             },
             "unevaluatedItems": false
           }
@@ -367,44 +389,7 @@
         "null"
       ],
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-        "title": "Note",
-        "description": "A prose note of a specified type",
-        "type": "object",
-        "properties": {
-          "type": {
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "value": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          }
-        },
-        "required": [
-          "type",
-          "value"
-        ],
-        "unevaluatedProperties": false
+        "type": "string"
       },
       "unevaluatedItems": false
     },
