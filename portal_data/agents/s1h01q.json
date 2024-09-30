@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1h01q",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Diadochus of Photice",
     "alt_name": [
         "Diadochus, Bishop of Photice, active 5th century"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "5th c. CE",
         "iso": {

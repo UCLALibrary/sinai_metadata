@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1d59j",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John Cassian",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 360 CE-ca. 435 CE",
         "iso": {

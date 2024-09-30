@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s16c70",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Pachomius",
     "alt_name": [
         "ܦܟܘܡܝܣ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 290 CE-346 CE",
         "iso": {

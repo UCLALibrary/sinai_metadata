@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1j011",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Caesarius of Nazianzus",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "369 CE",
         "iso": {

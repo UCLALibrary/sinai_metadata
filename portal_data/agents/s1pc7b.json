@@ -1,6 +1,6 @@
 {
     "ark": "ark:/21198/s1pc7b",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Sahdona",
     "alt_name": [
         "Sahdona of Halmon",
@@ -9,7 +9,7 @@
         "Martyrius",
         "ܣܗܕܘܢܐ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "rel_con": [
         {
             "label": "Sāhdōnā, Bp. of Māhōzē dh' Arēwān in Beth Gamdi",

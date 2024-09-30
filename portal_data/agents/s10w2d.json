@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s10w2d",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John the Apostle",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "rel_con": [
         {
             "label": "John, the Apostle, Saint",

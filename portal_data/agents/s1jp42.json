@@ -1,6 +1,6 @@
 {
     "ark": "ark:/21198/s1jp42",
-    "type": "organization",
+    "type": {"id": "organization", "label": "Organization"},
     "pref_name": "Saint Catherine's Monastery of the Sinai",
     "alt_name": [],
     "rel_con": [

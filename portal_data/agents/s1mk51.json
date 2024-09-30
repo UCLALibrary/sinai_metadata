@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1mk51",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Macarius the Egyptian",
     "alt_name": [
         "Macarius the Great"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "4th c. CE",
         "iso": {

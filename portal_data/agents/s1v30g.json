@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1v30g",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Maximus the Confessor",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 580 CE-662 CE",
         "iso": {

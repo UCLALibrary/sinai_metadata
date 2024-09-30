@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1zw23",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Mark the Hermit",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "430 CE",
         "iso": {

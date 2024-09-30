@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1z59h",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Athanasius of Alexandria",
     "alt_name": [
         "St. Athanasius the Great"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "373 CE",
         "iso": {

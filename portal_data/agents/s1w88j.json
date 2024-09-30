@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1w88j",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Cyril of Scythopolis",
     "alt_name": [
         "Cyrillus Scythopolitanus",
         "Κύριλλος ο Σκυθοπολίτης"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 524 CE-ca. 558 CE",
         "iso": {

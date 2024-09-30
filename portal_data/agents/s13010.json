@@ -1,6 +1,6 @@
 {
     "ark": "ark:/21198/s13010",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Arsenius of Scetis",
     "alt_name": [
         "Arsenius the Great",
@@ -9,7 +9,7 @@
         "Arsenius the Roman",
         "Abba Arsenius"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 354 CE-ca. 450 CE",
         "iso": {
