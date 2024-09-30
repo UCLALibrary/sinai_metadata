@@ -12,7 +12,7 @@ separator = ","
 # this is the base JSON snippet into which the list of controlled term objects will be placed
 json_base = {
     "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-    "oneOf": []
+    "anyOf": []
 }
 
 #########
@@ -31,7 +31,7 @@ with open(path_to_csv) as csvfile:
             "label": row["label"]
             }
         }
-        json_base["oneOf"].append(enum_term)
+        json_base["anyOf"].append(enum_term)
 
 # prints updated JSON snippet to console; copy and paste this into the enums.json schema where needed
 print(json.dumps(json_base, indent=4))
