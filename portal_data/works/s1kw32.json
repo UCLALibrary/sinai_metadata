@@ -9,7 +9,10 @@
         "Vita Compilata"
     ],
     "genre": [
-        "Hagiographies"
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "rel_con": [
         {

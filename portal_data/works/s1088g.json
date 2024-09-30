@@ -5,9 +5,18 @@
         "Lectionary"
     ],
     "genre": [
-        "Liturgical texts",
-        "Lectionaries",
-        "Biblical texts"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        },
+        {
+            "id": "lectionaries",
+            "label": "Lectionaries"
+        },
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        }
     ],
     "rel_con": [],
     "refno": [],

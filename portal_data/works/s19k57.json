@@ -5,7 +5,10 @@
         "Passio of Sergius and Bacchus"
     ],
     "genre": [
-        "Hagiographies"
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "rel_con": [
         {

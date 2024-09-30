@@ -5,7 +5,10 @@
         "Hymns"
     ],
     "genre": [
-        "Hymnals"
+        {
+            "id": "hymnals",
+            "label": "Hymnals"
+        }
     ],
     "rel_con": [],
     "refno": [],

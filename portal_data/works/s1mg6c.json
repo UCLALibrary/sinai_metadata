@@ -5,7 +5,10 @@
         "Anthologion"
     ],
     "genre": [
-        "Liturgical texts"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        }
     ],
     "rel_con": [],
     "refno": [],

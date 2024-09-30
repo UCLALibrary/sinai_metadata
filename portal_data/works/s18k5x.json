@@ -5,7 +5,10 @@
         "Questions and Answers of Basil and Gregory"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "rel_con": [],
     "refno": [],

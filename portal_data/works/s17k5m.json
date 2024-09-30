@@ -5,7 +5,10 @@
         "The Life of Andronicus and Athanasia"
     ],
     "genre": [
-        "Martyrologies"
+        {
+            "id": "martyrologies",
+            "label": "Martyrologies"
+        }
     ],
     "rel_con": [
         {
