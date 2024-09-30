@@ -6,9 +6,20 @@
     "type": "null",
     "$defs": {
         "agent_types": {
-            "enum": [
-                "person",
-                "organization"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "oneOf": [
+                {
+                    "const": {
+                        "id": "person",
+                        "label": "Person"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "organization",
+                        "label": "Organization"
+                    }
+                }
             ]
         },
         "assoc_date_types": {
@@ -142,10 +153,26 @@
             "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
         },
         "genders": {
-            "enum": [
-                "Man",
-                "Woman",
-                "Other"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "oneOf": [
+                {
+                    "const": {
+                        "id": "man",
+                        "label": "Man"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "woman",
+                        "label": "Woman"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "other",
+                        "label": "Other"
+                    }
+                }
             ]
         },
         "genres": {
