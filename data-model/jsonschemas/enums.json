@@ -7,7 +7,7 @@
     "$defs": {
         "agent_types": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-            "oneOf": [
+            "anyOf": [
                 {
                     "const": {
                         "id": "person",
@@ -154,7 +154,7 @@
         },
         "genders": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-            "oneOf": [
+            "anyOf": [
                 {
                     "const": {
                         "id": "man",
