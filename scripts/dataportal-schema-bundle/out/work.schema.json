@@ -596,7 +596,6 @@
                 "unevaluatedItems": false
               }
             },
-            "unevaluatedProperties": false,
             "required": [
               "id"
             ]
@@ -687,7 +686,6 @@
                 "unevaluatedItems": false
               }
             },
-            "unevaluatedProperties": false,
             "required": [
               "id"
             ]
@@ -766,7 +764,6 @@
                 "unevaluatedItems": false
               }
             },
-            "unevaluatedProperties": false,
             "required": [
               "id"
             ]
