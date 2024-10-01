@@ -11,6 +11,9 @@
         "reconstruction": {
             "type": "boolean"
         },
+        "reconstruction_type": {
+            "enum": ["rebind", "uto"]
+        },
         "shelfmark": {
             "type": "string",
             "minLength": 1
@@ -194,5 +197,28 @@
         "part",
         "location"
     ],
-    "unevaluatedProperties": false
+    "unevaluatedProperties": false,
+    "if": {
+        "properties": {
+            "reconstruction": {"const": true}
+        },
+        "required": ["reconstruction"]
+    },
+    "then": {
+        "properties": {
+            "reconstruction_type": {
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "required": [
+            "ark",
+            "reconstruction",
+            "reconstruction_type",
+            "shelfmark",
+            "extent",
+            "part",
+            "location"
+        ]
+    }
 }
