@@ -5,6 +5,40 @@
     "description": "A collection of sub-schemas containing the controlled vocabularies and enumerated value lists for the Sinai Manuscripts Data Portal",
     "type": "null",
     "$defs": {
+        "agent_agent_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "family-member",
+                        "label": "Family Member"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "member-of",
+                        "label": "Member Of"
+                    }
+                }
+            ]
+        },
+        "agent_place_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "birth",
+                        "label": "Place of Birth"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "death",
+                        "label": "Place of Death"
+                    }
+                }
+            ]
+        },
         "agent_types": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [
@@ -579,6 +613,63 @@
                     "reconstruction"
                 ],
                 "$comment": "Likely expand this enum?"
+        },
+        "work_work_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "has-part",
+                        "label": "Has Part"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "has-version",
+                        "label": "Has Version"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "part-of",
+                        "label": "Part Of"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "version-of",
+                        "label": "Version Of"
+                    }
+                }
+            ]
+        },
+        "work_agent_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "commemorates",
+                        "label": "Commemorates"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "addressee",
+                        "label": "Addressee"
+                    }
+                }
+            ]
+        },
+        "work_place_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "composition",
+                        "label": "Place of Composition"
+                    }
+                }
+            ]
         }
     }
 }

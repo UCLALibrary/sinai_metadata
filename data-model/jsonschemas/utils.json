@@ -220,6 +220,25 @@
             ],
             "unevaluatedProperties": false
         },
+        "rel_entity_core": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                },
+                "source": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "unevaluatedProperties": false,
+            "required": [
+                "id"
+            ]
+        },
         "summary": {
             "type": [
                 "string",
