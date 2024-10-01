@@ -234,7 +234,6 @@
                     "unevaluatedItems": false
                 }
             },
-            "unevaluatedProperties": false,
             "required": [
                 "id"
             ]
