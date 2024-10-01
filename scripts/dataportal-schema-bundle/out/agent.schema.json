@@ -400,38 +400,75 @@
       ],
       "items": {
         "type": "object",
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "A unique Archival Resource Key (ARK)",
+                "type": "string",
+                "pattern": "^ark:/21198/([a-z]|[0-9])+"
+              },
+              "source": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                },
+                "unevaluatedItems": false
+              }
+            },
+            "unevaluatedProperties": false,
+            "required": [
+              "id"
+            ]
+          }
+        ],
         "properties": {
-          "id": {
-            "description": "A unique Archival Resource Key (ARK)",
-            "type": "string",
-            "pattern": "^ark:/21198/([a-z]|[0-9])+"
-          },
           "rel": {
             "type": "array",
             "items": {
-              "enum": [
-                "familyMember",
-                "memberOf"
-              ]
-            },
-            "unevaluatedItems": false
-          },
-          "source": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
+              "anyOf": [
+                {
+                  "const": {
+                    "id": "family-member",
+                    "label": "Family Member"
+                  }
+                },
+                {
+                  "const": {
+                    "id": "member-of",
+                    "label": "Member Of"
+                  }
+                }
+              ],
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
             },
             "unevaluatedItems": false
           }
         },
-        "unevaluatedProperties": false,
         "required": [
-          "id",
           "rel"
-        ]
+        ],
+        "unevaluatedProperties": false
       },
       "unevaluatedItems": false
     },
@@ -442,38 +479,75 @@
       ],
       "items": {
         "type": "object",
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "A unique Archival Resource Key (ARK)",
+                "type": "string",
+                "pattern": "^ark:/21198/([a-z]|[0-9])+"
+              },
+              "source": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                },
+                "unevaluatedItems": false
+              }
+            },
+            "unevaluatedProperties": false,
+            "required": [
+              "id"
+            ]
+          }
+        ],
         "properties": {
-          "id": {
-            "description": "A unique Archival Resource Key (ARK)",
-            "type": "string",
-            "pattern": "^ark:/21198/([a-z]|[0-9])+"
-          },
           "rel": {
             "type": "array",
             "items": {
-              "enum": [
-                "birthPlace",
-                "deathPlace"
-              ]
-            },
-            "unevaluatedItems": false
-          },
-          "source": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
+              "anyOf": [
+                {
+                  "const": {
+                    "id": "birth",
+                    "label": "Place of Birth"
+                  }
+                },
+                {
+                  "const": {
+                    "id": "death",
+                    "label": "Place of Death"
+                  }
+                }
+              ],
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
             },
             "unevaluatedItems": false
           }
         },
-        "unevaluatedProperties": false,
         "required": [
-          "id",
           "rel"
-        ]
+        ],
+        "unevaluatedProperties": false
       },
       "unevaluatedItems": false
     },
