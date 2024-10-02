@@ -653,12 +653,27 @@
             ]
         },
         "supports": {
-            "enum": [
-                "Paper",
-                "Papyrus",
-                "Parchment"
-            ],
-            "$comment": "Should these point to a record rather than being enum strings?"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "paper",
+                        "label": "Paper"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "parchment",
+                        "label": "Parchment"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "papyrus",
+                        "label": "Papyrus"
+                    }
+                }
+            ]
         },
         "viscodex_types": {
             "type": "string",
