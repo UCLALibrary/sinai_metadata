@@ -383,10 +383,20 @@
             "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
         },
         "iiif_types": {
-            "type": "string",
-            "enum": [
-                "main",
-                "reordered"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "main",
+                        "label": "Main"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "reordered",
+                        "label": "Reordered"
+                    }
+                }
             ]
         },
         "iiif_text_directions": {
@@ -692,12 +702,21 @@
             ]
         },
         "viscodex_types": {
-            "type": "string",
-                "enum": [
-                    "ms_obj",
-                    "reconstruction"
-                ],
-                "$comment": "Likely expand this enum?"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "manuscript",
+                        "label": "Manuscript"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "reconstruction",
+                        "label": "Reconstruction"
+                    }
+                }
+            ]
         },
         "work_work_rels": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
