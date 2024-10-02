@@ -569,10 +569,26 @@
             ]
         },
         "related_mss_types": {
-            "type": "string",
-            "enum": [
-                "filiation",
-                "disjecta"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "filiation",
+                        "label": "Filiation"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "reconstructed-from",
+                        "label": "Reconstructed From"
+                    }
+                }
             ]
         },
         "scripts": {
