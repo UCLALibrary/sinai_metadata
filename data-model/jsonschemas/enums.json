@@ -443,13 +443,31 @@
                 "Greek"
             ]
         },
-        "ms_obj_types": {
-            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
-            "enum": [
-                "shelf",
-                "rebind"
-            ],
-            "$comment": "Is this the same set as #/$defs/cod_unit_types and #/$defs/content_unit_types?"
+        "ms_obj_real_types": {
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "manuscript",
+                        "label": "Manuscript"
+                    }
+                }
+            ]
+        },
+        "ms_obj_reconstructed_types": {
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "rebind",
+                        "label": "Digital Rebinding"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "uto",
+                        "label": "Undertext Object"
+                    }
+                }
+            ]
         },
         "note_types": {
             "type": "string",

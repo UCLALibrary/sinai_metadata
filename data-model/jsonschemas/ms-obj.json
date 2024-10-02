@@ -11,8 +11,8 @@
         "reconstruction": {
             "type": "boolean"
         },
-        "reconstruction_type": {
-            "enum": ["rebind", "uto"]
+        "type": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
         },
         "shelfmark": {
             "type": "string",
@@ -192,6 +192,7 @@
     "required": [
         "ark",
         "reconstruction",
+        "type",
         "shelfmark",
         "extent",
         "part",
@@ -206,19 +207,16 @@
     },
     "then": {
         "properties": {
-            "reconstruction_type": {
-                "type": "string",
-                "minLength": 1
+            "type": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_reconstructed_types"
             }
-        },
-        "required": [
-            "ark",
-            "reconstruction",
-            "reconstruction_type",
-            "shelfmark",
-            "extent",
-            "part",
-            "location"
-        ]
+        }
+    },
+    "else": {
+        "properties": {
+            "type": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_real_types"
+            }
+        }
     }
 }
