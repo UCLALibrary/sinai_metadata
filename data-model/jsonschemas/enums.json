@@ -606,14 +606,50 @@
         },
         "states": {
             "description": "The current state of the manuscript object",
-            "enum": [
-                "Bifolio(s)",
-                "Codex",
-                "Folio(s)",
-                "Folio Fragment(s)",
-                "Quire(s)",
-                "Scroll",
-                "Undertext object"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "codex",
+                        "label": "Codex"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "quire",
+                        "label": "Quire(s)"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "bifolio",
+                        "label": "Bifolio(s)"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "folio",
+                        "label": "Folio(s)"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "folio-fragment",
+                        "label": "Folio Fragment(s)"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "uto",
+                        "label": "Undertext Object"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "scroll",
+                        "label": "Scroll"
+                    }
+                }
             ]
         },
         "supports": {
