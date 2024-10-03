@@ -72,7 +72,7 @@
 				},
 				{
 					"id": "5fd4556f-ffd1-4aed-9926-9e6c748cd066",
-					"name": "ms_object_type",
+					"name": "reconstruction",
 					"datatype": "text",
 					"param": "",
 					"pk": false,
@@ -92,9 +92,9 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "c75117a9-98fb-4279-87a2-4c2bbe46c037",
-					"name": "identifiers",
-					"datatype": "text",
+					"id": "86185c73-ae0e-427a-83e4-c147cb2c1c43",
+					"name": "part_layer",
+					"datatype": "record",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -114,28 +114,7 @@
 				},
 				{
 					"id": "01e00146-56fe-4e75-91b9-5cfe2be7877a",
-					"name": "parts",
-					"datatype": "record",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"list": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"after": "",
-					"collation": null,
-					"pg": {
-						"generatedIdentity": "no",
-						"generated": "",
-						"storage": "",
-						"compression": ""
-					},
-					"estimatedSize": ""
-				},
-				{
-					"id": "78c9444e-8bba-4695-a4ea-fe9092035445",
-					"name": "utos",
+					"name": "layer",
 					"datatype": "record",
 					"param": "",
 					"pk": false,
@@ -2130,7 +2109,7 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": 1725660833157
+		"lastSaved": 1726153421247
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -2151,7 +2130,7 @@
 					"x": 63,
 					"y": 113,
 					"gHeight": 260,
-					"gWidth": 236,
+					"gWidth": 247,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": true,
