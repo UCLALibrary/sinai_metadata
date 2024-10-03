@@ -1,22 +1,21 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layout.json",
-    "title": "Layout",
-    "description": "The page layout for a given range of folios in an object",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/ink.json",
+    "title": "Ink",
+    "description": "Collected information about the ink used in the composition of an inscribed layer",
     "type": "object",
     "properties": 
     {
         "locus": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
         },
-        "columns": {
-            "type": "string"
-        },
-        "lines": {
-            "type": "string"
-        },
-        "dim": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dim"
+        "color": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "unevaluatedItems": false,
+            "$comment": "Perhaps make this an enum to constrain color values?"
         },
         "note": {
             "type": ["array", "null"],
