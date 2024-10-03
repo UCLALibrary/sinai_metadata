@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s15c7p",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Simeon the Stylite, the Younger",
     "alt_name": [
         "St. Simeon of the Admirable Mountain",
         "Συμεὼν ὁ νεώτερος ὁ στυλίτης"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "521 CE-597 CE",
         "iso": {

@@ -5,12 +5,18 @@
         "Bar Hebraeus' Book of the Pupils of the Eyes"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s16k59",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [],

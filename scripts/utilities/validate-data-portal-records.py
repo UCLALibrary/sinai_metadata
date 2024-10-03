@@ -3,12 +3,12 @@ import jschon, json, requests, os
 '''
 CONSTANTS
 '''
-PATH_TO_RECORDS = '/Users/wpotter/Desktop/SMDP-Migration/works/'
+PATH_TO_RECORDS = '/Users/wpotter/Documents/GitHub/sinai_metadata/portal_data/agents/'
 AGENTS_SCHEMA_URL = 'https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/tnb_docs/agent.schema.json'
 WORKS_SCHEMA_URL = 'https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/tnb_docs/work.schema.json'
 
 # select a JSON schema to use
-selected_schema = WORKS_SCHEMA_URL # change to AGENTS_SCHEMA_URL; to do: rewrite to use user input prompting
+selected_schema = AGENTS_SCHEMA_URL # change to AGENTS_SCHEMA_URL; to do: rewrite to use user input prompting
 
 # declare a json schema catalog
 jschon.create_catalog('2020-12')
@@ -30,4 +30,4 @@ for file in files:
         result = schema.evaluate(jschon.json.JSON(rec))
         if(not(result.output('flag')['valid'])):
             print(file)
-            print(result.output('detailed'))
+            print(result.output('basic'))

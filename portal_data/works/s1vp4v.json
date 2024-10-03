@@ -7,12 +7,18 @@
         "Caesarius, of Nazianzus, Saint, -369. Dialogi quatuor‏"
     ],
     "genre": [
-        "Apophthegmata"
+        {
+            "id": "apophthegmata",
+            "label": "Apophthegmata"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1j011",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

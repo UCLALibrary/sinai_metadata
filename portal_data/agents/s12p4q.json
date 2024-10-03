@@ -1,13 +1,13 @@
 {
     "ark": "ark:/21198/s12p4q",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Palladius of Aspuna",
     "alt_name": [
         "Palladius of Galatia",
         "Palladius of Helenopolis",
         "Παλλάδιος Γαλατίας"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 430 CE",
         "iso": {

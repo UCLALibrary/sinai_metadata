@@ -5,8 +5,14 @@
         "Acts of Thomas"
     ],
     "genre": [
-        "Biblical texts",
-        "Apocrypha"
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        },
+        {
+            "id": "apocrypha",
+            "label": "Apocrypha"
+        }
     ],
     "rel_con": [
         {

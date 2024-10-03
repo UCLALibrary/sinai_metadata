@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s13k5c",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Mark the Evangelist",
     "alt_name": [
         "Saint Mark"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "rel_con": [
         {
             "label": "Mark, Saint",

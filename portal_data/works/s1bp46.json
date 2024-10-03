@@ -7,12 +7,18 @@
     },
     "alt_title": [],
     "genre": [
-        "Hagiographies"
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1w88j",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

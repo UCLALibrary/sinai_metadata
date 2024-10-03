@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1hp4r",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Yaḥyá ibn Ḥabash Suhrawardī",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": " 1152 or 1153 CE-1191 CE",
         "iso": {

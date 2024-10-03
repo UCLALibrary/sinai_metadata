@@ -11,6 +11,9 @@
         "reconstruction": {
             "type": "boolean"
         },
+        "type": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
+        },
         "shelfmark": {
             "type": "string",
             "minLength": 1
@@ -64,9 +67,20 @@
                         "minLength": 1
                     },
                     "type": {
-                        "enum": [
-                            "undertext",
-                            "guest"
+                        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+                        "anyOf": [
+                            {
+                                "const": {
+                                    "id": "undertext",
+                                    "label": "Undertext"
+                                }
+                            },
+                            {
+                                "const": {
+                                    "id": "guest",
+                                    "label": "Guest Content"
+                                }
+                            }
                         ]
                     },
                     "locus": {
@@ -189,10 +203,31 @@
     "required": [
         "ark",
         "reconstruction",
+        "type",
         "shelfmark",
         "extent",
         "part",
         "location"
     ],
-    "unevaluatedProperties": false
+    "unevaluatedProperties": false,
+    "if": {
+        "properties": {
+            "reconstruction": {"const": true}
+        },
+        "required": ["reconstruction"]
+    },
+    "then": {
+        "properties": {
+            "type": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_reconstructed_types"
+            }
+        }
+    },
+    "else": {
+        "properties": {
+            "type": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_real_types"
+            }
+        }
+    }
 }

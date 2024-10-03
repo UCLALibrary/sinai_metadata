@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1xw2s",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Paul the Simple",
     "alt_name": [
         "St. Paul the Simple"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "ca. 339 CE",
         "iso": {

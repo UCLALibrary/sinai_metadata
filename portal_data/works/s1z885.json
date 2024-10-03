@@ -5,12 +5,18 @@
         "Nikon of the Black Mountain, ca. 1025-ca. 1100. Pandektēs"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1qc7n",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

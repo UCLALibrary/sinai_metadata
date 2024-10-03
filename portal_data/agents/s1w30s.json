@@ -1,13 +1,13 @@
 {
     "ark": "ark:/21198/s1w30s",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Julian the Emperor",
     "alt_name": [
         "Julian the Apostate",
         "Ιουλιανός ο Παραβάτης",
         "Flavius Claudius Julianus"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "331 CE-363 CE",
         "iso": {

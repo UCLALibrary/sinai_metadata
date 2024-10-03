@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1qg69",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Epiphanius of Constantia",
     "alt_name": [
         "Epiphanius of Salamis",
         "Επιφάνιος Άγιος Επίσκοπος Κωνσταντίας Κύπρου (π. 315-403)"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "310 CE-403 CE",
         "iso": {

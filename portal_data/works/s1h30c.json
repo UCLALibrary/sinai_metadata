@@ -5,8 +5,14 @@
         "Synaxarion"
     ],
     "genre": [
-        "Liturgical texts",
-        "Hagiographies"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        },
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "rel_con": [],
     "refno": [],

@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1x303",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John Chrysostom",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "407 CE",
         "iso": {

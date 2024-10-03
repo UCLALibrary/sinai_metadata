@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1t598",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Paul the Deacon",
     "alt_name": [
         "Paul, diacre"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 720 CE-799(?) CE",
         "iso": {

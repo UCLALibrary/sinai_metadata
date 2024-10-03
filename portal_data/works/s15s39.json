@@ -9,7 +9,10 @@
         "Passio of Sozon"
     ],
     "genre": [
-        "Hagiographies"
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "creation": {
         "value": "10th c. CE",

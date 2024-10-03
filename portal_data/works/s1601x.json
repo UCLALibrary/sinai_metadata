@@ -8,7 +8,10 @@
         "Gospel of James (Apocrypha)"
     ],
     "genre": [
-        "Biblical texts"
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        }
     ],
     "rel_con": [
         {

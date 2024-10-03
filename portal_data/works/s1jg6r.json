@@ -5,8 +5,14 @@
         "Bible. Beatitudes"
     ],
     "genre": [
-        "Biblical texts",
-        "Gospel books"
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        },
+        {
+            "id": "gospel-books",
+            "label": "Gospel books"
+        }
     ],
     "rel_con": [],
     "refno": [],

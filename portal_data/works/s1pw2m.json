@@ -6,12 +6,18 @@
         "Eight Logismoi (from Praktikos)"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1b88k",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

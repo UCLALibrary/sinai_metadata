@@ -5,12 +5,18 @@
         "Commentary on Genesis by St. Ephrem"
     ],
     "genre": [
-        "Commentaries"
+        {
+            "id": "commentaries",
+            "label": "Commentaries"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1v887",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [],

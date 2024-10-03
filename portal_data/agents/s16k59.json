@@ -1,6 +1,6 @@
 {
     "ark": "ark:/21198/s16k59",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Gregorius bar Hebraeus",
     "alt_name": [
         "Bar Hebraeus",
@@ -8,7 +8,7 @@
         "Gregory Bar ʿEbroyo",
         "ܓܪܝܓܘܪܝܘܣ ܒܪ ܥܒܪܝܐ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "1226 CE-1286 CE",
         "iso": {

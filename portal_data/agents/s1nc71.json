@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1nc71",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Sophronius of Jerusalem",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": " ca. 560 CE-ca. 638 CE",
         "iso": {

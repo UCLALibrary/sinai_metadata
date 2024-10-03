@@ -5,7 +5,10 @@
         "Bible. Acts"
     ],
     "genre": [
-        "Biblical texts"
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        }
     ],
     "rel_con": [
         {

@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1d01s",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Theodore the Studite",
     "alt_name": [
         "Theodore Studites"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "759 CE-826 CE",
         "iso": {

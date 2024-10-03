@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1dw24",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Shubhalmaran of Karka of Beth Selok",
     "alt_name": [
         "Shubhalmaran, Bishop of Karka of Beth Selok"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "ca. 620 CE",
         "iso": {

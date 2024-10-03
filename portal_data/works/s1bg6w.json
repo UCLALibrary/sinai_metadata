@@ -5,8 +5,14 @@
         "Menaia"
     ],
     "genre": [
-        "Liturgical texts",
-        "Hymnals"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        },
+        {
+            "id": "hymnals",
+            "label": "Hymnals"
+        }
     ],
     "rel_con": [],
     "refno": [],

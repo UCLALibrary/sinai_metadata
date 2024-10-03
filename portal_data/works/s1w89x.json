@@ -5,7 +5,10 @@
         "Sayings of the Desert Fathers"
     ],
     "genre": [
-        "Apophthegmata"
+        {
+            "id": "apophthegmata",
+            "label": "Apophthegmata"
+        }
     ],
     "rel_con": [],
     "refno": [],

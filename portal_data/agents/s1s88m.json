@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1s88m",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John of Thebaid",
     "alt_name": [
         "John of the Thebaid",
         "ܝܘܚܢܐ ܐܠܬܒܐܝܣܝ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "394 CE",
         "iso": {

@@ -47,7 +47,12 @@
     ],
     "if": {
         "properties": {
-            "type": {"const": "otherdigversion"}
+            "type": {
+                "const": {
+                    "id": "otherdigversion",
+                    "label": "Other Digital Version"
+                }
+            }
         },
         "required": ["type"]
     },

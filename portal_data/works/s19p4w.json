@@ -5,10 +5,22 @@
         "Evangelion"
     ],
     "genre": [
-        "Liturgical texts",
-        "Lectionaries",
-        "Gospel books",
-        "Biblical texts"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        },
+        {
+            "id": "lectionaries",
+            "label": "Lectionaries"
+        },
+        {
+            "id": "gospel-books",
+            "label": "Gospel books"
+        },
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        }
     ],
     "rel_con": [],
     "refno": [],

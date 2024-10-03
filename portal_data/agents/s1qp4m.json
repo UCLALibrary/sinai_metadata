@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1qp4m",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "ʻAbd Allāh ibn al-Faḍl Anṭākī",
     "alt_name": [
         "ʿAbdallāh ibn al-Faḍl",
         "ʿAbdallāh ibn al-Faḍl al-Anṭākī"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "ca. 1052 CE",
         "iso": {

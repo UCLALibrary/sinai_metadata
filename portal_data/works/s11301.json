@@ -5,12 +5,18 @@
         "Book of Perfection"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1pc7b",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [],

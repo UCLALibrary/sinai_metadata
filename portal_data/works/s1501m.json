@@ -5,12 +5,18 @@
         "Isaiah, Abba, -489 or 491. Asceticon"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s15k50",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

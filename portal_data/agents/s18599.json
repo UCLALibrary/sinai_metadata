@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s18599",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Theodoret of Cyrrhus",
     "alt_name": [
         "ܬܐܕܘܪܝܛܘܣ ܕܩܘܪܘܣ",
         "Θεοδώρητος Κύρρου"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "393 CE-466 CE",
         "iso": {

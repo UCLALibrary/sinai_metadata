@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1b59x",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Onuphrius",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "ca. 400 CE",
         "iso": {

@@ -5,12 +5,18 @@
         "Homilies on the Song of Songs"
     ],
     "genre": [
-        "Commentaries"
+        {
+            "id": "commentaries",
+            "label": "Commentaries"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1z30d",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [],

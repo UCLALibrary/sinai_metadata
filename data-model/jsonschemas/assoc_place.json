@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "type": ["integer", "null"]
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
         "as_written": {
             "type": [

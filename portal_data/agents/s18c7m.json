@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s18c7m",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John of Damascus",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "ca. 750 CE",
         "iso": {

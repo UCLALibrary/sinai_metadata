@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1ks31",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Eulogius of Alexandria",
     "alt_name": [
         "Eulogius of Alexandria",
         "Εὐλόγιος"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "607 CE",
         "iso": {

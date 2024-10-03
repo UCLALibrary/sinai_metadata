@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1f30r",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Hippocrates",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": " 460 BCE-ca. 377 BCE",
         "iso": {

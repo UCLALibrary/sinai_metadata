@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s10012",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Elias of Nisibis",
     "alt_name": [
         "Elijah Bar Shinajah"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "975 CE-1046 CE",
         "iso": {

@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s1hs3d",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "John of Jerusalem",
     "alt_name": [
         "John II, Bishop of Jerusalem"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 356 CE-417 CE",
         "iso": {

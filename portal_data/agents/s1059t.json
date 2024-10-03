@@ -1,13 +1,13 @@
 {
     "ark": "ark:/21198/s1059t",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Thāwdhūrus Abū Qurrah",
     "alt_name": [
         "Theodore Abū Qurrah",
         "Theodore Bishop of Harran",
         "ثاوذورس أبي قرة"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 750 CE-825 CE",
         "iso": {

@@ -7,7 +7,10 @@
         "ܟܬܐܒ ܐܠܬܪܓܡܐܢ"
     ],
     "genre": [
-        "Dictionaries"
+        {
+            "id": "dictionaries",
+            "label": "Dictionaries"
+        }
     ],
     "rel_con": [],
     "refno": [],

@@ -5,13 +5,22 @@
         "John Chrysostom, Saint, -407. Homilies on the Gospel of Saint Matthew"
     ],
     "genre": [
-        "Theological works",
-        "Commentaries"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        },
+        {
+            "id": "commentaries",
+            "label": "Commentaries"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1x303",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "rel_con": [

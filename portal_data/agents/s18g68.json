@@ -1,13 +1,13 @@
 {
     "ark": "ark:/21198/s18g68",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Babai the Great",
     "alt_name": [
         "Babai the Great",
         "Mar Babai",
         "ܒܒܝ ܪܒܐ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "553 CE-628 CE",
         "iso": {

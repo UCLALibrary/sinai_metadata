@@ -5,8 +5,14 @@
         "Liturgy of Saint Basil"
     ],
     "genre": [
-        "Liturgical texts",
-        "Biblical texts"
+        {
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
+        },
+        {
+            "id": "biblical-texts",
+            "label": "Biblical texts"
+        }
     ],
     "rel_con": [
         {

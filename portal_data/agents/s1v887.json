@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1v887",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Ephrem",
     "alt_name": [
         "Ephrem the Syrian",
         "ܐܦܪܝܡ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "303 CE-373 CE",
         "iso": {

@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1pk5n",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Heraclius",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 575 CE-641 CE",
         "iso": {

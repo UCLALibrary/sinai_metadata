@@ -1,12 +1,12 @@
 {
     "ark": "ark:/21198/s1ms3b",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Cyril of Alexandria",
     "alt_name": [
         "Cyril of Alexandria",
         "Κύριλλος Αλεξανδρείας"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 370 CE-444 CE",
         "iso": {

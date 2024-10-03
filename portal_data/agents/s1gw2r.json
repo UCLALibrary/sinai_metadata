@@ -1,10 +1,10 @@
 {
     "ark": "ark:/21198/s1gw2r",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Mar Georges of Egad",
     "alt_name": [
         "Mar Georges of Egad"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "rel_con": []
 }

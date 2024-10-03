@@ -10,7 +10,10 @@
         "Celestial hierarchy"
     ],
     "genre": [
-        "Theological works"
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+        }
     ],
     "rel_con": [
         {

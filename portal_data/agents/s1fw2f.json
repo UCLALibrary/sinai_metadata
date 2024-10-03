@@ -1,9 +1,9 @@
 {
     "ark": "ark:/21198/s1fw2f",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Nilus the Younger",
     "alt_name": [],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "death": {
         "value": "1004 CE",
         "iso": {

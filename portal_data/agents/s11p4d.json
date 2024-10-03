@@ -1,13 +1,13 @@
 {
     "ark": "ark:/21198/s11p4d",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Simeon the Stylite",
     "alt_name": [
         "Simeon the Elder",
         "Symeon the Stylite",
         "ܫܡܥܘܢ ܐܣܛܘܢܝܐ"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "380 CE-459 CE",
         "iso": {

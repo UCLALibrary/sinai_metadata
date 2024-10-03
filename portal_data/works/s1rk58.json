@@ -10,12 +10,18 @@
         "Sermon 11"
     ],
     "genre": [
-        "Sermons"
+        {
+            "id": "sermons",
+            "label": "Sermons"
+        }
     ],
     "creator": [
         {
             "id": "ark:/21198/s1101c",
-            "role": "author"
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
         }
     ],
     "creation": {

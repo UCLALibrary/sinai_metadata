@@ -1,11 +1,11 @@
 {
     "ark": "ark:/21198/s12s3c",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Gregory of Nazianzus",
     "alt_name": [
         "Gregory the Theologian"
     ],
-    "gender": "Man",
+    "gender": {"id": "man", "label": "Man"},
     "floruit": {
         "value": "ca. 329 CE-390 CE",
         "iso": {

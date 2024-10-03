@@ -5,7 +5,10 @@
         "Acts of Sylvester"
     ],
     "genre": [
-        "Hagiographies"
+        {
+            "id": "hagiographies",
+            "label": "Hagiographies"
+        }
     ],
     "rel_con": [
         {

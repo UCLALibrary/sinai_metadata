@@ -1,6 +1,6 @@
 {
     "ark": "ark:/21198/s17c79",
-    "type": "person",
+    "type": {"id": "person", "label": "Person"},
     "pref_name": "Māriyah al-Qibṭīyah",
     "alt_name": [
         "Mary the Copt",
@@ -8,7 +8,7 @@
         "Māriyya al-Qibṭiyya",
         "مارية القبطية"
     ],
-    "gender": "Woman",
+    "gender": {"id": "woman", "label": "Woman"},
     "birth": {
         "value": "637 CE",
         "iso": {
