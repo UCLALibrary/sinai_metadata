@@ -164,6 +164,7 @@
     "required": [
         "ark",
         "reconstruction",
+        "state",
         "label",
         "writing",
         "text_unit",
