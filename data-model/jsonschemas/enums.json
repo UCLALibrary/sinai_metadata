@@ -678,6 +678,36 @@
                 }
             ]
         },
+        "states_layer": {
+            "description": "The current state of the inscribed layer",
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "guest",
+                        "label": "Guest Content"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "reconstruction",
+                        "label": "Reconstruction"
+                    }
+                }
+            ]
+        },
         "supports": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [

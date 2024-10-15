@@ -10,6 +10,9 @@
         "reconstruction": {
             "type": "boolean"
         },
+        "state": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/states_layer"
+        },
         "label": {
             "type": "string",
             "minLength": 1
