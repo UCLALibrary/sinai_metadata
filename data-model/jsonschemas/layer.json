@@ -145,6 +145,13 @@
             },
             "unevaluatedItems": false
         },
+        "reconstructed_from": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+            },
+            "unevaluatedItems": false
+        },
         "parent": {
             "type": "array",
             "items": {
@@ -169,5 +176,14 @@
         "writing",
         "text_unit",
         "parent"
-    ]
+    ],
+    "if": {
+        "properties": {
+            "reconstruction": {"const": true}
+        },
+        "required": ["reconstruction"]
+    },
+    "then": {
+        "required": ["reconstructed_from"]
+    }
 }
