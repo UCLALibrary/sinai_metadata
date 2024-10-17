@@ -1,0 +1,1182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layer.json",
+  "title": "Inscribed Layer",
+  "type": "object",
+  "properties": {
+    "ark": {
+      "description": "A unique Archival Resource Key (ARK)",
+      "type": "string",
+      "pattern": "^ark:/21198/([a-z]|[0-9])+"
+    },
+    "reconstruction": {
+      "type": "boolean"
+    },
+    "state": {
+      "description": "The current state of the inscribed layer",
+      "anyOf": [
+        {
+          "const": {
+            "id": "overtext",
+            "label": "Overtext"
+          }
+        },
+        {
+          "const": {
+            "id": "undertext",
+            "label": "Undertext"
+          }
+        },
+        {
+          "const": {
+            "id": "guest",
+            "label": "Guest Content"
+          }
+        },
+        {
+          "const": {
+            "id": "reconstruction",
+            "label": "Reconstruction"
+          }
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "unevaluatedProperties": false
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locus": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "extent": {
+      "description": "The extent, expressed in number of folios, which comprise the manuscript object",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "writing": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json",
+        "title": "Writing",
+        "description": "Collected information about an instance of hand writing",
+        "type": "object",
+        "properties": {
+          "script": {
+            "type": "array",
+            "items": {
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+          },
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "script"
+        ],
+        "unevaluatedProperties": false
+      },
+      "minItems": 1,
+      "unevaluatedItems": false
+    },
+    "ink": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/ink.json",
+        "title": "Ink",
+        "description": "Collected information about the ink used in the composition of an inscribed layer",
+        "type": "object",
+        "properties": {
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          },
+          "color": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false,
+            "$comment": "Perhaps make this an enum to constrain color values?"
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "layout": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layout.json",
+        "title": "Layout",
+        "description": "The page layout for a given range of folios in an object",
+        "type": "object",
+        "properties": {
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          },
+          "columns": {
+            "type": "string"
+          },
+          "lines": {
+            "type": "string"
+          },
+          "dim": {
+            "description": "A string expression of an object's dimensions, whether manuscript block, folio, or writing area",
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "text_unit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          }
+        },
+        "required": [
+          "id",
+          "label"
+        ],
+        "unevaluatedProperties": false
+      },
+      "minItems": 1,
+      "unevaluatedItems": false
+    },
+    "para": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/paracontent.json",
+        "title": "Paracontent",
+        "description": "An item of paracontent related to a manuscript object, codicological unit, or textual artifact",
+        "type": "object",
+        "properties": {
+          "type": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          },
+          "lang": {
+            "type": "array",
+            "items": {
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+          },
+          "script": {
+            "type": "array",
+            "items": {
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "as_written": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "translation": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          },
+          "assoc_name": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
+              "title": "Associated Name",
+              "description": "A person, group, or organization entity connected with an object via a given role",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "A unique Archival Resource Key (ARK)",
+                  "type": "string",
+                  "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                },
+                "as_written": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "role": {
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "required": [
+                "role"
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+          },
+          "assoc_place": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
+              "title": "Associated Place",
+              "description": "A place entity connected with an object via a given role",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "A unique Archival Resource Key (ARK)",
+                  "type": "string",
+                  "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                },
+                "as_written": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "event": {
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "required": [
+                "event"
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+          },
+          "assoc_date": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json",
+              "title": "Associated Date",
+              "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
+              "type": "object",
+              "allOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "iso": {
+                      "type": "object",
+                      "properties": {
+                        "not_before": {
+                          "type": "string",
+                          "format": "date",
+                          "minLength": 3
+                        },
+                        "not_after": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date",
+                          "minLength": 3
+                        }
+                      },
+                      "required": [
+                        "not_before"
+                      ],
+                      "unevaluatedProperties": false
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "iso"
+                  ]
+                }
+              ],
+              "properties": {
+                "type": {
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
+                },
+                "as_written": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "type",
+          "locus",
+          "lang"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "assoc_date": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json",
+        "title": "Associated Date",
+        "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
+        "type": "object",
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "iso": {
+                "type": "object",
+                "properties": {
+                  "not_before": {
+                    "type": "string",
+                    "format": "date",
+                    "minLength": 3
+                  },
+                  "not_after": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "minLength": 3
+                  }
+                },
+                "required": [
+                  "not_before"
+                ],
+                "unevaluatedProperties": false
+              }
+            },
+            "required": [
+              "value",
+              "iso"
+            ]
+          }
+        ],
+        "properties": {
+          "type": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "as_written": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "assoc_name": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
+        "title": "Associated Name",
+        "description": "A person, group, or organization entity connected with an object via a given role",
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+          },
+          "as_written": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "role": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "role"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "assoc_place": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
+        "title": "Associated Place",
+        "description": "A place entity connected with an object via a given role",
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+          },
+          "as_written": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "event": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "event"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "features": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "label"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "related_mss": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/related_mss.json",
+        "title": "Related Manuscripts",
+        "description": "A set of manuscripts that share a relation to the object context in which they are declared",
+        "type": "object",
+        "properties": {
+          "type": {
+            "anyOf": [
+              {
+                "const": {
+                  "id": "filiation",
+                  "label": "Filiation"
+                }
+              },
+              {
+                "const": {
+                  "id": "disjecta",
+                  "label": "Disjecta Membra"
+                }
+              },
+              {
+                "const": {
+                  "id": "reconstructed-from",
+                  "label": "Reconstructed From"
+                }
+              }
+            ],
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          },
+          "mss": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "id": {
+                  "description": "A unique Archival Resource Key (ARK)",
+                  "type": "string",
+                  "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uri",
+                  "minLength": 1
+                }
+              },
+              "$comment": "Possible x-or logic for id and url",
+              "required": [
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "label",
+          "type",
+          "mss"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "note": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
+        "title": "Note",
+        "description": "A prose note of a specified type",
+        "type": "object",
+        "properties": {
+          "type": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "value": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          }
+        },
+        "required": [
+          "type",
+          "value"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "bib": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/bib.json",
+        "title": "Bibliography",
+        "description": "A bibliographic citation connected with an object or entity",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "type": {
+            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "unevaluatedProperties": false
+          },
+          "range": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "alt_shelf": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "note": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "if": {
+          "properties": {
+            "type": {
+              "const": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+              }
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        "then": {
+          "properties": {
+            "url": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "url"
+          ]
+        },
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "cataloguer": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contributor": {
+            "description": "The person responsible for the intellectual contributions made to the record via this change",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "added-by": {
+            "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "message",
+          "added_by",
+          "timestamp"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "reconstructed_from": {
+      "type": "array",
+      "items": {
+        "description": "A unique Archival Resource Key (ARK)",
+        "type": "string",
+        "pattern": "^ark:/21198/([a-z]|[0-9])+"
+      },
+      "unevaluatedItems": false
+    },
+    "parent": {
+      "type": "array",
+      "items": {
+        "description": "A unique Archival Resource Key (ARK)",
+        "type": "string",
+        "pattern": "^ark:/21198/([a-z]|[0-9])+"
+      },
+      "minItems": 1,
+      "unevaluatedItems": false
+    },
+    "internal": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "unevaluatedItems": false
+    }
+  },
+  "required": [
+    "ark",
+    "reconstruction",
+    "state",
+    "label",
+    "writing",
+    "text_unit",
+    "parent"
+  ],
+  "if": {
+    "properties": {
+      "reconstruction": {
+        "const": true
+      }
+    },
+    "required": [
+      "reconstruction"
+    ]
+  },
+  "then": {
+    "required": [
+      "reconstructed_from"
+    ]
+  }
+}

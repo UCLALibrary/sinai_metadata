@@ -10,6 +10,9 @@
         "reconstruction": {
             "type": "boolean"
         },
+        "state": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/states_layer"
+        },
         "label": {
             "type": "string",
             "minLength": 1
@@ -142,6 +145,13 @@
             },
             "unevaluatedItems": false
         },
+        "reconstructed_from": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+            },
+            "unevaluatedItems": false
+        },
         "parent": {
             "type": "array",
             "items": {
@@ -161,9 +171,19 @@
     "required": [
         "ark",
         "reconstruction",
+        "state",
         "label",
         "writing",
         "text_unit",
         "parent"
-    ]
+    ],
+    "if": {
+        "properties": {
+            "reconstruction": {"const": true}
+        },
+        "required": ["reconstruction"]
+    },
+    "then": {
+        "required": ["reconstructed_from"]
+    }
 }

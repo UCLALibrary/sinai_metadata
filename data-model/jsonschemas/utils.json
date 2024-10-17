@@ -179,6 +179,29 @@
             "minLength": 1,
             "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
         },
+        "ms_location": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "collection": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "repo": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "id",
+                "collection",
+                "repo"
+            ],
+            "unevaluatedProperties": false
+        },
         "refno": {
             "description": "A reference number in a standard reference work, such as the Corpus Clavium Graecorum (CPG)",
             "type": "object",
