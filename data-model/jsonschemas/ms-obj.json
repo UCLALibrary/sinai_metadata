@@ -198,6 +198,13 @@
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/change_log_entry"
             },
             "unevaluatedItems": false
+        },
+        "reconstructed_from": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+            },
+            "unevaluatedItems": false
         }
     },
     "required": [
@@ -221,7 +228,8 @@
             "type": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/ms_obj_reconstructed_types"
             }
-        }
+        },
+        "required": ["reconstructed_from"]
     },
     "else": {
         "properties": {
