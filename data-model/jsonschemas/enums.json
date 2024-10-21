@@ -304,8 +304,7 @@
             "enum": [
                 "right-to-left",
                 "top-to-bottom",
-                "bottom-to-top",
-                null
+                "bottom-to-top"
             ]
         },
         "iiif_types": {
