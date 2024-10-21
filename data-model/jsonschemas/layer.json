@@ -177,6 +177,7 @@
         "text_unit",
         "parent"
     ],
+    "unevaluatedProperties": false,
     "if": {
         "properties": {
             "reconstruction": {"const": true}
