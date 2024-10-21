@@ -156,11 +156,44 @@
             ]
         },
         "excerpt_types": {
-            "type": "string",
-            "enum": [
-                "incipit",
-                "explicit",
-                "prologue"
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "prologue",
+                        "label": "Prologue"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "inc-mut",
+                        "label": "First Preserved Line"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "quote",
+                        "label": "Quote"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "des-mut",
+                        "label": "Last Preserved Line"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    }
+                }
             ]
         },
         "features": {

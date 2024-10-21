@@ -60,13 +60,10 @@
                     "minLength": 1
                 },
                 "work_id": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
                 },
                 "locus": {
                     "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
-                },
-                "sequence": {
-                    "type": "integer"
                 },
                 "note": {
                     "type": ["array", "null"],
@@ -76,9 +73,13 @@
                     "unevaluatedItems": false
                 }
             },
-            "required": [
-                "label",
-                "sequence"
+            "anyOf": [
+                {
+                    "required": ["label"]
+                },
+                {
+                    "required": ["work_id"]
+                }
             ],
             "unevaluatedProperties": false
         },
