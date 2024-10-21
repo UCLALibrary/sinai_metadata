@@ -292,6 +292,22 @@
                 }
             ]
         },
+        "iiif_behaviors": {
+            "type": "string",
+            "enum": [
+                "paged",
+                "individuals"
+            ]
+        },
+        "iiif_text_directions": {
+            "type": "string",
+            "enum": [
+                "right-to-left",
+                "top-to-bottom",
+                "bottom-to-top",
+                null
+            ]
+        },
         "iiif_types": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [
@@ -307,22 +323,6 @@
                         "label": "Reordered"
                     }
                 }
-            ]
-        },
-        "iiif_text_directions": {
-            "type": "string",
-            "enum": [
-                "right-to-left",
-                "top-to-bottom",
-                "bottom-to-top",
-                null
-            ]
-        },
-        "iiif_behaviors": {
-            "type": "string",
-            "enum": [
-                "paged",
-                "individuals"
             ]
         },
         "ms_obj_real_types": {
@@ -538,6 +538,34 @@
                 }
             ]
         },
+        "work_agent_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "commemorates",
+                        "label": "Commemorates"
+                    }
+                },
+                {
+                    "const": {
+                        "id": "addressee",
+                        "label": "Addressee"
+                    }
+                }
+            ]
+        },
+        "work_place_rels": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+            "anyOf": [
+                {
+                    "const": {
+                        "id": "composition",
+                        "label": "Place of Composition"
+                    }
+                }
+            ]
+        },
         "work_work_rels": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [
@@ -563,34 +591,6 @@
                     "const": {
                         "id": "version-of",
                         "label": "Version Of"
-                    }
-                }
-            ]
-        },
-        "work_agent_rels": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-            "anyOf": [
-                {
-                    "const": {
-                        "id": "commemorates",
-                        "label": "Commemorates"
-                    }
-                },
-                {
-                    "const": {
-                        "id": "addressee",
-                        "label": "Addressee"
-                    }
-                }
-            ]
-        },
-        "work_place_rels": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-            "anyOf": [
-                {
-                    "const": {
-                        "id": "composition",
-                        "label": "Place of Composition"
                     }
                 }
             ]
