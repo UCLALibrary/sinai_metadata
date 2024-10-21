@@ -157,24 +157,6 @@
             "description": "A unique identifer, supplied by the database",
             "type": "integer"
         },
-        "idno": {
-            "description": "An identifier, according to a given scheme",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/idno_types"
-                },
-                "value": {
-                    "type": "string",
-                    "minLength": 1
-                }
-            },
-            "required": [
-                "type",
-                "value"
-            ],
-            "unevaluatedProperties": false
-        },
         "locus": {
             "type": "string",
             "minLength": 1,
@@ -274,22 +256,6 @@
                 "null"
             ],
             "minLength": 1
-        },
-        "translation": {
-            "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
-            "properties": {
-                "lang": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_modern"
-                },
-                "value": {
-                    "type": "string",
-                    "minLeng": 1
-                }
-            },
-            "required": [
-                "lang",
-                "value"
-            ]
         },
         "weight": {
             "description": "A string expression of the manuscript object's weight",

@@ -56,73 +56,6 @@
                 }
             ]
         },
-        "assoc_date_types": {
-            "enum": [
-                "creation",
-                "binding",
-                "origin",
-                "purchase",
-                "birth",
-                "death",
-                "floruit",
-                "unknown"
-            ],
-            "$comment": "TBD full list of types"
-        },
-        "assoc_name_roles": {
-            "type": "string",
-            "enum": [
-                "author",
-                "attributed-author",
-                "creator",
-                "binder",
-                "owner",
-                "unknown"
-            ]
-        },
-        "assoc_place_events": {
-            "type": "string",
-            "enum": [
-                "origin",
-                "previous_repository",
-                "unknown"
-            ]
-        },
-        "bib_types": {
-            "type": "string",
-            "enum": [
-                "cite",
-                "edition",
-                "otherdigversion",
-                "ref",
-                "refno",
-                "translation"
-            ]
-        },
-        "cod_unit_types": {
-            "description": "The type of codicological unit, e.g. a part, layer, etc.",
-            "enum": [
-                "part",
-                "uto",
-                "rebind"
-            ]
-        },
-        "collections": {
-            "type": "string",
-            "enum": [
-                "Old Collection",
-                "New Finds",
-                "Reconstructions"
-            ]
-        },
-        "content_unit_types": {
-            "description": "The type of manuscript object, whether real or hypothetical reconstructions",
-            "enum": [
-                "shelf",
-                "rebind"
-            ],
-            "$comment": "Is this the same set as #/$defs/ms_obj_types?"
-        },
         "creator_roles": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [
@@ -144,15 +77,6 @@
                         "label": "Translator"
                     }
                 }
-            ]
-        },
-        "dimension_types": {
-            "enum": [
-                "ms_block",
-                "folio",
-                "av_folio",
-                "writing_area",
-                "margins"
             ]
         },
         "excerpt_types": {
@@ -195,45 +119,6 @@
                     }
                 }
             ]
-        },
-        "features": {
-            "enum": [
-                "Border(s)",
-                "Border(s), Decorative",
-                "Calligraphic Practice",
-                "Catchwords",
-                "Colophon",
-                "Dated",
-                "Decoration, Anthropomorphic",
-                "Decoration, Architectural",
-                "Decoration, Calligraphic",
-                "Decoration, Full-page",
-                "Decoration, Geometric",
-                "Decoration, Vegetative",
-                "Decoration, Zoomorphic",
-                "Fragment",
-                "Headpiece(s)",
-                "Illumination(s)",
-                "Illustration(s)",
-                "Initial(s), Anthropomorphic",
-                "Initial(s), Decorated",
-                "Initial(s), Gymnastic",
-                "Initial(s), Historiated",
-                "Initial(s), Inhabited",
-                "Initial(s), Zoomorphic",
-                "Inscription(s)",
-                "Miniature(s)",
-                "Multispectral Imaging",
-                "Music notation",
-                "Palimpsest",
-                "Parallel text",
-                "Signatures",
-                "Table(s)",
-                "Table(s) of Contents",
-                "Unidentified text",
-                null
-            ],
-            "$comment": "TBD list of features | Could do a series of features based on context with a composition for groups?"
         },
         "genders": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
@@ -407,14 +292,6 @@
                 }
             ]
         },
-        "idno_types": {
-            "enum": [
-                "shelfmark",
-                "part_no",
-                "uto_mark"
-            ],
-            "$comment": "Use term 'shelfmark' for both real and digitally rebound manuscript objects"
-        },
         "iiif_types": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
             "anyOf": [
@@ -448,44 +325,6 @@
                 "individuals"
             ]
         },
-        "langs_all": {
-            "description": "All names available in the Sinai Manuscripts Data Portal, both ancient and modern",
-            "anyOf": [
-                {
-                    "$ref": "#/$defs/langs_ancient"
-                },
-                {
-                    "$ref": "#/$defs/langs_modern"
-                }
-            ]
-        },
-        "langs_ancient": {
-            "description": "Names of the ancient languages used in Sinai Manuscripts Data Portal",
-            "enum": [
-                "Arabic",
-                "Armenian",
-                "Caucasian Albanian",
-                "Church Slavonic",
-                "Coptic",
-                "CPA",
-                "Ethiopic",
-                "Georgian",
-                "Greek",
-                "Latin",
-                "Syriac",
-                "Turkish"
-            ]
-        },
-        "langs_modern": {
-            "description": "Names of the modern languages used in Sinai Manuscripts Data Portal",
-            "enum": [
-                "Arabic",
-                "English", 
-                "French", 
-                "German",
-                "Greek"
-            ]
-        },
         "ms_obj_real_types": {
             "anyOf": [
                 {
@@ -511,40 +350,6 @@
                     }
                 }
             ]
-        },
-        "note_types": {
-            "type": "string",
-            "enum": [
-                "admin",
-                "assoc_date",
-                "assoc_name",
-                "assoc_place",
-                "bib",
-                "binding",
-                "cataloguer",
-                "coll",
-                "condition",
-                "contents",
-                "excerpt",
-                "foliation",
-                "general",
-                "layout",
-                "ornamentation",
-                "para",
-                "provenance",
-                "rel_work",
-                "related_mss",
-                "support",
-                "writing"
-            ]
-        },
-        "paracontent_types": {
-            "type": "string",
-            "enum": [
-                "endowment",
-                "rubric"
-            ],
-            "$comment": "Initial enum for paracontent needed | Also considerations of 'para' vs 'guest' in same field?"
         },
         "place_types": {
             "enum": [
@@ -581,12 +386,6 @@
                 "TLG"
             ]
         },
-        "rel_agent_rels": {
-            "enum": [
-                "familyMember",
-                "memberOf"
-            ]
-        },
         "rel_con_source_types": {
             "enum": [
                 "HAF",
@@ -596,19 +395,6 @@
                 "Pleiades",
                 "Syriaca",
                 "VIAF"
-            ]
-        },
-        "rel_place_rels": {
-            "enum": [
-                "birthPlace",
-                "deathPlace"
-            ]
-        },
-        "rel_work_rels": {
-            "enum": [
-                "partOf",
-                "hasPart",
-                "hasVersion"
             ]
         },
         "related_mss_types": {
@@ -633,35 +419,6 @@
                     }
                 }
             ]
-        },
-        "scripts": {
-            "description": "Term list categorizing the writing system and script used in a given instance of writing",
-            "enum": [
-                "Asomtavruli",
-                "Carolingian majuscule",
-                "Carolingian minuscule",
-                "Christian Palestinian Aramaic",
-                "East Syriac",
-                "Erkatagir",
-                "Estrangela",
-                "Geʽez abjad",
-                "Geʽez abugida",
-                "Glagolitic",
-                "Greek majuscule",
-                "Greek minuscule",
-                "Khutsuri",
-                "Kufic",
-                "Melkite",
-                "Minuscule bouclée",
-                "Mkhedruli",
-                "Naskh",
-                "Nastaliq",
-                "Nuskhurimt",
-                "Perlschrift",
-                "Serto",
-                "Thuluth"
-            ],
-            "$comment": "enum not complete. Will eventually be references to script records"
         },
         "states": {
             "description": "The current state of the manuscript object",
