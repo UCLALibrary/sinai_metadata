@@ -1251,21 +1251,25 @@
     "location": {
       "type": "array",
       "items": {
-        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "minLength": 1
           },
-          "label": {
+          "collection": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repo": {
             "type": "string",
             "minLength": 1
           }
         },
         "required": [
           "id",
-          "label"
+          "collection",
+          "repo"
         ],
         "unevaluatedProperties": false
       },
@@ -1930,6 +1934,15 @@
         "unevaluatedProperties": false
       },
       "unevaluatedItems": false
+    },
+    "reconstructed_from": {
+      "type": "array",
+      "items": {
+        "description": "A unique Archival Resource Key (ARK)",
+        "type": "string",
+        "pattern": "^ark:/21198/([a-z]|[0-9])+"
+      },
+      "unevaluatedItems": false
     }
   },
   "required": [
@@ -1970,7 +1983,10 @@
           }
         ]
       }
-    }
+    },
+    "required": [
+      "reconstructed_from"
+    ]
   },
   "else": {
     "properties": {
