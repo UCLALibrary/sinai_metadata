@@ -36,7 +36,8 @@
                     "required": [
                         "desc_title",
                         "genre"
-                    ]
+                    ],
+                    "unevaluatedProperties": false
                 }
             ]
         },
