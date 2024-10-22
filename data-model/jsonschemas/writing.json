@@ -9,7 +9,7 @@
         "script": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/script"
             },
             "minItems": 1,
             "unevaluatedItems": false

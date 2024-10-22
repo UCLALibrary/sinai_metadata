@@ -250,6 +250,28 @@
                 "id"
             ]
         },
+        "script": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "writing_system": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "label",
+                "writing_system"
+            ],
+            "unevaluatedProperties": false
+        },
         "summary": {
             "type": [
                 "string",
