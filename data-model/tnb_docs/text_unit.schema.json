@@ -656,7 +656,6 @@
           "script": {
             "type": "array",
             "items": {
-              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
               "type": "object",
               "properties": {
                 "id": {
@@ -666,11 +665,15 @@
                 "label": {
                   "type": "string",
                   "minLength": 1
+                },
+                "writing_system": {
+                  "type": "string"
                 }
               },
               "required": [
                 "id",
-                "label"
+                "label",
+                "writing_system"
               ],
               "unevaluatedProperties": false
             },
