@@ -1,0 +1,52 @@
+{
+    "ark": "ark:/21198/ten0p1ul2t1",
+    "reconstruction": false,
+    "label": "Genesis",
+    "locus": "ff. 131-132, 138, 140-142",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1488q"
+            },
+            "locus": "ff. 131-132, 138, 140-142",
+            "note": [
+                "contributors: Rossetto; Tselikas"
+            ]
+        }
+        ],
+    "features": [
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "The original manuscript also included the UTO Exodus from Arabic NF 28 and the UTOs Genesis and Exodus from Arabic NF 8 (Rossetto)"
+        }
+    ],
+    "bib": [
+        {
+            "id": "874101cc-626a-43d5-91a7-a9b1091871cd",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "note": [
+                "Boudalis and Rossetto"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/ten0p1ul2"
+    ],
+    "internal": [
+        "Test record, delete after development is complete"
+        ]
+}
