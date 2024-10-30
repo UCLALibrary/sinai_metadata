@@ -75,9 +75,20 @@
             },
             "anyOf": [
                 {
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
                     "required": ["label"]
                 },
                 {
+                    "properties": {
+                        "work_id": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                        }
+                    },
                     "required": ["work_id"]
                 }
             ],
