@@ -69,7 +69,8 @@
             "script": [
                 { 
                     "id": "melkite", 
-                    "label": "Melkite" 
+                    "label": "Melkite" ,
+                    "writing_system": "Syriac"
                 } 
             ], 
             "label": "Syriac colophon", 
