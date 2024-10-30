@@ -1,0 +1,143 @@
+{
+    "ark": "ark:/21198/tev887",
+    "type": {
+        "id": "person",
+        "label": "Person"
+    },
+    "pref_name": "Ephrem the Syrian",
+    "alt_name": [
+        "Ephrem",
+        "ܐܦܪܝܡ",
+        "Ephraem Syrus",
+        "ʾAfrēm",
+        "مار افرام الملفان السرياني"
+    ],
+    "desc": "Deacon, poet, and theologian. Many poetic works are ascribed to him, not all of them genuine.",
+    "gender": {
+        "id": "man",
+        "label": "Man"
+        },
+    "birth": {
+        "value": "early 4th cent. CE",
+        "iso": {
+            "not_before": "0275",
+            "not_after": "0325"
+        }
+    },
+    "death": {
+        "value": "373 CE",
+        "iso": {
+            "not_before": "0373"
+        }
+    },
+    "floruit": {
+        "value": "325-373 CE",
+        "iso": {
+            "not_before": "0325",
+            "not_after": "0373"
+        }
+    },
+    "rel_con": [
+        {
+            "label": "Ephraem, Syrus, Saint, 303-373",
+            "uri": "http://viaf.org/viaf/100177778",
+            "source": "VIAF"
+        },
+        {
+            "label": "Ephraem, Syrus, Saint, 303-373",
+            "uri": "http://id.loc.gov/authorities/names/n50082928",
+            "source": "LoC"
+        },
+        {
+            "label": "Ephrem, of Nisibis, 303-373",
+            "uri": "https://w3id.org/haf/person/818572788967",
+            "source": "HAF"
+        },
+        {
+            "label": "Ephrem",
+            "uri": "http://syriaca.org/person/13",
+            "source": "Syriaca"
+        },
+        {
+            "label": "Ephraem Graecus",
+            "uri": "https://pinakes.irht.cnrs.fr/notices/auteur/995/",
+            "source": "Pinakes"
+        }
+    ],
+    "refno": [
+        {
+            "label": "Ephraem Graecus",
+            "idno": "4138",
+            "source": "TLG"
+        }
+    ],
+    "bib": [
+        {
+            "id": "a68d6ad1-06fd-4799-a210-04cef4803386",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "pp. 375-389",
+            "alt_shelf": null,
+            "url": "https://gedsh.bethmardutho.org/entry/Ephrem",
+            "note": [
+                "Test record bibl; Desreumaux 1997"
+                ]
+        },
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "vol. 1, pp. 83-97",
+            "alt_shelf": null,
+            "url": null,
+            "note": [
+                "Test record bibl; Brock 1995"
+            ]
+        }
+    ],
+    "note": [
+        "A whole separate tradition of literature in Greek is attributed to Ephrem, often designated as Ephraem Greacus, most of which is incorrectly attributed",
+        "Ephrem’s genuine writings fall into four main categories, prose, artistic prose, stanzaic poetry (madrāše), and 7+7 syllable couplets (memre)"
+    ],
+    "rel_agent": [
+        {
+            "id": "ark:/21198/s1jp42",
+            "rel": {
+                "id": "member-of",
+                "label": "Member Of"
+            },
+            "source": [
+                "This is for development purposes only"
+            ]
+        },
+        {
+            "id": "ark:/21198/s1xw2s",
+            "rel": {
+                "id": "family-member",
+                "label": "Family Member"
+            },
+            "source": [
+                "This is not true but used for development purposes"
+            ]
+        }
+    ],
+    "rel_place": [
+        {
+            "id": "ark:/21198/tev123",
+            "rel": {
+                "id": "death",
+                "label": "Place of Death"
+            },
+            "source": [
+                "This is a faked place record for Nisibis"
+            ]
+        }
+    ],
+    "internal": [
+        "An internal note to remind us to delete this record since it is a test record for development purposes"
+    ]
+}
