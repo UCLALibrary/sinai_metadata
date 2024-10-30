@@ -1801,6 +1801,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -1985,6 +1989,15 @@
             }
           }
         ]
+      },
+      "reconstructed_from": {
+        "type": "array",
+        "items": {
+          "description": "A unique Archival Resource Key (ARK)",
+          "type": "string",
+          "pattern": "^ark:/21198/([a-z]|[0-9])+"
+        },
+        "unevaluatedItems": false
       }
     },
     "required": [

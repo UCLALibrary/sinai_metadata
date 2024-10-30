@@ -105,8 +105,8 @@
       "unevaluatedProperties": false
     },
     "birth": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -141,8 +141,8 @@
       ]
     },
     "death": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -177,8 +177,8 @@
       ]
     },
     "floruit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -374,6 +374,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [

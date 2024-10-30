@@ -431,11 +431,24 @@
               },
               "anyOf": [
                 {
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
                   "required": [
                     "label"
                   ]
                 },
                 {
+                  "properties": {
+                    "work_id": {
+                      "description": "A unique Archival Resource Key (ARK)",
+                      "type": "string",
+                      "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                    }
+                  },
                   "required": [
                     "work_id"
                   ]
@@ -544,6 +557,10 @@
                   "url": {
                     "type": "string",
                     "minLength": 1
+                  },
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
                   }
                 },
                 "required": [
@@ -1073,6 +1090,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -1172,6 +1193,17 @@
     ]
   },
   "then": {
+    "properties": {
+      "reconstructed_from": {
+        "type": "array",
+        "items": {
+          "description": "A unique Archival Resource Key (ARK)",
+          "type": "string",
+          "pattern": "^ark:/21198/([a-z]|[0-9])+"
+        },
+        "unevaluatedItems": false
+      }
+    },
     "required": [
       "reconstructed_from"
     ]

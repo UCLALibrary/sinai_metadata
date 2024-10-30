@@ -287,8 +287,8 @@
       }
     },
     "creation": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -323,8 +323,8 @@
       ]
     },
     "incipit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -356,8 +356,8 @@
       ]
     },
     "explicit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -550,6 +550,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
