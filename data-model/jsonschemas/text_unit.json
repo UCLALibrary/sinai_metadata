@@ -107,7 +107,8 @@
         "label",
         "locus",
         "lang",
-        "work_wit"
+        "work_wit",
+        "parent"
     ],
     "unevaluatedProperties": false,
     "if": {
