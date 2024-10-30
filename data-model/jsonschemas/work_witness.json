@@ -24,6 +24,14 @@
                             "type": "string",
                             "minLength": 1
                         },
+                        "creator": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                            },
+                            "minItems": 1,
+                            "unevaluatedItems": false
+                        },
                         "genre": {
                             "type": "array",
                             "items": {
@@ -34,8 +42,7 @@
                         }
                     },
                     "required": [
-                        "desc_title",
-                        "genre"
+                        "desc_title"
                     ],
                     "unevaluatedProperties": false
                 }
@@ -72,7 +79,7 @@
         "note": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                "type": "string"
             },
             "unevaluatedItems": false
         },
