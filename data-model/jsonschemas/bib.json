@@ -61,6 +61,10 @@
             "url": {
                 "type": "string",
                 "minLength": 1
+            },
+            "id": {
+                "type": "string",
+                "format": "uuid"
             }
         },
         "required": [
