@@ -535,7 +535,10 @@
         "if": {
           "properties": {
             "type": {
-              "const": "otherdigversion"
+              "const": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+              }
             }
           },
           "required": [
@@ -827,25 +830,31 @@
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer"
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contributor": {
+            "description": "The person responsible for the intellectual contributions made to the record via this change",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "added_by": {
+            "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
           "timestamp": {
             "type": "string",
             "format": "date-time",
-            "minLength": 1,
-            "$comment": "possibly can set min-length based on ISO timestamp length?"
-          },
-          "comment": {
-            "type": [
-              "string",
-              "null"
-            ],
             "minLength": 1
           }
         },
         "required": [
-          "id",
+          "message",
+          "added_by",
           "timestamp"
         ],
         "unevaluatedProperties": false
