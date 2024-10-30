@@ -1264,8 +1264,7 @@
             "minLength": 1
           },
           "collection": {
-            "type": "string",
-            "minLength": 1
+            "type": "string"
           },
           "repo": {
             "type": "string",
@@ -1274,7 +1273,6 @@
         },
         "required": [
           "id",
-          "collection",
           "repo"
         ],
         "unevaluatedProperties": false
