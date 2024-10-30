@@ -132,7 +132,8 @@
                     "script": [
                         { 
                             "id": "greek-min", 
-                            "label": "Greek minuscule" 
+                            "label": "Greek minuscule" ,
+                            "writing_system": "Greek"
                         } 
                     ], 
                     "label": "Greek inscription", 
@@ -291,7 +292,8 @@
             "script": [
                 { 
                     "id": "naskh", 
-                    "label": "Naskh" 
+                    "label": "Naskh" ,
+                    "writing_system": "Arabic"
                 } 
             ], 
             "label": "Anonymous theological text", 
@@ -318,7 +320,8 @@
             "script": [
                 { 
                     "id": "melkite", 
-                    "label": "Melkite" 
+                    "label": "Melkite" ,
+                    "writing_system": "Syriac"
                 } 
             ], 
             "label": "Unidentified Melkite text", 

@@ -126,5 +126,8 @@
     ],
     "internal": [
         "This record is used only for purposes of developing the data portal and should therefore not be published, and should be deleted when development is complete"
+    ],
+    "reconstructed_from": [
+        "ark:/21198/ten02zkr"
     ]
 }
