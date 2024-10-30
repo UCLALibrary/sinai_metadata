@@ -56,14 +56,17 @@
             }
         },
         "creation": {
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
             "unevaluatedProperties": false
         },
         "incipit": {
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/work_excerpt",
             "unevaluatedProperties": false
         },
         "explicit": {
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/work_excerpt",
             "unevaluatedProperties": false
         },
