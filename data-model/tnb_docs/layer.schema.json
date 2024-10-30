@@ -1113,7 +1113,7 @@
             "minLength": 1,
             "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
-          "added-by": {
+          "added_by": {
             "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
             "type": "string",
             "minLength": 1,
