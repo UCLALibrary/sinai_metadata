@@ -106,20 +106,20 @@
     "rel_agent": [
         {
             "id": "ark:/21198/s1jp42",
-            "rel": {
+            "rel": [{
                 "id": "member-of",
                 "label": "Member Of"
-            },
+            }],
             "source": [
                 "This is for development purposes only"
             ]
         },
         {
             "id": "ark:/21198/s1xw2s",
-            "rel": {
+            "rel": [{
                 "id": "family-member",
                 "label": "Family Member"
-            },
+            }],
             "source": [
                 "This is not true but used for development purposes"
             ]
@@ -128,10 +128,10 @@
     "rel_place": [
         {
             "id": "ark:/21198/tev123",
-            "rel": {
+            "rel": [{
                 "id": "death",
                 "label": "Place of Death"
-            },
+            }],
             "source": [
                 "This is a faked place record for Nisibis"
             ]
