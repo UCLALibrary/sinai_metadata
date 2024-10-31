@@ -98,150 +98,102 @@
                   "genre": {
                     "type": "array",
                     "items": {
-                      "anyOf": [
+                      "enum": [
                         {
-                          "const": {
-                            "id": "account-books",
-                            "label": "Account books"
-                          }
+                          "id": "account-books",
+                          "label": "Account books"
                         },
                         {
-                          "const": {
-                            "id": "apocrypha",
-                            "label": "Apocrypha"
-                          }
+                          "id": "apocrypha",
+                          "label": "Apocrypha"
                         },
                         {
-                          "const": {
-                            "id": "apophthegmata",
-                            "label": "Apophthegmata"
-                          }
+                          "id": "apophthegmata",
+                          "label": "Apophthegmata"
                         },
                         {
-                          "const": {
-                            "id": "biblical-texts",
-                            "label": "Biblical texts"
-                          }
+                          "id": "biblical-texts",
+                          "label": "Biblical texts"
                         },
                         {
-                          "const": {
-                            "id": "blessings",
-                            "label": "Blessings"
-                          }
+                          "id": "blessings",
+                          "label": "Blessings"
                         },
                         {
-                          "const": {
-                            "id": "calendars",
-                            "label": "Calendars"
-                          }
+                          "id": "calendars",
+                          "label": "Calendars"
                         },
                         {
-                          "const": {
-                            "id": "canon-law",
-                            "label": "Canon law"
-                          }
+                          "id": "canon-law",
+                          "label": "Canon law"
                         },
                         {
-                          "const": {
-                            "id": "charters",
-                            "label": "Charters"
-                          }
+                          "id": "charters",
+                          "label": "Charters"
                         },
                         {
-                          "const": {
-                            "id": "commentaries",
-                            "label": "Commentaries"
-                          }
+                          "id": "commentaries",
+                          "label": "Commentaries"
                         },
                         {
-                          "const": {
-                            "id": "dictionaries",
-                            "label": "Dictionaries"
-                          }
+                          "id": "dictionaries",
+                          "label": "Dictionaries"
                         },
                         {
-                          "const": {
-                            "id": "gospel-books",
-                            "label": "Gospel books"
-                          }
+                          "id": "gospel-books",
+                          "label": "Gospel books"
                         },
                         {
-                          "const": {
-                            "id": "hagiographies",
-                            "label": "Hagiographies"
-                          }
+                          "id": "hagiographies",
+                          "label": "Hagiographies"
                         },
                         {
-                          "const": {
-                            "id": "historical-works",
-                            "label": "Historical works"
-                          }
+                          "id": "historical-works",
+                          "label": "Historical works"
                         },
                         {
-                          "const": {
-                            "id": "hymnals",
-                            "label": "Hymnals"
-                          }
+                          "id": "hymnals",
+                          "label": "Hymnals"
                         },
                         {
-                          "const": {
-                            "id": "lectionaries",
-                            "label": "Lectionaries"
-                          }
+                          "id": "lectionaries",
+                          "label": "Lectionaries"
                         },
                         {
-                          "const": {
-                            "id": "liturgical-texts",
-                            "label": "Liturgical texts"
-                          }
+                          "id": "liturgical-texts",
+                          "label": "Liturgical texts"
                         },
                         {
-                          "const": {
-                            "id": "martyrologies",
-                            "label": "Martyrologies"
-                          }
+                          "id": "martyrologies",
+                          "label": "Martyrologies"
                         },
                         {
-                          "const": {
-                            "id": "mimars",
-                            "label": "Mimars"
-                          }
+                          "id": "mimars",
+                          "label": "Mimars"
                         },
                         {
-                          "const": {
-                            "id": "philosophical-works",
-                            "label": "Philosophical works"
-                          }
+                          "id": "philosophical-works",
+                          "label": "Philosophical works"
                         },
                         {
-                          "const": {
-                            "id": "poetry",
-                            "label": "Poetry"
-                          }
+                          "id": "poetry",
+                          "label": "Poetry"
                         },
                         {
-                          "const": {
-                            "id": "prayers",
-                            "label": "Prayers"
-                          }
+                          "id": "prayers",
+                          "label": "Prayers"
                         },
                         {
-                          "const": {
-                            "id": "scientific-works",
-                            "label": "Scientific works"
-                          }
+                          "id": "scientific-works",
+                          "label": "Scientific works"
                         },
                         {
-                          "const": {
-                            "id": "sermons",
-                            "label": "Sermons"
-                          }
+                          "id": "sermons",
+                          "label": "Sermons"
                         },
                         {
-                          "const": {
-                            "id": "theological-works",
-                            "label": "Theological works"
-                          }
+                          "id": "theological-works",
+                          "label": "Theological works"
                         }
                       ],
                       "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -302,42 +254,30 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "anyOf": [
+                  "enum": [
                     {
-                      "const": {
-                        "id": "prologue",
-                        "label": "Prologue"
-                      }
+                      "id": "prologue",
+                      "label": "Prologue"
                     },
                     {
-                      "const": {
-                        "id": "incipit",
-                        "label": "Incipit"
-                      }
+                      "id": "incipit",
+                      "label": "Incipit"
                     },
                     {
-                      "const": {
-                        "id": "inc-mut",
-                        "label": "First Preserved Line"
-                      }
+                      "id": "inc-mut",
+                      "label": "First Preserved Line"
                     },
                     {
-                      "const": {
-                        "id": "quote",
-                        "label": "Quote"
-                      }
+                      "id": "quote",
+                      "label": "Quote"
                     },
                     {
-                      "const": {
-                        "id": "des-mut",
-                        "label": "Last Preserved Line"
-                      }
+                      "id": "des-mut",
+                      "label": "Last Preserved Line"
                     },
                     {
-                      "const": {
-                        "id": "explicit",
-                        "label": "Explicit"
-                      }
+                      "id": "explicit",
+                      "label": "Explicit"
                     }
                   ],
                   "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",

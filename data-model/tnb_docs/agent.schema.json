@@ -11,18 +11,14 @@
       "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "person",
-            "label": "Person"
-          }
+          "id": "person",
+          "label": "Person"
         },
         {
-          "const": {
-            "id": "organization",
-            "label": "Organization"
-          }
+          "id": "organization",
+          "label": "Organization"
         }
       ],
       "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -66,24 +62,18 @@
       "minLength": 1
     },
     "gender": {
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "man",
-            "label": "Man"
-          }
+          "id": "man",
+          "label": "Man"
         },
         {
-          "const": {
-            "id": "woman",
-            "label": "Woman"
-          }
+          "id": "woman",
+          "label": "Woman"
         },
         {
-          "const": {
-            "id": "other",
-            "label": "Other"
-          }
+          "id": "other",
+          "label": "Other"
         }
       ],
       "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -436,18 +426,14 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "family-member",
-                    "label": "Family Member"
-                  }
+                  "id": "family-member",
+                  "label": "Family Member"
                 },
                 {
-                  "const": {
-                    "id": "member-of",
-                    "label": "Member Of"
-                  }
+                  "id": "member-of",
+                  "label": "Member Of"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -514,18 +500,14 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "birth",
-                    "label": "Place of Birth"
-                  }
+                  "id": "birth",
+                  "label": "Place of Birth"
                 },
                 {
-                  "const": {
-                    "id": "death",
-                    "label": "Place of Death"
-                  }
+                  "id": "death",
+                  "label": "Place of Death"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",

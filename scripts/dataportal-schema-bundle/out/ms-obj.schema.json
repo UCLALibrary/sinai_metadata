@@ -66,48 +66,34 @@
     },
     "state": {
       "description": "The current state of the manuscript object",
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "codex",
-            "label": "Codex"
-          }
+          "id": "codex",
+          "label": "Codex"
         },
         {
-          "const": {
-            "id": "quire",
-            "label": "Quire(s)"
-          }
+          "id": "quire",
+          "label": "Quire(s)"
         },
         {
-          "const": {
-            "id": "bifolio",
-            "label": "Bifolio(s)"
-          }
+          "id": "bifolio",
+          "label": "Bifolio(s)"
         },
         {
-          "const": {
-            "id": "folio",
-            "label": "Folio(s)"
-          }
+          "id": "folio",
+          "label": "Folio(s)"
         },
         {
-          "const": {
-            "id": "folio-fragment",
-            "label": "Folio Fragment(s)"
-          }
+          "id": "folio-fragment",
+          "label": "Folio Fragment(s)"
         },
         {
-          "const": {
-            "id": "uto",
-            "label": "Undertext Object"
-          }
+          "id": "uto",
+          "label": "Undertext Object"
         },
         {
-          "const": {
-            "id": "scroll",
-            "label": "Scroll"
-          }
+          "id": "scroll",
+          "label": "Scroll"
         }
       ],
       "type": "object",
@@ -199,24 +185,18 @@
           "support": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "paper",
-                    "label": "Paper"
-                  }
+                  "id": "paper",
+                  "label": "Paper"
                 },
                 {
-                  "const": {
-                    "id": "parchment",
-                    "label": "Parchment"
-                  }
+                  "id": "parchment",
+                  "label": "Parchment"
                 },
                 {
-                  "const": {
-                    "id": "papyrus",
-                    "label": "Papyrus"
-                  }
+                  "id": "papyrus",
+                  "label": "Papyrus"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -733,24 +713,18 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "anyOf": [
+                  "enum": [
                     {
-                      "const": {
-                        "id": "filiation",
-                        "label": "Filiation"
-                      }
+                      "id": "filiation",
+                      "label": "Filiation"
                     },
                     {
-                      "const": {
-                        "id": "disjecta",
-                        "label": "Disjecta Membra"
-                      }
+                      "id": "disjecta",
+                      "label": "Disjecta Membra"
                     },
                     {
-                      "const": {
-                        "id": "reconstructed-from",
-                        "label": "Reconstructed From"
-                      }
+                      "id": "reconstructed-from",
+                      "label": "Reconstructed From"
                     }
                   ],
                   "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1554,24 +1528,18 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "filiation",
-                  "label": "Filiation"
-                }
+                "id": "filiation",
+                "label": "Filiation"
               },
               {
-                "const": {
-                  "id": "disjecta",
-                  "label": "Disjecta Membra"
-                }
+                "id": "disjecta",
+                "label": "Disjecta Membra"
               },
               {
-                "const": {
-                  "id": "reconstructed-from",
-                  "label": "Reconstructed From"
-                }
+                "id": "reconstructed-from",
+                "label": "Reconstructed From"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1661,18 +1629,14 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "manuscript",
-                  "label": "Manuscript"
-                }
+                "id": "manuscript",
+                "label": "Manuscript"
               },
               {
-                "const": {
-                  "id": "reconstruction",
-                  "label": "Reconstruction"
-                }
+                "id": "reconstruction",
+                "label": "Reconstruction"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1827,18 +1791,14 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "main",
-                  "label": "Main"
-                }
+                "id": "main",
+                "label": "Main"
               },
               {
-                "const": {
-                  "id": "reordered",
-                  "label": "Reordered"
-                }
+                "id": "reordered",
+                "label": "Reordered"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1975,18 +1935,14 @@
   "then": {
     "properties": {
       "type": {
-        "anyOf": [
+        "enum": [
           {
-            "const": {
-              "id": "rebind",
-              "label": "Digital Rebinding"
-            }
+            "id": "rebind",
+            "label": "Digital Rebinding"
           },
           {
-            "const": {
-              "id": "uto",
-              "label": "Undertext Object"
-            }
+            "id": "uto",
+            "label": "Undertext Object"
           }
         ]
       },
@@ -2007,12 +1963,10 @@
   "else": {
     "properties": {
       "type": {
-        "anyOf": [
+        "enum": [
           {
-            "const": {
-              "id": "manuscript",
-              "label": "Manuscript"
-            }
+            "id": "manuscript",
+            "label": "Manuscript"
           }
         ]
       }

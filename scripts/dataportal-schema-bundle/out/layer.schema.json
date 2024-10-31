@@ -14,30 +14,22 @@
     },
     "state": {
       "description": "The current state of the inscribed layer",
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "overtext",
-            "label": "Overtext"
-          }
+          "id": "overtext",
+          "label": "Overtext"
         },
         {
-          "const": {
-            "id": "undertext",
-            "label": "Undertext"
-          }
+          "id": "undertext",
+          "label": "Undertext"
         },
         {
-          "const": {
-            "id": "guest",
-            "label": "Guest Content"
-          }
+          "id": "guest",
+          "label": "Guest Content"
         },
         {
-          "const": {
-            "id": "reconstruction",
-            "label": "Reconstruction"
-          }
+          "id": "reconstruction",
+          "label": "Reconstruction"
         }
       ],
       "type": "object",
@@ -853,24 +845,18 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "filiation",
-                  "label": "Filiation"
-                }
+                "id": "filiation",
+                "label": "Filiation"
               },
               {
-                "const": {
-                  "id": "disjecta",
-                  "label": "Disjecta Membra"
-                }
+                "id": "disjecta",
+                "label": "Disjecta Membra"
               },
               {
-                "const": {
-                  "id": "reconstructed-from",
-                  "label": "Reconstructed From"
-                }
+                "id": "reconstructed-from",
+                "label": "Reconstructed From"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
