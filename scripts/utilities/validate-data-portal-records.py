@@ -41,11 +41,13 @@ schema = jschon.JSONSchema(schema_json)
 files = os.listdir(path_to_records)
 for file in files:
     with open(path_to_records + "/" + file) as f:
-        # read the contents as JSON
-        rec = json.load(f)
+        # ignore non-JSON files (e.g., .DS_Store)
+        if file.endswith(".json"):
+            # read the contents as JSON
+            rec = json.load(f)
 
-        # evaluate against the schema, report by file name only if there are errors
-        result = schema.evaluate(jschon.json.JSON(rec))
-        if(not(result.output('flag')['valid'])):
-            print(file)
-            print(result.output('basic'))
+            # evaluate against the schema, report by file name only if there are errors
+            result = schema.evaluate(jschon.json.JSON(rec))
+            if(not(result.output('flag')['valid'])):
+                print(file)
+                print(result.output('basic'))
