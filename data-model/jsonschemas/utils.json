@@ -183,7 +183,7 @@
                 "collection": {
                     "type": "string"
                 },
-                "repo": {
+                "repository": {
                     "type": "string",
                     "minLength": 1
                 }
