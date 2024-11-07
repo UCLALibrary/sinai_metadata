@@ -1,0 +1,183 @@
+{
+    "ark": "ark:/21198/tezc7t",
+    "pref_title": "Epistula 2",
+    "orig_lang": {
+        "id": "gree1276",
+        "label": "Greek"
+    },
+    "orig_lang_title": "Γρηγορίωι ἑταίρωι",
+    "alt_title": [
+        "Basil, Epistula 2",
+        "Correspondence. 2",
+        "Ad Gregorium Nazianzenum"
+    ],
+    "desc": "A letter to Gregory Nazianzus, in which he describes the importance of humility in ascetic practice",
+    "genre": [
+        {
+            "id": "theological-works",
+            "label": "Theological works"
+            },
+        {
+            "id": "historical-works",
+            "label": "Historical works"
+        }
+    ],
+    "creator": [
+        {
+            "id": "ark:/21198/s1101c",
+            "role": {
+                "id": "author",
+                "label": "Author"
+            }
+        },
+        {
+            "id": "ark:/21198/tev887",
+            "role": {
+                 "id": "translator",
+                 "label": "Translator"
+              }
+        }
+    ],
+    "creation": {
+        "value": "4th c. CE",
+        "iso": {
+            "not_before": "0301",
+            "not_after": "0400"
+        }
+    },
+    "incipit": {
+        "value": "Ἐπέγνων σου τὴν ἐπιστολὴν",
+        "translation": [
+            "I recognised your letter",
+            "J'ai reconnu votre lettre"
+        ],
+        "source": [
+            "Edition from Pinakes; translation from NPNF, vol. 8 (ed. Schaff and Wace), and made up"
+        ]
+    },
+    "explicit": {
+        "value": " τὴν παρὰ Θεοῦ συνεργίαν εἰς τὴν τελείωσιν τῶν σπουδαζουένων ἐπιζητοῦντος",
+        "translation": [
+            "imploring aid from God for the perfecting of what it longs for."
+        ],
+        "source": [
+            "Edition from PG; translation from NPNF, vol. 8 (ed. Schaff and Wace)"
+        ]
+    },
+    "rel_con": [
+        {
+            "label": "Basil, Saint, Bishop of Caesarea, approximately 329-379. | Correspondence",
+            "uri": "https://viaf.org/viaf/179353879",
+            "source": "VIAF"
+        },
+        {
+            "label": "Basil, Saint, Bishop of Caesarea, approximately 329-379. Correspondence",
+            "uri": "https://id.loc.gov/authorities/names/nr97035148",
+            "source": "LoC"
+        },
+        {
+            "label": "Basil, Saint, Bishop of Caesarea, approximately 329-379. Correspondence",
+            "uri": "https://w3id.org/haf/work/388714713990",
+            "source": "HAF"
+        },
+        {
+            "label": "Basilius Caesariensis Ad Gregorium Nazianzenum (Ep. 2)",
+            "uri": "https://pinakes.irht.cnrs.fr/notices/oeuvre/142/",
+            "source": "Pinakes"
+        }
+    ],
+    "refno": [
+        {
+            "label": "Epistula 2",
+            "idno": "2900.002",
+            "source": "CPG"
+        }
+    ],
+    "bib": [
+        {
+            "id": "f45e8665-84fc-4b1c-92cc-befee93bba2a",
+            "type": {
+                "id": "edition",
+                "label": "Edition"
+            },
+            "range": "col. 223-244",
+            "alt_shelf": null,
+            "url": "https://archive.org/details/patrologiae_cursus_completus_gr_vol_032/page/n116",
+            "note": [
+                "Test record bibl; Akhrass and Syryany"
+            ]
+        },
+        {
+            "id": "428b16d3-7342-429a-85ce-ff91a8cccef7",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": null,
+            "alt_shelf": null,
+            "url": null,
+            "note": [
+                "Test record bibl; Desreumaux 2010"
+            ]
+        },
+        {
+            "id": "36ac2d29-349f-496d-b4ea-aff4e605c4ba",
+            "type": {
+                "id": "translation",
+                "label": "Translation"
+            },
+            "range": "pp. 352-400",
+            "alt_shelf": null,
+            "url": null,
+            "note": [
+                "Test record bibl; Aland"
+            ]
+        }],
+    "note": [
+        "This is perhaps the most well-known of Basil's letters"
+    ],
+    "rel_work": [
+        {
+            "id": "ark:/21198/s1v01t",
+            "rel": [{
+                "id": "part-of",
+                "label": "Part Of"
+                }],
+            "source": [
+                "Test record, constructed info for development"
+            ]
+        }
+    ],
+    "rel_agent": [
+        {
+            "id": "ark:/21198/s12s3c",
+            "rel": [{
+                "id": "addressee",
+                "label": "Addressee"
+                },
+                {
+                    "id": "commemorates",
+                    "label": "Commemorates"
+                }
+                ],
+            "source": [
+                "Test record, constructed info for development"
+            ]
+        }
+    ],
+    "rel_place": [
+        {
+            "id": "ark:/21198/tev123",
+            "rel": [{
+                "id": "composition",
+                "label": "Place of Composition"
+                }],
+            "source": [
+                "This is a faked place record for Nisibis"
+            ]
+        }
+    ],
+    "internal": [
+        "An internal note to remind us to delete this record since it is a test record for development purposes"
+    ]
+}

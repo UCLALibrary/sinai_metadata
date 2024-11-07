@@ -11,18 +11,14 @@
       "pattern": "^ark:/21198/([a-z]|[0-9])+"
     },
     "type": {
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "person",
-            "label": "Person"
-          }
+          "id": "person",
+          "label": "Person"
         },
         {
-          "const": {
-            "id": "organization",
-            "label": "Organization"
-          }
+          "id": "organization",
+          "label": "Organization"
         }
       ],
       "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -66,24 +62,18 @@
       "minLength": 1
     },
     "gender": {
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "man",
-            "label": "Man"
-          }
+          "id": "man",
+          "label": "Man"
         },
         {
-          "const": {
-            "id": "woman",
-            "label": "Woman"
-          }
+          "id": "woman",
+          "label": "Woman"
         },
         {
-          "const": {
-            "id": "other",
-            "label": "Other"
-          }
+          "id": "other",
+          "label": "Other"
         }
       ],
       "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -105,8 +95,8 @@
       "unevaluatedProperties": false
     },
     "birth": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -141,8 +131,8 @@
       ]
     },
     "death": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -177,8 +167,8 @@
       ]
     },
     "floruit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -359,7 +349,10 @@
         "if": {
           "properties": {
             "type": {
-              "const": "otherdigversion"
+              "const": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+              }
             }
           },
           "required": [
@@ -371,6 +364,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -429,18 +426,14 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "family-member",
-                    "label": "Family Member"
-                  }
+                  "id": "family-member",
+                  "label": "Family Member"
                 },
                 {
-                  "const": {
-                    "id": "member-of",
-                    "label": "Member Of"
-                  }
+                  "id": "member-of",
+                  "label": "Member Of"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -507,18 +500,14 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "birth",
-                    "label": "Place of Birth"
-                  }
+                  "id": "birth",
+                  "label": "Place of Birth"
                 },
                 {
-                  "const": {
-                    "id": "death",
-                    "label": "Place of Death"
-                  }
+                  "id": "death",
+                  "label": "Place of Death"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -567,25 +556,31 @@
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer"
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contributor": {
+            "description": "The person responsible for the intellectual contributions made to the record via this change",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "added_by": {
+            "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
           "timestamp": {
             "type": "string",
             "format": "date-time",
-            "minLength": 1,
-            "$comment": "possibly can set min-length based on ISO timestamp length?"
-          },
-          "comment": {
-            "type": [
-              "string",
-              "null"
-            ],
             "minLength": 1
           }
         },
         "required": [
-          "id",
+          "message",
+          "added_by",
           "timestamp"
         ],
         "unevaluatedProperties": false

@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/tebv9g4m",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic NF X 42",
+    "extent": "14 ff.",
+    "weight": "24.5 g",
+    "dim": "143 x 110 x 6.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+        },
+    "part": [
+        {
+            "label": "Part 1",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                    }
+                ],
+            "extent": "14 ff.",
+            "layer": [
+                {
+                    "id": "ark:/21198/tebvp1ol",
+                    "label": "Overtext layer, Naskh (n.d.)",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                        }
+                }
+            ]
+        }
+    ],
+    "has_bind": false,
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repo": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": "ref",
+                "label": "Reference Work"
+            },
+            "range": "pp. 48; ٥٢"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                        "id": "main",
+                        "label": "Main"
+                        },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1bv9g4m/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1bv9g4m%2F3t51rk3w/full/!200,200/0/default.jpg"
+        }
+    ],
+    "internal": [
+        "This record is used only for purposes of developing the data portal and should therefore not be published, and should be deleted when development is complete"
+    ]
+}

@@ -23,7 +23,7 @@
                         "minLength": 1,
                         "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
                     },
-                    "added-by": {
+                    "added_by": {
                         "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
                         "type": "string",
                         "minLength": 1,
@@ -60,13 +60,10 @@
                     "minLength": 1
                 },
                 "work_id": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
                 },
                 "locus": {
                     "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
-                },
-                "sequence": {
-                    "type": "integer"
                 },
                 "note": {
                     "type": ["array", "null"],
@@ -76,9 +73,24 @@
                     "unevaluatedItems": false
                 }
             },
-            "required": [
-                "label",
-                "sequence"
+            "anyOf": [
+                {
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "required": ["label"]
+                },
+                {
+                    "properties": {
+                        "work_id": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                        }
+                    },
+                    "required": ["work_id"]
+                }
             ],
             "unevaluatedProperties": false
         },
@@ -156,24 +168,6 @@
             "description": "A unique identifer, supplied by the database",
             "type": "integer"
         },
-        "idno": {
-            "description": "An identifier, according to a given scheme",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/idno_types"
-                },
-                "value": {
-                    "type": "string",
-                    "minLength": 1
-                }
-            },
-            "required": [
-                "type",
-                "value"
-            ],
-            "unevaluatedProperties": false
-        },
         "locus": {
             "type": "string",
             "minLength": 1,
@@ -187,8 +181,7 @@
                     "minLength": 1
                 },
                 "collection": {
-                    "type": "string",
-                    "minLength": 1
+                    "type": "string"
                 },
                 "repo": {
                     "type": "string",
@@ -197,7 +190,6 @@
             },
             "required": [
                 "id",
-                "collection",
                 "repo"
             ],
             "unevaluatedProperties": false
@@ -267,28 +259,34 @@
                 "id"
             ]
         },
+        "script": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "writing_system": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "label",
+                "writing_system"
+            ],
+            "unevaluatedProperties": false
+        },
         "summary": {
             "type": [
                 "string",
                 "null"
             ],
             "minLength": 1
-        },
-        "translation": {
-            "description": "The translation of a piece of content, such as an excerpt from a text or paratext, or from a conceptual work entity.",
-            "properties": {
-                "lang": {
-                    "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/langs_modern"
-                },
-                "value": {
-                    "type": "string",
-                    "minLeng": 1
-                }
-            },
-            "required": [
-                "lang",
-                "value"
-            ]
         },
         "weight": {
             "description": "A string expression of the manuscript object's weight",

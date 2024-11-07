@@ -14,30 +14,22 @@
     },
     "state": {
       "description": "The current state of the inscribed layer",
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "overtext",
-            "label": "Overtext"
-          }
+          "id": "overtext",
+          "label": "Overtext"
         },
         {
-          "const": {
-            "id": "undertext",
-            "label": "Undertext"
-          }
+          "id": "undertext",
+          "label": "Undertext"
         },
         {
-          "const": {
-            "id": "guest",
-            "label": "Guest Content"
-          }
+          "id": "guest",
+          "label": "Guest Content"
         },
         {
-          "const": {
-            "id": "reconstruction",
-            "label": "Reconstruction"
-          }
+          "id": "reconstruction",
+          "label": "Reconstruction"
         }
       ],
       "type": "object",
@@ -93,7 +85,6 @@
           "script": {
             "type": "array",
             "items": {
-              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
               "type": "object",
               "properties": {
                 "id": {
@@ -103,11 +94,15 @@
                 "label": {
                   "type": "string",
                   "minLength": 1
+                },
+                "writing_system": {
+                  "type": "string"
                 }
               },
               "required": [
                 "id",
-                "label"
+                "label",
+                "writing_system"
               ],
               "unevaluatedProperties": false
             },
@@ -313,7 +308,6 @@
           "script": {
             "type": "array",
             "items": {
-              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
               "type": "object",
               "properties": {
                 "id": {
@@ -323,11 +317,15 @@
                 "label": {
                   "type": "string",
                   "minLength": 1
+                },
+                "writing_system": {
+                  "type": "string"
                 }
               },
               "required": [
                 "id",
-                "label"
+                "label",
+                "writing_system"
               ],
               "unevaluatedProperties": false
             },
@@ -847,24 +845,18 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "filiation",
-                  "label": "Filiation"
-                }
+                "id": "filiation",
+                "label": "Filiation"
               },
               {
-                "const": {
-                  "id": "disjecta",
-                  "label": "Disjecta Membra"
-                }
+                "id": "disjecta",
+                "label": "Disjecta Membra"
               },
               {
-                "const": {
-                  "id": "reconstructed-from",
-                  "label": "Reconstructed From"
-                }
+                "id": "reconstructed-from",
+                "label": "Reconstructed From"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1077,6 +1069,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -1107,7 +1103,7 @@
             "minLength": 1,
             "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
-          "added-by": {
+          "added_by": {
             "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
             "type": "string",
             "minLength": 1,
@@ -1164,6 +1160,7 @@
     "text_unit",
     "parent"
   ],
+  "unevaluatedProperties": false,
   "if": {
     "properties": {
       "reconstruction": {
@@ -1175,6 +1172,17 @@
     ]
   },
   "then": {
+    "properties": {
+      "reconstructed_from": {
+        "type": "array",
+        "items": {
+          "description": "A unique Archival Resource Key (ARK)",
+          "type": "string",
+          "pattern": "^ark:/21198/([a-z]|[0-9])+"
+        },
+        "unevaluatedItems": false
+      }
+    },
     "required": [
       "reconstructed_from"
     ]

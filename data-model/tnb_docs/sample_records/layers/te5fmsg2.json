@@ -1,0 +1,40 @@
+{
+    "ark": "ark:/21198/te5fmsg2",
+    "reconstruction": false,
+    "state": {
+        "id": "guest",
+        "label": "Guest Content"
+    },
+    "label": "Syriac 12, Syriac on Reinforcement Strips",
+    "locus": "ff. 64–66, 70–72, 105–106, 110–111, 113–114",
+    "summary": "Reinforcement strips from a Syriac parchment codex",
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "syr-und",
+                    "label": "Undetermined Syriac script",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/te5fmsg2t1",
+            "label": "Text unit 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "General"
+            },
+            "value": "The reinforcement strips on which this layer is written are from a parchment manuscript"
+        }
+    ],
+    "parent": [
+        "ark:/21198/te5f0f9b"
+    ]
+}

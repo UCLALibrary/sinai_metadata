@@ -65,150 +65,102 @@
         "null"
       ],
       "items": {
-        "anyOf": [
+        "enum": [
           {
-            "const": {
-              "id": "account-books",
-              "label": "Account books"
-            }
+            "id": "account-books",
+            "label": "Account books"
           },
           {
-            "const": {
-              "id": "apocrypha",
-              "label": "Apocrypha"
-            }
+            "id": "apocrypha",
+            "label": "Apocrypha"
           },
           {
-            "const": {
-              "id": "apophthegmata",
-              "label": "Apophthegmata"
-            }
+            "id": "apophthegmata",
+            "label": "Apophthegmata"
           },
           {
-            "const": {
-              "id": "biblical-texts",
-              "label": "Biblical texts"
-            }
+            "id": "biblical-texts",
+            "label": "Biblical texts"
           },
           {
-            "const": {
-              "id": "blessings",
-              "label": "Blessings"
-            }
+            "id": "blessings",
+            "label": "Blessings"
           },
           {
-            "const": {
-              "id": "calendars",
-              "label": "Calendars"
-            }
+            "id": "calendars",
+            "label": "Calendars"
           },
           {
-            "const": {
-              "id": "canon-law",
-              "label": "Canon law"
-            }
+            "id": "canon-law",
+            "label": "Canon law"
           },
           {
-            "const": {
-              "id": "charters",
-              "label": "Charters"
-            }
+            "id": "charters",
+            "label": "Charters"
           },
           {
-            "const": {
-              "id": "commentaries",
-              "label": "Commentaries"
-            }
+            "id": "commentaries",
+            "label": "Commentaries"
           },
           {
-            "const": {
-              "id": "dictionaries",
-              "label": "Dictionaries"
-            }
+            "id": "dictionaries",
+            "label": "Dictionaries"
           },
           {
-            "const": {
-              "id": "gospel-books",
-              "label": "Gospel books"
-            }
+            "id": "gospel-books",
+            "label": "Gospel books"
           },
           {
-            "const": {
-              "id": "hagiographies",
-              "label": "Hagiographies"
-            }
+            "id": "hagiographies",
+            "label": "Hagiographies"
           },
           {
-            "const": {
-              "id": "historical-works",
-              "label": "Historical works"
-            }
+            "id": "historical-works",
+            "label": "Historical works"
           },
           {
-            "const": {
-              "id": "hymnals",
-              "label": "Hymnals"
-            }
+            "id": "hymnals",
+            "label": "Hymnals"
           },
           {
-            "const": {
-              "id": "lectionaries",
-              "label": "Lectionaries"
-            }
+            "id": "lectionaries",
+            "label": "Lectionaries"
           },
           {
-            "const": {
-              "id": "liturgical-texts",
-              "label": "Liturgical texts"
-            }
+            "id": "liturgical-texts",
+            "label": "Liturgical texts"
           },
           {
-            "const": {
-              "id": "martyrologies",
-              "label": "Martyrologies"
-            }
+            "id": "martyrologies",
+            "label": "Martyrologies"
           },
           {
-            "const": {
-              "id": "mimars",
-              "label": "Mimars"
-            }
+            "id": "mimars",
+            "label": "Mimars"
           },
           {
-            "const": {
-              "id": "philosophical-works",
-              "label": "Philosophical works"
-            }
+            "id": "philosophical-works",
+            "label": "Philosophical works"
           },
           {
-            "const": {
-              "id": "poetry",
-              "label": "Poetry"
-            }
+            "id": "poetry",
+            "label": "Poetry"
           },
           {
-            "const": {
-              "id": "prayers",
-              "label": "Prayers"
-            }
+            "id": "prayers",
+            "label": "Prayers"
           },
           {
-            "const": {
-              "id": "scientific-works",
-              "label": "Scientific works"
-            }
+            "id": "scientific-works",
+            "label": "Scientific works"
           },
           {
-            "const": {
-              "id": "sermons",
-              "label": "Sermons"
-            }
+            "id": "sermons",
+            "label": "Sermons"
           },
           {
-            "const": {
-              "id": "theological-works",
-              "label": "Theological works"
-            }
+            "id": "theological-works",
+            "label": "Theological works"
           }
         ],
         "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -245,24 +197,18 @@
             "pattern": "^ark:/21198/([a-z]|[0-9])+"
           },
           "role": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "author",
-                  "label": "Author"
-                }
+                "id": "author",
+                "label": "Author"
               },
               {
-                "const": {
-                  "id": "editor",
-                  "label": "Editor"
-                }
+                "id": "editor",
+                "label": "Editor"
               },
               {
-                "const": {
-                  "id": "translator",
-                  "label": "Translator"
-                }
+                "id": "translator",
+                "label": "Translator"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -287,8 +233,8 @@
       }
     },
     "creation": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -323,8 +269,8 @@
       ]
     },
     "incipit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -356,8 +302,8 @@
       ]
     },
     "explicit": {
-      "unevaluatedProperties": false,
       "type": "object",
+      "unevaluatedProperties": false,
       "properties": {
         "value": {
           "type": "string",
@@ -535,7 +481,10 @@
         "if": {
           "properties": {
             "type": {
-              "const": "otherdigversion"
+              "const": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+              }
             }
           },
           "required": [
@@ -547,6 +496,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -605,30 +558,22 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "has-part",
-                    "label": "Has Part"
-                  }
+                  "id": "has-part",
+                  "label": "Has Part"
                 },
                 {
-                  "const": {
-                    "id": "has-version",
-                    "label": "Has Version"
-                  }
+                  "id": "has-version",
+                  "label": "Has Version"
                 },
                 {
-                  "const": {
-                    "id": "part-of",
-                    "label": "Part Of"
-                  }
+                  "id": "part-of",
+                  "label": "Part Of"
                 },
                 {
-                  "const": {
-                    "id": "version-of",
-                    "label": "Version Of"
-                  }
+                  "id": "version-of",
+                  "label": "Version Of"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -695,18 +640,14 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "commemorates",
-                    "label": "Commemorates"
-                  }
+                  "id": "commemorates",
+                  "label": "Commemorates"
                 },
                 {
-                  "const": {
-                    "id": "addressee",
-                    "label": "Addressee"
-                  }
+                  "id": "addressee",
+                  "label": "Addressee"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -773,12 +714,10 @@
           "rel": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "composition",
-                    "label": "Place of Composition"
-                  }
+                  "id": "composition",
+                  "label": "Place of Composition"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -827,25 +766,31 @@
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer"
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contributor": {
+            "description": "The person responsible for the intellectual contributions made to the record via this change",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "added_by": {
+            "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
           "timestamp": {
             "type": "string",
             "format": "date-time",
-            "minLength": 1,
-            "$comment": "possibly can set min-length based on ISO timestamp length?"
-          },
-          "comment": {
-            "type": [
-              "string",
-              "null"
-            ],
             "minLength": 1
           }
         },
         "required": [
-          "id",
+          "message",
+          "added_by",
           "timestamp"
         ],
         "unevaluatedProperties": false

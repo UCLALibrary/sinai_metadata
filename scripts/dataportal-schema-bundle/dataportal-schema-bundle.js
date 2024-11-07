@@ -12,7 +12,7 @@ const schemaFileNames =
 {
   "msObj": "ms-obj.json",
   "layer": "layer.json",
-  "contentUnit": "content_unit.json",
+  "textUnit": "text_unit.json",
   "agent": "agent.json",
   "place": "place.json",
   "work": "work.json"

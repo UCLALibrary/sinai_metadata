@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/ten0p1olt1",
+    "reconstruction": false,
+    "label": "Arabic Gospels",
+    "locus": "ff. 128r-143v",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s12c7r"
+            },
+            "locus": "ff. 128r-130"
+            },
+        {
+            "work": {
+                "id": "ark:/21198/s1630k"
+            },
+            "locus": "ff. 130v-135r"
+        },
+        {
+            "work": {
+                "id": "ark:/21198/s1k88r"
+            },
+            "locus": "ff. 135r-140r"
+        },
+        {
+            "work": {
+                "id": "ark:/21198/s1388d"
+            },
+            "locus": "ff. 140v-143v"
+        }
+        ],
+    "features": [
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "The Gospels continue in Arabic NF M 8 and NF M 27"
+        }
+    ],
+    "bib": [
+        {
+            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "note": [
+                "Kashouh 2008"
+            ]
+        },
+        {
+            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "p. 76",
+            "note": [
+                "Kashouh 2012"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/ten0p1ol "
+    ],
+    "internal": [
+        "Test record, delete after development is complete"
+        ]
+}

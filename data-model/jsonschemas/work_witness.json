@@ -5,12 +5,52 @@
     "description": "A Work Witness is a piece of content that forms part of a content unit within a manuscript and attests a distinct conceptual work",
     "type": "object",
     "properties": {
-        "work_id": {
-            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/id"
+        "work": {
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                        }
+                    },
+                    "required": ["id"],
+                    "unevaluatedProperties": false
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "desc_title": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "creator": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
+                            },
+                            "minItems": 1,
+                            "unevaluatedItems": false
+                        },
+                        "genre": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/enums.json#/$defs/genres"
+                            },
+                            "minItems": 1,
+                            "unevaluatedItems": false     
+                        }
+                    },
+                    "required": [
+                        "desc_title"
+                    ],
+                    "unevaluatedProperties": false
+                }
+            ]
         },
-        "label": {
-            "type": ["string", "null"],
-            "minLength": 1
+        "alt_title": {
+            "description": "An alternative title providing witness-specific information about the work",
+            "type": "string"
         },
         "as_written": {
             "type": [
@@ -18,9 +58,6 @@
                 "null"
             ],
             "minLength": 1
-        },
-        "sequence": {
-            "type": "integer"
         },
         "locus": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/locus"
@@ -30,8 +67,7 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/excerpt.json"
             },
-            "unevaluatedItems": false,
-            "$comment": "For work wits, the excerpts may want to use an implied language of English so we can reuse the excerpt schema from work records"
+            "unevaluatedItems": false
         },
         "contents": {
             "type": ["array", "null"],
@@ -40,17 +76,10 @@
             },
             "unevaluatedItems": false
         },
-        "assoc_name": {
-            "type": ["array", "null"],
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json"
-            },
-            "unevaluatedItems": false
-        },
         "note": {
             "type": ["array", "null"],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json"
+                "type": "string"
             },
             "unevaluatedItems": false
         },
@@ -66,8 +95,7 @@
         }
     },
     "required": [
-        "sequence",
-        "locus"
+        "work"
     ],
     "unevaluatedProperties": false
 }

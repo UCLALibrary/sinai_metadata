@@ -66,48 +66,34 @@
     },
     "state": {
       "description": "The current state of the manuscript object",
-      "anyOf": [
+      "enum": [
         {
-          "const": {
-            "id": "codex",
-            "label": "Codex"
-          }
+          "id": "codex",
+          "label": "Codex"
         },
         {
-          "const": {
-            "id": "quire",
-            "label": "Quire(s)"
-          }
+          "id": "quire",
+          "label": "Quire(s)"
         },
         {
-          "const": {
-            "id": "bifolio",
-            "label": "Bifolio(s)"
-          }
+          "id": "bifolio",
+          "label": "Bifolio(s)"
         },
         {
-          "const": {
-            "id": "folio",
-            "label": "Folio(s)"
-          }
+          "id": "folio",
+          "label": "Folio(s)"
         },
         {
-          "const": {
-            "id": "folio-fragment",
-            "label": "Folio Fragment(s)"
-          }
+          "id": "folio-fragment",
+          "label": "Folio Fragment(s)"
         },
         {
-          "const": {
-            "id": "uto",
-            "label": "Undertext Object"
-          }
+          "id": "uto",
+          "label": "Undertext Object"
         },
         {
-          "const": {
-            "id": "scroll",
-            "label": "Scroll"
-          }
+          "id": "scroll",
+          "label": "Scroll"
         }
       ],
       "type": "object",
@@ -199,24 +185,18 @@
           "support": {
             "type": "array",
             "items": {
-              "anyOf": [
+              "enum": [
                 {
-                  "const": {
-                    "id": "paper",
-                    "label": "Paper"
-                  }
+                  "id": "paper",
+                  "label": "Paper"
                 },
                 {
-                  "const": {
-                    "id": "parchment",
-                    "label": "Parchment"
-                  }
+                  "id": "parchment",
+                  "label": "Parchment"
                 },
                 {
-                  "const": {
-                    "id": "papyrus",
-                    "label": "Papyrus"
-                  }
+                  "id": "papyrus",
+                  "label": "Papyrus"
                 }
               ],
               "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -390,7 +370,6 @@
                 "script": {
                   "type": "array",
                   "items": {
-                    "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
                     "type": "object",
                     "properties": {
                       "id": {
@@ -400,11 +379,15 @@
                       "label": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "writing_system": {
+                        "type": "string"
                       }
                     },
                     "required": [
                       "id",
-                      "label"
+                      "label",
+                      "writing_system"
                     ],
                     "unevaluatedProperties": false
                   },
@@ -730,24 +713,18 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "anyOf": [
+                  "enum": [
                     {
-                      "const": {
-                        "id": "filiation",
-                        "label": "Filiation"
-                      }
+                      "id": "filiation",
+                      "label": "Filiation"
                     },
                     {
-                      "const": {
-                        "id": "disjecta",
-                        "label": "Disjecta Membra"
-                      }
+                      "id": "disjecta",
+                      "label": "Disjecta Membra"
                     },
                     {
-                      "const": {
-                        "id": "reconstructed-from",
-                        "label": "Reconstructed From"
-                      }
+                      "id": "reconstructed-from",
+                      "label": "Reconstructed From"
                     }
                   ],
                   "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -962,7 +939,6 @@
           "script": {
             "type": "array",
             "items": {
-              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
               "type": "object",
               "properties": {
                 "id": {
@@ -972,11 +948,15 @@
                 "label": {
                   "type": "string",
                   "minLength": 1
+                },
+                "writing_system": {
+                  "type": "string"
                 }
               },
               "required": [
                 "id",
-                "label"
+                "label",
+                "writing_system"
               ],
               "unevaluatedProperties": false
             },
@@ -1251,21 +1231,23 @@
     "location": {
       "type": "array",
       "items": {
-        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "minLength": 1
           },
-          "label": {
+          "collection": {
+            "type": "string"
+          },
+          "repo": {
             "type": "string",
             "minLength": 1
           }
         },
         "required": [
           "id",
-          "label"
+          "repo"
         ],
         "unevaluatedProperties": false
       },
@@ -1546,24 +1528,18 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "filiation",
-                  "label": "Filiation"
-                }
+                "id": "filiation",
+                "label": "Filiation"
               },
               {
-                "const": {
-                  "id": "disjecta",
-                  "label": "Disjecta Membra"
-                }
+                "id": "disjecta",
+                "label": "Disjecta Membra"
               },
               {
-                "const": {
-                  "id": "reconstructed-from",
-                  "label": "Reconstructed From"
-                }
+                "id": "reconstructed-from",
+                "label": "Reconstructed From"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1653,18 +1629,14 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "manuscript",
-                  "label": "Manuscript"
-                }
+                "id": "manuscript",
+                "label": "Manuscript"
               },
               {
-                "const": {
-                  "id": "reconstruction",
-                  "label": "Reconstruction"
-                }
+                "id": "reconstruction",
+                "label": "Reconstruction"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1793,6 +1765,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -1815,18 +1791,14 @@
         "type": "object",
         "properties": {
           "type": {
-            "anyOf": [
+            "enum": [
               {
-                "const": {
-                  "id": "main",
-                  "label": "Main"
-                }
+                "id": "main",
+                "label": "Main"
               },
               {
-                "const": {
-                  "id": "reordered",
-                  "label": "Reordered"
-                }
+                "id": "reordered",
+                "label": "Reordered"
               }
             ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -1857,8 +1829,7 @@
             "enum": [
               "right-to-left",
               "top-to-bottom",
-              "bottom-to-top",
-              null
+              "bottom-to-top"
             ]
           },
           "behavior": {
@@ -1910,7 +1881,7 @@
             "minLength": 1,
             "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
-          "added-by": {
+          "added_by": {
             "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
             "type": "string",
             "minLength": 1,
@@ -1928,6 +1899,15 @@
           "timestamp"
         ],
         "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
+    "reconstructed_from": {
+      "type": "array",
+      "items": {
+        "description": "A unique Archival Resource Key (ARK)",
+        "type": "string",
+        "pattern": "^ark:/21198/([a-z]|[0-9])+"
       },
       "unevaluatedItems": false
     }
@@ -1955,32 +1935,38 @@
   "then": {
     "properties": {
       "type": {
-        "anyOf": [
+        "enum": [
           {
-            "const": {
-              "id": "rebind",
-              "label": "Digital Rebinding"
-            }
+            "id": "rebind",
+            "label": "Digital Rebinding"
           },
           {
-            "const": {
-              "id": "uto",
-              "label": "Undertext Object"
-            }
+            "id": "uto",
+            "label": "Undertext Object"
           }
         ]
+      },
+      "reconstructed_from": {
+        "type": "array",
+        "items": {
+          "description": "A unique Archival Resource Key (ARK)",
+          "type": "string",
+          "pattern": "^ark:/21198/([a-z]|[0-9])+"
+        },
+        "unevaluatedItems": false
       }
-    }
+    },
+    "required": [
+      "reconstructed_from"
+    ]
   },
   "else": {
     "properties": {
       "type": {
-        "anyOf": [
+        "enum": [
           {
-            "const": {
-              "id": "manuscript",
-              "label": "Manuscript"
-            }
+            "id": "manuscript",
+            "label": "Manuscript"
           }
         ]
       }

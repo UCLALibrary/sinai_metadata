@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layer.json",
-  "title": "Inscribed Layer",
+  "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/text_unit.json",
+  "title": "Text Unit",
+  "description": "A Text Unit defines a piece or pieces of content presented in a given manuscript in a unified form; may contain one or more work witnesses (REVISE)",
   "type": "object",
   "properties": {
     "ark": {
@@ -12,51 +13,9 @@
     "reconstruction": {
       "type": "boolean"
     },
-    "state": {
-      "description": "The current state of the inscribed layer",
-      "enum": [
-        {
-          "id": "overtext",
-          "label": "Overtext"
-        },
-        {
-          "id": "undertext",
-          "label": "Undertext"
-        },
-        {
-          "id": "guest",
-          "label": "Guest Content"
-        },
-        {
-          "id": "reconstruction",
-          "label": "Reconstruction"
-        }
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "minLength": 1
-        },
-        "label": {
-          "type": "string",
-          "minLength": 1
-        }
-      },
-      "required": [
-        "id",
-        "label"
-      ],
-      "unevaluatedProperties": false
-    },
     "label": {
       "type": "string",
       "minLength": 1
-    },
-    "locus": {
-      "type": "string",
-      "minLength": 1,
-      "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
     },
     "summary": {
       "type": [
@@ -65,142 +24,380 @@
       ],
       "minLength": 1
     },
-    "extent": {
-      "description": "The extent, expressed in number of folios, which comprise the manuscript object",
-      "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 1
+    "locus": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
     },
-    "writing": {
+    "lang": {
       "type": "array",
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/writing.json",
-        "title": "Writing",
-        "description": "Collected information about an instance of hand writing",
+        "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
         "type": "object",
         "properties": {
-          "script": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "string",
-                  "minLength": 1
-                },
-                "label": {
-                  "type": "string",
-                  "minLength": 1
-                },
-                "writing_system": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "id",
-                "label",
-                "writing_system"
-              ],
-              "unevaluatedProperties": false
-            },
-            "minItems": 1,
-            "unevaluatedItems": false
-          },
-          "locus": {
+          "id": {
             "type": "string",
-            "minLength": 1,
-            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+            "minLength": 1
           },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
+          "label": {
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
-          "script"
+          "id",
+          "label"
         ],
         "unevaluatedProperties": false
       },
       "minItems": 1,
       "unevaluatedItems": false
     },
-    "ink": {
+    "work_wit": {
       "type": "array",
       "items": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/ink.json",
-        "title": "Ink",
-        "description": "Collected information about the ink used in the composition of an inscribed layer",
+        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/work_witness.json",
+        "title": "Work Witness",
+        "description": "A Work Witness is a piece of content that forms part of a content unit within a manuscript and attests a distinct conceptual work",
         "type": "object",
         "properties": {
-          "locus": {
-            "type": "string",
-            "minLength": 1,
-            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          "work": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "description": "A unique Archival Resource Key (ARK)",
+                    "type": "string",
+                    "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                  }
+                },
+                "required": [
+                  "id"
+                ],
+                "unevaluatedProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "desc_title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "creator": {
+                    "type": "array",
+                    "items": {
+                      "description": "A unique Archival Resource Key (ARK)",
+                      "type": "string",
+                      "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                  },
+                  "genre": {
+                    "type": "array",
+                    "items": {
+                      "enum": [
+                        {
+                          "id": "account-books",
+                          "label": "Account books"
+                        },
+                        {
+                          "id": "apocrypha",
+                          "label": "Apocrypha"
+                        },
+                        {
+                          "id": "apophthegmata",
+                          "label": "Apophthegmata"
+                        },
+                        {
+                          "id": "biblical-texts",
+                          "label": "Biblical texts"
+                        },
+                        {
+                          "id": "blessings",
+                          "label": "Blessings"
+                        },
+                        {
+                          "id": "calendars",
+                          "label": "Calendars"
+                        },
+                        {
+                          "id": "canon-law",
+                          "label": "Canon law"
+                        },
+                        {
+                          "id": "charters",
+                          "label": "Charters"
+                        },
+                        {
+                          "id": "commentaries",
+                          "label": "Commentaries"
+                        },
+                        {
+                          "id": "dictionaries",
+                          "label": "Dictionaries"
+                        },
+                        {
+                          "id": "gospel-books",
+                          "label": "Gospel books"
+                        },
+                        {
+                          "id": "hagiographies",
+                          "label": "Hagiographies"
+                        },
+                        {
+                          "id": "historical-works",
+                          "label": "Historical works"
+                        },
+                        {
+                          "id": "hymnals",
+                          "label": "Hymnals"
+                        },
+                        {
+                          "id": "lectionaries",
+                          "label": "Lectionaries"
+                        },
+                        {
+                          "id": "liturgical-texts",
+                          "label": "Liturgical texts"
+                        },
+                        {
+                          "id": "martyrologies",
+                          "label": "Martyrologies"
+                        },
+                        {
+                          "id": "mimars",
+                          "label": "Mimars"
+                        },
+                        {
+                          "id": "philosophical-works",
+                          "label": "Philosophical works"
+                        },
+                        {
+                          "id": "poetry",
+                          "label": "Poetry"
+                        },
+                        {
+                          "id": "prayers",
+                          "label": "Prayers"
+                        },
+                        {
+                          "id": "scientific-works",
+                          "label": "Scientific works"
+                        },
+                        {
+                          "id": "sermons",
+                          "label": "Sermons"
+                        },
+                        {
+                          "id": "theological-works",
+                          "label": "Theological works"
+                        }
+                      ],
+                      "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "label"
+                      ],
+                      "unevaluatedProperties": false
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                  }
+                },
+                "required": [
+                  "desc_title"
+                ],
+                "unevaluatedProperties": false
+              }
+            ]
           },
-          "color": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false,
-            "$comment": "Perhaps make this an enum to constrain color values?"
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "layout": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/layout.json",
-        "title": "Layout",
-        "description": "The page layout for a given range of folios in an object",
-        "type": "object",
-        "properties": {
-          "locus": {
-            "type": "string",
-            "minLength": 1,
-            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
-          },
-          "columns": {
+          "alt_title": {
+            "description": "An alternative title providing witness-specific information about the work",
             "type": "string"
           },
-          "lines": {
-            "type": "string"
-          },
-          "dim": {
-            "description": "A string expression of an object's dimensions, whether manuscript block, folio, or writing area",
+          "as_written": {
             "type": [
               "string",
               "null"
             ],
             "minLength": 1
           },
+          "locus": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          },
+          "excerpt": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/excerpt.json",
+              "title": "Excerpt",
+              "description": "An excerpt from a larger work or text, such as the incipit",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "enum": [
+                    {
+                      "id": "prologue",
+                      "label": "Prologue"
+                    },
+                    {
+                      "id": "incipit",
+                      "label": "Incipit"
+                    },
+                    {
+                      "id": "inc-mut",
+                      "label": "First Preserved Line"
+                    },
+                    {
+                      "id": "quote",
+                      "label": "Quote"
+                    },
+                    {
+                      "id": "des-mut",
+                      "label": "Last Preserved Line"
+                    },
+                    {
+                      "id": "explicit",
+                      "label": "Explicit"
+                    }
+                  ],
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
+                },
+                "locus": {
+                  "type": "string",
+                  "minLength": 1,
+                  "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+                },
+                "as_written": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "translation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "required": [
+                "type",
+                "locus"
+              ]
+            },
+            "unevaluatedItems": false
+          },
+          "contents": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "description": "A list of the contents, such as the chapter or book divisions, of a work witness",
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "work_id": {
+                  "description": "A unique Archival Resource Key (ARK)",
+                  "type": "string",
+                  "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                },
+                "locus": {
+                  "type": "string",
+                  "minLength": 1,
+                  "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "anyOf": [
+                {
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "label"
+                  ]
+                },
+                {
+                  "properties": {
+                    "work_id": {
+                      "description": "A unique Archival Resource Key (ARK)",
+                      "type": "string",
+                      "pattern": "^ark:/21198/([a-z]|[0-9])+"
+                    }
+                  },
+                  "required": [
+                    "work_id"
+                  ]
+                }
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+          },
           "note": {
             "type": [
               "array",
@@ -210,35 +407,115 @@
               "type": "string"
             },
             "unevaluatedItems": false
-          }
-        },
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "text_unit": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "description": "A unique Archival Resource Key (ARK)",
-            "type": "string",
-            "pattern": "^ark:/21198/([a-z]|[0-9])+"
           },
-          "label": {
-            "type": "string",
-            "minLength": 1
-          },
-          "locus": {
-            "type": "string",
-            "minLength": 1,
-            "$comment": "Can use format to restrain to regex for, e.g., 'ff. x-y'"
+          "bib": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/bib.json",
+              "title": "Bibliography",
+              "description": "A bibliographic citation connected with an object or entity",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "type": {
+                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label"
+                  ],
+                  "unevaluatedProperties": false
+                },
+                "range": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "alt_shelf": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "note": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "unevaluatedItems": false
+                }
+              },
+              "required": [
+                "id",
+                "type"
+              ],
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": {
+                      "id": "otherdigversion",
+                      "label": "Other Digital Version"
+                    }
+                  }
+                },
+                "required": [
+                  "type"
+                ]
+              },
+              "then": {
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "url"
+                ]
+              },
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
           }
         },
         "required": [
-          "id",
-          "label"
+          "work"
         ],
         "unevaluatedProperties": false
       },
@@ -591,221 +868,6 @@
       },
       "unevaluatedItems": false
     },
-    "assoc_date": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json",
-        "title": "Associated Date",
-        "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
-        "type": "object",
-        "allOf": [
-          {
-            "type": "object",
-            "properties": {
-              "value": {
-                "type": "string",
-                "minLength": 1
-              },
-              "iso": {
-                "type": "object",
-                "properties": {
-                  "not_before": {
-                    "type": "string",
-                    "format": "date",
-                    "minLength": 3
-                  },
-                  "not_after": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "format": "date",
-                    "minLength": 3
-                  }
-                },
-                "required": [
-                  "not_before"
-                ],
-                "unevaluatedProperties": false
-              }
-            },
-            "required": [
-              "value",
-              "iso"
-            ]
-          }
-        ],
-        "properties": {
-          "type": {
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "assoc_name": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
-        "title": "Associated Name",
-        "description": "A person, group, or organization entity connected with an object via a given role",
-        "type": "object",
-        "properties": {
-          "id": {
-            "description": "A unique Archival Resource Key (ARK)",
-            "type": "string",
-            "pattern": "^ark:/21198/([a-z]|[0-9])+"
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "role": {
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "role"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "assoc_place": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
-        "title": "Associated Place",
-        "description": "A place entity connected with an object via a given role",
-        "type": "object",
-        "properties": {
-          "id": {
-            "description": "A unique Archival Resource Key (ARK)",
-            "type": "string",
-            "pattern": "^ark:/21198/([a-z]|[0-9])+"
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "event": {
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "event"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
     "features": {
       "type": [
         "array",
@@ -827,107 +889,6 @@
         "required": [
           "id",
           "label"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "related_mss": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/related_mss.json",
-        "title": "Related Manuscripts",
-        "description": "A set of manuscripts that share a relation to the object context in which they are declared",
-        "type": "object",
-        "properties": {
-          "type": {
-            "enum": [
-              {
-                "id": "filiation",
-                "label": "Filiation"
-              },
-              {
-                "id": "disjecta",
-                "label": "Disjecta Membra"
-              },
-              {
-                "id": "reconstructed-from",
-                "label": "Reconstructed From"
-              }
-            ],
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "label": {
-            "type": "string",
-            "minLength": 1
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "unevaluatedItems": false
-          },
-          "mss": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "label": {
-                  "type": "string",
-                  "minLength": 1
-                },
-                "id": {
-                  "description": "A unique Archival Resource Key (ARK)",
-                  "type": "string",
-                  "pattern": "^ark:/21198/([a-z]|[0-9])+"
-                },
-                "url": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "format": "uri",
-                  "minLength": 1
-                }
-              },
-              "$comment": "Possible x-or logic for id and url",
-              "required": [
-                "label"
-              ],
-              "unevaluatedProperties": false
-            },
-            "minItems": 1,
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "label",
-          "type",
-          "mss"
         ],
         "unevaluatedProperties": false
       },
@@ -1154,10 +1115,10 @@
   "required": [
     "ark",
     "reconstruction",
-    "state",
     "label",
-    "writing",
-    "text_unit",
+    "locus",
+    "lang",
+    "work_wit",
     "parent"
   ],
   "unevaluatedProperties": false,

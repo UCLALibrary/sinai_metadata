@@ -1,0 +1,134 @@
+{ 
+    "ark": "ark:/21198/ten0p1ol", 
+    "reconstruction": false, 
+    "state": { 
+        "id": "overtext", 
+        "label": "Overtext" 
+    }, 
+    "label": "Arabic NF M 28, Part 1, Overtext", 
+    "locus": "ff. 128-143", 
+    "summary": "Gospels, late 9th c., Arabic (Kufic)", 
+    "extent": "16 ff.", 
+    "writing": [
+        { 
+            "script": [
+                { 
+                    "id": "kufic", 
+                    "label": "Kufic" ,
+                    "writing_system": "Arabic"
+                } 
+            ], 
+            "locus": "ff. 128-143" 
+        } 
+    ], 
+    "ink": [
+        { 
+            "locus": "ff. 128-143", 
+            "note": [ 
+                "Titles in red ink" 
+            ] 
+        } 
+    ], 
+    "text_unit": [
+        { 
+            "id": "ark:/21198/ten0p1olt1", 
+            "label": "Primary Text Unit 1", 
+            "locus": "ff. 128-143" 
+        } 
+    ], 
+    "assoc_date": [
+        { 
+            "type": { 
+                "id": "origin", 
+                "label": "Origin Date" 
+            }, 
+            "note": [ 
+                "Paleographic dating" 
+            ], 
+            "value": "Second half 9th c. CE", 
+            "iso": { 
+                "not_before": "0851", 
+                "not_after": "0900" 
+            } 
+        } 
+    ], 
+    "related_mss": [
+        {
+            "type": {
+                "id": "disjecta",
+                "label": "Disjecta Membra"
+            },
+            "label": "Arabic NF M 28 + Arabic NF M 27 + Arabic NF M 8",
+            "mss": [
+                {
+                    "label": "Sinai Arabic NF 8",
+                    "id": "ark:/21198/z1kd1z25"
+                },
+                {
+                    "label": "Sinai Arabic NF 27"
+                }
+            ],
+            "note": [
+                "Text continues from Arabic NF 8",
+                "Arabic NF 8, Arabic NF 27, and Arabic NF 28 originally belonged to the same ms"
+            ]
+        }
+    ], 
+    "note": [
+        { 
+            "type": { 
+                "id": "ornamentation", 
+                "label": "Ornamentation" 
+            }, 
+            "value": "Decorative headpieces throughout" 
+        }, 
+        { 
+            "type": { 
+                "id": "condition", 
+                "label": "Condition" 
+            }, 
+            "value": "Several damaged folios were repaired and reinforced more recently" 
+        } 
+    ], 
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": "ref",
+                "label": "Reference Work"
+            },
+            "range": "p. 29",
+            "note": [
+                "Kamil"
+            ]
+        },
+        {
+            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "28-57",
+            "note": [
+                "Kashouh article"
+            ]
+        },
+        {
+            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "28-57",
+            "note": [
+                "Kashouh book"
+            ]
+        }
+    ], 
+    "parent": [ 
+        "ark:/21198/ten02zkr" 
+    ], 
+    "internal": [ 
+        "Test record for development purposes; please delete." 
+    ] 
+}
