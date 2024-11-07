@@ -94,7 +94,7 @@ def transform_row_to_json(row, record_type):
         # add collection only if it is not empty
         if not(pd.isnull(row["Collection"])):
             location["collection"] = str(row["Collection"])
-        location["repo"] = str(row["Repository"])
+        location["repository"] = str(row["Repository"])
 
         data["location"] = [location]
     
