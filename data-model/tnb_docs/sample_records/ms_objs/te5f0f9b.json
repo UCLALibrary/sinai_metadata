@@ -191,7 +191,7 @@
                             ], 
                             "value": "455 CE", 
                             "iso": { 
-                                "not_before": "0455" 
+                                "not_before": "0455-01-01" 
                             } 
                         } 
                     ], 
@@ -379,8 +379,8 @@
                     ], 
                     "value": "AG 1092 (= 781/2 CE)", 
                     "iso": { 
-                        "not_before": "0781", 
-                        "not_after": "0782" 
+                        "not_before": "0781-01-01", 
+                        "not_after": "0782-01-01" 
                     } 
                 } 
             ], 
@@ -394,7 +394,7 @@
         { 
             "id": "sinai-oc", 
             "collection": "Old Collection" ,
-            "repo": "St. Catherine's Monastery of the Sinai"
+            "repository": "St. Catherine's Monastery of the Sinai"
         } 
     ], 
     "assoc_date": [
@@ -408,8 +408,8 @@
             ], 
             "value": "After the 13th c. CE", 
             "iso": { 
-                "not_before": "1301", 
-                "not_after": "1550" 
+                "not_before": "1301-01-01", 
+                "not_after": "1550-01-01" 
             } 
         } 
     ], 
@@ -504,6 +504,7 @@
                 "label": "Reference Work" 
             }, 
             "range": "[50], pg. 152", 
+            "alt_shelf": "Syr. 435",
             "note": [ 
                 "Kamil" 
             ] 
