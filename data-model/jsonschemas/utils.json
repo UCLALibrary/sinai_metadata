@@ -188,7 +188,7 @@
             },
             "required": [
                 "id",
-                "repo"
+                "repository"
             ],
             "unevaluatedProperties": false
         },
