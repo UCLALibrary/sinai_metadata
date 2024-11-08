@@ -125,13 +125,11 @@
                     "properties": {
                         "not_before": {
                             "type": "string",
-                            "format": "date",
-                            "minLength": 3
+                            "minLength": 4
                         },
                         "not_after": {
                             "type": ["string", "null"],
-                            "format": "date",
-                            "minLength": 3
+                            "minLength": 4
                         }
                         },
                     "required": [
@@ -183,14 +181,14 @@
                 "collection": {
                     "type": "string"
                 },
-                "repo": {
+                "repository": {
                     "type": "string",
                     "minLength": 1
                 }
             },
             "required": [
                 "id",
-                "repo"
+                "repository"
             ],
             "unevaluatedProperties": false
         },

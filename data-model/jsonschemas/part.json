@@ -43,24 +43,18 @@
                     },
                     "type": {
                         "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
-                        "anyOf": [
+                        "enums": [
                             {
-                                "const": {
-                                    "id": "overtext",
-                                    "label": "Overtext"
-                                }
+                                "id": "overtext",
+                                "label": "Overtext"
                             },
                             {
-                                "const": {
-                                    "id": "undertext",
-                                    "label": "Undertext"
-                                }
+                                "id": "undertext",
+                                "label": "Undertext"
                             },
                             {
-                                "const": {
-                                    "id": "guest",
-                                    "label": "Guest Content"
-                                }
+                                "id": "guest",
+                                "label": "Guest Content"
                             }
                         ]
                     },

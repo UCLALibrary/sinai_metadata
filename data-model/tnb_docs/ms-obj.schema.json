@@ -270,24 +270,18 @@
                     "label"
                   ],
                   "unevaluatedProperties": false,
-                  "anyOf": [
+                  "enums": [
                     {
-                      "const": {
-                        "id": "overtext",
-                        "label": "Overtext"
-                      }
+                      "id": "overtext",
+                      "label": "Overtext"
                     },
                     {
-                      "const": {
-                        "id": "undertext",
-                        "label": "Undertext"
-                      }
+                      "id": "undertext",
+                      "label": "Undertext"
                     },
                     {
-                      "const": {
-                        "id": "guest",
-                        "label": "Guest Content"
-                      }
+                      "id": "guest",
+                      "label": "Guest Content"
                     }
                   ]
                 },
@@ -564,16 +558,14 @@
                             "properties": {
                               "not_before": {
                                 "type": "string",
-                                "format": "date",
-                                "minLength": 3
+                                "minLength": 4
                               },
                               "not_after": {
                                 "type": [
                                   "string",
                                   "null"
                                 ],
-                                "format": "date",
-                                "minLength": 3
+                                "minLength": 4
                               }
                             },
                             "required": [
@@ -845,18 +837,14 @@
               "label"
             ],
             "unevaluatedProperties": false,
-            "anyOf": [
+            "enums": [
               {
-                "const": {
-                  "id": "undertext",
-                  "label": "Undertext"
-                }
+                "id": "undertext",
+                "label": "Undertext"
               },
               {
-                "const": {
-                  "id": "guest",
-                  "label": "Guest Content"
-                }
+                "id": "guest",
+                "label": "Guest Content"
               }
             ]
           },
@@ -1133,16 +1121,14 @@
                       "properties": {
                         "not_before": {
                           "type": "string",
-                          "format": "date",
-                          "minLength": 3
+                          "minLength": 4
                         },
                         "not_after": {
                           "type": [
                             "string",
                             "null"
                           ],
-                          "format": "date",
-                          "minLength": 3
+                          "minLength": 4
                         }
                       },
                       "required": [
@@ -1240,14 +1226,14 @@
           "collection": {
             "type": "string"
           },
-          "repo": {
+          "repository": {
             "type": "string",
             "minLength": 1
           }
         },
         "required": [
           "id",
-          "repo"
+          "repository"
         ],
         "unevaluatedProperties": false
       },
@@ -1277,16 +1263,14 @@
                 "properties": {
                   "not_before": {
                     "type": "string",
-                    "format": "date",
-                    "minLength": 3
+                    "minLength": 4
                   },
                   "not_after": {
                     "type": [
                       "string",
                       "null"
                     ],
-                    "format": "date",
-                    "minLength": 3
+                    "minLength": 4
                   }
                 },
                 "required": [
