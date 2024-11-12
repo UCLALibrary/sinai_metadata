@@ -106,7 +106,17 @@ def transform_row_to_json(row, record_type):
     # TBD: related_mss...
     data["related_mss"] = create_related_mss_from_row(row)
 
-    # TBD: viscodex: type, label, url (check the data)
+    # Viscodex, ms_objs only
+    if record_type == "ms_objs" and not(pd.isnull(row["Viscodex URL"])) and not(pd.isnull(row["Viscodex Label"])):
+        # hard-coded type
+        viscodex_type = {"id": "manuscript", "label": "Manuscript"}
+        # create the viscodex object and add to the record
+        viscodex = {
+            "type": viscodex_type,
+            "label": str(row["Viscodex Label"]),
+            "url": str(row["Viscodex URL"])
+        }
+        data["viscodex"] = [viscodex]
 
     data["bib"] = create_bibs_from_row(row, ref_instances)
 
