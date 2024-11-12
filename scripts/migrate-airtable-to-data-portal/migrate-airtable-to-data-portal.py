@@ -39,7 +39,8 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
-    data["extent"] = str(row["Extent"])
+    if not(pd.isnull(row["Summary"])) or record_type == "ms_objs":
+        data["extent"] = str(row["Extent"])
 
     if record_type == "ms_objs" and not(pd.isnull(row["Weight"])):
         data["weight"] = str(row["Weight"])
@@ -74,10 +75,14 @@ def transform_row_to_json(row, record_type):
             }
             features.append(feat)
         data["features"] = features
+    # remove features property if empty
+    if len(data["features"]) == 0:
+        data.pop("features")
 
     if record_type == "ms_objs":
         data["part"] = [create_part_from_row(row)]
 
+    # TBD: this may not be used for the ms_objs level
     if record_type == "ms_objs":
         data["layer"] = create_layer_reference_from_row(row, False) # note: this function is for creating the layer sub-object that references layer records
     
@@ -100,11 +105,18 @@ def transform_row_to_json(row, record_type):
     
     # TBD: assoc_* -- are these even necessary?
 
-    # TBD: notes (there will be several types...maybe make this a function?)
-    data["note"] = create_notes_from_row(row, record_type, 0) # pass in a list of column names mapped to note fields?
+    # Add notes field
+    data["note"] = create_notes_from_row(row, record_type, 0)
+    # remove notes field if none were created
+    if len(data["note"]) == 0:
+        data.pop("note")
 
-    # TBD: related_mss...
+    # Add related_mss field
+    # TBD: this should only be ms_obj and possibly layer
     data["related_mss"] = create_related_mss_from_row(row)
+    # remove related_mss field if none were created
+    if len(data["related_mss"]) == 0:
+        data.pop("related_mss")
 
     # Viscodex, ms_objs only
     if record_type == "ms_objs" and not(pd.isnull(row["Viscodex URL"])) and not(pd.isnull(row["Viscodex Label"])):
@@ -119,10 +131,13 @@ def transform_row_to_json(row, record_type):
         data["viscodex"] = [viscodex]
 
     data["bib"] = create_bibs_from_row(row, ref_instances)
+    # remove bib field if none were created
+    if len(data["bib"]) == 0:
+        data.pop("bib")
 
-    # TBD: iiif (type is default for these; manifest; text direction; behavior; thumbnail)
+    # IIIF info, ms_objs only
     if record_type == "ms_objs":
-        # TBD: should type be defaulted to main?
+        # hard-coded type is 'main'
         iiif = {}
         iiif["type"] = {
                     "id": "main",
@@ -156,25 +171,25 @@ def transform_row_to_json(row, record_type):
      - [x] ARK (string) + layers, text
      - [/] reconstruction (bool) + layers, text
      - [/] type (id, label)
-     - [/] shelfmark (string) + layers, text (as label)
+     - [x] shelfmark (string) + layers, text (as label)
      - [/] summary (string) + layers, text
-     - [/] extent (string) + layers, text
-     - [/] weight (string)
-     - [/] dim (string)
-     - [/] state (id, label) + layers
+     - [x] extent (string) + layers, text
+     - [x] weight (string)
+     - [x] dim (string)
+     - [x] state (id, label) + layers
      - [/] fol (string)
-     - [/] coll (string)
-     - [/] features (array: id, label) + layers, text
-     - [/] part (array: complex, sub-function)
-     - [/] layer (array: complex, sub-function)
+     - [x] coll (string)
+     - [x] features (array: id, label) + layers, text
+     - [x] part (array: complex, sub-function)
+     - [x] layer (array: complex, sub-function)
      - [ ] para (array: complex, sub-function) + layers, text
      - [ ] has_bind (bool)
-     - [/] location (array: id, collection, repo)
+     - [x] location (array: id, collection, repo)
      ? assoc_date (array, complex sub-function) + layers, text
      ? assoc_name (array, complex sub-function) + layers, text
      ? assoc_place (array, complex sub-function) + layers, text
-     - [/] note (array, complex mappings) + layers, text
-     - [/] related_mss (array, complex sub-function) + layers?
+     - [x] note (array, complex mappings) + layers, text
+     - [x] related_mss (array, complex sub-function) + layers?
      - [ ] viscodex (array, sub-function)
      - [/] bib (array: complex sub-function) + layers, text
      - [/] iiif (array)
@@ -299,6 +314,13 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     "type": {
                         "id": "provenance",
                         "label": "Provenance Note"
+                    }
+                },
+                {
+                    "data": str(row["Paracontent note"]),
+                    "type": {
+                        "id": "para",
+                        "label": "Paracontent Note"
                     }
                 },
                 {
