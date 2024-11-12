@@ -1,4 +1,4 @@
-import pandas as pd, json, sys, os
+import pandas as pd, json, sys, os, datetime
 
 # Function Declarations
 """
@@ -158,14 +158,36 @@ def transform_row_to_json(row, record_type):
     #TBD: internal (from admin notes)
 
     # TBD cataloguer field (set in a config for who runs the script?)
-    # TBD: additional cataloguer info from Contributor field, esp. for texts
+    data["cataloguer"] = [] # TBD: this initiates the field for use in the Contributo info; otherwise replace with the contributor data for who runs the script
 
-    # TBD: reconstructed_from -- needed for UTOs
+    # Cataloguer info from Contributor field
+    if not(pd.isnull(row["Contributor Name"])):
+        timestamp = datetime.datetime.now()
+        # parse the rolled up fields containing change log info
+        contributors = parse_rolled_up_field(str(row["Contributor name"]), ",", "#")
+        messages = parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
+        orcids = parse_rolled_up_field(str(row["ORCiD"]), ",", "#")
+
+        # for each listed contribution, add the change log info
+        change_log = []
+        for i in range(0, len(contributors)):
+            change = {}
+            change["message"] = messages[i]
+            change["contributor"] = contributors[i]
+            change["added_by"] = orcids[i]
+            change["timestamp"] = timestamp
+            change_log.append(change)
+        
+        data["cataloguer"] += change_log
+
+    # reconstructed from, only used for records that are reconstructions
+    if data["reconstruction"]:
+        data["reconstructed_from"] = parse_rolled_up_field(str(row["Reconstructed From"]), ",", "#")
+
 
     # Parent, for records that are not ms_objs
     if record_type != "ms_objs":
-        # TBD: possibly multiple; for-each after split by delimiter
-        data["parent"] = []
+        data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     """
      Sections needed for ms_obj:
      - [x] ARK (string) + layers, text
@@ -190,13 +212,13 @@ def transform_row_to_json(row, record_type):
      ? assoc_place (array, complex sub-function) + layers, text
      - [x] note (array, complex mappings) + layers, text
      - [x] related_mss (array, complex sub-function) + layers?
-     - [ ] viscodex (array, sub-function)
-     - [/] bib (array: complex sub-function) + layers, text
+     - [x] viscodex (array, sub-function)
+     - [x] bib (array: complex sub-function) + layers, text
      - [/] iiif (array)
      - [ ] internal (array: string)
-     - [ ] cataloguer (array?: config file?)
-     - [ ] reconstructed_from (array: string)
-     - [/] parent for ms_objs?
+     - [x] cataloguer (array?: config file?)
+     - [x] reconstructed_from (array: string)
+     - [x] parent for ms_objs?
      """
     return data
 
