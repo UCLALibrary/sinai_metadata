@@ -22,11 +22,10 @@ def transform_row_to_json(row, record_type):
     data["reconstruction"] = str(row["Reconstruction"]) == "true"
     
     # For ms objects only, add the ms_obj type
-    # TBD: finalize csv headers
     if record_type == "ms_objs":
         data["type"] = {
-            "id": str(row["Type"]),
-            "label": str(row["Type label"])
+            "id": str(row["Type ID"]),
+            "label": str(row["Type Label"])
         }
     
     # Supply the shelf mark for MS Objects
@@ -57,9 +56,11 @@ def transform_row_to_json(row, record_type):
         data["state"] = {} # TBD for layer states
     
     # TBD: check if this will be used
+    """
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
-    
+    """
+
     if record_type == "ms_objs" and not(pd.isnull(row["Collation"])):
         data["coll"] = str(row["Collation"])
     
@@ -88,9 +89,14 @@ def transform_row_to_json(row, record_type):
     
     # TBD: a lot more to think about with this one...
     # TBD: write the function...
+    """
     data["para"] = create_paracontent_from_row(row)
+    """
 
     # TBD: has_bind -- waiting to see how the data will look
+    if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
+        data["has_bind"] = str(row["Has Binding"]) == "true"
+    
 
     # add location if an ms_obj
     if record_type == "ms_objs":
@@ -112,8 +118,8 @@ def transform_row_to_json(row, record_type):
         data.pop("note")
 
     # Add related_mss field
-    # TBD: this should only be ms_obj and possibly layer
-    data["related_mss"] = create_related_mss_from_row(row)
+    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])):
+        data["related_mss"] = create_related_mss_from_row(row)
     # remove related_mss field if none were created
     if len(data["related_mss"]) == 0:
         data.pop("related_mss")
@@ -157,7 +163,7 @@ def transform_row_to_json(row, record_type):
     
     #TBD: internal (from admin notes)
 
-    # TBD cataloguer field (set in a config for who runs the script?)
+    # TBD cataloguer field for running the script (set in a config for who runs the script?)
     data["cataloguer"] = [] # TBD: this initiates the field for use in the Contributo info; otherwise replace with the contributor data for who runs the script
 
     # Cataloguer info from Contributor field
