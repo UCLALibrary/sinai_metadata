@@ -244,8 +244,10 @@ def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     if is_part:
        overtext_arks = parse_rolled_up_field(str(row["Overtext ARKs"]), ",", '"')
        overtext_labels = parse_rolled_up_field(str(row["Overtext Labels"]), ",", '"')
+       overtext_locus = parse_rolled_up_field(str(row["Overtext Locus"]), ",", '"')
        overtext = create_layer_object(arks=overtext_arks,
                                         labels=overtext_labels,
+                                        locus=overtext_locus,
                                         type={"id": "overtext", "label": "Overtext"})
        layers += overtext
        column_prefix = "Part " # prefix will be 'Part ' otherwise stays "MS "
@@ -253,36 +255,42 @@ def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     # UTOs
     undertext_arks = parse_rolled_up_field(str(row[column_prefix + "UTO ARKs"]), ",", '"')
     undertext_labels = parse_rolled_up_field(str(row[column_prefix + "UTO Labels"]), ",", '"')
+    undertext_locus = parse_rolled_up_field(str(row[column_prefix + "UTO Locus"]), ",", '"')
     undertext = create_layer_object(arks=undertext_arks,
                                 labels=undertext_labels,
+                                locus=undertext_locus,
                                 type={"id": "undertext", "label": "Undertext"})
     layers += undertext
 
     # Guest Content
     guest_arks = parse_rolled_up_field(str(row[column_prefix + "Guest ARKs"]), ",", '"')
     guest_labels = parse_rolled_up_field(str(row[column_prefix + "Guest Labels"]), ",", '"')
+    guest_locus = parse_rolled_up_field(str(row[column_prefix + "Guest Locus"]), ",", '"')
     guest_content = create_layer_object(arks=guest_arks,
                                     labels=guest_labels,
+                                    locus=guest_locus,
                                     type={"id": "guest", "label": "Guest Content"})
     layers += guest_content
 
     return layers
 
-# TBD: add locus?
+
 # restriction: relies on exact match of arks and labels
 # TBD: throw exception if lengths of ark and label arrays don't match?
 # Given a list of arks, labels, and a type object return a list of layer objects
-def create_layer_object(arks, labels, type):
+def create_layer_object(arks, labels, locus, type):
     layers = []
     for i in range(0, len(arks)):
         if arks[i] == "" or arks[i] == "nan":
             continue
-        layers.append({
-            "id": arks[i],
-            "label": labels[i],
-            # TBD: add locus?
-            "type": type
-        })
+        layer = {}
+        layer["id"] = arks[i]
+        layer["label"] = labels[i]
+        layer["type"] = type
+        # add locus only if it exists for this pairing
+        if locus[i] != "" and locus[i] != "nan":
+            layer["locus"] = locus[i]
+        layers.append(layer)
     return layers
 
 # TBD: actually write this function...
