@@ -38,7 +38,8 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
-    if not(pd.isnull(row["Summary"])) or record_type == "ms_objs":
+    # exent is required for ms_objs, otherwise only if not null
+    if not(pd.isnull(row["Extent"])) or record_type == "ms_objs":
         data["extent"] = str(row["Extent"])
 
     if record_type == "ms_objs" and not(pd.isnull(row["Weight"])):
@@ -47,19 +48,15 @@ def transform_row_to_json(row, record_type):
     if record_type == "ms_objs" and not(pd.isnull(row["MS Dimensions"])):
         data["dim"] = str(row["MS Dimensions"])
     
-    if record_type == "ms_objs":
+    if record_type == "ms_objs" or record_type == "layers":
         data["state"] = {
-            "id": str(row["Form ID"]), 
-            "label": str(row["Form Label"])
+            "id": str(row["State ID"]), 
+            "label": str(row["State Label"])
         }
-    elif record_type == "layer":
-        data["state"] = {} # TBD for layer states
     
-    # TBD: check if this will be used
-    """
+    
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
-    """
 
     if record_type == "ms_objs" and not(pd.isnull(row["Collation"])):
         data["coll"] = str(row["Collation"])
@@ -117,8 +114,8 @@ def transform_row_to_json(row, record_type):
     if len(data["note"]) == 0:
         data.pop("note")
 
-    # Add related_mss field
-    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])):
+    # Add related_mss field if it is not flagged as being at the part level
+    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) != "part":
         data["related_mss"] = create_related_mss_from_row(row)
     # remove related_mss field if none were created
     if len(data["related_mss"]) == 0:
@@ -170,9 +167,9 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Contributor Name"])):
         timestamp = datetime.datetime.now()
         # parse the rolled up fields containing change log info
-        contributors = parse_rolled_up_field(str(row["Contributor name"]), ",", "#")
+        contributors = parse_rolled_up_field(str(row["Contributor Name"]), ",", "#")
         messages = parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
-        orcids = parse_rolled_up_field(str(row["ORCiD"]), ",", "#")
+        orcids = parse_rolled_up_field(str(row["Contributor ORCiD"]), ",", "#")
 
         # for each listed contribution, add the change log info
         change_log = []
@@ -195,50 +192,18 @@ def transform_row_to_json(row, record_type):
     if record_type != "ms_objs":
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     """
-     Sections needed for ms_obj:
-     - [x] ARK (string) + layers, text
-     - [/] reconstruction (bool) + layers, text
-     - [/] type (id, label)
-     - [x] shelfmark (string) + layers, text (as label)
-     - [/] summary (string) + layers, text
-     - [x] extent (string) + layers, text
-     - [x] weight (string)
-     - [x] dim (string)
-     - [x] state (id, label) + layers
-     - [/] fol (string)
-     - [x] coll (string)
-     - [x] features (array: id, label) + layers, text
-     - [x] part (array: complex, sub-function)
-     - [x] layer (array: complex, sub-function)
-     - [ ] para (array: complex, sub-function) + layers, text
-     - [ ] has_bind (bool)
-     - [x] location (array: id, collection, repo)
-     ? assoc_date (array, complex sub-function) + layers, text
-     ? assoc_name (array, complex sub-function) + layers, text
-     ? assoc_place (array, complex sub-function) + layers, text
-     - [x] note (array, complex mappings) + layers, text
-     - [x] related_mss (array, complex sub-function) + layers?
-     - [x] viscodex (array, sub-function)
-     - [x] bib (array: complex sub-function) + layers, text
-     - [/] iiif (array)
-     - [ ] internal (array: string)
-     - [x] cataloguer (array?: config file?)
-     - [x] reconstructed_from (array: string)
-     - [x] parent for ms_objs?
-     """
+     Left to write for ms_obj:
+     - [ ] internal (array: string) + layers, text (waiting on decision re: admin notes)
+
+     Left to write for layers:
+    - [ ] TBD
+    - [ ] ? para (array: complex, sub-function) + ms_objs, text     """
     return data
 
 def create_part_from_row(row: pd.Series):
     part_data = {}
 
-    # TBD: check field names
     part_data["label"] = str(row["Part Label"])
-
-    # TBD: need summary field?
-
-    # TBD: column name; will we have this?
-    if not(pd.isnull(row["Part Locus"])):
-        part_data["locus"] = str(row["Part Locus"])
 
     # Collate and add support data
     support_labels = parse_rolled_up_field(str(row["Support Label"]), ",", '"')
@@ -252,24 +217,20 @@ def create_part_from_row(row: pd.Series):
         supports.append(sup)
     part_data["support"] = supports
 
-    # TBD: need extent field?
-
     if not(pd.isnull(row["Part Dimensions"])):
         part_data["dim"] = str(row["Part Dimensions"])
 
     part_data["layer"] = create_layer_reference_from_row(row, True)
-    """
-    - [/] label
-    ?summary
-    - [/] locus
-    - [/] support
-    ?extent
-    - [/] dim
-    - [/] layer
-    ? para
-    ? note (typed)
-    ? related_mss
-    """
+    
+    part_data["note"] = create_notes_from_row(row, "ms_objs", 1)
+    # remove notes field if none were created
+    if len(part_data["note"]) == 0:
+        part_data.pop("note")
+    
+    # Add related_mss field if non-empty and flagged as being at the part level
+    if not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) == "part":
+        part_data["related_mss"] = create_related_mss_from_row(row)
+    
     return part_data
 
 
@@ -335,6 +296,7 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
     cols = []
     # pass columns to note based on record type
     if record_type == "ms_objs":
+        # column configurations for ms-level notes
         if not(is_part):
             cols += [
                 {
@@ -401,9 +363,17 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     }
                 }
             ]
-        # TBD: add column configurations for part notes
+        # Column configurations for part notes
         else:
-            cols += []
+            cols += [
+                {
+                    "data": str(row["Part Collation note"]),
+                    "type": {
+                        "id": "collation",
+                        "label": "Collation Note"
+                    }
+                }
+            ]
     # TBD: add cols configurations for layers and text_units
 
     return create_notes_from_specific_columns(cols)
@@ -443,14 +413,14 @@ def create_related_mss_from_row(row: pd.Series):
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
     bibs = []
-    ref_instance_ids = parse_rolled_up_field(str(row["Reference instances"]), ",", '"')
+    ref_instance_ids = parse_rolled_up_field(str(row["Reference Instances"]), ",", '"')
     for id in ref_instance_ids:
         # ref_info = ref_instances.loc[ref_instances["ID"] == id]
         bib_data = {}
         bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
         bib_data["type"] = {
-            "id": str(ref_instances.loc[int(id), "Type"]),
-            "label": str(ref_instances.loc[int(id), "Type label"])
+            "id": str(ref_instances.loc[int(id), "Type ID"]),
+            "label": str(ref_instances.loc[int(id), "Type Label"])
         }
         if not(pd.isnull(ref_instances.loc[int(id), "Range"])):
             bib_data["range"] = str(ref_instances.loc[int(id), "Range"])
@@ -459,10 +429,11 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
             bib_data["alt_shelf"] = str(ref_instances.loc[int(id), "Alt shelfmark"])
 
         # url is required for otherdigversion, otherwise only use if not blank
-        if str(ref_instances.loc[int(id), "Type"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
+        if str(ref_instances.loc[int(id), "Type ID"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
             bib_data["url"] = str(ref_instances.loc[int(id), "URL"])
         
-        # notes on bibs?
+        if not(pd.isnull(ref_instances.loc[int(id), "Notes"])):
+            bib_data["note"] = parse_rolled_up_field(str(ref_instances.loc[int(id), "Notes"]), "|~|", "#")
 
         bibs.append(bib_data)
     return bibs
