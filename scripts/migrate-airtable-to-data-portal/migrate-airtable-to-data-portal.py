@@ -1,4 +1,4 @@
-import pandas as pd, json, sys, os
+import pandas as pd, json, sys, os, datetime
 
 # Function Declarations
 """
@@ -22,11 +22,10 @@ def transform_row_to_json(row, record_type):
     data["reconstruction"] = str(row["Reconstruction"]) == "true"
     
     # For ms objects only, add the ms_obj type
-    # TBD: finalize csv headers
     if record_type == "ms_objs":
         data["type"] = {
-            "id": str(row["Type"]),
-            "label": str(row["Type label"])
+            "id": str(row["Type ID"]),
+            "label": str(row["Type Label"])
         }
     
     # Supply the shelf mark for MS Objects
@@ -39,7 +38,9 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
-    data["extent"] = str(row["Extent"])
+    # exent is required for ms_objs, otherwise only if not null
+    if not(pd.isnull(row["Extent"])) or record_type == "ms_objs":
+        data["extent"] = str(row["Extent"])
 
     if record_type == "ms_objs" and not(pd.isnull(row["Weight"])):
         data["weight"] = str(row["Weight"])
@@ -47,18 +48,16 @@ def transform_row_to_json(row, record_type):
     if record_type == "ms_objs" and not(pd.isnull(row["MS Dimensions"])):
         data["dim"] = str(row["MS Dimensions"])
     
-    if record_type == "ms_objs":
+    if record_type == "ms_objs" or record_type == "layers":
         data["state"] = {
-            "id": str(row["Form ID"]), 
-            "label": str(row["Form Label"])
+            "id": str(row["State ID"]), 
+            "label": str(row["State Label"])
         }
-    elif record_type == "layer":
-        data["state"] = {} # TBD for layer states
     
-    # TBD: check if this will be used
+    
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
-    
+
     if record_type == "ms_objs" and not(pd.isnull(row["Collation"])):
         data["coll"] = str(row["Collation"])
     
@@ -74,18 +73,27 @@ def transform_row_to_json(row, record_type):
             }
             features.append(feat)
         data["features"] = features
+    # remove features property if empty
+    if len(data["features"]) == 0:
+        data.pop("features")
 
     if record_type == "ms_objs":
         data["part"] = [create_part_from_row(row)]
 
+    # TBD: this may not be used for the ms_objs level
     if record_type == "ms_objs":
         data["layer"] = create_layer_reference_from_row(row, False) # note: this function is for creating the layer sub-object that references layer records
     
     # TBD: a lot more to think about with this one...
     # TBD: write the function...
+    """
     data["para"] = create_paracontent_from_row(row)
+    """
 
     # TBD: has_bind -- waiting to see how the data will look
+    if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
+        data["has_bind"] = str(row["Has Binding"]) == "true"
+    
 
     # add location if an ms_obj
     if record_type == "ms_objs":
@@ -100,19 +108,39 @@ def transform_row_to_json(row, record_type):
     
     # TBD: assoc_* -- are these even necessary?
 
-    # TBD: notes (there will be several types...maybe make this a function?)
-    data["note"] = create_notes_from_row(row, record_type, 0) # pass in a list of column names mapped to note fields?
+    # Add notes field
+    data["note"] = create_notes_from_row(row, record_type, 0)
+    # remove notes field if none were created
+    if len(data["note"]) == 0:
+        data.pop("note")
 
-    # TBD: related_mss...
-    data["related_mss"] = create_related_mss_from_row(row)
+    # Add related_mss field if it is not flagged as being at the part level
+    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) != "part":
+        data["related_mss"] = create_related_mss_from_row(row)
+    # remove related_mss field if none were created
+    if len(data["related_mss"]) == 0:
+        data.pop("related_mss")
 
-    # TBD: viscodex: type, label, url (check the data)
+    # Viscodex, ms_objs only
+    if record_type == "ms_objs" and not(pd.isnull(row["Viscodex URL"])) and not(pd.isnull(row["Viscodex Label"])):
+        # hard-coded type
+        viscodex_type = {"id": "manuscript", "label": "Manuscript"}
+        # create the viscodex object and add to the record
+        viscodex = {
+            "type": viscodex_type,
+            "label": str(row["Viscodex Label"]),
+            "url": str(row["Viscodex URL"])
+        }
+        data["viscodex"] = [viscodex]
 
     data["bib"] = create_bibs_from_row(row, ref_instances)
+    # remove bib field if none were created
+    if len(data["bib"]) == 0:
+        data.pop("bib")
 
-    # TBD: iiif (type is default for these; manifest; text direction; behavior; thumbnail)
+    # IIIF info, ms_objs only
     if record_type == "ms_objs":
-        # TBD: should type be defaulted to main?
+        # hard-coded type is 'main'
         iiif = {}
         iiif["type"] = {
                     "id": "main",
@@ -132,60 +160,50 @@ def transform_row_to_json(row, record_type):
     
     #TBD: internal (from admin notes)
 
-    # TBD cataloguer field (set in a config for who runs the script?)
-    # TBD: additional cataloguer info from Contributor field, esp. for texts
+    # TBD cataloguer field for running the script (set in a config for who runs the script?)
+    data["cataloguer"] = [] # TBD: this initiates the field for use in the Contributo info; otherwise replace with the contributor data for who runs the script
 
-    # TBD: reconstructed_from -- needed for UTOs
+    # Cataloguer info from Contributor field
+    if not(pd.isnull(row["Contributor Name"])):
+        timestamp = datetime.datetime.now()
+        # parse the rolled up fields containing change log info
+        contributors = parse_rolled_up_field(str(row["Contributor Name"]), ",", "#")
+        messages = parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
+        orcids = parse_rolled_up_field(str(row["Contributor ORCiD"]), ",", "#")
+
+        # for each listed contribution, add the change log info
+        change_log = []
+        for i in range(0, len(contributors)):
+            change = {}
+            change["message"] = messages[i]
+            change["contributor"] = contributors[i]
+            change["added_by"] = orcids[i]
+            change["timestamp"] = timestamp
+            change_log.append(change)
+        
+        data["cataloguer"] += change_log
+
+    # reconstructed from, only used for records that are reconstructions
+    if data["reconstruction"]:
+        data["reconstructed_from"] = parse_rolled_up_field(str(row["Reconstructed From"]), ",", "#")
+
 
     # Parent, for records that are not ms_objs
     if record_type != "ms_objs":
-        # TBD: possibly multiple; for-each after split by delimiter
-        data["parent"] = []
+        data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     """
-     Sections needed for ms_obj:
-     - [x] ARK (string) + layers, text
-     - [/] reconstruction (bool) + layers, text
-     - [/] type (id, label)
-     - [/] shelfmark (string) + layers, text (as label)
-     - [/] summary (string) + layers, text
-     - [/] extent (string) + layers, text
-     - [/] weight (string)
-     - [/] dim (string)
-     - [/] state (id, label) + layers
-     - [/] fol (string)
-     - [/] coll (string)
-     - [/] features (array: id, label) + layers, text
-     - [/] part (array: complex, sub-function)
-     - [/] layer (array: complex, sub-function)
-     - [ ] para (array: complex, sub-function) + layers, text
-     - [ ] has_bind (bool)
-     - [/] location (array: id, collection, repo)
-     ? assoc_date (array, complex sub-function) + layers, text
-     ? assoc_name (array, complex sub-function) + layers, text
-     ? assoc_place (array, complex sub-function) + layers, text
-     - [/] note (array, complex mappings) + layers, text
-     - [/] related_mss (array, complex sub-function) + layers?
-     - [ ] viscodex (array, sub-function)
-     - [/] bib (array: complex sub-function) + layers, text
-     - [/] iiif (array)
-     - [ ] internal (array: string)
-     - [ ] cataloguer (array?: config file?)
-     - [ ] reconstructed_from (array: string)
-     - [/] parent for ms_objs?
-     """
+     Left to write for ms_obj:
+     - [ ] internal (array: string) + layers, text (waiting on decision re: admin notes)
+
+     Left to write for layers:
+    - [ ] TBD
+    - [ ] ? para (array: complex, sub-function) + ms_objs, text     """
     return data
 
 def create_part_from_row(row: pd.Series):
     part_data = {}
 
-    # TBD: check field names
     part_data["label"] = str(row["Part Label"])
-
-    # TBD: need summary field?
-
-    # TBD: column name; will we have this?
-    if not(pd.isnull(row["Part Locus"])):
-        part_data["locus"] = str(row["Part Locus"])
 
     # Collate and add support data
     support_labels = parse_rolled_up_field(str(row["Support Label"]), ",", '"')
@@ -199,24 +217,20 @@ def create_part_from_row(row: pd.Series):
         supports.append(sup)
     part_data["support"] = supports
 
-    # TBD: need extent field?
-
     if not(pd.isnull(row["Part Dimensions"])):
         part_data["dim"] = str(row["Part Dimensions"])
 
     part_data["layer"] = create_layer_reference_from_row(row, True)
-    """
-    - [/] label
-    ?summary
-    - [/] locus
-    - [/] support
-    ?extent
-    - [/] dim
-    - [/] layer
-    ? para
-    ? note (typed)
-    ? related_mss
-    """
+    
+    part_data["note"] = create_notes_from_row(row, "ms_objs", 1)
+    # remove notes field if none were created
+    if len(part_data["note"]) == 0:
+        part_data.pop("note")
+    
+    # Add related_mss field if non-empty and flagged as being at the part level
+    if not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) == "part":
+        part_data["related_mss"] = create_related_mss_from_row(row)
+    
     return part_data
 
 
@@ -230,8 +244,10 @@ def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     if is_part:
        overtext_arks = parse_rolled_up_field(str(row["Overtext ARKs"]), ",", '"')
        overtext_labels = parse_rolled_up_field(str(row["Overtext Labels"]), ",", '"')
+       overtext_locus = parse_rolled_up_field(str(row["Overtext Locus"]), ",", '"')
        overtext = create_layer_object(arks=overtext_arks,
                                         labels=overtext_labels,
+                                        locus=overtext_locus,
                                         type={"id": "overtext", "label": "Overtext"})
        layers += overtext
        column_prefix = "Part " # prefix will be 'Part ' otherwise stays "MS "
@@ -239,36 +255,42 @@ def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     # UTOs
     undertext_arks = parse_rolled_up_field(str(row[column_prefix + "UTO ARKs"]), ",", '"')
     undertext_labels = parse_rolled_up_field(str(row[column_prefix + "UTO Labels"]), ",", '"')
+    undertext_locus = parse_rolled_up_field(str(row[column_prefix + "UTO Locus"]), ",", '"')
     undertext = create_layer_object(arks=undertext_arks,
                                 labels=undertext_labels,
+                                locus=undertext_locus,
                                 type={"id": "undertext", "label": "Undertext"})
     layers += undertext
 
     # Guest Content
     guest_arks = parse_rolled_up_field(str(row[column_prefix + "Guest ARKs"]), ",", '"')
     guest_labels = parse_rolled_up_field(str(row[column_prefix + "Guest Labels"]), ",", '"')
+    guest_locus = parse_rolled_up_field(str(row[column_prefix + "Guest Locus"]), ",", '"')
     guest_content = create_layer_object(arks=guest_arks,
                                     labels=guest_labels,
+                                    locus=guest_locus,
                                     type={"id": "guest", "label": "Guest Content"})
     layers += guest_content
 
     return layers
 
-# TBD: add locus?
+
 # restriction: relies on exact match of arks and labels
 # TBD: throw exception if lengths of ark and label arrays don't match?
 # Given a list of arks, labels, and a type object return a list of layer objects
-def create_layer_object(arks, labels, type):
+def create_layer_object(arks, labels, locus, type):
     layers = []
     for i in range(0, len(arks)):
         if arks[i] == "" or arks[i] == "nan":
             continue
-        layers.append({
-            "id": arks[i],
-            "label": labels[i],
-            # TBD: add locus?
-            "type": type
-        })
+        layer = {}
+        layer["id"] = arks[i]
+        layer["label"] = labels[i]
+        layer["type"] = type
+        # add locus only if it exists for this pairing
+        if locus[i] != "" and locus[i] != "nan":
+            layer["locus"] = locus[i]
+        layers.append(layer)
     return layers
 
 # TBD: actually write this function...
@@ -282,6 +304,7 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
     cols = []
     # pass columns to note based on record type
     if record_type == "ms_objs":
+        # column configurations for ms-level notes
         if not(is_part):
             cols += [
                 {
@@ -289,6 +312,13 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     "type": {
                         "id": "provenance",
                         "label": "Provenance Note"
+                    }
+                },
+                {
+                    "data": str(row["Paracontent note"]),
+                    "type": {
+                        "id": "para",
+                        "label": "Paracontent Note"
                     }
                 },
                 {
@@ -341,9 +371,17 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     }
                 }
             ]
-        # TBD: add column configurations for part notes
+        # Column configurations for part notes
         else:
-            cols += []
+            cols += [
+                {
+                    "data": str(row["Part Collation note"]),
+                    "type": {
+                        "id": "collation",
+                        "label": "Collation Note"
+                    }
+                }
+            ]
     # TBD: add cols configurations for layers and text_units
 
     return create_notes_from_specific_columns(cols)
@@ -383,14 +421,14 @@ def create_related_mss_from_row(row: pd.Series):
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
     bibs = []
-    ref_instance_ids = parse_rolled_up_field(str(row["Reference instances"]), ",", '"')
+    ref_instance_ids = parse_rolled_up_field(str(row["Reference Instances"]), ",", '"')
     for id in ref_instance_ids:
         # ref_info = ref_instances.loc[ref_instances["ID"] == id]
         bib_data = {}
         bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
         bib_data["type"] = {
-            "id": str(ref_instances.loc[int(id), "Type"]),
-            "label": str(ref_instances.loc[int(id), "Type label"])
+            "id": str(ref_instances.loc[int(id), "Type ID"]),
+            "label": str(ref_instances.loc[int(id), "Type Label"])
         }
         if not(pd.isnull(ref_instances.loc[int(id), "Range"])):
             bib_data["range"] = str(ref_instances.loc[int(id), "Range"])
@@ -399,10 +437,11 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
             bib_data["alt_shelf"] = str(ref_instances.loc[int(id), "Alt shelfmark"])
 
         # url is required for otherdigversion, otherwise only use if not blank
-        if str(ref_instances.loc[int(id), "Type"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
+        if str(ref_instances.loc[int(id), "Type ID"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
             bib_data["url"] = str(ref_instances.loc[int(id), "URL"])
         
-        # notes on bibs?
+        if not(pd.isnull(ref_instances.loc[int(id), "Notes"])):
+            bib_data["note"] = parse_rolled_up_field(str(ref_instances.loc[int(id), "Notes"]), "|~|", "#")
 
         bibs.append(bib_data)
     return bibs
