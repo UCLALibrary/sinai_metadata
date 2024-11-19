@@ -458,7 +458,14 @@
                 "label": "Binding" 
             }, 
             "value": "Reinforcement strips derive from a Melkite paper manuscript (ff. 58–64, 142–144), a Syriac parchment codex (ff. 64–66, 70–72, 105–106, 110–111, 113–114), and a parchment Arabic (?) codex (ff. 55–56, 57–58, 58–59)" 
-        } 
+        } ,
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Illustration, St. Matthew in a scriptorium, front board inside"
+        }
     ], 
     "related_mss": [
         { 
