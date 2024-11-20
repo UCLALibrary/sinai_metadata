@@ -1,0 +1,61 @@
+Item ARK
+Reconstruction
+Type ID
+Type Label
+Shelfmark
+Extent
+Weight
+MS Dimensions
+State ID
+State Label
+Foliation note
+Collation
+Collation note
+Feature ID
+Feature Labels
+Part Label
+Support ID
+Support Label
+Support Note
+Part Dimensions
+Overtext ARK
+Overtext Label
+Overtext Locus
+Part UTO ARKs
+Part UTO Labels
+Part UTO Locus
+Part Guest ARKs
+Part Guest Labels
+Part Guest Locus
+Part Collation note
+MS UTO ARKs
+MS UTO Labels
+MS UTO Locus
+MS Guest ARKs
+MS Guest Labels
+MS Guest Locus
+Paracontent note
+Has Binding
+Binding note
+Location ID
+Repository
+Collection
+Provenance note
+Condition note
+Contents note
+General note
+Ornamentation note
+Related MSS Level
+Related MSS Type
+Related MSS Type Label
+Related MSS Label
+Related MSS JSON
+Related MSS Note
+Viscodex Label
+Viscodex URL
+Reference Instances
+IIIF Manifest URL
+IIIF Behavior
+IIIF Text Direction
+IIIF Thumbnail URL
+Reconstructed From
