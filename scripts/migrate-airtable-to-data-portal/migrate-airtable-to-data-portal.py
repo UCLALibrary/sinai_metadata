@@ -493,14 +493,46 @@ except IndexError:
 except ValueError:
      print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
 
-#TBD: could check for each record type that the CSV at least as all required fields using the x in df.columns check
-
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
 path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field:")
 ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
 
+# TBD: check that all of the columns are present, or added, for a given record type
+# Report the mismatched fields and prompt user to continue
+csv_columns = csv_file.columns
+with open('ms_obj_fields.txt') as f:
+    expected_cols = f.read().splitlines()
+
+missing_columns = []
+extra_columns = []
+for c in csv_columns:
+    if c not in expected_cols:
+        extra_columns.append(c)
+
+for c in expected_cols:
+    if c not in csv_columns:
+        missing_columns.append(c)
+
+print("The following CSV columns will be ignored:")
+print(extra_columns)
+print("\n")
+print("The following expected columns are missing from the CSV and will be supplied as null values:")
+print(missing_columns)
+print("\n")
+user_response = input("Continue with the migration script? (y/n)")
+accept_input = user_response == "y"
+# extra_columns = those in csv, not in expected
+# missing_columns = those in expected, not in csv
+# compare column names and report on variances
+# prompt user for y/n to proceed
+
 # for each row, create a JSON file of the corresponding record type
-for i, row in csv_file.iterrows():
-     record = transform_row_to_json(row, record_type)
-     # print(type(row))
-     print(json.dumps(record, ensure_ascii=False, indent=4))
+if accept_input:
+    for col in missing_columns:
+        csv_file[col] = pd.Series(dtype='string')
+    for i, row in csv_file.iterrows():
+        record = transform_row_to_json(row, record_type)
+        # print(type(row))
+        print(json.dumps(record, ensure_ascii=False, indent=4))
+else:
+    print("Transform cancelled")
