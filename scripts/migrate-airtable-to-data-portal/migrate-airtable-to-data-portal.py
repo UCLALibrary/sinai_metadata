@@ -234,7 +234,6 @@ def create_part_from_row(row: pd.Series):
     return part_data
 
 
-# TBD: add locus?
 # Takes a row from a CSV and a boolean indicating if is called by a part or not
 # Creates the overtext, undertext, and guest content layers
 def create_layer_reference_from_row(row: pd.Series, is_part: bool):
@@ -307,6 +306,13 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
         # column configurations for ms-level notes
         if not(is_part):
             cols += [
+                {
+                    "data": str(row["Support Note"]),
+                    "type": {
+                        "id": "support",
+                        "label": "Support Note"
+                    }
+                },
                 {
                     "data": str(row["Provenance note"]),
                     "type": {
