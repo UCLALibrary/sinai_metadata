@@ -133,10 +133,11 @@ def transform_row_to_json(row, record_type):
             "url": str(row["Viscodex URL"])
         }
         data["viscodex"] = [viscodex]
-
-    data["bib"] = create_bibs_from_row(row, ref_instances)
+    
+    if not(pd.isnull(row["Reference Instances"])):
+        data["bib"] = create_bibs_from_row(row, ref_instances)
     # remove bib field if none were created
-    if len(data["bib"]) == 0:
+    if "bib" in data and len(data["bib"]) == 0:
         data.pop("bib")
 
     # IIIF info, ms_objs only
