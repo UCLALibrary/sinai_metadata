@@ -84,6 +84,9 @@ def transform_row_to_json(row, record_type):
     # TBD: this may not be used for the ms_objs level
     if record_type == "ms_objs":
         data["layer"] = create_layer_reference_from_row(row, False) # note: this function is for creating the layer sub-object that references layer records
+    # remove ms layers if none created
+    if "layer" in data and len(data["layer"]) == 0:
+        data.pop("layer")
     
     # TBD: a lot more to think about with this one...
     # TBD: write the function...
