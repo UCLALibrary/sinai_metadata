@@ -3,11 +3,13 @@ Reconstruction
 Type ID
 Type Label
 Shelfmark
+Summary
 Extent
 Weight
 MS Dimensions
 State ID
 State Label
+Foliation
 Foliation note
 Collation
 Collation note
@@ -16,10 +18,10 @@ Feature Labels
 Part Label
 Support ID
 Support Label
-Support Note
+Support note
 Part Dimensions
-Overtext ARK
-Overtext Label
+Overtext ARKs
+Overtext Labels
 Overtext Locus
 Part UTO ARKs
 Part UTO Labels

@@ -119,7 +119,7 @@ def transform_row_to_json(row, record_type):
     if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) != "part":
         data["related_mss"] = create_related_mss_from_row(row)
     # remove related_mss field if none were created
-    if len(data["related_mss"]) == 0:
+    if "related_mss" in data and len(data["related_mss"]) == 0:
         data.pop("related_mss")
 
     # Viscodex, ms_objs only
@@ -160,7 +160,8 @@ def transform_row_to_json(row, record_type):
         data["iiif"] = [iiif]
     
     #TBD: internal (from admin notes)
-
+    """
+    TBD: Cataloguer field not needed at the ms_obj level. TBD for layers
     # TBD cataloguer field for running the script (set in a config for who runs the script?)
     data["cataloguer"] = [] # TBD: this initiates the field for use in the Contributo info; otherwise replace with the contributor data for who runs the script
 
@@ -183,6 +184,7 @@ def transform_row_to_json(row, record_type):
             change_log.append(change)
         
         data["cataloguer"] += change_log
+    """
 
     # reconstructed from, only used for records that are reconstructions
     if data["reconstruction"]:
@@ -193,8 +195,6 @@ def transform_row_to_json(row, record_type):
     if record_type != "ms_objs":
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     """
-     Left to write for ms_obj:
-     - [ ] internal (array: string) + layers, text (waiting on decision re: admin notes)
 
      Left to write for layers:
     - [ ] TBD
@@ -261,9 +261,9 @@ def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     layers += undertext
 
     # Guest Content
-    guest_data = get_layer_data(arks=str(row[column_prefix + "UTO ARKs"]), 
-                                      labels=str(row[column_prefix + "UTO Labels"]), 
-                                      locus=str(row[column_prefix + "UTO Locus"]), 
+    guest_data = get_layer_data(arks=str(row[column_prefix + "Guest ARKs"]), 
+                                      labels=str(row[column_prefix + "Guest Labels"]), 
+                                      locus=str(row[column_prefix + "Guest Locus"]), 
                                       sep="\|~\|", quotechar="#")
     guest_content = create_layer_object(guest_data,
                                     type={"id": "guest", "label": "Guest Content"})
@@ -320,7 +320,7 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
         if not(is_part):
             cols += [
                 {
-                    "data": str(row["Support Note"]),
+                    "data": str(row["Support note"]),
                     "type": {
                         "id": "support",
                         "label": "Support Note"
@@ -426,7 +426,7 @@ def create_related_mss_from_row(row: pd.Series):
     related = {}
     related["type"] = {
         "id": str(row["Related MSS Type"]),
-        "label": str(row["Related MSS Type label"])
+        "label": str(row["Related MSS Type Label"])
     }
     related["label"] = str(row["Related MSS Label"])
 
