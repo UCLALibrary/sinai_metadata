@@ -1,0 +1,101 @@
+{
+    "ark": "ark:/21198/z1960050",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF frag 68a",
+    "extent": "1 ff.",
+    "dim": "145 x 106 mm",
+    "state": {
+        "id": "folio-fragment",
+        "label": "Folio Fragment(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "145 x 106 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s10w5j",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s16g9s",
+                    "label": "CPA Undertext: Ephrem Graecus, On the Antichrist",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding absent"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "The parchment is fragile; all four sides are now irregular, with some splitting to the parchment along the ruled lines of the undertext, and losses to the inner areas of the leaf; dirt adheres to areas of the verso"
+        }
+    ],
+    "bib": [
+        {
+            "id": "8eab4b8e-e5d8-40c6-9a5f-70748ca6d41e",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 482-494"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1960050/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz10v8vhm/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

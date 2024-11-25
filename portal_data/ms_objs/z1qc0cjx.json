@@ -1,0 +1,103 @@
+{
+    "ark": "ark:/21198/z1qc0cjx",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF frag 76",
+    "extent": "1 ff.",
+    "dim": "178 x 127 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "40 x 55 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1gg98",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1dh0k",
+                    "label": "Armenian Undertext: Athanasius, Life of Saint Antony",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Sequence follows Brock 1995, p. 71-72, pl. 361-362"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 71-72, pl. 361-362 "
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 205"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1qc0cjx/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz13n23zx/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/z1bc5h4p",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 5",
+    "extent": "308 ff.",
+    "weight": "1236.3 g",
+    "dim": "233 x 164 x 64 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "features": [
+        {
+            "id": "catchwords",
+            "label": "Catchwords"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1z31s",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Occasional catchwords"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[321], p. 26"
+        },
+        {
+            "id": "ec7c937f-655a-4459-b327-3793637b9db9",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "alt_shelf": "https://www.loc.gov/item/00279385846-ms/",
+            "url": "nan"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1bc5h4p/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1bc5h4p%2Fsp56pj1j/full/!200,200/0/default.jpg"
+        }
+    ]
+}

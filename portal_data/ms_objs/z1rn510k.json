@@ -1,0 +1,92 @@
+{
+    "ark": "ark:/21198/z1rn510k",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 63",
+    "extent": "4 ff.",
+    "weight": "18.1 g",
+    "dim": "210 x 152 x 7.0 mm",
+    "state": {
+        "id": "bifolio",
+        "label": "Bifolio(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1nw5f",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally belonged together with Syriac 50; Syriac NF M 50; and Milan, Biblioteca Ambrosiana, A 296 inf., ff. 214–216, 219–221 (= Chabot 75)",
+                    "note": [
+                        "nan"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Syriac 50",
+                            "id": "ark:/21198/z1s489m7"
+                        },
+                        {
+                            "label": "Sinai Syriac NF M 50",
+                            "id": "ark:/21198/z1jq49kz"
+                        },
+                        {
+                            "label": "Milan (Chabot 75)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M63N], p. 557"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1rn510k/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1p28qb0%2Fr9217z49/full/!200,200/0/default.jpg"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/z10v8nt5",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF M 130",
+    "extent": "1 ff.",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "165 x 130 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1d059",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s18654",
+                    "label": "Greek Undertext: John Climacus, Ladder of Divine Ascent",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Not foliated"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "One folio, fragmented, with two small pieces of conjoin attached; the lower one of these has a small piece of parchment folded in on the recto; diagonal crease across bottom"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 177"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz10v8nt5/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz16110vp/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

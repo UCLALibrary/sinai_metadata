@@ -1,0 +1,99 @@
+{
+    "ark": "ark:/21198/z1252nhk",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 29",
+    "extent": "133 ff.",
+    "weight": "245.1 g",
+    "dim": "142 x 120 x 38 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1h023",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "f. 62 lacking"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Both covers loose and brittle"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Rodent damage on all edges and many leaves; some leaves loose and brittle"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[29], p. 63"
+        },
+        {
+            "id": "f3ea9df2-bf85-465c-ac1d-6bd4cce71e21",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "alt_shelf": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038915820205171//NLI#$FL53534296",
+            "url": "nan"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "http://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1252nhk/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1252nhk%2F0v81z73z/full/!200,200/0/default.jpg"
+        }
+    ]
+}

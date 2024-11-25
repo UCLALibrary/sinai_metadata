@@ -1,0 +1,103 @@
+{
+    "ark": "ark:/21198/z1v4146r",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF frag 63",
+    "extent": "1 ff.",
+    "dim": "169 x 118 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "169 x 118 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s10g8j",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1xd1k",
+                    "label": "Syriac Undertext: Hymns on Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Sequence follows Brock 1995, pl. 334-335"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 62, pl. 334-335 "
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 203"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1v4146r/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1cz38h4/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

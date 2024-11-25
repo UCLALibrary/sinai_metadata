@@ -1,0 +1,399 @@
+{
+    "ark": "ark:/21198/z1kd1z25",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic NF M 8",
+    "extent": "128 ff.",
+    "dim": "183 x 128 x 48 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x4+1x2+1 inside 1x4 (11), Quire 2: 1x10 (21), Quire 3: 1x8 (29), Quire 4: 1x10 (39), Quire 5: 1x8 (47), Quire 6: 1x8 (55), Quire 7: 1x8 (63), Quire 8: 1x8 (71), Quire 9: 1x8 (79), Quire 10: (87), Quire 11: 1x8 (95), Quire 12: 1x8 (103), Quire 13: 1x8 (111), Quire 14: 1x8 (119), Quire 15: 1+1x6+1 (127)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "183 x 128 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s19p6n",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1fs8p",
+                    "label": "Greek Undertext: Basil of Caesarea, Homily on the Martyr Julitta",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 66–69, 81, 87"
+                },
+                {
+                    "id": "ark:/21198/s1b062",
+                    "label": "Greek Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 14r, 19v"
+                },
+                {
+                    "id": "ark:/21198/s1692d",
+                    "label": "Latin Undertext: Athanasian Creed",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s12k86",
+                    "label": "Latin Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 19v"
+                },
+                {
+                    "id": "ark:/21198/s1xs7n",
+                    "label": "Greek Undertext: Hippocrates, Letters",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 8–9, 58, 61"
+                },
+                {
+                    "id": "ark:/21198/s1t339",
+                    "label": "Arabic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1p91c",
+                    "label": "Greek Undertext: Life of St. George",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 21"
+                },
+                {
+                    "id": "ark:/21198/s1jk9x",
+                    "label": "Syriac Undertext: Unidentified theological or liturgical text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 51, 52v"
+                },
+                {
+                    "id": "ark:/21198/s1ds6m",
+                    "label": "Arabic and Coptic Undertext: Sales deed",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 30–39"
+                },
+                {
+                    "id": "ark:/21198/s19341",
+                    "label": "Latin Undertext: Bible. 2 Peter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1591q",
+                    "label": "Greek Undertext: Treatise on medical terms",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 48–49, 51–52, 54–55"
+                },
+                {
+                    "id": "ark:/21198/s11m06",
+                    "label": "Greek Undertext: Bible. Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 121, 126"
+                },
+                {
+                    "id": "ark:/21198/s1ws7b",
+                    "label": "Latin Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1s34c",
+                    "label": "Latin Undertext: Lucianus of Caphargamala, Discovery of the relics of Stephen",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1n92f",
+                    "label": "Greek Undertext: Antyllus, Recipes for different diseases",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 7, stub-9, 42–45, 59–60, 99"
+                },
+                {
+                    "id": "ark:/21198/s1hk9m",
+                    "label": "Latin Undertext: Bible. Mark",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 14v, 15, 18–19v, 24r, 25, 26v, 27"
+                },
+                {
+                    "id": "ark:/21198/s1cs7p",
+                    "label": "Greek Undertext: List of holy vestments and objects",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2–3, 6, 10, 119"
+                },
+                {
+                    "id": "ark:/21198/s1834q",
+                    "label": "Latin Undertext: Bible. Revelation",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 14r, 19v"
+                },
+                {
+                    "id": "ark:/21198/s14d02",
+                    "label": "Latin Undertext: History of Apollonius of Tyre",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 12r, 18"
+                },
+                {
+                    "id": "ark:/21198/s10k9z",
+                    "label": "Greek Undertext: Crateuas, Botanical collection",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 16–17"
+                },
+                {
+                    "id": "ark:/21198/s1vw59",
+                    "label": "Greek Undertext: Basil of Caesarea, Homily on Thanksgiving",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 64, 70r, 70–71, 83– 86, 88–89, 90–95, 113, 115–116, 118"
+                },
+                {
+                    "id": "ark:/21198/s1r33p",
+                    "label": "Greek Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1md1s",
+                    "label": "Greek Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 57, 62, 65, 65, 70, 77, 98, 101, 107, 108"
+                },
+                {
+                    "id": "ark:/21198/s1gk8x",
+                    "label": "Greek Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1bw61",
+                    "label": "Greek Undertext: Inventory of books",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 4, 5, 11, 22–23, 28–29"
+                },
+                {
+                    "id": "ark:/21198/s17331",
+                    "label": "Greek Undertext: Unidentified liturgical text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s13d14",
+                    "label": "Greek Undertext: Exodus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 120,122–125, 127"
+                },
+                {
+                    "id": "ark:/21198/s1zk88",
+                    "label": "Greek Undertext: Hippocrates, Regimen",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 8–9, 40–41, 46–47 "
+                },
+                {
+                    "id": "ark:/21198/s1tw6c",
+                    "label": "Greek Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 56, 63, 72–80, 82, 96–97, 100, 102–106, 109–112, 114, 116–117, 119"
+                },
+                {
+                    "id": "ark:/21198/s1q34r",
+                    "label": "Greek Undertext: Bible. Ecclesiastes",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 14, 19"
+                },
+                {
+                    "id": "ark:/21198/s1kd1g",
+                    "label": "Greek Undertext: Hippocrates, Epidemics",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 50, 53"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally belonged to the same manuscript as Arabic NF M 27 and Arabic NF M 28",
+                    "note": [
+                        "Text continues in Arabic NF M 28, with consecutive pencil foliation"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Arabic NF M28",
+                            "id": "ark:/21198/z1n02zkr"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Front and back cover missing, spine separate"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Quires 1-8 unsewn, quires 9-15 sewn; individual folios of various size | Some folios stitched together of different pieces"
+        }
+    ],
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 24; ٢٠ "
+        },
+        {
+            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 28-57"
+        },
+        {
+            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 76"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1kd1z25/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz14q7rws/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "ark": "ark:/21198/z13n2cd2",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF frag 28",
+    "extent": "5 ff.",
+    "state": {
+        "id": "quires",
+        "label": "Quire(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "191 x 130 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1cs69",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s19q0q",
+                    "label": "Syriac Undertext: Bible. Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 1bis, 2–4"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally belonged together with Syriac NF M 29, Syriac NF M 74, Syriac NF frag 74",
+                    "note": [
+                        "nan"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Syriac NF M 74",
+                            "id": "ark:/21198/z1m05xk5"
+                        },
+                        {
+                            "label": "Sinai Syriac NF frag 74",
+                            "id": "ark:/21198/z1w37xcr"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Not foliated; sequence follows Brock 1995, pl. 172-174"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Two bifolios forming one unsewn quire"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 22-23, pl. 172-174"
+        },
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "Brock 1995, p. 22-23, pl. 172-174 ; Philothée, p. 381-383 ; Géhin 2017, p. 187-188, 201"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 381-383 "
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz13n2cd2/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1qf8tzd/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

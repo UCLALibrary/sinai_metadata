@@ -1,0 +1,194 @@
+{
+    "ark": "ark:/21198/z1d50wzn",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 55",
+    "extent": "78 ff.",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "2x1 (2); 2x1 inside 1x2 (6); 1x1 (7); Quire 1: 1x6 (13); 2x1 (15); Quire 2: 1x8 (23); 2x1 (25); Quire 3: 1x6 (31); 3x1 (34); Quire 4: 1x6 (40); 13x1 (53); 1x2 (55); 17x1 (72); 6x1 (78)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "150 x 140 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s17c92",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1pp96",
+                    "label": "Armenian Undertext: Hebrews",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 64"
+                },
+                {
+                    "id": "ark:/21198/s1jw6w",
+                    "label": "CPA Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1f649",
+                    "label": "Armenian Undertext: Song of Songs",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s19h0n",
+                    "label": "Caucasian Albanian Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 5, 7–14, 17–18, 21–22, 35–36, 39–40, 54–55, 60, 62v, 63, 66, 68–75, 77–78"
+                },
+                {
+                    "id": "ark:/21198/s15p9j",
+                    "label": "Caucasian Albanian Undertext: Lectionary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2–4, 6r, 15–16, 23–27, 30–34, 41r, 41v, 42r, 4, 62r, 65r, 65v, 67r, 67v"
+                },
+                {
+                    "id": "ark:/21198/s12056",
+                    "label": "Armenian Undertext: Bible. Ecclesiastes",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1x64n",
+                    "label": "Armenian Undertext: Bible. Epistles of Paul",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 28–29, 37–38"
+                },
+                {
+                    "id": "ark:/21198/s1sh1c",
+                    "label": "Armenian Undertext: Wisdom of Solomon",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1np8h",
+                    "label": "CPA Undertext: Bible. Mark",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 19–20"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally formed one unit with Georgian NF M 13",
+                    "note": [
+                        "nan"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Georgian NF M 13",
+                            "id": "Sinai Georgian NF M 13"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Occasional alternate foliation in pencil (not followed)"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound quires, single folios, and fragments | Several folios have transfer of ink from facing page that may appear as double palimpsest"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 415"
+        },
+        {
+            "id": "86e353b4-291c-4c33-8da4-168af104bd03",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1d50wzn/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz11c2033/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

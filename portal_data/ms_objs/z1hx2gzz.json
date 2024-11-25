@@ -1,0 +1,105 @@
+{
+    "ark": "ark:/21198/z1hx2gzz",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 75",
+    "extent": "222 ff.",
+    "weight": "1481.1 g",
+    "dim": "228 x 175 x 83 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "features": [
+        {
+            "id": "toc",
+            "label": "Table(s) of Contents"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1v31v",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Inscriptions on f. 222v, back pastedown (f. 223r)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "f. 1r lacking (f. 1 noted on the verso); ff. 212, 213 are mislabeled as \"112\" and \"113\" respectively"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Table of contents, front pastedown verso, ff. 2r; 30v"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[68], p. 14"
+        },
+        {
+            "id": "ec7c937f-655a-4459-b327-3793637b9db9",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "alt_shelf": "https://www.loc.gov/item/00279386048-ms/",
+            "url": "nan"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "http://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1hx2gzz/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1hx2gzz%2Fkk833q8r/full/!200,200/0/default.jpg"
+        }
+    ]
+}

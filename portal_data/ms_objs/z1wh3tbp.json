@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/z1wh3tbp",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 135",
+    "extent": "238 ff.",
+    "weight": "2328.1 g",
+    "dim": "299 x 229 x 90 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s14600",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Rodent damage with loss of text from f. 147, increasing at the end"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[218], p. 21"
+        },
+        {
+            "id": "f3ea9df2-bf85-465c-ac1d-6bd4cce71e21",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "alt_shelf": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038713760205171//NLI",
+            "url": "nan"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "http://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1wh3tbp/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged"
+        }
+    ]
+}

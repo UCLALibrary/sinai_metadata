@@ -1,0 +1,159 @@
+{
+    "ark": "ark:/21198/z1c83777",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 61",
+    "extent": "38 ff.",
+    "dim": "117 x 100 x 13 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 5x1+1x2 (7), Quire 2: 1x8 (15), Quire 3: 1x2+5x1 (22), Quire 4: 1x10 (32), Quire 5: 1x6 (38)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "112 x 87 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1zw4v",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1d63m",
+                    "label": "Georgian Undertext: Heirmologion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 35–36"
+                },
+                {
+                    "id": "ark:/21198/s18h1q",
+                    "label": "Georgian Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 33–34, 37–38"
+                },
+                {
+                    "id": "ark:/21198/s14p7g",
+                    "label": "Georgian Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 23– 25, 30–32"
+                },
+                {
+                    "id": "ark:/21198/s11068",
+                    "label": "Georgian Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 35–36"
+                },
+                {
+                    "id": "ark:/21198/s1w63z",
+                    "label": "Georgian Undertext: Horologion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–22, 26–29"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation beginning with 1 at top center (followed here); irregular alternative foliation in outer margin, not followed here; foliation in pencil, bottom (not followed)"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Covers missing"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Codex incomplete at beginning and end | Unbound quires, stitching largely intact | All folios very dark and stiff, fragmentary folios at front and back"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The dating of this manuscript by Aleksidze, et al. is now called into question because of the erased undertexts of later date"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Palimpsest discernible by surface reflection"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 419"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1c83777/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz16x02s6/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

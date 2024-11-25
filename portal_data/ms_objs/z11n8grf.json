@@ -1,0 +1,172 @@
+{
+    "ark": "ark:/21198/z11n8grf",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 699",
+    "extent": "143 ff.",
+    "dim": "160 x 140 x 44 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire structure only indicated for palimpsested folios (ff. 50 to 81): Quire 1: 1x6+1 (56), Quire 2: 1x6+1+1 (64), Quire 3: 1+1+1 (67), Quire 4: 1x4+1 (72), Quire 5: 1x6+1+1+1 (81)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                },
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "152 x 118 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1t62z",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1891n",
+                    "label": "Greek Undertext: Triodion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 57-58, stub+59, 59-63, stub-63, 64-66, stub+67, 67, stub a-67, stub b-67, 68, stub+69, 69-72"
+                },
+                {
+                    "id": "ark:/21198/s14m1h",
+                    "label": "Greek Undertext: Pentekostarion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 81"
+                },
+                {
+                    "id": "ark:/21198/s10s78",
+                    "label": "Greek Undertext: Heirmologion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 73–76, stub+77, 77–80, stub+81"
+                },
+                {
+                    "id": "ark:/21198/s1w35p",
+                    "label": "Greek Undertext: John Chrysostom, Homily on Lazarus ",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 50, 56"
+                },
+                {
+                    "id": "ark:/21198/s1r92c",
+                    "label": "Greek Undertext: Unidentified text, possibly of John Chrysostom",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 51, stub+53, 53, 55"
+                },
+                {
+                    "id": "ark:/21198/s1mm1v",
+                    "label": "Greek Undertext: John Chrysostom, Homily on the death of the Lord, on the Mother of God, and on Symeon",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 52, 54"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "support",
+                "label": "Support Note"
+            },
+            "value": "Ff. 50 to 81 are parchment and palimpsest, the rest are paper"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Consecutive pencil foliation in large numbers at center top, followed here; parchment ff. 50-81 also carry small numbers in upper right (not followed)"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Spine is leather on fabric. Fraying; front and back covers missing."
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Bound quires"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "All single folios (except f. 81v) have stubs as their conjoins"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 156"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz11n8grf/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz19w0z1p/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

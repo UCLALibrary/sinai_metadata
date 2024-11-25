@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/z1962t47",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 53",
+    "extent": "10 ff.",
+    "weight": "82.4 g",
+    "dim": "257 x 181 x 17.0 mm",
+    "state": {
+        "id": "quires",
+        "label": "Quire(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1k62s",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Previous catalogues (e.g., Philothée) incorrectly treated Syriac NF M 53 and Syriac NF M 84 as part of the same manuscript"
+        }
+    ],
+    "bib": [
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M53N], pp. 58-60"
+        },
+        {
+            "id": "d5b070e2-686e-4b15-923e-2dbf2e6403b2",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M53N], p. 43"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1962t47/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1962t47%2Fcn89j17q/full/!200,200/0/default.jpg"
+        }
+    ]
+}

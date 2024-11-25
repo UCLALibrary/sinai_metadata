@@ -1,0 +1,160 @@
+{
+    "ark": "ark:/21198/z1029pgj",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 468",
+    "extent": "134 ff.",
+    "dim": "160 x 115 x 49 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "flyleaf+1x2+1 (4, paper), Quires 1-2 : 2x10 (24), Quire 3 : 1x8 (32), Quire 4 : 1x10 (42), Quires 5-7 : 3x8 (66), Quire 8 : 1x4 (70), Quires 9-14 : 6x8 (118), Quire 15 : 1x6 + 1 (125), Quire 16 : 1x2+1x4 (131); 1x2+pastedown (134, paper)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                },
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "dim": "153 x 115 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1xw5x",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s15k9h",
+                    "label": "Greek Undertext: Hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 33–70"
+                },
+                {
+                    "id": "ark:/21198/s11s8z",
+                    "label": "Arabic Undertext: John Chrysostom, Homily on the Rich and the Poor",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 28–29"
+                },
+                {
+                    "id": "ark:/21198/s1x34m",
+                    "label": "Greek Undertext: John Chrysostom, Homilies on Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 128–131"
+                },
+                {
+                    "id": "ark:/21198/s1s92p",
+                    "label": "Arabic Undertext: John of Damascus, Homily on the Dormition of the Virgin Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 5–27, 30–32"
+                },
+                {
+                    "id": "ark:/21198/s1nm0s",
+                    "label": "Greek Undertext: Prayers",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 132–134r"
+                },
+                {
+                    "id": "ark:/21198/s1hs7x",
+                    "label": "Greek Undertext: Hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 71–110, 119, 121–123, 125–127"
+                },
+                {
+                    "id": "ark:/21198/s1d35b",
+                    "label": "Greek Undertext: Homilies of Hesychius of Jerusalem and Gregory of Nazianzus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 111–118, 120, 124"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation beginning with front pastedown (f. 1v); foliation of parchment leaves begins with f. 5r"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood, Greek binding; paper fly leaves in front and back. Broken leather spine"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 114-115"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1029pgj/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1f7778g/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

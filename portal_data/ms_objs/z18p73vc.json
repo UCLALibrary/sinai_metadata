@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/z18p73vc",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 81",
+    "extent": "183 ff.",
+    "weight": "2094.3 g",
+    "dim": "287 x 197 x 75 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s12k52",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "viscodex": [
+        {
+            "type": {
+                "id": "manuscript",
+                "label": "Manuscript"
+            },
+            "label": "Collation Visualization for Sinai Arabic 81",
+            "url": "https://vceditor.library.upenn.edu/project/668db2955d69680001459d04"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[74], p. 14"
+        },
+        {
+            "id": "f3ea9df2-bf85-465c-ac1d-6bd4cce71e21",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "alt_shelf": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038916100205171",
+            "url": "nan"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "http://iiif.library.ucla.edu/ark%3A%2F21198%2Fz18p73vc/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged"
+        }
+    ]
+}

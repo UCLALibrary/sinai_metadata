@@ -1,0 +1,127 @@
+{
+    "ark": "ark:/21198/z1fx7khn",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF MG 32",
+    "extent": "21 ff.",
+    "dim": "230 x 170 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "coll": "1x2 (2); Quires 1-2: 2x4 (10), 11x1 (21)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "220 x 160 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1mg84",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1b07f",
+                    "label": "CPA Undertext: Lectionary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 13–16"
+                },
+                {
+                    "id": "ark:/21198/s1663r",
+                    "label": "Greek Undertext: Unidentified Text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 20"
+                },
+                {
+                    "id": "ark:/21198/s12h1v",
+                    "label": "CPA Undertext: Lectionary, Bible. Old Testament",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–12, 17–19"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Consecutive foliation in small pencil numerals in lower right (followed here); some folios numbered in large pencil numerals (not followed)"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Loose folios and bifolios, envelope with very small fragments; all folios in fragmentary condition, some severely so | Folios have been pressed and flattened"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Glossy undertext"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 147"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1fx7khn/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1d79dk1/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

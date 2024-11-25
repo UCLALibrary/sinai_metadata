@@ -1,0 +1,154 @@
+{
+    "ark": "ark:/21198/z1dv21gp",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic NF M 66",
+    "extent": "9 ff.",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "290 x 240 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s13044",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1662c",
+                    "label": "CPA Undertext: Martyrdom of Arianos and the Four Protectores",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 3"
+                },
+                {
+                    "id": "ark:/21198/s12d1t",
+                    "label": "CPA Undertext: Martyrdom of Mamas of Caesarea in Cappadocia",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 4"
+                },
+                {
+                    "id": "ark:/21198/s1xp7m",
+                    "label": "Greek Undertext: Mythological Poem in Hexameters",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2, 4-r, 4-v, 6r, 6–8"
+                },
+                {
+                    "id": "ark:/21198/s1sw62",
+                    "label": "CPA Undertext: Martyrdom of Partiklos of Caesarea, Follower of Pamphilos",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 5"
+                },
+                {
+                    "id": "ark:/21198/s1p62q",
+                    "label": "Greek Undertext: Unidentified grammatical or biblical text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 9"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Six fragmented folios fused together, and three fragments"
+        }
+    ],
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 35; ٣٦ "
+        },
+        {
+            "id": "3a20a9e1-0b02-476c-966e-649b62ac5761",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 79-117, esp. pp. 100-106 "
+        },
+        {
+            "id": "2d85be7b-2722-4e39-8417-bc67a3075bd8",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. X-XI "
+        },
+        {
+            "id": "2bb3cbdc-6f7f-42e7-897a-27f992599c59",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 188-227, esp. pp. 197-198, n. 41"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1dv21gp/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1jh42t4/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

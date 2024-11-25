@@ -1,0 +1,159 @@
+{
+    "ark": "ark:/21198/z1qj8f7g",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 962",
+    "extent": "202 ff.",
+    "dim": "150 x 100 x 80 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x6+1 (7); Quires 2-4: 3x8 (31); Quire 5: 1x6 (37); Quire 6: 1x6+1 (44); Quires 7-8: 2x8 (60); Quire 9: 1+1x10 (71); Quire 10: 1x14 (85); Quires 11-21: 11x8 (173); Quire 22: 1x6+1+1 (181); Quire 23: 1x6 (187); Quire 24: 1x8 (195); Quire 25: 1+1x6 (202",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "140 x 100 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s15g83",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1fw7b",
+                    "label": "Greek Undertext: Troparion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 184–185"
+                },
+                {
+                    "id": "ark:/21198/s1b33z",
+                    "label": "Greek Undertext: Kanon on Saint Nicholas",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 183,186"
+                },
+                {
+                    "id": "ark:/21198/s16d3t",
+                    "label": "Greek Undertext: Joseph the Hymnographer, Kanon on Saints and Martyrs",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 183,186"
+                },
+                {
+                    "id": "ark:/21198/s12k9k",
+                    "label": "Greek Undertext: John Chrysostom, Ecloga 21",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 182, 187"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood, back and front cover consist of two pieces of leather; visible fabric layer, no pastedowns. Binding partially missing, spine exposed"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Codex with damaged spine"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quire signatures preserved at the beginning of each quire, except the first and the seventh | Presence of reinforcement strips at the beginning, end, and middle of most quires"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Palimpsest is only in Quire 23 (ff. 182-187), which is more recent than the rest of the manuscript (13th c.), although the overtext is continuous"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 206"
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[1291], p. 110 "
+        },
+        {
+            "id": "1dd25ff5-4d69-4d2d-9550-e556790887c1",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 157-196"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1qj8f7g/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1cc1x9p/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

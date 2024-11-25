@@ -1,0 +1,137 @@
+{
+    "ark": "ark:/21198/z1mk6nxk",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Slavonic NF M 5",
+    "extent": "100 ff.",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "137 x 105 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1790z",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1ws8q",
+                    "label": "Church Slavonic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 8, 9v, 12r, 13v, 17, 18v, 19v, 20v, 21r, 23v, 24, 27v, 28r, 29r, 30, 32r, 32v, 33r, 34–37, 38v, 39–40, 41v, 42r, 44v, 47v, 50r, 51r, 52r, 53v, 54–56, 57v, 58r, 59v, 60, 61r, 62v, 63, 64v, 66r, 69v, 71, 72r, 73–74, 77v, 78v, 79–80, 81v, 83–84, 86r, 87r, 88, 90v, 92v, 93, 94v, 96r, 97r, 98r, 99, 101v, 102v, 106"
+                },
+                {
+                    "id": "ark:/21198/s1s05q",
+                    "label": "Church Slavonic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 64r, 68, 70v"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation does not necessarily represent original sequence; there is only partial correspondence between the sequence of images, the pencil foliation on individual rectos and versos, and Miklas 2000"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Remnants of binding in Envelope 1"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Poorly legible overtext, some erasures due to scraping or washing"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Folios and fragmented folios, some very small | Small piece in Envelope 1 with majuscule Greek writing was originally inserted between ff. 18v and 19r"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Palimpsest suspected throughout"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Manuscript fragments contained in 9 envelopes: 6 with small fragments, 3 are empty (kept for documentation purposes). Envelope 1 contains remains of binding; envelope 2 contains 11 unnumbered fragments; Envelope 3 contains 9 large, unfoliated fragments and a number of small fragments; envelope 4 contains folios numbered 8, 9, 12, 13, 16-21, 23-25; envelope 5 contains 16 folios, unnumbered; envelope 6 contains folios numbered 27-64, 66, 68. Total number of foliated and unfoliated folios is 86, as of February 2015"
+        }
+    ],
+    "bib": [
+        {
+            "id": "a24d07c7-8ba4-4293-ac7d-ff5e797298f0",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 117-129"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1mk6nxk/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1zw1r92/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

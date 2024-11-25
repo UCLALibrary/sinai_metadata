@@ -1,0 +1,147 @@
+{
+    "ark": "ark:/21198/z1tm9397",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 3",
+    "extent": "163 ff.",
+    "weight": "476.3 g",
+    "dim": "128 x 113 x 116.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "1+1 (2); Quire 1: 8x1 (10); Quire 2: 8x1-1 (17); Quires 3-8: 8x8 (65); Quire 9: 1x6 (71); Quires 10-20: 11x8 (159); Quire 21: 1x2+1 (162); Quire 22: 1x2 (164)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "120 x 85 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1bs7c",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1q354",
+                    "label": "Syriac Undertext: Bible. Corinthians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–2"
+                },
+                {
+                    "id": "ark:/21198/s1k92t",
+                    "label": "Syriac Undertext: Troparion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 80–164"
+                },
+                {
+                    "id": "ark:/21198/s1fm0x",
+                    "label": "Syriac Undertext: Troparion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 3–79"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation at either top or bottom of recto"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding in fair condition; spine exposed; no pastedown on back cover; loose paper fragment inside front cover | Leather on wood; leather on front cover stitched; leather strap in front cover"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quire signatures present"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Palimpsest in Estrangela"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Philothée's catalogue incorrectly dates this manuscript to 917 CE, a date found on the Arabic flyleaves; subsequent catalogues have dated this to the 13th c."
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M3N] pp. 273-276"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 181"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1tm9397/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1p28qb0%2F5z16512v/full/!200,200/0/default.jpg"
+        }
+    ]
+}

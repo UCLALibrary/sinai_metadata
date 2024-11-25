@@ -1,0 +1,161 @@
+{
+    "ark": "ark:/21198/z17d3457",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 56",
+    "extent": "121 ff.",
+    "dim": "190 x 101 x 77 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quires 1-2: 2x12 (24), Quire 3: 1x8 (29b), folio 30 is a singleton, Quires 4-5: 2x8 (46), Quire 6: 1x12 (58), Quire 7: 1x10 (66), Quire 8: 1x8 (74), Quire 9: 1x10 (84), Quire 10: 1x8 (91), Quire 11: 1x8 (98), Quire 12: 1x12 (110), folio 110a is a singleton, folio 110b is the paste-down in the back cover",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "183 x 120 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1fc9x",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1gd2x",
+                    "label": "CPA Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 30"
+                },
+                {
+                    "id": "ark:/21198/s1bp8q",
+                    "label": "Syriac Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 85–87, 87a, 88–90, 91–96, 96a, 97–110"
+                },
+                {
+                    "id": "ark:/21198/s16w75",
+                    "label": "CPA Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. fragment, 2–11, 13, 15–16, 21–22, 24, 31–46, 59–63, 63a, 63b, 64–68, 73–84, 110b"
+                },
+                {
+                    "id": "ark:/21198/s1363t",
+                    "label": "CPA Undertext: Bible. Mark",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 12, 14, 17–20, 23, 25, 25a, 26–29, 29a, 29b, 47–58, 69–72, 110a"
+                },
+                {
+                    "id": "ark:/21198/s1zd1w",
+                    "label": "Armenian Undertext: Bible. Ezekiel",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 91r, 94r"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Foliation in pencil in upper or lower margin, which sometimes includes numbered folios with the suffix a or b (e.g., f. 63, followed by f. 63a and f. 63b)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The original first five folios of the codex are fragmentary, not numbered, and are not considered here; the sixth folio in the codex is numbered 1, followed here"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather front and back covers; leather spine with reinforced fabric. Front cover detached; back cover attached; spine partially detached"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Until ca. f. 32, spine slants outward, resulting in curled folios"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M56N], pp. 531-537 "
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M56N], pp. 531-537 "
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz17d3457/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ng4x3n/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

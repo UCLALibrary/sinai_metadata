@@ -1,0 +1,145 @@
+{
+    "ark": "ark:/21198/z1rr2nnf",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF MG 24",
+    "extent": "27 ff.",
+    "dim": "158 x 115 x 19 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "coll": "3x1 (3); Quire 1: 1x4 (7), 1x1 (8); Quire 2: 1x8 (16); Quire 3: 1x8 (24), 1x2 (26), 1x1 (27)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "158 x 115 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1w048",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1764f",
+                    "label": "Greek Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 2, 4–16"
+                },
+                {
+                    "id": "ark:/21198/s13h0s",
+                    "label": "Greek Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 17–24"
+                },
+                {
+                    "id": "ark:/21198/s1zp89",
+                    "label": "Greek Undertext: Basil, of Caesarea, Hexaemeron",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 25–26"
+                },
+                {
+                    "id": "ark:/21198/s1v06q",
+                    "label": "Greek Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 27"
+                },
+                {
+                    "id": "ark:/21198/s1q63d",
+                    "label": "CPA Undertext: Acta Pilati",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 27"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Regular foliation in bottom right corner (followed here); Irregular foliation in upper right corner (not followed)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Sequence of folios may not reflect the sequence of the overtext"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Individual folios and bifolios | Each folio and bifolio has been pressed and flattened"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 146"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1rr2nnf/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1kw65h6/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

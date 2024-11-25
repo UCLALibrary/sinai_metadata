@@ -1,0 +1,139 @@
+{
+    "ark": "ark:/21198/z1c26f2j",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac 7",
+    "extent": "73 ff.",
+    "weight": "591.5 g",
+    "dim": "261 x 208 x 37 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x6+1 (6); Quires 2-6: 5x8 (46); Quire 7: 1x2 (48); Quire 8: 1x6 (54); Quires 9-10: 2x8 (70); Quire 11: 1x2 (72)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "260 x 205 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s12g9j",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s14935",
+                    "label": "Greek Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 71–72"
+                },
+                {
+                    "id": "ark:/21198/s10h0v",
+                    "label": "Armenian Undertext: Hebrews",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 47–48"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "First three folios labeled ff. 1a, 1b, 2"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Boards missing"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Quires, partially detached"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quire signature at the beginning and end of most quires"
+        }
+    ],
+    "bib": [
+        {
+            "id": "33aadcf6-1e7a-4533-abd9-052809f06b83",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 3"
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[78], p. 154"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 37-38"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1c26f2j/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1c26f2j%2F7q70t309/full/!200,200/0/default.jpg"
+        }
+    ]
+}

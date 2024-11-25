@@ -1,0 +1,162 @@
+{
+    "ark": "ark:/21198/z1m34mxk",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 23",
+    "extent": "13 ff.",
+    "weight": "178.8 g",
+    "dim": "180 x 137 x 25.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x8 (8); Quire 2: 1+1x4+1 (14)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "168 x 125 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1xk9b",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": "<NA>"
+                },
+                {
+                    "id": "ark:/21198/s1jd15",
+                    "label": "Syriac Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 2, 7–8"
+                },
+                {
+                    "id": "ark:/21198/s1dm0m",
+                    "label": "Syriac Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 3–6"
+                },
+                {
+                    "id": "ark:/21198/s18w6d",
+                    "label": "Syriac Undertext: Philemon",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 10, 11v, 12r, 13"
+                },
+                {
+                    "id": "ark:/21198/s15355",
+                    "label": "Syriac Undertext: Bible. Thessalonians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 9"
+                },
+                {
+                    "id": "ark:/21198/s11d1h",
+                    "label": "Syriac Undertext: Ephesians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 14r"
+                },
+                {
+                    "id": "ark:/21198/s1wk91",
+                    "label": "Syriac Undertext: Hebrews",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 11r, 12v"
+                },
+                {
+                    "id": "ark:/21198/s1rw74",
+                    "label": "Syriac Undertext: Titus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 10v, 13r"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding in fair condition; front cover missing; parts of spine detached | Back cover leather on wood, finely tooled; parts of leather spine extant"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Palimpsest on two columns in (artificial) Estrangela from the 4th-5th c., ff. 9r-back pastedown"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M23N], pp. 351-353"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 186"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1m34mxk/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1m34mxk%2Fcz56dc8q/full/!200,200/0/default.jpg"
+        }
+    ]
+}
