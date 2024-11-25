@@ -547,7 +547,7 @@ if accept_input:
         ark = str(row["Item ARK"])
         filename = ark.split("/")[2]
         filepath = f'{out_dir}/{filename}.json'
-        with open(filename, 'w+') as f:
+        with open(filepath, 'w+') as f:
             json.dump(record, f, ensure_ascii=False, indent=4)
             print("File saved to " + filepath)
 else:
