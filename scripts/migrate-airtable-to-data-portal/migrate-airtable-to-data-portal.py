@@ -240,34 +240,33 @@ def create_part_from_row(row: pd.Series):
 def create_layer_reference_from_row(row: pd.Series, is_part: bool):
     layers = []
     column_prefix = "MS "
-    # include overtexts and use part columns if called by a part
+    # include overtexts and use part columns if called by a part; overtext is required if part
     if is_part:
        overtext_data = get_layer_data(arks=str(row["Overtext ARKs"]), 
                                       labels=str(row["Overtext Labels"]), 
                                       locus=str(row["Overtext Locus"]), 
                                       sep="\|~\|", quotechar="#")
-       overtext = create_layer_object(overtext_data,
+       layers += create_layer_object(overtext_data,
                                         type={"id": "overtext", "label": "Overtext"})
-       layers += overtext
        column_prefix = "Part " # prefix will be 'Part ' otherwise stays "MS "
     
-    # UTOs
-    undertext_data = get_layer_data(arks=str(row[column_prefix + "UTO ARKs"]), 
+    # UTOs, optional
+    if not(pd.isnull(row[column_prefix + "UTO ARKs"])):
+        undertext_data = get_layer_data(arks=str(row[column_prefix + "UTO ARKs"]), 
                                       labels=str(row[column_prefix + "UTO Labels"]), 
                                       locus=str(row[column_prefix + "UTO Locus"]), 
                                       sep="\|~\|", quotechar="#")
-    undertext = create_layer_object(undertext_data,
+        layers += create_layer_object(undertext_data,
                                 type={"id": "undertext", "label": "Undertext"})
-    layers += undertext
 
-    # Guest Content
-    guest_data = get_layer_data(arks=str(row[column_prefix + "Guest ARKs"]), 
+    # Guest Content, optional
+    if not(pd.isnull(row[column_prefix + "Guest ARKs"])):
+        guest_data = get_layer_data(arks=str(row[column_prefix + "Guest ARKs"]), 
                                       labels=str(row[column_prefix + "Guest Labels"]), 
                                       locus=str(row[column_prefix + "Guest Locus"]), 
                                       sep="\|~\|", quotechar="#")
-    guest_content = create_layer_object(guest_data,
+        layers += create_layer_object(guest_data,
                                     type={"id": "guest", "label": "Guest Content"})
-    layers += guest_content
 
     return layers
 
@@ -411,7 +410,7 @@ def create_notes_from_specific_columns(notes_by_type: list):
     for note_type in notes_by_type:
         for note in parse_rolled_up_field(note_type["data"], "|~|", "#"):
             # skip empty, but create note objects for each delimited note field
-            if note != "" and note != "nan":
+            if note != "<NA>" and note != "" and note != "nan":
                 all_notes.append(
                     {
                         "type": note_type["type"],
@@ -542,6 +541,9 @@ if accept_input:
     for i, row in csv_file.iterrows():
         record = transform_row_to_json(row, record_type)
         # print(type(row))
-        print(json.dumps(record, ensure_ascii=False, indent=4))
+        filename = f'{out_dir}/{i+1}.json'
+        with open(filename, 'w+') as f:
+            json.dump(record, f, ensure_ascii=False, indent=4)
+            print("File saved to " + filename)
 else:
     print("Transform cancelled")
