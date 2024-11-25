@@ -535,6 +535,9 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == "y"
 
 # for each row, create a JSON file of the corresponding record type
+out_dir = "/Users/wpotter/Desktop/SMDP-Migration/csvs/out"
+if not os.path.exists(out_dir):
+    os.makedirs(out_dir)
 if accept_input:
     for col in missing_columns:
         csv_file[col] = pd.Series(dtype='string')
