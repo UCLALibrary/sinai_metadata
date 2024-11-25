@@ -440,7 +440,7 @@ def create_related_mss_from_row(row: pd.Series):
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
     bibs = []
-    ref_instance_ids = parse_rolled_up_field(str(row["Reference Instances"]), ",", '"')
+    ref_instance_ids = pd.read_csv(StringIO(str(row["Reference Instances"])), header=None).iloc[0]
     for id in ref_instance_ids:
         # ref_info = ref_instances.loc[ref_instances["ID"] == id]
         bib_data = {}
@@ -534,10 +534,6 @@ print(missing_columns)
 print("\n")
 user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == "y"
-# extra_columns = those in csv, not in expected
-# missing_columns = those in expected, not in csv
-# compare column names and report on variances
-# prompt user for y/n to proceed
 
 # for each row, create a JSON file of the corresponding record type
 if accept_input:
