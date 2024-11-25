@@ -75,7 +75,7 @@ def transform_row_to_json(row, record_type):
             features.append(feat)
         data["features"] = features
     # remove features property if empty
-    if len(data["features"]) == 0:
+    if "features" in data and len(data["features"]) == 0:
         data.pop("features")
 
     if record_type == "ms_objs":
