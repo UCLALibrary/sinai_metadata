@@ -544,9 +544,11 @@ if accept_input:
     for i, row in csv_file.iterrows():
         record = transform_row_to_json(row, record_type)
         # print(type(row))
-        filename = f'{out_dir}/{i+1}.json'
+        ark = str(row["Item ARK"])
+        filename = ark.split("/")[2]
+        filepath = f'{out_dir}/{filename}.json'
         with open(filename, 'w+') as f:
             json.dump(record, f, ensure_ascii=False, indent=4)
-            print("File saved to " + filename)
+            print("File saved to " + filepath)
 else:
     print("Transform cancelled")
