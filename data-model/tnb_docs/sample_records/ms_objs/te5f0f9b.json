@@ -513,9 +513,20 @@
             "range": "[50], pg. 152", 
             "alt_shelf": "Syr. 435",
             "note": [ 
-                "Kamil" 
+                "Kamil misidentifies this manuscript with Syriac 435" 
             ] 
         }, 
+        {
+            "id": "ce9cdae8-81ce-4c29-8431-ab599cd5491c",
+            "type": {
+                "id": "ref",
+                "label": "Reference Work"
+            },
+            "range": "pg. 134-344",
+            "note": [
+                "Gwilliam, et al. were the first to note that there are two parts in this manuscript."
+            ]
+        },
         { 
             "id": "ec7c937f-655a-4459-b327-3793637b9db9", 
             "type": { 
@@ -526,7 +537,33 @@
             "note": [ 
                 "LoC microfilms" 
             ] 
-        } 
+        } ,
+        {
+            "id": "467167dd-e012-4f87-a1c8-cd8a79c3e8d5",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "no. 437, pg. 45-50"
+        },
+        {
+            "id": "6e8ae70b-30a1-4bff-87d8-69a54cdc3a7b",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            }
+        },
+        {
+            "id": "5256f5da-f751-4cdc-85ce-35b9b20ae818",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038917380205171/NLI",
+            "note": [
+                "Using CPG ID for dev purposes since we are missing a bibl for NLI..."
+            ]
+        }
     ], 
     "iiif": [
         { 
