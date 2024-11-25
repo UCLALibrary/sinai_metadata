@@ -84,6 +84,9 @@ def transform_row_to_json(row, record_type):
     # TBD: this may not be used for the ms_objs level
     if record_type == "ms_objs":
         data["layer"] = create_layer_reference_from_row(row, False) # note: this function is for creating the layer sub-object that references layer records
+    # remove ms layers if none created
+    if "layer" in data and len(data["layer"]) == 0:
+        data.pop("layer")
     
     # TBD: a lot more to think about with this one...
     # TBD: write the function...
@@ -536,7 +539,7 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == "y"
 
 # for each row, create a JSON file of the corresponding record type
-out_dir = "/Users/wpotter/Desktop/SMDP-Migration/csvs/out"
+out_dir = "/Users/wpotter/Documents/GitHub/sinai_metadata/portal_data/ms_objs"
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 if accept_input:
