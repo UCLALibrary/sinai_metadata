@@ -10,7 +10,7 @@
     "weight": "104.2 g",
     "dim": "230 x 181 x 19.0 mm",
     "state": {
-        "id": "quires",
+        "id": "quire",
         "label": "Quire(s)"
     },
     "coll": "Quire 1: 1+2+4x1 (7); Quire 2: 1+1x8 (16); 2x1 (18)",

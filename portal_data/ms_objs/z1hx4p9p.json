@@ -10,7 +10,7 @@
     "weight": "113.6 g",
     "dim": "124 x 176 x 19.0 mm",
     "state": {
-        "id": "quires",
+        "id": "quire",
         "label": "Quire(s)"
     },
     "part": [
