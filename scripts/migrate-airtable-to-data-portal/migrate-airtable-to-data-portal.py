@@ -302,7 +302,7 @@ def create_layer_object(layer_data, type):
         layer["type"] = type
 
         # add locus only if it exists for this pairing
-        if "locus" in layer_data and layer_data["locus"][i] != "nan" and layer_data["locus"][i] != "":
+        if "locus" in layer_data and layer_data["locus"][i] != "<NA>" and layer_data["locus"][i] != "nan" and layer_data["locus"][i] != "":
             layer["locus"] = layer_data["locus"][i]
         
         layers.append(layer)
