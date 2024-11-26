@@ -433,7 +433,7 @@ def create_related_mss_from_row(row: pd.Series):
     }
     related["label"] = str(row["Related MSS Label"])
 
-    if not(pd.isnull(str(row["Related MSS Note"]))):
+    if not(pd.isnull(row["Related MSS Note"])):
         related["note"] = parse_rolled_up_field(str(row["Related MSS Note"]), "|~|", "#")
     
     mss = json.loads(str(row["Related MSS JSON"]))
