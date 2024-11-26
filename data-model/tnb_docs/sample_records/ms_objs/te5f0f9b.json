@@ -465,6 +465,13 @@
                 "label": "Ornamentation Note"
             },
             "value": "Illustration, St. Matthew in a scriptorium, front board inside"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Donation inscription at the bottom of f. 171v | Supplication inscription on f. 172v"
         }
     ], 
     "related_mss": [
