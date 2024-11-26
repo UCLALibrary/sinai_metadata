@@ -42,24 +42,6 @@
             "repository": "St. Catherine's Monastery of the Sinai"
         }
     ],
-    "related_mss": [
-        {
-            "type": {
-                "id": "nan",
-                "label": "nan"
-            },
-            "label": "nan",
-            "note": [
-                "nan"
-            ],
-            "mss": [
-                {
-                    "label": "",
-                    "id": ""
-                }
-            ]
-        }
-    ],
     "bib": [
         {
             "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
