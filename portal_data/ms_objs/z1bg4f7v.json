@@ -10,8 +10,8 @@
     "weight": "4.2 g",
     "dim": "194 x 126 x 0.5 mm",
     "state": {
-        "id": "folio-fragment, folio",
-        "label": "Folio Fragment(s),Folio(s)"
+        "id": "folio",
+        "label": "Folio(s)"
     },
     "part": [
         {

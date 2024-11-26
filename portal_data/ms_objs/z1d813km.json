@@ -10,8 +10,8 @@
     "weight": "30.1 g",
     "dim": "141 x 96 x 10.0 mm",
     "state": {
-        "id": "codex, quire",
-        "label": "Codex,Quire(s)"
+        "id": "codex",
+        "label": "Codex"
     },
     "part": [
         {

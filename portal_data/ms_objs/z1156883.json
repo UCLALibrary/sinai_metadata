@@ -10,8 +10,8 @@
     "weight": "8.5 g",
     "dim": "164 x 118 x 4.0 mm",
     "state": {
-        "id": "folio, bifolio",
-        "label": "Folio(s),Bifolio(s)"
+        "id": "bifolio",
+        "label": "Bifolio(s)"
     },
     "part": [
         {
