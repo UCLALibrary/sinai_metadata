@@ -1,0 +1,115 @@
+{
+    "ark": "ark:/21198/z15d97g5",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF frag 72a",
+    "extent": "2 ff.",
+    "dim": "112 x 91 mm",
+    "state": {
+        "id": "bifolio",
+        "label": "Bifolio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "112 x 91 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1w33x",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s12s88",
+                    "label": "Greek Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–2"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Possible additional bifolio of Georgian NF M 59",
+                    "note": [
+                        "Based on size of bifolios, texture and color of parchment, and appearance of overtext; but whereas the undertext of Georgian NF M 59 is Armenian, the undertext of this bifolio is Greek"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Georgian NF M 59",
+                            "id": "ark:/21198/z18d059m"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding absent"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "The parchment is stained, dark, and brittle, with losses to each of the edges, and to inner areas of the leaf as well"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Possibly related to contents of Georgian NF 59 (Liturgical collection)"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz15d97g5/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1zk5zcv/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

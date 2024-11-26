@@ -1,0 +1,201 @@
+{
+    "ark": "ark:/21198/z16m44r0",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 588",
+    "extent": "69 ff.",
+    "dim": "230 x 200 x 85 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "3x1 (3); Quire 1, four single-folios with stubs: 4x1 (7) plus five singletons: 5x1 (12); Quire 2: 1x4 (16) plus 1 singleton (17); Quire 3, bifolio encompassing 8 single-folios: 8x1 inserted in 1x2 (27); Quire 4, bifolio encompassing 10 single-folios: 10x1 inserted in 1x2 (39) plus four singletons: 4x1 (43); Quire 5, 3 single-folios with stubs: 3x1 (46); 3 singletons: 3x1 (49); Quire 6, 1 bifolio encompassing, from outside in, 2 single-folios with stubs, 2 bifolios, 2 single-folios with stubs: 1x2, 2x1, 2x2, 2x1 (59); Quire 7: 2x2, 2x1, 1x2 (67); 1x2 (69)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "230 x 175 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s15609",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1gs7m",
+                    "label": "Arabic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 68v"
+                },
+                {
+                    "id": "ark:/21198/s1c04m",
+                    "label": "Syriac Undertext: Gospel of James (Apocrypha)",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 57, 60–61, 67r, 68–69"
+                },
+                {
+                    "id": "ark:/21198/s1792q",
+                    "label": "Syriac Undertext: Life of St. Simeon Stylites",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "throughout ff. 1–55, stub-58"
+                },
+                {
+                    "id": "ark:/21198/s13g9v",
+                    "label": "Syriac Undertext: Unidentified hagiography",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 33, 35, 45–46"
+                },
+                {
+                    "id": "ark:/21198/s1zs8b",
+                    "label": "Arabic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 39"
+                },
+                {
+                    "id": "ark:/21198/s1v05b",
+                    "label": "Syriac Undertext: Infancy Gospels of Thomas",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 52, 62, 66r–67"
+                },
+                {
+                    "id": "ark:/21198/s1q922",
+                    "label": "Syriac Undertext: Departure of Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 50, 53, 56, 58–59, 63–65"
+                },
+                {
+                    "id": "ark:/21198/s1kh04",
+                    "label": "CPA Undertext: Bible. Samuel, Bible. Kings",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 33, 35, 45–46"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Small Arabic numerals in pencil in upper left (followed here); sporadic foliation in pencil in center of bottom margin (not followed)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Foliation may not correspond to sequence of overtext"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Detached components of binding: front leather cover, reinforced with papyrus, to which is attached the spine cover, made of woven fabric with leather and parchment remnants; back leather cover reinforced with papyrus"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound quires and detached folios; numerous stubs | Folios curl at gutter; some folios of very stiff parchment"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Small holes aligned horizontally across middle of some folios may be sewing holes, indicating original bifolios with double palimpsest"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Several detached folios are counted here as singletons, because their quire context cannot be determined"
+        }
+    ],
+    "bib": [
+        {
+            "id": "306681bc-375b-4914-bfbc-17551c68cb30",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 24 "
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[246], p. 23"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz16m44r0/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1qj8gpq/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

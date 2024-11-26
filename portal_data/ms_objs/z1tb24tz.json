@@ -1,0 +1,168 @@
+{
+    "ark": "ark:/21198/z1tb24tz",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 90",
+    "extent": "38 ff.",
+    "dim": "148 x 114 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "coll": "Quire 1: 3x1+1x2+3x1 (8), Quire 2: 1x8 (16), Quire 3: 1x8 (24), Quire 4: 5x1 (29), Quire 5: 1x4 (33), Quire 6: 1x4+1 (38)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "83 x 114 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1kp7h",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1006z",
+                    "label": "Georgian Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–18, 23, 24, 26r–27, 38"
+                },
+                {
+                    "id": "ark:/21198/s1v929",
+                    "label": "Georgian Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 30–37"
+                },
+                {
+                    "id": "ark:/21198/s1qh0c",
+                    "label": "Georgian Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 3–6, 9–10, 15–18, 23–24, 38"
+                },
+                {
+                    "id": "ark:/21198/s1ks8x",
+                    "label": "Georgian Undertext: Khanmeti Mravaltavi",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 19–22, 25, 28–29"
+                },
+                {
+                    "id": "ark:/21198/s1g05x",
+                    "label": "Georgian Undertext: John Chrysostom, Homilies on the Dormition of the Holy Virgin",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–2, 7–8, 11–14"
+                },
+                {
+                    "id": "ark:/21198/s1b931",
+                    "label": "Georgian Undertext: Life of St. Febronia",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 26–27, 30r, 30–37"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally formed one unit with Georgian NF M 84",
+                    "mss": [
+                        {
+                            "label": "Sinai Georgian NF M 84",
+                            "id": "ark:/21198/z14m9dms"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The present sequence of the leaves does not follow the original order"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound combination of single folios and quires; most folios are fragmentary"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quires 2 and 3 are attached"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 433-434"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1tb24tz/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1mg8qqf/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

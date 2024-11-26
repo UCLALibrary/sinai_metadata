@@ -1,0 +1,74 @@
+{
+    "ark": "ark:/21198/z1rr3gzs",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 389",
+    "extent": "115 ff.",
+    "weight": "197.1 g",
+    "dim": "155 x 113 x 27.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1fg8k",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "306681bc-375b-4914-bfbc-17551c68cb30",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[10]. p. 10"
+        },
+        {
+            "id": "ec7c937f-655a-4459-b327-3793637b9db9",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "url": "https://www.loc.gov/item/00279389839-ms/"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1rr3gzs/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1rr3gzs%2Fc821vd7t/full/!200,200/0/default.jpg"
+        }
+    ]
+}

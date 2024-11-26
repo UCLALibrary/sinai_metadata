@@ -1,0 +1,148 @@
+{
+    "ark": "ark:/21198/z13v0f52",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 446",
+    "extent": "204 ff.",
+    "dim": "166 x 125 x 107 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x8 (8), Quire 2: 1x4 (12), Quires 3 to 5: 3x8 (36), Quire 6: 1x6 (42), Quires 7 to 9: 3x8 (67; there is no number 59 in the foliation sequence), Quire 10: 1x10 (77), Quires 11 to 18: 7x8 (133), Quire 19: 1x6+1 (I140), Quires 20 to 25: 6x8 (188), Quire 26: 1x6+1+1 (196), Quire 27: 1x8 (204)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "152 x 105 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s12p7v",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1js90",
+                    "label": "Greek Undertext: Blessing of the waters for Epiphany",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 21–58, 60–67, 136–139"
+                },
+                {
+                    "id": "ark:/21198/s1f060",
+                    "label": "Greek Undertext: Collection of liturgical hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 68–135, 140–170, 171v–204"
+                },
+                {
+                    "id": "ark:/21198/s1993q",
+                    "label": "Greek Undertext: John Chrysostom, Homilies on Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–20"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The number 59 was omitted in the foliation sequence; f. 58 is foliated '58+59', with the following leaf foliated as number 60"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "The original sewn book block (sewn on only three cords), and the original boards have been recently rebound with new headband and footband, the whole covered in a deep red polished calfskin of cheap quality, the inside of each board lined in modern paper, in contradistinction to Byzantine binding techniques; the metal post in the middle of the top board was retained, but no attempt was made to replicate the braided cord and loop that would have attached to this from the bottom board, providing the manuscript with a slight pressure when closed"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "The modern headband and footband have already broken because of the lack of flexibility in the binding"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "All leaves palimpsested, some stitched together from two separate leaves of parchment | The parchment varies in color, thickness, and quality, because the leaves were taken from several different original manuscripts; the leaves are irregular in size, since they were left untrimmed after binding"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Each quire was numbered in the center of the lower margin on the concluding verso and the following recto, using the letters of the Greek alphabet, to ensure proper order when the manuscript was bound"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 108 "
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[670], p. 89"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz13v0f52/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1cz41bc/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

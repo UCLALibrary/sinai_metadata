@@ -1,0 +1,230 @@
+{
+    "ark": "ark:/21198/z12n5hwt",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac 30",
+    "extent": "181 ff.",
+    "dim": "220 x 160 x 127 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1mc9g",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1vs8d",
+                    "label": "Syriac Undertext: Dormition of the Virgin Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 151, 155, 156, 159r, 160"
+                },
+                {
+                    "id": "ark:/21198/s1r05d",
+                    "label": "Syriac Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 3, 8, 11, 15, 16, 20, 35, 36, 54, 57, 61, 62, 69, 70, 73, 78, 93, 98, 102, 105, 106, 109, 112, 114, 117, 119, 123–128, 131, 132, 139, 140"
+                },
+                {
+                    "id": "ark:/21198/s1m93h",
+                    "label": "Syriac Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 10, 14, 17, 24r, 27, 31, 34, 37, 40, 42, 45–46, 49, 55–56, 71, 74–77, 80, 82, 89, 91, 95, 96, 100, 113, 115–116, 118, 134r–136"
+                },
+                {
+                    "id": "ark:/21198/s1gk99",
+                    "label": "Greek Undertext: Ephrem the Syrian, Ascetical Homily",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 172v, 173, 174–175, 178–180"
+                },
+                {
+                    "id": "ark:/21198/s1bs8r",
+                    "label": "Syriac Undertext: Bible. Mark",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 12, 19, 21, 23, 25, 26, 28, 30, 41, 43, 48, 50, 53, 58, 64, 67, 94, 97, 101, 110, 137, 143, 148"
+                },
+                {
+                    "id": "ark:/21198/s1734d",
+                    "label": "Greek Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 142, 144, 147, 149"
+                },
+                {
+                    "id": "ark:/21198/s1393v",
+                    "label": "Greek Undertext: Ps.-Marcarius, Epistula magna",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 171, 172r, 176–177, 181,182r"
+                },
+                {
+                    "id": "ark:/21198/s1zk9n",
+                    "label": "Syriac Undertext: Acts of Thomas",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 141, 145, 146, 150, 152–154, 157, 158, 159v, 161–170"
+                },
+                {
+                    "id": "ark:/21198/s1ts7q",
+                    "label": "Syriac Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2, 4–6, 7v, 9, 13, 18, 22, 23, 24v, 29, 32, 33, 38, 39, 44, 47, 51, 52, 59, 60, 63, 65, 66, 68, 72, 79, 81, 83–90, 92, 99, 103, 104, 107, 108, 111, 120–122, 129, 130, 133, 138"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "provenance",
+                "label": "Provenance Note"
+            },
+            "value": "The presence of quire signatures in Georgian, probably by a binder, points to the fact the manuscript was probably in Palestine between the 9th and the 10th c. CE"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation beginning with '4', intending to include exposed unnumbered front pastedown as f. 1"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Reinforced leather. Large parts missing in front; back cover in two vertical parts, reattached with thread; exposed spine"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Mostly unbound quires"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Most folios severely cockled, with raised ridges appearing as glossy; various degrees of discoloration, at least in part due to application of liquid in the course of prior scholarly investigation"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quires are established according to natural movement of folios and do not correspond to original Georgian quire signatures in overtext"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Unbound quires until f. 150; large number of singletons at the beginning and end of quires (usually quinions) that may originally have been bifolios belonging to a quire"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This is the well-known Codex Sinaiticus Syriacus"
+        }
+    ],
+    "bib": [
+        {
+            "id": "33aadcf6-1e7a-4533-abd9-052809f06b83",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 43-47 "
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[81], p. 154"
+        },
+        {
+            "id": "34ba1655-f27f-4da2-9234-a09e9b3d7922",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 106, notes 16, 12 "
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz12n5hwt/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1988nbt/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

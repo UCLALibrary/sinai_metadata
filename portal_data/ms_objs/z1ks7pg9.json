@@ -1,0 +1,130 @@
+{
+    "ark": "ark:/21198/z1ks7pg9",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 2053",
+    "extent": "34 ff.",
+    "dim": "101 x 74 x 13 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "1+1 (2); Quire 1: 1x2 (4); Quire 2-3: 2x6 (16); Quire 4: 1x8 (24); Quire 5: 1x4 (28); Quire 6: 1x8-2 (34)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                },
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "dim": "101 x 74 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1x04k",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1dw71",
+                    "label": "Greek Undertext: Bible. Psalms, Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 2r, 3–16"
+                },
+                {
+                    "id": "ark:/21198/s1963p",
+                    "label": "Greek Undertext: Synaxarion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 17–24"
+                },
+                {
+                    "id": "ark:/21198/s15d24",
+                    "label": "Greek Undertext: Liturgical hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 25–28"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "support",
+                "label": "Support Note"
+            },
+            "value": "Last quire is paper"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Sewing intact, but boards missing and spine uncovered"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Opens easily, but an imperfect glue repair at ff. 4v/5r is causing f. 4 to tear | Discoloration through use in lower outer edges"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[347], p. 74"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ks7pg9/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz18k86rm/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}
