@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/z1cv5n31",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 102",
+    "extent": "218 ff.",
+    "weight": "1152.5 g",
+    "dim": "216 x 153 x 74 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1r60k",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "viscodex": [
+        {
+            "type": {
+                "id": "manuscript",
+                "label": "Manuscript"
+            },
+            "label": "Collation Visualization for Sinai Arabic 102",
+            "url": "https://vceditor.library.upenn.edu/project/668da1c75d69680001456a73/viewOnly"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[94], p. 15"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1cv5n31/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1cv5n31%2F2744gm6b/full/!200,200/0/default.jpg"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "ark": "ark:/21198/z17m15vx",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 212",
+    "extent": "114 ff.",
+    "dim": "146 x 117 x 44 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x8 (8); Quire 2: 1x8 (16); Quire 3: 1x6+1+1 (24); Quire 4: 1x8 (32); Quire 5: 1x6+1+1 (40); Quire 6: 1x8 (48); Quire 7: 1x6+1+1 (56); Quires 8-12: 5x8 (96); Quire 13a: 2x1 (98); Quire 13b: 1x6+1+1 (106); Quire 14: 1x8 (114)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "146 x 117 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s16d0p",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1ph02",
+                    "label": "Greek Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–114"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation in top right"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Mistakes in foliation from ff. 104-114, with attempted corrections: f. 107 originally numbered 106, consecutive folios were numbered and corrected accordingly"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding absent"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Individual quires; quires 1-9 unsewn, quires 10-13a (ff. 73-98) barely attached, and quires 13b-14 (ff. 99-114) unsewn"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Quires numbered 1 to 14 by scribe in top right; quire 13 numbered twice, on ff. 97 and 99, here distinguished as quire 13a and quire 13b"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 42"
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[237], p. 70 "
+        },
+        {
+            "id": "36ac2d29-349f-496d-b4ea-aff4e605c4ba",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz17m15vx/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz14b3sm9/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

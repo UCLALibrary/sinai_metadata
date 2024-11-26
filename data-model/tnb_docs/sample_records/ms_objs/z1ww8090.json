@@ -1,0 +1,173 @@
+{
+    "ark": "ark:/21198/z1ww8090",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 13",
+    "extent": "107 ff.",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x6+1 (7); Quire 2: 1x8 (15); Quire 3-6: 4x8 (47);  Quire 7: 1x8 (56); Quire 7: 1x10+1 (58); Quire 8: 1x8+2 (68); Quire 9: 1+1x4+1 (74); Quire 10: 1x4 (78); Quire 11: 1+1x8 (87); Quire 12: 1x8 (95); Quire 13: 1x6 (101); Quire 14: 6x1 (107)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "225 x 154 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1gw4h",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1j33t",
+                    "label": "Georgian Undertext: Legend of St. Christopher",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 58"
+                },
+                {
+                    "id": "ark:/21198/s1dd1x",
+                    "label": "Armenian Undertext: Wisdom of Solomon",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s18k82",
+                    "label": "Caucasian Albanian Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 6–7, 16–25, 30–31, 40–41, 46–47, 50–51, 54–55, 59–61, 64–66, 74, 96–102, 107"
+                },
+                {
+                    "id": "ark:/21198/s14w8x",
+                    "label": "Armenian Undertext: Bible. Ecclesiastes",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1134j",
+                    "label": "Caucasian Albanian Undertext: Lectionary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2–5, 8–15, 26–29, 32– 39, 42–45, 48–49, 56–57, 67–70, 73, 75–78, 103–106"
+                },
+                {
+                    "id": "ark:/21198/s1wd2n",
+                    "label": "Armenian Undertext: Song of Songs",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1rk9s",
+                    "label": "Armenian Undertext: Bible. Epistles of Paul",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 52–53, 62–63, 71–72"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally formed one unit with Georgian NF M 55",
+                    "mss": [
+                        {
+                            "label": "Sinai Georgian NF M 55",
+                            "id": "ark:/21198/z1d50wzn"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Foliation in pencil center of lower margin (followed); occasional alternative foliation in pencil in inner upper margin (not followed); rare third foliation in outer upper margin (not followed)"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound quires stitched together (Quires 2-5, 6-7); some single folios | Folios darkened by use in outer lower corners"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 385-387 "
+        },
+        {
+            "id": "86e353b4-291c-4c33-8da4-168af104bd03",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ww8090/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1fb5jpv/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

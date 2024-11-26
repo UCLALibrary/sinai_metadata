@@ -1,0 +1,241 @@
+{
+    "ark": "ark:/21198/z16d68k3",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 19",
+    "extent": "61 ff.",
+    "dim": "200 x 165 x 38 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1 (12), Quire 2 (20), Quire 3 (28), Quire 4 (36), Quire 5 (44), Quire 6 (52), Quire 7 (60), Quire 8 (61",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "197 x 143 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1c61j",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1mw7w",
+                    "label": "CPA Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                },
+                {
+                    "id": "ark:/21198/s1h358",
+                    "label": "Greek Undertext: Hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 10–11"
+                },
+                {
+                    "id": "ark:/21198/s1cd20",
+                    "label": "Greek Undertext: Liturgy ",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 4–5, 8–9 "
+                },
+                {
+                    "id": "ark:/21198/s17p8s",
+                    "label": "CPA Undertext: Lectionary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 58"
+                },
+                {
+                    "id": "ark:/21198/s13w77",
+                    "label": "CPA Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 59"
+                },
+                {
+                    "id": "ark:/21198/s1063w",
+                    "label": "CPA Undertext: Cyril of Jerusalem, Catecheses",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2–3, 6–7, 55, 60"
+                },
+                {
+                    "id": "ark:/21198/s1vd1z",
+                    "label": "Greek Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 54"
+                },
+                {
+                    "id": "ark:/21198/s1qp9h",
+                    "label": "Greek Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 56"
+                },
+                {
+                    "id": "ark:/21198/s1kw66",
+                    "label": "Greek Undertext: Bible. Kings",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 53"
+                },
+                {
+                    "id": "ark:/21198/s1g64m",
+                    "label": "CPA Undertext: Dormition of the Virgin Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 4–5"
+                },
+                {
+                    "id": "ark:/21198/s1bd19",
+                    "label": "Greek Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 57"
+                },
+                {
+                    "id": "ark:/21198/s16q0s",
+                    "label": "CPA Undertext: Pseudo-Chrysostom, On Penitence ",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 61"
+                },
+                {
+                    "id": "ark:/21198/s12w6j",
+                    "label": "CPA Undertext: Bible. Jeremiah",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 10–11"
+                },
+                {
+                    "id": "ark:/21198/s1z64z",
+                    "label": "CPA Undertext: Dormition of the Virgin Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 8–9"
+                },
+                {
+                    "id": "ark:/21198/s1td1n",
+                    "label": "CPA Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 62"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Foliation in pencil at the center or top of outer margin"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Warped back, with parchment reinforcements (with writing in CPA)"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound codex, incomplete at beginning and end | Tightly stitched quires | Most folios are stitched together from several pieces"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "All quires are quaternions, except quires 1 and 8; quire 8 consists only of f. 61 | Quire signatures at the beginning of most quires | Quires are tightly stitched | Relations within the quires are difficult to establish | Only quires 1, 7, and 8 are palimpsested"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 391-393"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz16d68k3/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1hh6xc3/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

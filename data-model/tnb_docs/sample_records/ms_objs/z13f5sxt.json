@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/z13f5sxt",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 196",
+    "extent": "103 ff.",
+    "weight": "234.8 g",
+    "dim": "158 x 118 x 34 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "features": [
+        {
+            "id": "catchwords",
+            "label": "Catchwords"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1161f",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "F. 103 loose"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Three cords as bookmarks (labelled f. 58r-2, photographed laid on f. 58r)"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[269], p. 24"
+        },
+        {
+            "id": "f3ea9df2-bf85-465c-ac1d-6bd4cce71e21",
+            "type": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+            },
+            "url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038916520205171//NLI#$FL53741588"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "http://iiif.library.ucla.edu/ark%3A%2F21198%2Fz13f5sxt/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "individuals",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz13f5sxt%2F2256cg57/full/!200,200/0/default.jpg"
+        }
+    ]
+}

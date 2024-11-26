@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/z18w4hqg",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 455",
+    "extent": "401 ff.",
+    "weight": "1824.2 g",
+    "dim": "228 x 166 x 130 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                },
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s12w3d",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "support",
+                "label": "Support Note"
+            },
+            "value": "F. 1 is parchment"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "F. 1, Latin"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "f. 333 is written as 233"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Ff. 57-75 loose quires"
+        }
+    ],
+    "bib": [
+        {
+            "id": "ec7c937f-655a-4459-b327-3793637b9db9",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "url": "https://www.loc.gov/item/00279391093-ms/"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz18w4hqg/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz18w4hqg%2Fx402bh2f/full/!200,200/0/default.jpg"
+        }
+    ]
+}

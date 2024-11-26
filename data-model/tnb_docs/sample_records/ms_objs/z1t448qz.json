@@ -1,0 +1,108 @@
+{
+    "ark": "ark:/21198/z1t448qz",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF frag 65",
+    "extent": "1 ff.",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "175 x 120 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1vs71",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1sq02",
+                    "label": "Syriac Undertext: Galen, On Simple Drugs",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 1"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "provenance",
+                "label": "Provenance Note"
+            },
+            "value": "Brought to Sinai in the 13th century"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "The recto of this single folio has quire numbering (8) in the lower margin, towards the right"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 63-64, pp. 265-266"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 145-156, 203"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1t448qz/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz11c28x5/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

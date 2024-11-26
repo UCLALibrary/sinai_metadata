@@ -1,0 +1,128 @@
+{
+    "ark": "ark:/21198/z1pk1d26",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF MG 14",
+    "extent": "28 ff.",
+    "dim": "194 x 127 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "coll": "1x2 (2), Quires 1-2: 2x6 (14), Quire 3: 1x8 (22), 1x2 (24), 4x1 (28)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "194 x 127 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s10p77",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1r65g",
+                    "label": "CPA Undertext: Bible. Proverbs",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 17, 20"
+                },
+                {
+                    "id": "ark:/21198/s1md25",
+                    "label": "Greek Undertext: Numbers",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–15, 22–27"
+                },
+                {
+                    "id": "ark:/21198/s1gp9b",
+                    "label": "CPA Undertext: Bible. Job",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 18–19"
+                },
+                {
+                    "id": "ark:/21198/s1c050",
+                    "label": "CPA Undertext: Bible. Samuel",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 16, 21, 28"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Continuous foliation was added in pencil in the top right by Father Justin, August 2015"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "2 bifolios, 3 unsewn quires, 2 bifolios, 4 detached folios"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 144, pl. 54"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1pk1d26/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1rr30pd/902,0,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

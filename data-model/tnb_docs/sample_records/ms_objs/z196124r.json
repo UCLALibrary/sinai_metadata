@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/z196124r",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac 8",
+    "extent": "149 ff.",
+    "weight": "1513.0 g",
+    "dim": "220 x 203 x 80 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1xs68",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Flyleaf from a Christian Palestinian Aramaic manuscript"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Flyleaves (ff. 148–150) from a CPA manuscript (trimmed bifolium).\nNo other part of the same CPA codex is known."
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Hymn in honour of the apostles Peter and Paul (fragment)"
+        }
+    ],
+    "bib": [
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[178], p. 157"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz196124r/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz196124r%2Fp250050t/full/!200,200/0/default.jpg"
+        }
+    ]
+}

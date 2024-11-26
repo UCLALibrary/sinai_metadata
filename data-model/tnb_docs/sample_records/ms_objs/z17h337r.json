@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/z17h337r",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac 243",
+    "extent": "52 ff.",
+    "weight": "556.5 g",
+    "dim": "199 x 145 x 41.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1nd0q",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "ff. 50r-50v, upside down"
+        }
+    ],
+    "bib": [
+        {
+            "id": "f3ea9df2-bf85-465c-ac1d-6bd4cce71e21",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "NLI "
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz17h337r/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz17h337r%2Fnf98w77r/full/!200,200/0/default.jpg"
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "ark": "ark:/21198/z1v9962j",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek 930",
+    "extent": "128 ff.",
+    "dim": "151 x 122 x 66 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire relations are difficult to determine, but can be established as follows: Quire 1 (6), Quire 2 (12), Quire  3 (21), Quire 4 (29), Quire 5 (35), Quire 6 (41), Quire 7 (49), Quire 8 (57), Quire 9 (66), Quire 10 (75), Quire 11 (81), Quire 12 (89), Quire 13 (99), Quire 14 (106), Quire 15 (114), Quire 16 (120), Quire 17 (paper, 128)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                },
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "dim": "149 x 126 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1f03v",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s13m0t",
+                    "label": "Arabic Undertext: Bible. Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 6, 8–11, 14v, 16–19, 21v, 24–25, 29v, 36v, 37v, 38, 39v, 43r, 45r, 61r, 68v, 71r, 74v, 75r, 77, 78, 80–81, 82v, 94v, 103r, 109v, 117v, 118v, 120r"
+                },
+                {
+                    "id": "ark:/21198/s1zw6m",
+                    "label": "Arabic Undertext: Exodus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2–5, 7v, 12r, 22v, 23v, 26v, 27v, 56v, 66v, 73r, 101v, 102r, 112r"
+                },
+                {
+                    "id": "ark:/21198/s1v340",
+                    "label": "Arabic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 7r, 12v, 13, 14r, 15, 20, 21r, 22r, 23r, 26r, 27r, 28, 29r, 30–35, 36r, 37r, 39r, 40–42, 43v, 44, 45v, 46–56r, 57–66r, 67–70, 71v, 72, 73v, 74r, 75v, 76, 79, 82r, 83–94r, 95–100, 101r, 102v, 103v, 104–111, 112v, 113–117r, 118r, 119, 120v"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "support",
+                "label": "Support Note"
+            },
+            "value": "Ff. 1-120 are parchment; ff. 121-128 are paper"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Paper binding reinforcements with Arabic writing"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood, with stud holes on center of upper and lower outer boards; tooled lines on upper cover; incisions (secondary) on upper and lower covers; wooden peg extrudes from center of outside of upper board; remnant of leather loop on center of lower board; pastedowns of dark blue linen fabric on inner covers; total of seven metal studs along narrow edges of upper and lower boards"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding intact with boards present and spine covered | Repair of outer board with tape; remnants of several repairs with glue"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Codex with multiple signs of repair"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Single-folios are often joined to form bifolios for binding purposes"
+        }
+    ],
+    "bib": [
+        {
+            "id": "55eae5e7-ad84-46af-a814-4f5524b2d09d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 198"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1v9962j/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ng5m90/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

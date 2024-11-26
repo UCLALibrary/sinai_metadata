@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/z16t2csn",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF X 44",
+    "extent": "12 ff.",
+    "weight": "14.7 g",
+    "dim": "130 x 88 x 4.0 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1g34k",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Arabic inscription, f. 1r"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[X44N], pp. 251-252"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz16t2csn/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz16t2csn%2F7600f46c/full/!200,200/0/default.jpg"
+        }
+    ]
+}

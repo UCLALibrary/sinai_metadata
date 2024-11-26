@@ -1,0 +1,56 @@
+{
+    "ark": "ark:/21198/z1961612",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 706",
+    "extent": "141 ff.",
+    "weight": "593 g",
+    "dim": "170 x 135 x 55.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1tk7n",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://ingest.iiif.library.ucla.edu/ark%3A%2F21198%2Fz1961612/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1961612%2Fwv35hf01/full/!200,200/0/default.jpg"
+        }
+    ]
+}

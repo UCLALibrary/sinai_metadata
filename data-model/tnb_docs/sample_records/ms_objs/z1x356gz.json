@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/z1x356gz",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai CPA NF frag 12",
+    "extent": "12 ff.",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "196 x 125 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s11w4g",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1rw6r",
+                    "label": "CPA Undertext: Bible. Psalms",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "throughout"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Not foliated; arrangement and numbering follows Brock 1995, which is based on the sequence of the Psalms"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Three bifolios, a single folio, and five fragments, total of 24 sides"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6ced4f13-e0b7-43d6-aa6d-260c00656341",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 87-88, pl. 418-435"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1x356gz/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz11v5h2t/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

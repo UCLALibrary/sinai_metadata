@@ -1,0 +1,142 @@
+{
+    "ark": "ark:/21198/z1n02zkr",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic NF M 28",
+    "extent": "16 ff.",
+    "weight": "40.1 g",
+    "dim": "192 x 140 x 20.0 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "coll": "Quires 1-2: 2x8 (16)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "191 x 137 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1j62g",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1fk90",
+                    "label": "Greek Undertext: Bible. Genesis",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 131–132v, 138, 140–142"
+                },
+                {
+                    "id": "ark:/21198/s19w6q",
+                    "label": "Greek Undertext: Exodus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 128–130v, 133–137, 139, 143"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally belonged to the same manuscript as Arabic NF M 8 and Arabic NF M 27",
+                    "note": [
+                        "Text continues from Arabic NF M 8"
+                    ],
+                    "mss": [
+                        {
+                            "label": "Sinai Arabic NF M 8",
+                            "id": "ark:/21198/z1kd1z25"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Pencil foliation begins with fol. 128"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Two unsewn quires"
+        }
+    ],
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 29;  ٢٧"
+        },
+        {
+            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "pp. 28-57"
+        },
+        {
+            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 76"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1n02zkr/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1n02zkr%2Fq878hh1t/full/!200,200/0/default.jpg"
+        }
+    ]
+}

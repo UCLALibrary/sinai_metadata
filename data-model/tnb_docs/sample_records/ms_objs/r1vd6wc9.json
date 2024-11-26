@@ -1,0 +1,162 @@
+{
+    "ark": "ark:/21198/r1vd6wc9",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 11",
+    "extent": "112 ff.",
+    "dim": "185 x 128 x 57 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Regular quires can be counted beginning with f. 81, Quire 1: 1x4 (88); Quire 2: 1x4 (96); Quire 3: 1x4 (104); Quire 4: 1x4 (112)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "148 x 117 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1ts6b",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s19s6p",
+                    "label": "Undertext: Unidentified Text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 64v, 67r, 72v, 74r, 80v"
+                },
+                {
+                    "id": "ark:/21198/s1635g",
+                    "label": "CPA Undertext: Cyril of Jerusalem, Catecheses",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 105–109, 110r, 111v, 112"
+                },
+                {
+                    "id": "ark:/21198/s12925",
+                    "label": "CPA Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 65–66, 97–104"
+                },
+                {
+                    "id": "ark:/21198/s1xm08",
+                    "label": "CPA Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1, 89–96"
+                },
+                {
+                    "id": "ark:/21198/s1ss7d",
+                    "label": "CPA Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 73"
+                },
+                {
+                    "id": "ark:/21198/s1p366",
+                    "label": "CPA Undertext: Bible. Mark",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 81–88"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "ff. 1-64 are unfoliated and fused together in upper part of leaf; foliation in pencil in bottom margin begins with f. 65; two detached folios at back foliated in pencil, both as f. 1"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Front and back covers missing"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Unbound quires; ff. 1-64 (unfoliated) damaged and fused together in upper part of leaf; ff. 65-80 partially damaged; ff. 67r-72r do not open; ff. 74v-80r do not open"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M11N], pp. 301-305"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 183"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fr1vd6wc9/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1cf9rf4/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

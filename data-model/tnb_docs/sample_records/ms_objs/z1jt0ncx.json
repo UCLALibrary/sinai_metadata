@@ -1,0 +1,142 @@
+{
+    "ark": "ark:/21198/z1jt0ncx",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF MG 99",
+    "extent": "nan",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "148 x 100 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1gs5v",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1xp80",
+                    "label": "Greek Undertext: Colossians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "frg-1r, frg-1v"
+                },
+                {
+                    "id": "ark:/21198/s1t06d",
+                    "label": "Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "frg-5r, frg-5v, frg-6r, frg-6v"
+                },
+                {
+                    "id": "ark:/21198/s1p633",
+                    "label": "Greek Undertext: Bible. Corinthians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–6"
+                },
+                {
+                    "id": "ark:/21198/s1jh16",
+                    "label": "Greek Undertext: Philippians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "frg-2r, frg-2v, frg-3r, frg-3v"
+                },
+                {
+                    "id": "ark:/21198/s1ds70",
+                    "label": "Greek Undertext: Bible. Romans",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "frg-4r, frg-4v"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Images were captured prior to continuous foliation; foliation was added in pencil in the top right by Father Justin, August 2015"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Folios and fragments"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 157, pl. 108 "
+        },
+        {
+            "id": "757c5dad-a4c0-4c61-a5ab-66c5ebb30a54",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1jt0ncx/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1k085wx/902,0,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}

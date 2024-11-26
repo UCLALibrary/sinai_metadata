@@ -1,0 +1,66 @@
+{
+    "ark": "ark:/21198/z12f9n08",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic NF X 63",
+    "extent": "47 ff.",
+    "weight": "121.9 g",
+    "dim": "175 x 145 x 18.0 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "paper",
+                    "label": "Paper"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1js77",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 53; ٥٩"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz12f9n08/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz12f9n08%2Fd135hv6p/full/!200,200/0/default.jpg"
+        }
+    ]
+}

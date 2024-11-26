@@ -1,0 +1,379 @@
+{
+    "ark": "ark:/21198/z1bc4wfw",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Arabic 514",
+    "extent": "175 ff.",
+    "dim": "234 x 160 x 113 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Quire 1: 1x8+1 (8), Quire 2: 2x1 inside 1x2, +4x1 (16), Quire 3: 2x1 inside 1x2,+3x1 (23), Quire 4: 1x6 (29), Quire 5: 7x1 (36), Quire 6: 3x1, 2x1 inside 1x2, +1 (44), Quire 7: 3x1, 2x1 inside 1x2, +2x1 (53), Quire 8-11: 4x8 (85), Quire 12: 1x8+1 (94), Quire 13: 6x1 (100),  Quire 14: 5x1 (105), Quire 15: 1+1x6+1 (113), Quire 16: 1x8 (121), Quire 17: 1x6 (127), Quire 18: 1x10 (137), Quire 19: 1x6 (149), Quire 20: 1+1x8 (152), Quire 21-22: 2x8 (168), Quire 23: 1+1x6 (175)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "223 x 150 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s14k7f",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1gw5w",
+                    "label": "Syriac Undertext: Herbal",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1a, 1b, 3–4, 7–8"
+                },
+                {
+                    "id": "ark:/21198/s1c639",
+                    "label": "Syriac Undertext: Bible. Zechariah",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 101"
+                },
+                {
+                    "id": "ark:/21198/s17d00",
+                    "label": "Arabic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 47v, stub-47r, stub+52v, 52r"
+                },
+                {
+                    "id": "ark:/21198/s13p8j",
+                    "label": "Syriac Undertext: Bible. Timothy",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1bv, 3, 4, 7r"
+                },
+                {
+                    "id": "ark:/21198/s1zw57",
+                    "label": "Syriac Undertext: Unidentified liturgical text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 21"
+                },
+                {
+                    "id": "ark:/21198/s1v641",
+                    "label": "Syriac Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 16"
+                },
+                {
+                    "id": "ark:/21198/s1qd1q",
+                    "label": "Syriac Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 18, 19, 39–44, 46, 48, 50, 51, 53, 54, 56–59, 61, 80–83"
+                },
+                {
+                    "id": "ark:/21198/s1kp8w",
+                    "label": "Syriac Undertext: Numbers",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2, 6"
+                },
+                {
+                    "id": "ark:/21198/s1fw6z",
+                    "label": "Syriac Undertext: Bible. Thessalonians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1br, 7v "
+                },
+                {
+                    "id": "ark:/21198/s1b64c",
+                    "label": "Syriac Undertext: Bible. Daniel",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 95, 97, 100, 102, 105"
+                },
+                {
+                    "id": "ark:/21198/s16d2f",
+                    "label": "Syriac Undertext: Bible. Samuel",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 33"
+                },
+                {
+                    "id": "ark:/21198/s12p87",
+                    "label": "Syriac Undertext: Judith",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 5, 9–10, 11v, 12"
+                },
+                {
+                    "id": "ark:/21198/s1z04w",
+                    "label": "Syriac Undertext: Jacob, of Serug, Ninth Homily on Joseph",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 96, stub-98, 98, stub+98, 99"
+                },
+                {
+                    "id": "ark:/21198/s1t63b",
+                    "label": "Syriac Undertext: Departure of Mary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 169–175"
+                },
+                {
+                    "id": "ark:/21198/s1pg94",
+                    "label": "Syriac Undertext: Extracts from the Church Fathers",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 2, 5, 6, 9–14, 27, 31"
+                },
+                {
+                    "id": "ark:/21198/s1jp76",
+                    "label": "Syriac Undertext: Unidentified biblical or theological text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 17, 20r"
+                },
+                {
+                    "id": "ark:/21198/s1f05m",
+                    "label": "Greek Undertext: Funeral Service",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 47r, stub-47v, stub+52r, 52v"
+                },
+                {
+                    "id": "ark:/21198/s19629",
+                    "label": "Syriac Undertext: Bible. Acts",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 32, 35–36"
+                },
+                {
+                    "id": "ark:/21198/s15h0d",
+                    "label": "Syriac Undertext: Hymn with Verses from the Old Testament",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. stub-101, 101"
+                },
+                {
+                    "id": "ark:/21198/s11p7j",
+                    "label": "Syriac Undertext: Ignatius of Antioch, Epistles",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 17, 20"
+                },
+                {
+                    "id": "ark:/21198/s1x06b",
+                    "label": "Syriac Undertext: Ephrem the Syrian, Against the Jews (?)",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 62–79, 84–85, 106–113, 116–119, 123–126, 131–134, 147–150, 163–166"
+                },
+                {
+                    "id": "ark:/21198/s1s631",
+                    "label": "Syriac Undertext: Maʿnīthā (Hymns)",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 23–25, 28–30"
+                },
+                {
+                    "id": "ark:/21198/s1nh0r",
+                    "label": "Syriac Undertext: Hebrews",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 38, 45"
+                },
+                {
+                    "id": "ark:/21198/s1hp88",
+                    "label": "Syriac Undertext: Bible. John",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 86–94, 114–115, 120–122, 127–130, 135–146, 151–162, 167–168"
+                },
+                {
+                    "id": "ark:/21198/s1d06p",
+                    "label": "Syriac Undertext: Passio of Sergius and Bacchus",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 103–104"
+                },
+                {
+                    "id": "ark:/21198/s1864r",
+                    "label": "Syriac Undertext: Euchologion",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 21r"
+                },
+                {
+                    "id": "ark:/21198/s14h03",
+                    "label": "Syriac Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 18–19, 39–41, stub-41, stub+42v, 42–44, 46, 48, 50–51, 53–61, 80–83"
+                },
+                {
+                    "id": "ark:/21198/s10s6w",
+                    "label": "Syriac Undertext: Gospel of James (Apocrypha)",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 15, 22, 49"
+                },
+                {
+                    "id": "ark:/21198/s1w05n",
+                    "label": "Syriac Undertext: Ephesians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 8"
+                },
+                {
+                    "id": "ark:/21198/s1r910",
+                    "label": "Syriac Undertext: Ritual for Easter (?)",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1mg9h",
+                    "label": "Syriac Undertext: Colossians",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 47, stub-47, stub+52v, 52"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood  Front cover detached; cloth strip attached to back cover (remains of spine)"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Some individual quires or groups of quires, detached, up to f. 94; some single-folios; several stubs with undertext"
+        }
+    ],
+    "bib": [
+        {
+            "id": "306681bc-375b-4914-bfbc-17551c68cb30",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 19 "
+        },
+        {
+            "id": "deb668b6-feec-4828-8749-a97441881226",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[507], p. 42"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1bc4wfw/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ng5nmf/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

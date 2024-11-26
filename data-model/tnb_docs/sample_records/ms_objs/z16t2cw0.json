@@ -1,0 +1,66 @@
+{
+    "ark": "ark:/21198/z16t2cw0",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 26",
+    "extent": "8 ff.",
+    "weight": "74.5 g",
+    "dim": "266 x 223 x 10.0 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s1j914",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M26N], pp. 363-365"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz16t2cw0/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1q25rdg%2F1j62829t/full/!200,200/0/default.jpg"
+        }
+    ]
+}

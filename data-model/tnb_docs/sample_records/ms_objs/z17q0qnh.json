@@ -1,0 +1,81 @@
+{
+    "ark": "ark:/21198/z17q0qnh",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 67",
+    "extent": "8 ff.",
+    "weight": "53.3 g",
+    "dim": "229 x 151 x 8.0 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s14w7j",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Another part of the same codex is Syriac NF M 25",
+                    "mss": [
+                        {
+                            "label": "Sinai Syriac NF M 25",
+                            "id": "ark:/21198/z1bk34hc"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "220eeb5e-ef2f-4ddd-96e5-47e2220aa409",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M67N], p. 567"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz17q0qnh/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1p28qb0%2Fj966qv8r/full/!200,200/0/default.jpg"
+        }
+    ]
+}

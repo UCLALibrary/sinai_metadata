@@ -1,0 +1,125 @@
+{
+    "ark": "ark:/21198/z1pc3j0n",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian 10",
+    "extent": "266 ff.",
+    "dim": "228 x 166 x 110 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "coll": "Only palimpsest quires are considered: Quire 1 begins f. 216r. Quires 1-5: 5x8 (216-255), Quire 6: 1x6 (261), Quire 7:  1x4+1 (266, f. 264 is a single-folio)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "226 x 158 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1d326",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1vp8c",
+                    "label": "Georgian Undertext: Lectionary",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 216–218, 221–223, 240, 247"
+                },
+                {
+                    "id": "ark:/21198/s1r041",
+                    "label": "Georgian Undertext: Mravaltavi",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 262, 266"
+                },
+                {
+                    "id": "ark:/21198/s1m623",
+                    "label": "Georgian Undertext: Iadgari",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 219–220, 224–239, 241–246, 248–261, 263, 265"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-oc",
+            "collection": "Old Collection",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "provenance",
+                "label": "Provenance Note"
+            },
+            "value": "Not produced at Sinai; according to the fragmentary colophon on fol. 256v, the codex was “sent to Mt. Sinai” by a certain David"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood, Greek binding, remains of metal clasps on front cover, remains of leather straps on back cover | Spine partially exposed"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "All folios darkened by use on outer upper and lower margins | Palimpsest in margins often appears with raised surface structure"
+        }
+    ],
+    "bib": [
+        {
+            "id": "6e969e87-70b6-4d13-bcff-a087e4b2b924",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1pc3j0n/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1ms45s9/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

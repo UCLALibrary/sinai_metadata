@@ -1,0 +1,108 @@
+{
+    "ark": "ark:/21198/z18d059m",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 59",
+    "extent": "12 ff.",
+    "dim": "105 x 92 x 17 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "coll": "Quire 1: 1x6 (6), 3x2 (12)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "105 x 92 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s13p6s",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1j06x",
+                    "label": "Georgian Undertext: Hymns",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–12"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Consecutive foliation in lower right corner is followed here; some folios carry alternate foliation in pencil (not followed)"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Binding absent"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "One quire and three bifolios, unbound | All folios are incomplete at lower margin and severely cockled"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 418"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz18d059m/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1p84d1s/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

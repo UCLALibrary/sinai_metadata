@@ -1,0 +1,144 @@
+{
+    "ark": "ark:/21198/z1kp8b5g",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF MG 29",
+    "extent": "42 ff.",
+    "dim": "200 x 154 x 24 mm",
+    "state": {
+        "id": "folio",
+        "label": "Folio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "200 x 154 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1r63q",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1kh1h",
+                    "label": "Greek Undertext: Bible. Psalms",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–2"
+                },
+                {
+                    "id": "ark:/21198/s1fp78",
+                    "label": "Greek Undertext: Bible. Matthew",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "throughout ff. 1–46"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Cataloging and imaging follows current sequence of folios as found in February 2014; alternate foliations are indicated for each folio"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "For the complete folios, there are different foliation systems in pencil, all incomplete and not corresponding to current sequence; the last two folios carry no foliation"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The handwritten catalogers' notes in the cardboard manuscript wrapping yield no relevant information regarding foliation; the sleeves which contain the fragments are numbered 1 to 46"
+        },
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Burn marks; many folios badly eaten | All folios were pressed and flattened, some have white fibers attached"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Mostly single folios, some bifolios"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The cardboard wrapping contained an envelope of fragments of various sizes | In February 2014, large fragments from the envelope were placed in acrylic sleeves (frags. 1-25); small fragments were first placed in paper sleeves, then in acrylic sleeves (26-46)"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 146, pl. 62 "
+        },
+        {
+            "id": "757c5dad-a4c0-4c61-a5ab-66c5ebb30a54",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1kp8b5g/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz19p34sp/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

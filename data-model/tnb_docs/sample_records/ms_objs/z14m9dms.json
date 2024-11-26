@@ -1,0 +1,126 @@
+{
+    "ark": "ark:/21198/z14m9dms",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Georgian NF M 84",
+    "extent": "7 ff.",
+    "state": {
+        "id": "bifolio",
+        "label": "Bifolio(s)"
+    },
+    "coll": "1+2+2+2 (7)",
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "155 x 120 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1qc9d",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1c92z",
+                    "label": "Georgian Undertext: Psalter",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 6–7"
+                },
+                {
+                    "id": "ark:/21198/s17h1d",
+                    "label": "Georgian Undertext: Khanmeti Mravaltavi",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–5"
+                },
+                {
+                    "id": "ark:/21198/s13s76",
+                    "label": "Georgian Undertext: Life of St. Febronia",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 6–7"
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Originally formed one unit with Georgian NF M 90",
+                    "mss": [
+                        {
+                            "label": "Sinai Georgian NF M 90",
+                            "id": "ark:/21198/z1tb24tz"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Loose bifolios and one singleton folio, all fragmented"
+        }
+    ],
+    "bib": [
+        {
+            "id": "087ba7ab-401c-4edc-b474-7b86bc83cbce",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 430"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz14m9dms/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1qz2cw1/0,1022,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

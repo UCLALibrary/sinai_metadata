@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/z1xw7vf2",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Syriac NF M 46",
+    "extent": "20 ff.",
+    "weight": "85.1 g",
+    "dim": "177 x 113 x 33.0 mm",
+    "state": {
+        "id": "quire",
+        "label": "Quire(s)"
+    },
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "layer": [
+                {
+                    "id": "ark:/21198/s16w6s",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                }
+            ],
+            "related_mss": [
+                {
+                    "type": {
+                        "id": "disjecta",
+                        "label": "Disjecta Membra"
+                    },
+                    "label": "Belongs with Syriac NF M 10, Syriac NF frag 26, and Syriac NF frag 54",
+                    "mss": [
+                        {
+                            "label": "Sinai Syriac NF M 10",
+                            "id": "ark:/21198/z1hb0xc3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "bib": [
+        {
+            "id": "f3536560-fc15-43db-82b5-0861b86a1107",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M46N], pp. 73-74"
+        },
+        {
+            "id": "b1a3a9c9-ed90-440a-9e37-fade7a17796d",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "[M46N], pp. 182-183"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://iiif.library.ucla.edu/ark%3A%2F21198%2Fz1xw7vf2/manifest",
+            "text_direction": "right-to-left",
+            "behavior": "paged",
+            "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1xw7vf2%2Fp941cm16/full/!200,200/0/default.jpg"
+        }
+    ]
+}

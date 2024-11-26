@@ -1,0 +1,92 @@
+{
+    "ark": "ark:/21198/z1w385bk",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Greek NF M 98",
+    "extent": "2 ff.",
+    "state": {
+        "id": "bifolio",
+        "label": "Bifolio(s)"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "136 x 113 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1hp6h",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1cw5z",
+                    "label": "Greek Undertext: Bible. Luke",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 1–2"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "condition",
+                "label": "Condition Note"
+            },
+            "value": "Detached bifolio; irregular margin at the top"
+        }
+    ],
+    "bib": [
+        {
+            "id": "31086588-c563-4dca-b793-d9e4cbdc887b",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            },
+            "range": "p. 173"
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1w385bk/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz14t6jxd/1022,0,6132,6132/150,150/0/default.jpg"
+        }
+    ]
+}

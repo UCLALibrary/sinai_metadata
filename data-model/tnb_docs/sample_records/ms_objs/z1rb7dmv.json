@@ -1,0 +1,124 @@
+{
+    "ark": "ark:/21198/z1rb7dmv",
+    "reconstruction": false,
+    "type": {
+        "id": "manuscript",
+        "label": "Manuscript"
+    },
+    "shelfmark": "Sinai Slavonic NF M 3",
+    "extent": "151 ff.",
+    "dim": "89 x 79 mm",
+    "state": {
+        "id": "codex",
+        "label": "Codex"
+    },
+    "features": [
+        {
+            "id": "palimpsest",
+            "label": "Palimpsest"
+        },
+        {
+            "id": "msi",
+            "label": "Multispectral Imaging"
+        }
+    ],
+    "part": [
+        {
+            "label": "Codicological Unit",
+            "support": [
+                {
+                    "id": "parchment",
+                    "label": "Parchment"
+                }
+            ],
+            "dim": "89 x 79 mm (representative folio)",
+            "layer": [
+                {
+                    "id": "ark:/21198/s1c037",
+                    "label": "Overtext Layer",
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    }
+                },
+                {
+                    "id": "ark:/21198/s1906r",
+                    "label": "Church Slavonic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 141a, stub-141a, 141b, stub-141b, 141c, stub-141c"
+                },
+                {
+                    "id": "ark:/21198/s15923",
+                    "label": "Church Slavonic Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "ff. 141av, 141bv, stub-141br"
+                },
+                {
+                    "id": "ark:/21198/s11h05",
+                    "label": "Latin Undertext: Unidentified text",
+                    "type": {
+                        "id": "undertext",
+                        "label": "Undertext"
+                    },
+                    "locus": "f. 141av"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "id": "sinai-nf",
+            "collection": "New Finds",
+            "repository": "St. Catherine's Monastery of the Sinai"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Foliated in pencil, ff. 141a-141c; the last three folios are unnumbered and are identified by their conjoin and preceded by a minus sign, for example -141ar (recto) or -141av (verso)"
+        },
+        {
+            "type": {
+                "id": "binding",
+                "label": "Binding Note"
+            },
+            "value": "Leather on wood. Lower board fragmentary; damaged spine"
+        },
+        {
+            "type": {
+                "id": "collation",
+                "label": "Collation Note"
+            },
+            "value": "Unsewn palimpsest quire of three bifolios of smaller size, inserted after fol. 141: 1x6 (6)"
+        }
+    ],
+    "bib": [
+        {
+            "id": "03f2516b-1a60-4cb9-89de-24c655df4020",
+            "type": {
+                "id": " ref",
+                "label": "Reference"
+            }
+        }
+    ],
+    "iiif": [
+        {
+            "type": {
+                "id": "main",
+                "label": "Main"
+            },
+            "manifest": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1rb7dmv/manifest",
+            "behavior": "paged",
+            "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz1g44s4f/0,902,5412,5412/150,150/0/default.jpg"
+        }
+    ]
+}
