@@ -1,7 +1,7 @@
 {
     "ark": "ark:/21198/ten0p1ul2t1",
     "reconstruction": false,
-    "label": "Genesis",
+    "label": "Asceticon",
     "locus": "ff. 131-132, 138, 140-142",
     "lang": [
         {
@@ -12,7 +12,7 @@
     "work_wit": [
         {
             "work": {
-                "id": "ark:/21198/s1488q"
+                "id": "ark:/21198/s1501m"
             },
             "locus": "ff. 131-132, 138, 140-142",
             "note": [
