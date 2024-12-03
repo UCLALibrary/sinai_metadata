@@ -468,6 +468,13 @@
         },
         {
             "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decoration on Back Board Inside, triangle with radiating lines"
+        },
+        {
+            "type": {
                 "id": "para",
                 "label": "Paracontent Note"
             },
