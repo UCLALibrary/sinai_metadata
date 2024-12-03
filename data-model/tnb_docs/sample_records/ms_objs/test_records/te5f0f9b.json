@@ -231,7 +231,8 @@
                     }, 
                     "label": "Disjecta Membra from the final quire", 
                     "note": [ 
-                        "The last 4 folios are today Biblioteca Ambrosiana, A 296 inf., ff. 70–73 = Chabot 20 (4 ff.) + Mingana Syr. 632 (1 f.)" 
+                        "The last 4 folios are today Biblioteca Ambrosiana, A 296 inf., ff. 70–73 = Chabot 20 (4 ff.) + Mingana Syr. 632 (1 f.)" ,
+                        "Identification of disjecta membra by Rossetto"
                     ], 
                     "mss": [
                         { 
@@ -509,7 +510,8 @@
                 } 
             ], 
             "note": [ 
-                "This is a dummy note for dev purposes" 
+                "This is a dummy note for dev purposes" ,
+                "Otherwise largely lost"
             ] 
         } 
     ], 
