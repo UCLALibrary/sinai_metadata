@@ -20,7 +20,8 @@
             ], 
             "locus": "ff. 3r-54v", 
             "note": [ 
-                "Melkite with Estrangela aleph" 
+                "Melkite with Estrangela aleph" ,
+                "Section headings written with Estrangela"
             ] 
         } ,
         {
@@ -50,10 +51,13 @@
         {
             "locus": "ff. 45v-54v",
             "color": [
-                "black"
+                "black",
+                "yellow",
+                "red"
             ],
             "note": [
-                "Rubrication throughout"
+                "Occasional words highlighted in yellow",
+                "Initials and titles in red"
             ]
         }
     ], 
@@ -64,7 +68,8 @@
             "lines": "15", 
             "dim": "Writing area: 215 x 140 mm", 
             "note": [ 
-                "Possible pricking still visible in outer margins throughout" 
+                "Possible pricking still visible in outer margins throughout" ,
+                "Text written inside bordered margins"
             ] 
         } ,
         {
