@@ -139,6 +139,13 @@
                 "label": "General Note"
             },
             "value": "This is a general note about the text unit"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Each Gospel is preceded by a prologue, composed by the scribe, summarizing the Gospel and its purposes for edification"
         }
     ],
     "bib": [

@@ -86,6 +86,13 @@
                 "label": "Other Notes"
             },
             "value": "Manicule emerging from a decorated initial, f. 175r"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Possible colophon, f. 139, mostly illegible"
         }
     ], 
     "bib": [
