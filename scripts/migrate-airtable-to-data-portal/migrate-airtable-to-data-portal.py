@@ -36,6 +36,10 @@ def transform_row_to_json(row, record_type):
     else:
         data["label"] = str(row["Label"])
     
+    # add locus for layers and text_units
+    if record_type != "ms_objs" and not(pd.isnull(row["Locus"])):
+        data["locus"] = str(row["Locus"])
+    
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
@@ -49,12 +53,22 @@ def transform_row_to_json(row, record_type):
     if record_type == "ms_objs" and not(pd.isnull(row["MS Dimensions"])):
         data["dim"] = str(row["MS Dimensions"])
     
+    # TBD: reordering of fields in layers schema?
     if record_type == "ms_objs" or record_type == "layers":
         data["state"] = {
             "id": str(row["State ID"]), 
             "label": str(row["State Label"])
         }
     
+    # TBD: writing
+    if record_type == "layers":
+        data["writing"] = [create_writing_from_row(row)]
+    # TBD: ink
+    # TBD: layout
+    # TBD: text_units for layers
+    # TBD: scribe assoc_name
+    # TBD: origin assoc_place
+    # TBD: origin assoc_date
     
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
@@ -497,6 +511,25 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
         bibs.append(bib_data)
     return bibs
 
+def create_writing_from_row(row: pd.Series):
+    writing = {}
+    scripts = []
+    script_ids = parse_rolled_up_field(str(row["Script ID"]), ',', "#")
+    script_labels = parse_rolled_up_field(str(row["Script Label"]), ',', "#")
+    writing_systems = parse_rolled_up_field(str(row["Writing System"]), ',', "#")
+    for i in range(0, len(script_ids)):
+        obj = {}
+        obj["id"] = script_ids[i]
+        obj["label"] = script_labels[i]
+        obj["writing_system"] = writing_systems[i]
+        scripts.append(obj)
+    writing["script"] = scripts
+
+    if not(pd.isnull(row["Writing Locus"])):
+        writing["locus"] = str(row["Writing Locus"])
+    if not(pd.isnull(row["Writing Note"])):
+        writing["note"] = str(row["Writing Note"])
+    return writing
 
 # UTILITY FUNCTIONS
 
