@@ -60,10 +60,15 @@ def transform_row_to_json(row, record_type):
             "label": str(row["State Label"])
         }
     
-    # TBD: writing
+    # For layers, create writing array of objects
     if record_type == "layers":
         data["writing"] = [create_writing_from_row(row)]
-    # TBD: ink
+    
+    # For layers, create ink object
+    # TBD: for boolean, would we have locus or notes if not ink color?
+    if record_type == "layers" and not(pd.isnull(row["Ink Color"])):
+        data["ink"] = [create_ink_from_row(row)]
+
     # TBD: layout
     # TBD: text_units for layers
     # TBD: scribe assoc_name
@@ -215,8 +220,8 @@ def transform_row_to_json(row, record_type):
     """
 
      Left to write for layers:
-    - [ ] writing (script, script label, locus, notes)
-    - [ ] ink color and notes, and locus
+    - [x] writing (script, script label, locus, notes)
+    - [x] ink color and notes, and locus
     - [ ] layout (columns, lines, notes)
     - [ ] text unit object (reuse algorithm from ms_obj.layers)
     - [ ] colophon (make it a generic paracontent function), sub function for all record types?
@@ -528,8 +533,18 @@ def create_writing_from_row(row: pd.Series):
     if not(pd.isnull(row["Writing Locus"])):
         writing["locus"] = str(row["Writing Locus"])
     if not(pd.isnull(row["Writing Note"])):
-        writing["note"] = str(row["Writing Note"])
+        writing["note"] = parse_rolled_up_field(str(row["Writing Note"]), '|~|', "#")
     return writing
+
+def create_ink_from_row(row: pd.Series):
+    ink = {}
+    if not(pd.isnull(row["Ink Locus"])):
+        ink["locus"] = str(row["Ink Locus"])
+    if not(pd.isnull(row["Ink Color"])):
+        ink["color"] = parse_rolled_up_field(str(row["Ink Color"]), "|~|", "#")
+    if not(pd.isnull(row["Ink Note"])):
+        ink["note"] = parse_rolled_up_field(str(row["Ink Note"]), "|~|", "#")
+    return ink
 
 # UTILITY FUNCTIONS
 
