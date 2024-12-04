@@ -69,7 +69,11 @@ def transform_row_to_json(row, record_type):
     if record_type == "layers" and not(pd.isnull(row["Ink Color"])):
         data["ink"] = [create_ink_from_row(row)]
 
-    # TBD: layout
+    # For layers, create layout objects
+    # If any of the fields are non-empty, create the object
+    if record_type == "layers" and (not(pd.isnull(row["Layout Columns"])) or not(pd.isnull(row["Layout Lines"])) or not(pd.isnull(row["Layout Note"])) or  not(pd.isnull(row["Layout Locus"])) or not(pd.isnull(row["Layout Dimensions"]))):
+        data["layout"] = [create_layout_from_row(row)]
+
     # TBD: text_units for layers
     # TBD: scribe assoc_name
     # TBD: origin assoc_place
@@ -222,7 +226,7 @@ def transform_row_to_json(row, record_type):
      Left to write for layers:
     - [x] writing (script, script label, locus, notes)
     - [x] ink color and notes, and locus
-    - [ ] layout (columns, lines, notes)
+    - [x] layout (columns, lines, notes)
     - [ ] text unit object (reuse algorithm from ms_obj.layers)
     - [ ] colophon (make it a generic paracontent function), sub function for all record types?
     - [ ] assoc_name for scribe (implied type)
@@ -545,6 +549,20 @@ def create_ink_from_row(row: pd.Series):
     if not(pd.isnull(row["Ink Note"])):
         ink["note"] = parse_rolled_up_field(str(row["Ink Note"]), "|~|", "#")
     return ink
+
+def create_layout_from_row(row: pd.Series):
+    layout = {}
+    if not(pd.isnull(row["Layout Locus"])):
+        layout["locus"] = str(row["Layout Locus"])
+    if not(pd.isnull(row["Layout Columns"])):
+        layout["columns"] = str(row["Layout Columns"])
+    if not(pd.isnull(row["Layout Lines"])):
+        layout["lines"] = str(row["Layout Lines"])
+    if not(pd.isnull(row["Layout Dimensions"])):
+        layout["dim"] = str(row["Layout Dimensions"])
+    if not(pd.isnull(row["Layout Note"])):
+        layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
+    return layout
 
 # UTILITY FUNCTIONS
 

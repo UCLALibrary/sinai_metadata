@@ -18,7 +18,8 @@ Ink Locus
 Layout Locus
 Layout Columns
 Layout Lines
-Layout Notes
+Layout Dimensions
+Layout Note
 Feature ID
 Feature Labels
 Text Unit ARKs
