@@ -1,0 +1,45 @@
+Item ARK
+Reconstruction
+Label
+Locus
+Summary
+Extent
+State ID
+State Label
+Foliation note
+Script ID
+Script Label
+Writing System
+Writing Locus
+Writing Note
+Ink Color
+Ink Note
+Ink Locus
+Layout Locus
+Layout Columns
+Layout Lines
+Layout Notes
+Feature ID
+Feature Labels
+Text Unit ARKs
+Text Unit Labels
+Text Unit Locus
+Scribe
+Origin Date
+Origin Date ISO
+Origin Place
+Paracontent note
+Origin note
+Provenance note
+Contents note
+General note
+Ornamentation note
+Related MSS Level
+Related MSS Type
+Related MSS Type Label
+Related MSS Label
+Related MSS JSON
+Related MSS Note
+Reference Instances
+Reconstructed From
+Parent ARKs
