@@ -516,7 +516,16 @@ ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
 # TBD: check that all of the columns are present, or added, for a given record type
 # Report the mismatched fields and prompt user to continue
 csv_columns = csv_file.columns
-with open('ms_obj_fields.txt') as f:
+
+if record_type == "ms_objs":
+    columns_list_doc = 'ms_obj_fields.txt'
+elif record_type == "layers":
+    columns_list_doc = 'layer_fields.txt'
+elif record_type == "text_units":
+    columns_list_doc = 'text_units_fields.txt'
+
+
+with open(columns_list_doc) as f:
     expected_cols = f.read().splitlines()
 
 missing_columns = []
