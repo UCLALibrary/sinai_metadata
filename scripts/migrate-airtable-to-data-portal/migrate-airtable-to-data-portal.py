@@ -74,7 +74,7 @@ def transform_row_to_json(row, record_type):
     if record_type == "layers" and (not(pd.isnull(row["Layout Columns"])) or not(pd.isnull(row["Layout Lines"])) or not(pd.isnull(row["Layout Note"])) or  not(pd.isnull(row["Layout Locus"])) or not(pd.isnull(row["Layout Dimensions"]))):
         data["layout"] = [create_layout_from_row(row)]
 
-    # TBD: text_units for layers
+    # TBD: text_units for layers (ark, label, locus)
     # TBD: scribe assoc_name
     # TBD: origin assoc_place
     # TBD: origin assoc_date
@@ -235,13 +235,13 @@ def transform_row_to_json(row, record_type):
             - make generic, so callable from para function as well, with optional passed type
     - [ ] assoc_place for place of origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
-    - [ ] notes for layers
-        - [ ] ornamentation
-        - [ ] contents
-        - [ ] provenance
-        - [ ] paracontent
-        - [ ] general
-        - [ ] origin
+    - [x] notes for layers
+        - [x] ornamentation
+        - [x] contents
+        - [x] provenance
+        - [x] paracontent
+        - [x] general
+        - [x] origin
     - [ ] Contributor (in progress, check it works)
 
     UTOs
@@ -250,7 +250,7 @@ def transform_row_to_json(row, record_type):
         - and/or related note?
     - [ ] notes in UTOs
         - bib note? (reference notes)
-        - foliation note
+        - [x] foliation note
 
 
     - [ ] ? para (array: complex, sub-function) + ms_objs, text
@@ -456,7 +456,60 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     }
                 }
             ]
-    # TBD: add cols configurations for layers and text_units
+    # Column configurations for layer notes
+    # TBD: could make some 'generic' to reduce duplication here
+    if record_type == "layers":
+        cols += [
+            {
+                    "data": str(row["Origin note"]),
+                    "type": {
+                        "id": "origin",
+                        "label": "Origin Note"
+                    }
+                },
+                {
+                    "data": str(row["Provenance note"]),
+                    "type": {
+                        "id": "provenance",
+                        "label": "Provenance Note"
+                    }
+                },
+                {
+                    "data": str(row["Paracontent note"]),
+                    "type": {
+                        "id": "para",
+                        "label": "Paracontent Note"
+                    }
+                },
+                {
+                    "data": str(row["Foliation note"]),
+                    "type": {
+                        "id": "foliation",
+                        "label": "Foliation Note"
+                    }
+                },
+                {
+                    "data": str(row["Contents note"]),
+                    "type": {
+                        "id": "contents",
+                        "label": "Contents Note"
+                    }
+                },
+                {
+                    "data": str(row["Ornamentation note"]),
+                    "type": {
+                        "id": "ornamentation",
+                        "label": "Ornamentation Note"
+                    }
+                },
+                {
+                    "data": str(row["General note"]),
+                    "type": {
+                        "id": "general",
+                        "label": "Other Notes"
+                    }
+                }
+        ]
 
     return create_notes_from_specific_columns(cols)
 

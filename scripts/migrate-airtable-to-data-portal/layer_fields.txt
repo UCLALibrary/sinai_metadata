@@ -6,7 +6,6 @@ Summary
 Extent
 State ID
 State Label
-Foliation note
 Script ID
 Script Label
 Writing System
@@ -29,9 +28,10 @@ Scribe
 Origin Date
 Origin Date ISO
 Origin Place
-Paracontent note
 Origin note
+Paracontent note
 Provenance note
+Foliation note
 Contents note
 General note
 Ornamentation note
