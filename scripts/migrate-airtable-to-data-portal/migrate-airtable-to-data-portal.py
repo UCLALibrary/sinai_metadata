@@ -110,11 +110,12 @@ def transform_row_to_json(row, record_type):
     if "layer" in data and len(data["layer"]) == 0:
         data.pop("layer")
     
-    # TBD: a lot more to think about with this one...
-    # TBD: write the function...
-    """
-    data["para"] = create_paracontent_from_row(row)
-    """
+    # add paracontent stub, which may be removed later if none are created
+    data["para"] = []
+
+    # add colophons as paracontent objects for layers
+    if record_type == "layers" and not(pd.isnull(row["Colophon"])):
+        data["para"] += create_paracontent_from_row(row, "Colophon", paracontents_table)
 
     # TBD: has_bind -- waiting to see how the data will look
     if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
@@ -254,6 +255,9 @@ def transform_row_to_json(row, record_type):
     if record_type != "ms_objs":
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     
+    # Remove empty paracontents if no data was added
+    if "para" in data and len(data["par"]) == 0:
+        data.pop("para")
     # Remove empty assoc_* if no data was added to them
     if "assoc_date" in data and len(data["assoc_date"]) == 0:
         data.pop("assoc_date")
@@ -428,11 +432,146 @@ def create_text_unit_object(text_unit_data):
         text_units.append(text_unit)
     return text_units
 
-# TBD: actually write this function...
-def create_paracontent_from_row(row):
-    layer = []
-    return layer
+def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_table: pd.DataFrame):
+    paracontents = []
+    para_refs = pd.read_csv(StringIO(str(row[column_name])), header=None).iloc[0]
+    for id in para_refs:
+        para_data = {}
+        para_data["type"] = {
+            "id": str(paracontent_table.loc[int(id), "Type ID"]),
+            "label": str(paracontent_table.loc[int(id), "Type Label"])
+        }
+        if not(pd.isnull(paracontent_table.loc[int(id), "Locus"])):
+            para_data["locus"] = str(paracontent_table.loc[int(id), "Locus"])
+        
+        lang_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language ID"]), ",", '#')
+        lang_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language Label"]), ",", '#')
+        para_data["lang"] = []
+        for i in range(0, len(lang_ids)):
+            para_data["lang"].append(
+                {
+                    "id": lang_ids[i],
+                    "label": lang_labels[i]
+                }
+            )
+        
+        # script, optional. Array of objects
+        if not(pd.isnull(paracontent_table.loc[int(id), "Script ID"])):
+            script_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script ID"]), ",", '#')
+            script_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script Label"]), ",", '#')
+            writing_systems = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Writing System"]), ",", '#')
+            para_data["script"] = []
+            for i in range(0, len(script_ids)):
+                para_data["script"].append(
+                    {
+                        "id": script_ids[i],
+                        "label": script_labels[i],
+                        "writing_system": writing_systems[i]
+                    }
+                )
 
+        if not(pd.isnull(paracontent_table.loc[int(id), "Label"])):
+            para_data["label"] = str(paracontent_table.loc[int(id), "Label"])
+        
+        if not(pd.isnull(paracontent_table.loc[int(id), "As Written"])):
+            para_data["as_written"] = str(paracontent_table.loc[int(id), "As Written"])
+
+        # translation: optional, array of strings
+        if not(pd.isnull(paracontent_table.loc[int(id), "Translation"])):
+            para_data["translation"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Translation"], "|~|", "#")
+        
+        # assoc_*: optional, array of objects, need to be created via other function
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Name Role ID"])):
+            para_data["assoc_name"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_name")
+        
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Place Event ID"])):
+            para_data["assoc_place"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_place")
+
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Date Type ID"])):
+            para_data["assoc_date"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_date")
+
+
+        # note: optional, array of strings
+        if not(pd.isnull(paracontent_table.loc[int(id), "Notes"])):
+            para_data["note"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Notes"], "|~|", "#")
+        
+        paracontents.append(para_data)
+
+    return paracontents
+
+def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
+    data = []
+    sep = "\|~\|"
+    quotechar = "#"
+    # assoc_name and assoc_place share most similarities
+    if assoc_type == "assoc_name" or assoc_type == "assoc_place":
+        # set the column prefix
+        if assoc_type == "assoc_name":
+            col_prefix = "Associated Name "
+            # parse role id and labels (as 'type')
+            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Role ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Role Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            
+        elif assoc_type == "assoc_place":
+            col_prefix = "Associated Place "
+            # parse event id and labels (as 'type')
+            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Event ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Event Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        
+        # parse arks, supply empty strings if the cell is blank
+        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        if len(arks) == 0:
+            for i in range(0, len(type_ids)):
+                arks.append("")
+        
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        if len(as_written) == 0:
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+
+        notes = [] #TBD: notes are tricky...is it one-to-one?
+
+        for i in range(0, len(type_ids)):
+            if assoc_type == "assoc_name":
+                data.append(create_associated_name(
+                    id=arks[i],
+                    as_written=as_written[i],
+                    role={"id": type_ids[i], "label": type_labels[i]},
+                    note=notes
+                ))
+            elif assoc_type == "assoc_place":
+                data.append(create_associated_place(
+                    id=arks[i],
+                    as_written=as_written[i],
+                    event={"id": type_ids[i], "label": type_labels[i]},
+                    note=notes[i]
+                ))
+    elif assoc_type == "assoc_date":
+        col_prefix = "Associated Date "
+        type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Type ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Type Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        if len(as_written) == 0:
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        if len(iso) == 0:
+            for i in range(0, len(type_ids)):
+                arks.append("")
+        
+        notes = [] # TBD: not sure yet about notes...
+        for i in range(0, len(type_ids)):
+            data.append(create_associated_date(
+                type={"id": type_ids[i], "label": type_labels[i]},
+                as_written=as_written[i],
+                value=values[i],
+                iso=iso[i],
+                note=notes[i]
+                )
+            )
+    return data
+    
 # takes a row (pandas Series); record_type string; and a boolean indicating whether the context is ms_obj.part or not
 # uses the record type and is_part to determine which columns to pass to the function that creates the typed note fields
 def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
@@ -771,6 +910,9 @@ except ValueError:
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
 path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field:")
 ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
+
+path_to_paracontents_csv = input("Please input a path to the CSV containing the paracontents info for creating the paracontents field:")
+paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
 
 # TBD: check that all of the columns are present, or added, for a given record type
 # Report the mismatched fields and prompt user to continue
