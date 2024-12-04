@@ -201,8 +201,37 @@ def transform_row_to_json(row, record_type):
     """
 
      Left to write for layers:
-    - [ ] TBD
-    - [ ] ? para (array: complex, sub-function) + ms_objs, text     """
+    - [ ] writing (script, script label, locus, notes)
+    - [ ] ink color and notes, and locus
+    - [ ] layout (columns, lines, notes)
+    - [ ] text unit object (reuse algorithm from ms_obj.layers)
+    - [ ] colophon (make it a generic paracontent function), sub function for all record types?
+    - [ ] assoc_name for scribe (implied type)
+        - make generic, so callable from para function as well, with optional passed type
+    - [ ] assoc_date for origin (implied type)
+            - make generic, so callable from para function as well, with optional passed type
+    - [ ] assoc_place for place of origin (implied type)
+            - make generic, so callable from para function as well, with optional passed type
+    - [ ] notes for layers
+        - [ ] ornamentation
+        - [ ] contents
+        - [ ] provenance
+        - [ ] paracontent
+        - [ ] general
+        - [ ] origin
+    - [ ] Contributor (in progress, check it works)
+
+    UTOs
+    - [ ] locus
+    - [ ] related_mss at layer level?
+        - and/or related note?
+    - [ ] notes in UTOs
+        - bib note? (reference notes)
+        - foliation note
+
+
+    - [ ] ? para (array: complex, sub-function) + ms_objs, text
+              """
     return data
 
 def create_part_from_row(row: pd.Series):
