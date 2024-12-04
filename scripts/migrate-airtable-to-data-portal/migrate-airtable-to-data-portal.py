@@ -147,8 +147,16 @@ def transform_row_to_json(row, record_type):
             iso=str(row["Origin Date ISO"]),
             note=[]
         ))
-    # add assoc_name for scribe
-    # if record_type == "layers" and not(pd.isnull(row["Scribe"])):
+    # add assoc_name for scribes
+    # TBD if we want additional data about the scribes other than agent ark
+    if record_type == "layers" and not(pd.isnull(row["Scribe"])):
+        for scribe_ark in parse_rolled_up_field(str(row["Scribe"]), ",", "#"):
+            data["assoc_name"].append(create_associated_name(
+                id=scribe_ark,
+                as_written="",
+                role={"id": "scribe", "label": "Scribe"},
+                note=[]
+            ))
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -252,7 +260,7 @@ def transform_row_to_json(row, record_type):
     - [x] layout (columns, lines, notes)
     - [ ] text unit object (reuse algorithm from ms_obj.layers)
     - [ ] colophon (make it a generic paracontent function), sub function for all record types?
-    - [ ] assoc_name for scribe (implied type)
+    - [x] assoc_name for scribe (implied type)
         - make generic, so callable from para function as well, with optional passed type
     - [x] assoc_date for origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
@@ -663,6 +671,16 @@ def create_associated_date(type: object, as_written: str, value: str, iso: str, 
         date["note"] = note
     
     return date
+
+def create_associated_name(id: str, as_written: str, role: object, note: list):
+    name = {}
+    name["id"] = id
+    if as_written != "":
+        name["as_written"] = as_written
+    name["role"] = role
+    if len(note) > 0:
+        name["note"] = note
+    return name
 
 # UTILITY FUNCTIONS
 
