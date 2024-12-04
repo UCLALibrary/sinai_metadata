@@ -157,6 +157,16 @@ def transform_row_to_json(row, record_type):
                 role={"id": "scribe", "label": "Scribe"},
                 note=[]
             ))
+    # add assoc_place for origin place
+    # TBD if we want additional data about the place other than place ark
+    if record_type == "layers" and not(pd.isnull(row["Origin Place"])):
+        for origin_place_ark in parse_rolled_up_field(str(row["Origin Place"]), ",", "#"):
+            data["assoc_place"].append(create_associated_place(
+                id=origin_place_ark,
+                as_written="",
+                event={"id": "origin", "label": "Place of Origin"},
+                note=[]
+            ))
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -264,7 +274,7 @@ def transform_row_to_json(row, record_type):
         - make generic, so callable from para function as well, with optional passed type
     - [x] assoc_date for origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
-    - [ ] assoc_place for place of origin (implied type)
+    - [x] assoc_place for place of origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
     - [x] notes for layers
         - [x] ornamentation
@@ -681,6 +691,16 @@ def create_associated_name(id: str, as_written: str, role: object, note: list):
     if len(note) > 0:
         name["note"] = note
     return name
+
+def create_associated_place(id: str, as_written: str, event: object, note: list):
+    place = {}
+    place["id"] = id
+    if as_written != "":
+        place["as_written"] = as_written
+    place["event"] = event
+    if len(note) > 0:
+        place["note"] = note
+    return place
 
 # UTILITY FUNCTIONS
 
