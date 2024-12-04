@@ -133,7 +133,22 @@ def transform_row_to_json(row, record_type):
 
         data["location"] = [location]
     
-    # TBD: assoc_* -- are these even necessary?
+    # Add stub assoc_*; these will be added to or deleted if they remain empty
+    data["assoc_date"] = []
+    data["assoc_name"] = []
+    data["assoc_place"] = []
+
+    # add assoc_date for origin date in layers
+    if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
+        data["assoc_date"].append(create_associated_date(
+            type= {"id": "origin", "label": "Date of Origin"},
+            as_written="",
+            value=str(row["Origin Date"]),
+            iso=str(row["Origin Date ISO"]),
+            note=[]
+        ))
+    # add assoc_name for scribe
+    # if record_type == "layers" and not(pd.isnull(row["Scribe"])):
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -221,6 +236,14 @@ def transform_row_to_json(row, record_type):
     # Parent, for records that are not ms_objs
     if record_type != "ms_objs":
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
+    
+    # Remove empty assoc_* if no data was added to them
+    if "assoc_date" in data and len(data["assoc_date"]) == 0:
+        data.pop("assoc_date")
+    if "assoc_name" in data and len(data["assoc_name"]) == 0:
+        data.pop("assoc_name")
+    if "assoc_place" in data and len(data["assoc_place"]) == 0:
+        data.pop("assoc_place")
     """
 
      Left to write for layers:
@@ -231,7 +254,7 @@ def transform_row_to_json(row, record_type):
     - [ ] colophon (make it a generic paracontent function), sub function for all record types?
     - [ ] assoc_name for scribe (implied type)
         - make generic, so callable from para function as well, with optional passed type
-    - [ ] assoc_date for origin (implied type)
+    - [x] assoc_date for origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
     - [ ] assoc_place for place of origin (implied type)
             - make generic, so callable from para function as well, with optional passed type
@@ -245,8 +268,9 @@ def transform_row_to_json(row, record_type):
     - [ ] Contributor (in progress, check it works)
 
     UTOs
-    - [ ] locus
+    - [x] locus
     - [ ] related_mss at layer level?
+        - already implemented, just needs to be added to the data
         - and/or related note?
     - [ ] notes in UTOs
         - bib note? (reference notes)
@@ -616,6 +640,29 @@ def create_layout_from_row(row: pd.Series):
     if not(pd.isnull(row["Layout Note"])):
         layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
     return layout
+
+def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
+    date = {}
+    date["type"] = type
+    date["value"] = value
+    
+    not_before = iso.split("/")[0]
+    if len(iso.split("/")) > 1:
+        not_after = iso.split("/")[1]
+    else:
+        not_after = ""
+    date["iso"] = {}
+    date["iso"]["not_before"] = not_before.zfill(4)
+    # only add not_after property if the ISO date is a range
+    if not_after != "":
+        date["iso"]["not_after"] = not_after.zfill(4)
+
+    if as_written != "":
+        date["as_written"] = as_written
+    if len(note) > 0:
+        date["note"] = note
+    
+    return date
 
 # UTILITY FUNCTIONS
 
