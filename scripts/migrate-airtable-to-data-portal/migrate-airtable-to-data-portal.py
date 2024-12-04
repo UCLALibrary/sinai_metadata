@@ -74,10 +74,9 @@ def transform_row_to_json(row, record_type):
     if record_type == "layers" and (not(pd.isnull(row["Layout Columns"])) or not(pd.isnull(row["Layout Lines"])) or not(pd.isnull(row["Layout Note"])) or  not(pd.isnull(row["Layout Locus"])) or not(pd.isnull(row["Layout Dimensions"]))):
         data["layout"] = [create_layout_from_row(row)]
 
-    # TBD: text_units for layers (ark, label, locus)
-    # TBD: scribe assoc_name
-    # TBD: origin assoc_place
-    # TBD: origin assoc_date
+    # Add text_unit object to layers
+    if record_type == "layers":
+        data["text_unit"] = create_text_unit_reference_from_row(row)
     
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
@@ -268,7 +267,7 @@ def transform_row_to_json(row, record_type):
     - [x] writing (script, script label, locus, notes)
     - [x] ink color and notes, and locus
     - [x] layout (columns, lines, notes)
-    - [ ] text unit object (reuse algorithm from ms_obj.layers)
+    - [x] text unit object (reuse algorithm from ms_obj.layers)
     - [ ] colophon (make it a generic paracontent function), sub function for all record types?
     - [x] assoc_name for scribe (implied type)
         - make generic, so callable from para function as well, with optional passed type
@@ -401,6 +400,33 @@ def create_layer_object(layer_data, type):
         
         layers.append(layer)
     return layers
+
+def create_text_unit_reference_from_row(row):
+    # reusing the get_layer_data function since the same info is required
+    text_unit_data = get_layer_data(arks=str(row["Text Unit ARKs"]),
+                                    labels=str(row["Text Unit Labels"]),
+                                    locus=str(row["Text Unit Locus"]),
+                                    sep="\|~\|",
+                                    quotechar="#")
+    # TBD: could make the create_*_object function more generic by giving 'type' as optional param
+    return create_text_unit_object(text_unit_data)
+    
+
+def create_text_unit_object(text_unit_data):
+    text_units = []
+    for i in range(0, len(text_unit_data["arks"])):
+        if text_unit_data["arks"][i] == "" or text_unit_data["arks"][i] == "nan":
+            continue
+        text_unit = {}
+        text_unit["id"] = text_unit_data["arks"][i]
+        text_unit["label"] = text_unit_data["labels"][i]
+
+        # add locus only if it exists for this pairing
+        if "locus" in text_unit_data and text_unit_data["locus"][i] != "<NA>" and text_unit_data["locus"][i] != "nan" and text_unit_data["locus"][i] != "":
+            text_unit["locus"] = text_unit_data["locus"][i]
+        
+        text_units.append(text_unit)
+    return text_units
 
 # TBD: actually write this function...
 def create_paracontent_from_row(row):
