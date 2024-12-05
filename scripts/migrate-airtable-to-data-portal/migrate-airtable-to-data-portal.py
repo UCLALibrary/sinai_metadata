@@ -272,7 +272,7 @@ def transform_row_to_json(row, record_type):
     - [x] ink color and notes, and locus
     - [x] layout (columns, lines, notes)
     - [x] text unit object (reuse algorithm from ms_obj.layers)
-    - [ ] colophon (make it a generic paracontent function), sub function for all record types?
+    - [x] colophon (make it a generic paracontent function), sub function for all record types?
     - [x] assoc_name for scribe (implied type)
         - make generic, so callable from para function as well, with optional passed type
     - [x] assoc_date for origin (implied type)
@@ -533,7 +533,14 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             for i in range(0, len(type_ids)):
                 as_written.append("")
 
-        notes = [] #TBD: notes are tricky...is it one-to-one?
+        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
+        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            notes = []
+            for i in range(0, len(type_ids)):
+                notes.append("")
+
 
         for i in range(0, len(type_ids)):
             if assoc_type == "assoc_name":
@@ -541,25 +548,28 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
                     id=arks[i],
                     as_written=as_written[i],
                     role={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes
+                    note=notes[i]
                 ))
             elif assoc_type == "assoc_place":
                 data.append(create_associated_place(
                     id=arks[i],
                     as_written=as_written[i],
                     event={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes
+                    note=notes[i]
                 ))
     elif assoc_type == "assoc_date":
         col_prefix = "Associated Date "
         type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Type ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
         type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Type Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        if len(as_written) == 0:
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            as_written = []
             for i in range(0, len(type_ids)):
                 as_written.append("")
-        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        if len(values) <= 1 and values[0] == 'nan':
+        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
             values = []
             for i in range(0, len(type_ids)):
                 values.append("")
@@ -575,8 +585,14 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             as_written = []
             for i in range(0, len(type_ids)):
                 as_written.append("")
-
-        notes = [] # TBD: not sure yet about notes...
+        
+        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
+        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            notes = []
+            for i in range(0, len(type_ids)):
+                notes.append("")
 
         for i in range(0, len(type_ids)):
             data.append(create_associated_date(
@@ -584,7 +600,7 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
                 as_written=str(as_written[i]),
                 value=str(values[i]),
                 iso=str(iso[i]),
-                note=notes
+                note=notes[i]
                 )
             )
             
