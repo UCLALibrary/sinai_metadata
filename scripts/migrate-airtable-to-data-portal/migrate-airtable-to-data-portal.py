@@ -256,7 +256,7 @@ def transform_row_to_json(row, record_type):
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     
     # Remove empty paracontents if no data was added
-    if "para" in data and len(data["par"]) == 0:
+    if "para" in data and len(data["para"]) == 0:
         data.pop("para")
     # Remove empty assoc_* if no data was added to them
     if "assoc_date" in data and len(data["assoc_date"]) == 0:
@@ -519,13 +519,17 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Event Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
         
         # parse arks, supply empty strings if the cell is blank
-        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        if len(arks) == 0:
+        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(arks) <= 1 and arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            arks = []
             for i in range(0, len(type_ids)):
                 arks.append("")
         
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        if len(as_written) == 0:
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            as_written = []
             for i in range(0, len(type_ids)):
                 as_written.append("")
 
@@ -544,7 +548,7 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
                     id=arks[i],
                     as_written=as_written[i],
                     event={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes[i]
+                    note=notes
                 ))
     elif assoc_type == "assoc_date":
         col_prefix = "Associated Date "
@@ -555,21 +559,35 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             for i in range(0, len(type_ids)):
                 as_written.append("")
         values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        if len(iso) == 0:
+        if len(values) <= 1 and values[0] == 'nan':
+            values = []
             for i in range(0, len(type_ids)):
-                arks.append("")
+                values.append("")
         
+        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        if len(iso) <= 1 and iso[0] == 'nan':
+            iso = []
+            for i in range(0, len(type_ids)):
+                iso.append("")
+
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        if len(as_written) <= 1 and as_written[0] == 'nan':
+            as_written = []
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+
         notes = [] # TBD: not sure yet about notes...
+
         for i in range(0, len(type_ids)):
             data.append(create_associated_date(
                 type={"id": type_ids[i], "label": type_labels[i]},
-                as_written=as_written[i],
-                value=values[i],
-                iso=iso[i],
-                note=notes[i]
+                as_written=str(as_written[i]),
+                value=str(values[i]),
+                iso=str(iso[i]),
+                note=notes
                 )
             )
+            
     return data
     
 # takes a row (pandas Series); record_type string; and a boolean indicating whether the context is ms_obj.part or not
@@ -823,22 +841,22 @@ def create_layout_from_row(row: pd.Series):
     if not(pd.isnull(row["Layout Note"])):
         layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
     return layout
-
 def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
     date = {}
     date["type"] = type
     date["value"] = value
     
-    not_before = iso.split("/")[0]
-    if len(iso.split("/")) > 1:
-        not_after = iso.split("/")[1]
-    else:
-        not_after = ""
-    date["iso"] = {}
-    date["iso"]["not_before"] = not_before.zfill(4)
-    # only add not_after property if the ISO date is a range
-    if not_after != "":
-        date["iso"]["not_after"] = not_after.zfill(4)
+    if iso != "":
+        not_before = iso.split("/")[0]
+        if len(iso.split("/")) > 1:
+            not_after = iso.split("/")[1]
+        else:
+            not_after = ""
+        date["iso"] = {}
+        date["iso"]["not_before"] = not_before.zfill(4)
+        # only add not_after property if the ISO date is a range
+        if not_after != "":
+            date["iso"]["not_after"] = not_after.zfill(4)
 
     if as_written != "":
         date["as_written"] = as_written
@@ -849,7 +867,8 @@ def create_associated_date(type: object, as_written: str, value: str, iso: str, 
 
 def create_associated_name(id: str, as_written: str, role: object, note: list):
     name = {}
-    name["id"] = id
+    if id != "":
+        name["id"] = id
     if as_written != "":
         name["as_written"] = as_written
     name["role"] = role
@@ -859,7 +878,8 @@ def create_associated_name(id: str, as_written: str, role: object, note: list):
 
 def create_associated_place(id: str, as_written: str, event: object, note: list):
     place = {}
-    place["id"] = id
+    if id != "":
+        place["id"] = id
     if as_written != "":
         place["as_written"] = as_written
     place["event"] = event
