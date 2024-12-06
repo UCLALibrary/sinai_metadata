@@ -47,6 +47,30 @@
             } 
         } 
     ], 
+    "assoc_name": [
+        {
+            "id": "ark:/21198/tev887",
+            "role": {
+                "id": "scribe",
+                "label": "Scribe"
+            },
+            "note": [
+                "Ephrem test record used for demo purposes"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "id": "ark:/21198/tesuryan",
+            "event": {
+                "id": "origin",
+                "label": "Origin Place"
+            },
+            "note": [
+                "Written in Deir al-Suryan"
+            ]
+        }
+    ],
     "related_mss": [
         {
             "type": {
@@ -72,7 +96,28 @@
                 "label": "Foliation" 
             }, 
             "value": "Folios in order of reconstructed undertext: 130v, 130r, 135v, 135r, 128v, 128r, 133r, 133v, 134r, 134v, 129r, 129v, 137v, 137r, 136r, 136v, 143r, 143v, 139v, 139r" 
-        } 
+        } ,
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Previous catalogs dated this manuscript to the 13th-14th c. CE"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Manicule emerging from a decorated initial, f. 175r"
+        },
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Possible colophon, f. 139, mostly illegible"
+        }
     ], 
     "bib": [
         {

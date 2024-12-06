@@ -116,9 +116,7 @@
         "ark:/21198/ten0p1ul2"
     ],
     "parent": [ 
-        "ark:/21198/ten02zkr" ,
-        "ark:/21198/ten0uto1",
-        "ark:/21198/ten0uto2"
+        "ark:/21198/tereconrebind" 
     ], 
     "internal": [ 
         "Test record for development purposes; please delete." 

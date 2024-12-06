@@ -36,6 +36,10 @@ def transform_row_to_json(row, record_type):
     else:
         data["label"] = str(row["Label"])
     
+    # add locus for layers and text_units
+    if record_type != "ms_objs" and not(pd.isnull(row["Locus"])):
+        data["locus"] = str(row["Locus"])
+    
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
@@ -49,12 +53,30 @@ def transform_row_to_json(row, record_type):
     if record_type == "ms_objs" and not(pd.isnull(row["MS Dimensions"])):
         data["dim"] = str(row["MS Dimensions"])
     
+    # TBD: reordering of fields in layers schema?
     if record_type == "ms_objs" or record_type == "layers":
         data["state"] = {
             "id": str(row["State ID"]), 
             "label": str(row["State Label"])
         }
     
+    # For layers, create writing array of objects
+    if record_type == "layers":
+        data["writing"] = [create_writing_from_row(row)]
+    
+    # For layers, create ink object
+    # TBD: for boolean, would we have locus or notes if not ink color?
+    if record_type == "layers" and not(pd.isnull(row["Ink Color"])):
+        data["ink"] = [create_ink_from_row(row)]
+
+    # For layers, create layout objects
+    # If any of the fields are non-empty, create the object
+    if record_type == "layers" and (not(pd.isnull(row["Layout Columns"])) or not(pd.isnull(row["Layout Lines"])) or not(pd.isnull(row["Layout Note"])) or  not(pd.isnull(row["Layout Locus"])) or not(pd.isnull(row["Layout Dimensions"]))):
+        data["layout"] = [create_layout_from_row(row)]
+
+    # Add text_unit object to layers
+    if record_type == "layers":
+        data["text_unit"] = create_text_unit_reference_from_row(row)
     
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
@@ -88,11 +110,12 @@ def transform_row_to_json(row, record_type):
     if "layer" in data and len(data["layer"]) == 0:
         data.pop("layer")
     
-    # TBD: a lot more to think about with this one...
-    # TBD: write the function...
-    """
-    data["para"] = create_paracontent_from_row(row)
-    """
+    # add paracontent stub, which may be removed later if none are created
+    data["para"] = []
+
+    # add colophons as paracontent objects for layers
+    if record_type == "layers" and not(pd.isnull(row["Colophon"])):
+        data["para"] += create_paracontent_from_row(row, "Colophon", paracontents_table)
 
     # TBD: has_bind -- waiting to see how the data will look
     if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
@@ -110,7 +133,40 @@ def transform_row_to_json(row, record_type):
 
         data["location"] = [location]
     
-    # TBD: assoc_* -- are these even necessary?
+    # Add stub assoc_*; these will be added to or deleted if they remain empty
+    data["assoc_date"] = []
+    data["assoc_name"] = []
+    data["assoc_place"] = []
+
+    # add assoc_date for origin date in layers
+    if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
+        data["assoc_date"].append(create_associated_date(
+            type= {"id": "origin", "label": "Date of Origin"},
+            as_written="",
+            value=str(row["Origin Date"]),
+            iso=str(row["Origin Date ISO"]),
+            note=[]
+        ))
+    # add assoc_name for scribes
+    # TBD if we want additional data about the scribes other than agent ark
+    if record_type == "layers" and not(pd.isnull(row["Scribe"])):
+        for scribe_ark in parse_rolled_up_field(str(row["Scribe"]), ",", "#"):
+            data["assoc_name"].append(create_associated_name(
+                id=scribe_ark,
+                as_written="",
+                role={"id": "scribe", "label": "Scribe"},
+                note=[]
+            ))
+    # add assoc_place for origin place
+    # TBD if we want additional data about the place other than place ark
+    if record_type == "layers" and not(pd.isnull(row["Origin Place"])):
+        for origin_place_ark in parse_rolled_up_field(str(row["Origin Place"]), ",", "#"):
+            data["assoc_place"].append(create_associated_place(
+                id=origin_place_ark,
+                as_written="",
+                event={"id": "origin", "label": "Place of Origin"},
+                note=[]
+            ))
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -198,11 +254,52 @@ def transform_row_to_json(row, record_type):
     # Parent, for records that are not ms_objs
     if record_type != "ms_objs":
         data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
+    
+    # Remove empty paracontents if no data was added
+    if "para" in data and len(data["para"]) == 0:
+        data.pop("para")
+    # Remove empty assoc_* if no data was added to them
+    if "assoc_date" in data and len(data["assoc_date"]) == 0:
+        data.pop("assoc_date")
+    if "assoc_name" in data and len(data["assoc_name"]) == 0:
+        data.pop("assoc_name")
+    if "assoc_place" in data and len(data["assoc_place"]) == 0:
+        data.pop("assoc_place")
     """
 
      Left to write for layers:
-    - [ ] TBD
-    - [ ] ? para (array: complex, sub-function) + ms_objs, text     """
+    - [x] writing (script, script label, locus, notes)
+    - [x] ink color and notes, and locus
+    - [x] layout (columns, lines, notes)
+    - [x] text unit object (reuse algorithm from ms_obj.layers)
+    - [x] colophon (make it a generic paracontent function), sub function for all record types?
+    - [x] assoc_name for scribe (implied type)
+        - make generic, so callable from para function as well, with optional passed type
+    - [x] assoc_date for origin (implied type)
+            - make generic, so callable from para function as well, with optional passed type
+    - [x] assoc_place for place of origin (implied type)
+            - make generic, so callable from para function as well, with optional passed type
+    - [x] notes for layers
+        - [x] ornamentation
+        - [x] contents
+        - [x] provenance
+        - [x] paracontent
+        - [x] general
+        - [x] origin
+    - [ ] Contributor (in progress, check it works)
+
+    UTOs
+    - [x] locus
+    - [ ] related_mss at layer level?
+        - already implemented, just needs to be added to the data
+        - and/or related note?
+    - [ ] notes in UTOs
+        - bib note? (reference notes)
+        - [x] foliation note
+
+
+    - [ ] ? para (array: complex, sub-function) + ms_objs, text
+              """
     return data
 
 def create_part_from_row(row: pd.Series):
@@ -308,11 +405,207 @@ def create_layer_object(layer_data, type):
         layers.append(layer)
     return layers
 
-# TBD: actually write this function...
-def create_paracontent_from_row(row):
-    layer = []
-    return layer
+def create_text_unit_reference_from_row(row):
+    # reusing the get_layer_data function since the same info is required
+    text_unit_data = get_layer_data(arks=str(row["Text Unit ARKs"]),
+                                    labels=str(row["Text Unit Labels"]),
+                                    locus=str(row["Text Unit Locus"]),
+                                    sep="\|~\|",
+                                    quotechar="#")
+    # TBD: could make the create_*_object function more generic by giving 'type' as optional param
+    return create_text_unit_object(text_unit_data)
+    
 
+def create_text_unit_object(text_unit_data):
+    text_units = []
+    for i in range(0, len(text_unit_data["arks"])):
+        if text_unit_data["arks"][i] == "" or text_unit_data["arks"][i] == "nan":
+            continue
+        text_unit = {}
+        text_unit["id"] = text_unit_data["arks"][i]
+        text_unit["label"] = text_unit_data["labels"][i]
+
+        # add locus only if it exists for this pairing
+        if "locus" in text_unit_data and text_unit_data["locus"][i] != "<NA>" and text_unit_data["locus"][i] != "nan" and text_unit_data["locus"][i] != "":
+            text_unit["locus"] = text_unit_data["locus"][i]
+        
+        text_units.append(text_unit)
+    return text_units
+
+def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_table: pd.DataFrame):
+    paracontents = []
+    para_refs = pd.read_csv(StringIO(str(row[column_name])), header=None).iloc[0]
+    for id in para_refs:
+        para_data = {}
+        para_data["type"] = {
+            "id": str(paracontent_table.loc[int(id), "Type ID"]),
+            "label": str(paracontent_table.loc[int(id), "Type Label"])
+        }
+        if not(pd.isnull(paracontent_table.loc[int(id), "Locus"])):
+            para_data["locus"] = str(paracontent_table.loc[int(id), "Locus"])
+        
+        lang_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language ID"]), ",", '#')
+        lang_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language Label"]), ",", '#')
+        para_data["lang"] = []
+        for i in range(0, len(lang_ids)):
+            para_data["lang"].append(
+                {
+                    "id": lang_ids[i],
+                    "label": lang_labels[i]
+                }
+            )
+        
+        # script, optional. Array of objects
+        if not(pd.isnull(paracontent_table.loc[int(id), "Script ID"])):
+            script_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script ID"]), ",", '#')
+            script_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script Label"]), ",", '#')
+            writing_systems = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Writing System"]), ",", '#')
+            para_data["script"] = []
+            for i in range(0, len(script_ids)):
+                para_data["script"].append(
+                    {
+                        "id": script_ids[i],
+                        "label": script_labels[i],
+                        "writing_system": writing_systems[i]
+                    }
+                )
+
+        if not(pd.isnull(paracontent_table.loc[int(id), "Label"])):
+            para_data["label"] = str(paracontent_table.loc[int(id), "Label"])
+        
+        if not(pd.isnull(paracontent_table.loc[int(id), "As Written"])):
+            para_data["as_written"] = str(paracontent_table.loc[int(id), "As Written"])
+
+        # translation: optional, array of strings
+        if not(pd.isnull(paracontent_table.loc[int(id), "Translation"])):
+            para_data["translation"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Translation"], "|~|", "#")
+        
+        # assoc_*: optional, array of objects, need to be created via other function
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Name Role ID"])):
+            para_data["assoc_name"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_name")
+        
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Place Event ID"])):
+            para_data["assoc_place"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_place")
+
+        if not(pd.isnull(paracontent_table.loc[int(id), "Associated Date Type ID"])):
+            para_data["assoc_date"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_date")
+
+
+        # note: optional, array of strings
+        if not(pd.isnull(paracontent_table.loc[int(id), "Notes"])):
+            para_data["note"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Notes"], "|~|", "#")
+        
+        paracontents.append(para_data)
+
+    return paracontents
+
+def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
+    data = []
+    sep = "\|~\|"
+    quotechar = "#"
+    # assoc_name and assoc_place share most similarities
+    if assoc_type == "assoc_name" or assoc_type == "assoc_place":
+        # set the column prefix
+        if assoc_type == "assoc_name":
+            col_prefix = "Associated Name "
+            # parse role id and labels (as 'type')
+            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Role ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Role Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            
+        elif assoc_type == "assoc_place":
+            col_prefix = "Associated Place "
+            # parse event id and labels (as 'type')
+            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Event ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Event Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        
+        # parse arks, supply empty strings if the cell is blank
+        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(arks) <= 1 and arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            arks = []
+            for i in range(0, len(type_ids)):
+                arks.append("")
+        
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            as_written = []
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+
+        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
+        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            notes = []
+            for i in range(0, len(type_ids)):
+                notes.append("")
+
+
+        for i in range(0, len(type_ids)):
+            if assoc_type == "assoc_name":
+                data.append(create_associated_name(
+                    id=arks[i],
+                    as_written=as_written[i],
+                    role={"id": type_ids[i], "label": type_labels[i]},
+                    note=notes[i]
+                ))
+            elif assoc_type == "assoc_place":
+                data.append(create_associated_place(
+                    id=arks[i],
+                    as_written=as_written[i],
+                    event={"id": type_ids[i], "label": type_labels[i]},
+                    note=notes[i]
+                ))
+    elif assoc_type == "assoc_date":
+        col_prefix = "Associated Date "
+        type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Type ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Type Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            as_written = []
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            values = []
+            for i in range(0, len(type_ids)):
+                values.append("")
+        
+        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        if len(iso) <= 1 and iso[0] == 'nan':
+            iso = []
+            for i in range(0, len(type_ids)):
+                iso.append("")
+
+        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        if len(as_written) <= 1 and as_written[0] == 'nan':
+            as_written = []
+            for i in range(0, len(type_ids)):
+                as_written.append("")
+        
+        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
+        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            notes = []
+            for i in range(0, len(type_ids)):
+                notes.append("")
+
+        for i in range(0, len(type_ids)):
+            data.append(create_associated_date(
+                type={"id": type_ids[i], "label": type_labels[i]},
+                as_written=str(as_written[i]),
+                value=str(values[i]),
+                iso=str(iso[i]),
+                note=notes[i]
+                )
+            )
+            
+    return data
+    
 # takes a row (pandas Series); record_type string; and a boolean indicating whether the context is ms_obj.part or not
 # uses the record type and is_part to determine which columns to pass to the function that creates the typed note fields
 def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
@@ -404,7 +697,60 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     }
                 }
             ]
-    # TBD: add cols configurations for layers and text_units
+    # Column configurations for layer notes
+    # TBD: could make some 'generic' to reduce duplication here
+    if record_type == "layers":
+        cols += [
+            {
+                    "data": str(row["Origin note"]),
+                    "type": {
+                        "id": "origin",
+                        "label": "Origin Note"
+                    }
+                },
+                {
+                    "data": str(row["Provenance note"]),
+                    "type": {
+                        "id": "provenance",
+                        "label": "Provenance Note"
+                    }
+                },
+                {
+                    "data": str(row["Paracontent note"]),
+                    "type": {
+                        "id": "para",
+                        "label": "Paracontent Note"
+                    }
+                },
+                {
+                    "data": str(row["Foliation note"]),
+                    "type": {
+                        "id": "foliation",
+                        "label": "Foliation Note"
+                    }
+                },
+                {
+                    "data": str(row["Contents note"]),
+                    "type": {
+                        "id": "contents",
+                        "label": "Contents Note"
+                    }
+                },
+                {
+                    "data": str(row["Ornamentation note"]),
+                    "type": {
+                        "id": "ornamentation",
+                        "label": "Ornamentation Note"
+                    }
+                },
+                {
+                    "data": str(row["General note"]),
+                    "type": {
+                        "id": "general",
+                        "label": "Other Notes"
+                    }
+                }
+        ]
 
     return create_notes_from_specific_columns(cols)
 
@@ -468,6 +814,94 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
         bibs.append(bib_data)
     return bibs
 
+def create_writing_from_row(row: pd.Series):
+    writing = {}
+    scripts = []
+    script_ids = parse_rolled_up_field(str(row["Script ID"]), ',', "#")
+    script_labels = parse_rolled_up_field(str(row["Script Label"]), ',', "#")
+    writing_systems = parse_rolled_up_field(str(row["Writing System"]), ',', "#")
+    for i in range(0, len(script_ids)):
+        obj = {}
+        obj["id"] = script_ids[i]
+        obj["label"] = script_labels[i]
+        obj["writing_system"] = writing_systems[i]
+        scripts.append(obj)
+    writing["script"] = scripts
+
+    if not(pd.isnull(row["Writing Locus"])):
+        writing["locus"] = str(row["Writing Locus"])
+    if not(pd.isnull(row["Writing Note"])):
+        writing["note"] = parse_rolled_up_field(str(row["Writing Note"]), '|~|', "#")
+    return writing
+
+def create_ink_from_row(row: pd.Series):
+    ink = {}
+    if not(pd.isnull(row["Ink Locus"])):
+        ink["locus"] = str(row["Ink Locus"])
+    if not(pd.isnull(row["Ink Color"])):
+        ink["color"] = parse_rolled_up_field(str(row["Ink Color"]), "|~|", "#")
+    if not(pd.isnull(row["Ink Note"])):
+        ink["note"] = parse_rolled_up_field(str(row["Ink Note"]), "|~|", "#")
+    return ink
+
+def create_layout_from_row(row: pd.Series):
+    layout = {}
+    if not(pd.isnull(row["Layout Locus"])):
+        layout["locus"] = str(row["Layout Locus"])
+    if not(pd.isnull(row["Layout Columns"])):
+        layout["columns"] = str(row["Layout Columns"])
+    if not(pd.isnull(row["Layout Lines"])):
+        layout["lines"] = str(row["Layout Lines"])
+    if not(pd.isnull(row["Layout Dimensions"])):
+        layout["dim"] = str(row["Layout Dimensions"])
+    if not(pd.isnull(row["Layout Note"])):
+        layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
+    return layout
+def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
+    date = {}
+    date["type"] = type
+    date["value"] = value
+    
+    if iso != "":
+        not_before = iso.split("/")[0]
+        if len(iso.split("/")) > 1:
+            not_after = iso.split("/")[1]
+        else:
+            not_after = ""
+        date["iso"] = {}
+        date["iso"]["not_before"] = not_before.zfill(4)
+        # only add not_after property if the ISO date is a range
+        if not_after != "":
+            date["iso"]["not_after"] = not_after.zfill(4)
+
+    if as_written != "":
+        date["as_written"] = as_written
+    if len(note) > 0:
+        date["note"] = note
+    
+    return date
+
+def create_associated_name(id: str, as_written: str, role: object, note: list):
+    name = {}
+    if id != "":
+        name["id"] = id
+    if as_written != "":
+        name["as_written"] = as_written
+    name["role"] = role
+    if len(note) > 0:
+        name["note"] = note
+    return name
+
+def create_associated_place(id: str, as_written: str, event: object, note: list):
+    place = {}
+    if id != "":
+        place["id"] = id
+    if as_written != "":
+        place["as_written"] = as_written
+    place["event"] = event
+    if len(note) > 0:
+        place["note"] = note
+    return place
 
 # UTILITY FUNCTIONS
 
@@ -513,10 +947,22 @@ except ValueError:
 path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field:")
 ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
 
+path_to_paracontents_csv = input("Please input a path to the CSV containing the paracontents info for creating the paracontents field:")
+paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
+
 # TBD: check that all of the columns are present, or added, for a given record type
 # Report the mismatched fields and prompt user to continue
 csv_columns = csv_file.columns
-with open('ms_obj_fields.txt') as f:
+
+if record_type == "ms_objs":
+    columns_list_doc = 'ms_obj_fields.txt'
+elif record_type == "layers":
+    columns_list_doc = 'layer_fields.txt'
+elif record_type == "text_units":
+    columns_list_doc = 'text_units_fields.txt'
+
+
+with open(columns_list_doc) as f:
     expected_cols = f.read().splitlines()
 
 missing_columns = []
@@ -539,7 +985,7 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == "y"
 
 # for each row, create a JSON file of the corresponding record type
-out_dir = "/Users/wpotter/Documents/GitHub/sinai_metadata/portal_data/ms_objs"
+out_dir = "/Users/wpotter/Desktop/SMDP-Migration/layers/migration_tests"
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 if accept_input:

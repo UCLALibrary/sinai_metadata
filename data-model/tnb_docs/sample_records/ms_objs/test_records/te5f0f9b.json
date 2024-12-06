@@ -231,7 +231,8 @@
                     }, 
                     "label": "Disjecta Membra from the final quire", 
                     "note": [ 
-                        "The last 4 folios are today Biblioteca Ambrosiana, A 296 inf., ff. 70–73 = Chabot 20 (4 ff.) + Mingana Syr. 632 (1 f.)" 
+                        "The last 4 folios are today Biblioteca Ambrosiana, A 296 inf., ff. 70–73 = Chabot 20 (4 ff.) + Mingana Syr. 632 (1 f.)" ,
+                        "Identification of disjecta membra by Rossetto"
                     ], 
                     "mss": [
                         { 
@@ -468,10 +469,31 @@
         },
         {
             "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decoration on Back Board Inside, triangle with radiating lines"
+        },
+        {
+            "type": {
                 "id": "para",
                 "label": "Paracontent Note"
             },
             "value": "Donation inscription at the bottom of f. 171v | Supplication inscription on f. 172v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Three cords as bookmarks (labelled f. 58r-2, photographed laid on f. 58r)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "F. 28b is a smaller insert"
         }
     ], 
     "related_mss": [
@@ -488,7 +510,8 @@
                 } 
             ], 
             "note": [ 
-                "This is a dummy note for dev purposes" 
+                "This is a dummy note for dev purposes" ,
+                "Otherwise largely lost"
             ] 
         } 
     ], 

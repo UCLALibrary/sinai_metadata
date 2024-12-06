@@ -20,7 +20,8 @@
             ], 
             "locus": "ff. 3r-54v", 
             "note": [ 
-                "Melkite with Estrangela aleph" 
+                "Melkite with Estrangela aleph" ,
+                "Section headings written with Estrangela"
             ] 
         } ,
         {
@@ -50,10 +51,13 @@
         {
             "locus": "ff. 45v-54v",
             "color": [
-                "black"
+                "black",
+                "yellow",
+                "red"
             ],
             "note": [
-                "Rubrication throughout"
+                "Occasional words highlighted in yellow",
+                "Initials and titles in red"
             ]
         }
     ], 
@@ -64,7 +68,8 @@
             "lines": "15", 
             "dim": "Writing area: 215 x 140 mm", 
             "note": [ 
-                "Possible pricking still visible in outer margins throughout" 
+                "Possible pricking still visible in outer margins throughout" ,
+                "Text written inside bordered margins"
             ] 
         } ,
         {
@@ -156,7 +161,60 @@
                 "This colophon is faked with data from another ms for dev purposes", 
                 "The colophon provides the production date in the anno mundi calendar system 6,104 aM = 1292 CE" 
             ] 
-        } 
+        } ,
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 55r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "script": [
+                {
+                    "id": "nashk",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "label": "Arabic colophon",
+            "as_written": "وكان الفراغ من كتابة هذا الكتاب المعظم الخمسة أسفار التوراة الذي أنزلها على موسى ابن عمران باللسان السرياني الترجوم ونقلها الى لسان العبراني وذلك في يوم الاربعاء تاسع شهر كانون الثاني سنة ألف وستمائة وسبعين الاسكندر اليوناني الموافق لسنة أدم سنة ستة ألف وثمان مائة وثانية وستين الموافق لسنة ألف وثلثمائة وثمانية وخمسين للمسيح وكاتبها أحقرمخلوقات الله الفقر الى رحمة ربه من لا يستحق يسمى  إنسان لا سيما بـاسم  شماس يوسف ابن سباط الأمد السرياني الآمدي السرياني ونقلت هذه النسخة السعيدة من السرياني والعبراني الى لسان العربي باجتهاد العظيم ما نالني من التعب على تحرير صحة كلام هذا التوراة وكتبت هذه التوراة في مدينة الماغوصة المحروسة أيام الملك البار المؤمن الرايوك خلد الله ملكه وأجرك بالنصر والسعد فلكه وامن بإنشاء هذه النسخة السعيدة مما أنعم الله عليه بماله لنفسه وهو المولى الاجل والكهف الاضل اوحد الفضلا قدرة العلماء للشيخ ابي الفضائل شرف الدولة عيسى ابن سعيد المتطبب يومئذ بجزيرة قبرص المحروسة وللأصله منسوبة من اهل بغداد نفعه الله فيها وعانه بحفظ ما يتليها والناسح المسيكين يسأل من كل واقف عليها ونسخها أم قرى فيها أن يدعى له بكل المخير والمغفرة وكذلك للممتم فيها وكل من وجد فيها شيء من الغلط يسامح الناسخ الحقير ويصلحه كما يليق بالصحيح حسب قول بعضهم فان وجدت عيباً فسُد الخلالا جل وعز من لا عيبا فيه وعلا والسبح لله دائما ابدا ",
+            "note": [
+                "Relatively consistent with the Syriac colophon, likely supplied by the same scribe"
+            ]
+        },
+        {
+            "type": {
+                "id": "toc",
+                "label": "Table of Contents"
+            },
+            "locus": "f. 3",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "script": [
+                {
+                    "id": "nashk",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "label": "Arabic colophon",
+            "as_written": "كان الفراغ منه نهار الأربعاء الثامن من شهر نيسان المبارك سنة ست ألف سبعمائة وتسعين لكون العالم الموافق العشر الأخير من شهر ذي الحجة سنة ثمانين وستمائة الهجرة الإسلامية في مدينة عكا المحروسة والسبح لله دائما آمين ",
+            "translation": [
+                "In the name of God, Father, Son, and Holy Spirit, the Trinity. Contents of this volume, etc."
+            ],
+            "note": [
+                "Covers the contents of the first part of Syriac 12, likely written prior to the two parts being bound together"
+            ]
+        }
     ], 
     "assoc_date": [
         { 
