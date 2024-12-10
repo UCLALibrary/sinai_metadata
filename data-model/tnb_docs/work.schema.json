@@ -234,6 +234,9 @@
     },
     "creation": {
       "type": "object",
+      "required": [
+        "iso"
+      ],
       "unevaluatedProperties": false,
       "properties": {
         "value": {
@@ -260,11 +263,7 @@
           ],
           "unevaluatedProperties": false
         }
-      },
-      "required": [
-        "value",
-        "iso"
-      ]
+      }
     },
     "incipit": {
       "type": "object",
