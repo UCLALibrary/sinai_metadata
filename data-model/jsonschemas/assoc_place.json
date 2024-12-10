@@ -8,6 +8,13 @@
         "id": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/ark"
         },
+        "value": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minLength": 1
+        },
         "as_written": {
             "type": [
                 "string",
