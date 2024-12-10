@@ -949,10 +949,12 @@ except ValueError:
      print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
 
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
-path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field:")
+# path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field:")
+path_to_ref_instances_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv" # testing remove this line
 ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
 
-path_to_paracontents_csv = input("Please input a path to the CSV containing the paracontents info for creating the paracontents field:")
+# path_to_paracontents_csv = input("Please input a path to the CSV containing the paracontents info for creating the paracontents field:")
+path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
 paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
 
 # TBD: check that all of the columns are present, or added, for a given record type
