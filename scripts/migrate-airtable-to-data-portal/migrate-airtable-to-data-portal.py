@@ -43,8 +43,8 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
-    # exent is required for ms_objs, otherwise only if not null
-    if not(pd.isnull(row["Extent"])) or record_type == "ms_objs":
+    # add extent
+    if not(pd.isnull(row["Extent"])):
         data["extent"] = str(row["Extent"])
 
     if record_type == "ms_objs" and not(pd.isnull(row["Weight"])):
@@ -305,7 +305,8 @@ def transform_row_to_json(row, record_type):
 def create_part_from_row(row: pd.Series):
     part_data = {}
 
-    part_data["label"] = str(row["Part Label"])
+    if not(pd.isnull(row["Part Label"])):
+        part_data["label"] = str(row["Part Label"])
 
     # Collate and add support data
     support_labels = parse_rolled_up_field(str(row["Support Label"]), ",", '"')
