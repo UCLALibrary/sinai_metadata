@@ -882,10 +882,12 @@ def create_associated_date(type: object, as_written: str, value: str, iso: str, 
     
     return date
 
-def create_associated_name(id: str, as_written: str, role: object, note: list):
+def create_associated_name(id: str, value: str, as_written: str, role: object, note: list):
     name = {}
     if id != "":
         name["id"] = id
+    if value != "":
+        name["value"] = value
     if as_written != "":
         name["as_written"] = as_written
     name["role"] = role
@@ -893,10 +895,12 @@ def create_associated_name(id: str, as_written: str, role: object, note: list):
         name["note"] = note
     return name
 
-def create_associated_place(id: str, as_written: str, event: object, note: list):
+def create_associated_place(id: str, value: str, as_written: str, event: object, note: list):
     place = {}
     if id != "":
         place["id"] = id
+    if value != "":
+        name["value"] = value
     if as_written != "":
         place["as_written"] = as_written
     place["event"] = event
