@@ -96,6 +96,9 @@
     },
     "birth": {
       "type": "object",
+      "required": [
+        "iso"
+      ],
       "unevaluatedProperties": false,
       "properties": {
         "value": {
@@ -122,14 +125,13 @@
           ],
           "unevaluatedProperties": false
         }
-      },
-      "required": [
-        "value",
-        "iso"
-      ]
+      }
     },
     "death": {
       "type": "object",
+      "required": [
+        "iso"
+      ],
       "unevaluatedProperties": false,
       "properties": {
         "value": {
@@ -156,14 +158,13 @@
           ],
           "unevaluatedProperties": false
         }
-      },
-      "required": [
-        "value",
-        "iso"
-      ]
+      }
     },
     "floruit": {
       "type": "object",
+      "required": [
+        "iso"
+      ],
       "unevaluatedProperties": false,
       "properties": {
         "value": {
@@ -190,11 +191,7 @@
           ],
           "unevaluatedProperties": false
         }
-      },
-      "required": [
-        "value",
-        "iso"
-      ]
+      }
     },
     "rel_con": {
       "type": [
