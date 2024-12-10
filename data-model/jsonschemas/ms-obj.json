@@ -209,6 +209,7 @@
         "type",
         "shelfmark",
         "extent",
+        "state",
         "part",
         "location"
     ],
