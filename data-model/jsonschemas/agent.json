@@ -32,16 +32,19 @@
         "birth": {
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "required": ["iso"],
             "unevaluatedProperties": false
         },
         "death": {
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "required": ["iso"],
             "unevaluatedProperties": false
         },
         "floruit": {
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "required": ["iso"],
             "unevaluatedProperties": false
         },
         "rel_con": {

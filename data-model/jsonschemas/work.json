@@ -58,6 +58,7 @@
         "creation": {
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/date_core",
+            "required": ["iso"],
             "unevaluatedProperties": false
         },
         "incipit": {
