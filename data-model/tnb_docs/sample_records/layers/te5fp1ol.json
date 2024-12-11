@@ -222,11 +222,10 @@
                 "id": "origin", 
                 "label": "Origin Date" 
             }, 
-            "as_written": "ܠܐܦ̈ܝ ܬܠܬ: ܫ̈ܥܝܢ: ܝܘܡ: ܕ̄ ܟ̄ܚ܇ ܐܝܠܘܠ ܫܢܬ: ܘ̄ ܐܠܦ̄: ܚ̄ܕ ܩ̄: ܕ̄: ܠܐܒܘܢ: ܐܕܡ", 
             "note": [ 
-                "Date for demo purposes" 
+                "Top-level associated dates" 
             ], 
-            "value": "AM 6,104 = 1292 CE", 
+            "value": "1292 CE", 
             "iso": { 
                 "not_before": "1292", 
                 "not_after": "1292" 
@@ -236,26 +235,24 @@
     "assoc_name": [
         { 
             "id": "ark:/21198/tev887", 
-            "as_written": "ܝܘܚܢܢ ܒܪܝ ܬܐܘܕܘܪܘܣ", 
             "role": { 
                 "id": "scribe", 
                 "label": "Scribe" 
             }, 
             "note": [ 
-                "The ARK is for Ephrem, to demo functionality" 
+                "Top-level associated name" 
             ] 
         } 
     ], 
     "assoc_place": [
         { 
             "id": "ark:/21198/tesinai", 
-            "as_written": "ܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪ ܣܢܐ", 
             "event": { 
                 "id": "origin", 
                 "label": "Origin" 
             }, 
             "note": [ 
-                "To determine: should this be repeated in the layer record itself as the production place?" 
+                "Top-level associated place" 
             ] 
         } 
     ], 
