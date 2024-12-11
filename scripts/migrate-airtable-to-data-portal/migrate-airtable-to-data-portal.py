@@ -145,28 +145,41 @@ def transform_row_to_json(row, record_type):
             as_written="",
             value=str(row["Origin Date"]),
             iso=str(row["Origin Date ISO"]),
-            note=[]
+            note=[str(row["Origin Date Note"])]
         ))
     # add assoc_name for scribes
-    # TBD if we want additional data about the scribes other than agent ark
-    if record_type == "layers" and not(pd.isnull(row["Scribe"])):
-        for scribe_ark in parse_rolled_up_field(str(row["Scribe"]), ",", "#"):
+    if record_type == "layers":
+        if not(pd.isnull(row["Scribe"])):
+            values = parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
+            scribe_arks = parse_rolled_up_field(str(row["Scribe"]), ",", "#")
+            notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+            for i in range(0, len(scribe_arks)):
+                data["assoc_name"].append(create_associated_name(
+                    id=scribe_arks[i],
+                    value=values[i],
+                    as_written="",
+                    role={"id": "scribe", "label": "Scribe"},
+                    note=[notes[i]]
+                ))
+        elif not(pd.isnull(row["Scribe Value"])):
             data["assoc_name"].append(create_associated_name(
-                id=scribe_ark,
-                as_written="",
-                role={"id": "scribe", "label": "Scribe"},
-                note=[]
-            ))
+                    id="",
+                    value=str(row["Scribe Value"]),
+                    as_written="",
+                    role={"id": "scribe", "label": "Scribe"},
+                    note=parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+                ))
+                
     # add assoc_place for origin place
-    # TBD if we want additional data about the place other than place ark
-    if record_type == "layers" and not(pd.isnull(row["Origin Place"])):
-        for origin_place_ark in parse_rolled_up_field(str(row["Origin Place"]), ",", "#"):
-            data["assoc_place"].append(create_associated_place(
-                id=origin_place_ark,
-                as_written="",
-                event={"id": "origin", "label": "Place of Origin"},
-                note=[]
-            ))
+    # TBD: if we have ARKs ever, rewrite this; currently only have a value field
+    if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
+        data["assoc_place"].append(create_associated_place(
+            id="",
+            value=str(row["Origin Place Value"]),
+            as_written="",
+            event={"id": "origin", "label": "Place of Origin"},
+            note=parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
+        ))
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -297,8 +310,6 @@ def transform_row_to_json(row, record_type):
         - bib note? (reference notes)
         - [x] foliation note
 
-
-    - [ ] ? para (array: complex, sub-function) + ms_objs, text
               """
     return data
 
@@ -526,7 +537,15 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             arks = []
             for i in range(0, len(type_ids)):
                 arks.append("")
-        
+
+         # parse values, supply empty strings if the cell is blank
+        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
+        # if cell was blank, add empty strings up to the length of types
+        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            values = []
+            for i in range(0, len(type_ids)):
+                values.append("")
+
         as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
         # if cell was blank, add empty strings up to the length of types
         if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
@@ -547,6 +566,7 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             if assoc_type == "assoc_name":
                 data.append(create_associated_name(
                     id=arks[i],
+                    value=values[i],
                     as_written=as_written[i],
                     role={"id": type_ids[i], "label": type_labels[i]},
                     note=notes[i]
@@ -554,6 +574,7 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             elif assoc_type == "assoc_place":
                 data.append(create_associated_place(
                     id=arks[i],
+                    value=values[i],
                     as_written=as_written[i],
                     event={"id": type_ids[i], "label": type_labels[i]},
                     note=notes[i]
