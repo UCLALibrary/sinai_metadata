@@ -140,45 +140,65 @@ def transform_row_to_json(row, record_type):
 
     # add assoc_date for origin date in layers
     if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
+        notes = parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
+        if len(notes) <= 1 and notes[0] == "nan":
+            notes = []
         data["assoc_date"].append(create_associated_date(
             type= {"id": "origin", "label": "Date of Origin"},
             as_written="",
             value=str(row["Origin Date"]),
             iso=str(row["Origin Date ISO"]),
-            note=[str(row["Origin Date Note"])]
+            note=notes
         ))
     # add assoc_name for scribes
     if record_type == "layers":
         if not(pd.isnull(row["Scribe ID"])):
-            values = parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
             scribe_arks = parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
+            values = parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
+            if len(values) <= 1 and values[0] == "nan":
+                values = []
+                for i in range(0, len(scribe_arks)):
+                    values.append('')
             notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+            if len(notes) <= 1 and notes[0] == "nan":
+                notes = []
+                for i in range(0, len(scribe_arks)):
+                    notes.append('')
             for i in range(0, len(scribe_arks)):
+                n = []
+                if notes[i] != "":
+                    n.append(notes[i])
                 data["assoc_name"].append(create_associated_name(
                     id=scribe_arks[i],
                     value=values[i],
                     as_written="",
                     role={"id": "scribe", "label": "Scribe"},
-                    note=[notes[i]]
+                    note=n
                 ))
         elif not(pd.isnull(row["Scribe Value"])):
+            notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+            if len(notes) <= 1 and notes[0] == "nan":
+                notes = []
             data["assoc_name"].append(create_associated_name(
                     id="",
                     value=str(row["Scribe Value"]),
                     as_written="",
                     role={"id": "scribe", "label": "Scribe"},
-                    note=parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+                    note=notes
                 ))
                 
     # add assoc_place for origin place
     # TBD: if we have ARKs ever, rewrite this; currently only have a value field
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
+        notes = parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
+        if len(notes) <= 1 and notes[0] == "nan":
+            notes = []
         data["assoc_place"].append(create_associated_place(
             id="",
             value=str(row["Origin Place Value"]),
             as_written="",
             event={"id": "origin", "label": "Place of Origin"},
-            note=parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
+            note=notes
         ))
 
     # Add notes field
