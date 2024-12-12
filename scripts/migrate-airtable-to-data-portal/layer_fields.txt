@@ -24,11 +24,16 @@ Feature Labels
 Text Unit ARKs
 Text Unit Labels
 Text Unit Locus
-Scribe
+Colophon
+Scribe ID
+Scribe Value
+Scribe Note
 Origin Date
 Origin Date ISO
-Origin Place
-Origin note
+Origin Date Note
+Origin Place ID
+Origin Place Value
+Origin Place Note
 Paracontent note
 Provenance note
 Foliation note
