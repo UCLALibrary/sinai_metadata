@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1ck80",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 37, Undertext (Estrangela)",
+    "locus": "ff. 1, 6",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Neat early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "26-30 lines, varies irregularly"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11m53",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Mesopotamia",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v, 6r, 6v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The two folios are not contiguous"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "All three UTOs of Sinai Syriac NF M 37 belong to a single Old Syriac Gospel manuscript, to which the four UTOs of Sinai Syriac NF M 39 also belong. F. 1v is followed by Sinai Syriac NF M 39, f. 9, and f. 6r is preceded by Sinai Syriac NF M 39, f. 16v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. S. Lewis, The Old Syriac Gospels (London, 1910) ; G. Kiraz, Comparative Edition of the Syriac Gospels, vol. 1 (Leiden, 1996)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1xd2swb"
+    ]
+}

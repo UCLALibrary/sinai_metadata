@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/s1k64j",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 66, Undertext (Estrangela)",
+    "locus": "ff. 1–8",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "29-31 lines, sometimes of uneven length",
+            "note": [
+                "Undertext written in two columns opposite to the upper text perpendicularly and meeting in the center"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17708",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 7r (col. a), 2v (col. b), 7r (col. b), 2v (col. b), 7v (col. a), 2r (col. a), 7v (col. b), 2r (col. b), lacuna, 8r (col. a), 1v (col. a), 8r (col. b), 1v (col. b), 8v (col. a), 1r (col. a), 8v (col. b), 1r (col. b), lacuna, 5r (col. a), 4v (col. a), 5r (col. b), 4v (col. b), 5v (col. a), 4r (col. a), 5v (col. b), 4r (col. b), lacuna, 6r (col. a), 3v (col. a), 6r (col. b), 3v (col. b), 6v (col. a), 3r (col. a), 6v (col. b), 3r (col. b)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Nonconsecutive undertext"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by André Binggeli"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cg1g8w"
+    ]
+}

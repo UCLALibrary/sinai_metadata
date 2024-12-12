@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1363t",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 56, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1, 12, 14, 17–20, 23, 25, 25a, 26–29, 29a, 29b, 47–58, 69–72, 110a",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Ancient calligraphy | Alaph: apex as crochet-hook shape (\"en crochet à dentelle\")\nBeth, dalath, resh, mim: extremity with drop shape (extrémité \"en goutte\")\nGamal, teth, lamadh: heron shape (\"en tête de héron\")\nHeth: H with curved uprights and horizontal hyphen\nKaph: duck head shape (\"en tête de canard\")\nNun: nail head shape (\"en tête de clou\")\nsome Nun final on last line: ornamented tail as a spiral"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "23 lines",
+            "note": [
+                "Column width: 6.2-6.4 cm; distance between columns: 1.9-2 cm; line spacing: 0.8-0.9 cm; medium height of letters: 0.4 cm; height of initial waw: 0.7 cm; height of lamad and taw: 0.4 cm",
+                "Visible ruling on some folios: the 4 vertical and all the horizontal plus a line above line 1. Pricking corresponding to each line"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1r70x",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 6th c. - 7th c. ",
+            "iso": {
+                "not_before": "0550",
+                "not_after": "0700"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 12v, 1r, 12r, 1v, 23v, 14r, 23r, 14v, 50v, 55r, 50r, 55v, 28v, 27r, 28r, 27v, 29v, 26r, 29r, 26v, 49v, 56r, 49r, 56v, 53v, 52r, 53r, 52v, 110av, 110ar, 54v, 51r, 54r, 51v, 72v, 69r, 72r, 69v, 71v, 70r, 71r, 70v, 25r, 29bv, 25v, 29br, 25ar, 29av, 25av, 29ar, 48r, 57v, 48v, 57r, 20v, 17r, 20r, 17v, 19v, 18r, 19r, 18v, 47r, 58v, 47v, 58r ~ Every extant folio is either the upper half or the bottom part of one original folio which was folded to constitute the actual quires."
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTO Gospel of Matthew belonged to the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Quire numbers on bottom margin on some folios, signatures \"en miroir\" (mirror quire signature) as usual in CPA manuscripts; quires of 8 folios (quaternion); organization of parchment sheets: always flesh facing flesh and hair facing hair (according rule of Gregory)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Lewis and Gibson, The Palestinian Syriac Lectionary of the Gospels re-edited from two Sinai Mss and from P. de Lagarde’s edition of the Evangeliarium Hierosolymitanum, London, 1899"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17d3457"
+    ]
+}

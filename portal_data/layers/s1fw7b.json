@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1fw7b",
+    "reconstruction": false,
+    "label": "Sinai Greek 962, Undertext (Greek minuscule)",
+    "locus": "ff. 184–185",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Small and elegant, upright early minuscule. Simple initials introduce each troparion and are located\noutside the text block. Titles are written in Alexandrian majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "25-26 lines, reconstructed",
+            "note": [
+                "One bifolio of the present manuscript is constituted of one original folio, measured approximately 200x150 mm. The Schriftspiegel is approximately 155x90 mm, with large margins: the upper measures 35 mm (f. 185v), the outer 55 mm (f. 185v), and the lower 40 mm (f. 184r)",
+                "Prickings are still visible in the outer margin. They are elongated rather than round, probably made with a penknife. The ruled lines correspond to Sautel-Leroy type 00A1 (Rossetto)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13x32",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 9th – early 10th c.  (Rossetto) / Late 10th-11th c. (Wilson)",
+            "iso": {
+                "not_before": "0875",
+                "not_after": "1100"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 185v+184r, 185r+184v (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Abbreviation for the edition, MR VI = Μηναῖα τοῦ ὅλου ἐνιαουτοῦ, VI, Ἐν Ῥώμῃ 1901 ; G. Rossetto, Greek Palimpsests at Saint Catherine's Monastery (Sinai): Three Euchologia as Case Studies, Vienna 2022"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qj8f7g"
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "ark": "ark:/21198/s1963p",
+    "reconstruction": false,
+    "label": "Sinai Greek 2053, Undertext (Greek minuscule)",
+    "locus": "ff. 17–24",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "8-12 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z68g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai region",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 17r+24v/24r+17v, 18r+23v/23r+18v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. Weyl Carr, Diminutive Byzantine Manuscripts, Codices manuscripti 4 (1980), pp. 130-161, esp. 161"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ks7pg9"
+    ]
+}

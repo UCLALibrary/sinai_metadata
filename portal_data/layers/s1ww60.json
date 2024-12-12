@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1ww60",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 48, Undertext (Undetermined (Roman))",
+    "locus": "ff. 2–13, 14r, 15v, 16–21, 28–29",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ],
+            "note": [
+                "Script of eastern Mediterranean provenance (Ganz). The predominant characterisation is Visigothic minuscule, with characteristic use of uncial G and of tall, clubbed ascenders. There are curiously few abbreviations and no apparent use of the distinctive Visigothic abbreviation symbol consisting of a bar with a punctus above. The use of theta-shaped e in ampersand is a little odd, though, and may suggest a ninth-century date. The initial E on fol. 2r incorporates a fish of Frankish pre-Carolingian type, but combined with foliate features.\nThe script has the characteristic (Semitic influenced?) slant of other early Latin scripts from Sinai and that, along with a rather self-conscious, forced aspect, the absence of other usual Visigothic features, and the Frankish element in the decoration would tend to suggest that the hand was working at Sinai rather than in Iberia (Brown)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "16 lines, varies"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jx0z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Eastern Mediterranean (possibly Sinai)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 4v, 7r; 15v, 14r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Folio order largely undetermined"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "All folios most probably belong to the same undertext, even though not all passages can be identified"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Most of the texts are edited in J. Mearns, Early Latin hymnaries: An index of hymns in hymnaries before 1100 (Cambridge, 1913) ; and A. S. Walpole, Early Latin hymns (Cambridge, 1922). Walpole discusses the Mozarabic hymnal. Text identification and description by David Ganz"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1jm2s61"
+    ]
+}

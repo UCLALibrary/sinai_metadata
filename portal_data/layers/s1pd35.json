@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1pd35",
+    "reconstruction": false,
+    "label": "Sinai Greek 966, Undertext (Greek majuscule)",
+    "locus": "ff. 81, 84, 89, 92, 95–96, 101–102",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Upright pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "30-31 lines",
+            "note": [
+                "The text is arranged in a single column with 30 or 31 lines per page and a distance between lines of 5 mm",
+                "The Schriftspiegel is approximately 175x90 mm. What remains of the upper margin measures 6 mm, while the outer margin measures 30 mm and the lower 20 mm (f. 101r). The original manuscript measured approximately 190x130 mm"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bd66",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 81, 89, 102, 95, 92, 101, 84, 96"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Seven folia belong to the same quire, that can be reconstructed as follows: 81, missing folio, 89, 102, 95, 92, 101, 84\n(Rossetto). Folio 96 comes from a different quire"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Lower (oldest) layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Ernst Gamillscheg, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Rossetto 2023a"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cz3pr7"
+    ]
+}

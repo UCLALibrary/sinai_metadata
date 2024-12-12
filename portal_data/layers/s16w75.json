@@ -1,0 +1,103 @@
+{
+    "ark": "ark:/21198/s16w75",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 56, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. fragment, 2–11, 13, 15–16, 21–22, 24, 31–46, 59–63, 63a, 63b, 64–68, 73–84, 110b",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Ancient calligraphy | Alaph: apex as crochet-hook shape (\"en crochet à dentelle\")\nBeth, dalath, resh, mim: extremity with drop shape (extrémité \"en goutte\")\nGamal, teth, lamadh: heron shape (\"en tête de héron\")\nHeth: H with curved uprights and horizontal hyphen\nKaph: duck head shape (\"en tête de canard\")\nNun: nail head shape (\"en tête de clou\")\nsome Nun final on last line: ornamented tail as a spiral"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "23 lines",
+            "note": [
+                "Column width: 6.2-6.4 cm; distance between columns: 1.9-2 cm; line spacing: 0.8-0.9 cm; medium height of letters: 0.4 cm; height of initial waw: 0.7 cm; height of lamad and taw: 0.4 cm",
+                "Visible ruling on some folios: the 4 vertical and all the horizontal plus a line above line 1. Pricking corresponding to each line."
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vx0r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 6th c. - 7th c. ",
+            "iso": {
+                "not_before": "0550",
+                "not_after": "0700"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 8r, 5v, 8v, 5r, 7r, 6v, 7v, 6r, 64v, 61r, 64r, 61v, 33v, 36r, 33r, 36v, 63v, 63ar, 63r, 63av, 110br, 110bv, 62v, 63br, 62r, 63bv, 34v, 35r, 34r, 35v, 41r, 44v, 41v, 44r, 42r, 43v, 42v, 43r, 59v, 66r, 59r, 66v, 82r, 77v, 82v, 77r, 22v, 15r, 22r, 15v, 46v, 39r, 46r, 39v, 45v, 40r, 45r, 40v, 21v, 16r, 21r, 16v, 83r, 76v, 83v, 76r, 60v, 65r, 60r, 65v, 79r, 80v, 79v, 80r, 9v, 4r, 9r, 4v, 10v, 3r, 10r, 3v, 78r, 81v, 78v, 81r, 38v, 31r, 38r, 31v, 37v, 32r, 37r, 32v, 67v, 74r, 67r, 74v, 68v, 73r, 68r, 73v, 24v, 13r, 24r, 13v, 11v, 2r, 11r, 2v, 84r, 75v, 84v, 75r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Every extant folio is either the upper half or the bottom part of one original folio which was folded to constitute the actual quires"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTO Gospel of Mark belonged to the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Quire numbers on bottom margin on some folios, signatures \"en miroir\" (mirror quire signature) as usual in CPA manuscripts; quires of 8 folios (quaternion); organization of parchment sheets: always flesh facing flesh and hair facing hair (according rule of Gregory)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Lewis and Gibson, The Palestinian Syriac Lectionary of the Gospels re-edited from two Sinai Mss and from P. de Lagarde’s edition of the Evangeliarium Hierosolymitanum, London, 1899"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17d3457"
+    ]
+}

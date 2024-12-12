@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1p633",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 99, Undertext (Greek majuscule)",
+    "locus": "ff. 1–6",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Biblical majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "27 lines, reconstructed (fols. 3r+4v, 3v+4r)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b97j",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 5th c. ",
+            "iso": {
+                "not_before": "0425",
+                "not_after": "0475"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 4v (col. a), 3r (col. a), 4v (col. b), 3r (col. b), 4r (col. a), 3v (col. a), 4r (col. b), 3v (col. b), 5v (col. a), 2v (col. a), 5v (col. b), 2v (col. b), 5r (col. a), 2r (col. a), 5r (col. b), 2r (col. b), 1v (col. a), 6v (col. a), 1v (col. b), 6v (col. b), 1r (col. a), 6r (col. a), 1r (col. b), 6r (col. b)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Guglielmo Cavallo"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1jt0ncx"
+    ]
+}

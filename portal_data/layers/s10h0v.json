@@ -1,0 +1,102 @@
+{
+    "ark": "ark:/21198/s10h0v",
+    "reconstruction": false,
+    "label": "Sinai Syriac 7, Undertext (Erkatagir)",
+    "locus": "ff. 47–48",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Slanted Erkatagir majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines",
+            "note": [
+                "Average of 12 characters per line per column"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nh5n",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ca.",
+            "iso": {
+                "not_before": "0750",
+                "not_after": "0950"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 48r, 48v, 47r, 47v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Obviously one original bifolio. Probably one more bifolio missing between fols. 48v and 47r (Hebrews 10.32b - 11.24)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The latter part of the text passage overlaps with the Armenian UTOs of Sinai Georgian NF M 13, ff. 62–63, which contains the continuous text of Hebrews 11.35 – 12.7, so it cannot pertain to the same original. A similar overlap is given with the Armenian UTOs of the palimpsest leaf Mingana Chr. Arab. Add. 124 of the University of Birmingham, which contains Hebrews 11.14–33"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "On fol. 48v there is a marginal gloss pertaining to Hebrews 10:30, referring to Deuteronomy 21; there may be a second gloss further up on this same page"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: For Sin. georg. N 13, 62-63, see: SIBE 2,2, pp. VII-60–63 and 68–69 for the edition, and SIBE 2,3, p. I-7 for a comparison with the Armenian text | For Mingana Chr. Arab. Add. 124 of the University of Birmingham, see: S. P. Brock, “An Early Armenian Palimpsest Fragment of Hebrews,” Revue des études armeniennes, N.S. II, 1965, pp. 129–34, and idem, “Notes on Some Texts in The Mingana Collection,” Journal of Semitic Studies 14/2, 1969, p. 224 with n. 6"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c26f2j"
+    ]
+}

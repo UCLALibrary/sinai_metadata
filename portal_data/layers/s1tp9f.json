@@ -1,0 +1,83 @@
+{
+    "ark": "ark:/21198/s1tp9f",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 64, Undertext (Greek majuscule)",
+    "locus": "ff. 3–4",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Biblical majuscule | Letters could be included in a square, apart from Ι, Ρ, Φ, Ψ, and Ω. Circular characters Ε, Θ, Ο, and C can also be included in a square | The script is similar to Codex Vindob. Med. gr. 1"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "15 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1gq4s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 6th c. ",
+            "iso": {
+                "not_before": "0580",
+                "not_after": "0600"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Alexandria, Egypt",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 4r, 4v, 3r, 3v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Vasilios Katsaros"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mw48br"
+    ]
+}

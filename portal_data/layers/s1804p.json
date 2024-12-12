@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1804p",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 16, Undertext (Nuskhurimt)",
+    "locus": "f. 2",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns, incomplete",
+            "lines": "12-17 lines, incomplete"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x10d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th c. ",
+            "iso": {
+                "not_before": "0975",
+                "not_after": "0985"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai, according to colophon",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 2r, 2v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "On folio 2v there is a colophon. It contains the name of the scribe: Gabriel"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: E. Giunashvili (ed.), Sinuri otxtavi 978-979 c’c’. (The four Gospels of Sinai 978-979), Tbilisi 2010"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z18c9x9s"
+    ]
+}

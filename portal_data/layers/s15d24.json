@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s15d24",
+    "reconstruction": false,
+    "label": "Sinai Greek 2053, Undertext (Greek majuscule)",
+    "locus": "ff. 25–28",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20-24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1td55",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai region",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 25r+28v (ll. 20), 25v+28r (ll. 21); 26r+27v (ll. 24), 26v+27r (ll. 24)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: For abbreviations of editions see H. Follieri, Initia Hymnorum Ecclesiae Graecae, 1-5, Studi e testi, 211-215bis (Vatican City, 1960-1966)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ks7pg9"
+    ]
+}

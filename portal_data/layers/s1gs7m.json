@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1gs7m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 588, Undertext (Undetermined (Arabic))",
+    "locus": "f. 68v",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14t2z",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by André Binggeli"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16m44r0"
+    ]
+}

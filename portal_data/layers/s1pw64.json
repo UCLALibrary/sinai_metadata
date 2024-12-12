@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s1pw64",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 64, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1–2",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Ancient CPA | Good regular hand; punctuation by double, triple, and quadruple points;\nuse of \"capital\" letters written in the margin to indicate beginning of a new verse (fols. 1ra, 1vb, 2ra, 2rb, 2vb)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "19 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bx03",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly St. Catherine's Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "<NA>"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v, 2r, 2v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The two folios belong probably to a book of Epistles; the missing text between them probably corresponds to four folios (eight pages)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mw48br"
+    ]
+}
