@@ -723,13 +723,6 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
     # TBD: could make some 'generic' to reduce duplication here
     if record_type == "layers":
         cols += [
-            {
-                    "data": str(row["Origin note"]),
-                    "type": {
-                        "id": "origin",
-                        "label": "Origin Note"
-                    }
-                },
                 {
                     "data": str(row["Provenance note"]),
                     "type": {
@@ -921,7 +914,7 @@ def create_associated_place(id: str, value: str, as_written: str, event: object,
     if id != "":
         place["id"] = id
     if value != "":
-        name["value"] = value
+        place["value"] = value
     if as_written != "":
         place["as_written"] = as_written
     place["event"] = event
