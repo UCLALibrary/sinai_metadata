@@ -300,35 +300,9 @@ def transform_row_to_json(row, record_type):
         data.pop("assoc_place")
     """
 
-     Left to write for layers:
-    - [x] writing (script, script label, locus, notes)
-    - [x] ink color and notes, and locus
-    - [x] layout (columns, lines, notes)
-    - [x] text unit object (reuse algorithm from ms_obj.layers)
-    - [x] colophon (make it a generic paracontent function), sub function for all record types?
-    - [x] assoc_name for scribe (implied type)
-        - make generic, so callable from para function as well, with optional passed type
-    - [x] assoc_date for origin (implied type)
-            - make generic, so callable from para function as well, with optional passed type
-    - [x] assoc_place for place of origin (implied type)
-            - make generic, so callable from para function as well, with optional passed type
-    - [x] notes for layers
-        - [x] ornamentation
-        - [x] contents
-        - [x] provenance
-        - [x] paracontent
-        - [x] general
-        - [x] origin
-    - [ ] Contributor (in progress, check it works)
+    To write for Text Units:
 
-    UTOs
-    - [x] locus
-    - [ ] related_mss at layer level?
-        - already implemented, just needs to be added to the data
-        - and/or related note?
-    - [ ] notes in UTOs
-        - bib note? (reference notes)
-        - [x] foliation note
+    
 
               """
     return data
