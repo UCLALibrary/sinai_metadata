@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s17p7d",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 76, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1609z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c.",
+            "iso": {
+                "not_before": "0932",
+                "not_after": "0933"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bg4f7v"
+    ]
+}

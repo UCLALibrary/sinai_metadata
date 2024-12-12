@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1mm0g",
+    "reconstruction": false,
+    "label": "Sinai Syriac 217, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f67f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "191v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܢܣܒ ܚܘܬܡܐ ܘܫܘܡܠܝܐ ܟܬܒܐ ܗܢܐ. ܒܫܢܐ ܘ̄ ܐܠܦܝܢ܆ ܘܚ̄. ܡܐܐ: ܗ̄܆ ܠܒܘܢ ܐܕܡ ܟܬܒܗ ܐܢܫܐ ܚܛܝܐ ܘܒܨܝܪܐ ܝܘܚܢܢ ܩ̄ܫܝ. ܒܫܡܐ ܘܠܘܒܥܒܕܐ ܘܟܬܒ ܒܛܘܪܣܝܢܝ ܐܚ̈ܝ ܡܛܠ ܡܫܝܚܐ ܨܠܘܐ ܥܠܝ ܕܐܝܬܝ ܚܛܝܐ",
+            "assoc_name": [
+                {
+                    "value": "Yuhannon the Priest",
+                    "as_written": "ܝܘܚܢܢ ܩܫܝ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1297",
+            "iso": {
+                "not_before": "1297"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces throughout, beginning on f. 6v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bz79cz"
+    ]
+}

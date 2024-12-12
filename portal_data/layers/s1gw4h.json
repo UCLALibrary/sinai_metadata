@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1gw4h",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 13, Overtext (Nuskhurimt)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Inelegant irregular script"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black",
+                "red"
+            ],
+            "note": [
+                "Red used for some rubrics"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19h45",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th-11th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "assoc_name": [
+        {
+            "value": "A certain Mikael",
+            "role": {
+                "id": "scribe",
+                "label": "Scribe"
+            },
+            "note": [
+                "Ff. 7v, 16r"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww8090"
+    ]
+}

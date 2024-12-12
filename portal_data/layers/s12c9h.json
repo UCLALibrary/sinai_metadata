@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s12c9h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 356, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w07d",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 178r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز كتابنا هذا بعون الله وتحننه يوم الخميس سلح تشرين الاول في دير السيدة المعظم ذكرها المكرم اسمها ارشايا ببلد الشام أنطاكية العظماء في سنة التاريخ الرابع سنة ستة آلاف وستمائة وأربعة وتسعين للعالم / وكان نساخة ملاتي الاعنستس من دير السيدة ارثايا الحقير الذي هو بالاسم راهب وهو يتوسل الى كل من قرأ فيه وسمعه أن يدعوا له بغفران خطاياه ويطلب إلى سيدنا المسيح بن الله ان يرحمه ويعينه على افتعال مسرته ورضاه فإن وجد فيه شيئا من الغلط فيصلحه والسيد المسيح يغفر له لأن كل مخلوق ناقص وليس تمام الا الله وحده ولله السبح دائما وعلينا رحمته آمين وكتب برسم الراهب انبا سابا الطور سيناء  نفعه الله به وغفر خطاياه",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday 4 Tishrin I 6694 (world)"
+                }
+            ],
+            "note": [
+                "Attested places:  Antioch ; Mar Sabas, Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1186",
+            "iso": {
+                "not_before": "1186"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12820qf"
+    ]
+}

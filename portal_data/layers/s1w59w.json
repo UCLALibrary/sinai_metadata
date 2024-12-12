@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1w59w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 25, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ps8v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 167r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت كتبة المزامير المباركة وكان الفراغ منها يوم الإثنين الثامن والعشرين من شهر تشرين الأول سنة ست ألف وسبع مائة وسبع ستين من سنى آدم وكتب الحقير في الرهبان ثاوذوس المعروف بالمصلى الانطاعى غفر الله لمن قرأ وترحم على الكاتب المسكين وبالتوفيق ",
+            "assoc_name": [
+                {
+                    "value": "Thaddeus (Monk)",
+                    "as_written": "ثاوذوس المعروف بالمصلى الانطاعى",
+                    "role": {
+                        "id": "undetermined",
+                        "label": "Undetermined"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1259",
+            "iso": {
+                "not_before": "1259"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece on f. 4r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t16719"
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1531n",
+    "reconstruction": false,
+    "label": "Sinai Arabic 159, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zm0k",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 61v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كمل عماد الكاثيمارينون وتفسيره الحدود وكتب الخاطئ المسكين القس بطرس بن سالم السنبلطى بطور سيناء وهو يسأل كل من يقرأ فيه  أن يدعى له بالمغفرة وكان فروغه في الرابع عشر من شهر آب سنة ستة آلاف وسبعمائة وسبع شهور آدم الموافق لعشرين من شوال سنة خمسمائة ستة وتسعين من شهر العرب يا خير مطلوب وأكرم طالب اغفر لصاحبه نعم  والكاتب من الكاتب من قال غير مقالي في الجلالة قرأ ثم يا جوهر من جوهر في جوهر لم ينقسم ",
+            "note": [
+                "Attested places:  Mount Sinai",
+                "Attested dates: 14 Ab 6707 (adam) ; 20 Shawwal 596 (hijri)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1199",
+            "iso": {
+                "not_before": "1199"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gf2c75"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "ark": "ark:/21198/s1492s",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 53, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Late Estrangela with Serto daleth and resh"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown"
+            ],
+            "note": [
+                "Overtext ink is glossy"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xt23",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 10th c. ",
+            "iso": {
+                "not_before": "0925",
+                "not_after": "0975"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10v8dvq"
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1p591",
+    "reconstruction": false,
+    "label": "Sinai Arabic 122, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1gs9c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 320v-321r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت الإنجيل المقدس على كماله وتمامه ولربنا والهنا ومتولي خلاصنا ايسوع المسيح الشكر والمجد والقدر والوقار أبد دائما سرمدا علينا رحمته إلى الأبد آمين / وذلك الفراغ من نسخة في العشر الأول الماضي في تشرين الاول في التاريخ الموافق لسنة ست آلاف وسبعمائة ستة وثلاثين لانبا آدم وبالله التوفيق مما شرح في نسخة والاهتمام به والتكلف في جميع … / كتب المسكين الخاطئ المحتاج إلى رحمة الله تعالى ومغفرة خطيئة أنذرايا ابن برقوب في أهل اللاذقية وهو يسأل لكل من قرأ في هذا الإنجيل المقدس أن لا تأخذ عليه في غلط او في نقص لأنه ليس على حسب ما وجد مكتوب وقوبل على ذلك",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Last ten days of October, Tishrin I 6736 (adam)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1228",
+            "iso": {
+                "not_before": "1228"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hx2x8c"
+    ]
+}

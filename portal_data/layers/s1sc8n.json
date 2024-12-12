@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1sc8n",
+    "reconstruction": false,
+    "label": "Sinai Arabic 264, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kw8z",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "inscription",
+            "label": "Inscription(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1336",
+            "iso": {
+                "not_before": "1336"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor zoomorphic tailpiece on f. 205v | Decorated Greek initials throughout"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pk1kgn"
+    ]
+}

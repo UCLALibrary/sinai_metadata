@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s11w5v",
+    "reconstruction": false,
+    "label": "Sinai Syriac 166, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vh44",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "248v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܫܬܠܡ ܒܥܘܕܪܢ ܐܠܗܐ ܟܬܒܐ ܕܫܥ̈ܐ ܕܐܝܡܡܐ ܘܠܠܝܐ: ܫܢܬ ܐܫܬ ܐܠܦ ܫܒܥ ܡܐܐ ܘܫܒ̈ܥܝܢ ܘܚܡܫ ܡܢ ܡܢܝܢܐ ܕܐܒܘܢ ܐܕܡ܀ ܀ ܒܕܝܪܐ ܩܕܝܫܬܐ ܘܡܒܪܟܬܫ ܛܘܪ ܣܝܢܝ ܒܥܕܬܐ ܩܕܝܫܬܐ ܕܝܠܕܬ ܐܠܗܐ ܨܠܘܬܢ ܬܢܛܪܝܢܝ܀ ܀ ܐܒܘܢ ܩܕܝܫܐ ܗܘ̇ ܕܩܪܐ ܒܗܢܐ ܟܬܒܐ: ܐܢ ܐܫܟܚܐ ܒܗܒܘܨܪ ܐܘ ܡܕܡ ܕܠܐ ܘܐܠܐ ܢܣܪܘܚ ܠܝ ܫܘܒܩܢܐ ܡܛܠ ܡܪܢ ܕܒܪܝܐ ܐܝܬܝ ܘܒܨܝܪ ܘܕܐܠܗܐ ܗܘ̣ ܫܘܠܡܐ ܫ̄ܘ ܠܗ܀"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1267",
+            "iso": {
+                "not_before": "1267"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd3gkv"
+    ]
+}

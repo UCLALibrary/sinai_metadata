@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s18k69",
+    "reconstruction": false,
+    "label": "Sinai Arabic 435, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1365k",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 253v-backboard inside",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كٌتب هذا الدفتر في قلاية المطرنه بمدينة بُصرى على ايام الأب الفاضل أنبا ابرام سكنا الله صلواته ورزقه الاخره الصالحه وكان كمال نسخة في يوم السبت ثالث تشرين الأول الحادي في سنة ست آلاف وستمائه واحد وخمسين لأبينا آدم وسنة سبع وثلثين وخمسمائه الهجرة الاسلامية / كتبه الخاطئ  الحقير يوحنا مطران بعلبك وهو يسأل بالمحبة لكل من يقرأ فيه ان يصلى عليه ومثل ما يصلى يكون له آمين آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 3 Tishrin I  6651 (adam) :: 537 (hijra)"
+                }
+            ],
+            "note": [
+                "Attested names: John, Metropolitan of Baalbek ; Father Abram",
+                "Attested places:  Busra (Syria)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1142",
+            "iso": {
+                "not_before": "1142"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zk6kz9"
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1d025",
+    "reconstruction": false,
+    "label": "Sinai Arabic 62, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16m0r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 214r-214v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت المزامير ما يتلوها من التسابيح يوم الاثنين سابع عشر من شهر تموز سنة ست آلاف وثمانمائة وعشرين للعالم وكتبه الحقير الذي بالاسم راهب وهو برسمه خطاياه وكان فراغه بدير القديس مار يوحنا الصابغ المعمدان [erasure] المقدس وهو يسأل كل من قرأ فيه أن يترحم عليه ووالديْه وجميع بني المعمودية امين امين امين غفر الله لمن كتب ومن يقرأ ويقول أمين ",
+            "note": [
+                "Attested places:  Monastery of John the Baptist"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1312",
+            "iso": {
+                "not_before": "1312"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1n6052t"
+    ]
+}

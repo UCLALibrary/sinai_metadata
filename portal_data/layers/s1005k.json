@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1005k",
+    "reconstruction": false,
+    "label": "Sinai Syriac 190, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sm2s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpieces on ff. 8v, 52v, 77v, 209v, 214r, 226v | Minor geometric headpieces, ff. 106v, 139v, 142v, 162v, 212v, 233r, 234r I Geometric decoration, f. 220r, interlace knot"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12z28sj"
+    ]
+}

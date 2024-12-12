@@ -1,0 +1,53 @@
+{
+    "ark": "ark:/21198/s1d059",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 130, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black",
+                "red"
+            ],
+            "note": [
+                "Initials overlaid in red"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16m2h",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th-13th c. ",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10v8nt5"
+    ]
+}

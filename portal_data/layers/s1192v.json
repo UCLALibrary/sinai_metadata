@@ -1,0 +1,56 @@
+{
+    "ark": "ark:/21198/s1192v",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 31, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zq2c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1179",
+            "iso": {
+                "not_before": "1179"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative elements [ff. 2r-2v]"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1k37krr"
+    ]
+}

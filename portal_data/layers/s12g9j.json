@@ -1,0 +1,57 @@
+{
+    "ark": "ark:/21198/s12g9j",
+    "reconstruction": false,
+    "label": "Sinai Syriac 7, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Script and decoration remind the ones of ms. Sinai Syriac 4 (Triodion)."
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w37f",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c.",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            },
+            "note": [
+                "Overtext of folios 71r-72v (palimpsests) written at a later date, 13th c."
+            ]
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Antiochia, Black Mountain",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c26f2j"
+    ]
+}

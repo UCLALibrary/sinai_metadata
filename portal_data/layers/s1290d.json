@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1290d",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 20, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Estrangelo script, circa 7th-8th century"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10m4d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qv5crb"
+    ]
+}

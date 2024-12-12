@@ -1,0 +1,88 @@
+{
+    "ark": "ark:/21198/s1w349",
+    "reconstruction": false,
+    "label": "Sinai Syriac 215, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1pq2w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "188v-189r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܬܟܬܒ ܕܝܢ ܒܩܪܝܬܐ ܕܝܛܪܬ̤ ܒܐܠܗܐ ܘܪܚܡܬ̤ ܠܡܫܝܚܐ ܩܪܝܬܐ ܕܝܢ ܕܝܐܝܢ ܘܒܗܝܡܢ ܟܠܡܢ ܕܦܓܥ ܒܟܬܒܐ ܗܢܐ. ܝܐ ܡܪܒܟܨܠܘܬܐ. ܐܠܗܐ ܣܓܝ ܪ̈ܡܚܐ ܚܘܢܝܗܝ ܠܪ ܦܝܥ ܒܪ ܝܘܢܢ. ܡܢܝܚ ܢܦܫܐ ܐܡܝܢ ܐܝܟ ܥܝܣܐ ܒܐܩܝܦܐ. ܒܨ̈ܠܘܬܗ̇ ܐܠܗܐ. ܘܲܪܟ̇ܠ ܩܕ̈ܝܫܝܟ ܐܡܢ ܘܐܡܝܢ. ܒܫܡܐ ܕܐܠܗܐ ܚ̇ܝܐ: ܐܬܪܗܒ ܕܝܪܝܐ ܝܘܚܢܢ ܒܪܐ ܕܟܬܝܪ ܒܪ ܝܘܚܢܢx ܘܕܝܪܝܐ ܝܘܣܦ ܒܪ ܣܪܘܪ ܒܪ ܢ̇ܥܡ̣ܐ ܝܘ̄ܡ ܒ̄ ܝ̄ܪ ܒܝܪܚ ܟܢܘܢ ܬܪܝܢܐ ܫܢܬ ܐܠܦ: ܘܗ: ܡܐܐ: ܘܡ: ̣ܘ̣ܙ̣ ܡܢ ܫܢܝܐ ܕܠܟܣܢܕܘܣ ܒܪ ܦܝܠܝܦܘܣ ܡܪܝܐ ܐܠܗܐ ܢܢܛܪ ܐܢܘܢ̇ ܡܢ ܟܠܗ̈ܝܢ ܒܝ̈ܫܬܐ ܒܨ̈ܠܘܬܐ ܕܟܠܗܘܢ ܕܡܪܝܡ ܝܠܕܬ ܐܠܗܐ ܘܕܟܠܗܘܢ ܩܕܝ̈ܫܝܟ ܕܥܒ̣ܕ ܨܒܝܢܟ ܗ̄ܫ",
+            "note": [
+                "Attested names: Rafa' bar Younan (ܪܐܦܥ ܒܪ ܝܘܢܢ) ; John son of Kathir son of John (ܝܘܚܢܢ ܒܪ ܟܬܝܕ ܒܪ ܝܘܚܢܢ) ; Yoseph son of Sarour son of Na'meh (ܝܘܣܦ ܒܪ ܣܪܘܪ ܒܕ ܢܥܡܐ)",
+                "Attested places:  in Saidnaya"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1219",
+            "iso": {
+                "not_before": "1219"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Full page cross decoration on f. 1v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12f9671"
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1rk6n",
+    "reconstruction": false,
+    "label": "Sinai Arabic 440, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1k65x",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 331r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الكتاب المقدس بمعونة الله تعالى وكان الفراغ منه يوم الجمعة ثالث وعشرين حزيران سنة ستة آلاف وسبعمائة وتسعة وخمسين من سنين أبينا آدم  عليه السلام / أسألك أيها القارئ ذكر كاتبه الحقير الخاطئ الراهب بالإسم لا بالفعل نيلس الدمشقي في صلواتك يذكرك الرب برحمته آمين وكتبه في دير القديس موسى النبي كليم الله تعالى فم لفم طور سيناء المقدس اقتناه لنفسه ولمن ينتفع به في حياته وبعد موته ويترحم عليه وعلى جميع بني المعمودية غفر لمن يفعل ذلك ولجميع بني المعمودية الاحيا والاموات بشفاعة السيدة والدة الإله وجميع الملائكة والقديسين والقديسات آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 23 Huzayran 6759 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1251",
+            "iso": {
+                "not_before": "1251"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15f09fg"
+    ]
+}

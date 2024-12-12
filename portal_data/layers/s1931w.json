@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1931w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 547, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13q0v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "calligraphic-practice",
+            "label": "Calligraphic Practice"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c.",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Anthropomorphic portrait sketches, ff. 1ar-1av"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Partial knot motifs, f. 103v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hq5hkh"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1sw3x",
+    "reconstruction": false,
+    "label": "Sinai Arabic 121, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mh0f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1243",
+            "iso": {
+                "not_before": "1243"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Full page decoration of cross with border on f. 228v | Ornate geometric headpiece on f. 289v, with cross and lamp motifs | Geometric and zoomorphic headpieces, ff. 114v, 296r, 322r with bird-like motif | Minor geometric headpieces throughout, beginning f. 1r I Illuminated zoomorphic motifs throughout including birds, winged serpents and fish, beginning on f. 6r with bird carrying red sphere in beak; geometric bird, f. 35v, 62v; winged serpent, 42r, 84r, 178v, 196v, 352v | Geometric and vegetative decorations throughout"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16m4b5v"
+    ]
+}

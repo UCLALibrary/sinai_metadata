@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1303r",
+    "reconstruction": false,
+    "label": "Sinai Arabic 218, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1wh2p",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-calligraphic",
+            "label": "Decoration, Calligraphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate bordered headpieces, f.5v knotted vine with Fleur de Lis and display script; f. 48r, f. 176r, woven knot; f. 144r, woven knot with palmettes; f. 134av, knotted vine with zoomorphic serpents and stylized fames | Headpieces throughout, knotted vine, geometric, begining f.11r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated calligraphy, f. 117r, knotted; f.5v, display script"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative elements, f. 83r, spira related to script; f. 208v, woven knot"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1k94s60"
+    ]
+}

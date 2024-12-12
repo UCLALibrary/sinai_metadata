@@ -1,0 +1,122 @@
+{
+    "ark": "ark:/21198/s1cs4j",
+    "reconstruction": false,
+    "label": "Sinai Arabic 336, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16d46",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 226v-227r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز بعون الله وتوفيقه ميمر الراعي وهو خاتمة الكتاب المقدس والشكر لله دائما وكان الفراغ منه يوم الثلاثاء السابع من شهر نيسان سنة ستة آلاف وسبعمائة وأربعة وثلاثين من سنين أبينا آدم الموافق لشهر ربيع الآخر سنة ستمائة وثلاثة وعشرين للهجرة وكتبه العبد الحقير الخاطئ متى الطور سيناء المدعو بالاسم راهب وكان نساخة في قلاية في قلاية رهبان طور سيناء بمدينة دمشق بكنيسة مريم فمن قرأ فيه وسامع بما فيه من الغلط وذكر ناسخة الخاطئ بغفران الخطايا والمسامحة وكتبه لنفسه وهو بعد حياة الرهبان المقيمين بجبل طور سيناء غفر الله لمن قرأ فيه ولمن دعا لمن كتبه ",
+            "translation": [
+                "… here ends the holy book …, the completion of which was on Tuesday 7 in the month of Nīsān [March–April] in the Year of Our Father Adam [Anno Mundi] 6734, which fell in the month of Rabī‘ al-Ākhar [Rabī‘ ath-Thānī] in the year of the Hegira [AH] 623, and Matthew of the Mount Sinai, who is known as a monk, copied it, and its copying occurred in the residence of Mount Sinai monks in the city of Damascus at the Cathedral of Mary [Mariamite Cathedral of Damascus] …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Matthew of Mount Sinai (f. 226v)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "Mount Sinai monks in the city of Damascus at the Cathedral of Mary [Mariamite Cathedral of Damascus]",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Tuesday 7 Nisan 6734 (adam) :: Rabi II 623"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1226",
+            "iso": {
+                "not_before": "1226"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Mariamite Cathedral of Damascus",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 227"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric decorative tailpiece in red ink on f. 209v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10v9h6t"
+    ]
+}

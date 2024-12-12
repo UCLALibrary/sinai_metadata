@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1fs79",
+    "reconstruction": false,
+    "label": "Sinai Syriac 4, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Melkite; 11th century, likely copied in the Monastery of St Elijah / St Panteleimon on the Black Mountain nr. Antioch."
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "iron gall",
+                "red",
+                "green"
+            ],
+            "note": [
+                "Iron gall and red ink are used in the text; occasionally green colour is used in rubrics (f. 51v onwards)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 column",
+            "lines": "ca. 20 lines",
+            "note": [
+                "Ruling with hard point and lead pencil marking the borders of the writing area"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18d56",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-calligraphic",
+            "label": "Decoration, Calligraphic"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c.",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate vegetative headpieces, knotted vine motif, ref and green ink, ff. 67r, 86r, 98r, 116r, 163r, 177v, 195v; f. 202r, with ornamental head and tails | Minor geometric headpieces throughout, ff. 17r-199r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornamental additions to Aleph, ff. 9v, 15v, 40v, 41v, 68v, 117r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gq8gdp"
+    ]
+}

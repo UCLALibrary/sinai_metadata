@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s1xw5x",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rh3t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th-14th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1400"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

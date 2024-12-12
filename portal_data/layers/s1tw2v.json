@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s1tw2v",
+    "reconstruction": false,
+    "label": "Sinai Arabic 112, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nh14",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 168r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز نسخ هذه الأربعة الأناجيل المقدسة متى ومرقس ولوقا ويوحنا ينابيع ماء الحياة ومصابيح النور ل[صر]ي النجاة و مفاتيح ملكوت السماء المشفيين لأنفس القارئين فيها منير عقول الناظرين فيها ومصلحين  قلوب العاملين بها في كير (؟) الست الطاهرة البتول مرت مريم والدة الإله بطاهرة (ين) في قلاية للأب القديس الطاهرللرب حاني ولي الله مصطفيه المؤيد بالنعمة الإلهية ثالث عشر الحواريين بطريرك المدينة العظماء أنطاكية وما جمع إليها أدام الله تعيزه ورزق كافة شعبه ومحبيه بركة صلواته آمين في ثلاث وعشرين تشرين الأول ست ألف وخمسمائة إحدى وسبعين الموافق لخامس من شوال  سنة سبع وخمسين وستمائة للهجرة",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday 23 Tishrin I 1571 Seleucid (Greek) :: Thursday 10 October 1259 :: Thursday 27 Shawwal 667 hijri"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1259",
+            "iso": {
+                "not_before": "1259"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric roundel, f. 127v, red and green ink"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1np3p1j"
+    ]
+}

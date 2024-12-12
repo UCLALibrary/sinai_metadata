@@ -1,0 +1,128 @@
+{
+    "ark": "ark:/21198/s1vk56",
+    "reconstruction": false,
+    "label": "Sinai Arabic 170, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1p64g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "inscription",
+            "label": "Inscription(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 184v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخ هذا الكتاب والمقدس يوم السبت  سابع شهر نيسان سنة ستة آلاف وسبعمائة وثلثه وتسعين سلف منذ الله لأبينا آدم / وهذا الكتاب كُتب بدير طور سيناء جبل الله المقدس حرسه الله وتولاه برسم المهتم به وهو الشيخ القديس المكرم أنبا اكليمي الاكليسيارشيس يومئذ في كنيسة الدير المقدس المذكور وكان ذلك في أيام الأب القديس مهدي النفوس المنتخب من الله لهداية شعبه الأنبا أرساني أسقف طور سيناء أدام الله رياسته ورحمنا بصلواته وهب الله له من الأعمار أطولها وذلك لما فيه من المنفعة ومسطرة الحقير في الملتجئين إلى الذي الرهباني لا ثوب التوبة والمسكين بأعماله السيئة وتعديه وصايا يا سيدة يراسمه  المدعو راهب يسأل كل من قرأ فيه أن يدعوا له بالغفران والصفح عن ربوات الآثام وإن وجد فيه غلط أو نقص فليصلحه لينال بذلك الثواب من رب الأنام يا رب اغفر للقارئ والسامع والكاتب آمين",
+            "translation": [
+                "Copying of this holy book finished on Saturday 7 in the month of Nīsān [March–April] in the year 6793 past since Allah created Our Father Adam [Year of the World Anno Mundi)], and this book was"
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 7 Nisan 6793 (Adam"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1285",
+            "iso": {
+                "not_before": "1285"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Saint Catherine's Monastery (Sinai)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 184v"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate geometric and vegetative headpiece in red on f. 206v, with ascending cross; Decorated Greek initials, ff.194r-206v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z3333b"
+    ]
+}

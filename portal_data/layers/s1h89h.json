@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1h89h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 164, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19w73",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 233v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت بمعونة الله وتوفيقه رسائل السعيد بولس الرسول والسبع رسائل الكاثوليكية وكان كمال نسخ هذا المصحف النفيس النافع للنفس يوم السبت سلخ تموز في سنة ستة آلاف وسبعمائة وستة وأربعون للعالم ولله والشكر دائما أيها القارئ صلى على الكاتب الخاطئ ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday Tammuz 6746 (world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1238",
+            "iso": {
+                "not_before": "1238"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10v9xdg"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s10p5g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 306, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t94r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1601",
+                "not_after": "1700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ht471p"
+    ]
+}

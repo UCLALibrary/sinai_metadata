@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1430z",
+    "reconstruction": false,
+    "label": "Sinai Arabic 167, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xp9c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 131v-132v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1255",
+            "iso": {
+                "not_before": "1255"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "provenance",
+                "label": "Provenance Note"
+            },
+            "value": "Manuscript of Coptic provenance"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bz7992"
+    ]
+}

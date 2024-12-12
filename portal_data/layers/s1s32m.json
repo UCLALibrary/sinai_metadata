@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1s32m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 553, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kq06",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 132r-132v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ من نسخة في ثلاث ساعات مضت من نهار يوم السبت لواحد وعشرين يوما خلت من أيلول سنة ستة آلاف وستمائة واثنين وثمانين للعالم وسنة ألف وأربعمائة وخمسة وثمانين للملك الإسكندر اليوناني وسنة ألف ومائه واثنين وثمانين لربنا المسيح وسنة وتسعة وستين وخمسمائة للهجرة رحم الله قرأ وسمع ودعا لكاتبها الحقير…بن اليس إسحاق ابن الخوري يوحنا الطبشراني غفر الله له ولوالديه ولجميع بني المعمودية",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 21 Aylul 6682 (world) :: 1485 (Seleucid) ::  1182 (Christ) :: 569 (hijra)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1182",
+            "iso": {
+                "not_before": "1182"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15t546z"
+    ]
+}

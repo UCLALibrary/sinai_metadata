@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1t61k",
+    "reconstruction": false,
+    "label": "Sinai Arabic 290, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ms9m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 207v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الكتاب المقدس بمعونة ربنا والاهنا ومخلصنا يسوع المسيح وأبوه وروح قدسه نهار يوم الجمعة الرابع عشر من حزيران سنة ست الاف وسبعمائه وسبعة وعشرين موافق للتاسع وعشرين من ربيع أول سنة ستة عشر ستمائه اذكر الكاتب ",
+            "translation": [
+                "This [copying of the] holy book was finished … during the day on Friday 14 in the month of Ḥazīrān [June] in [Anno Mundi] 6727, which fell on 29 [difficult to read] …"
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 14 Huzayran 6727 :: 29 Rabi’ I 617 (arab/hijra)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1219",
+            "iso": {
+                "not_before": "1219"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor tailpiece on f. 207v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15m792x"
+    ]
+}

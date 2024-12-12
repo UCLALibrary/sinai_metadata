@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1jg74",
+    "reconstruction": false,
+    "label": "Sinai Arabic 123, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1c06c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 194v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تم الإنجيل المقدس وذلك برسم الحدود المقدس لطول السنة وذلك بتاريخ أول أيار في سنة ست ألف وسبع مائة وسبعة وثمانين لأبينا آدم وذلك برسم الجبل العظيم المقدس  طور سيناء مما نسخة عبد الفقير إلى رحمة ربه ورضوانه ابراهيم ابن يوحنا الطبيب الدمشقي وهو يسأل كل من قرا فيه وسمعه لمن يدعوا له ولو الدير بمغفرة الخطايا والذنوب والسبح لله دائما وعلينا رحمته آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1 Ayyar 6787 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1279",
+            "iso": {
+                "not_before": "1279"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ks7vtv"
+    ]
+}

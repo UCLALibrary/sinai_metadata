@@ -1,0 +1,109 @@
+{
+    "ark": "ark:/21198/s1j613",
+    "reconstruction": false,
+    "label": "Sinai Arabic 397, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bs94",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 270r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز الجزء الثالث من الدولاب وهو شهر تشرين الثاني بمعونة الله حسن توفيقه بمؤازرة السيدة أم النور بمعونة القديس المسماون في هذا المصحف في نهار ايليا الثالث عشرين من آذار سنة ستة آلاف وثمانمائة واحد واربعين لأبينا آدم وكان المهتم بكتابته العبد الخاطئ سمعان باسم قس ابن يوسف من قرية صيدنايا من عمل دمشق غفر الله له آمين وذلك في أيام الأب الروحاني السيد الأسقف كير جرمانوس بطور سيناء رحمنا الرب بركة بصلاته والسبه لله دائما أبدا ا آمين غفر الله لمن قرأ وسامح بما يجده من النقص وهو برسم كنيسة السيدة فمن غيره عنها كانت السيدة خصمه يوم الدينونة ",
+            "translation": [
+                "[The copying of] Part III of Ad-Dūlāb [Menologion], that is the month of Tis[h]rīn ath-Thānī [November] … in this book, was finished on Tuesday 23 in the month of Ādhār [March] in the Year of Our Father Adam [Anno Mundi] 6841, and it was copied by … Sam‘ān [Simon?], a priest by name, son of Joseph …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Sam‘ān ibn Joseph of Saydnaya (f. 270r)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "23 Adhar 6841 (adam)"
+                }
+            ],
+            "note": [
+                "Attested names:  Bishop Germanius, Mount Sinai",
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1333",
+            "iso": {
+                "not_before": "1333"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces throughout, beginning on ff. 58r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v41zhq"
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "ark": "ark:/21198/s1jh0t",
+    "reconstruction": false,
+    "label": "Sinai Syriac 271, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1c385",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "218r-218v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                },
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "ܐܬܟܬܒ ܘܐ ܫܬܡܠܝ ܟܬܒܐ ܗܢܐ ܒܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪ ܣܝܢܝ܀ ܝܘܡ ܗ̄. .ܝ̄܆ ܒܫܒܛ܀ ܫܢܬ: ܫܬܐ ܐܠܦܝܢ ܘܫܒܥ ܡܐܐ: ܘܬܫܥܝܢ. ܘܫܬܸ: ܠܐܒܘܢ ܬܕܡ܀ ܟܬܒܗ ܖܝܢ ܐܢܫ ܚ̈ܛܝܐ ܘܒܨܝ̇ܪܐ: ܕܐܝܬܘ ܒܫܡܐ ܘܠܐ ܬܥܒܕܐ: ܟܗܢܐ ܫܡܥܘܢ ܒܪ ܝܘܣܦ ܡܪܝܐ ܢ̇ܢܝܚ ܢܦܫ̈ܬܐ ܖܐ ܕܐܒܘܗܘܝ ܘܕܐܚܘܗܝ ܘܢܦܫܗ ܥܡ ܟܠܗܘܢ ܩܕܝܫܐ ܐܡܝܢ܀܀܀܀ ܟܬܒܗ ܕܝܢ ܠܐܚܐ ܢܟܦܐ ܘܙܗܝܐ ܡܫܡܫܢܐ ܝܘܚܢܢ ܚܟܝܡܐ ܡܪܝܐ ܐܠܗܐ ܝܗܒ ܠܗ ܣܘܟܠܐ ܘܐܝܕܥܬܐ ܘܫܘܒܩܢܐ ܕܚܛܗܘܗܝ ܘܚܘܒܘܗܝ ܐܡܝܢ ܐܘ ܩܪܘܝܐ. ܐܢ ܐܫܟܚܬ ܒܗ ܓܠܛܐ ܐܘ ܦܘܕܐ. ܐܢܬ ܗܒ ܫܘܒܩܢܐ ܠܟܬܘܒܗ يا رب اغفر لعبدك الخاطي الماطي والودي واجميع قلل امين",
+            "assoc_name": [
+                {
+                    "value": "Shem'un bar Yosef",
+                    "as_written": "ܫܡܥܘܢ ܒܪ ܝܘܣܦ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                },
+                {
+                    "value": "Deacon Yuhannon the Wise",
+                    "as_written": "ܡܫܡܫܢܐ ܝܘܚܢܢ ܚܟܝܡܐ",
+                    "role": {
+                        "id": "patron",
+                        "label": "Patron"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1288",
+            "iso": {
+                "not_before": "1288"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 2r, a hand of God holding a cross, a second hand of God descending from the outer upper margin, vegetative motifs, red, black and green ink | Borders on ff. 122v, 183r, 219r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Manicule on f. 2r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v99cfj"
+    ]
+}

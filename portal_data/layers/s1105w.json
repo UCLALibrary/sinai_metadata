@@ -1,0 +1,98 @@
+{
+    "ark": "ark:/21198/s1105w",
+    "reconstruction": false,
+    "label": "Sinai Syriac 182, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1th56",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "260v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܩܠ ܣܟܐ ܘܫܘܡܠܝܐ ܟܬܒܐ ܗܢܐ ܝܘܡ :ܓ̄:ܒ̄ܫ:ܒܝ̄ܒ̄: ܒܐܝܐܪ: ܒܐܝ̣̈ ܐܢܫ ܒܨܝܪܐ ܘܚܛܝܐ ܘܬܚܘܒܐ ܫܡܥܘܢ ܒܪ ܦܛܩܘܣ ܡܢ ܩܪܝܬܐ ܢܛܪܬ: ܒܐܠܗܐ: 11 ܪܘܡܐܢܐ ܟܬܒܗ ܠܕܝܪܐ ܩܕܝܫܬܐ: ܕܛܘܪ ܣܝܢܐ: ܐܠܗܐ ܢܬܪܚܡ ܥܠ ܚ̇ܛܝܐ ܟܬܘܬܐ: ܒܨ̈ܠܘܬܐ ܕܟܠܗܘܢ ܩ̈ܕܝܫܐ ܕܥܡܪ̈ܝܢ ܒܗ: ܫܢܬ̤ ܐܠܦ̈: ܘܗ̄: ܡܢ ܡܢܝ̈ܢܐ ܕܠܟܣܢܕܪܘܣ ܒܪܝ ܦܝܠܝܦܘܣ ܡܩܓܘܢܝܐ",
+            "assoc_name": [
+                {
+                    "value": "Shem'un bar Petros",
+                    "as_written": "ܫܡܥܘܢ ܒܪ ܦܛܪܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1253",
+            "iso": {
+                "not_before": "1253"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric and vegetative headpieces throughout, beginning on f. 6v | Borders, f. 260v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hq53bd"
+    ]
+}

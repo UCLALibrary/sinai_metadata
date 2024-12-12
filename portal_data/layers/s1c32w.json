@@ -1,0 +1,88 @@
+{
+    "ark": "ark:/21198/s1c32w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 276, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15q0g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 360r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا المصحف المقدس في العشر الأخير من تشرين الأول سنة ست آلاف سبعمائه وإثنين وثلاثين لأبينا آدم الموافق العشر الأخير من شهر رمضان سنة عشرين وستمائة للهجرة قوبل على الأم وكتب الخاطئ الغير مستحق يدعى راهب بنيمين السيقى وذلك بمدينة دمشق بكنيسة السيدة مارت مريم والدة الإله الكلي قدسها في أيام أبي يوحنا مطرانها ونقلت من نسخة انطاكية كتبت بدير إيليا واليشع النبيين المعظمين بجبل اللكام  متضرعا وطالبا الى كل من يطالع فيه للقراءة او ينسخه بالمغفرة والصفح  عما اجترمه بشفاعة قديسية آمين",
+            "assoc_place": [
+                {
+                    "value": "Damascus",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Last ten days Tishrin I 6731 (adam) :: Last ten days Ramadan 620h"
+                }
+            ],
+            "note": [
+                "Attested places: Copied from a manuscipt at Antioch, Monastery of Elijah and Elisha, Mount al-Lukkam"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1223",
+            "iso": {
+                "not_before": "1223"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z90gqw"
+    ]
+}

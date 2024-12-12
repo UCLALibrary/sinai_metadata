@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1hg7t",
+    "reconstruction": false,
+    "label": "Sinai Arabic 132, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b34b",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 519v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الإنجيل المبارك يوم الخميس  الحادي عشر من شهر أيلول سنة ست ألف وسبعمائة وتسعين لأبينا آدم عليه السلام وسنة ألف ومائتي وتسعين للتجسد الإلهي لذكره السجود والاكرام وسنة العرب الرابع والعشرين ؟ من شهر جمادى الأول سنة ثمانين وست مائة / أيها القارئ اذكر الحقير في بني المعمودية والراهب بالاسم نفري المقدس ناقله وكاتبه يذكرك السيد المسيح في ملكوته وذلك في دير الله المقدسين طور سيناء",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday, 11 Aylul (September) 6790 (adam) :: 1290 of the Incarnation/Melkite? :: 680h"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1282",
+            "iso": {
+                "not_before": "1282"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative headpieces throughout beginning, f. 153r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1r224s4"
+    ]
+}

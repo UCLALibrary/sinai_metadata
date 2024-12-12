@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1m89f",
+    "reconstruction": false,
+    "label": "Sinai Arabic 139, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ds8c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 172r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كمل الإنجيل المقدس بعون الله وحسن توفيقه وجميل صنعه ورحمته نعيم/ يوم الخميس السابع عشرين كانون الثاني لستة ألف وأربعمائة وست وتسعين لاسكندر / وفي سنة ستة آلاف وستمائة وثلاثة وتسعين للعالم بما عني نقله المسكين الخاطئ في الكهنة الشماس بن ابو نصر المتطبب نفعه الله به ورزقه الكرم على قراته وخلاص النفس امين // وكتب انا مبارك المعمد يخطئ وأنا أسأل كل كم وقع في يده وقرأه او نسخ منه ان يترحم عليه فالله يغفر له ولوالديه ولجميع لولاد المعمودية خطاياهم بشفاعة السيدة الطاهرة أم النور ويوحنا المعمدان وجميع القديسين آمين نيح الله نفس من كتبه ومن قراه وقال آمين",
+            "note": [
+                "Attested dates: Thursday 17 Kanun II 1496 Alexander :: 6693 (world/Byzantine) ; Alexander (Seleucid Era), Thursday, 27 ; Kanun Thani (January) 1496 = 1185 AD ; Byzantine World Era, 6693 = 1185 AD"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1185",
+            "iso": {
+                "not_before": "1185"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gm9bpz"
+    ]
+}

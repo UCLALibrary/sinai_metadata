@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1t04n",
+    "reconstruction": false,
+    "label": "Sinai Syriac 9, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mm3m",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c.",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z18k8ttz"
+    ]
+}

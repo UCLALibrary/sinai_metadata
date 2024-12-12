@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1903m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 328, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13m16",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 261r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان النجاز من نساخة هذا الكتاب الشريف المقدس في ثمانية أيام من شهر تشرين الثاني عيد ميخائيل رئيس الملائكة في سنة 1812 مسيحية  بيد أحقر عباد الله يعقوب ولد جرجس تسبون العكاوى طالبا في الله تعالى الأجر والثواب فالمرجوا من القارئ بأن يدعو له بالرحمة والغفران ليكون له نظير ذلك الرب الكريم المنان آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "8 Tishrin II 1812,  during the Feast of Saint Michael the Archangel"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1816",
+            "iso": {
+                "not_before": "1816"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpiece on f. 56v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1s195rq"
+    ]
+}

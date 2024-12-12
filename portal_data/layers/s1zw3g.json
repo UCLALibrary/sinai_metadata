@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/s1zw3g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 281, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sh34",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 385r-385v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تم بمعونة الله تعالى تفسير أبينا المعظم في القديسين يوحنا الذهبي الفم السفر الأول من التوراة وجملة ذلك ستة وستون مقالة وذلك في يوم الإثنين في عشرين من شهر اشباط سنة ستة ألف وسبعمائة وواحد وثلثين للعالم نقل عبد الله بن الفضل بن عبد الله من اللغة اليونانية إلى اللغة العربية وكتب بدير القديس خريطون رحم الله الناقل والكاتب والقارئ والسامع بشفاعة السيدة الطاهرة والدة الإله وهذا القديس الفاضل يوحنا الذهبي الفم وكل الروحانيين من الملائكة والبشر آمين آمين آمين",
+            "translation": [
+                "Here was completed with the aid of Allah the Most High [the copying of] the explication of our father senior amongst the saints, John Chrysostom, of the First Book of the Torah; and together they are sixty-six treatises, [the completion of] which was on Monday 20 in the month of Ushbāṭ [January–February] in the Year of the World [Anno Mundi] 6731. ‘Abdullah ibn al-Faḍl ibn ‘Abdullah translated it from the Greek language into the Arabic language, and it was copied at Saint Chariton [Pharan] Monastery…"
+            ],
+            "assoc_place": [
+                {
+                    "value": "Saint Chariton [Pharan] Monastery",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Monday 20 February 6731 (world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1225",
+            "iso": {
+                "not_before": "1225"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Saint Chariton Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 385v"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1f20336"
+    ]
+}

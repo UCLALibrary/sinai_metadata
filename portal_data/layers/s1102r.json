@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1102r",
+    "reconstruction": false,
+    "label": "Sinai Arabic 236, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1tm0b",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 147v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت كتبة سواعي برمون الميلاد ودفوني الغطاس والجمعة الكبيرة نهار يوم الخميس التاسع وعشرين يوما مضت من شهر أيار الموافق لشهور سنة ست ألف ثمانمائة ستة سنين العالم وذلك في دير الجبل المقدس طور سيناء في أيام الأب السيد الأسقف القديس أبا يوحنا رحمنا الله أب الرحمة والرأفة الكافة بصلواته أجمعين آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday 29 Ayyar 6806 (world)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1298",
+            "iso": {
+                "not_before": "1298"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t7423f"
+    ]
+}

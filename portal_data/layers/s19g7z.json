@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s19g7z",
+    "reconstruction": false,
+    "label": "Sinai Arabic 224, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1435v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "15th c.",
+            "iso": {
+                "not_before": "1401",
+                "not_after": "1500"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor headpiece, interlace, f. 3r. | Ornate headpiece, interlace, chrysography, f. 17v | Decorated Greek initals throughout"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kh1rmw"
+    ]
+}

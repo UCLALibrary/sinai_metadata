@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1m31p",
+    "reconstruction": false,
+    "label": "Sinai Arabic 697, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1dq0n",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t45gh4"
+    ]
+}

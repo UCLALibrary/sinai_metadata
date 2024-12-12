@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1js8m",
+    "reconstruction": false,
+    "label": "Sinai Syriac 202, Overtext (Melkite, Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                },
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cd54",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Syriac, with some interlinear Arabic"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpieces, ff. 213r, with interlace; 305v, with interlace and fleur de lis motif; 442r, with ascending cross I Minor geometric headpieces, ff. 51r, 108v, 159v, 264v, 287r, 349v, 422v I Minor geometric decorations, ff. 207v, 208r, 315v | Geometric decorations on fore-edge, rosettes"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z61s9k"
+    ]
+}

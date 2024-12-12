@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s18g9d",
+    "reconstruction": false,
+    "label": "Sinai Syriac 174, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13091",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "62v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܠܡ ܟܬܒܐ ܗܢܐ ܣܢܟܣܪ̈ܝܢ: ܕܫܢܬܐ ܟܠܗ̇ ܐܝܟ ܛܟܣܐ ܕܥܕܬܐ܀ ܝܘܡ ܚܡ̄ܫ: ܒܪܡܫܐ: ܐ ܝܘܡ܀ ܒܟܢܘܢ: ܐ̄ ܫܢܬ̤܀ ܘ̄: ܐܠܦ̈ܐ: ܘܚ̄܀ ܡ̈ܐܐ܀ ܘܕ̄܀ ܠܐܒܘܢ ܐܕܡ܀ ܒܕܝܪܐ܀ ܩܕܝܫܐ ܕܛܘܪ ܣܝܢܐ ܒܝ̈ܕܝ ܐܢܫܐ܀ ܡܚܝ̣ܠܐ ܘܚܛܝܐ ܘܒܨܝܪ ܡܢ ܟܠܗܘܢ܀ ܀ ܒܢܝܢܫܐ ܘܠܐ ܫܘܐ ܕܢܬܩܪܐ ܕܝܪ̈ܝܐ܀ ܀ ܡܛܠ ܣܘܓܐܐ ܕܚܘ̈ܒܝܘܗܝ ܘܚܛ̄ܗ ܀ ܕܫܡܗ ܡܬ̤ܝ ܒ̇ܪ ܐܢܛܘܢܝܐ܀ ܀ ܘܬܪܐܕܡܘܠܕܗ ܡܕܝܢܬ̤ ܚܡܐ܀ ܀ ܡܢ ܥܒ̈ܕܐ ܕܐܢܛ̄ܘܫܝܐ ܕܣܘܪܝܐ܀ ܀ ܡܢ ܩܪܝܬܐ ܝܛܝܪܬ̤ ܡܢ ܐܠܗܐ ܒܣܝܪ܀ ܀ ܝܢ: ܡܢ ܐܒܗ̈ܐ ܡܗܝ̈ܡܢܐ: ܐܠܗܐܢܢܚܝ܀ ܀ ܢܦܫ̈ܬܗܘܢ ܐܠܗܐ ܕܪ̈ܚܡܐ ܕܚܢܢܐ܀ ܀ ܢܚܡܢܐ ܠܟܬܘܒܐ ܘܠܩܪܘܝܐ ܘܠܟܠ܀ ܀ ܡܢ ܕܫܬܘܬܦܒܗ: ܝܠܕܬ܀ ܀ܐܠܗܐ: ܘܒܨ̈ܠܘܬܐ ܕܟܠܗܘܢ ܩܕܝܫ̈ܐ܀ ܐܡܝܢ ܘܐܡܝܢ܀",
+            "assoc_name": [
+                {
+                    "value": "Mathai bar Antonia",
+                    "as_written": "ܡܬܝ ܒܪ ܐܢܛܘܢܝ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "188r-188v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1296",
+            "iso": {
+                "not_before": "1296"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1669xxh"
+    ]
+}

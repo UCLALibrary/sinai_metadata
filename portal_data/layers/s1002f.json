@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1002f",
+    "reconstruction": false,
+    "label": "Sinai Arabic 34, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sh2r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 192v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ منه نهار الأربعاء الثامن من شهر نيسان المبارك سنة ست ألف سبعمائة وتسعين لكون العالم الموافق العشر الأخير من شهر ذي الحجة سنة ثمانين وستمائة الهجرة الإسلامية في مدينة عكا المحروسة والسبح لله دائما آمين ",
+            "note": [
+                "Attested places:  Acre (Akka)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1282",
+            "iso": {
+                "not_before": "1282"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Psalms translated into Arabic with rubricated commentary by Bishop ‘Abdallah ibn al-Fadl of Antioch"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rz0wp3"
+    ]
+}

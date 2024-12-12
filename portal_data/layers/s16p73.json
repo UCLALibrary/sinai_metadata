@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s16p73",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 65, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11950",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v444sh"
+    ]
+}

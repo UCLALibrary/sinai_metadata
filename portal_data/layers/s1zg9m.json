@@ -1,0 +1,101 @@
+{
+    "ark": "ark:/21198/s1zg9m",
+    "reconstruction": false,
+    "label": "Sinai Syriac 88, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s097",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "235v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܩܠ ܣܟܐ ܘܫܘܡܠܝܐ ܟܬܒܐ ܗܢܐ. ܒܐܝ̈ܕܝ ܚܛܝܐ ܘܬ̇ܚܘܒܐ ܘܒܨܝܪ ܡܢ ܟܠܗܘܢ ܒܢ̈ܝ̄ܢـ: ܫܡܥܘܢ ܒܪ: ܦܛܪܘܣ: ܕܠܐ ܫ̇ܘܐ ܕܢܬܩܪܐ ܕܝܪܝܐ ܒܫܡܐ ܘܠܐ ܒܥܒ̈ܕܐ: ܟܬܪܗ ܠܕܝܐ ܩܕܝܫܬܐ ܕܛܘܪ ܣܝܢܐ: ܝܘܡ: ܵ: ܒܫ̄: ܒܟ̄ܗ: ܒܫܒܛ:ܫ ܫܢܬܸ ܐܠܦ̈: ܘ ܗ̄: ܡ̈ܠܐ: ܘ̄ܣܗ: ܡܢ ܡܢ̈ܝܢܐ ܕܐܠܟܣܢܕܪܘܣ ܒܪ ܦܝܠܝܦܘܣ ܡܩܕܘܢܝܐ",
+            "assoc_name": [
+                {
+                    "value": "Shem'un bar Petros",
+                    "as_written": "ܫܡܥܘܢ ܒܪ: ܦܛܪܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places: for monastery of Tur Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1253",
+            "iso": {
+                "not_before": "1253"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces throughout, beginning f. 12r I Zoomorphic headpiece, bird-like motif, f. 5v I Border, f. 235v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ng5v2r"
+    ]
+}

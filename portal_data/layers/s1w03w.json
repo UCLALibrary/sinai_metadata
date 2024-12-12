@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1w03w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 307, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1pm1g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 293",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ هذا الكتاب المبارك يوم الخميس ثاني عشرين تموز بتاريخ سنة ست ألف وسبعمائة وستة وأربعين لأبينا آدم عليه السلام الموافق لسنة الهجرة ستة خرت ثلثين وستمائه العرب الأحد من ذي الحجة وكتبه العبد الخاطئ اغاثون الطور سنى المعروف بالدمع غفر الله  لمن يرحم عليه ودعا له بالمغفرة آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday 22 Tammuz 6746 (adam)  :: 636 (hijrah)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1438",
+            "iso": {
+                "not_before": "1438"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1xh18vb"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1qw7t",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 41, Overtext (Christian Palestinian Aramaic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1p667",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1252",
+            "iso": {
+                "not_before": "1252"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1df8hbt"
+    ]
+}

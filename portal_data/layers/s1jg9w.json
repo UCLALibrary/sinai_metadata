@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s1jg9w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 585, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1c084",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 156v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تمت ليوم المبارك يوم الثلاثاء في سادس يوم من شهر ايلول عرفني الله بركته اجمعين وغفر للكاتب الحقير في الرهبان نقولا  ورحم والديه بشفاعة السيدة الطاهرة البثول ومن يوحنا المعمدان وجميع القديسين امين امين امين "
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1183",
+            "iso": {
+                "not_before": "1183"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nw12wm"
+    ]
+}

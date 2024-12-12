@@ -1,0 +1,92 @@
+{
+    "ark": "ark:/21198/s13g8g",
+    "reconstruction": false,
+    "label": "Sinai Syriac 1 A, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x37r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1127",
+            "iso": {
+                "not_before": "1127"
+            }
+        }
+    ],
+    "assoc_name": [
+        {
+            "id": "ark:/21198/s1rc7z",
+            "role": {
+                "id": "scribe",
+                "label": "Scribe"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric and vegetal decorated roundels, palmettes and crosses throughout ff. 9v-131r; f. 19r, bordered roundel, with red and green ink; f. 44v, Star of David, green and red"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpieces throughout, f. 3r, ff. 153v-236r; ff. 173v, 211v, 219r, bordered with decorated tail ends; f. 192r, repeating arch, red and black ink; ff. 201v, 211v, radiating and repeating chevron motif; f. 224r, repeating heart motif with decorated tail ends, red and black ink"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1r79zws"
+    ]
+}

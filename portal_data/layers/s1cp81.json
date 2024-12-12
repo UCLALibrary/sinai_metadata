@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1cp81",
+    "reconstruction": false,
+    "label": "Sinai Syriac 75, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1695j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1295",
+            "iso": {
+                "not_before": "1295"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rz1bj2"
+    ]
+}

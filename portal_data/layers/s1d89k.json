@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1d89k",
+    "reconstruction": false,
+    "label": "Sinai Arabic 233, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16s8h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 114v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان النجاز من نساخة هذا الكتاب المبارك نهار الخميس اخر شهر شباط المبارك في سنة ألف وستمائه وخمس وتسعين للتجسد الإلهي وحد  في سبعة آلاف ومائتين إلى كون العالم / وذلك سيطرة يد العبد الفقير الحقير المثنى الراجي العفو والغفران السيد المسيح والشفاعة من والدة الإله الطاهرة بمرت مريم والبتول والشفاعة جميع القديسين والانبياء الصالحين إلى فيلوثاؤس باسم كاهن فكل من وجد فيه غلط وأصلحه الرب الاله يصلح حاله في الدارين والأنبياء الكاتب  المبكيتي من الدعاء بغفران الخطايا ويكون له نظير ذلك آمين / وذلك سيطرة يد العبد الفقير الحقير المثنى الراجي العفو والغفران السيد المسيح والشفاعة من والدة الإله الطاهرة بمرة مريم والبتول والشفاعة جميع القديسين والانبياء الصالحين إلى فيلوثاؤس باسم كاهن فكل من وجد فيه غلط واصلحه الرب الاله يصلح حاله في الدارين والأنبياء الكاتب  المبكيتي من الدعاء بغفران الخطايا ويكون له نظير ذلك امين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday Shabat 1695 (incarnation) :: 7201 (creation of world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1695",
+            "iso": {
+                "not_before": "1695"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric tailpiece, f. 114r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1fr10wj"
+    ]
+}

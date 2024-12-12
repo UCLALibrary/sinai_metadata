@@ -1,0 +1,64 @@
+{
+    "ark": "ark:/21198/s1k34h",
+    "reconstruction": false,
+    "label": "Sinai Syriac 127, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cq23",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1294",
+            "iso": {
+                "not_before": "1294"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate headpiece on f. 4r, two large knots in the center, two leaves, fleur de lis and cross motifs, bordered by knotwork, with an elevated cross | Minor geometric headpieces throughout, beginning on f. 8r I Geometric headpieces, cross motif, red and black ink, ff. 169r, 177v, 186v, 199v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bg3sbz"
+    ]
+}

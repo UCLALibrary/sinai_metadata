@@ -1,0 +1,105 @@
+{
+    "ark": "ark:/21198/s1x036",
+    "reconstruction": false,
+    "label": "Sinai Arabic 507, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qm1s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 107ar",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الكتاب تفسير الأناجيل المقدسة في نهار اليوم أحد الزيتونة إلى يوم نهار أحد الفصح المقدس الذي به كان خلاص بني المعمودية الأرثوذكسية عاشر يوم مضت في شهر نيسان سنة ست آلاف وتسعمائة احد وثمانين على يد الحقير الساقط  افرام بالذي راهب وذلك في طور سيناء المقدس",
+            "assoc_name": [
+                {
+                    "value": "Ephrem (monk, copyist)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Sunday 10 Nisan 6981"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1273",
+            "iso": {
+                "not_before": "1273"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 108r, intertwined vines with thorns and fleur de lis in arch | Minor geometric headpiece on f. 130r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mk7xgf"
+    ]
+}

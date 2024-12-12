@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1s919",
+    "reconstruction": false,
+    "label": "Sinai Syriac 208, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kx1n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "284r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܬܟܬܒ. ܘܐܫܬܡܠܝ. ܟܬܒܐ. ܗܢܐ. ܕܟܬܝܟܘܣ: ܕܐܝܬ̄ܘ. ܬܡܢܝܐ: ܪܟ̇ܢܐ. ܐܝܟ ܕܠܗܕܪܐ. ܘܬܫ̄ܒܘ. ܘܐܝܩܪܐ ܕܬܠܝܬܝܬܐ. ܩܕܝܫܬܐ. ܘܫܘܝܬ. ܒܐܘܣܝܐ. ܕܐܒܐ. ܘܐܒܪܐ. ܘܪܘܚܐ ܕܩܘܕܫܐ. ܒܕܝܪܐ. ܟܝܬ. ܕܡܪܝ ܬܠܐܠܝܘܣ. ܕܐܝܬܘܗܝ. ܒܛܘܪܐ: ܥ̇ܠܝܐ. ܒܩܪܝܬܐ. ܢܛܝܪܬ̤. ܡܢ. ܐܠܗܐ. ܬܠܦܝܬܐ. ܡܢ. ܥܡܠܐ. ܕܩܢܣܪܝ̇ܢ. ܕܐܝܬ̄ܘ. ܩܢܐ ܫܪܐ. ܟܬܒܗ݂ ܠܩܫܝܫܐ. ܢܟܦܐ. ܘܙܗܝܐ. ܡܝܟܐܝܠܐ. ܒܪ ܡܫܝܫܐ. ܒܛܪܘܣ. ܐܠܗܐ. ܢܫܡܥ. ܐܢܘܢ. ܗܝ̇܀ ܒܪܬ̤. ܩܠܐ. ܕܩܪܝܐ. ܠܒܪܝ̇ܟܘܗܝ. ܕܐܒܝ. ܐܝܪ̈ܬܘ. ܡܠܟܢܘܬܐ. ܗܝ̇ ܕܡܛܝܒܐ. ܠܟܘܢ ܡܢ. ܩܕܡ. ܬܪ̈ܡܝܬܗ. ܕܥܠܡܐ. ܐܠܗܐ. ܢܚܣܐ. ܠܟܠ.ܡ̇ܢ. ܕܐܒܬ: ܠܗ. ܫܘܬܦܘܬܐ. ܐܡܝܢ. ܡܪܗ. ܕܥܡܠܐ. ܘܕܒܪ̈ܝܬܐx ܘܢܢܝܚ. ܐܠܗܐ. ܠܥܢ̈ܝܕ ܘܗܝ. ܥܡ ܐܒܪܗܡ. ܘܐܝܣܚܩ. ܘܝܥܩܘܒ. ܐܡܝܢx ܐܫܬܡܠܝ ܒܫܢܬ ܐܠܦ. ܘܚܡܫ. ܡܐܐ. ܘܬܠܬܝ̈ܢ. ܘ̄. ܡܢ ܫ̈ܢܝܐ. ܢܣܒܢ ܕܣܟܢܕܪܘܣ ܒܪ. ܦܝܠܝܦܘܣ. ܡܩܘܕܢܐ. ܒܝܪܚܐ ܬܐܡܘܪ. ܒ̄ܗ. ܡ ܒܥܐܕܐ ܕܡܪܬܐ ܚܣܝܬܐ. ܐܡܗ ܕܫܡܘܢx ܪܝܫ ܣܛܘ̈ܢܝܐx ܨܠܘ. ܥܠ ܚܛܝܐ. ܕܣܪܛ ܐܝܟ ܚܝܠܗ̇x",
+            "assoc_name": [
+                {
+                    "value": "Michael, bar Butros the Priest",
+                    "as_written": "ܡܝܟܐܝܢܐ ܒܪ ܩܫܝܫܐ ܒܛܪܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  monastery of Mar Tl'lyws in upper mountain, district of Qenneshrin"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1224",
+            "iso": {
+                "not_before": "1224"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces ff. 225r, 256v, 277r, 278r-278v, 283r | Geometric decorations on ff. 16v, 225v | Headpiece on f. 30v, knotwork with diamond motif; ff. 58v, 109v, 163v, diamond grid; f. 79v, linked chain with diamonds; f. 137r, linked chain; ff. 4r, 186v, 230r, 269v, knotwork I Borders ff. 138v, 277r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Ff. 284v, 285r, and 285v Arabic"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tf11mp"
+    ]
+}

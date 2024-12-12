@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1h33h",
+    "reconstruction": false,
+    "label": "Sinai Syriac 145, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19q2g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "237r-237v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܠܡ ܒܥܘܕܪܢ ܡܪܢ ܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܫܘܝܬ ܒܐܘܣܝܐ ܡܪ̤ܬ ܛܘܒ̈ܐ ܘܡܚܝܠܬ ܡܚ̈ܝܠܐ ܕܐܟܘܬܝ. ܐܫܬܠܡ ܟܬܒܐ ܗܢܐ ܕܐܘܢܓܠܝܘܢ ܒܝܪܚ ܐܒ ܐܬܟܬܒ ܟܬܒܐ ܗܢܐ ܒܥܘ ܡܪܗ ܕܣܗܕܐ ܡܪܓܝܘܪܓܝܣ ܕܡܬܝܕܥ ܕܒܝܬ ܙܚ̈ܐ ܕܝܐܠܥܝܫ ܩܪܝܬܐ ܒܝܪܬ ܡܥܡܪ ܠܗ̇ ܡܪܢ. ܐܬܟܬܒ ܟܬܒܐ ܗܢܐ ܡܠ̤ܠ ܚܝ̈ܐ. ܒܫ̄ܬ ܒܫܢܬ ܬ̈ܠܦܐ ܫ̈ܬܐ ܘܫܬ ܡܐܐ ܘܬܫܥܝܲܢ ܘܫܬ̄ ܫܚܢ ܠܒܪܝܬܗ ܕܐܕܡ.. ܘܫܢܬ ܐܠܦܐ ܘܬ. ܩ ܘܫܒܥܡܐܐ ܘܫܒܥܣܪ ܫܢ̈ܝܢ ܠܒܪܝܬܗ̣ ܕܐܕܡ .. ܘܫܢܬ ܘܚܡܫܡܐܐ ܘܫܒܥܬ ܕܣܠܘܩܘܣ ܡܐܟܐ ܩܕܡܝܐ ܕܝܘܚ̈ܐ. ܘܠܘ ܕܐܠܟܣܝܕܪܘܣ ܐܝܟ ܕܟܬܒܝܢ ܐܘܫ̈ܝܢ ܒܠܐ ܝܕܥܬܐ. ܕܐܝܬܝܗ̇",
+            "assoc_name": [
+                {
+                    "value": "Isaac the Solitary",
+                    "as_written": "ܐܝܣܚܩ ܝܚܝܕܝܐ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Difficult handwriting; incomplete rendering"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1188",
+            "iso": {
+                "not_before": "1188"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1127bb5"
+    ]
+}

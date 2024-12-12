@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s1kk7g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 533, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1d66r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate 1/2 page roundel table with centre cross, chrysography, knotted border, arabic characters, f.125r; ff. 126v-127; rectangular, bordered table, f.132v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece, f. 123v, knotted motif, chrysography | Vegetal and geometric headpieces, knotted motif, ff. 4, 30v, 51v r; f. 7v, with Fleur de Lis"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated calligraphy, chrysography, ff. 87r, 123v-124r, 125v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pv8429"
+    ]
+}

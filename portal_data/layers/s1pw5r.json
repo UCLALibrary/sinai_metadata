@@ -1,0 +1,50 @@
+{
+    "ark": "ark:/21198/s1pw5r",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 51, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Estrangela script, 6th century"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n679",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "569",
+            "iso": {
+                "not_before": "0569"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dz3jx4"
+    ]
+}

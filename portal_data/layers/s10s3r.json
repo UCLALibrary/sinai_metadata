@@ -1,0 +1,101 @@
+{
+    "ark": "ark:/21198/s10s3r",
+    "reconstruction": false,
+    "label": "Sinai Arabic 66, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "locus": "ff. 264v-287v",
+            "color": [
+                "green"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1td21",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 258v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخة في العشر الأواسط من شهر أيار سنة ألف ومائه واربعة وسبعين سنة للتجسد الإلهي لذكره السجود الموافق العشر وستين وستمائة للهجرة ",
+            "assoc_name": [
+                {
+                    "value": "Stephen of Ramla",
+                    "as_written": "اصطافنا يعرف بالرملى",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "This colophon has been published and translated, for which, see citations on pp. 38-39 fn. 74 in Griffith, S. (1985). Stephen of Ramlah and the Christian Kerygma in Arabic in Ninth-Century Palestine. The Journal of Ecclesiastical History, 36(1), 23-45. doi:10.1017/S0022046900023939"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1266",
+            "iso": {
+                "not_before": "1266"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpiece on f. 385r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1931xh0"
+    ]
+}

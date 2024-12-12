@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1k32r",
+    "reconstruction": false,
+    "label": "Sinai Arabic 420, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cm09",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 193v-194r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز نساخة السنكسار المجموع لسنة بقوة الله فتأييده وعونه وتوفيقه في دير الجبل المقدس طور سيناء في أيام الأب القديس السيد الأسقف أنبا ارساني رحمنا الله الكافة ببركة صلواته وأدام لنا حياته بشفاعة السيد والدة الاله آمين / نهار الجمعة الخامس من شهر كانون الأول الموافق لشهور ستة ست آلاف وسبعمائة وستة وتسعين سنة للعالم القس الاكليسيارشيس المبارك أنبا اكليمي القديس ولأمره يرحمني الله بصلواته بشفاعة السيد أم الإله البثول آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 5 Kanun I 6796"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1288",
+            "iso": {
+                "not_before": "1288"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1223z2t"
+    ]
+}

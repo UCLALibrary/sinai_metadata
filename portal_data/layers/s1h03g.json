@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1h03g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 240, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19m0p",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 183v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الكتاب يوم الثلثاء ثاني عشر تشرين الاول سنة ست ألف وخمسمائه خمسة وأربعين للعالم وهو برسم  الأب الراهب … أبا سابا الكركي الله يغفر له ويرحم والديه ويغفر لمن كتب وقال آمين المجد لله دائما آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1037 = 6545"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1337",
+            "iso": {
+                "not_before": "1337"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece on f. 92v, geometric motif with ascending cross, red | Minor geometric headpieces, ff. 105v, 111v, 118v, 127r, 134v, 140v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1g74j2p"
+    ]
+}

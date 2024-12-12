@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s18s37",
+    "reconstruction": false,
+    "label": "Sinai Arabic 158, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13d2h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 135v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت بمعونة الله وتوفيقه رسائل القديس السعيد بولس الرسول والسبع رسائل القاثوليكية  في التاسع من جمادى الأول يوم الخميس الموافق للرابع آذار سنة ستة آلاف وسبعمائة وأربعين للعالم  ",
+            "note": [
+                "Attested dates: Wednesday 7 Jumada I ; Wednesday 4 Adhar 6740"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1232",
+            "iso": {
+                "not_before": "1232"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mp6mzn"
+    ]
+}

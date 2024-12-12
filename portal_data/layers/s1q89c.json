@@ -1,0 +1,106 @@
+{
+    "ark": "ark:/21198/s1q89c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 317, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hs9p",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 437r ",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "فكتب الغير مستحق يدعى راهب بنيمين السيقى بمدينة دمشق بكنيسة السيدة بالمجيبة في أيام أبا يوحنا مطرانها ساكنا الله صلواته والبطركية أبونا سمعان بن ابو شيبه وكان الفراغ من نسخة يوم الأربعاء احد عشر يوم من حزيران سنة ست ألف وسبعمائة أحد ثلثين لأبينا آدم الموفق العرب الأخير من شهر جمادى الأول سنة عشر وستمائة للهجرة",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Wednesday 11 Huzayran 6731 (adam) :: Jumada I 61"
+                }
+            ],
+            "note": [
+                "Attested places:  Church of Our Lady, Damascus"
+            ]
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 459v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت الأمانة بعون الله تعالى وكتب الخاطئ المسكين ينبمين السيقى وهو ما ترجمه عبد الله بن الفضل بن عبد الله المطران من اللغة اليونانية إلى اللغة العربية رحمه الله وغفر لمن ترحم عليه وكتب بكنيسة دمشق ؟ بالمجيبة السبح لله دائما وعلينا رحمته آمين ",
+            "assoc_name": [
+                {
+                    "value": "Metropolitan Abd Allah Ibn al-Fadl (translator, Greek-Arabic)",
+                    "role": {
+                        "id": "translator",
+                        "label": "Translator"
+                    }
+                }
+            ],
+            "note": [
+                "Attested names:  Benjamin al-Siqi",
+                "Attested places:  Church of Our Lady, Damascus"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1223",
+            "iso": {
+                "not_before": "1223"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16h65wx"
+    ]
+}

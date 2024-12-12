@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1bs5m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 345, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15d3h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 253v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "فرغ هذا الدفتر المبارك يوم الجمعة خامس وعشرين تشرين الأول الجاري في سنة ستة آلاف وستمائه وأربعة وتسعين من تاريخ سنى العالم / وهو للراهب الحقير الياس الصورى وهو كتبه في دير القديس ماري سابا بالسيق وهو يسأل كل من قرأ فيه أو سمعه ان يترحم عليه ويغفر له بوالديه ويعذره ان كان فيه شيئا من الغلط والدة الاهنا يسوع المسيح ابن الله وابن مريم العذراء يغفر لجميع بني المعمودية الارثوذكسية بشفاعة السيدة أم النور والقديس مار سابا الذي كتب…وجميع القديسين آمين / يا خير مطلوب وأكرم طالب اغفر لصاحبه نعم وللكاتب من قال غير مقالتي في ذي جلالا له قد اثم يا جوهر من جوهر في جوهر لا ينقسم والسبح لله دائما وعلينا رحمته آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 25 Tishrin I 6694 (world)"
+                }
+            ],
+            "note": [
+                "Attested places:  Monastery of Mar Sabas"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1386",
+            "iso": {
+                "not_before": "1386"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hh7p9p"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1h324",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF X 34, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19m12",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1001",
+            "iso": {
+                "not_before": "1001"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14b50t7"
+    ]
+}

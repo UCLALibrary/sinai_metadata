@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1233g",
+    "reconstruction": false,
+    "label": "Sinai Syriac 131, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vq2f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1242",
+            "iso": {
+                "not_before": "1242"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1db9kmk"
+    ]
+}

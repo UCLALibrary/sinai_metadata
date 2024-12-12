@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s16911",
+    "reconstruction": false,
+    "label": "Sinai Syriac 6, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Transitional Melkite script"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10w92",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 166v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "translation": [
+                "Copied in the village Qara (ܩܐܪܐ) by Bishop Michael, son of the priest Yaʿqub, son of the priest Gorgios in the year 1489 AG (=1177/8 CE)."
+            ],
+            "assoc_name": [
+                {
+                    "value": "Bishop Michael, son of the priest Yaʿqub, son of the priest Gorgios",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "Qara",
+                    "as_written": "ܩܐܪܐ",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1489 AG (=1177/8 CE)",
+                    "iso": {
+                        "not_before": "1177",
+                        "not_after": "1178"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1178",
+            "iso": {
+                "not_before": "1178"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15b1m5z"
+    ]
+}

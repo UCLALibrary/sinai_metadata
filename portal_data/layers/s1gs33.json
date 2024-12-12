@@ -1,0 +1,101 @@
+{
+    "ark": "ark:/21198/s1gs33",
+    "reconstruction": false,
+    "label": "Sinai Arabic 70, Overtext (Kufic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "red",
+                "blue",
+                "green",
+                "gold"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19d2c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        },
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Full page Illumination, f. 2v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Columned illuminated arch with ascending vegetative elements and a central circular medallion with missing image in a cross shape, bordered by red"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated initials in margins, throughout, f. 18v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1f496r2"
+    ]
+}

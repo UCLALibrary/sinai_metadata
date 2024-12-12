@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s17632",
+    "reconstruction": false,
+    "label": "Sinai Syriac 255, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11t21",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "62v-63r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܠܡ ܛܟܣܐ ܕܠܘܘ̈ܝܐ ܕܥܢ̈ܝܕܐ ܒܥܘܕܪܢ ܐܠܗܐ܀ ܝܘܡ ܗ̄܀ ܒ̄ܕ܀ ܡܢ ܚܙܝܪܢ܀ ܫܢܬ ܐܠܦ܀ ܘܬܩ̄܀ ܘܦ̄ܒ܀ ܝܘܢ̈ܝܐ܀ ܒܕܝܪܐ ܩܕܝܫܐ ܕܡܪܝ ܝܥܩܘܒ ܒܫܬܘܕܪ܀ ܒܝܕܝ ܚܛܝܐ ܐܢܛܘܢܝ ܕܝܪܝܐ܀ ܐܠܗܐ ܡܚ̇ܣܐ ܠܗ ܘܠܐܒܗ̈ܘܗܝ ܘܠܟܠܡ̇ܢ ܕܩܲܪܐ ܒܗ ܘܨ̇ܠܐ ܥܠܝܗܘܢ. ܒܬܟ̄ܫ ܕܝܠܕܬ ܐܠܗܐ: ܘܩ̄ܕܝ ܡܪܝ ܝܥܩܘܒ ܘܟܠܗܘܢ ܩܕܝ̈ܫܐ܀ ܐܡܝܢ ܐܡܝܢ ܐܡܝܢ܀",
+            "note": [
+                "Attested places:  in monastery of Jacob at Beshtodar"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1270",
+            "iso": {
+                "not_before": "1270"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v40sz"
+    ]
+}

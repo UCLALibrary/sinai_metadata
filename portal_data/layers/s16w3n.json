@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s16w3n",
+    "reconstruction": false,
+    "label": "Sinai Arabic 175, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11d2w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 174v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز الكتاب المبارك وكان الفراغ منه يوم الجمعة سادس عشرين شهر آب سنة ست ألف ثمان مائه واحد وثلاثين للعالم بدير طور سيناء المقدس كل من قرأ فيه ودعا للكاتب الخاطئ يصفح هفواته يكون له من المسيح نظير ذلك بشفاعة السيدة والدة الإله وجميع القديسين آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 26 Ab 6831"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1225",
+            "iso": {
+                "not_before": "1225"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated Greek initials, ff.175r-175v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cg0tdf"
+    ]
+}
