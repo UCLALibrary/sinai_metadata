@@ -149,9 +149,9 @@ def transform_row_to_json(row, record_type):
         ))
     # add assoc_name for scribes
     if record_type == "layers":
-        if not(pd.isnull(row["Scribe"])):
+        if not(pd.isnull(row["Scribe ID"])):
             values = parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
-            scribe_arks = parse_rolled_up_field(str(row["Scribe"]), ",", "#")
+            scribe_arks = parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
             notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
             for i in range(0, len(scribe_arks)):
                 data["assoc_name"].append(create_associated_name(
