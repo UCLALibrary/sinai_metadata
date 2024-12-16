@@ -1,0 +1,39 @@
+{ 
+    "ark": "ark:/21198/tereconutotext", 
+    "reconstruction": true, 
+    "label": "UTO Reconstruction: Genesis, Exodus", 
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "locus": "ff. 128-142", 
+    "summary": "A reconstruction of the undertexts of Arabic NF M 28, a 6th c. manuscript of Genesis and Exodus", 
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dk55"
+            }
+        }
+    ],
+    "note": [
+        { 
+            "type": { 
+                "id": "foliation", 
+                "label": "Foliation" 
+            }, 
+            "value": "Folios in order of reconstructed undertext:  138v, 138r, 142v, 142r, 140r, 140v, 141v, 141r, 132v, 132r, 131v, 131r, 130v, 130r, 135v, 135r, 128v, 128r, 133r, 133v, 134r, 134v, 129r, 129v, 137v, 137r, 136r, 136v, 143r, 143v, 139v, 139r" 
+        } 
+    ], 
+    "reconstructed_from": [
+        "ark:/21198/ten0p1ul1t1",
+        "ark:/21198/ten0p1ul2t1"
+    ],
+    "parent": [ 
+        "ark:/21198/tereconuto" 
+    ], 
+    "internal": [ 
+        "Test record for development purposes; please delete." 
+    ] 
+}
