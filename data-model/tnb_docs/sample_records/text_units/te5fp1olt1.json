@@ -57,10 +57,11 @@
                 },
                 {
                     "label": "1st Week: Saturday of <the week of> Rest",
+                    "work_id": "ark:/21198/s1xs34",
                     "locus": "f. 4r"
                 },
                 {
-                    "label": "2nd Week: Sunday, Saturday",
+                    "work_id": "ark:/21198/s12g6d",
                     "locus": "f. 5r, 6r"
                 },
                 {
@@ -113,6 +114,29 @@
             "as_written": "ܒܫܡܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܆ ܟܬܒܝܢܢ ܣܘܢܟܣܪܝܢ ܕܫܢܬܐ ܟܠܗ̇ ܐܝܟ ܛܟܣܐ ܕܝܘ̈ܢܝܐ",
             "translation": [
                 "In the name of the Holy Trinity we write the Synaxarion for the whole year according to the rite of the Greeks"
+            ],
+            "assoc_name": [
+                {
+                    "id": "ark:/21198/s1vc7w",
+                    "as_written": "ܕܫܢܬܐ",
+                    "role": {
+                        "id": "annotator",
+                        "Value": "Annotator"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "id": "ark:/21198/tenisibis",
+                    "as_written": "ܐܝܟ",
+                    "event": {
+                        "id": "reading",
+                        "Value": "Place of Reading"
+                    },
+                    "note": [
+                        "Faked ARK for nisibis"
+                    ]
+                }
             ],
             "note": [
                 "The phrase, ܒܫܡܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܆ ܟܬܒܝܢܢ, is rubricated"
