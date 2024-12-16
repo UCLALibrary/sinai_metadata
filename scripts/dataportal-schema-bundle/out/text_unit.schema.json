@@ -329,8 +329,7 @@
                 }
               },
               "required": [
-                "type",
-                "locus"
+                "type"
               ]
             },
             "unevaluatedItems": false
@@ -1127,7 +1126,6 @@
     "ark",
     "reconstruction",
     "label",
-    "locus",
     "lang",
     "work_wit",
     "parent"
