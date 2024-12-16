@@ -121,7 +121,7 @@
                     "as_written": "ܕܫܢܬܐ",
                     "role": {
                         "id": "annotator",
-                        "Value": "Annotator"
+                        "label": "Annotator"
                     }
                 }
             ],
@@ -131,7 +131,7 @@
                     "as_written": "ܐܝܟ",
                     "event": {
                         "id": "reading",
-                        "Value": "Place of Reading"
+                        "label": "Place of Reading"
                     },
                     "note": [
                         "Faked ARK for nisibis"
