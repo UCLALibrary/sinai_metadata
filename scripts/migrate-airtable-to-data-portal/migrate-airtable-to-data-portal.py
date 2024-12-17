@@ -1077,6 +1077,27 @@ def parse_rolled_up_field(data: str, delimiter: str, quotechar: str):
                 vals.append(x.strip())
     return vals
 
+def check_csv_columns_against_standard_list(columns_list_doc: str, record_type: str, csv_columns: list):
+    with open(columns_list_doc) as f:
+        expected_cols = f.read().splitlines()
+    missing_columns = []
+    extra_columns = []
+    for c in csv_columns:
+        if c not in expected_cols:
+            extra_columns.append(c)
+
+    for c in expected_cols:
+        if c not in csv_columns:
+            missing_columns.append(c)
+
+    print(f"The following '{record_type}' CSV columns will be ignored:")
+    print(extra_columns)
+    print("\n")
+    print(f"The following expected columns are missing from the '{record_type}' CSV and will be supplied as null values:")
+    print(missing_columns)
+    print("\n")
+    return missing_columns
+
 # CONSTANTS
 RECORD_TYPES = ["ms_objs", "layers", "text_units"]
 
@@ -1113,47 +1134,33 @@ if record_type == "text_units":
     path_to_workwits_csv = input("Please input a path to the CSV containing the work witness info for creating the work witnesses field (required for text units):")
 # path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
     workwits_table = pd.read_csv(path_to_workwits_csv, index_col='ID')
+    workwits_missing_col = check_csv_columns_against_standard_list('work_wit_fields.txt', "Work Witnesses", workwits_table.columns)
+    user_response = input("Please press enter to continue with the migration script")
+    for col in workwits_missing_col:
+        workwits_table[col] = pd.Series(dtype='string')
 
 
-# TBD: check that all of the columns are present, or added, for a given record type
-# Report the mismatched fields and prompt user to continue
-csv_columns = csv_file.columns
-
+# Check that all of the columns are present, or added, for a given record type
+# Report the mismatched fields; missing fields will be populated as empty
 if record_type == "ms_objs":
-    columns_list_doc = 'ms_obj_fields.txt'
+    missing_columns = check_csv_columns_against_standard_list('ms_obj_fields.txt', "Manuscript Objects", csv_file.columns)
 elif record_type == "layers":
-    columns_list_doc = 'layer_fields.txt'
+    missing_columns = check_csv_columns_against_standard_list('layer_fields.txt', "Layers", csv_file.columns)
 elif record_type == "text_units":
-    columns_list_doc = 'text_unit_fields.txt'
+    missing_columns = check_csv_columns_against_standard_list('text_unit_fields.txt', "Text Units", csv_file.columns)
 
-
-with open(columns_list_doc) as f:
-    expected_cols = f.read().splitlines()
-
-missing_columns = []
-extra_columns = []
-for c in csv_columns:
-    if c not in expected_cols:
-        extra_columns.append(c)
-
-for c in expected_cols:
-    if c not in csv_columns:
-        missing_columns.append(c)
-
-print("The following CSV columns will be ignored:")
-print(extra_columns)
-print("\n")
-print("The following expected columns are missing from the CSV and will be supplied as null values:")
-print(missing_columns)
-print("\n")
+# confirm that the user wants to continue the script
 user_response = input("Continue with the migration script? (y/n)")
-accept_input = user_response == "y"
+accept_input = user_response == 'y'
 
 # for each row, create a JSON file of the corresponding record type
+# TBD: make this a parameter or input
 out_dir = "/Users/wpotter/Desktop/SMDP-Migration/text_units/migration_tests"
+
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 if accept_input:
+    # add in the missing columns to the DataFrame as empty
     for col in missing_columns:
         csv_file[col] = pd.Series(dtype='string')
     for i, row in csv_file.iterrows():
