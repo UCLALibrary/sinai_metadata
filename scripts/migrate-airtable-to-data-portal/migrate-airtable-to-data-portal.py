@@ -311,13 +311,7 @@ def transform_row_to_json(row, record_type):
         data.pop("assoc_name")
     if "assoc_place" in data and len(data["assoc_place"]) == 0:
         data.pop("assoc_place")
-    """
-
-    To write for Text Units:
-
-    
-
-              """
+   
     return data
 
 def create_part_from_row(row: pd.Series):
@@ -756,6 +750,38 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
                     "type": {
                         "id": "contents",
                         "label": "Contents Note"
+                    }
+                },
+                {
+                    "data": str(row["Ornamentation note"]),
+                    "type": {
+                        "id": "ornamentation",
+                        "label": "Ornamentation Note"
+                    }
+                },
+                {
+                    "data": str(row["General note"]),
+                    "type": {
+                        "id": "general",
+                        "label": "Other Notes"
+                    }
+                }
+        ]
+
+    if record_type == "text_units":
+        cols += [
+                {
+                    "data": str(row["Contents note"]),
+                    "type": {
+                        "id": "contents",
+                        "label": "Contents Note"
+                    }
+                },
+                {
+                    "data": str(row["Paracontent note"]),
+                    "type": {
+                        "id": "para",
+                        "label": "Paracontent Note"
                     }
                 },
                 {
