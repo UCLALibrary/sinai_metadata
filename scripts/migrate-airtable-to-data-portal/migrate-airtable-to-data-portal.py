@@ -925,11 +925,11 @@ def create_work_witnesses_from_row(work_wit_ids: list, workwits_table: pd.DataFr
             wit["work"]["id"] = str(work_wit_row["Work ID"])
         else:
             wit["work"]["desc_title"] = str(work_wit_row["Work Descriptive Title"])
-            if not(pd.isnull(work_wit_row["Work Creators"])):
-                wit["work"]["creator"] = parse_rolled_up_field(str(work_wit_row["Work Creators"]), ",", '"')
-            if not(pd.isnull(work_wit_row["Genre ID"])):
-                genre_ids = parse_rolled_up_field(str(work_wit_row["Genre ID"]), ",", '"')
-                genre_labels = parse_rolled_up_field(str(work_wit_row["Genre Label"]), ",", '"')
+            if not(pd.isnull(work_wit_row["Work Creator"])):
+                wit["work"]["creator"] = parse_rolled_up_field(str(work_wit_row["Work Creator"]), ",", '"')
+            if not(pd.isnull(work_wit_row["Work Genre ID"])):
+                genre_ids = parse_rolled_up_field(str(work_wit_row["Work Genre ID"]), ",", '"')
+                genre_labels = parse_rolled_up_field(str(work_wit_row["Work Genre Label"]), ",", '"')
                 wit["work"]["genre"] = []
                 for i in range(0, len(genre_ids)):
                     wit["work"]["genre"].append(
