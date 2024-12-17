@@ -1,0 +1,22 @@
+Work ID
+Work Descriptive Title
+Work Creator
+Work Genre ID
+Work Genre Label
+Alternative Title
+As Written
+Locus
+Incipit Locus
+Incipit As Written
+Incipit Translation
+Incipit Note
+Explicit Locus
+Explicit As Written
+Explicit Translation
+Explicit Note
+Contents Label
+Contents Work ID
+Contents Locus
+Contents Note
+Note
+Reference Instances

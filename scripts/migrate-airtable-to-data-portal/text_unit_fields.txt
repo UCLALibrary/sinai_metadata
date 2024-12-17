@@ -1,0 +1,18 @@
+Item ARK
+Reconstruction
+Label
+Locus
+Summary
+Language ID
+Language Label
+Work Witnesses
+Paracontents
+Feature ID
+Feature Labels
+Contents note
+Paracontent note
+Ornamentation note
+General note
+Reference Instances
+Reconstructed From
+Parent ARKs
