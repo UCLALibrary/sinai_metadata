@@ -43,6 +43,19 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Summary"])):
         data["summary"] = str(row["Summary"])
 
+    # add language for text_units
+    if record_type == "text_units":
+        lang_ids = parse_rolled_up_field(str(row["Language ID"], ",", '"'))
+        lang_labels = parse_rolled_up_field(str(row["Language Label"], ",", '"'))
+        data["lang"] = []
+        for i in range(o, len(lang_ids)):
+            data["lang"].append(
+                {
+                    "id": lang_ids[i],
+                    "label": lang_labels[i]
+                }
+            )
+
     # add extent
     if not(pd.isnull(row["Extent"])):
         data["extent"] = str(row["Extent"])
