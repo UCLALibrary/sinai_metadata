@@ -161,7 +161,7 @@ def transform_row_to_json(row, record_type):
     # add assoc_date for origin date in layers
     if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
         notes = parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
-        if len(notes) <= 1 and notes[0] == "nan":
+        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
             notes = []
         data["assoc_date"].append(create_associated_date(
             type= {"id": "origin", "label": "Date of Origin"},
@@ -197,7 +197,7 @@ def transform_row_to_json(row, record_type):
                 ))
         elif not(pd.isnull(row["Scribe Value"])):
             notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
-            if len(notes) <= 1 and notes[0] == "nan":
+            if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
                 notes = []
             data["assoc_name"].append(create_associated_name(
                     id="",
@@ -211,7 +211,7 @@ def transform_row_to_json(row, record_type):
     # TBD: if we have ARKs ever, rewrite this; currently only have a value field
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
         notes = parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
-        if len(notes) <= 1 and notes[0] == "nan":
+        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
             notes = []
         data["assoc_place"].append(create_associated_place(
             id="",
