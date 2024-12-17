@@ -43,10 +43,7 @@
             "iso": {
                 "not_before": "0850",
                 "not_after": "0950"
-            },
-            "note": [
-                "<NA>"
-            ]
+            }
         }
     ],
     "note": [

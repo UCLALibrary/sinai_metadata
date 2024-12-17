@@ -49,10 +49,7 @@
             "iso": {
                 "not_before": "1051",
                 "not_after": "1150"
-            },
-            "note": [
-                "<NA>"
-            ]
+            }
         }
     ],
     "assoc_place": [
@@ -61,10 +58,7 @@
             "event": {
                 "id": "origin",
                 "label": "Place of Origin"
-            },
-            "note": [
-                "<NA>"
-            ]
+            }
         }
     ],
     "note": [
