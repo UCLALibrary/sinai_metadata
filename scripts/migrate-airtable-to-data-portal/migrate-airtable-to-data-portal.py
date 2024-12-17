@@ -56,6 +56,11 @@ def transform_row_to_json(row, record_type):
                 }
             )
 
+    # add work_wits for text_units
+    if record_type == "text_units":
+        work_wit_ids = parse_rolled_up_field(str(row["Work Witnesses"]), ",", '"')
+        data["work_wit"] = create_work_witnesses_from_row(work_wit_ids, workwits_table)
+
     # add extent
     if not(pd.isnull(row["Extent"])):
         data["extent"] = str(row["Extent"])
@@ -125,6 +130,8 @@ def transform_row_to_json(row, record_type):
     
     # add paracontent stub, which may be removed later if none are created
     data["para"] = []
+
+    # TBD: paracontent for ms objs and text units, and for layers that aren't colophons
 
     # add colophons as paracontent objects for layers
     if record_type == "layers" and not(pd.isnull(row["Colophon"])):
@@ -905,6 +912,98 @@ def create_layout_from_row(row: pd.Series):
     if not(pd.isnull(row["Layout Note"])):
         layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
     return layout
+
+def create_work_witnesses_from_row(work_wit_ids: list, workwits_table: pd.DataFrame):
+    work_wits = []
+    for id in work_wit_ids:
+        # paracontent_table.loc[int(id), "Type ID"]
+        wit = {}
+        work_wit_row = workwits_table.loc[int(id)]
+        wit["work"] = {}
+        # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
+        if not(pd.isnull(work_wit_row["Work ID"])):
+            wit["work"]["id"] = str(work_wit_row["Work ID"])
+        else:
+            wit["work"]["desc_title"] = str(work_wit_row["Work Descriptive Title"])
+            if not(pd.isnull(work_wit_row["Work Creators"])):
+                wit["work"]["creator"] = parse_rolled_up_field(str(work_wit_row["Work Creators"]), ",", '"')
+            if not(pd.isnull(work_wit_row["Genre ID"])):
+                genre_ids = parse_rolled_up_field(str(work_wit_row["Genre ID"]), ",", '"')
+                genre_labels = parse_rolled_up_field(str(work_wit_row["Genre Label"]), ",", '"')
+                wit["work"]["genre"] = []
+                for i in range(0, len(genre_ids)):
+                    wit["work"]["genre"].append(
+                        {
+                            "id": genre_ids[i],
+                            "label": genre_labels[i]
+                        }
+                    )
+            
+        if not(pd.isnull(work_wit_row["Work Alternative Title"])):
+            wit["alt_title"] = str(work_wit_row["Work Alternative Title"])
+        if not(pd.isnull(work_wit_row["Work As Written"])):
+            wit["as_written"] = str(work_wit_row["Work As Written"])
+        if not(pd.isnull(work_wit_row["Work Locus"])):
+            wit["locus"] = str(work_wit_row["Work Locus"])
+
+        # Create excerpts for incipit and explicit
+        wit["excerpt"] = []
+        if not(pd.isnull(work_wit_row["Incipit As Written"])):
+            inc_type = {"id": "incipit", "label": "Incipit"}
+            wit["excerpt"].append(create_excerpt(work_wit_row, inc_type, "Incipit "))
+        if not(pd.isnull(work_wit_row["Explicit As Written"])):
+            expl_type = {"id": "explicit", "label": "Explicit"}
+            wit["excerpt"].append(create_excerpt(work_wit_row, expl_type, "Explicit "))
+
+        # If no excerpts created, remove the field
+        if "excerpt" in wit and len(wit["excerpt"]) == 0:
+            wit.pop("excerpt")
+
+        
+        # TBD: contents, partially implemented, sufficient for first migration pass
+        # hacked together to create the contents label, but should also support other fields in contents...
+        if not(pd.isnull(work_wit_row["Contents Label"])):
+            contents = []
+            labels = parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
+            for i in range(0, labels):
+                contents.append(
+                    {
+                        "label": labels[i]
+                    }
+                )
+            wit["contents"] = contents
+        
+        # Add notes, if any
+        if not(pd.isnull(work_wit_row["Note"])):
+            wit["note"] = parse_rolled_up_field(str(work_wit_row["Note"]), "|~|", "#")
+
+        # Add bib, if any, using reference instances table
+        if not(pd.isnull(work_wit_row["Reference Instances"])):
+            wit["bib"] = create_bibs_from_row(work_wit_row, ref_instances)
+        # remove bib field if none were created
+        if "bib" in wit and len(wit["bib"]) == 0:
+            wit.pop("bib")
+
+        work_wits.append(wit)
+
+    return work_wits
+
+def create_excerpt(data_row: pd.Series, type: object, column_prefix: str):
+    excerpt = {}
+    excerpt["type"] = type # TBD: make generic, so can supply type or look for it from the row columns
+
+    if not(pd.isnull(data_row[column_prefix + "Locus"])):
+            excerpt["locus"] = str(data_row[column_prefix + "Locus"])
+    if not(pd.isnull(data_row[column_prefix + "As Written"])):
+            excerpt["as_written"] = str(data_row[column_prefix + "As Written"])
+    if not(pd.isnull(data_row[column_prefix + "Translation"])):
+            excerpt["translation"] = parse_rolled_up_field(str(data_row[column_prefix + "Translation"]), "|~|", "#")
+    if not(pd.isnull(data_row[column_prefix + "Note"])):
+            excerpt["note"] = parse_rolled_up_field(str(data_row[column_prefix + "Note"]), "|~|", "#")
+    
+    return excerpt
+
+
 def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
     date = {}
     date["type"] = type
