@@ -45,10 +45,10 @@ def transform_row_to_json(row, record_type):
 
     # add language for text_units
     if record_type == "text_units":
-        lang_ids = parse_rolled_up_field(str(row["Language ID"], ",", '"'))
-        lang_labels = parse_rolled_up_field(str(row["Language Label"], ",", '"'))
+        lang_ids = parse_rolled_up_field(str(row["Language ID"]), ",", '"')
+        lang_labels = parse_rolled_up_field(str(row["Language Label"]), ",", '"')
         data["lang"] = []
-        for i in range(o, len(lang_ids)):
+        for i in range(0, len(lang_ids)):
             data["lang"].append(
                 {
                     "id": lang_ids[i],
@@ -62,7 +62,7 @@ def transform_row_to_json(row, record_type):
         data["work_wit"] = create_work_witnesses_from_row(work_wit_ids, workwits_table)
 
     # add extent
-    if not(pd.isnull(row["Extent"])):
+    if record_type != "text_units" and not(pd.isnull(row["Extent"])):
         data["extent"] = str(row["Extent"])
 
     if record_type == "ms_objs" and not(pd.isnull(row["Weight"])):
@@ -939,12 +939,12 @@ def create_work_witnesses_from_row(work_wit_ids: list, workwits_table: pd.DataFr
                         }
                     )
             
-        if not(pd.isnull(work_wit_row["Work Alternative Title"])):
-            wit["alt_title"] = str(work_wit_row["Work Alternative Title"])
-        if not(pd.isnull(work_wit_row["Work As Written"])):
-            wit["as_written"] = str(work_wit_row["Work As Written"])
-        if not(pd.isnull(work_wit_row["Work Locus"])):
-            wit["locus"] = str(work_wit_row["Work Locus"])
+        if not(pd.isnull(work_wit_row["Alternative Title"])):
+            wit["alt_title"] = str(work_wit_row["Alternative Title"])
+        if not(pd.isnull(work_wit_row["As Written"])):
+            wit["as_written"] = str(work_wit_row["As Written"])
+        if not(pd.isnull(work_wit_row["Locus"])):
+            wit["locus"] = str(work_wit_row["Locus"])
 
         # Create excerpts for incipit and explicit
         wit["excerpt"] = []
@@ -965,7 +965,7 @@ def create_work_witnesses_from_row(work_wit_ids: list, workwits_table: pd.DataFr
         if not(pd.isnull(work_wit_row["Contents Label"])):
             contents = []
             labels = parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
-            for i in range(0, labels):
+            for i in range(0, len(labels)):
                 contents.append(
                     {
                         "label": labels[i]
@@ -1124,7 +1124,7 @@ if record_type == "ms_objs":
 elif record_type == "layers":
     columns_list_doc = 'layer_fields.txt'
 elif record_type == "text_units":
-    columns_list_doc = 'text_units_fields.txt'
+    columns_list_doc = 'text_unit_fields.txt'
 
 
 with open(columns_list_doc) as f:
@@ -1150,7 +1150,7 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == "y"
 
 # for each row, create a JSON file of the corresponding record type
-out_dir = "/Users/wpotter/Desktop/SMDP-Migration/layers/migration_tests"
+out_dir = "/Users/wpotter/Desktop/SMDP-Migration/text_units/migration_tests"
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 if accept_input:
