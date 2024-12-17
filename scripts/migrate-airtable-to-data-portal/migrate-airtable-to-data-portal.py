@@ -971,6 +971,12 @@ if path_to_paracontents_csv:
 else:
     paracontents_table = None
 
+if record_type == "text_units":
+    path_to_workwits_csv = input("Please input a path to the CSV containing the work witness info for creating the work witnesses field (required for text units):")
+# path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
+    workwits_table = pd.read_csv(path_to_workwits_csv, index_col='ID')
+
+
 # TBD: check that all of the columns are present, or added, for a given record type
 # Report the mismatched fields and prompt user to continue
 csv_columns = csv_file.columns
