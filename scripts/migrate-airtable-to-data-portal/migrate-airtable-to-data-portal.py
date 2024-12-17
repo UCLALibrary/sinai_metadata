@@ -1154,9 +1154,11 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == 'y'
 
 # for each row, create a JSON file of the corresponding record type
-# TBD: make this a parameter or input
-out_dir = "/Users/wpotter/Desktop/SMDP-Migration/text_units/migration_tests"
 
+# Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
+out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
+if out_dir == "":
+    out_dir = f"out/{record_type}/"
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 if accept_input:
