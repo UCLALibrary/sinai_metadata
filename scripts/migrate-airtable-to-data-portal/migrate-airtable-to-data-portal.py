@@ -1120,6 +1120,11 @@ path_to_ref_instances_csv = input("Please input a path to the CSV containing the
 # path_to_ref_instances_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv" # testing remove this line
 if path_to_ref_instances_csv:
     ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
+    ref_instances_missing_col = check_csv_columns_against_standard_list('bib_fields.txt', "References", ref_instances.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+    user_response = input("Please press enter to continue with the migration script")
+    for col in ref_instances_missing_col:
+        ref_instances[col] = pd.Series(dtype='string')
 else:
     ref_instances = None
 

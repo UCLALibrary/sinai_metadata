@@ -1,0 +1,8 @@
+ID
+UUID
+Type ID
+Type Label
+Range
+Alt shelfmark
+URL
+Notes
