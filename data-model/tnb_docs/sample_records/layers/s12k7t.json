@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s12k7t",
+    "reconstruction": false,
+    "label": "Sinai Syriac 229, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w663",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Marginal vegetative and geometric decorations throughout, beginning on f. 3r | Minor geometric headpieces throughout, beginning on f. 18v | Geometric headpieces, f. 254r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1r518bm"
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1764f",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 24, Undertext (Greek majuscule)",
+    "locus": "ff. 1, 2, 4–16",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule. Many orthographical mistakes. Sporadic accents and breathings"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "27 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w67g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 14r, 14v, 4r, 4v, 7r, 7v, 5r, 5v, 6r, 6v, 8r, 2r, 2v, 13v, 12r, 12v, 1r, 1v, 15v, 9r, 16v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Giulia Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rr2nnf"
+    ]
+}

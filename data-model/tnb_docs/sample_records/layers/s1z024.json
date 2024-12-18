@@ -1,0 +1,99 @@
+{
+    "ark": "ark:/21198/s1z024",
+    "reconstruction": false,
+    "label": "Sinai Arabic 496, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rm13",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 21v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تمت الميامر المقدسة بعون الله وحسن توفيقه وكان الفراغ منها يوم الجمعة الثامن وعشرين شهر نيسان سنة ستة آلاف وسبعمائه وسبعة وأربعين لأبينا آدم عليه السلام",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 28 Nisan 6747 (adam)"
+                }
+            ]
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 160v-161r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخة يوم السبت أول شهر تشرين الأول سنة ستة آلاف وسبعمائة وسبعة وأربعين لأبينا آدم عليه السلام / وكتب العبد الخاطئ  كثير الآثام والذنوب اغاتون بن مصبح الطراني فهو يسأل لكل من قرأ فيه بأن يبسط العدد وينصلح عن زلاته ويترحم عليه ويطلب له المغفرة ولوالديه غفر الله لمن قرأ / فكتب وسمع وترجم على كاتبه وعلى والدى كاتبه ودعا لهم بالمغفرة فالسيد المسيح لذكره السجود يغفر خطاياه فعل ذلك بشفاعة السيدة الطاهرة البتول مرت مريم أم النور والقديسيْن المنحييْن  مار موسى وهرون والناس والتسع والقديسة الشهيدة المكرمة … والقديس دقرونيوس واستافينس آمين آمين  آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 1 Tishrin I 6747 (adam)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1239",
+            "iso": {
+                "not_before": "1239"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1j39wv8"
+    ]
+}

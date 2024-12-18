@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1qh0c",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 90, Undertext (Asomtavruli)",
+    "locus": "ff. 3–6, 9–10, 15–18, 23–24, 38",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Small, clumsy and slightly slanted"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "18 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ch55",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Undertext folio order undeterminable"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Probably from the same hand (and original) as the UTOs of the Life of St. Febronia and the homilies on the Koimesis by John Chrysostom in this manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb24tz"
+    ]
+}

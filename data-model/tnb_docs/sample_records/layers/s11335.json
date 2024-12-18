@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s11335",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF X 26, Overtext (Melkite, Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                },
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Chaldean vowels"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zd5d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "n.d.",
+            "iso": {
+                "not_before": "0nan"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sj3brp"
+    ]
+}

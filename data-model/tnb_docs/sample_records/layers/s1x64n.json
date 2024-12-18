@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1x64n",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 55, Undertext (Erkatagir)",
+    "locus": "ff. 28–29, 37–38",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Slanted majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1k67p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. (Sin. geo. NF 13: 72v-71r, 72r-72v), 29r-28v, 29v-28r, 38r-37v, 38v-37r, (Sin. geo. NF 13: 62v-63r, 62r-63v, 53r-52v, 53v-52r)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "References to Sin. geo. NF 13 added to show the original sequence"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The same original manuscript also contained the fragments from the Euthalian prologue from the UTO of the Pauline Epistles with Euthalian apparatus in Sinai Georgian NF M 55, as well as the UTOs of Hebrews and Philemon from Sinai Georgian NF M 13"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: SIBE 2/3"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1d50wzn"
+    ]
+}

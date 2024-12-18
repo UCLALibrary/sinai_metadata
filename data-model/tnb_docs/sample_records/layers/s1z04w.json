@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1z04w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Estrangela)",
+    "locus": "ff. 96, stub-98, 98, stub+98, 99",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "21 lines",
+            "note": [
+                "Each folio is made up from an original bifolio"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1m09p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 96r (recto), 96v (verso), 98r (recto), 98v (verso), 99v (recto), 99r (verso), 99r (recto), 99v (verso), 98v (recto), 98r (verso), 96v (recto), 96 (verso)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Akhrass and Syryany, vol. 1, pp. 552-567"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

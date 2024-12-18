@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1ck7m",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 36, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19x0s",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b59vbz"
+    ]
+}

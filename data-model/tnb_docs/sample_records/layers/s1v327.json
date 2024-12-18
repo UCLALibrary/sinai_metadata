@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1v327",
+    "reconstruction": false,
+    "label": "Sinai Arabic 531, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nq16",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 351v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكتب اغاثن … سنة ستالاف وسبعمائه وأربعين لأبينا آدم عليه السلم بتاريخ يوم الثلاثاء  ثالث عشر آذار اجر الله …",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Wednesday 13 Adhar 6740"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1232",
+            "iso": {
+                "not_before": "1232"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vh76j4"
+    ]
+}

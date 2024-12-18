@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1gg98",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 76, Overtext (Serto)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Serto with coexistence of estrangela \"olaf\""
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19375",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th-12th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Other catalogues have dated this manuscript to the 9th-10th c."
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qc0cjx"
+    ]
+}

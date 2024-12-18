@@ -1,0 +1,87 @@
+{
+    "ark": "ark:/21198/s1d35b",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Undertext (Greek majuscule)",
+    "locus": "ff. 111–118, 120, 124",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Large, easily legible and sparse letters based on straight lines. The script is written in a steady hand"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "11 lines",
+            "note": [
+                "Some folios are damaged"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1240p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "late 10th c. ",
+            "iso": {
+                "not_before": "0951",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Jerusalem",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. Hesychius, Homily:117v,112,117r,112v,111r,118, 118v,111v.\nGregory of Nazianzus, Homily : 113,116,113v, 116, 114, 115v,114v,115"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Vasilios Katsaros"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: M. Aubineau, Les homelies festales d' Hesychius de Jerusalem, vol.1. Les homelies i-xv. Subsidia hagiographica 59. Brussels, 1978, pp. 158-168 ; Gregoire de Nazianze, Discours 38-41, introduction, texte critique et notes par Claudio Moreschini, traduction par Paul Gallay. Sources Chretiennes, no 358. Paris, 1990, Discours 39, Sur les lumieres( Εις τα Φώτα), p.150-197"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1k91f",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 14, Overtext (Serto)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Two hands; beautiful script at the beginning, very disorderly later"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cw9g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17s9dw1"
+    ]
+}

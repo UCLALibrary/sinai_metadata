@@ -1,0 +1,101 @@
+{
+    "ark": "ark:/21198/s1k92t",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 3, Undertext (Melkite)",
+    "locus": "ff. 80–164",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Melkite Estrangela | Neat and fairly regular; some serto features. The script is quite similar to that of Tropologion B, but usually rather neater"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "8-12 lines, incomplete",
+            "note": [
+                "Sometimes part of a margin is present, top, right, left, or bottom (occasionally a combination of two of these). Blank spaces within or between lines probably had rubrics in different ink, which have left no trace in any of the images"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17967",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Syria",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Not possible to discern the original order"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The content (canons for feasts and saints' days) is evidently very similar to that of the UTO Tropologion B"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Usually only parts of lines are preserved"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Menaion (Rome, 1888-1902) | British Library manuscripts consulted: Add. 14504, 9th c., Syrian Orthodox ; Add. 14505, 10th c., Syrian Orthodox ; Add. 12179, 11th-12th c., Melkite ; Add. 17236, dated 1234, Melkite"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tm9397"
+    ]
+}

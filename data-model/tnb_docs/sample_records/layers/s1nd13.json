@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1nd13",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 90, Undertext (Undetermined (Geʽez))",
+    "locus": "ff. 1, 7",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "geez-undetermined",
+                    "label": "Undetermined (Geʽez)",
+                    "writing_system": "Ge'ez"
+                }
+            ],
+            "note": [
+                "Fine, trained hand"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines",
+            "note": [
+                "Each column has about seven letters, thus, with 24 lines, each column could hold around 168 letters"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19d5h",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Before the 13th century",
+            "iso": {
+                "not_before": "0600",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Clearly from a different book than the other two UTOs in this codex; layout, size of letters, and ductus are all distinct"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Steve Delamarter, Getatchew Haile"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b289w3"
+    ]
+}

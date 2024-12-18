@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s15d0c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 548, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1008q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 194r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من هذه الكتاب المبارك من أول شهر حزيران سنة ستة آلاف وثمانمائة وأربعة عشر في الدير المقدس طور سيناء فمن وجد الغلط يسامح الكاتب بذلك لأن كل أحد تحت النقص الرب يغفر لمن كتب وقرأ فيه ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1 Huzayran 6814"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1306",
+            "iso": {
+                "not_before": "1306"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece on f. 2r | Minor geometric headpieces on ff. 46r, 58v, 72v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1126wx1"
+    ]
+}

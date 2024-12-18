@@ -1,0 +1,117 @@
+{
+    "ark": "ark:/21198/s1sp60",
+    "reconstruction": false,
+    "label": "Sinai Arabic 395, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1m94w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 213v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وذلك بتأريخ سنة ستة آلاف وثمانمائة وسبع وثلاثين لأبونا آدم احن الله العافي (؟) وذلك بدير طور سيناء المقدس وهو برسم كنيسة السيدة ",
+            "translation": [
+                "And it was [i.e. copying finished] in the Year of Our Father Adam [Anno Mundi] 6837 …, which happened at Holy Mount Sinai Monastery …"
+            ],
+            "assoc_place": [
+                {
+                    "value": "Holy Mount Sinai Monastery",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "6837"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1329",
+            "iso": {
+                "not_before": "1329"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Saint Catherine's Monastery (Sinai)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 213v"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece on f. 134v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13n36rv"
+    ]
+}

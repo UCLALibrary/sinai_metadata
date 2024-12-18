@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1h023",
+    "reconstruction": false,
+    "label": "Sinai Arabic 29, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19h11",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c.",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric decoration, f. 25r I Geometric tailpiece, f.81v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Possible trials of the pen on ff. 81v and 82r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1252nhk"
+    ]
+}

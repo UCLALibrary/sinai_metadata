@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1tk5w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 178, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n645",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative and geometric headpieces throughout, beginning f. 164r; f. 173v, with green ink | Ornate vegetative headpiece, f. 200v, volutes, red and green ink"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13b73jb"
+    ]
+}

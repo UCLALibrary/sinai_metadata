@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1hk87",
+    "reconstruction": false,
+    "label": "Sinai Syriac 22, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b67h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c.",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces with bordered marginalia text throughout, ff. 4v-156r, ff. 4v, 24v, with fleur de lis tail ends; Minor geometric headpieces throughout ff. 38r-172v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Marginal decorations, diamond with fleur de lis tail, ff. 1v, 11r; roundel star motif, f. 15r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v13pf7"
+    ]
+}

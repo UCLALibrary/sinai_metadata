@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1104h",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF X 30, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1tm1q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1247",
+            "iso": {
+                "not_before": "1247"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nc80rg"
+    ]
+}

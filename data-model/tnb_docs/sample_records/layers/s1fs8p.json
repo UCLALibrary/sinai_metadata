@@ -1,0 +1,92 @@
+{
+    "ark": "ark:/21198/s1fs8p",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 66–69, 81, 87",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "32 lines",
+            "note": [
+                "Number of lines is reconstructed (Rossetto)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13t18",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 8th - early 9th c. ",
+            "iso": {
+                "not_before": "0775",
+                "not_after": "0825"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 81v (col. a), 68r, 81v (col. b), 67v, 81r (col. a), 67r, 81r (col. b), 68v, 66r, 87v (col. a), 69v, 87v (col. b), 69r, 87r (col. a), 66v, 87r (col. b ) (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This text was written by the same scribe who copied the UTO Basil of Caesarea, Homily on the on Thanksgiving in this codex. These two texts belonged to the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Fragment 21r (upper outer piece), 21v (upper outer piece) possibly also belongs to this text; fragments 86r (gutter lower piece), 86v (gutter lower piece), 116r (lower piece), 116v (lower piece), could also belong to this text (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

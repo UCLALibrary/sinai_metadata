@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/s12883",
+    "reconstruction": false,
+    "label": "Sinai Arabic 151, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Kufic elements"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vw72",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 186v-187r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "867",
+            "iso": {
+                "not_before": "0867"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Red borders throughout, beginning on f. 9v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Cross, f. 16r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Quire signatures with geometric decoration ff. 4r, 12r, 20r, 28r, 36r, 84r, 92r, 100r, 108r, 116r, 148r, 156r, 164r, 180r; numerical, ff .229, 237r, 245r, 253r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vx1kvk"
+    ]
+}

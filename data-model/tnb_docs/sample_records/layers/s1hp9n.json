@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1hp9n",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 90, Undertext (Undetermined (Geʽez))",
+    "locus": "ff. 12–13",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "geez-undetermined",
+                    "label": "Undetermined (Geʽez)",
+                    "writing_system": "Ge'ez"
+                }
+            ],
+            "note": [
+                "Written in a medium-sized hand with average competence"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "14 lines",
+            "note": [
+                "The folios from this object were originally independent bifolios sewn together from a much smaller Ethiopian book to form a bifolio for the new Greek book, oriented at 90 degrees to the overtext. The two bifolios were from an Ethiopian book whose size was approximately half the size of the new Greek book, thus when sewn together and trimmed, they provided a sheet of the right size and shape for the new Greek book. The seam is now in the gutter of the Greek book in its current shape. The gutter folds of the original Ethiopic sheets are still visible, oriented at 90 degrees to the orientation of the current Greek codex"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15q5c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Before the 13th century",
+            "iso": {
+                "not_before": "0600",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Several features like script size, layout, folio size, etc., make it clear that this UTO is quite unrelated to the UTO Unidentified Homily. Though the layout may be similar to the UTO Unidentified Text, the hand is different"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Steve Delamarter, Getatchew Haile"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b289w3"
+    ]
+}

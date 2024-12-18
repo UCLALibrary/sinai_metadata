@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1s64d",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 90, Undertext (Undetermined (Geʽez))",
+    "locus": "f. 15",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "geez-undetermined",
+                    "label": "Undetermined (Geʽez)",
+                    "writing_system": "Ge'ez"
+                }
+            ],
+            "note": [
+                "Written in a medium-sized hand, with average to mediocre competence"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 or 4 columns",
+            "note": [
+                "Fol. 15 was originally a bifolio from a much smaller Ethiopian book, now turned at 90 degrees to form an individual folio in the Greek codex. The gutter fold of the original bifolio is still visible. Because of the wear in the center of the Ethiopian folio, it is not possible to tell if there were originally two or four columns. Only the outer edges of the text block are discernible. The original size of the bifolio suggests that this was only one column"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f696",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Before the 13th century",
+            "iso": {
+                "not_before": "0600",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Clearly from a different book than the other two UTOs in this codex: there are differences in layout from the UTO Unidentified Homily; and differences in the size of the hand, the ductus, and the lack of rubrication in relation to the UTO Unidentified Horologium"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The surviving text is insufficient to identify genre, let alone specific content"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Steve Delamarter, Getatchew Haile"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b289w3"
+    ]
+}

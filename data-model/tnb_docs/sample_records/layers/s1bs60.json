@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1bs60",
+    "reconstruction": false,
+    "label": "Sinai Arabic 620, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15d4w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1409",
+            "iso": {
+                "not_before": "1409"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z90x36"
+    ]
+}

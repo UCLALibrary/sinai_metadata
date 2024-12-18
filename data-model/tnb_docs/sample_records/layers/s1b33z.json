@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1b33z",
+    "reconstruction": false,
+    "label": "Sinai Greek 962, Undertext (Greek minuscule)",
+    "locus": "ff. 183,186",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Upright, round, calligraphic minuscule with thick, pronounced strokes. The writing is pendent from the ruled lines. Each ode begins with an initial in epigraphischer Auszeichnungsmajuskel"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "18-20 lines",
+            "note": [
+                "The writing runs parallel to the overtext, rotated through 180°",
+                "Each side of the bifolio preserves 18 to 20 lines of text, 6 mm apart and arranged in one column",
+                "A single folio of Sin. gr. 962 corresponds to a single folio of the original manuscript, and hence the original manuscript was probably of similar dimensions: 150x100 mm. The Schriftspiegel is approximately 110x70 mm, with an outer margin of 25 mm and a lower of 20 mm"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10394",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c. CE (Rossetto); 11th c. CE (Wilson)",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 186v, 186r, 183v, 183r (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The two folios do not contain a consecutive text. At least one bifolio is missing in-between."
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Most recent layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Rossetto 2023a"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qj8f7g"
+    ]
+}

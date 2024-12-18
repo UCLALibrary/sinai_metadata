@@ -1,0 +1,99 @@
+{
+    "ark": "ark:/21198/s1788n",
+    "reconstruction": false,
+    "label": "Sinai Arabic 72, Overtext (Kufic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11w7m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "table",
+            "label": "Table(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 118v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "897",
+                    "iso": {
+                        "not_before": "0897"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "897",
+            "iso": {
+                "not_before": "0897"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative headpieces, ff.3r, 57v, 116v, repeating vine motif; ff.37r, 91v, 118v, knotted vine motif"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cn8nmt"
+    ]
+}

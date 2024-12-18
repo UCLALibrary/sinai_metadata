@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1zk88",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 8–9, 40–41, 46–47 ",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule (Rossetto)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "42-43 lines, reconstructed (Rossetto)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mm5c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 9r+46r (col. a), 8v+41v (col. a), 46r (col. b), 41v (col. b), 46v (col. a), 41r (col. a), 46v (col. b)+9v, 41r (col. b)+8r, 40v (col. a), 47r (col. a), 40v (col. b), 47r (col. b), 40r (col. a), 47v (col. a), 40r (col. b), 47v (col. b)\n\n- original recto: 9r bottom+46r (col. a), 8v bottom+41v (col. a), 46r (col. b), 41v (col. b)\n- original verso: 46v (col. a), 41r (col. a), 46v (col. b)+9v bottom, 41r (col. b)+8r bottom\n- original recto: 40v (col. a), 47r (col. a), 40v (col. b), 47r (col. b)\n- original verso: 40r (col. a), 47v (col. a), 40r (col. b), 47v (col. b)\n(Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Common codicological and palaeographical features suggest that the three Hippocratic texts and the two other medical texts in this codex (\"Antyllus?, Recipes for different diseases\" and \"Treatise on medical terms\") belonged to the same original manuscript (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto ; Rossetto 2023b"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

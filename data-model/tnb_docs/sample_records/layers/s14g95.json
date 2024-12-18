@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s14g95",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 9, Overtext (Kufic, Greek majuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z38f",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cg1g5j"
+    ]
+}

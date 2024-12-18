@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1834q",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Roman))",
+    "locus": "ff. 14r, 19v",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ],
+            "note": [
+                "Good quality script of the sort practised in Rome (Brown)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x384",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Italy",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz, Daniela Mairhofer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: B. Bischoff, Katalog der festländischen Handschriften des neunten Jahrhunderts (mit Ausnahme der wisigothischen), vol. 3, Wiesbaden: Harrassowitz, 1998, p. 348, no. 5985 ; M. P. Brown, \"Imagining, Imaging and Experiencing the East in Insular and Anglo-Saxon Cultures: New Evidence for Contact,\" in Anglo-Saxon England and the Visual Imagination, ISAS 6, Proceedings of the ISAS conference, Madison, 2012, ed. J. D. Niles, S. Klein, J. Wilcox, Tempe: Arizona University Press, 2016, pp. 49-84 ; M. P. Brown, \"Mercian Manuscripts: the implications of the Staffordshire Hoard, other recent discoveries, and the ‘new materiality’,\" in Writing in Context: Insular Manuscript Culture, 500-1200, ed. E. Kwakkel, Leiden: Leiden Univ. Press, 2013, pp. 23-66 ; M. P. Brown, \"The Bridge in the Desert: towards establishing an historical context for the newly discovered Latin manuscripts of St Catherine’s Sinai,\" Rivista degli Studi Orientali (Supplement, 2018), pp. 73-98 ; G. Boudalis, G. Rossetto, Colour Mapping of Sin. ar. NF 8 + Sin. ar. NF 28, in The Apollonius of Tyre Fragment in Arabic NF 8: Studies of a Latin Palimpsest at St Catherine’s Monastery, Sinai, ed. M. P. Brown, J. Lockhart. Forthcoming"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

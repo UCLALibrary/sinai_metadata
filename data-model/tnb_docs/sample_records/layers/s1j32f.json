@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1j32f",
+    "reconstruction": false,
+    "label": "Sinai Syriac 136, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bq1d",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces, ff.3r-152v, 241r-252r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z19g75hz"
+    ]
+}

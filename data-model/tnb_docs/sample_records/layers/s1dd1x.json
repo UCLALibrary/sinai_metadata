@@ -1,0 +1,88 @@
+{
+    "ark": "ark:/21198/s1dd1x",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 13, Undertext (Erkatagir)",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Less slanted majuscules"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12d73",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. (NF 55: 45v, 45r, 48r, 48v, 50r, 50v, 46v, 46r), 79v, 79r, (NF 55: 57v, 57r, 59v, 59r, 51v, 51r), 87v, 87r, 80v, 80r, 88r, 88v, 95r, 95v, (NF 55: 61r, 61v, 56v, 56r, 53v, 53r),  90r, 90v, (NF 55: 47v, 47r), 85v, 85r, 82v, 82r, (NF 55: 44v, 44r), 93r, 93v, (NF 55: 43r, 43v, 49r, 49v), 86v (with frag081r = frag086v), 86r (with frag081v = frag086r), 84v, 84r, 83v, 83r, 81v, 81r, 92r, 92v, 91r, 91v, (NF 55: 52r, 52v), 94v, 94r, 89v, 89r, (NF 55: 58r, 58v)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The undertext folio order includes the erased Armenian texts of Ecclesiastes, Song of Songs and Wisdom of Solomon, because these all belonged to the same original manuscript. References to Sin. geo. NF 55 included to show the original sequence"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTOs of Ecclesiastes, Song of Songs and Wisdom of Solomon belong to the same original manuscript. Folios once belonging to this text are also found in the undertext of Sinai Georgian NF M 55 (Works of Solomon). This was most probably a manuscript only containing the so-called \"Bankʿ Sołomoni\""
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: SIBE 2/3, esp. I-8 to I-11"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww8090"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s11k64",
+    "reconstruction": false,
+    "label": "Sinai Arabic 330, Overtext (Kufic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1v35c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c.",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1df88vn"
+    ]
+}

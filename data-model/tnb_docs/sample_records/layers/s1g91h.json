@@ -1,0 +1,52 @@
+{
+    "ark": "ark:/21198/s1g91h",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Serto)",
+    "locus": "ff. 40, 47",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14969",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

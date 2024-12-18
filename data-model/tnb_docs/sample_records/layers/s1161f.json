@@ -1,0 +1,88 @@
+{
+    "ark": "ark:/21198/s1161f",
+    "reconstruction": false,
+    "label": "Sinai Arabic 196, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ts83",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 102v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تم بهذا الكتاب بعون الله تعالى بيد العبد الفقير الحقير جبرائيل ولد جرجس الطبيب الجلى الكاتب الكاتوليكي  الإيمان في مدينة حمص المحمية سنة ألف وتسعمائة واثنين وأربعين في شهر تشرين الثاني مسيحية "
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1742",
+            "iso": {
+                "not_before": "1742"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece, f. 1r, red and black vine motif with ascending cross ; f. 85r, vine ; minor geometric headpiece, f. 8v ; tailpiece with red partial border, f. 34r | Minor vegetative decorations, ff. 8v, 16v, 22v, 29v, 34r, 39r 45v, 52v, 96r-96v, vine motif ; minor geometric decorations, ff. 10r, 32v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13f5sxt"
+    ]
+}

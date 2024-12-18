@@ -1,0 +1,83 @@
+{
+    "ark": "ark:/21198/s1591q",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 48–49, 51–52, 54–55",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule. Copied by the same hand as the texts “Hippocrates, Regimen” and “Antyllus?, Recipes for different diseases” in this codex (Rossetto)",
+                "Script dates to 5th-6th c. CE (Wilson)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "42-43 lines, reconstructed"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t97w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Traces of foliation by a later hand on fol. 54v, the same hand that foliated the UTO Antyllus?, Recipes for different diseases, fol. 7r (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Common codicological and palaeographical features suggest that the three Hippocratic UTOs and the two other medical UTOs in this codex (\"Antyllus?, Recipes for different diseases\" and \"Treatise on medical terms\") belonged to the same original manuscript (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto ; Rossetto 2023b"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

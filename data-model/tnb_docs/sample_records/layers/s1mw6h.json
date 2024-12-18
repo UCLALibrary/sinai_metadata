@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s1mw6h",
+    "reconstruction": false,
+    "label": "Sinai Syriac 143, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fh4d",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "284v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": ": ܐܫܬܠܡ: ܟܬܒܐ: ܕܡܙܡܘܪ̈ܐ ܕܕܘܝܕ: : ܢܒܝܐ ܘܡܠܟܐ: ܕܗܘ̈ܝܢ: ܒܡܢܝ̈ܢܐ: ܡ̈ܐܐ: : ܘܚܡ̈ܫܝܢ܀ ܐܫܬܠܡ ܗܢܐ ܟܬܒܐ: ܝ̄: : ܝܘܡ̈ܝܢ: ܡܢ ܟܢܘܢ: ܒ̄: ܫܢܬ: ܐܠܦ: : ܘܚܡܫ : ܡ̈ܠܐ: ܘܐܒܪ̈ܥܝܢ: ܘܬܪܬܝܢ: : ܘܫ̈ܢܝܐ ܕܒ̈ܢܝ: ܗܓܪ: ܫܬ: ܡ̈ܐܐ: :ܘܥܣܪ̈ܝܢ: ܘܬܡ̈ܢܐ: : ܐܘ ܐܚ̈ܝ: ܨ̈ܠܘ ܥܠ ܥܒܕܐ: : ܚܛܝܐ : ܕܝܨܪܛ:"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1230",
+            "iso": {
+                "not_before": "1230"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww9652"
+    ]
+}

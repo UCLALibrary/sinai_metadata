@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1g603",
+    "reconstruction": false,
+    "label": "Sinai Arabic 213, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18s84",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate bordered headpiece, f. 113v, geometric, knots and tails | Minor headpieces throughout, ff.25v-88r, vegetative; f. 102r, geometric | Roundel with tail, f. 124r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pz6tj4"
+    ]
+}

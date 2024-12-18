@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1mk85",
+    "reconstruction": false,
+    "label": "Sinai Arabic 522, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f361",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c.",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Knotted headpiece, f. 127r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zc9mm9"
+    ]
+}

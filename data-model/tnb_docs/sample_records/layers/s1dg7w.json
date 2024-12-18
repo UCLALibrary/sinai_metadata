@@ -1,0 +1,114 @@
+{
+    "ark": "ark:/21198/s1dg7w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 398, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17365",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 310v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز الجزء الرابع من الدولاب بعون الله وحسن توفيقه وهو مصحف شهر كانون الاول … الاثنين الثامن شهر نيسان … لأول الجاري في سنة ستة آلاف…وسبعمائة وستة وستين لأبينا آدم وكتب العبد الخاطئ المسكين العاري من كل خير الغارق في بحر الخطايا جَوان بن دمتري بن يوحنا بن حمزة بمدينة الله العظمى أنطاكية  وذلك على يد الأخ المود لله والمرتب في الاقيمة  لدير العظيم في القديسين  ماري موسى بجبل الطور المقدس كير سميون بن البطيطة الأنطاكي برسم الدير المقدس المقدم ذكره ووقف على مقابلته كُرّاس كُرّاس وورقة ورقة الراهب القسيسين الخاطئ أبا توما بدير شفيعتنا السيدة ارشايا الكائن موقعة عربي مدينة أنطاكية ظاهر الباب المعروف بباب الفضيل والمذكورين يسألوا لمن قرأ وحضر وسمع الصلوة عليهم والترحم على والديهم وعلى من يلوذ بهم وينسب إليهم والفاعل لذلك يغفر له الله بشفاعة السيدة أم النور والقديس ماري موسى ومر يوحنا المعمدان…القديسين آمين والحمد لله حق حمده …",
+            "translation": [
+                "[The copying of] Part IV of Ad-Dūlāb [Menologion] …, that is the volume of the month of Kānūn Al-awwal [December]  was finished [on] Monday 8 in the month of Nīsān [March–April] … in the year of Our Father Adam [Anno Mundi] 6[7]66, and … Javān[?] ibn Dmitri ibn John ibn Ḥamzah [copied?] it in the … city of Antioch …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Jawān ibn Dimitry ibn John ibn Ḥamzah of Antioch",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "Antioch",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "6766 (adam)"
+                }
+            ],
+            "note": [
+                "Damage to folios inhibits reading of part of the date.",
+                "Attested names: Simeon Ibn al-Batita of Antioch ; Father Thomas",
+                "Attested places:  Antioch"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1258",
+            "iso": {
+                "not_before": "1258"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Antioch",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 310v"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mp66m6"
+    ]
+}

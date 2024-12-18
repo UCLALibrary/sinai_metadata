@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1qw52",
+    "reconstruction": false,
+    "label": "Sinai Arabic 696, Overtext (Naskh, Ottoman Turkish)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "ottoman-turkish",
+                    "label": "Ottoman Turkish",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jd49",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 4r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تمت وسطرت هذه النسخة في ثاني رجب المرجب  سنة 948"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1561",
+            "iso": {
+                "not_before": "1561"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1xw63d4"
+    ]
+}

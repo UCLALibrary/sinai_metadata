@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s1zs56",
+    "reconstruction": false,
+    "label": "Sinai Arabic 530, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sd33",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 421r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخة في اليوم الخامس في شهر آذار لسنة ستة الاف وسبعمائه أحد وأربعين لأبينا آدم عليه السلم الموافق لسنة الهجرة ستة وثلاثين وستمائة  وكتب العبد الخاطئ (+) المسمى أغاتون بالاسم راهب بطور سيناء الجبل المقدس / فصح فهو يسأل كلمن وفق عليه وقرأ فيه يسامح له في الغلط والزلل وترحم عليه وعلى والديه رحم الله من فعل ذلك وغفر له والديه ولبني المعمودية أجمعين آمين  آمين",
+            "assoc_name": [
+                {
+                    "value": "Agathon (monk, copyist) of Sinai",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday Adhar 6741 (adam) :: 636 (hijra)"
+                }
+            ],
+            "note": [
+                "The “+” is the same as given in the manuscript, indicating a marginal note.",
+                "Here and in Sinai Arabic 531, the scribe Agathon name seems to have been written by a later hand, where the original text is erased.",
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1233",
+            "iso": {
+                "not_before": "1233"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12j7wh5"
+    ]
+}

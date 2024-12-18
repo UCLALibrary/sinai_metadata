@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1990k",
+    "reconstruction": false,
+    "label": "Sinai Arabic 259, Overtext (Greek minuscule, Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Thuluth used for headings"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13w8m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1601",
+                "not_after": "1700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated Greek intials, minor, f. 13v; vegetative, ff. 15r, 53v, 73v | Headpieces, ff. 16r, 18v, vegetative; f. 17v, geometric"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t166z0"
+    ]
+}

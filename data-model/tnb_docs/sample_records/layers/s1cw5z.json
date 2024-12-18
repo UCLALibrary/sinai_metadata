@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1cw5z",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 98, Undertext (Greek majuscule)",
+    "locus": "ff. 1–2",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Upright pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "12 lines",
+            "note": [
+                "Current number of lines on each folio is 12; each original folio had a larger number of lines"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11x1p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th-early 11th C. ",
+            "iso": {
+                "not_before": "0975",
+                "not_after": "1025"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 2v, 1r, 1v, 2r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Since the original manuscript had a two-column layout, according to the reconstruction of the original position of the palimpsest folios, a more correct representation of the textual order would be one of the two following: (1) 2v+1r, 1v+2r; (2) 2v (col. a), 1r (col. b), 1v (col. a), 2r (col. b)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Very damaged sheet, with material deficiencies; partially preserved margins, except the lower margin"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Guglielmo Cavallo"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1w385bk"
+    ]
+}

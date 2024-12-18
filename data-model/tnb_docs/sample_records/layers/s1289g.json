@@ -1,0 +1,74 @@
+{
+    "ark": "ark:/21198/s1289g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 676, Overtext (Naskh, Thuluth)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "thuluth",
+                    "label": "Thuluth",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Section headings written with thuluth"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vw8f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 128r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1607",
+            "iso": {
+                "not_before": "1607"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n6kvk"
+    ]
+}

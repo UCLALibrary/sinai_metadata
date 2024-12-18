@@ -1,0 +1,98 @@
+{
+    "ark": "ark:/21198/s19k8c",
+    "reconstruction": false,
+    "label": "Sinai Syriac 129, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1467n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "145v-146r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܠܡ: ܩ̇ܢܘܢܐ: ܒܥ̣ܘܕܪܢ: ܡ̇ܪܢ: ܝܫ̇ܘ̇ܥ ܡܫܝܚܐ. ܐܚ̈ܝ ܪ̈ܘܚܢܐ ܡܛܠ ܡܪܢ ܨ̇ܠܘ ܥܠ ܚ̇ܛܝܐ ܡ̇ܣܟܢܐ ܕܟܬܒ̤ ܐܝܟ ܚ̇ܝܠܗ. ܘܟܠܢܫ ܐܝܟ ܨܠܘܬܗ̣ ܢܬܦ̇ܪܥ. ܐܢ ܕܛܒܗܝ̣ ܢܩܒܠ ܦܘܒܥܝܐ ܛܒܐ ܡܢ ܡܪܢ. ܘܐܢ ܕܒ̣ܝܫ ܢܦܪܘܥ ܠܗ̣ ܡܪܝܐ ܐܝܟ ܕܫ̇ܘܐ ܠܡ̈ܠܘܗܝ܀ ܠܬܫܒܘ ܕܐܒܐ ܘܕܒܪܐ ܘܕܪܘܚܐ ܕܩܘܕܫܐ ܐܫܬܡܠܝ ܘܐܬܟܬܒ ܒܥܘܕܪܢ ܡܪܢ ܝܫܘܥ ܡܫ̄ ܛܝܦܘܩܘܢ ܗܢܐ ܥܠ ܛ̇ܟܣܐ ܕܩ̇ܝܫܐ ܡܪܝ ܣܒܐ ܐܘܪܫܠܡܝܐ. ܒܐܫܢܬ ܐܠܦ̈ ܘܚܡ̈ܫܡܐܐ ܘ̈: ܣ̄: ܘ̄:ܙ: ܕܝܘ̈ܢܝܐ: ܟܬ̤̇ܒܗ̣ ܕܝܢ ܐܢ̇ܫ ܀ ܡܚ̇ܝܠܐ ܘܚ̇ܛܝܐ ܘܡܫ̇ܦ̤ ܪܝܫܗ̣ ܒܣܠܘܬܗ̣ ܘܥܛܝܦ ܒܗܬܐ ܒܚ̈ܛܗܘܝ. ܘܠܐ ܫ̇ܘܐ ܕܢܟܬܘܒ ܠܫܡܗ̣ ܒܬܟܬܝ̈ܐ ܕܥܕܬܐ ܩܕ̄ܫ: ܐܠܐ ܡܛܠ ܕܢܒ̇ܥܐ ܠܗ̣ ܫܘܒܩܢܐ ܟܠ ܡ̇ܢ ܕܢܩܪܐ ܒܟܬܒܐ ܗܢܐ: ܗܐ ܟܬܒ ܫܡܗ̣ ܐܠܝ̤ܐܣ. ܒܪܓܘܪܓܝܣ̇ ܒܫܡ ܩܝܫܐ ܘܒܥܒܕܐ ܕܝܢ ܣܓܝ ܪܚܝܩ: ܘܐܢܬܘܢ ܐܘ̄ ܐܚ̈ܝ ܘܪ̈ܘܚܢܐ ܐܢ ܚ̇ ܝܬܘܢ ܒܣܘܪ ܗܢܐ ܡܕܡ ܕܒܨܝܪ ܠܐ ܬܥܕܠܘܢ. ܘܕܥ̣ܘܕܟܐ ܒܪܝܐ ܚܣܝܪ: ܘܨܠܘ ܥܠܘ ܡܛܠ ܡܪܢ ܘܒܥܘ ܠܝ ܐܦ ܠܐܒܗ̈ܝ ܕܢܥܒܕ ܥܠܝܢ ܡܪܝܐ ܪ̈ܚܡܐ ܒܨ̈ܠܘܬܟܘܢ ܩ̈ܕܝܫܬܐ. ܘܟܠܢܫ ܐܝܟ ܨܠܘܬܗ ܢܩܒܠ ܡܢ ܡܪܝܐ ܦܘܩܥܢܐ ܟܬ̤ܒ ܐܠܝ̤ܐܣ ܥ̇ܒܕܐ ܡܚ̣ܝ̇ܠܐ ܐܝܟ݂ ܬܒ̇ܥܬܗ̣ ܕܪܒܐ ܘܡ̇ܠܦܢܐ ܡܗ̣ܝ̣ܪܐ:",
+            "assoc_name": [
+                {
+                    "value": "Elias bar Gewargis",
+                    "as_written": "ܐܠܝܐܣ ܒܪ ܓܘܪܓܝܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1245",
+            "iso": {
+                "not_before": "1245"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 6r, interlace, knot motif | Minor geometric headpieces throughout, beginning on f. 7v | Partial borders on f. 145r; full page border f. 145v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16q31h8"
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "ark": "ark:/21198/s1xw4j",
+    "reconstruction": false,
+    "label": "Sinai Arabic 538, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rd45",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 98v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ منه يوم السبت في اربعة عشر يوم خلت من ايار لسنة ستة الف وسبع مائه وتسعة عشر لأبينا آدم عليه السلم وكتب أنبا يوحنا المصري تلميذ مطران الربة وأعمالها عمره الله كتبه بدير القديس مار افثيموس المعروف بدير البقاع وهو يسأل كلمن يقرأ فيه ان يصلى عليه ويسامحني من الغلط والزلل فكل مخلوق ناقص ولا كاملا الا وجه الله سبحانه والسبح لله دائما ابدا / يا خير مطلوب واكرم طالب اغفر لصاحبه نعم والكاتب ايها القارئ صلى على الكاتب الخاطئ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 14 Ayyar  6719"
+                }
+            ],
+            "note": [
+                "Attested places:  Monastery of Ephthymius, aka the Monastery of Beqaa"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1211",
+            "iso": {
+                "not_before": "1211"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 241v | Minor geometric decorations, ff. 138r, 170r, 170v I Decoration, crosses, f. 180v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pg2w47"
+    ]
+}

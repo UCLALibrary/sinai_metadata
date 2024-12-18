@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1wp8p",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 7, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1–4",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Bold early CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jq2n",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1v+4r, 1r+4v, 2r+3v, 2v+3r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Fols. 1 + 4 constitute a single folio of the undertext object, whereas fols. 2 + 3 constitute the upper half and lower half of a single folio"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler and Sokoloff ; Müller-Kessler 2014, pp. 263-309 ; Brock 1995"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ht2zc3"
+    ]
+}

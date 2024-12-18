@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1t34p",
+    "reconstruction": false,
+    "label": "Sinai Greek 966, Undertext (Greek minuscule)",
+    "locus": "ff. 80, 85",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Μinuscule \"rectangulaire aplati ou écrasé\" | Text written in an upright rectangular calligraphic minuscule with thick and pronounced strokes hanging from the ruled line. A notable peculiarity is the letter ζ \"a proboscide\", in the form of a three inclined to the left. This mode of writing is reminiscent of Salentine manuscripts written in \"style rectangulaire aplati ou écrasé\""
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "22-23 lines",
+            "note": [
+                "Each side of the bifolio preserves 22–23 lines of text, with 7 mm between and arranged in a single column",
+                "The upper margin measures 35 mm, the outer 45 mm, and the lower 35 mm (f. 85v). The original manuscript measured approximately 190x130 mm",
+                "Prickings are still visible in the outer margin of f. 80, their shape elongated rather than round, and likely made with a penknife. The ruled lines correspond to Sautel-Leroy type 24D1"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1g40d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Southern Italy (Salento)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Lower (older) layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Ernst Gamillscheg, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Rossetto 2023a"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cz3pr7"
+    ]
+}

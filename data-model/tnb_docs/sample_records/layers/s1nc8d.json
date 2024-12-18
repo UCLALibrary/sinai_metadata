@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1nc8d",
+    "reconstruction": false,
+    "label": "Sinai Arabic 92, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1g069",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-calligraphic",
+            "label": "Decoration, Calligraphic"
+        },
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        },
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        },
+        {
+            "id": "miniature",
+            "label": "Miniature(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "15th c.",
+            "iso": {
+                "not_before": "1401",
+                "not_after": "1500"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Illumination on ff. 28r, 54r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1475vkd"
+    ]
+}

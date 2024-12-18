@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1vw6p",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 2, Undertext (Greek majuscule)",
+    "locus": "ff. 1–31, 38–41, 44r–46, 48–49, 68–70, 72–73, 75–82, 83–86, 88–89, 91–93, 100–101, 108–109",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Similar to Sin. gr. 210 (861/862 AD); Petropol. RNB gr. 216 (862/863 AD)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hx2d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "2nd half 9th c. ",
+            "iso": {
+                "not_before": "0851",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai region",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Sokrates, Kirchengeschichte, herausgegeben von G. Ch. Hansen, mit Beiträgen von Manja Sirinjan. Griechischen christlichen Schriftsteller der ersten Jahrhunderte.Neue Folge, Bd. 1. Berlin, 1995"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1862z2p"
+    ]
+}

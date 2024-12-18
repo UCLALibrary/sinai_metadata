@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1dg88",
+    "reconstruction": false,
+    "label": "Sinai Syriac 101, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1737j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "207v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان النجاز من نصاخة هَذه المزامير المباركه نهارالثلثا حادي وعشرين يوم مضت من شهر كانون الثاني. بتاريح سنه سته الاف وثمانمايه وتسعين سنه لكون العالم احسن الله عاقبته. وكتبه العبد الحقير الضعيف. الغارق في ذواخر بحار الخطايا. الحايد عن عمل الوصايا. المسكين الاثيم. الذي ليس بمستحق ان يُذ كَرله اسم. الفس ارساني",
+            "assoc_name": [
+                {
+                    "value": "Arsani the Priest",
+                    "as_written": "القس ارساني",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1382",
+            "iso": {
+                "not_before": "1382"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1515qbv"
+    ]
+}

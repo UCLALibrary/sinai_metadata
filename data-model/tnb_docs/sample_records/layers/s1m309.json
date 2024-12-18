@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1m309",
+    "reconstruction": false,
+    "label": "Sinai Arabic 172, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1dp9q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpiece on f. 268v, knotwork and an elevated cross | Decorated Greek initials throughout ff. 169v-272v I Minor headpieces throughout ff.198r-272v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bv8m20"
+    ]
+}

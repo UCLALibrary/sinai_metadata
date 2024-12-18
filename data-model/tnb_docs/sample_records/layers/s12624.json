@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/s12624",
+    "reconstruction": false,
+    "label": "Sinai Syriac 95, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vt0q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "207v-208r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܚ̈ܝ ܨ̈ܠܘ ܥܠ ܚܛܝܐ ܕܣܪܛ ܡܛܠ ܡܫܝܚܐ܀ ܫܠܡ ܟܬܒܐ ܗܢܐ ܩܕܝܫܐ ܥܠ܆ ܐܝ̈ܕܝ܆ ܐܢܫ܆ ܡܚ̈ܝܠܐ܆ ܘܚ̈ܛܝܐ ܠܦܘܩ̈ܕܢܐ ܕܡܪܗ݂ ܘܐܠܗܗ ܝܘܚܢܢ ܒܪܝ ܬܐܘܕܘܪܘܣ ܡܢ ܩܪܝܬܐ ܢܛܝܪܬ ܡܢ ܐܠܗܐ ܨܝܕܢܐܠܐ ܡܢ ܥܩܠܐ ܕܪܡܣܘܩ܆ ܡܢ ܛܘܪܐ ܕܣܢܝܪ܇ ܘܡܢ ܩܠܝܡܐ ܕܚܠܒܘܢ: ܠܐܦ̈ܝ ܬܠܬ: ܫ̈ܥܝܢ: ܝܘܡ: ܕ̄ ܟ̄ܚ܇ ܐܝܠܘܠ ܫܢܬ: ܘ̄ ܐܠܦ̄: ܚ̄ܕ ܩ̄: ܕ̄: ܠܐܒܘܢ: ܐܕܡ܇ ܟܬܒܗ݂: ܠܢܦܫܗ݂: ܡܚܝܠܬܐ: ܒܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪ ܣܢܐ ܘܗܘ݂ ܡܦܝܣ ܘܡܬܟܫܦ ܠܟܠ ܡܢ: ܕܡܨܠܐ ܒܗ݂ ܦܘܕܐ: ܐܘ ܒܘܣܪܐܢܐ: ܐܘ ܚ̈ܨܪܢܐ: ܢܫܒܘܩ ܘܢܨܠܐ ܥܠ ܚܛܝܐ ܘܡܣܟܢܐ ܟܬܘܒܐ: ܕܟܠ ܒܪܝܐ ܒܨܝܪܐ ܗܘ݂܀ ܐܚ̈ܝ܆ ܘܐܒܗ̈ܝ: ܨ̈ܠܘ ܥܠ ܟܬܘܒܐ ܚܛܝܐ ܡܛܠ ܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܠܗ݂ ܬܫ̄ܒܘ ܘܣܓܕܬܐ ܠܝ ܓ ܐܡܝܢ:",
+            "translation": [
+                "The end of this holy book by the hands of a weak, sinful, and straying from the commands of his Lord and his God, John bar Theodore, from the town protected by God, Sayidnaya from lower Damascus, from Mt. Hermon (Jebel Sanir) and from the region of Halbun (حلبون), at about 9:00am (the third hour), Wednesday, on the 28th of Ilul (September); the year 6,104 since our father Adam. His book for his humble self at the holy monastery of Mt. Sinai and he entreats and beseeches to all who would pray it or read it or encounter it and find in it error or defect or loss (sic), let him forgive and pray on account of the sinner and poor writing, that all creation is lacking; my brothers and my fathers pray for the writing of the sinner for to our Lord Jesus Christ be the glory and the worship forever, Amen."
+            ],
+            "assoc_name": [
+                {
+                    "value": "Yuhannon bar Theodoros",
+                    "as_written": "ܝܘܚܢܢ ܒܪ ܬܐܘܕܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  from Saidnaya, on Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1292",
+            "iso": {
+                "not_before": "1292"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpiece on f. 32r | Vegetative and geometric decoration on f. 80v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1669hk2"
+    ]
+}

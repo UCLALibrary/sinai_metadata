@@ -1,0 +1,95 @@
+{
+    "ark": "ark:/21198/s18607",
+    "reconstruction": false,
+    "label": "Sinai Arabic 304, Overtext (Naskh, Thuluth)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "thuluth",
+                    "label": "Thuluth",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Change of hands starting round f. 278v; larger, unrubricated headings from then onwards",
+                "Thuluth used for headings on ff. 280v, 283v, 288r, 290v, 294r, 293v, 297v, 303r, 302v, 307r, 307v, 313r, 317r"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12s9n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 317r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "translation": [
+                "The copying finished on [difficult to read], which fell on 18 in the month of Shawwāl in 640 of the Hegira [AH]"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1223",
+            "iso": {
+                "not_before": "1223"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric decoration on f. 317v I minor headpiece, f. 318v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sb593f"
+    ]
+}

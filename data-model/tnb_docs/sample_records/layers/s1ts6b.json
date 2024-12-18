@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s1ts6b",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 11, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nd60",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 9th-10th c. ",
+            "iso": {
+                "not_before": "0850",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/r1vd6wc9"
+    ]
+}

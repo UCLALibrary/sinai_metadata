@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1v59k",
+    "reconstruction": false,
+    "label": "Sinai Arabic 35, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ns8j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 179v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "assoc_name": [
+                {
+                    "value": "Father Joseph (Ioasaph) Abd al-Aziz Ibn Tammam",
+                    "as_written": "يواصف ابن عبد العزيز ابن تمام",
+                    "role": {
+                        "id": "undetermined",
+                        "label": "Undetermined"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  Mt. Sinai ; Damascus"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1629",
+            "iso": {
+                "not_before": "1629"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb2wdp"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1qw4p",
+    "reconstruction": false,
+    "label": "Sinai Arabic 378, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jh2k",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 372r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ هذا الكتاب المبارك في تاريخ الرابع وعشرين من شهر حزيران المبارك لسنة ستة آلاف وسبعمائة ستة وخمسين للعالم وكبت بدير طور سيناء المقدس على عهد الاب انبا مقاري الدمشقي رحم الله من قرأ ومن كتب ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "24 Huzayran 6756 (world)"
+                }
+            ],
+            "note": [
+                "Written by another hand",
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1248",
+            "iso": {
+                "not_before": "1248"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vt2wdt"
+    ]
+}

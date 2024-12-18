@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1063w",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 19, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 2–3, 6–7, 55, 60",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early small Christian Palestinian Aramaic"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "25 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n68p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 6r, 6v, 7rII, 7vII, 2r, 3v, 3r, 2v, 7rI, 7vI, 60v, 60r, 55r, 55v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This undertext of Codex Sinaiticus Rescriptus i is found under Georgian NF 19; Georgian NF 71; St. Petersburg, Syr. no. 16; Oslo, Martin Schøyen MS 35; MS 37, as follows: (1) Syr. no. 16, fol. 128r, procatechesis 4-5; Syr. no. 16, fol. 128v procatechesis 5-6; (2) MS 35, fol. 31r, procatechesis 9; MS 35, fol. 31v, procatechesis 10-11; (3) Syr. no. 16, fol. 36r, procatechesis 11-12; Syr. no. 16, fol. 36v, procatechesis 12; (4) MS 37, catechesis III 5-6; MS 37, catechesis III 6; (5) MS 35, fol. 22r, catechesis III 8-9; MS 35, fol. 22v, catechesis III 10; (6) Geo. NF 19, fols. 7vII+6r, catechesis III 10-11; Geo. NF 19, fols. 6v+7r II, catechesis III 11-13; (7) Syr. no. 16, fol. 111r, catechesis III 13-14; Syr. no. 16, fol. 111v, catechesis III 14-15; (8) Syr. no. 16, fol. 46Iv + MS 35, fol. 30r, catechesis IV 0-1; Syr. no. 16, fol. 46Iv + MS 35, fol. 30v, catechesis IV 1-2; (9) Syr. no. 16, fol. 123r, catechesis IV 2-3; Syr. no. 16, fol. 123v catechesis IV 3-4;(10) Syr. no. 16, fol. 90/101r, catechesis IV 36-37; Syr. no. 16, fol. 90/101v, catechesis IV 37-V 1; (11) Syr. no. 16, fol. 115r, catechesis V 3-4; Syr. no. 16, fol. 115v, catechesis V 4-5; (12) MS 35, fol. 70r, catechesis V 7; MS 35, fol. 70v, catechesis V 7-8; (13) Syr. no. 16, fol. 100/91r, catechesis V 9; Syr. no. 16, fol. 100/91v, catechesis V 9-10; (14) Geo. NF 71, fol. 2r+7v, catechesis V 13; Geo. NF 71, fol. 7r+2v, catechesis VI 1; (15) MS 35, fol. 69r, catechesis VI 3-4; MS 35, fol. 69v, catechesis VI 4; (16) Geo. NF 19, fol. 2r+3v, catechesis VI 7;Geo. NF 19, fol. 3r+2v, catechesis VI 7-8; (17) Syr. no. 16, fol. 95/96r, catechesis VI 14-15; Syr. no. 16, fol. 95/96v, catechesis VI 15-16; (18) MS 35, fol. 51/52r, catechesis VI 24-25; MS 35, fol. 51/52v, catechesis VI 25-26; (19) Syr. no. 16, fol. 49/47r, catechesis VI 33; Syr. no. 16, fol. 49/47v, catechesis VI 33-34; (20) MS 35, fol. 7/18r, catechesis VII 6-7;MS 35, fol. 7/18v, catechesis VII 7-9; (21) MS 35, fol. 8/17r, catechesis VIII 3-4; MS 35, fol. 8/17v, catechesis VIII 4-5; (22) Syr. no. 16, fol. 65/66r, catechesis VIII 8-IX 1; Syr. no. 16, fol. 65/66v, catechesis IX 1; (23) Syr. no. 16, fol. 86/87r, catechesis IX 6-7; Syr. no. 16, fol. 86/87v, catechesis IX 7-8; (24) Syr. no. 16, fol. 62/69r, catechesis IX 8-9; Syr. no. 16, fol. 62/69v, catechesis IX 9-10; (25) Syr. no. 16, fol. 77/76r, catechesis IX 13-14;Syr. no. 16, fol. 77/76v catechesis IX 14-15; (26) Syr. no. 16, fol. 1r, catechesis X 5; Syr. no. 16, fol. 1v, catechesis X 5-6; (27) Geo. NF 19, fol. 7r I, catechesis X 10-11; + Syr. no. 16, fol. 117r, Syr. no. 16, fol. 117v, catechesis X 11-12; + Geo. NF 19, fol. 7v I; (28) Syr. no. 16, fol. 118r, catechesis X 14-15; Syr. no. 16, fol. 118r, catechesis X 15-16; (29) MS 35, fol. 10/15r, catechesis X 18-19; MS 35, fol. 10/15v, catechesis X 19; (30) Syr. no. 16, fol. 39r, catechesis XI 1; Syr. no. 16, fol. 39v, catechesis XI 1-3; (31) Syr. no. 16, fol. 61r, catechesis XI 3-4;Syr. no. 16, fol. 61v, catechesis XI 4-5; (32) Syr. no. 16, fol. 120r, catechesis XI 14; Syr. no. 16, fol. 120v, catechesis XI 14-15; (33) Syr. no. 16, fol. 83/82r, catechesis XI 23;Syr. no. 16, fol. 83/82v, catechesis XI 23-24; (34) Syr. no. 16, fol. 31r, catechesis XII 2-3;Syr. no. 16, fol. 31v, catechesis XII 3-4;(35) MS 35, fol. 12/13r, catechesis XII 13-14;MS 35, fol. 12/13v, catechesis XII 14-15; (36) Syr. no. 16, fol. 116r, catechesis XII 18; Syr. no. 16, fol. 116v, catechesis XII 19;(37) MS 35, fol. 9/16r, catechesis XII 30-31; MS 35, fol. 9/16v, catechesis XII 31-32; (38) Syr. no. 16, fol. 70/71r, catechesis XIII 11-12; Syr. no. 16, fol. 70/71v, catechesis XIII 12-13;(39) Syr. no. 16, fol. 126r, catechesis XIII 18-19; Syr. no. 16, fol. 126v, catechesis XIII 19; (40) Syr. no. 16, fol. 124r, catechesis XIII 30-31; Syr. no. 16, fol. 124v, catechesis XIII 31; (41) MS 35, fol. 1r, catechesis XIII 31-32; MS 35, fol. 1v, catechesis XIII 33; (42) Syr. no. 16, fol. 119r + fol. 46IIr, catechesis XIV 3-4; Syr. no. 16, fol. 119v + fol. 46IIv, catechesis XIV 4; (43) MS 35, fol. 4r, catechesis XIV 21; MS 35, fol. 4v, catechesis XIV 21-22; (44) Syr. no. 16, fol. 110r, catechesis XIV 29-30; Syr. no. 16, fol. 110v, catechesis XIV 30; (45) Syr. no. 16, fol. 80/81r, catechesis XV 9; Syr. no. 16, fol. 80/81v, catechesis XV 9-10; (46) Syr. no. 16, fol. 52r, catechesis XV 12-13; Syr. no. 16, fol. 52v, catechesis XV 13; (47) MS 35, fol. 2r, catechesis XV 20-21; MS 35, fol. 2v, catechesis XV 22; (48) Geo. NF 19, fol. 60r, catechesis XVI 6-7; Geo. NF 19, fol. 60v, catechesis XVI 8; (49) Geo. NF 19, fol. 55r, catechesis XVI 11-12; Geo. NF 19, fol. 55v, catechesis XVI 12; (50) MS 35, fol. 20r, catechesis XVI 26; MS 35, fol. 20v, catechesis XVI 27-28; (51) Syr. no. 16, fol. 73/72r, catechesis XVII 7-9; Syr. no. 16, fol. 73/72v, catechesis XVII 9-10; (52) MS 35, fol. 47/56r, catechesis XVII 12-14;MS 35, fol. 47/56v, catechesis XVII 14-15; (53) Syr. no. 16, fol. 37/105r, catechesis XVII 19; Syr. no. 16, fol. 37/105v, catechesis XVII 19-21; (54) Syr. no. 16, fol. 74/75r, catechesis XVII 30-31; Syr. no. 16, fol. 74/75v, catechesis XVII 31-32; (55) Syr. no. 16, fol. 122r, catechesis XVIII 12; Syr. no. 16, fol. 122v, catechesis XVIII 12-13; (56) Geo. NF 71, fol. 6r+3v, catechesis XVIII 9-10; Geo. NF 71, fol. 3r+6v, catechesis XVIII 10-11"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: H. Duensing, Christlich-palästinisch-aramäische Texte und Fragmente (Göttingen: Vandenhoeck & Ruprecht, 1906), pp. 41-62 ; H. Duensing, Nachlese christlich-palästinisch-aramäischer Fragmente, NAWG, phil.-hist.Kl. 5 (1955), pp. 150–152 ; A. Desreumaux, Codex sinaiticus Zosimi rescriptus (Lausanne: Éditions du Zèbre, 1997), pp. 129-171 ; C. Müller-Kessler, M. Sokoloff, The Catechism of Cyril of Jerusalem in the Christian Palestinian Version (A Corpus of Christian Palestinian Aramaic. Vol. 5, Groningen: STYX Publishers, 1999) ; C. Müller-Kessler, \"Codex Sinaiticus Rescriptus (CSRG/O/P/S): A Collection of Christian Palestinian Aramaic Manuscripts,\" Le Muséon 127 (2014), pp. 281-288 [DOI: 10.2143/MUS.127.3.3062095] ; C. Müller-Kessler, “On the Spellings of the Lexical Items b‘š, b‘šwn’, and mšb‘wn’, and Other Peculiar Lexemes in Christian Palestinian Aramaic,” Collectanea Christiana Orientalia 18 (2021), pp. 217-223 [DOI: 10.20171/cco.v18i0.1178] ; Desreumaux 1997, pp. 129-171 ; Müller-Kessler 2014, pp. 281-288"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d68k3"
+    ]
+}

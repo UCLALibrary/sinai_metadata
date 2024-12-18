@@ -1,0 +1,57 @@
+{
+    "ark": "ark:/21198/s1mk9j",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 7, Overtext (Nuskhurimt, Asomtavruli)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                },
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Initials in asomtavruli"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f662",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c. ",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ms4qq1"
+    ]
+}

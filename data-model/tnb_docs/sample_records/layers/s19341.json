@@ -1,0 +1,58 @@
+{
+    "ark": "ark:/21198/s19341",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Roman))",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z40r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ?",
+            "iso": {
+                "not_before": "0475",
+                "not_after": "0625"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz, Daniela Mairhofer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/s1zk9n",
+    "reconstruction": false,
+    "label": "Sinai Syriac 30, Undertext (Estrangela)",
+    "locus": "ff. 141, 145, 146, 150, 152–154, 157, 158, 159v, 161–170",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "26 lines, varies slightly"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mm6r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Mesopotamia",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 153r, 153v, 158r, 158v, 161r, 161v, 170r, 170v, 167v, 167r 164v, 164r, 157v, 157r, 162v, 162r, 141r, 141v, 150r, 150v, 169r, 169v, 154v, 154r 163r, 163v, 159v, 159r, 166v, 166r, 146v, 146r, 145v, 145r, 165v, 165r, 152v, 152r, 168r, 168v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. S. Lewis, Acta Mythologica Apostolorum, Horae Semiticae 3-4 (Cambridge, 1904), 192*-228* (Horae Semiticae 3, text; Horae Semiticae 4, xi, xxxix-xlii, 223-241, introduction and translation) ; earlier very partial edition by F. C. Burkitt in A. S. Lewis, Select Narratives of Holy Women, Studia Sinaitica 9 (London, 1900), Appendix VII, 23-44"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n5hwt"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s15g7q",
+    "reconstruction": false,
+    "label": "Sinai Arabic 505, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10360",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative headpieces with ornate fleur de lis highlighted with blue ink, ff. 254r, 258v | Minor headpieces and end pieces, knotted vine motif ff. 1r, 62v; knotted vine motif with thorns"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ng688s"
+    ]
+}

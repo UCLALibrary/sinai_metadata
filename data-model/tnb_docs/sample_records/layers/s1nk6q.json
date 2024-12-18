@@ -1,0 +1,100 @@
+{
+    "ark": "ark:/21198/s1nk6q",
+    "reconstruction": false,
+    "label": "Sinai Arabic 265, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1g650",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "illustration",
+            "label": "Illustration(s)"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        },
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Ff. 161r-192v Greek text"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate headpiece on f. 190v, interlace with leaves, elevated cross | Headpieces on f. 1r, black volutes and a red outline; f. 56v, with red vines and geometric motif; f. 61r, with fleur de lis and circles; ff. 86r, 93r, 143r, 146v, with knotwork motif; f. 126v, arrow motif; f.131r, volutes; f. 164r, knotwork with fleur de lis | Minor geometric and vegetative headpieces throughout, beginning on f. 7r | Zoomorphic, geometric, and vegetative decorations on f. 140r, small knot; f. 184v, red fish; ff. 188r, 189r, red vines | Decorated Greek initials throughout ff. 161r-190r | Illustration on f. 163r, bowing figure, red with green background, enclosed by a decorated red circle | llustration of a face in a decorated initial, f. 190v | Full page illustration in red ink on f. 191v, robed figure with nimbus ascending above border and decorated cross outside of border; f. 192r, red and black ink of John the Baptist holding a scroll that reads 'behold the Lamb of God', hand of God, vegetative motifs, border, Greek text"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Manicule emerging from a decorated initial, f. 175r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z132108g"
+    ]
+}

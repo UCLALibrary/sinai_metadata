@@ -1,0 +1,46 @@
+{
+    "ark": "ark:/21198/s1v340",
+    "reconstruction": false,
+    "label": "Sinai Greek 930, Undertext (Undetermined (Arabic))",
+    "locus": "ff. 7r, 12v, 13, 14r, 15, 20, 21r, 22r, 23r, 26r, 27r, 28, 29r, 30–35, 36r, 37r, 39r, 40–42, 43v, 44, 45v, 46–56r, 57–66r, 67–70, 71v, 72, 73v, 74r, 75v, 76, 79, 82r, 83–94r, 95–100, 101r, 102v, 103v, 104–111, 112v, 113–117r, 118r, 119, 120v",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1h39s",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Some of these folios may well preserve additional text from the Judeo-Arabic translation of Genesis and/or the Judeo-Arabic translation of Exodus"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alexander Treiger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v9962j"
+    ]
+}

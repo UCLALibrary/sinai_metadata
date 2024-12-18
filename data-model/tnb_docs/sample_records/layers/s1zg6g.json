@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1zg6g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 144, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s35r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 204r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كملت بمعونة الله الأحد عشر الإنجيل المرسومة بالقيامة المقدسة النص مع التلخيص في شهر أيلول التاريخ السابع سنة ست الاف وخمسمائة واثنين وستين لآدم رحم الله الكاتب والصاحب امين والسامع بشفاعة السيدة ام النور وجميع القديسين والشهداء والانبياء والرسل والمؤمنين وجميع الذين ارضوا الرب امين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Aylul 6562 (adam)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1054",
+            "iso": {
+                "not_before": "1054"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vm5x0x"
+    ]
+}

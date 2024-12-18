@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s1dh0k",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 76, Undertext (Erkatagir)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Sloping majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "lines": "20-21 lines, incomplete"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12h5c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1v, 1r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qc0cjx"
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "ark": "ark:/21198/s1r61z",
+    "reconstruction": false,
+    "label": "Sinai Arabic 308, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jt0x",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 108r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكتبه احقر عبيد المسيح الاهنا ارساني الذليل بن يوسف الوكيل الدمشقي بعناية الاب الخير النفيس السيد الرئيس ابا افلاسيوس رئيس دير السيدة سكندرية سكنا الرب صلواته ومتعنا ببقاه وحياته بشفاعة من لحقا الشفاعة وهو يسأل كل من قرا فيه مسامحته بالزلل واصلاح الخطأ فالله تواب غفار فله الشكر على نعمه التي لا تحصا ومننه التي لا تستقصي ابدا دائما / وكان الفراغ الثاني سنو الف ومائتين خمسة وسبعين للتجسد الالهي الموافق لسنة الف وخمسمائه ثمنية وسبعين الاسكندر فيلبس اليوناني فالرب يرحم القارئ الأمين والمعتني المسكين مع الناسخ المسكين آمين",
+            "assoc_name": [
+                {
+                    "value": "Arsani/Arsenios b. Yusuf al-Wakīl al-Dimashqī (copyist)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1275 (Melkite, incarnation) :: 1578 (seleucid)"
+                }
+            ],
+            "note": [
+                "A colophon on the inside back cover – possibly a disjuncture – may correlate to another manuscript. On f. 1v, a date of 15 Huzayran 69XX (cut off) of Adam is given.",
+                "Attested names: Father Flacius, Abbot of Monastery of Our Lady of Alexandria (under his care)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1266",
+            "iso": {
+                "not_before": "1266"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate zoomorphic headpiece, f. 192r, serpent headed motif with geometric entwined vine and tail; f. 193r, geometric stylized serpent, vine motif | Bordered headpiece, f. 247v, geometric vine"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorated Greek initials throughout"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "End-piece, f. 346r, cross."
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v7136c"
+    ]
+}

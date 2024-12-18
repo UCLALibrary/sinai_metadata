@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1hk7v",
+    "reconstruction": false,
+    "label": "Sinai Arabic 555, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b664",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1182",
+            "iso": {
+                "not_before": "1182"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1d23m2s"
+    ]
+}

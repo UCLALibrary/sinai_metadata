@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1cp5w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 133, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1693s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 136r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان التمام في تسعة وعشرين من كانون الأول سنة ستة ألف وخمسمائة واحد عشر سنة من سنين آدم الدهرية / كتب الخاطئ الشقي الدليل المحتاج لرحمة المسيح يسأل كل من قرا فيه أن يدعو له بمغفرة الحطيئة  وعلى القارئ والكتاب والرحمة من الآن وإلى دهر الداهرين آمين آمين آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "29 Kanun I 6511 (adam)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1003",
+            "iso": {
+                "not_before": "1003"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c83zq6"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s17w4b",
+    "reconstruction": false,
+    "label": "Sinai Arabic 690, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12d4z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1677",
+                "not_after": "1700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d7gf5"
+    ]
+}

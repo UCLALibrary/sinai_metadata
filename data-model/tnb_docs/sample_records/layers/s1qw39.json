@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1qw39",
+    "reconstruction": false,
+    "label": "Sinai Arabic 171, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jd2j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 370r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من هذا الكتاب المقدس يوم الخميس في اخر شهر أيار سنة ست آلاف وثمانمائة وأربعة سلفت من خلق الله أبينا آدم وهذا الكتاب كتب بدير طور سيناء جبل الله المقدس وذلك على يد الحقير المسكين في رهبان طور سيناء الخاطئ الكثير السيئات والقليل الحسنات بالاسم متى الحوراني غفر الله له ولوالديْه ولجميع أمة النصرانية المؤمنين بشفاعة السيدة وجميع القديسين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday Ayyar 6804 (Adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1296",
+            "iso": {
+                "not_before": "1296"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate bordered headpiece, f. 1V, vine motif, ascending crosses, fleur de lis;f. 306r, Anthropomorphic knotted vine with bird head and ascending crosses | Minor headpieces, ff. 353r-367v, knot motif"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1709k49"
+    ]
+}

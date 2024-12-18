@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1xd06",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 7, Undertext (Nuskhurimt)",
+    "locus": "ff. 2–12, 16r, 46–56, 58–69, 71–86, 88–92, 96–102, 104–105, 108–116, 118–138, 140–154",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Nuskhuri, Mtavruli"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "15 lines, 14 or 16 lines on some folios"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kd6c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th c. ",
+            "iso": {
+                "not_before": "0960",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 58r, 58v, 56r, 56v, 6r, 122v, 122r, 75v, 75r, 67v, 67r, 102v, 102r, 99v, 99r, 100v, 100r, 74v, 74r, 64v, 64r, 110v, 110r, 83r, 83v, 78r, 78v, 115v, 115r, 63v, 63r, 11r, 11v, 76r, 76v, 69v, 69r, 114v, 114r, 84r, 84v, 54r, 54v, 68v, 68r, 61v, 61r, 60r, 60v, 77r, 77v, 55r, 55v, 59r, 59v, 65v, 65r, 92v, 92r, 86v, 86r, 85v, 85r, 8v, 8r, 49v, 49r, 130v, 130r, 140v, 140r, 123v, 123r, 50v, 50r, 97v, 97r, 126v, 126r, 127v, 127r, 96v, 96r, 53v, 53r, 46r, 46v, 4v, 4r, 10v, 10r, 9v, 9r, 120v, 120r, 81v, 81r, 113v, 113r, 138v, 138r, 131v, 131r, 112r, 112v, 80v, 80r, 116v, 116r, 108v, 108r, 101v, 101r, 109r, 109v, 47r, 47v, 52v, 52r, 129v, 129r, 124v, 124r, 71v, 71r, 72v, 72r, 11v, 11r, 104v, 104r, 98v, 98r, 79v, 79r, 82v, 82r, 105v, 105r, 7v, 7r, 12v, 12r, 5v, 5r, 3v, 3r, 121v, 121r, 118v, 118r, 89v, 89r, 135v, 135r, 125v, 125r, 90v, 90r, 88v, 88r, 128v, 128r, 134v, 134r, 136v, 136r, 66v, 66r, 62v, 62r, 133v, 133r, 2v, 2r, 137v, 137r, 51v, 51r, 48v, 48r, 132v, 132r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Psalter A is written by a different scribe from the UTOs Psalter B and Psalter C"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Memorial inscription of the scribe on f. 63v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Zaza Alexidze"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Text of the Old Georgian version of the Psalter is edited in Mzekala Shanidze, Monuments of Old Georgian Language (Tbilisi, 1960)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ms4qq1"
+    ]
+}

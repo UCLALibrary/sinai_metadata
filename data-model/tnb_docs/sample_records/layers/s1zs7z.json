@@ -1,0 +1,112 @@
+{
+    "ark": "ark:/21198/s1zs7z",
+    "reconstruction": false,
+    "label": "Sinai Syriac 222, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sd4g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "206v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܫܠܡ ܡܥܘܕܪܢ ܐܠܝܬܝ̄ܘ ܩܕܝܫܬܐ ܘܫܘܝܬ̤ ܒܘܣܝܐ: ܟܬܒܐ ܗܢܐ ܩܕܝܫܐ: ܫܢܬ ܫܡ ܐܫܬ ܐܠܦ ܘܫܒܥ ܡܐܐ ܘܫܒܥܝܢ ܘܚܡܫ ܡܢ ܫ̈ܢܝܐ ܕܐܒܘܢ ܐܕܡ ܨ̈ܠܘܬܗ ܬܢܛܪܢܝ: ܥ̄ܠ ܒܕܝܪܐ ܡܒܪܟܬܐ ܛܘܪ ܣܝܢܣ: ܒܥܕܬܐ ܕܩܕܝܫܬܐ ܝܠܕܬ ܐܠܗܐ x x x ܥܠ ܐܝܕ̈ܐ ܚܛܝܐ ܒܨܝܪܐ ܕܠܐ ܫ̇ܘܒ̇ ܕܢܬܩܪܐ ܕܝܪܝܐ ܒܫܡܐ ܘܠܐ ܥܒܕܐ ܝܘܚܢܢ ܒܪ ܦܛܘܪܣ: ܡܢ ܩܪܝܬܐ ܢܛܪܝܬ̤ ܡܢ ܐܠܗܐ ܨܕܝܢܐ ܩܪܝܬܗ̇ ܕܝܠܕܬ ܐܠܗܐ ܨܠܘܬܗ ܬܗܘܐ ܠܢ ܫܘܪܐ: ܐܒܗܝܢ ܘܐܚ̈ܝ ܟܘܠ ܕܩܪܐ ܒܗܢܐ ܟܬܒܐ ܘܡܫܟܚ ܒܗ ܡܕܡ ܕܒܨܝܪ ܐܘܡܪܡ ܕܠܐ ܫܘܐ ܢܣܪܘܚ ܠܝ ܫܘܒܩܢܐ ܕܒܨܝܪܐ ܐܢܬܗܘܝ ܕܐܠܗܐ ܗܘ̣ ܫܘܡܠܐ ܫ̄ܘ ܠܗ:",
+            "assoc_name": [
+                {
+                    "value": "Yuhannon bar Petros",
+                    "as_written": "ܝܘܚܢܢ ܒܪ ܦܛܪܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Attested places:  from Saidnaya"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1267",
+            "iso": {
+                "not_before": "1267"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpieces between ff.93v-206r; Vegetative headpieces between ff.56r-62r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Bordered text, f. 198r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1w684g0"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "ark": "ark:/21198/s1891n",
+    "reconstruction": false,
+    "label": "Sinai Greek 699, Undertext (Greek majuscule)",
+    "locus": "ff. 57-58, stub+59, 59-63, stub-63, 64-66, stub+67, 67, stub a-67, stub b-67, 68, stub+69, 69-72",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Contrast between thick and thin strokes, ornamental elements at the end of thin strokes"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x97t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Most commonly quoted abbreviation for Triodion edition: TR = Τριῴδιον κατανυκτικόν, Rome 1879 ; For other abbreviations of editions see H. Follieri, Initia Hymnorum Ecclesiae Graecae, I-V.2, Studi e testi, 211-215bis (Vatican City, 1960-1966)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z11n8grf"
+    ]
+}

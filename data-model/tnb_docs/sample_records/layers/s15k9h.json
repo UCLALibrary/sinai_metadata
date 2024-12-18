@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/s15k9h",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Undertext (Minuscule bouclée, Greek majuscule)",
+    "locus": "ff. 33–70",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "minuscule-bouclee",
+                    "label": "Minuscule bouclée",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Minuscule bouclée. Titles of hymns in upright pointed majuscule, there are 45 titles in majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "11 lines",
+            "note": [
+                "Each folio constitutes half of an original folio. The first and last words of text on each folio are missing"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1tm3g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 9th-Early 10th c. ",
+            "iso": {
+                "not_before": "0875",
+                "not_after": "0925"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Vasilios Katsaros"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

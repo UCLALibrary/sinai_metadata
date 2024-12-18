@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s1jw2c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 9, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ch21",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 343v, intertwined vines with thorns, elevated cross | Decorative border on f. 343v; partial border on ff. 344r-347r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sr03rq"
+    ]
+}

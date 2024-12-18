@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s10s6w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Estrangela)",
+    "locus": "ff. 15, 22, 49",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nt17",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 22v, 22r, 15v, 15r, 49r, 49v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Lewis 1902"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

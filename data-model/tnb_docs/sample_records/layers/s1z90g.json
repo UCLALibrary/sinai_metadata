@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1z90g",
+    "reconstruction": false,
+    "label": "Sinai Syriac 123, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rw9w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "344v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܬܟܬ ܟܬܒܐ ܗܢܐ ܫܢܐ ܫܬ ܐܠܦܝܢ ܘܫܒܥ ܡܐܐ ܘܬܫܥܝܢ: ܗ: ܠܐܒܘܢ ܐܕܡ ܝܘܡ ܫ̄ܒ ܟܘ ܒܝܪܚܐ ܬܫܪܝܢ:ܐ ܟܬܒܗ ܕܝܢ ܐܢܫܐ ܚܛܝܐ ܕܫܡܗ ܝܘܚܢܢ ܐܠܗܐ ܚ̇ܣܐ ܚܘ̈ܒܗ ܐܡܝܢ ܐܡܝܢ",
+            "assoc_name": [
+                {
+                    "value": "Yuhannon",
+                    "as_written": "ܝܘܚܢܢ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1287",
+            "iso": {
+                "not_before": "1287"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Interlaced headpieces, ff. 2v, 20r, 45r, 83r, 157r, 197r, 234r, 326r, with thorns, f.160v | Minor interlaced headpieces, ff.5r, 41v, 117v, 268r, throughout ff. 310-340"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tf1g1f"
+    ]
+}

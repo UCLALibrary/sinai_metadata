@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1qd23",
+    "reconstruction": false,
+    "label": "Sinai Greek 960, Undertext (Greek minuscule)",
+    "locus": "ff. 91–106, 141–147",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Minuscule \"à μεν distendu\" | Variant of the epsilon style characterized by thick vertical strokes, triangular α, θ in the shape of biblical majuscule, and featuring the ligature \"distendu\" of μεν and γεν. Initials and titles are written in epigraphische Auszeichnungsmajuskel"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "22-23 lines",
+            "note": [
+                "The lower writing runs parallel to the overtext",
+                "Each side preserves 22–23 lines of text arranged in a single column and spaced 6 mm apart",
+                "One folio of Sin. gr. 960 corresponds to a single folio of the original manuscript, the likely size of the original being 180x140 mm (though doubtless with some trimming of the height). The Schriftspiegel is approximately 125x95 mm. The outer margin measures 30 mm, the lower 24 mm, and the upper 14 mm"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cd7w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Early 12th c. ",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1150"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Levant",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 141r, 141v, 142r, 142v, [lacuna], 145r, 145v, 146r, 146v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: G. Rossetto, Greek Palimpsests at Saint Catherine's Monastery (Sinai): Three Euchologia as Case Studies, Vienna 2022 ; Arranz = M. Arranz, L’eucologio costantinopolitano agli inizi del secolo XI. Hagiasmatarion & Archieratikon (Rituale & Pontificale) con l’aggiunta del Leiturgikon (Messale). Rome 1996 ; Goar = J. Goar, Εὐχολόγιον sive Rituale Graecorum complectens ritus et ordines Divinae Liturgiae, officiorum, sacramentorum, consecrationum, benedictionum, funerum, orationum editio secunda expurgata et accuratior. Venice (Graz) 1730 (19602)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hm5r33"
+    ]
+}

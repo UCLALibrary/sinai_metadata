@@ -1,0 +1,98 @@
+{
+    "ark": "ark:/21198/s17w7g",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 38, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1–8",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large Christian Palestinian Aramaic"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1wx1f",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "St. Catherine's Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v, 4r, 4v, 8v, 8r, 5v, 5r, 7r, 7v, 6r, 6v, 2r, 2v, 3r, 3v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Fol. 8v, 8r, 5v, 5r is in the CPA undertext fol. 8r, 8v, 5r, 5v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The undertexts of 1 Corinthians and 2 Corinthians come from the same original manuscript; see fol. 20 of the Green Collection, CCR2. (1.) Green Collection, CCR2, fol. 21r: 1 Corinthians 1:6b-12a; Green Collection, CCR2, fol. 21v: 1 Corinthians 1:12b-17; (2.) Sinai, Syriac NF 38, fol. 1r: 1 Corinthians 2:10c-15a; Sinai, Syriac NF 38, fol. 1v: 1 Corinthians 2:15b-3:5a; (3.) Green Collection, CCR2, fol. 11r: 1 Corinthians 3:17a-23; Green Collection, CCR2, fol. 11v: 1 Corinthians 4:1-6a; (4.) Green Collection, CCR2, fol. 10r: 1 Corinthians 4:6b-10a; Green Collection, CCR2, fol. 10v: 1 Corinthians 4:10b-15b; (5.) Sinai, Syriac NF 38, fol. 4r: 1 Corinthians 5:7b-11; Sinai, Syriac NF 38, fol. 4v: 1 Corinthians 5:12-6:5a; (6.) Sinai, Syriac NF 38, fol. 8r [v]: 1 Corinthians 10:18b-25a; Sinai, Syriac NF 38, fol. 8v [r]: 1 Corinthians 10:25b-31a; (7.) Sinai, Syriac NF 38, fol. 5r [v]: 1 Corinthians 12:12-17a; Sinai, Syriac NF 38, fol. 5v [r]: 1 Corinthians 12:17b-24; (8.) Green Collection, CCR2, fol. 19r: 1 Corinthians 13:4-11a; Green Collection, CCR2, fol. 19v: 1 Corinthians 13:11b-14:4a; (9.) Green Collection, CCR2, fol. 13r: 1 Corinthians 14:4b-7; Green Collection, CCR2, fol. 13v: 1 Corinthians 14:8-14a; (10.) Sinai, Syriac NF 38, fol. 7r: 1 Corinthians 14:14b-20a; Sinai, Syriac NF 38, fol. 7v: 1 Corinthians 14:20b-24a; (11.) Green Collection, CCR2, fol. 15r: 1 Corinthians 14:24b-30a; Green Collection, CCR2, fol. 15v: 1 Corinthians 14:30b-37a; (12.) Green Collection, CCR2, fol. 22r: 1 Corinthians 14:37b-15:3a; Green Collection, CCR2, fol. 22v: 1 Corinthians 15:3b-10a; (13.) Sinai, Syriac NF 38, fol. 6r: 1 Corinthians 15:10b-17a; Sinai, Syriac NF 38, fol. 6v: 1 Corinthians 15:17b-24a; (14.) Green Collection, CCR2, fol. 8r: 1 Corinthians 15:24b-31a; Green Collection, CCR2, fol. 8v: 1 Corinthians 15:31b-37; (15.) Green Collection, CCR2, fol. 18r: 1 Corinthians 15:38-42a; Green Collection, CCR2, fol. 18v: 1 Corinthians 15:42b-49a; (16.) Sinai, Syriac NF 38, fol. 2r: 1 Corinthians 16:3b-10a; Sinai, Syriac NF 38, fol. 2v: 1 Corinthians 16:10b-16a; (17.) Green Collection, CCR2 fol. 20r: 1 Corinthians 16:16b-24; Green Collection, CCR2 fol. 20v: 2 Corinthians 1:1-3; (18.) Green Collection, CCR2, fol. 17r: 2 Corinthians 1:23-2:4a; Green Collection, CCR2, fol. 17v: 2 Corinthians 2:4b-2:11b; (19.) Sinai, Syriac NF 38, fol. 3r: 2 Corinthians 2:11c-17a; Sinai, Syriac NF 38, fol. 3v: 2 Corinthians 2:17b-3:5a; (20.) Green Collection, CCR2, fol. 3r: 2 Corinthians 4:18c-5:6a; Green Collection, CCR2, fol. 3v: 2 Corinthians 5:6b-2:12b; (21.) Green Collection, CCR2, fol. 6r: 2 Corinthians 6:3a-10a; Green Collection, CCR2, fol. 6v: 2 Corinthians 6:10b-16a; (22.) Green Collection, CCR2, fol. 2r: 2 Corinthians 6:16a-7:3a; Green Collection, CCR2, fol. 2v: 2 Corinthians 7:3b-8a."
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. S. Lewis, Codex Climaci Rescriptus, Horae Semiticae 8 (Cambridge: Raritas, 1909) ; C. Müller-Kessler, M. Sokoloff, The Christian Palestinian Aramaic New Testament Version from the Early Period: Acts of the Apostles and Epistles (Corpus of Christian Palestinian Aramaic. Vol. 2B, Groningen: STYX Publishers, 1998), pp. 26-45, 55-87, 94-102, 107-118, 128-134, 139-140, 155-157, 163-166, 172-178, 185-189, 192-193, 202-205, 214-218 ; A. Desreumaux, “Les manuscrits araméens christo-palestiniens du nouveau fonds du monastère de Sainte-Catherine du Sinai,” CRAI (2010), pp. 1323-1324 ; S. P. Brock, “Ktabe Mpassqe: Dismembered and Reconstituted Syriac and Christian Palestinian Aramaic Manuscripts: Some Examples, Ancient and Modern,” Hugoye: Journal of Syriac Studies 15 (2012), pp. 7-20 ; P. Géhin, Les manuscrits syriaques de parchemin du Sinaï et leur membra disjecta, CSCO 665 (Louvain: Peeters, 2017), pp. 6, 2-21, 126-127, 209, 225, 231-232 ; C. Müller-Kessler, \"The Missing Quire of Codex Climaci Rescriptus Containing 1–2 Corinthians in Christian Palestinian Aramaic (Sin., Syr. NF M38),” in New Light on Old Manuscripts: Recent Advances in Palimpsest Studies, eds. C. Rapp, G. Rossetto, J. Grusková, G. Kessel, Wien: ÖAW, 2023"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sn224z"
+    ]
+}

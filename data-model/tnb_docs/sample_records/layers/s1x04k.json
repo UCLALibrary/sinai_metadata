@@ -1,0 +1,58 @@
+{
+    "ark": "ark:/21198/s1x04k",
+    "reconstruction": false,
+    "label": "Sinai Greek 2053, Overtext (Greek minuscule, Greek majuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black",
+                "red"
+            ],
+            "note": [
+                "Initials and titles in red"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qh3h",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.  ",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ks7pg9"
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1ds4v",
+    "reconstruction": false,
+    "label": "Sinai Arabic 327, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17d34",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 175v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نسخ هذا الكتاب المبارك بدير طور سيناء المقدس يوم الجمعة الحادي عشر من شهر نيسان سنة ست آلاف وثمانمائة للعالم وكل من قرأ فيه ودعا للكاتب الخاطئ بصفح ذنوبه يكون له من المسيح نظير ذلك بشفاعة السيدة وجميع القديسين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 11 Nisan 6800 (world)"
+                }
+            ],
+            "note": [
+                "Attested places:  Monastery of Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1292",
+            "iso": {
+                "not_before": "1292"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate headpieces on f. 2v, red and green triangle motif with leaves in the center, elevated cross, palmettes on the corners; f. 67v, volutes with flowers in the center, branches, palmettes on the corners, two elevated crosses; f. 94v, geometric motif with palmettes and elevated volutes | Headpieces on f. 15r, chain motif with palmettes; f. 36r, volutes with leaves, palmettes on the corners; f. 53r, triangle motif with fleur de lis | Minor geometric headpieces on ff. 73v, 79r, 85v | Minor vegetative headpiece on f. 126v, red leaf I Minor geometric and zoomorphic headpiece, f. 73v, bird heads"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ws9xjn"
+    ]
+}

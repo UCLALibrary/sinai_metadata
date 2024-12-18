@@ -1,0 +1,60 @@
+{
+    "ark": "ark:/21198/s1j33t",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 13, Undertext (Asomtavruli)",
+    "locus": "f. 58",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Majuscule script, probably Khanmeti as indicated by ხოჳბრძანა in ff. 58r, l. 10 and 58v, l. 11"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "lines": "At least 21 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1638m",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww8090"
+    ]
+}

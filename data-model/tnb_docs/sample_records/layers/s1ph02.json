@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1ph02",
+    "reconstruction": false,
+    "label": "Sinai Greek 212, Undertext (Greek majuscule)",
+    "locus": "ff. 1–114",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Many spelling mistakes"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "19 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bh67",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 24v, 24r, 43r, 43v, 46r, 46v, 109r, 109v, 30v, 7r, 7v, 45r, 2v, 27r, 14v, 15r, 18r, 18v, 4v, 4r, 5v, 5r, 11r, 39r, 12v, 28v, 1r, 1v, 47r, 42v, 8v, 29r, 13r, 16v, 3r, 35r, 35v, 36v, 36r, 37v, 37r, 6v, 9r, 21v, 26r, 22v, 26v, 32v, 25r, 31r, 19v, 19r, 38v, 101r, 40v, 41r, 48v, 23r, 57r, 106r, 106v, 105r, 82v, 34v, 52v, 54v, 113v, 113r, 103v, 103r, 102r, 108r, 50v, 49r, 69r, 68v, 56v, 100v, 100r, 74v, 72v, 66v, 111v, 110r, 71r, 65r, 89r, 70v, 76v, 76r, 77v, 77r, 67r, 96v, 84v, 85v, 85r, 104v, 98v, 75v, 78r, 107r, 81r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Giulia Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17m15vx"
+    ]
+}

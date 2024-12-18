@@ -1,0 +1,130 @@
+{
+    "ark": "ark:/21198/s1tk68",
+    "reconstruction": false,
+    "label": "Sinai Arabic 418, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n36w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-calligraphic",
+            "label": "Decoration, Calligraphic"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 242v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كمل السنكساري مجموع السنة باشر المسكين الغير مستحق يدعا رهاب بينين سابا الدمشقي وذلك بكنيسة السيدة بدمشق في العشر الاوسط من شهر نيسان سنة ستالف سبعمائه وخمسة وأربعين لأبينا آدم",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Nisan 6745 (adam)"
+                }
+            ],
+            "note": [
+                "In smaller script",
+                "Attested places:  Church of The Lady, Damascus"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1237",
+            "iso": {
+                "not_before": "1237"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Preceded by an introduction and followed by an appendix in different hands and in smaller format"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Knotted vine arched headpiece, with fleur de lis, ascending knots and crosses, red, and black ink throughout; f. 3 v with decorated initials; f. 133v, knotted cross"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Variety of marginalia knot motifs throughout; bordered ff. 169v-191r; bordering text, f. 5r, 115v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative scroll decoration, f. 1r; arabesque design, f. 250r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1jq2jmj"
+    ]
+}

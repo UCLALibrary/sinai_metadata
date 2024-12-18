@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1f92k",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF X 5, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cm22",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zg8rqz"
+    ]
+}

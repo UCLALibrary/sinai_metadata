@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s14m1h",
+    "reconstruction": false,
+    "label": "Sinai Greek 699, Undertext (Greek minuscule)",
+    "locus": "f. 81",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sm35",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 81v (right side), 81r (left side), 81r (right side), 81v (left side)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The current fol. 81 was a bifolio (recto 270 degrees, verso 90 degrees) and therefore it consists of two folios (1 = left portion of fol. 81r / right portion of fol. 81v; 2 = right portion of fol. 81r / left portion of fol. 81v [only the inner half is preserved])"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Abbreviations for editions are as follows: Pent = Πεντηκοστάριον, ed. P. Vitali (Rome, 1738) ; PeR = Πεντηκοστάριον χαρμόσυνον (Rome, 1883) ; PeV = Πεντηκοστάριον (Venice, 1875)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z11n8grf"
+    ]
+}

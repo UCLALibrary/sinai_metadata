@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1qk9g",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF X 42, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nx0w",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1g755tc"
+    ]
+}

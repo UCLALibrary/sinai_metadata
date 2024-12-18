@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s17k60",
+    "reconstruction": false,
+    "label": "Sinai Arabic 445, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12658",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 270r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخة هذا الكتاب المبارك يوم الجمعة خامس عشر يوم وشهر آذار سنة ستة آلاف وسبعمائة واحد أربعين لأبينا آدم عليه السلام وكتبه الحقير الخاطئ…فصيح مصيح لنفسه … فهو يسأل السيد المسيح بأن يغفر لمن يقرأ فيه وترحم عليه وعلى والديه آمين آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 15 Adhar 6741 (adam)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1233",
+            "iso": {
+                "not_before": "1233"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1h720g0"
+    ]
+}

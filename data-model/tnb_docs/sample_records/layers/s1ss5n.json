@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1ss5n",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 24, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1r68m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "miniature",
+            "label": "Miniature(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th c.",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Full page miniature of the prophet David [f. 1r]"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gb3w5t"
+    ]
+}

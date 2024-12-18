@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1305h",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 89, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Beautiful Estrangela, bold and energetic script; transitional Estrangela"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1196c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15q6n7z"
+    ]
+}

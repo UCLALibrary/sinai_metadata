@@ -1,0 +1,109 @@
+{
+    "ark": "ark:/21198/s1ws46",
+    "reconstruction": false,
+    "label": "Sinai Arabic 331, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qd4v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 208v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كملت هذه النسخة يوم الثلاثاء سابع وعشرين نيسان سنة ست آلاف وسبعمائة وخمسة وثلاثين للعالم وبالله التوفيق / وكتب نصر الله الحقير المسكين الخاطئ بدمشق لنفسه فمن قرأ فيها او نسخ منها ووجد فيها غلط او ذلك وكان عارف فليصلحه ولا تجد علي لأن كل مخلوق ناقص والله وحده الكامل / وهو يتضرع ويسأل كل من قرأ فيه ان يدعوا له بالغفران ولجميع بني المعمودية بشفاعة السيدة وجميع القديسين آمين آمين آمين / ويعلم قراي هذا الكتاب أنه منقول من أم انطاكية محررة ولربنا المجد إلى الدهور كلها آمين آمين آمين",
+            "translation": [
+                "This copy was completed on Tuesday 27 in the month of Nīsān [March–April] in the Year of the World [Anno Mundi] 6735 …, and it was copied by Nasrullah[?] … in Damascus …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Nasrullah[?] (f. 208v)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "Damascus",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Tuesday 27 Nisan 6735 (world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1227",
+            "iso": {
+                "not_before": "1227"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Damascus",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 208v"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10v9h5c"
+    ]
+}

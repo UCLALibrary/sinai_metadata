@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s12c84",
+    "reconstruction": false,
+    "label": "Sinai Arabic 118, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w061",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 238r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز بمعونة الله وحسن توفيقه يوم الأربعاء ثامن وعشرين من شهر كانون الثاني سنة ست آلاف وسبعمائة اثنين وستين للعالم فمن وجد فيه غلط و أصلحه الرب يغفر خطاياه والترتيب الحقير ولبني المعمودية آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Thursday 28 Kanun II 6762 (world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1254",
+            "iso": {
+                "not_before": "1254"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10z8n0f"
+    ]
+}

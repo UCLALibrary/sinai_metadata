@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s13c9t",
+    "reconstruction": false,
+    "label": "Sinai Syriac 35, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ww94",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th c.",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww9296"
+    ]
+}

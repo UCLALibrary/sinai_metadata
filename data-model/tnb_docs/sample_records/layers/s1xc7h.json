@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1xc7h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 188, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1r06s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric headpieces on f. 105r, red and black line-work with black dots; ff. 116v, 173v, red with a black triangular pattern; f. 145v, with elevated cross | Minor geometric headpieces throughout, beginning on f. 11v, red and black line-work with dots"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17q02r0"
+    ]
+}

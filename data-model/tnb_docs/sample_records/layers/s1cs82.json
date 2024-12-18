@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1cs82",
+    "reconstruction": false,
+    "label": "Sinai Syriac 2 A, Undertext (Estrangela)",
+    "locus": "ff. 165–166",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Nice and elegant classical calligraphy"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "26 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11t3d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 5th c. ",
+            "iso": {
+                "not_before": "0425",
+                "not_after": "0475"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Edessa",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 166v, 166r, 165v, 165r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "All three Gospels UTOs present in this manuscript originally must have formed a Tetraevangelium"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Géhin 2017, p. 30"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1x07bdf"
+    ]
+}

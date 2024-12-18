@@ -1,0 +1,137 @@
+{
+    "ark": "ark:/21198/s1hk6g",
+    "reconstruction": false,
+    "label": "Sinai Arabic 334, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b35q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 178v-179r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجزت الواحد وثلاثين ميمر تعليم القديس الكبير والمعلم العظيم أبا يوحنا اقليمتس الممدوح مرشد العباد إلى الطريق القويمة المتصلة بالملك السماوي صانع السلم الفضائلية ذات المراقى الثلاثينية المصعدة إلى الفردوس السماوي نهار الجمعة الثالث والعشرين من شهر كانون الثاني سنة ست آلاف وثمانمائة وتسعة وعشرين لأبينا آدم بجبل الله المقدس طور سيناء في أيام أبينا أقدس أهل عصره داعينا ومتقلد خلاصنا السيد الأسقف انبا جرمانوس متع الله رعيته بمدة حياته وهو برسم الكنيسة العظمى الكاثوليكي بالدير المقدس وكل من قرأ فيه ووقف على هذه الأحرف يصلى الى الله من أجل كثرة خطايا كاتبها ارساني المسكين بالاسم شماس وان وجد فيه غلط أو نقص حرف ما فليصلحه ولا يعتب على فليس لنا جاهل بضعف يدي وقلة استقامة قلبي دائما تجرأت على كتابته منقادا في ناموس الطاعة الذي به يتقوم السلوك في منهج سيرتنا هذه اذ كان ذلك بإيعاز للأب المقدم ذكره ونرغب إلى سيدنا ايسوع المسيح بشفاعة وابديه والقديس ماري موسى العظيم معاينه لا بحسب كنه جوهر الهوته  لكن بحسب الاستطاعة البشرية بصفاء عقله إلى معاينه والست اكاتارينا ان يجعل لنا حظ في ملكوته السماوية  مع جميع القديسين آمين والسبح لله دائما وعلينا رحمته آمين",
+            "translation": [
+                "The [copying of] thirty-one mimars … were finished during the day of Friday 23 in the month of Kānūn ath-Thānī [January] in the Year of Our Father Adam [Anno Mundi] 6829 at [the Monastery of] Holy Mount of Allah Sinai … its copyist … Arsānī … the Deacon …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Arsānī … the Deacon (f. 179r)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "[the Monastery of] Holy Mount of Allah Sinai",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 23 Kanun II 6828 (adam"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1321",
+            "iso": {
+                "not_before": "1321"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Saint Catherine's Monastery (Sinai)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 179r"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Coptic alphabet is found on f. 182r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate headpiece on f. 2r, vine-like and floral forms bordered by a geometric cross motif, outer edges adorned with cross and fleur de lis motifs"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14n081f"
+    ]
+}

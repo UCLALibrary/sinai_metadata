@@ -1,0 +1,122 @@
+{
+    "ark": "ark:/21198/s1559c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 127, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "locus": "f. 95v onward",
+            "color": [
+                "blue",
+                "orange",
+                "green"
+            ],
+            "note": [
+                "Used in rubrication throughout"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zs9q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 241v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الإنجيل المبارك يوم السبت عيد القديس فليس وهو الرابع عشرين من تشرين الثاني سنة ست الف وثمن [مائة] واثنين لأبينا آدم وسنة الف وثلث مائة واثنين للتجسد الإلهي لذكر السجود و الاكرام وسنة العرب الرابع عشر من ذي الحجة سنة ثلث وتسعين وستمائة / أيها القارئ اذكر الحقير في بني المعمودية الراهب بالإسم بولص المصري ناقله وكاتبه يذكرك السيد المسيح في ملكوت السموات وذلك [erasure]",
+            "translation": [
+                "This Blessed Gospel was completed on Saturday the Feast of St Philip, which is 14 in the month of Tishrīn ath-Thānī [November] in the Year of Our Father Adam [Anno Mundi] 6xxx, [which was] the year 1xxx after Divine Incarnation…, [which was also] 14 of Dhī al-Ḥijjah of the Arab Year [AH] 390. O Reader, remember this humble amongst [the Children of the] Baptised, the monk Paul the Egyptian by name who narrated/translated? and copied it…."
+            ],
+            "assoc_name": [
+                {
+                    "value": "Paul the Egyptian (f. 241)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "6802 (Adam) :: 1302 (Incarnation) :: 14 Dhu al-Hijja 693h"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1294",
+            "iso": {
+                "not_before": "1294"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric and vegetative headpieces throughout, beginning on f. 81v; geometric headpiece in blue and orange ink, f. 150r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1g1744p"
+    ]
+}

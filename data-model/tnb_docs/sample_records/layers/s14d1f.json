@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s14d1f",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 2, Undertext (Greek majuscule)",
+    "locus": "ff. 32–37, 42, 43, 47, 50–67, 71, 74, 96, 97, 102, 104–106, 110–114",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Similar to Paris. lat. 4403B (G. Cavallo – H. Maehler, Greek Bookhands of the Early Byzantine Period A.D. 300-800, London 1987, pl. 55a; end of VIII C. CE); marginalia in the Vindob. Med. gr. 1 (cfr. P. Orsini, La maiuscola ogivale inclinata. Contributo preliminare, «Scripta» 9, 2016, pp. 89-116: 101-103, tavv. 7a-c; VIII C. CE)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "33 lines, reconstructed"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sd67",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 102rv (Ecclesiasticus); 47rv, 33r+36v, 33v+36r, 37r+32v, 37v+32r, 66v+63r, 66r+63v, 96v+97r, 96r+97v, 114r+111v, 114v+111r, 110vr, 74r+71v, 74v+71r, 64v+65r, 64r+65v (Jeremiah); 34r+35v, 34v+35r (Baruch); 106vr, 42r+43v, 42v+43r, 57r, 58v (Lamentations); 57v, 58r (Jeremiah Epistle); 50r+53v, 50v+53r, 52r+51v, 52v+51r, 59r+56v, 59v+56r, 104r+105v, 104v+105r, 67r+62v, 67v+62r (Ezekiel); 113r+112v, 113v+112r (Daniel)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1862z2p"
+    ]
+}

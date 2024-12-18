@@ -1,0 +1,83 @@
+{
+    "ark": "ark:/21198/s15w2z",
+    "reconstruction": false,
+    "label": "Sinai Arabic 185, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10h17",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 168ar-168av",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز بعون الله تعالى وكان الفراغ من نسخة في يوم الخميس أول نهار من صوم السيدة وهو أول يوم من شهر آب المبارك سنة ستة آلاف وتسعمائة ثلاثة وعشرين لأبينا آدم عليه السلام الموافق لثالث عشرين شهر جمادى الاول سنة سادس عشر وثمانمائة للهجرة",
+            "note": [
+                "Attested dates: Thursday 1 Ab 6923 (adam) ; Thursday 23 Jumada I ; 816 hijri"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1231",
+            "iso": {
+                "not_before": "1231"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Cross, f. 181v, red ink"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zg89wt"
+    ]
+}

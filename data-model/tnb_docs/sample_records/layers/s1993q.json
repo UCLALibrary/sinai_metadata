@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1993q",
+    "reconstruction": false,
+    "label": "Sinai Greek 446, Undertext (Greek majuscule)",
+    "locus": "ff. 1–20",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "30-32 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z974",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 9th-mid 10th c. ",
+            "iso": {
+                "not_before": "0850",
+                "not_after": "0950"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 16r/13v (col. 1) + 17v/20r (col. 2); 17r/20v (col. 1) + 16v/13r (col. 2); 15r/14v (col. 1) + 18v/19r (col. 2); 18r/19v (col. 1) + 15v/14r (col. 2); 9v (lower part of col. 1) + 12r (lower part of col. 2); 12v (lower part of col. 1) + 9r (lower part of col. 2); 10v (lower part of col. 1) + 11r (lower part of col. 2); 11v (lower part of col. 1) + 10r (lower part of col. 2); 7r/6v (col. 1) + 2v/3r (col. 2); 2r/3v (col. 1) + 7v/6r (col. 2); 8r/5v (col. 1) + 1v/4r (col. 2); 1r/4v (col. 1) + 8v/5r (col. 2)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Gardthausen, p. 108"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13v0f52"
+    ]
+}

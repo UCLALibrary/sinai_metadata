@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s18k82",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 13, Undertext (Caucasian Albanian)",
+    "locus": "ff. 1, 6–7, 16–25, 30–31, 40–41, 46–47, 50–51, 54–55, 59–61, 64–66, 74, 96–102, 107",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "caucasian-albanian",
+                    "label": "Caucasian Albanian",
+                    "writing_system": "Caucasian Albanian"
+                }
+            ],
+            "note": [
+                "Slightly small letters"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "21 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xm4s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 40r-47v, 40v-47r, 6r-1v, 6v-1r, 7r, 7v, 41r-46v, 41v-46r, (NF 55: 63r, 63v; 18r-21v, 18v-21r, 69v), 100r-97v, 100v-97r, 101r-96v, 101v-96r, (NF55: 73r)- 107v, (NF55: 73v)-107r, 99r-98v, 99v-98r, (NF 55: 70v-60r+75r, 70r-60v+75v, 17r-22v, 17v-22r; 68v-71r, 68r-71v), 19r-20v, 19v-20r, 50r-55v, 50v-55r, 51r-54v, 51v-54r, 18r-21v, 18v-21r, 74r-102v, 74v-102r, (NF 55: 66v-72r, 66r-72v); 65r-60v, 65v-60r, (NF 55: 12r-9v, 12v-9r, 11r-10v, 11v-10r, 54r-55v, 54v-55r), 66r-59v, 66v-59r; 30r-25v, 30v-25r, 31r-24v, 31v-24r; (NF 55: 40r-35v, 40v-35r), 61r-64v, 61v-64r, 17r-22v, 17v-22r, (NF 55: 13r+77r- 8v, 13v+77v-8r, 14r+78r-7v, 14v+78v-7r), 16r-23v, 16v-23r, (NF 55: 1r-5v, 1v-5r, 39r-36v, 39v-36r)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "References to folios from ms. Georgian NF 55 added to show the actual distribution"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This UTO is connected to the Gospel of John UTO in Sinai Georgian NF M 55. The original quires formed the first unit of a composite codex containing the five quires of the Caucasian Albanian Lectionary as its second unit"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The folios represent remnants of six quires (quaternions) of the original codex which comprised the complete Gospel of John"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: SIBE 2/1-2"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww8090"
+    ]
+}

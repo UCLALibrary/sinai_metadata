@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1hp88",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Estrangela)",
+    "locus": "ff. 86–94, 114–115, 120–122, 127–130, 135–146, 151–162, 167–168",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "13 lines",
+            "note": [
+                "Each folio is made up from one half of the original folio"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15q40",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 140r (col. a), 141v (col. a), 140r (col. b), 141v (col. b), 140v (col. a), 141r (col. a), 140v (col. b), 141r (col. b), 154r (col. a), 159v (col. a), 154r (col. b), 159v (col. b), 154v (col. a), 159r (col. a), 154v (col. b), 159r (col. b), 130r (col. a), 135v (col. a), 130r (col. b), 135v (col. b), 130v (col. a), 135r (col. a), 130v (col. b), 135r (col. b), 129r (col. a), 136v (col. a), 129r (col. b), 136v (col. b), 129v (col. a), 136r (col. a), 129v (col. b), 136r (col. b), 153r (col. a), 160v (col. a), 153r (col. b), 160v (col. b), 153v (col. a), 160r (col. a), 153v (col. b), 160r (col. b), 139r (col. a), 142v (col. a), 139r (col. b), 142v (col. b), 139v (col. a), 142r (col. a), 139v (col. b), 142r (col. b), 158r (col. a), 155v (col. a), 158r (col. b), 155v (col. b), 158v (col. a), 155r (col. a), 158v (col. b), 155r (col. b), 122r (col. a), 127v (col. a), 122r (col. b), 127v (col. b), 122v (col. a), 127r (col. a), 122v (col. b), 127r (col. b), 146r (col. a), 151v (col. a), 146r (col. b), 151v (col. b), 146v (col. a), 151r (col. a), 146v (col. b), 151r (col. b), 168r (col. a), 161v (col. a), 168r (col. b), 161v (col. b), 168v (col. a), 161r (col. a), 168v (col. b), 161r (col. b), 144r (col. a), 137v (col. a), 144r (col. b), 137v (col. b), 144v (col. a), 137r (col. a), 144v (col. b), 137r (col. b), 143r (col. a), 138v (col. a), 143r (col. b), 138v (col. b), 143v (col. a), 138r (col. a), 143v (col. b), 138r (col. b), 167r (col. a), 162v (col. a), 167r (col. b), 162v (col. b), 167v (col. a), 162r (col. a), 167v (col. b), 162r (col. b), 145r (col. a), 152v (col. a), 145r (col. b), 152v (col. b), 145v (col. a), 152r (col. a), 145v (col. b), 152r (col. b), 128v (col. a), 128v (col. b), 128r (col. a), 128v (col. b), 157r (col. a), 156v (col. a), 157r (col. b), 156v (col. b), 157v (col. a), 156r (col. a), 157v (col. b), 156r (col. b), 120r (col. a), 115v (col. a), 120r (col. b), 115v (col. b), 120v (col. a), 115r (col. a), 120v (col. b), 115r (col. b), 121r (col. a), 114v (col. a), 121r (col. b), 114v (col. b), 121v (col. a), 114r (col. a), 121v (col. b), 114r (col. b), 90r (col. a), 89v (col. a), 90r (col. b), 89v (col. b), 90v (col. a), 89r (col. a), 90v (col. b), 89r (col. b), 86r (col. a), 93v (col. a), 86r (col. b), 93v (col. b), 86v (col. a), 93r (col. a), 86v (col. b), 93r (col. b), 87r (col. a), 92v (col. a), 87r (col. b), 92v (col. b), 87v (col. a), 92r (col. a), 87v (col. b), 92r (col. b), 91r (col. a), 88v (col. a), 91r (col. b), 88v (col. b), 91v (col. a), 88r (col. a), 91v (col. b), 88r (col. b), 94r (col. a), 94r (col. b), 94v (col. a), 94v (col. b)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Belongs to the same codex as the UTO Gospel of Matthew, chs. 3-4"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

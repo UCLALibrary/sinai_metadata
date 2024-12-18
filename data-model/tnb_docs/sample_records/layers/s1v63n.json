@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1v63n",
+    "reconstruction": false,
+    "label": "Sinai Syriac 192, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nt0v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "249r-249v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܢܣܒ ܚܬܡܐ ܕܟܬܒܐ ܗܢܐ ܩܕܝܫܐ ܕܩ̈ܢܘܢܐ ܕܝܘܡܬܐ ܫܚ̈ܝܡܐ ܕܬܡ̈ܢܝܐ ܪ̈ܟܢܐ : ܕܬܝܒܘܬܐ ܘܠܡ̈ܐܠܟܐ: ܘܠܡܪܝ ܝܘܚܢܢ ܘܠܝܠܕܬ ܐܠܗܐ ܘܠܫ̈ܠܝܚܐ ܘܠܨܠܝܒܘܬܐ ܘܠܣ̈ܗܕܐ ܡܥ̈ܢܝܕܐ: ܐܫܬܡܠܝ ܕܝܢ ܒܐܝ̈ܕܝ ܐܢܫ: ܡܚܝܠܐ ܘܚ̇ܛܝܐ ܘܡܦܠܦ... ܒܣ̈ܢܝܬܐ ܐܒܪܗܡ ܩܫܝܫܐ ܒܫܡܐ ܘܠܐܒܥ̇ܒܕܐ: ܒܪܕܘܝܕܐ ܫܬܡܠܝ ܕܝܢ ܝܘܡ ܥܪܘܒܬܐ ܒܬܫܪ̈ܝܢ ܩܕܡܝܐ: ܬܒܫ̄ܥ ܫ̈ܥܝܢ ܕܝܠܗ̣ ܕܝܘܡܐ: ܫܢܬ ܐܠܦ ܘܚܡܫ̈ܡܐܐ ܘܚܡܫ̈ܝܢ ܘܗ̄: ܡܢ ܫ̈ܢܝܐ ܕܐܠܟܣܢܕܪܘܣ ܒܪ ܦܝܠܝܦܘܣ ܡܩܕܘܢܐ ܐܬܟܬܒ ܒܩܪܝܬܐ ܡܒܪܟܬܐ ܕܚܡܬ ܠܡܫ̄ܝ̣ ܕܐܪܫܡ ܓܕܝܢ ܡܢ ܐܬܪܐ ܕܛܪܦܠܘܣ ܡܕܝܢܬܐ ܒܥܕܬܐ ܕܚܣܝܐ ܡܪܝ ܐܣܝܐ ܨܠܘܬܗ ܫܘܪܐ ܬܗܘܐ ܠܢ ܠܥܡܠ: ܘܐܠܗܐ ܐܒܐ ܕܟܠ ܪ̈ܚܡܐ: ܢܚܣܐ ܠܟܬܘܒܢܐ ܘܠܩܪ̈ܘܝܐ ܘܠܟܠ ܡܢ ܕܐܝܬܠܗ̣ ܫܘܬܦ̄ܘ ܒܟܬܒܐ ܗܢܐ܀ ܐܡܝܢ ܐܡܝܢ܀",
+            "assoc_name": [
+                {
+                    "value": "Abraham bar Dawid",
+                    "as_written": "ܐܒܪܗܡ ܒܪ ܕܘܝܕ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1243",
+            "iso": {
+                "not_before": "1243"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces, knotted vine with tail, red and black, throughout, ff. 2r | Minor geometric headpieces between ff. 45v-125r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1932bsx"
+    ]
+}

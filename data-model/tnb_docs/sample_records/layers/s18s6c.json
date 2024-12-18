@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s18s6c",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 28, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Regular Estrangelo script"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1768z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th c.",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zc9v3g"
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "ark": "ark:/21198/s1ks8x",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 90, Undertext (Asomtavruli)",
+    "locus": "ff. 19–22, 25, 28–29",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Large majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "17 lines",
+            "note": [
+                "Fragments do not allow for an exact determination of the number of columns and lines"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17t2w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 7th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 25r, [Georgian NF 84:1v], 25v, [Georgian NF 84:1r], 22r+19v, 22v+19r, 21r+20v, 21v+20r, [Georgian NF 84:5v+4r], [Georgian NF 84:5r+4v], 28v+29r, 28r+29v, [Georgian NF 84:3r+2v], [Georgian NF 84:3v+2r]"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The folio order includes the relevant folios from Georgian NF 84"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Same original as the UTO Khanmeti Mravaltavi of Sinai Georgian NF M 84; fol. 25 is the upper part of Georgian NF M 84, fol. 1"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Fragments identified so far are also found in Sinai Georgian 32, 57, and 33 (the so-called Sinuri Mravaltavi, one manuscript broken into three parts) as well as other homiletic collections of the type"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. Shanidze, Sinuri Mravaltavi 864 c'lisa (Tbilisi, 1959), p. 31-39 ; I. Abuladze, \"Mravaltavi\": Enis, ist'oriisa da mat'erialuri k'ult'uris inst'it'ut'is moambe 14 1944, p. 279-288 / Shromebi 3 (Tbilisi, 1975), p. 69-78 ; M. van Esbroeck, Les plus anciens homéliaires géorgiens: Étude descriptive et historique (Louvain-La-Neuve, 1973), p. 122-123"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb24tz"
+    ]
+}

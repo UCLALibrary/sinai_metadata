@@ -1,0 +1,102 @@
+{
+    "ark": "ark:/21198/s1cd07",
+    "reconstruction": false,
+    "label": "Sinai Arabic 443, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15w87",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 310v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تم ونجز هذا المجموع المبارك على يد كاتبه الحقير افثيميوس أسقف مدينة غزة وكان نجازه يوم الاثنين حادي وعشرين شهر اذار سنة ستة آلاف وسبعمائة وست وثمانين لأبينا آدم عليه السلم الموافق الخامس والعشرين من شهر شوال سنة ست وسبعين وستمائة للهجرة\nوكتب في الاعتقال بفعله الجبل بمصر وهو يسأل كل من قرأ فيه يدعو له بغفران الذنوب والرحمة والرب يغفر لكل من قرأ فيه وسمعه ولجميع بني المعمودية امين بشفاعة السيدة ام النور وجميع القديسين ",
+            "assoc_place": [
+                {
+                    "value": "Copied at Citadel of Cairo, while imprisoned",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Tuesday 21 Adhar 6786 (adam) :: 25 Shawwal 676 (hijra)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1278",
+            "iso": {
+                "not_before": "1278"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor vegetative headpieces on ff. 6v, 11v, 32r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1jd617t"
+    ]
+}

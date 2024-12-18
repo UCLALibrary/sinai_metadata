@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1d33k",
+    "reconstruction": false,
+    "label": "Sinai Syriac 211, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16m3w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces on ff. 9r, 48v I Partial border, f. 72r I Decorated Greek initials, ff.83r-86v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1r79jnp"
+    ]
+}

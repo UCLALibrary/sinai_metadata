@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1sk8q",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 7, Undertext (Nuskhurimt)",
+    "locus": "ff. 1, 5r, 87r, 87v, 93–94, 103, 106r, 106–107, 117, 139",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Nuskhuri, Mtavruli"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "15 lines, 14 or 16 lines on some folios"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fm32",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th c. ",
+            "iso": {
+                "not_before": "0960",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 117v, 117r, 107v, 107r, 94v, 94r, 93v, 93r, 106v, 106r, 139v, 139r, 1v, 87v, 87r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Psalter B is written by a different scribe from the UTOs Psalter A and Psalter C"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Zaza Alexidze"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Text edited by Mzekala Shanidze, Monuments of Old Georgian Language (Tbilisi, 1960)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ms4qq1"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s10p77",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 14, Overtext (Greek majuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "light-brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t954",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pk1d26"
+    ]
+}

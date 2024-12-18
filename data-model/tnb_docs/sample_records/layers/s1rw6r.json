@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1rw6r",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 12, Undertext (Christian Palestinian Aramaic)",
+    "locus": "throughout",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early, medium size"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "21 or 22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1dx13",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-8th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. e vr, g 1v+2r, g 1r+2v, cd 1r+4v, cd 1v+4r, f rv, cd 2v+3r, cd 2r+3v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1x356gz"
+    ]
+}

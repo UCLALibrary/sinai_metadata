@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1w02h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 67, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1pm03",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1537",
+            "iso": {
+                "not_before": "1537"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sf40hr"
+    ]
+}

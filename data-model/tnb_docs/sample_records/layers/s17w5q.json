@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s17w5q",
+    "reconstruction": false,
+    "label": "Sinai Syriac 76, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12h3m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric and vegetative headpieces throughout, beginning on f. 27r | Geometric headpieces, ff. 65r, 143v, 204v, 212r, 214r | Geometric decorations on ff. 27r, 89r, 98r, 157v cross knot motif; f. 101v, six-pointed star"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nc7jtm"
+    ]
+}

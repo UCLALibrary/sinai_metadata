@@ -1,0 +1,58 @@
+{
+    "ark": "ark:/21198/s1gw5w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Estrangela)",
+    "locus": "ff. 1a, 1b, 3–4, 7–8",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "25 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14x1m",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

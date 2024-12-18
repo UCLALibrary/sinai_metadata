@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1fp78",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 29, Undertext (Greek majuscule)",
+    "locus": "throughout ff. 1–46",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Alexandrian majuscule | Unimodular majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13q30",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "2nd half 6th c. ",
+            "iso": {
+                "not_before": "0551",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Egypt",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. Frg. 4v, frg. 4r, frg. 3r, frg. 3v, fol. 27r, fol. 27v, fol. 5r, fol. 5v, fol. 21r, fol. 21v, fol. 22r, fol. 22v, frg. 19v,  frg. 19r, fol. 24r, fol. 24v, fol. 19r, fol. 19v, fol. 16r, fol. 16v, fol. 32r, fol. 32v, fol. 29r, fol. 29v, frg. 12v, frg. 2v, frg. 12r, frg. 2r, fol. 15r, fol. 15v, fol. 17r, fol. 17v, frg. 8r, frg. 8v, frg. 7v, frg. 7r, fol. 31r, fol. 31v, fol. 30r, fol. 30v, frg. 24v, frg. 6v, frg. 24r, frg. 6r, fol. 37r, fol. 37v, fol. 40r, fol. 40v, fol. 26r, fol. 26v, fol. 43r,  fol. 43v, fol. 10r, fol. 10v, fol. 4r, fol. 4v, frg. 10v, frg. 10r, frg. 1v, frg. 1r, frg. 25r, frg. 25v, fol. 6r, fol. 6v, fol. 13r, fol. 13v, fol. 11r, fol. 11v, fol. 45v, fol. 45r, fol. 12r, fol. 12v, fol. 46r, fol. 46v, fol. 3r, fol. 3v, f. 35r, fol. 35v, fol. 41r, fol. 41v, fol. 7v, fol. 7r, fol. 28r, fol. 28v, frg. 11r, frg. 17r, frg. 11v, frg. 17v, fol. 18r, fol. 18v, fol. 14r, fol. 14v, fol. 25r, fol. 25v, fol. 39r, fol. 39v, fol. 8r, fol. 8v, fol. 34r, fol. 34v, fol. 9r, fol. 9v, fol. 44r, fol. 44v, fol. 38r, fol. 38v, fol. 33r, fol. 33v, fol. 20r, fol. 20v, fol. 36r, fol. 36v, fol. 42r, fol. 42v, fol. 23r, fol. 23v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kp8b5g"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1561p",
+    "reconstruction": false,
+    "label": "Sinai Syriac 64, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zq10",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1254",
+            "iso": {
+                "not_before": "1254"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15t547d"
+    ]
+}

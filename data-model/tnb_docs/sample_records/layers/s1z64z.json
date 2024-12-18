@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/s1z64z",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 19, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 8–9",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Later large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1m670",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "St Saba Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 8r, 8v, 9r, 9v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: V. Arras, De transitu Mariae apocrypha aethiopice. 2 vols. CSCO 343 (Louvain: Peeters, 1973) pp. 108-109 (Ethiopic version) ; S. Shoemaker, “New Syriac Dormition Fragments from Palimpsests in the Schøyen Collection and The British Library,” Le Muséon 124, 2011, pp. 367-368 ; C. Müller-Kessler, “An Overlooked Christian Palestinian Aramaic Witness of the Dormition of Mary in Codex Climaci Rescriptus (CCR IV),” Collectanea Christiana Orientalia 16, 2019, pp. 81-98 [DOI: 10.21071/cco.v16i0.1101] ; C. Müller-Kessler, “Three Early Witnesses of the ‘Dormition of Mary’ in Christian Palestinian Aramaic from the Cairo Genizah (Taylor-Schechter Collection) and the New Finds in St Catherine’s Monastery,” Apocrypha 29 (2018), pp. 69-95 [DOI: 10.1484/J.APOCRA.5.116638] ; Müller-Kessler 2019, pp. 81-98 ; Müller-Kessler 2018b, pp. 69-95"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d68k3"
+    ]
+}

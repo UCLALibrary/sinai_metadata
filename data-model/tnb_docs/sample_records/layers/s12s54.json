@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s12s54",
+    "reconstruction": false,
+    "label": "Sinai Arabic 495, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w95r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 81v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ منه في مدينة دمشق في سنة ألف واثنين وثلاثين سنة من ظهور حجاب القدرة الموافق لسنة ثلث عشر وأربعمائة للعرب والرب مشكور إلى الدهور الداهر آمين  ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1032 :: 413 hijrah"
+                }
+            ],
+            "note": [
+                "Attested places:  Damascus"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1022",
+            "iso": {
+                "not_before": "1022"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nk53fm"
+    ]
+}

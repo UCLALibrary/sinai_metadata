@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1p62q",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 66, Undertext (Greek majuscule)",
+    "locus": "f. 9",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Only a few letters are visible. The parchment fragment is too small to reconstruct the number of columns and lines, but it is clear that the folio was made up from stitching together multiple pieces of parchment"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b698",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Additional parts of this manuscript can be found in three further manuscripts: Leipzig, Univ. gr. 2 (22 folios) = Codex Tischendorf 2; St. Petersburg, RNB, gr. 26 (6 folios); Cambridge Add. 1879.5 (one small fragment). The characteristics of the layout and of the script suggest that this text originally belonged to an Old Testament manuscript (with additional parts in Leipzig, Cambridge, St. Petersburg) or to a grammatical text (with additional parts in Leipzig only)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Biliography: H. L. Fleischer, \"Über einen griechisch-arabischen Codex rescriptus der Leipziger Universitäts-Bibliothek,\" in Zeitschrift der deutschen morgenländischen Gesellschaft 1 (1847), p. 148-160 (repr. in ibid., Kleinere Schriften III [Leipzig, 1888], p. 379-388, n. xxii), with a plate ; H. L. Fleischer, “Beschreibung der von Prof. Dr. Tischendorf im J. 1853 aus dem Morgenlande zurückgebrachten christlich-arabischen Handschriften,” in Zeitschrift der deutschen morgenländischen Gesellschaft 8 (1854), p. 584-587 ; N. Tchernetska, “Cambridge University Library Add. 1879.5 and Its Provenance,\" in Homer, Tragedy and Beyond: Essays in Honour of P. E. Easterling, ed. F. Budelmann, P. Michelakis (London, 2001), p. 201-208 ; M. van Esbroeck, “Le codex rescriptus Tischendorf 2 à Leipzig et Cyrille de Scythopolis en version arabe,” in Actes du deuxième Congrès international d’études arabes chrétiennes (Oosterhesselen, September 1984), ed. S. K. Samir (OCA 226), Rome, 1986, p. 81-91 ; G. Rossetto, \"Fragments from the Orphic Rhapsodies? Hitherto Unknown Hexameters in the Palimpsest Sin. ar. NF 66,\" Zeitschrift für Papyrologie und Epigraphik, 219, 2021, 34–60 ; Rossetto 2021, pp. 34-60"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dv21gp"
+    ]
+}

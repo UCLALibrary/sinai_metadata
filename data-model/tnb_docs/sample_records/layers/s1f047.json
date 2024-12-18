@@ -1,0 +1,105 @@
+{
+    "ark": "ark:/21198/s1f047",
+    "reconstruction": false,
+    "label": "Sinai Syriac 203, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17m2t",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "214v-215r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": ":ܐܣܬܝܟ ܘܫܬܡܠܝ ܟܬܒܐ ܗܢܐ ܩܕܝܫܐ ܕܗܘܐ ܀ ܩܢܘ̈ܢܐ ܥܠ܀ ܚ̄ ܀ ܪ̈ܘܟܢܐ ܀ ܩܕܡܝܐ ܠܩܝܡܬܐ ܀ ܘܠܬܝܒܘܬܐ ܘܠܡ̈ܐܠܟܐ܀ ܘܠܡܪܝ ܝܘܚܢܢ ܘܠܝܠܕܐ ܐܠܗܐ ܘܠܨܠܝܒܐ ܘܠܣܗ̈ܕܐ ܘܥܢ̈ܝܕܐ܀ ܘܠܬܠܝܬ̤̄ܝܘ܀ ܢܣܒ ܫܘܠܡܐ ܝܘܡ ܫܒܬܐ܀ ܐܠܦ̈ܝ܀ ܘ̄܀ ܫܥ̈ܝܢ܀ ܀ ܝ̄ܒ܀ ܒܝܪܚܐ ܫܒ̄ܛ: ܐܫܢܬ̤ ܀ ܘ̄ ܀ ܐܠܦ̈ܐ܀ ܘ̄ܫܒܥ ܡܐܐ ܀ ܘܚ̄܀ ܘܨ̄܀ ܠܐܒܘܢ ܐܕܡ܀ ܒܐܝܕܐ ܐܢܫ ܡܚܝܠܐ ܘܚܛܝܐ ܒܨܝܪܐ ܡܢ ܟܠܗܘܢ ܥܒ̈ܕܐ ܛ̈ܒܐ. ܘܢܦܬ̤ܐ ܕܟܠܗܘܢ ܒܢܝ̈ܢܫܐ ܡܬ̤ܝ ܕܝܪ̈ܝܐ ܒܫܡܐ ܘܠܐ ܒܥܒ̈ܕܐ ܐܬܟܬܒ ܒܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪܣܝܢܝ ܕܡܬܝܕܥ ܒܡܕܒܪܐ ܒܝܘܡܝ ܐܦܣܩܘܦܐ ܐܪܣܢܝܘܣ ܨܠܘܬܗ̣ ܬܗܘܐ ܠܢ ܫܘܪܐ ܟܬܒܗ ܠܢܦܫܗ̣ ܕܢܬܒ̈ܐܝܐ ܒܗ̰. ܐܘ ܢܬܥܕܪ ܒܗ̣ ܥܠ ܩܪܒܐ ܕܣܛܢܐ ܒܨ̈ܠܘܬܐ ܕܩܕܝܫ̈ܐ ܕܡܬܕܟܪ̈ܝܢ ܒܗ̣܀ ܐܠܐ ܐܘ ܐܚ̈ܝ ܐܝܠܝܢ ܕܩܪ̈ܝܢ: ܒܗ ܡܬܢܗܪ̈ܝܢ ܡܢܗ̣܀ ܫܐܠ ܡܢ ܪܚܡܬܟܘܢ ܟܠ ܡܢ ܕܫܟܚ ܒܗ ܦܘܕܐ ܐܘ ܓܠܛܐ ܐܘ ܡܕܡܕ ܚܣܝܪ ܝܬܪܨܗ̇ ܗܘ ܒܡܗܝܪܘܬܗ̣܀ ܘܢܣܪܚ ܠܝ܀ ܫܘܒܩܢܐ ܡܛܠ ܕܝܠܘܦܐ ܐܝܬ̤ܝ ܘܚܣܝܪ ܡܢ ܟܠܗܘܢ ܒܢܝܢܫ̈ܐ܀ ܐܠܗܐ ܗܘ̣ ܫܘܡܠܝܐ ܠܗ̣ ܫ̄ܘ ܥܠܝܢ ܪ̈ܚܡ̄ܘ: : ܐܠܗܐ ܢܚܣܐ ܠܟܬܘܒܐ ܘܢܫܒܘܩ ܠܗ ܣܘ̈ܓܐܐ ܕܚܘܒ̈ܘܗܝ ܘܢܢܚܝ ܠܥܢܝܕ̈ܘܗܝ ܘܢܬܪܚܡ ܥܠ ܝܠܕܝܗܝ ܘܢܗܘܐ ܠܗ ܥܘܕܪܢܐ ܥܠ ܟܠܗܘܢ ܒܥܠܕܒ̈ܒܘܗܝ ܨ̈ܠܘܢܬܐ ܕܝܠܕܐ ܐܠܗܐ ܘܕܟܠܗܘܢ ܩܕܝܫ̈ܘܗܝ ܐܡܝܢ ܘܐܡܝܢ",
+            "assoc_name": [
+                {
+                    "value": "Matthew the Monk",
+                    "as_written": "ܡܬܝ ܕܝܪܝܐ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1290",
+            "iso": {
+                "not_before": "1290"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate headpieces, knotted vine motif with tails, ff. 31v, 54v; knotted roundel, f. 72v | Headpieces throughout beginning f. 11v, knotted vine motif"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Bordered text, 215r, minor cloud motif."
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nc7jv2"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "ark": "ark:/21198/s1003t",
+    "reconstruction": false,
+    "label": "Sinai Arabic 246, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sk93",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border",
+            "label": "Border(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1601",
+                "not_after": "1800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric tailpiece, f. 26r I Border, f. 27r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b0085j"
+    ]
+}

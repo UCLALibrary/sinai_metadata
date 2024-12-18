@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/s1dw71",
+    "reconstruction": false,
+    "label": "Sinai Greek 2053, Undertext (Greek majuscule)",
+    "locus": "ff. 1, 2r, 3–16",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "The script is \"sloping pointed majuscule,\" but with the occasional and inconsistent use of letters alpha and mU of the \"scrittura mista\""
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "The original manuscript was a parchment roll"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12x10",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai region",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 16r+11v+13v+14r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ks7pg9"
+    ]
+}

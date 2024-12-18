@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s16d3t",
+    "reconstruction": false,
+    "label": "Sinai Greek 962, Undertext (Greek majuscule)",
+    "locus": "ff. 183,186",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Late sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "28-30 lines, reconstructed",
+            "note": [
+                "One bifolio of the present manuscript is made of one original folio, which measured approximately 200x150 mm. The Schriftspiegel is approximately 170x120 mm, with an upper margin of 20 mm (f. 186r), an outer of 30 mm (f. 183v), and a lower of 45 mm (f. 183v)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vd6v",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 9th c. - 10th CE (Rossetto) / 8th-9th c. CE (Wilson)",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 186r+183v, 186v+183r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Lower layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Abbreviation of the edition, MR V = Μηναῖα τοῦ ὅλου ἐνιαουτοῦ, V,  Ἐν Ῥώμῃ 1889 ; G. Rossetto, Greek Palimpsests at Saint Catherine's Monastery (Sinai): Three Euchologia as Case Studies, Vienna 2022"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qj8f7g"
+    ]
+}

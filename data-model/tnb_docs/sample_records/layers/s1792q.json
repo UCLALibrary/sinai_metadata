@@ -1,0 +1,59 @@
+{
+    "ark": "ark:/21198/s1792q",
+    "reconstruction": false,
+    "label": "Sinai Arabic 588, Undertext (Estrangela)",
+    "locus": "throughout ff. 1–55, stub-58",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w98w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: P. Bedjan, Acta Martyrum et Sanctorum, 7 vols. (Paris and Leipzig, 1890), 4:507-644 ; D. Boero, “The Context of Bibliography: Production of the Vatican Manuscript of the Syriac Life of Symeon the Stylite,” Hugoye: Journal of Syriac Studies 18.2 (2015): 319-359"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16m44r0"
+    ]
+}

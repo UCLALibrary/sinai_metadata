@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/s1p04d",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Greek minuscule, Greek majuscule)",
+    "locus": "ff. 49–50, 53–55, 104, 107–108, 111",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Upright round minuscule, hastily executed. \"Auszeichnungsschrift\" for liturgical rubrics: sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 column",
+            "note": [
+                "Parchment scroll, with a single column"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1b104",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai or Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: For abbreviations of the editions see H. Follieri, Initia hymnorum ecclesiae Graecae, vols. I-V.2, Studi e testi (Vatican City, 1960-1966 (211-215bis)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

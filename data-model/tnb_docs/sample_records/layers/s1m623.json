@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1m623",
+    "reconstruction": false,
+    "label": "Sinai Georgian 10, Undertext (Nuskhurimt)",
+    "locus": "ff. 219–220, 224–239, 241–246, 248–261, 263, 265",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Rather upright minuscule, initial letters of verses in majuscule"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18688",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th c. ",
+            "iso": {
+                "not_before": "0750",
+                "not_after": "0950"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 246v, 241r; remainder not yet established"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Metreveli, Č'ank'ievi, and Xevsuriani"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pc3j0n"
+    ]
+}

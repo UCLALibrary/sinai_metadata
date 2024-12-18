@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1dm0m",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 23, Undertext (Estrangela)",
+    "locus": "ff. 3–6",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Old Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "27 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12m41",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid-5th - mid-6th c. ",
+            "iso": {
+                "not_before": "0450",
+                "not_after": "0550"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 6r, 5v, 3v, 4r, 3r, 4v, 6v, 5r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTOs of the Gospel of Luke and Gospel of John in this codex are of the same origin"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Paul Géhin"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1m34mxk"
+    ]
+}

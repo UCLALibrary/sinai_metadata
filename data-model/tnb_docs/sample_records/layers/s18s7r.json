@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s18s7r",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Estrangela)",
+    "locus": "ff. 17, 19, 22, 31–32, 38",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "14 lines",
+            "note": [
+                "Two columns located on conjoint parts of an original bifolio"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xt3g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s15p6d",
+    "reconstruction": false,
+    "label": "Sinai Arabic 226, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1093x",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-full-page",
+            "label": "Decoration, Full-page"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Full page decoration on f. 2r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16h624t"
+    ]
+}

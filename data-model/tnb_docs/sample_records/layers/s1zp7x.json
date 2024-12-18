@@ -1,0 +1,97 @@
+{
+    "ark": "ark:/21198/s1zp7x",
+    "reconstruction": false,
+    "label": "Sinai Syriac 258, Overtext (Serto)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s966",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "134r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "as_written": "ܫܩܠ ܒ ܫܘܠܡܐ ܐܘܟܝܬ ܚܘܬܡܐ ܟܬܒܐ ܗܢܐ ܕܫܚܝܡܬܐ. ܒܫܢܬ ܐ̇ܠܦ ܘܚܡܫܡܐܐ ܘܚ̈ܡܫܝܢ ܘܚܕܐ ܕܝ̣̈ܘܢܝܐ. ܐܬܟܬܒ ܕܝܢ ܒܕܝܪܐ ܡܒܪܟܬܐ ܕܟܝܬ ܕܝܠܕܬ̇ ܐܠܗܐ ܕܕܟܣܝ݂ܡܟ. ܟܬܒܗ ܕܝܢ ܐܢܫ ܡܚܝ̣ܠܐ ܘܚܛܝܐ ܘܕܘܝܐ ܝܘܣܦ ܒܪ ܡܩܪܝܣ ܗܘ̇ ܠܐ ܚܫܚܐ ܘܕܘܝܐ ܕܟܠܗܘܢ ܒܢ̈ܝܢܫܐ ܟܕ ܒ̇ܥܐ ܐܢ̣ܐ ܡܢ ܟܠ ܐܚܐ ܪܘܚܢܝܐ ܕܩ̇ܓܥ ܒܘܣܪ̈ܛܐ ܗܠܝܢ ܒ̈ܠܝܠܐ ܕܨ̇ܠܐ ܥܠܝ ܒܚܘ̣ܒܐ. ܘܗ̇ܘ ܕܡ̇ܨܠܐ ܥܠܝ ܒܚܡܐܐ ܦ ܗܘ̣ ܢܬܚܣܐ ܡܢ ܐܠܗܐ ܐܡܝܢ. ܪܚ̇ܡ̣ܐ ܕܗܘܘ ܥܠ ܓܝܣܐ ܕܡܢ ܝܡܝܢܐ ܘܥܠ ܚܛܝܬܐ ܕܟܝܬ ܫܡܥܘܢ. ܢܗܘܘܢ ܥܠ ܚ̇ܛܝܐ ܕܟܬܒܗ ܘܥܠ ܡܪܗ ܕܟܬܒܐ ܗܢܐ ܐܡܝܢ. ܫ̣ܬ̇ܠܡ ܟܬܓܡܐ ܗܢܐ ܒܪܚ̣ܐ ܐܫܬܓܣ̇ܪ ܒܗ ܒܚܙܝܪܢ: ܐܢܬܘܗܝ ܟܬܒܐ ܗܢܐ ܠܪܒܢ ܒ ܝܘܣܦ ܩܫܝܫܐ ܘܟܗܢܐ ܘܡܗܝܐ ܡܟ̇ܦ݂ܐ ܘܓܝܪܝܐ ܩܕܝܫܐ. ܘܫܟܦܐ ܒܪ ܕܢܣܗ ܕܪܒܢ ܒܪܨܘܡܐ ܡܢ ܡܓ̣ܠܐ ܕܩ̇ܪܐ ܒܗ ܩ̇ܝܬܪ ܡܢܗ: ܘܫܥܘܘܢ ܠܝ ܐܚ̇ܝ ܝܘܣܦ",
+            "assoc_name": [
+                {
+                    "value": "Yoseph son of Makarios",
+                    "as_written": "ܝܘܣܦ ܒܪ ܡܩܪܝܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                },
+                {
+                    "value": "Rabban Barsaumo",
+                    "as_written": "ܪܒܢ ܒܪܨܘܡܐ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Slightly illegible",
+                "Attested names: Shem'un (ܫܡܥܘܢ); Yoseph the Priest (ܝܘܣܦ ܩܫܝܫܐ)",
+                "Attested places:  Monastery of Mary of DKSYMT'"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1239",
+            "iso": {
+                "not_before": "1239"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1903ngz"
+    ]
+}

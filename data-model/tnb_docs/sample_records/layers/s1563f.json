@@ -1,0 +1,39 @@
+{
+    "ark": "ark:/21198/s1563f",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 5, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1bis, 2bis",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t687",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14m95mw"
+    ]
+}

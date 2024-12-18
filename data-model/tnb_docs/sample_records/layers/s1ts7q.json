@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s1ts7q",
+    "reconstruction": false,
+    "label": "Sinai Syriac 30, Undertext (Estrangela)",
+    "locus": "ff. 2, 4–6, 7v, 9, 13, 18, 22, 23, 24v, 29, 32, 33, 38, 39, 44, 47, 51, 52, 59, 60, 63, 65, 66, 68, 72, 79, 81, 83–90, 92, 99, 103, 104, 107, 108, 111, 120–122, 129, 130, 133, 138",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "lines": "23-29 lines, varies considerably"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1gt22",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 5th-6th c. ",
+            "iso": {
+                "not_before": "0450",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Mesopotamia",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 23v, 23r, 92r, 92v, 138v, 138r, 79r, 79v, 51r, 51v, 60r, 60v, 72r, 72v, 133v, 133r, 99r, 99v, 107v, 107r, 47v, 47r, 103r, 103v, 4r, 4v, 2r, 2v, 9r, 9v, 7r, 7v, 108r, 108v, 44v, 44r, 104v, 104r, 122r, 122v, 5r, 5v, 63r, 63v, 66v, 66r, 111r, 111v, 120r, 120v, 65v, 65r, 68r, 68v, 6r, 6v, 129r, 129v, 52r, 52v, 81v, 81r, 13r, 13v, 33r, 33v, 88v, 88r, 83v, 83r, 38r, 38v, 18r, 18v, 90v, 90r, 109r, 109v, 29v, 29r, 121r, 121v, 85r, 85v, 87v, 87r, 39v, 39r, 32v, 32r, 84v, 84r, 86r, 86v, 130r, 130v, 22v, 22r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTOs of the Gospels of Matthew, Mark, Luke, and John are from the same Old Syriac manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: R. L. Bensly, J. R. Harris, and F. C. Burkitt, The Four Gospels in Syriac from the Sinaitic Palimpest, (Cambridge, 1894) ; A. S. Lewis, The Old Syriac Gospels (London, 1910) ; A. Hjelt (ed.), Syrus Sinaiticus, (Helsingfors, 1930)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n5hwt"
+    ]
+}

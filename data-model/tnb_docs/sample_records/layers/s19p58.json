@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s19p58",
+    "reconstruction": false,
+    "label": "Sinai Arabic 390, Overtext (Naskh, Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1494j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "illustration",
+            "label": "Illustration(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1164",
+            "iso": {
+                "not_before": "1164"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decoration of two intertwined serpents, top margin of f. 65r."
+        }
+    ],
+    "parent": [
+        "ark:/21198/z19k68ws"
+    ]
+}

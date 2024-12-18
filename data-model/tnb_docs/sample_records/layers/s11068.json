@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s11068",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 61, Undertext (Asomtavruli)",
+    "locus": "ff. 35–36",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Relatively small letters, initials nearly double-sized and in margins"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Original line and column numbers not determinable"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1p099",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Lowest layer in double palimpsest folios"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c83777"
+    ]
+}

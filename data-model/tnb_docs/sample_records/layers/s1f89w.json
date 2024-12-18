@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1f89w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 421, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17w8v",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 355v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان كمال السنكساري في أول يوم في تشرين الأول سنة ستة آلاف وسبعمائة وستة وأربعين سنة لأبينا آدم موافقة لستمائه خمسة ثلاثين سنة هلالية والسبح لله دائما أبدا غفر الله لمن قرأ وسمع ودعاء لكاتبه والرحمة والمغفرة ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1 Tishrin I 6746 (adam) :: 635 (crescent/hijra)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1238",
+            "iso": {
+                "not_before": "1238"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dz1szq"
+    ]
+}

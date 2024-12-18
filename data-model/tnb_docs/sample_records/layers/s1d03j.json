@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1d03j",
+    "reconstruction": false,
+    "label": "Sinai Arabic 303, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16h13",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 330v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز تفسير أبينا المعظم في القديسين يوحنا الدهبي الفم برسالة السعيد بولص إلى العبرانيين والسبح لله بتاريخ الرابع عشر في شهر تموذ سنة ستالف وسبعمائة ستة وثلثين لأبينا آدم الموافق لتسعة عشر…في ستمائه للهجرة العربية …",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "14 July 6736 (adam) ::"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1228",
+            "iso": {
+                "not_before": "1228"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1x361v6"
+    ]
+}

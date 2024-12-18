@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s1pp7f",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 70, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1h95b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c.",
+            "iso": {
+                "not_before": "0972",
+                "not_after": "0980"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1fz0m2x"
+    ]
+}

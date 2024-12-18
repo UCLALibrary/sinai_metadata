@@ -1,0 +1,113 @@
+{
+    "ark": "ark:/21198/s1659p",
+    "reconstruction": false,
+    "label": "Sinai Arabic 117, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10s8n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 138v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "…يوم كمال الإنجيل المقدس يوم السبت الساعة التاسعة من النهار في شهر كانون الأول في أحد ثلاثين يوم ماضية منه في سنة ستة الف وسبعمائة واحد وعشر للعالم وكتبه ارساني الخاطئ في رعيته المسيح الحقير في الرهبان الصغير في الكهنة وبالاسم حبيس وليس بالفعال غفر الله لكاتبه ولمقتنيه آمين ولمن قرا فيه وأصلح غلطه لان كل انسان ناقص ولا تجد على مناقصى أيها القارئ و المقتنى رحم الله من قرأ  واقتناء ولمن سمع ولكاتبه آمين بشفاعة السيدة أم النور وجميع القديسين آمين رب العالمين آمين آمين آمين ",
+            "translation": [
+                "This is the day of completing the Holy Gospel, on Saturday in the Ninth Hour from the day [Nones, i.e. 3 pm] 31 in the month of Kānūn al-Awwal [December] in the Year of the World [Anno Mundi] 6701, and Arsani the guilty copied it…"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Arsani the guilty (ff. 138v, 139r)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 31 Kanun I 6711 (world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1203",
+            "iso": {
+                "not_before": "1203"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate geometric headpiece on f. 3r, with border and decending side pieces | Minor tailpieces, ff. 22r, 46r, 130r; minor geometric headpiece, f. 138v | Anthropomorphic and geometric decoration on f. 22r I Partial border in red, f.74r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b86cjr"
+    ]
+}

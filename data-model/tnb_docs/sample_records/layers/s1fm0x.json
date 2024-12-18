@@ -1,0 +1,102 @@
+{
+    "ark": "ark:/21198/s1fm0x",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 3, Undertext (Melkite)",
+    "locus": "ff. 3–79",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Melkite Estrangela | Rather loose and irregular at times; otherwise quite similar to that of Tropologion A, with same serto elements"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "6-12 lines, incomplete",
+            "note": [
+                "Six to 12 incomplete lines per page, sometimes preserving beginning or end of lines; parts of a margin, top, right, left, bottom (or two of these) are sometimes present. Blank spaces within and between lines will have had rubrics, of which no traces are visible in any of the images. Fol. 9rv is exceptional in that it represents the middle of a bifolio with ends and beginnings of lines either side of the gutter",
+                "Occasionally traces of vertical ruling are visible (e.g., 12r). Traces of  dividing lines running across the page consisting of a series of x x x, all boxed (thus 13r, 14v), or of v above point and inverted v (16v), or four points arranged as a diamond (39v)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13m5q",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Syria",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Cannot be discerned, except perhaps in the case of the Commemoration of Theodore, where the sequence of tops of half lines must be 19r+24v, 24r+19v, 23v+20v, 20r+23r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The contents (canons for feasts and saints' days) are very similar to those of the UTO Tropologion A; conceivably these two UTOs represent two different scribes of originally the same manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Often only parts of a line are preserved"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Menaion (Rome, 1888-1902) | British Library manuscripts consulted: Add. 14504, 9th c., Syrian Orthodox ; Add. 14505, 10th c., Syrian Orthodox ; Add. 12179, 11th-12th c., Melkite ; Add. 17236, dated 1234, Melkite"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tm9397"
+    ]
+}

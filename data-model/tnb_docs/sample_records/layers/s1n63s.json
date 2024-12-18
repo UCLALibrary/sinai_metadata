@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s1n63s",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 13, Undertext (Christian Palestinian Aramaic)",
+    "locus": "f. 1r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Medieval CPA writing"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1968k",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c. ",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. S. Lewis and M. D. Gibson, The Palestinian Syriac Lectionary of the Gospels (London, 1899)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ft92mh"
+    ]
+}

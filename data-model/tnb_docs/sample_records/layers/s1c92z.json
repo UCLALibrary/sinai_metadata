@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1c92z",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 84, Undertext (Asomtavruli)",
+    "locus": "ff. 6–7",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Middle sized"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "19 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1197r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 7v+6r; 7r+6v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "From the same original manuscript as the UTO Khanmeti-Haemeti Psalter in Sinai Georgian NF M 90"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: M. Shanidze, Psalmunis dzveli kartuli redakciebi (Tbilisi, 1960) ; J. Gippert, B. Outtier, The Oldest Georgian Psalter - A Preliminary Account, Mravaltavi 23 (Tbilisi, 2021)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14m9dms"
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1rw3m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 368, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kh2w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 205v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تمت المائه راس يا رب اغفر للكتاب المسكين خطاياه وخطايا والديه توما المسكين الذي من بلد الزبداني من الكبرى واغفر لمن استكتب ولمن قرأ وقال آمين كان الفراغ من هذا الكتاب المبارك يوم السبت أول شهر أيار سنة ست آلاف وسبعمائة وثمانية وستين وهو برسم القس المكرم أنبا جراسيموس الأنطاكي",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 1 Ayyar 6768"
+                }
+            ],
+            "note": [
+                "Attested places:  Thomas of Zabadani (Syria) ; Gerasimus of Antioch"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1260",
+            "iso": {
+                "not_before": "1260"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12c02c2"
+    ]
+}

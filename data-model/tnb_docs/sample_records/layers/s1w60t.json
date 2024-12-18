@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1w60t",
+    "reconstruction": false,
+    "label": "Sinai Arabic 481, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ps97",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 338r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تم الكتاب بعون الله تعالى من نقل أنبا أنطوني الأنطاكي رئيس دير طور سمعان العجائبي نيح الله نفسه واسكنه مع ابراره وقديسين امين / كتبه بطرس القس الحقير وهو يسأل كل من ترى في هذه الكتابة المبارك وطالع فيه ان يذكره بالمغفرة وكل احد تصبر اعماله ونيته يكافاه / وكان الفراغ في خامس عشر برمهات وهو شهر آذار في سنة ستة آلاف وخمسمائه وتسعة تسعين من سنين آدم أبو البشر عليه السلام  موافق تاريخ العرب سنة أربعمائه واثنين وتسعين 492 / ونعم الله الذي ينعم المذكورين آمين",
+            "assoc_name": [
+                {
+                    "value": "Pastor Peter (copyist)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "6599 (adam)"
+                }
+            ],
+            "note": [
+                "Written in a different hand. The first date is written in Hindu-Arabic numerals 9956 (LTR). The second date is the Arab date, written 429 (LTR)",
+                "Attested names:  Father Anthony of Antioch, Abbot if the Monastery of Simeon the Wonderworker"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1091",
+            "iso": {
+                "not_before": "1091"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dj76t1"
+    ]
+}

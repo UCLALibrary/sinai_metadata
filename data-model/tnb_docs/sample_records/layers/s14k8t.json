@@ -1,0 +1,53 @@
+{
+    "ark": "ark:/21198/s14k8t",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Overtext (Undetermined (Georgian))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "georgian-undetermined",
+                    "label": "Undetermined (Georgian)",
+                    "writing_system": "Georgian"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black",
+                "red"
+            ],
+            "note": [
+                "Red used for rubrics"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z66q",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c. ",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

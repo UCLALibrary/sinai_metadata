@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s1wk78",
+    "reconstruction": false,
+    "label": "Sinai Arabic 685, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1q66j",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1601",
+                "not_after": "1700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15d9w6f"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "ark": "ark:/21198/s1fd0v",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 12, Undertext (Erkatagir)",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Very large initials in the margin"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13d61",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z19c7vcd"
+    ]
+}

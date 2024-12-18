@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s1r01w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 138, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jm17",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 346v-347r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ…ثلاثين يوم من شهر اب سنة ستة …وحمسة وعشرين العالم وكتبه … ه المعروف بمغارة  كفر قاهل الحقير الخاطئ المسكين المقدس …بالذنوب البائس جراسيموس…والزي راهب لا بالعمل …القس يوحنا من كفر عقا  وهو متوسل متضرع مبتهل … وقف عليه أو قرأ فيه او…منه ووجد فيه غلطا أو زللا أو…عليه لحال نقصه فكل مخلو…وحده هو التام والكامل فله الع…والقدرة والأفضال من الا…اوان والى دهر الداهرين…من قرأ فيه او قرئ عليه…الحقير المذكور غفر الله له و…المعمودية الارثذكسية امين…ري لختم بخير وحسبنا الله …"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1117",
+            "iso": {
+                "not_before": "1117"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1q25rdg"
+    ]
+}

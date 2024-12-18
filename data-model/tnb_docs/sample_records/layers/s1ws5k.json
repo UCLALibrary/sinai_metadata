@@ -1,0 +1,73 @@
+{
+    "ark": "ark:/21198/s1ws5k",
+    "reconstruction": false,
+    "label": "Sinai Syriac 18, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qd57",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c.",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Heavily ornamented from f. 32v including ornate headpieces, chrysography, f. 139r, and zoomorphic elements, ff. 154v, 221r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1795p8x"
+    ]
+}

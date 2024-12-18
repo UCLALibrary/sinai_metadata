@@ -1,0 +1,36 @@
+{
+    "ark": "ark:/21198/s1c037",
+    "reconstruction": false,
+    "label": "Sinai Slavonic NF M 3, Overtext (Glagolitic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "glagolitic",
+                    "label": "Glagolitic",
+                    "writing_system": "Glagolitic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15m26",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rb7dmv"
+    ]
+}

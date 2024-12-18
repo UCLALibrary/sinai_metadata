@@ -1,0 +1,117 @@
+{
+    "ark": "ark:/21198/s1991z",
+    "reconstruction": false,
+    "label": "Sinai Arabic 503, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s13w90",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 79r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز قصص القديسين الآباء الأطهار بعون الله وإرشاده وكان الفراغ وكتبها يوم الاثنين الثامن والعشرين في شهر أيار سنى ستة آلاف وسبعمائة وثمانية وأربعين لأبينا آدم عليه السلام وكتبه عبد الخاطئ اغاتون بطور سيناء الجبل المقدس فهو يسأل كل من قرأ فيه يسامحني في الغلط والزلل ويذكر في صلوات وترحم عليه وعلى والديه غفر الله لمن فعل ذلك وغفر والديه ولجميع بني المعمودية آمين  آمين والسبح لله دائما آمين ",
+            "translation": [
+                "The [copying of the] stories of the saints the immaculate fathers were finished …, and that was on Monday [?] 28 in the month of Iyār [May] in the Year of Our Father Adam, peace be upon him, [Anno Mundi] 6748, and Aghātūn … copied it at Holy Mount Sinai [Monastery] …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Aghātūn (f. 79r)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_place": [
+                {
+                    "value": "Holy Mount Sinai [Monastery]",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Monday 28 Ayyar 6748 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1240",
+            "iso": {
+                "not_before": "1240"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative tailpiece, f. 62r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1xw5p5n"
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1vw59",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 64, 70r, 70–71, 83– 86, 88–89, 90–95, 113, 115–116, 118",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "32 lines, reconstructed (Rossetto)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hx11",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 8th - early 9th c. ",
+            "iso": {
+                "not_before": "0775",
+                "not_after": "0825"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 113r (col. a), 86v (col. a), 113r (col. b)+118v, 86v (col. b), 113v (col. a)+118r, 86r (col. a), 113v (col. b), 86r (col. b), 88v (col. a), 84r (col. a), 88v (col. b)+95r, 84r (col. b), 95v+88r (col. a), 84v (col. a), 88r (col. b), 84v (col. b), 85v (col. a), 90r, 85v (col. b), 93v, 85r, 94v+89r (col. a), 70v (col. a), 89r (col. b), 70v (col. b), 91r (col. a), 115r (col. a), 91r (col. b)+92v, 115r (col. b), 115v, 83v (col. a), 64v (col. a), 83v (col. b), 64v (col. b)+71r, 83r (col. a), 71v+64r (col. a), 83r (col. b), 64r (col. b)(Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This text was written by the same scribe who copied the UTO Basil of Caesarea, Homily on the Martyr Julitta in this codex. These two texts belonged to the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Fragment 21r (upper outer piece), 21v (upper outer piece) possibly also belongs to this text; fragments 86r (gutter lower piece), 86v (gutter lower piece), 116r (lower piece), 116v (lower piece), could also belong to the UTO Basil of Caesarea, \"On the Martyr Julitta\" (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

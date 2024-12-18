@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s13s76",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 84, Undertext (Asomtavruli)",
+    "locus": "ff. 6–7",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Small, clumsy, and slightly slanted, transitional toward Nuskha-Khutsuri"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "19 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rt15",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 6v+7r, 6r+7v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Folio order uncertain"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This UTO and the UTO containing the Life of St. Febronia in Sinai Georgian NF M 90 are from the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Middle layer over the Haemeti Psalter"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14m9dms"
+    ]
+}

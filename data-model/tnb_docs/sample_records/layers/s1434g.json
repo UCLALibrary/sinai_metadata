@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1434g",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 39, Undertext (Estrangela)",
+    "locus": "ff. 1, 4",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "28 lines, varies"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s398",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Mesopotamia",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v, 4r, 4v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "All four UTOs of Sinai Syriac NF M 39 belong to a single Old Syriac Gospels manuscript, to which the three UTOs of Sinai Syriac NF M 37 also belong"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: G. Kiraz, Comparative edition of the Syriac Gospels, 4 vols. (Leiden, 1996)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nw19cs"
+    ]
+}

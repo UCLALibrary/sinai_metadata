@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1w63z",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 61, Undertext (Nuskhurimt)",
+    "locus": "ff. 1–22, 26–29",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Slighly slanted, rather clumsy"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "15 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1j68r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c. ",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c83777"
+    ]
+}

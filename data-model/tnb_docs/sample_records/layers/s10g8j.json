@@ -1,0 +1,52 @@
+{
+    "ark": "ark:/21198/s10g8j",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 63, Overtext (Serto)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Serto with coexistence of Estrangela \"olaf\""
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t37t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v4146r"
+    ]
+}

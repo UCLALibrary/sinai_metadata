@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1tk9d",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Coptic)",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "coptic",
+                    "label": "Coptic",
+                    "writing_system": "Coptic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1gm4r",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Rare evidence of Coptic writing among the palimpsests in the collection"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

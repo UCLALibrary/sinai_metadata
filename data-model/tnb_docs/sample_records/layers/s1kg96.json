@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1kg96",
+    "reconstruction": false,
+    "label": "Sinai Syriac 261, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1d10r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "257r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܚ̈ܝ ܨ̈ܠܘ ܥܠ ܚܛܝܐ ܕܣܪܛ ܡܛܠ ܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܕܢܬܚܢܢ ܥܠܘܗܝ ܒܝܘܡܐ ܕܕܝܢܐ ܒܨܠܘܬܐ ܕܝܠܕܬ ܐܠܗܐ ܘܕܟܠܗܘܢ ܩ̈ܕܝܫܐ ܐܡܝܢ܀ ܀ ܟܬܒܗ ܚܛܝܐ ܕܠܐ ܫܘܐ ܕܢܬܟܬܒ ܫܡܗ̣ ܒܟܬܒܐ ܗܢܐ܀ ܟܬܒܗ ܟܛܘܪ ܣܝܢܣ ܒܕܝܪܐ ܡܩܕܫܐ ܫܢܬ ܫ̈ܬ ܐܠܦ ܘܫܒ̈ܥ ܡ̈ܐܐ ܘܐܪ̈ܒܥܝܢ ܘܒ̄[ ] ܠܐܒܘܢ ܐܕܡ ܡ̣ܢ ܩܪܝܬܐ ܢܛܝܪܐ ܡ̣ܢ ܐܠܗܐ ܢܣܐ ܠܗܘܢ ܚܘܒܝܗܘܢ ܒܨܢܘܬܐ ܕܝܠܕܬ ܐܠܗܐ ܦܕ ܟܠܗܘܢ ܩܕܝ̈ܫܐ ܐܡܝܢ",
+            "note": [
+                "Attested places:  from Ma`lula, Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1234",
+            "iso": {
+                "not_before": "1234"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tf1g2w"
+    ]
+}

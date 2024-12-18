@@ -1,0 +1,111 @@
+{
+    "ark": "ark:/21198/s1jm0v",
+    "reconstruction": false,
+    "label": "Sinai Greek 966, Undertext (Greek minuscule)",
+    "locus": "ff. 47–102",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Minuscule with abbreviations and cursive elements. Yellow wash used for highlighting titles and rubrics (e.g. on fol. 53r), indicating south Italian origin. Typical Salentine traits are also: side bands that resemble vegetal motifs (e.g. fols. 55r, 81v, 93r), omicron en rondelle, initials with double outline, asterisk with arrowheads"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "Between 19 and 26 lines",
+            "note": [
+                "The undertext runs parallel to the overtext",
+                "Each side preserves between 19 and 26 lines of text, 6 mm apart and arranged in a single column",
+                "A single folio of Sin. gr. 966 corresponds to a single folio of the original manuscript, suggesting that the original manuscript was of similar dimensions: approximately 175x120 mm (oblong in height). The Schriftspiegel is approximately 135x90 mm, with margins measuring 20 mm (outer), 15 mm (inner), 30 mm (lower) and 20 mm (upper) (f. 71r)",
+                "Prickings are still visible in the margins (e.g. fol. 95), elongated in shape and likely made with a penknife. The scheme of ruled lines which support the writing corresponds to Leroy’s index X. This kind of ruling is often found in manuscripts written in Salento (Southern Italy)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16q49",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 11th - early 12th c. ",
+            "iso": {
+                "not_before": "1051",
+                "not_after": "1150"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Southern Italy (Salento)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 71, 84, 65, 92, 89, 68, 81, 78, 95, 76, 101, 90, 91, 96, 73, 102, 55, 70, 77, 50, 51, 72, 63, 62, 53, 66, 100, 97, 67, 48, 87, 88, 99, 64, 69, 98, 93, 94, 83, 60, 75, 74, 57, 82, 79, 54, 61, 52, 80, 85, 49, 56, 47, 86 (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Sinai Greek NF M 21, ff. 4-7 contains parts of this same text"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Upper (younger) layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Seven quires can be reconstructed. Quire 1: ff. 71, 84, 65, 92, 89, 68, 81, 78 (complete); Quire 2: ff. 95, 76, 101, 90, 91, 96, 73, 102 (complete, with quire mark on f. 95r); Quire 3: ff. 55, 70, 77, 50, 51, 72, 63, 62 (complete); Quire 4: ff. 53, 66, 100, 97, 67, 48 (quire mark on f. 53r. Third bifolio is missing); Quire 5: ff. 87, 88, 99, 64, 69, 98, 93, 94 (complete, with quire mark on f. 87r); Quire 6: ff. 83, 60, 75, 74, 57, 82 (quire mark on f. 83r. Central bifolio is missing); Quire 7: ff. 79, 54, 61, 52, 80, 85, 49, 56, 47, 86 (complete, with quire mark on f. 79r) (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Ernst Gamillscheg, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: G. Rossetto, Greek Palimpsests at Saint Catherine's Monastery (Sinai): Three Euchologia as Case Studies, Vienna 2022 | Typikon editions used to compare the text are: Mateos, J. (ed.), Le typicon de la Grande Église. ms. Saint-Croix no. 40, Xe siècle, vol. 1, Le cycle des douze mois, Orientalia Christiana Analecta 165 (Rome, 1962) ; idem. vol. 2, Le cycle des fêtes mobiles, Orientalia Christiana Analecta 166 (Rome, 1963) ; Arranz, M., Le typicon du Monastère du Saint Sauveur à Messine, Codex Messinensis Gr. 115 A.D. 1131, introduction, texte critique, and notes by M. Arranz SJ, Orientalia Christiana Analecta 185 (Rome, 1969) ; Papadopulos-Kerameus, A., Ἀναλέκτα Ἱεροσολυμιτικῆς Σταχυολογίας, vols. 1-4 (St. Petersburg, 1891-1898) ; Dmitrievskij, A., Opisanie liturgičeskichă rukopisej, chranjaščichsja vă bibliotekachă Pravoslavnago Vostoka, I: Τυπικά, Kiev 1895 ; Dmitrievskij, A., Opisanie liturgičeskichă rukopisej, chranjaščichsja vă bibliotekachă Pravoslavnago Vostoka, III: Τυπικά 2, Petrograd 1917"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cz3pr7"
+    ]
+}

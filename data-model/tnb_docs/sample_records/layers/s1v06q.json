@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1v06q",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 24, Undertext (Greek majuscule)",
+    "locus": "f. 27",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Strongly sloping cursive majuscule, Sinaitic style, similar to the hand of the Greek undertext of fol. 17 to 24. Correct orthography. No accents and breathings"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "23 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1h112",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Sinai",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 27v, 27r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Giulia Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rr2nnf"
+    ]
+}

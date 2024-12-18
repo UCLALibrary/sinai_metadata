@@ -1,0 +1,39 @@
+{
+    "ark": "ark:/21198/s1cp9d",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 14, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1r, 2v",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11q20",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1sb4fr7"
+    ]
+}

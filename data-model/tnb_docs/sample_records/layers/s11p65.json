@@ -1,0 +1,87 @@
+{
+    "ark": "ark:/21198/s11p65",
+    "reconstruction": false,
+    "label": "Sinai Greek 966, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Small, upright minuscule (style rectangulaire aplati ou écrasé)"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown",
+                "yellow"
+            ],
+            "note": [
+                "Occasional words highlighted in yellow"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1v95f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "12th c. ",
+            "iso": {
+                "not_before": "1101",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Southern Italy (Salento)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative bars"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Previous catalogs dated this manuscript to the 13th-14th c. CE"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cz3pr7"
+    ]
+}

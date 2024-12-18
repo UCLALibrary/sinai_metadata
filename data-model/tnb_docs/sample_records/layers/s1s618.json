@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s1s618",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 48, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kt07",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "14th c. ",
+            "iso": {
+                "not_before": "1301",
+                "not_after": "1400"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1jm2s61"
+    ]
+}

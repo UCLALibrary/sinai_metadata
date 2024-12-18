@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1xd1k",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 63, Undertext (Estrangela)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "26 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kd7r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Probably 1r-1v, since the end of 1v does not seem to run on to the top of 1r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "British Library, Add. 14703 preserves another version of this text"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Y. Tabit, Beth-Gazo maronite, Add. 14.703 (XII-XIII s.): Chants pour la Mère de Dieu, Collection Sources Liturgiques Maronites 2 (L'Institut de Liturgie à l'Université Saint-Esprit de Kaslik: 2001)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v4146r"
+    ]
+}

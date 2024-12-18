@@ -1,0 +1,52 @@
+{
+    "ark": "ark:/21198/s1ng9t",
+    "reconstruction": false,
+    "label": "Sinai Greek NF M 90, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Diacritics in red"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1g37q",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c. ",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b289w3"
+    ]
+}

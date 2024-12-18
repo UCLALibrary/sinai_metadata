@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s1d928",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF X 17, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bm2r",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece (f. 1r)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gf2t29"
+    ]
+}

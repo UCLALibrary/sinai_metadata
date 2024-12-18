@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s1r90m",
+    "reconstruction": false,
+    "label": "Sinai Syriac 216, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jw91",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Zoomorphic decorations throughout, stylized bird figures, beginning f. 48v; geometric decorations throughout, beginning f. 124v | Geometric headpieces and minor headpieces throughout, beginning on f. 8r; repeating geometric pattern with tailends, f. 32r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gq823p"
+    ]
+}

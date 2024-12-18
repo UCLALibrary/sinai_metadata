@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1kk97",
+    "reconstruction": false,
+    "label": "Sinai Greek 960, Undertext (Perlschrift)",
+    "locus": "ff. 9–50, 51, 51a, 52–90, 119–124, 148–154",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "perlschrift",
+                    "label": "Perlschrift",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Small and elegant upright minuscule, conforming with the “Perlschrift” style. The writing runs across the ruled lines. The first letter of each sticheron is written in epigraphic majuscule and located outside the Schriftspiegel. Initials and rubrics are written in red. The margins are sometimes used by the scribe to add musical and liturgical information, such as the indication of echos",
+                "The musical notation is neumatic and corresponds to a stage between Coislin IV and Coislin V (see Floros 1970), which suggests that the undertext was copied in the second half of the 11th c."
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "19-20 lines",
+            "note": [
+                "The undertext runs parallel to the overtext",
+                "Each side preserves 19–20 lines of text (the distance between the lines is 6 mm), which are arranged in one column",
+                "A single folio of Sin. gr. 960 corresponds to a single folio of the original manuscript, and thus the original manuscript was probably of similar dimensions, approximately 160x150 mm. The Schriftspiegel is approximately 130x85 mm. The outer margin measures 35 mm and the lower, 30 mm (f. 21r)",
+                "Prickings are still visible in the margins where there is little trimming (e.g. fol. 13 and 109), their shape elongated rather than round and probably made with a penknife. Ruled lines correspond to Sautel-Leroy type 22C1b"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17m36",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "2nd half 11th c. ",
+            "iso": {
+                "not_before": "1051",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 151, 79, 81, 26, 19, 22, 78, 82, 16, 10, 15, 29, 39, 154, 49, 84, 89, 149, 153, 150(?)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Since the overtext runs so precisely over the undertext, and since the latter has been well erased, the lower layer is particularly hard to recover. The text on fols. 10, 15, 16, 19, 22, 26, 29, 39, 49, 78, 79, 81, 82, 84, 89, 149, 150, 151, 153, 154 has so far been identified"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This same undertext is also found in Sinai Greek NF M 11 and Sinai Greek NF M 22"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: G. Rossetto, Greek Palimpsests at Saint Catherine's Monastery (Sinai): Three Euchologia as Case Studies, Vienna 2022 ; SAV = Chr. Troelsgård, A List of Sticheron Call-Numbers of the Standard Abridged Version of the Sticherarion. Part I (The Cycle of the Twelve Months). Cahiers de l’Institut du Moyen-Âge Grec et Latin 74 (2003) 3–20 ; Vind. Theol. gr. 136 = G. Wolfram, Sticherarium antiquum Vindobonense: Codex theol. gr. 136 Bibliothecae Nationalis Austriacae phototypice depictus. Pars principalis & Pars suppletoria. Vienna 1987 ; Floros 1970, Universale Neumenkunde. I–III. Kassel 1970"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1hm5r33"
+    ]
+}
