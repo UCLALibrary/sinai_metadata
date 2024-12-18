@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s11950",
+    "reconstruction": false,
+    "label": "Sayings of the Desert Fathers",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1w89x"
+            },
+            "locus": "ff. 1r-1v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s16p73"
+    ]
+}

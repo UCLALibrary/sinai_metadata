@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1pd69",
+    "reconstruction": false,
+    "label": "Oktoechos for the ordinary days (Parakletike)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tg7m"
+            },
+            "alt_title": "Oktoechos for the ordinary days (Parakletike)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1vs71"
+    ]
+}

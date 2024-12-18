@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1b37g",
+    "reconstruction": false,
+    "label": "Psalter (Codex Armeniacus rescriptus)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1d886"
+            },
+            "alt_title": "Psalter (Codex Armeniacus rescriptus)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1hg9k"
+    ]
+}

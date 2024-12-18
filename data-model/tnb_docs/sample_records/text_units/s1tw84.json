@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1tw84",
+    "reconstruction": false,
+    "label": "The Great Pandectes by St. Nicon",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1z885"
+            },
+            "alt_title": "The Great Pandectes by St. Nicon",
+            "locus": "ff. 1r-327v",
+            "note": [
+                "Second part beginning with Discourse 34 and ending with discourse 63"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11903"
+    ]
+}

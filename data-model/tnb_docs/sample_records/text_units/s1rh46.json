@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1rh46",
+    "reconstruction": false,
+    "label": "Troparion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vc88"
+            },
+            "locus": "ff. 1r-564r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xw69"
+    ]
+}

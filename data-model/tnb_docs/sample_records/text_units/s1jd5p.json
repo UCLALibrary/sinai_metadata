@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1jd5p",
+    "reconstruction": false,
+    "label": "Euchologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tp4j"
+            },
+            "locus": "ff. 2r-79br"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1qs51"
+    ]
+}

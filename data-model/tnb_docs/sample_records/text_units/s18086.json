@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s18086",
+    "reconstruction": false,
+    "label": "Lectionary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "locus": "ff. 1r-127v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fc8j"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1rh3t",
+    "reconstruction": false,
+    "label": "Paterikon",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Paterikon",
+                "genre": [
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xw5x"
+    ]
+}

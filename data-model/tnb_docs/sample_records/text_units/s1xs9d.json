@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1xs9d",
+    "reconstruction": false,
+    "label": "St. Antiochus: Pandectes",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1gp4f"
+            },
+            "alt_title": "St. Antiochus: Pandectes",
+            "locus": "ff. 1r-224v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1461c"
+    ]
+}

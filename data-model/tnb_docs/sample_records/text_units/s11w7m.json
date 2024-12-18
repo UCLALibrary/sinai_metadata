@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s11w7m",
+    "reconstruction": false,
+    "label": "Four Gospels, divided according to the readings of the Greek Calendar",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels, divided according to the readings of the Greek Calendar",
+            "locus": "ff. 3r-118v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1788n"
+    ]
+}

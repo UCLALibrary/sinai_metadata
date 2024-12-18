@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1q37w",
+    "reconstruction": false,
+    "label": "Menologion (9 Ilūl - 12 Tishrīn II)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (9 Ilūl - 12 Tishrīn II)",
+            "locus": "ff. 2r-190v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1wg8m"
+    ]
+}

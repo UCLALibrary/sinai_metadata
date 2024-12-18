@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1m94w",
+    "reconstruction": false,
+    "label": "Menologion. Lives of Saints for month of Ilul (September)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. Lives of Saints for month of Ilul (September)",
+            "locus": "ff. 1r-213v",
+            "note": [
+                "Menologion. Lives of Saints for month of Ilul (September), beginning on the 21st with the Prophet Jonas and ending on the 30th with Gregory Bishop of Armenia"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1sp60"
+    ]
+}

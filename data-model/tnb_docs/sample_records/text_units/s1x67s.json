@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1x67s",
+    "reconstruction": false,
+    "label": "Liturgical collection",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Liturgical collection",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13p6s"
+    ]
+}

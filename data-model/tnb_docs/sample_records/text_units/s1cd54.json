@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1cd54",
+    "reconstruction": false,
+    "label": "Services",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        },
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Services",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-454r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1js8m"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1w095",
+    "reconstruction": false,
+    "label": "Lives of Egyptian Fathers",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of Egyptian Fathers",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    },
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-107v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12d0f"
+    ]
+}

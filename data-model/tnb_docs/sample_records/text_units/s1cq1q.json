@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1cq1q",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Gospels of Matthew, Mark, Luke, and John",
+            "locus": "ff. 2r-108v",
+            "note": [
+                "Each Gospel is preceded by a table of pericopes"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1k334"
+    ]
+}

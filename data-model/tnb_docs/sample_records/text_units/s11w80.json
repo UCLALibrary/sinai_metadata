@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s11w80",
+    "reconstruction": false,
+    "label": "Life of St. John Chrysostom written by George Metropolitan of Alexandria",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Life of St. John Chrysostom written by George Metropolitan of Alexandria",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 2v-276r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17891"
+    ]
+}

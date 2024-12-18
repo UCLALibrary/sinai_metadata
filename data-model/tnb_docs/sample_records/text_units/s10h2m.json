@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s10h2m",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "locus": "ff. 1r-Back Board Inside"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s15w3b"
+    ]
+}

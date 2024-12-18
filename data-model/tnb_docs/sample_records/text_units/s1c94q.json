@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1c94q",
+    "reconstruction": false,
+    "label": "Homilies on the Gospel of St. John (Chrysostom), Part II",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n01z"
+            },
+            "alt_title": "Commentary on the Gospel of St. John by St. John Chrysostom, Part II",
+            "locus": "ff. 2v-375v",
+            "note": [
+                "Begins with discourse no. 45 and ends with no. 88"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1jp5f"
+    ]
+}

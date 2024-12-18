@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1395m",
+    "reconstruction": false,
+    "label": "Lives of Saints who lived in the Jordan desert",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of Saints who lived in the Jordan desert",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "alt_title": "Lives of the Desert Fathers",
+            "locus": "ff. 1r-5v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18p7q"
+    ]
+}

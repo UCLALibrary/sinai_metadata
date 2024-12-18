@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1836g",
+    "reconstruction": false,
+    "label": "Prayers, Holy Communion Prayer",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Prayers, Holy Communion Prayer",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 2r-28v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fg9z"
+    ]
+}

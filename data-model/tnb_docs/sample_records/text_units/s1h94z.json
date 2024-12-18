@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1h94z",
+    "reconstruction": false,
+    "label": "Troparion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vc88"
+            },
+            "locus": "ff. 1v-186v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pp5p"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s13m3z",
+    "reconstruction": false,
+    "label": "Prophetologion recited during Lent, Holy Week and feast days",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary of Gospels and Epistles",
+            "locus": "ff. 1r-232v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19328"
+    ]
+}

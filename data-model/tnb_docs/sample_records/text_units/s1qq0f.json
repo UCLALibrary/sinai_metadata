@@ -1,0 +1,38 @@
+{
+    "ark": "ark:/21198/s1qq0f",
+    "reconstruction": false,
+    "label": "Prophetologion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1j30p"
+            },
+            "locus": "ff. 2v-131r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "as_written": "بسم الاب و الابن و الرّوح القدس الاله الواحد آمين نبتدي بعون الله تعالي [sic] نكتب"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "as_written": "تَمّ كتاب النّبوات بمنّة الاله ربَّ القَوّات"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1x604"
+    ]
+}

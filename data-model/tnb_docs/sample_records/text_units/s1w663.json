@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1w663",
+    "reconstruction": false,
+    "label": "Acts",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary of Acts and Epistles",
+            "locus": "ff. 1r-254r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12k7t"
+    ]
+}

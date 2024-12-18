@@ -1,0 +1,41 @@
+{
+    "ark": "ark:/21198/s1vq0p",
+    "reconstruction": false,
+    "label": "Hymns for the Feasts",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Hymns for the Feasts",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    },
+                    {
+                        "id": "hymnals",
+                        "label": "Hymnals"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-96v"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Includes list with the Feasts of the whole year"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12323"
+    ]
+}

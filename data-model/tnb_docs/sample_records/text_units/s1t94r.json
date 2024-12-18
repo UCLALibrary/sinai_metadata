@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1t94r",
+    "reconstruction": false,
+    "label": "Discourses by St. John Chrysostom (34 discourses)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Discourses by St. John Chrysostom (34 discourses)",
+                "creator": [
+                    "ark:/21198/s1x303"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 8r-368r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10p5g"
+    ]
+}

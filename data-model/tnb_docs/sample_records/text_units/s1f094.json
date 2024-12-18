@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1f094",
+    "reconstruction": false,
+    "label": "Pentekostarion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1x88v"
+            },
+            "locus": "ff. 1r-123r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1md0d"
+    ]
+}

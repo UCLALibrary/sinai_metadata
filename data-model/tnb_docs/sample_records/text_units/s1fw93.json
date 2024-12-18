@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1fw93",
+    "reconstruction": false,
+    "label": "Evangelion (Byzantine rite)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Evangelion (Byzantine rite)",
+            "locus": "ff. 2r-178v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1n90p"
+    ]
+}

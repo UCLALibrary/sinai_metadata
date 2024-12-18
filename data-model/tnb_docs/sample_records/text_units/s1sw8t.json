@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1sw8t",
+    "reconstruction": false,
+    "label": "Synaxarium. Part II, from the month of Nisan (April) to Ab (August)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium. Second part of Synaxarium from the month of Nisan (April) to Ab (August)",
+            "locus": "ff. 1r-142v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1090s"
+    ]
+}

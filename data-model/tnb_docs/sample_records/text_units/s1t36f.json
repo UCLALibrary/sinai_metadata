@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1t36f",
+    "reconstruction": false,
+    "label": "Canons of the Apostles, Oecumenical Councils and Local Synods",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Canons of the Apostles, Oecumenical Councils and Local Synods",
+                "genre": [
+                    {
+                        "id": "canon-law",
+                        "label": "Canon law"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-318r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10g75"
+    ]
+}

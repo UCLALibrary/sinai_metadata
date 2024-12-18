@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s19q2g",
+    "reconstruction": false,
+    "label": "Troparia (for the Apostles)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels",
+            "locus": "ff. 3r-237v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1h33h"
+    ]
+}

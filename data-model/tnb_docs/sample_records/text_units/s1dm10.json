@@ -1,0 +1,33 @@
+{
+    "ark": "ark:/21198/s1dm10",
+    "reconstruction": false,
+    "label": "Synaxarium, Part I,  from the months of Ilul to Shbat",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium, Part I of Synaxarium from the months of Ilul to Shbat",
+            "locus": "ff. 1r-199r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 199r",
+                    "as_written": "نجز"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1m03d"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s16w9x",
+    "reconstruction": false,
+    "label": "Dialogi quatuor‏",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vp4v"
+            },
+            "alt_title": "One hundred questions posed to the Holy Father Caesarius and the answers he gave to them, and this is the first part of the Questions, translated from Greek into clear Arabic",
+            "locus": "ff. 1r-127v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1d91w"
+    ]
+}

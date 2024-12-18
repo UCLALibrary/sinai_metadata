@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1q66j",
+    "reconstruction": false,
+    "label": "Pentekostarion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1x88v"
+            },
+            "locus": "ff. 1r-158v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1wk78"
+    ]
+}

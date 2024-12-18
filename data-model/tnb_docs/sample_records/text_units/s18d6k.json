@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s18d6k",
+    "reconstruction": false,
+    "label": "Hymns and Canons",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Hymns and Canons",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    },
+                    {
+                        "id": "hymnals",
+                        "label": "Hymnals"
+                    }
+                ]
+            },
+            "locus": "ff. 3r-88v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fw5k"
+    ]
+}

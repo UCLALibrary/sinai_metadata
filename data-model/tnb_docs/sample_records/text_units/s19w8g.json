@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s19w8g",
+    "reconstruction": false,
+    "label": "Account book",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Account book",
+                "genre": [
+                    {
+                        "id": "account-books",
+                        "label": "Account books"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-133v",
+            "note": [
+                "Consists of a record of arrival of couriers, receipt of goods and chattels, payments, some current affairs and a considerable number of treaties with the Arab tribes of Mt. Sinai"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1h91t"
+    ]
+}

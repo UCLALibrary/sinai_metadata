@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s18w7s",
+    "reconstruction": false,
+    "label": "Lectionary (Acts and Epistles)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Acts and Epistles)",
+            "locus": "ff. 2r-277v",
+            "note": [
+                "Lectionary of Acts of the Apostles, the Epistles of St. Paul and the Catholic Epistles"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1gc8v"
+    ]
+}

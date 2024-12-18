@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1x083",
+    "reconstruction": false,
+    "label": "Paradise of the Fathers",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Paradise of the Fathers",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-187v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13c8f"
+    ]
+}

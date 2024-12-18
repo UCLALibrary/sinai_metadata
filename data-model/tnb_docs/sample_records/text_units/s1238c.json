@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1238c",
+    "reconstruction": false,
+    "label": "Menologion (month of Tishrīn I)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Tishrīn I)",
+            "locus": "ff. 1r-198r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17h01"
+    ]
+}

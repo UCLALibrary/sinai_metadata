@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s19h45",
+    "reconstruction": false,
+    "label": "Ascetica and Hagiographica",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Ascetica and Hagiographica",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1gw4h"
+    ]
+}

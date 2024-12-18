@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s1z06n",
+    "reconstruction": false,
+    "label": "Lectionary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "locus": "ff. 1r-352v",
+            "note": [
+                "Gospel lectionary followed by table of Gospel readings for the year, the Canons of Ammonius of Alexandria and Eusebius of Caesarea, and tables of Gospel Concordance"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s14c7c"
+    ]
+}

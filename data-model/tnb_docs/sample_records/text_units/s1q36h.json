@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1q36h",
+    "reconstruction": false,
+    "label": "Menologion. For the months of Shbat (February), Adhar (March) and Nisan (April)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. Lives of Saints for the months of Shbat (February), Adhar (March) and Nisan (April)",
+            "locus": "ff. 1r-131v",
+            "note": [
+                "Menologion. Lives of Saints for the months of Shbat (February), Adhar (March) and Nisan (April), beginning on the 12th of Shbat with the life of St. Maletius and ending on the 30th of Nisan with the life of Jacob the Apostle"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1wg77"
+    ]
+}

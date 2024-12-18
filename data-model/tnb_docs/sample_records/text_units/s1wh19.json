@@ -1,0 +1,39 @@
+{
+    "ark": "ark:/21198/s1wh19",
+    "reconstruction": false,
+    "label": "Pentateuch",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s18w2w"
+            },
+            "locus": "ff. 1r-280v",
+            "contents": [
+                {
+                    "label": "Genesis, ff. 001r-064v"
+                },
+                {
+                    "label": "Exodus, ff. 065v-125v"
+                },
+                {
+                    "label": "Leviticus, ff. 126v-170v"
+                },
+                {
+                    "label": "Numbers, ff. 171v-229v"
+                },
+                {
+                    "label": "Deuteronomy, ff. 230v-280v"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12w21"
+    ]
+}

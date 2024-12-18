@@ -1,0 +1,33 @@
+{
+    "ark": "ark:/21198/s18h3g",
+    "reconstruction": false,
+    "label": "Psalms. Greek and Arabic",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s11c7f"
+            },
+            "alt_title": "Psalms. Greek and Arabic",
+            "locus": "Ff. 1r-206v"
+        }
+    ],
+    "features": [
+        {
+            "id": "parallel-text",
+            "label": "Parallel text"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fw46"
+    ]
+}

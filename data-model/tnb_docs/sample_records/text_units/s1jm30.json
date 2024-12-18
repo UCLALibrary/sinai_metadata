@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1jm30",
+    "reconstruction": false,
+    "label": "Homilies on John, Homily 20 (Chrysostom)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n01z"
+            },
+            "alt_title": "John Chrysostom, Commentary on John, Homily 20"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1r03n"
+    ]
+}

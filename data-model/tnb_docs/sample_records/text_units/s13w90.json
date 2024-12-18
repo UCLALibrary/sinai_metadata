@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s13w90",
+    "reconstruction": false,
+    "label": "Life of St. Gregory of Sicily | Life of Gregory the Miracle-Maker",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Life of St. Gregory of Sicily | Life of Gregory the Miracle-Maker",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 4r-79r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 79r",
+                    "as_written": "تمّت (f. 62r)؛ نجزت"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1991z"
+    ]
+}

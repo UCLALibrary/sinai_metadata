@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1rw8h",
+    "reconstruction": false,
+    "label": "Synaxarium for the whole year, preceded by an introduction",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium for the whole year, preceded by an introduction",
+            "locus": "ff. 1r-318v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1z89j"
+    ]
+}

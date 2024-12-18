@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1hh3n",
+    "reconstruction": false,
+    "label": "Excerpts from the Bible",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1q59b"
+            },
+            "alt_title": "Excerpts from the Bible",
+            "locus": "ff. 1r-8v "
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pw4c"
+    ]
+}

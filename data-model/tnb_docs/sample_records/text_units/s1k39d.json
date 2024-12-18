@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1k39d",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "alt_title": "Book of Hours",
+            "locus": "ff. 1r-18v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ms7v"
+    ]
+}

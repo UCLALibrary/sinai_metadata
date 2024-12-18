@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s1537x",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "locus": "ff. 1r-4r",
+            "note": [
+                "Begins with Luke 23"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1bg91"
+    ]
+}

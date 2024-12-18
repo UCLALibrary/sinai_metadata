@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1g92w",
+    "reconstruction": false,
+    "label": "Prophetologion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1j30p"
+            },
+            "locus": "ff. 1r-210v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1np5c"
+    ]
+}

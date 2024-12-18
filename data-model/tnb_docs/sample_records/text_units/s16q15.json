@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s16q15",
+    "reconstruction": false,
+    "label": "Typikon",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1qk5z"
+            },
+            "locus": "ff. 2r-353r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1d31t"
+    ]
+}

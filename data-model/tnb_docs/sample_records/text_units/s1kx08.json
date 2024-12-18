@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1kx08",
+    "reconstruction": false,
+    "label": "Sayings of Abba Zacharias",
+    "lang": [
+        {
+            "id": "chri1239",
+            "label": "CPA"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1w89x"
+            },
+            "alt_title": "Sayings of Abba Zacharias"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1sd0z"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s14h37",
+    "reconstruction": false,
+    "label": "Menologion (1st Ilūl - 30 Tishrīn II)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (1st Ilūl - 30 Tishrīn II)",
+            "locus": "ff. 1r-227v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19w5b"
+    ]
+}

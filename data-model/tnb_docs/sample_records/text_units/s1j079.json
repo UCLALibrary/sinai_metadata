@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1j079",
+    "reconstruction": false,
+    "label": "Homilies on the Book of Genesis (Chrysostom)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1rp59"
+            },
+            "alt_title": "Commentary on the Book of Genesis by St. John Chrysostom",
+            "locus": "ff. 1r-265v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1qc81"
+    ]
+}

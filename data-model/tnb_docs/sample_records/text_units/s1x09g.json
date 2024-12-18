@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1x09g",
+    "reconstruction": false,
+    "label": "Prayer for dead",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Prayer for dead",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-170v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13d0r"
+    ]
+}

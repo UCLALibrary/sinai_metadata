@@ -1,0 +1,47 @@
+{
+    "ark": "ark:/21198/s1pq04",
+    "reconstruction": false,
+    "label": "Commentary on the Liturgy of St. Basil",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Commentary on the Liturgy of St. Basil",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 2r-67v"
+        }
+    ],
+    "features": [
+        {
+            "id": "parallel-text",
+            "label": "Parallel text"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Parallel text, f. 48v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1w315"
+    ]
+}

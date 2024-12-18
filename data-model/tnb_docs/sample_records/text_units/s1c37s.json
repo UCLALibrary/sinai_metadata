@@ -1,0 +1,40 @@
+{
+    "ark": "ark:/21198/s1c37s",
+    "reconstruction": false,
+    "label": "Lectionary of Gospels and Epistles",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels (Pshitta)",
+            "locus": "ff. 3v-124r",
+            "contents": [
+                {
+                    "label": "Gospel of Matthew (ff. 3v–39v)"
+                },
+                {
+                    "label": "Gospel of Mark (ff. 40r–54r)"
+                },
+                {
+                    "label": "Gospel of Luke (ff. 54v–91v)"
+                },
+                {
+                    "label": "Gospel of John (ff. 92r–124r)"
+                },
+                {
+                    "label": "Concluding rubric and doxology (f. 124r)"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1jk75"
+    ]
+}

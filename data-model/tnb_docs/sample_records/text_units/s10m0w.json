@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s10m0w",
+    "reconstruction": false,
+    "label": "Lectionary (Gospels), Acts and Epistles with commentary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Gospels), Acts and Epistles with commentary",
+            "locus": "ff. 2r-314r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s16029"
+    ]
+}

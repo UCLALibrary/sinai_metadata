@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1mh26",
+    "reconstruction": false,
+    "label": "Mimars (9) by Theodore Bishop of Harrān",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars (9) by Theodore Bishop of Harrān",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-207v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1t038"
+    ]
+}

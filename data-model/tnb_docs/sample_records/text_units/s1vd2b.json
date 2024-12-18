@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1vd2b",
+    "reconstruction": false,
+    "label": "Book of Liturgy (Euchologia)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tp4j"
+            },
+            "alt_title": "Book of Liturgy (Euchologia)",
+            "locus": "ff. 2v-243r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11s5t"
+    ]
+}

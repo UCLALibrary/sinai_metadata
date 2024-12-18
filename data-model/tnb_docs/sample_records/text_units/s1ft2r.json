@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1ft2r",
+    "reconstruction": false,
+    "label": "Maccabeans I-III",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1fk5g"
+            },
+            "alt_title": "Maccabeans I-III",
+            "locus": "ff. 1r-104v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1n912"
+    ]
+}

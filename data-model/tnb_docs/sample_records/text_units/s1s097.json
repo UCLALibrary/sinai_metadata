@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1s097",
+    "reconstruction": false,
+    "label": "Menologion (month of Hazīrān)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Hazīrān)",
+            "locus": "ff. 1r-236v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1zg9m"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "ark": "ark:/21198/s1ts9g",
+    "reconstruction": false,
+    "label": "Menologion. For the month of Kanun II (January)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. Lives of Saints for the month of Kanun II (January)",
+            "locus": "ff. 1v-271v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 1v",
+                    "as_written": "نبتدي علیٰ إسم الله و معونته نكتب"
+                }
+            ],
+            "note": [
+                "Menologion. Lives of Saints for the month of Kanun II (January), beginning on the 1st (same as Codex 160), and ending on the 16th with the death of Xenophon and his wife in the city of Ernes (Homs)"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11895"
+    ]
+}

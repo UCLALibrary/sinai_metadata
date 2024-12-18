@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1hm29",
+    "reconstruction": false,
+    "label": "Menologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "locus": "ff. 1v-278r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1q04q"
+    ]
+}
