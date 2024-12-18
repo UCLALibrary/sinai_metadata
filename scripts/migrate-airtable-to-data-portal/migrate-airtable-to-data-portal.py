@@ -1111,7 +1111,7 @@ try:
 except OSError:
     print("ERROR: Incorrect path to csv, the file may not exist in the provided directory")
 except IndexError:
-     print("Please be sure to enter both command arguments the path to the CSV you would like to transform and the type (agents or works)")
+     print(f"Please be sure to enter both command arguments the path to the CSV you would like to transform and the type {RECORD_TYPES}")
 except ValueError:
      print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
 
