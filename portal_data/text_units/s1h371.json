@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1h371",
+    "reconstruction": false,
+    "label": "Book of the Master and the Pupil by St. Thaddeus of Edessa",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Book of the Master and the Pupil by St. Thaddeus of Edessa",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 7r-193v",
+            "note": [
+                "Book of the Master and the Pupil written by St. Thaddeus of Edessa while in Mt. Sinai to a brother named Māgī al-Tufail in the form of a debate on religion and in reply to the Jews, consisting of 43 Mimars"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pg7c"
+    ]
+}

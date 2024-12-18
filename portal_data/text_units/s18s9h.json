@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s18s9h",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "locus": "ff. 1r-10v",
+            "note": [
+                "From Palm Sunday to the Feast of Pentecost"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1g61g"
+    ]
+}

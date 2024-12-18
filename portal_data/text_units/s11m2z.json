@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s11m2z",
+    "reconstruction": false,
+    "label": "Commentary on the Epistle to the Romans by St. John Chrysostom",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Commentary on the Epistle to the Romans by St. John Chrysostom",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-147v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1702m"
+    ]
+}

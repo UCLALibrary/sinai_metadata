@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1n38n",
+    "reconstruction": false,
+    "label": "Great Euchologion (Khudra)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tp4j"
+            },
+            "alt_title": "Great Euchologion (Khudra)",
+            "locus": "ff. 1r-55v",
+            "note": [
+                "Book of antiphonies and other varied selections used for services on yearly feast days"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ps63"
+    ]
+}

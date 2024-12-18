@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s13947",
+    "reconstruction": false,
+    "label": "Menologion. For the month of Kanun I (December)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. Lives of Saints for the month of Kanun I (December)",
+            "locus": "ff. 1r-152v",
+            "note": [
+                "Menologion. Lives of Saints for the month of Kanun I (December), beginning on the 5th with St. Sabas and ending on the 13th with the martyrdom of SS. Eustratius, Auxentius, Eugenius, Orestes and Mardarius"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18p6b"
+    ]
+}

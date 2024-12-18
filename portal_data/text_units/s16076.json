@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s16076",
+    "reconstruction": false,
+    "label": "The Life of Saint Martinian (part)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "The Life of Saint Martinian (part)",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "alt_title": "From the life of our father saint Martinianus",
+            "locus": "ff. 1r-9v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1cg8z"
+    ]
+}

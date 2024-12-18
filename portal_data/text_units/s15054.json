@@ -1,0 +1,33 @@
+{
+    "ark": "ark:/21198/s15054",
+    "reconstruction": false,
+    "label": "Pentateuch",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s18w2w"
+            },
+            "locus": "ff. 2r-266v",
+            "contents": [
+                {
+                    "label": "First Book of the Torah, ff. 002r-081r"
+                },
+                {
+                    "label": "The book of the exodus of the sons of Israel from Egypt, the second book of the Torah, ff. 081v-141r"
+                },
+                {
+                    "label": "The Third Book of the Torah, ff. 141v  - 178v"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1bc8m"
+    ]
+}

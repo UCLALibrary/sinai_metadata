@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1gm1m",
+    "reconstruction": false,
+    "label": "Menologion for the month of November",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion for the month of November",
+            "locus": "ff. 1r-209r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1p02n"
+    ]
+}

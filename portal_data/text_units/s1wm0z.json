@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1wm0z",
+    "reconstruction": false,
+    "label": "Synaxarium, Part I",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium, Part I",
+            "locus": "ff. 1v-206v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13311"
+    ]
+}

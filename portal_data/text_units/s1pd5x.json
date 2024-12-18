@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1pd5x",
+    "reconstruction": false,
+    "label": "Kings",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1q307"
+            },
+            "alt_title": "Book of Kings",
+            "locus": "ff. 1r-97v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1vs6n"
+    ]
+}

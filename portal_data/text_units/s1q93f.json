@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1q93f",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary (Gospels), with commentary",
+            "locus": "ff. 1v-392v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1wp45"
+    ]
+}

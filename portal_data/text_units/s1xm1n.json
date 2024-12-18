@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1xm1n",
+    "reconstruction": false,
+    "label": "Menologion for the month of Ab ",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion for the month of Ab ",
+            "locus": "ff. 1r-201r",
+            "note": [
+                "Menologion written by Eusebius for the month of Ab, beginning on the 4th with the martyrdom of the Seven Saints of Ephesus and ending on the 31st by the Mimar of St. Germanus"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1402p"
+    ]
+}

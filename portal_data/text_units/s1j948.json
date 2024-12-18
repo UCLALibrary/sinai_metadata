@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1j948",
+    "reconstruction": false,
+    "label": "Lives of the Saints",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of the Saints",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-8v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1qp6c"
+    ]
+}

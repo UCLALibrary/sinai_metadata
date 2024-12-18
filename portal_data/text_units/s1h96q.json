@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1h96q",
+    "reconstruction": false,
+    "label": "Book of Samuel I and part of II",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary of New Testament",
+            "locus": "ff. 1br-38v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pp8t"
+    ]
+}

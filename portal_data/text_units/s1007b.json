@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1007b",
+    "reconstruction": false,
+    "label": "Homilies on the Gospel of St. John (Chrysostom)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n01z"
+            },
+            "alt_title": "Commentary on the Gospel of St. John by St. John Chrysostom",
+            "locus": "ff. 1r-99v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s15c9f"
+    ]
+}

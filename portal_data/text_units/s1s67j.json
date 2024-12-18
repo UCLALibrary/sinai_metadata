@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1s67j",
+    "reconstruction": false,
+    "label": "Menologion (month of Ilūl)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Ilūl)",
+            "locus": "ff. 3v-110v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1zk7w"
+    ]
+}

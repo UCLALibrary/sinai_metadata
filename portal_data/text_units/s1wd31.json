@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1wd31",
+    "reconstruction": false,
+    "label": "Sticherarion and Canons",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1ms4q"
+            },
+            "alt_title": "Sticherarion and Canons",
+            "locus": "ff. 1v- 144v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12s4r"
+    ]
+}

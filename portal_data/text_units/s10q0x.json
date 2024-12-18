@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s10q0x",
+    "reconstruction": false,
+    "label": "Mimars of St. Isaac the Syrian",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars of St. Isaac the Syrian",
+                "creator": [
+                    "ark:/21198/s19888"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-329r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1631z"
+    ]
+}

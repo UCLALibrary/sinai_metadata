@@ -1,0 +1,41 @@
+{
+    "ark": "ark:/21198/s1gw81",
+    "reconstruction": false,
+    "label": "Life of St. Pachomius and some of his disciples",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Life of St. Pachomius and some of his disciples",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 3r-102v"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Includes a note on the conversion of dates of different calendars"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pd01"
+    ]
+}

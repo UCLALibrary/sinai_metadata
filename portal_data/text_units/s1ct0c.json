@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1ct0c",
+    "reconstruction": false,
+    "label": "Menologion (1st Shabāt - 29 Ab)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (1st Shabāt - 29 Ab)",
+            "locus": "ff. 1r-312v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1k61d"
+    ]
+}

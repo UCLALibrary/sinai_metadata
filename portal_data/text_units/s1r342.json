@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1r342",
+    "reconstruction": false,
+    "label": "Lectionary (Gospels and Epistles)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Gospels and Epistles)",
+            "locus": "ff. 1r-303r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xg7j"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "ark": "ark:/21198/s1hh1w",
+    "reconstruction": false,
+    "label": "Lectionary (Epistles)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Epistles)",
+            "locus": "ff. 1r-125v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 117r",
+                    "as_written": "نبتدي بمعونة الله و حسن توفيقه نكتب"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pw30"
+    ]
+}

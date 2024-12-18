@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1gd4p",
+    "reconstruction": false,
+    "label": "Lectionary of Acts and Epistles",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels",
+            "locus": "ff. 1r-178v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1nw42"
+    ]
+}

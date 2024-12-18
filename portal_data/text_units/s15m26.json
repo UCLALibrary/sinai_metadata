@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s15m26",
+    "reconstruction": false,
+    "label": "Psalterium Demetrii Sinaitici",
+    "lang": [
+        {
+            "id": "chur1257",
+            "label": "Church Slavonic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1d886"
+            },
+            "alt_title": "Psalterium Demetrii Sinaitici"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1c037"
+    ]
+}

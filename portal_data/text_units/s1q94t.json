@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1q94t",
+    "reconstruction": false,
+    "label": "Canons of Oecumenical and Local Councils",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Canons of Oecumenical and Local Councils",
+                "genre": [
+                    {
+                        "id": "canon-law",
+                        "label": "Canon law"
+                    }
+                ]
+            },
+            "locus": "ff. 2r-162v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1wp6x"
+    ]
+}

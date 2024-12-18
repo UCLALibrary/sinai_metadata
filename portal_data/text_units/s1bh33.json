@@ -1,0 +1,30 @@
+{
+    "ark": "ark:/21198/s1bh33",
+    "reconstruction": false,
+    "label": "Unidentified",
+    "lang": [
+        {
+            "id": "chri1239",
+            "label": "CPA"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Unidentified"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Large capital letters in margin and blank lines used for separating paragraphs"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1hw56"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s11h39",
+    "reconstruction": false,
+    "label": "Menologion (1st Ilūl - 31 Ab)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (1st Ilūl - 31 Ab)",
+            "locus": "ff. 1r-295v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17030"
+    ]
+}

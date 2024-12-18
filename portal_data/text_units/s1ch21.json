@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s1ch21",
+    "reconstruction": false,
+    "label": "Old Testament",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dk55"
+            },
+            "locus": "ff. 1v-341r",
+            "note": [
+                "Books of Isaiah, Hosea, Joel, Amos, Obadiah, Jonas, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah. Malachi, Jeremiah, the Lamentations of Jeremiah, Ezekiel and Daniel. Also story of Susanna, according to the Septuagint."
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1jw2c"
+    ]
+}

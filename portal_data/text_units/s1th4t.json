@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1th4t",
+    "reconstruction": false,
+    "label": "Alexander of Cyprus, On the Invention of the Cross",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Alexander of Cyprus, On the Invention of the Cross",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10w5j"
+    ]
+}

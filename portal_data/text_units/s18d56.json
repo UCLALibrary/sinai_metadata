@@ -1,0 +1,41 @@
+{
+    "ark": "ark:/21198/s18d56",
+    "reconstruction": false,
+    "label": "Four Gospels (Pshitta)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1030q"
+            },
+            "alt_title": "Triodion II",
+            "locus": "ff. 1r-212v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 1r",
+                    "as_written": "Incipit mut.: ܟܕ ܐܬܡ̇ܢܥܬ. ܕܬܥܘܠ ܒܖ̈ܚܡܝܟ. ܠܡܕܝܢܬܐ ܩܕܝܫܬܐ ܡܪܐ ܕܟܘܠܐ."
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 214v",
+                    "as_written": "Desinit: ܘܡܫ̈ܟܢܝ ܐܢܬܘܢ ܐܣܝܘܬܐ ܠܟܠܗܘܢ ܡܗܝ̈ܡܢܐ܀"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fs79"
+    ]
+}

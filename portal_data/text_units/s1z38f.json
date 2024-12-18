@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1z38f",
+    "reconstruction": false,
+    "label": "Psalms with a translation in Arabic",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s11c7f"
+            },
+            "alt_title": "Psalms with a translation in Arabic",
+            "locus": "Ff. 1r-116v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s14g95"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "ark": "ark:/21198/s11081",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s16d0p"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "ark": "ark:/21198/s12t0k",
+    "reconstruction": false,
+    "label": "Pauline Epistles",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        },
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1hg6f"
+            }
+        }
+    ],
+    "features": [
+        {
+            "id": "parallel-text",
+            "label": "Parallel text"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Bilingual Greek and Arabic in two columns"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18620"
+    ]
+}

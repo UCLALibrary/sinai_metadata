@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1bd5t",
+    "reconstruction": false,
+    "label": "Octoechos",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tg7m"
+            },
+            "locus": "ff. 1r-218r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1hs6j"
+    ]
+}

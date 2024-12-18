@@ -1,0 +1,30 @@
+{
+    "ark": "ark:/21198/s1pq1h",
+    "reconstruction": false,
+    "label": "Unidentified",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Unidentified"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Possibly related to contents of Georgian NF 59 (Liturgical collection)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1w33x"
+    ]
+}

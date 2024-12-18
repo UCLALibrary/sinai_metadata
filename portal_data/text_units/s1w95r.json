@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1w95r",
+    "reconstruction": false,
+    "label": "Forty-three theological discourses known as the Book of the Master and the Pupil written by St. Thaddeus of Edessa",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Forty-three theological discourses known as the Book of the Master and the Pupil written by St. Thaddeus of Edessa",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-357v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12s54"
+    ]
+}

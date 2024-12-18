@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1807t",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "copt1239",
+            "label": "Coptic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "locus": "ff. 7r-114v",
+            "note": [
+                "Horologion according to Coptic rite. Begins with Matins in Coptic and ends with Compline in Arabic. Text contains several interpolations in Coptic."
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1fg8k"
+    ]
+}

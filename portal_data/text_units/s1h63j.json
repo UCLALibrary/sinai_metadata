@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1h63j",
+    "reconstruction": false,
+    "label": "Chronicles I-II",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1ds3g"
+            },
+            "alt_title": "Chronicles I-II",
+            "locus": "ff. 1r-74v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1pk61"
+    ]
+}

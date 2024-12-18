@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s1kt07",
+    "reconstruction": false,
+    "label": "Prayers for vespers and matins",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Prayers for vespers and matins",
+                "genre": [
+                    {
+                        "id": "prayers",
+                        "label": "Prayers"
+                    },
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1s618"
+    ]
+}

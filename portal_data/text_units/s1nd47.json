@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1nd47",
+    "reconstruction": false,
+    "label": "Two religious debates between a Moslem prince and a Christian monk in presence of the Caliph",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Two religious debates between a Moslem prince and a Christian monk in presence of the Caliph",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1ar-108v",
+            "note": [
+                "Beginning of first debate lost. Second debate is between a monk (Ibrahim at-Tabarani) and a prince (Abd ar-Rahman ibn nbd al-Malik ibn Salih al-Hashimi). Subject of second debate is the sonship of Christ to God and God’s Trinity"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ts5z"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1k94k",
+    "reconstruction": false,
+    "label": "Menologion. For the months of February, March and April",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. For the months of February, March and April",
+            "locus": "ff. 1r-309v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1rs4z"
+    ]
+}

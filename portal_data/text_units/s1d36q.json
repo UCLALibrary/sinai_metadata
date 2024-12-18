@@ -1,0 +1,38 @@
+{
+    "ark": "ark:/21198/s1d36q",
+    "reconstruction": false,
+    "label": "Works of St. John Damascene",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Works of St. John Damascene",
+                "creator": [
+                    "ark:/21198/s18c7m"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-412r",
+            "note": [
+                "Treatise on Logic, followed by One Hundred discourses on the Orthodox Faith, on Nestorians, on Icons, on Jacobites, an Epistle to Cosmas his disciple, etc. by St. John Damascene"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1kg7f"
+    ]
+}

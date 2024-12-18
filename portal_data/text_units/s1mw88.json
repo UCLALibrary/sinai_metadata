@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1mw88",
+    "reconstruction": false,
+    "label": "Canons, Office of Genuflection and Prayers",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vc88"
+            },
+            "alt_title": "Canons, Office of Genuflection and Prayers",
+            "locus": "ff. 1r-179r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1t899"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1x952",
+    "reconstruction": false,
+    "label": "Synaxarion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "locus": "ff. 1br-191v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13p75"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1336x",
+    "reconstruction": false,
+    "label": "Canons",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Canons",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 2v-70v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18g7n"
+    ]
+}

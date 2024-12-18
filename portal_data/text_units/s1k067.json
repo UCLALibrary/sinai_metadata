@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s1k067",
+    "reconstruction": false,
+    "label": "Mimars of St. Gregory the Theologian",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars of St. Gregory the Theologian",
+                "creator": [
+                    "ark:/21198/s12s3c"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                ]
+            },
+            "locus": "ff. 2r-511r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1rc9q"
+    ]
+}

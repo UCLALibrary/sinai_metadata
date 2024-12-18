@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1kd37",
+    "reconstruction": false,
+    "label": "Anthologion, second part only",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1mg6c"
+            },
+            "alt_title": "Anthologion, second part only",
+            "locus": "ff. 1r-147r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1rs5b"
+    ]
+}

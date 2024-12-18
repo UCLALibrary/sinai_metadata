@@ -1,0 +1,36 @@
+{
+    "ark": "ark:/21198/s1qq26",
+    "reconstruction": false,
+    "label": "Index of Lections",
+    "lang": [
+        {
+            "id": "chri1239",
+            "label": "CPA"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Index of Lections",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Fol. 2v has the beginnings of an index of lections in CPA"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1x32v"
+    ]
+}
