@@ -1127,6 +1127,11 @@ path_to_paracontents_csv = input("Please input a path to the CSV containing the 
 # path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
 if path_to_paracontents_csv:
     paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
+    paracontents_missing_col = check_csv_columns_against_standard_list('para_fields.txt', "Paracontents", paracontents_table.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+    user_response = input("Please press enter to continue with the migration script")
+    for col in paracontents_missing_col:
+        paracontents_table[col] = pd.Series(dtype='string')
 else:
     paracontents_table = None
 
@@ -1135,6 +1140,7 @@ if record_type == "text_units":
 # path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
     workwits_table = pd.read_csv(path_to_workwits_csv, index_col='ID')
     workwits_missing_col = check_csv_columns_against_standard_list('work_wit_fields.txt', "Work Witnesses", workwits_table.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
     user_response = input("Please press enter to continue with the migration script")
     for col in workwits_missing_col:
         workwits_table[col] = pd.Series(dtype='string')
