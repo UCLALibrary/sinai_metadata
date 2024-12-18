@@ -9,7 +9,8 @@ Script Label
 Script ID
 Writing System
 As Written
-Translation	Notes
+Translation
+Notes
 Associated Name ARKs
 Associated Name Value
 Associated Name As Written
