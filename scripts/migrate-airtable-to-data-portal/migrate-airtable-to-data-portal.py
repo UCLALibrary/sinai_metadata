@@ -1165,17 +1165,16 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == 'y'
 
 # for each row, create a JSON file of the corresponding record type
-
-# Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
-out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
-if out_dir == "":
-    out_dir = f"out/{record_type}/"
-if not os.path.exists(out_dir):
-    os.makedirs(out_dir)
 if accept_input:
     # add in the missing columns to the DataFrame as empty
     for col in missing_columns:
         csv_file[col] = pd.Series(dtype='string')
+    # Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
+    out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
+    if out_dir == "":
+        out_dir = f"out/{record_type}/"
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
     for i, row in csv_file.iterrows():
         record = transform_row_to_json(row, record_type)
         # print(type(row))
