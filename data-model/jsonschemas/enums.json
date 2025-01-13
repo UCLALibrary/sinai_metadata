@@ -257,33 +257,102 @@
         ]
       },
       "place_types": {
+        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
         "enum": [
-          "building",
-          "church",
-          "composite",
-          "designated-space",
-          "diocese",
-          "fortification",
-          "island",
-          "madrasa",
-          "monastery",
-          "mosque",
-          "mountain",
-          "natural feature",
-          "open-water",
-          "parish",
-          "province",
-          "quarter",
-          "region",
-          "river",
-          "settlement",
-          "state",
-          "synagogue",
-          "temple",
-          "unknown"
-        ],
-        "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
-      },
+            {
+                "id": "building",
+                "label": "Building"
+            },
+            {
+                "id": "church",
+                "label": "Church"
+            },
+            {
+                "id": "composite",
+                "label": "Composite"
+            },
+            {
+                "id": "designated-space",
+                "label": "Designated Space"
+            },
+            {
+                "id": "diocese",
+                "label": "Diocese"
+            },
+            {
+                "id": "fortification",
+                "label": "Fortification"
+            },
+            {
+                "id": "island",
+                "label": "Island"
+            },
+            {
+                "id": "madrasa",
+                "label": "Madrasa"
+            },
+            {
+                "id": "monastery",
+                "label": "Monastery"
+            },
+            {
+                "id": "mosque",
+                "label": "Mosque"
+            },
+            {
+                "id": "mountain",
+                "label": "Mountain"
+            },
+            {
+                "id": "natural feature",
+                "label": "Natural Feature"
+            },
+            {
+                "id": "open-water",
+                "label": "Open Water"
+            },
+            {
+                "id": "parish",
+                "label": "Parish"
+            },
+            {
+                "id": "province",
+                "label": "Province"
+            },
+            {
+                "id": "quarter",
+                "label": "Quarter"
+            },
+            {
+                "id": "region",
+                "label": "Region"
+            },
+            {
+                "id": "river",
+                "label": "River"
+            },
+            {
+                "id": "settlement",
+                "label": "Settlement"
+            },
+            {
+                "id": "state",
+                "label": "State"
+            },
+            {
+                "id": "synagogue",
+                "label": "Synagogue"
+            },
+            {
+                "id": "temple",
+                "label": "Temple"
+            },
+            {
+                "id": "unknown",
+                "label": "Unknown"
+            }
+        ]
+    },
       "refno_source_types": {
         "enum": [
           "CPG",
