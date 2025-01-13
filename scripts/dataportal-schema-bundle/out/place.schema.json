@@ -12,31 +12,116 @@
     },
     "type": {
       "enum": [
-        "building",
-        "church",
-        "composite",
-        "designated-space",
-        "diocese",
-        "fortification",
-        "island",
-        "madrasa",
-        "monastery",
-        "mosque",
-        "mountain",
-        "natural feature",
-        "open-water",
-        "parish",
-        "province",
-        "quarter",
-        "region",
-        "river",
-        "settlement",
-        "state",
-        "synagogue",
-        "temple",
-        "unknown"
+        {
+          "id": "building",
+          "label": "Building"
+        },
+        {
+          "id": "church",
+          "label": "Church"
+        },
+        {
+          "id": "composite",
+          "label": "Composite"
+        },
+        {
+          "id": "designated-space",
+          "label": "Designated Space"
+        },
+        {
+          "id": "diocese",
+          "label": "Diocese"
+        },
+        {
+          "id": "fortification",
+          "label": "Fortification"
+        },
+        {
+          "id": "island",
+          "label": "Island"
+        },
+        {
+          "id": "madrasa",
+          "label": "Madrasa"
+        },
+        {
+          "id": "monastery",
+          "label": "Monastery"
+        },
+        {
+          "id": "mosque",
+          "label": "Mosque"
+        },
+        {
+          "id": "mountain",
+          "label": "Mountain"
+        },
+        {
+          "id": "natural feature",
+          "label": "Natural Feature"
+        },
+        {
+          "id": "open-water",
+          "label": "Open Water"
+        },
+        {
+          "id": "parish",
+          "label": "Parish"
+        },
+        {
+          "id": "province",
+          "label": "Province"
+        },
+        {
+          "id": "quarter",
+          "label": "Quarter"
+        },
+        {
+          "id": "region",
+          "label": "Region"
+        },
+        {
+          "id": "river",
+          "label": "River"
+        },
+        {
+          "id": "settlement",
+          "label": "Settlement"
+        },
+        {
+          "id": "state",
+          "label": "State"
+        },
+        {
+          "id": "synagogue",
+          "label": "Synagogue"
+        },
+        {
+          "id": "temple",
+          "label": "Temple"
+        },
+        {
+          "id": "unknown",
+          "label": "Unknown"
+        }
       ],
-      "$comment": "Place types from https://syriaca.org/documentation/place-types.html"
+      "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "unevaluatedProperties": false
     },
     "pref_name": {
       "type": "string",
@@ -99,6 +184,40 @@
       },
       "unevaluatedItems": false
     },
+    "refno": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "description": "A reference number in a standard reference work, such as the Corpus Clavium Graecorum (CPG)",
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "idno": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "enum": [
+              "CPG",
+              "CPL",
+              "TLG"
+            ]
+          }
+        },
+        "required": [
+          "label",
+          "idno",
+          "source"
+        ],
+        "unevaluatedProperties": false
+      },
+      "unevaluatedItems": false
+    },
     "bib": {
       "type": [
         "array",
@@ -112,8 +231,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "$comment": "Foreign key referring to the bibliographic item in the database"
+            "type": "string",
+            "format": "uuid"
           },
           "type": {
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
@@ -161,44 +280,7 @@
               "null"
             ],
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
+              "type": "string"
             },
             "unevaluatedItems": false
           }
@@ -210,7 +292,10 @@
         "if": {
           "properties": {
             "type": {
-              "const": "otherdigversion"
+              "const": {
+                "id": "otherdigversion",
+                "label": "Other Digital Version"
+              }
             }
           },
           "required": [
@@ -222,6 +307,10 @@
             "url": {
               "type": "string",
               "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "format": "uuid"
             }
           },
           "required": [
@@ -240,158 +329,67 @@
         "null"
       ],
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-        "title": "Note",
-        "description": "A prose note of a specified type",
-        "type": "object",
-        "properties": {
-          "type": {
-            "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 1
-              },
-              "label": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "required": [
-              "id",
-              "label"
-            ],
-            "unevaluatedProperties": false
-          },
-          "value": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          }
-        },
-        "required": [
-          "type",
-          "value"
-        ],
-        "unevaluatedProperties": false
+        "type": "string"
       },
       "unevaluatedItems": false
     },
-    "assoc_date": {
+    "rel_place": {
       "type": [
         "array",
         "null"
       ],
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_date.json",
-        "title": "Associated Date",
-        "description": "A date associated with an object, either attested or inferred through indirect means (paleography, etc.)",
         "type": "object",
         "allOf": [
           {
             "type": "object",
             "properties": {
-              "value": {
+              "id": {
+                "description": "A unique Archival Resource Key (ARK)",
                 "type": "string",
-                "minLength": 1
+                "pattern": "^ark:/21198/([a-z]|[0-9])+"
               },
-              "iso": {
-                "type": "object",
-                "properties": {
-                  "not_before": {
-                    "type": "string",
-                    "format": "date",
-                    "minLength": 3
-                  },
-                  "not_after": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "format": "date",
-                    "minLength": 3
-                  }
-                },
-                "required": [
-                  "not_before"
+              "source": {
+                "type": [
+                  "array",
+                  "null"
                 ],
-                "unevaluatedProperties": false
+                "items": {
+                  "type": "string"
+                },
+                "unevaluatedItems": false
               }
             },
             "required": [
-              "value",
-              "iso"
+              "id"
             ]
           }
         ],
         "properties": {
-          "type": {
-            "enum": [
-              "creation",
-              "binding",
-              "origin",
-              "purchase",
-              "birth",
-              "death",
-              "floruit",
-              "unknown"
-            ],
-            "$comment": "TBD full list of types"
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
+          "rel": {
+            "type": "array",
             "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
+              "enum": [
+                {
+                  "id": "part-of",
+                  "label": "Part Of"
+                }
+              ],
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
               "type": "object",
               "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
+                "id": {
+                  "type": "string",
+                  "minLength": 1
                 },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
+                "label": {
+                  "type": "string",
                   "minLength": 1
                 }
               },
               "required": [
-                "type",
-                "value"
+                "id",
+                "label"
               ],
               "unevaluatedProperties": false
             },
@@ -399,186 +397,7 @@
           }
         },
         "required": [
-          "type"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "assoc_name": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_name.json",
-        "title": "Associated Name",
-        "description": "A person, group, or organization entity connected with an object via a given role",
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "role": {
-            "type": "string",
-            "enum": [
-              "author",
-              "attributed-author",
-              "creator",
-              "binder",
-              "owner",
-              "unknown"
-            ]
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "role"
-        ],
-        "unevaluatedProperties": false
-      },
-      "unevaluatedItems": false
-    },
-    "assoc_place": {
-      "type": [
-        "array",
-        "null"
-      ],
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/assoc_place.json",
-        "title": "Associated Place",
-        "description": "A place entity connected with an object via a given role",
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "as_written": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1
-          },
-          "event": {
-            "type": "string",
-            "enum": [
-              "origin",
-              "previous_repository",
-              "unknown"
-            ]
-          },
-          "note": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "$schema": "https://json-schema.org/draft/2020-12/schema",
-              "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/note.json",
-              "title": "Note",
-              "description": "A prose note of a specified type",
-              "type": "object",
-              "properties": {
-                "type": {
-                  "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "minLength": 1
-                    },
-                    "label": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "label"
-                  ],
-                  "unevaluatedProperties": false
-                },
-                "value": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "minLength": 1
-                }
-              },
-              "required": [
-                "type",
-                "value"
-              ],
-              "unevaluatedProperties": false
-            },
-            "unevaluatedItems": false
-          }
-        },
-        "required": [
-          "event"
+          "rel"
         ],
         "unevaluatedProperties": false
       },
@@ -592,25 +411,31 @@
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer"
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contributor": {
+            "description": "The person responsible for the intellectual contributions made to the record via this change",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
+          },
+          "added_by": {
+            "description": "The user account responsible for editing the JSON record, likely supplied by the content management system",
+            "type": "string",
+            "minLength": 1,
+            "$comment": "TBD: Possibly revise the format or restrict to a set of ID-like values rather than entering name forms"
           },
           "timestamp": {
             "type": "string",
             "format": "date-time",
-            "minLength": 1,
-            "$comment": "possibly can set min-length based on ISO timestamp length?"
-          },
-          "comment": {
-            "type": [
-              "string",
-              "null"
-            ],
             "minLength": 1
           }
         },
         "required": [
-          "id",
+          "message",
+          "added_by",
           "timestamp"
         ],
         "unevaluatedProperties": false
