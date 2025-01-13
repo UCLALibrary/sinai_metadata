@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/ms-obj.json",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/ms_obj.json",
     "title": "Manuscript Object",
     "description": "A manuscript or codex, either real or a hypothetical reconstruction",
     "type": "object",
