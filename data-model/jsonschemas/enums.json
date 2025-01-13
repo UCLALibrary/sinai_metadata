@@ -256,6 +256,15 @@
           }
         ]
       },
+      "place_place_rels": {
+        "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
+        "enum": [
+          {
+            "id": "part-of",
+            "label": "Part Of"
+          }
+        ]
+      },
       "place_types": {
         "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term",
         "enum": [
