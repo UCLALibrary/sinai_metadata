@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1sw62",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 66, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1, 5",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Large early Christian Palestinian Aramaic"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fx01",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 5(I)v, 5(I)r, 5(II)v, 5(II)r, 1(I)r, 1(I)v, 1(II)r, 1(II)v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Difficult to identify the sequence, since the contents has been unknown. One Arabic folio consists of two original CPA folios. Roman numerals refer to the original CPA folios"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: J.-M. Sauget, Premières recherches sur l’origine et les charactéristiques des synaxaires melkites (XIe-XVIIe siècles), Subsidia Hagiographica 45 (Brussels, 1969), pp. 316-317 ; Desreumaux 2010, p. 1322, fig. 2 (photo of f. 5v) ; Müller-Kessler 2018a, pp. 63-71"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dv21gp"
+    ]
+}

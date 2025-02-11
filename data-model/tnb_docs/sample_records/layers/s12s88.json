@@ -1,0 +1,68 @@
+{
+    "ark": "ark:/21198/s12s88",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF frag 72a, Undertext (Greek minuscule)",
+    "locus": "ff. 1–2",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "14 lines, incomplete",
+            "note": [
+                "Upper, inner, and outer margins partially preserved"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qt1v",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "2nd half 10th c. ",
+            "iso": {
+                "not_before": "0951",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The bifolio 2v+1r and 1v+2r was originally a single sheet"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15d97g5"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s12d3k",
+    "reconstruction": false,
+    "label": "Menologion for the month of Ab ",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion for the month of Ab ",
+            "locus": "ff. 1r-163v",
+            "note": [
+                "Menologion for the month of Ab (August), beginning on the 7th with the martyrdom of St. Dometius and ending on the 31st with a Mimar by St. Germanus Archbishop of Constantinople on the restoration of Our Lady's Sanctuary"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17s5p"
+    ]
+}

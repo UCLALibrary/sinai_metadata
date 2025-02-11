@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1p65v",
+    "reconstruction": false,
+    "label": "Covenant of the Prophet Muhammad in Arabic",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "nucl1301",
+            "label": "Turkish"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Covenant of the Prophet Muhammad in Arabic",
+                "genre": [
+                    {
+                        "id": "charters",
+                        "label": "Charters"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-24v",
+            "note": [
+                "Copy of the Covenant of the Prophet Muhammad in Arabic, followed by a Turkish translation"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1vk6k"
+    ]
+}

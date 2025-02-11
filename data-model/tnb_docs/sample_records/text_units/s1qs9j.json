@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1qs9j",
+    "reconstruction": false,
+    "label": "Lectionary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Readings from the Old Testament, along with commentaries (from the third to the sixth reading)",
+            "locus": "ff. 1r-43v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1x905"
+    ]
+}

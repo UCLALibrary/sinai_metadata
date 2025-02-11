@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s1qd1q",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Estrangela)",
+    "locus": "ff. 18, 19, 39–44, 46, 48, 50, 51, 53, 54, 56–59, 61, 80–83",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "21 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cd6h",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 41r, 41v, 44r, 44v, 43v, 42v, 43r, 53v, 53r, 18r, 18v, 19r (col. a), 19r (col. b), 19v, 46v, 46r, 40v, 40r, 39v, 39r, 42r, 82v, 82r, 54r, 54v, 59v, 59r, 56v, 56r, 61r, 61v, 81v, 81r, 50r, 50v, 58v, 58r, 83v, 83r, 51v, 51r, 48v, 48r, 80v, 80r, 57v, 57r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1f05m",
+    "reconstruction": false,
+    "label": "Sinai Arabic 514, Undertext (Greek majuscule, Greek minuscule)",
+    "locus": "ff. 47r, stub-47v, stub+52r, 52v",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Pointed, oblong majuscule inclined to the right. The letters α and μ are in minuscule. Spelling errors. Mixed script"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "23 lines",
+            "note": [
+                "Each line contains 21 to 24 letters. Fol. 47r+stub-47v and fol. 52v+stub + 52r each represent the same side of a single folio"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1310z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Protopresbyterou Themistokleous"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bc4wfw"
+    ]
+}

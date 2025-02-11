@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1js90",
+    "reconstruction": false,
+    "label": "Sinai Greek 446, Undertext (Greek majuscule)",
+    "locus": "ff. 21–58, 60–67, 136–139",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "25 lines, maximum, reconstructed with the available data"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16t16",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Mid 9th-mid 10th c. ",
+            "iso": {
+                "not_before": "0850",
+                "not_after": "0950"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "It is not possible to reconstruct the order of all the folios; a certain sequence is fols. 138r+137v and 138v+137r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: V. Gardthausen, Catalogus codicum Graecorum Sinaiticorum (Oxford, 1886), p. 108 ; For abbreviations of the editions see H. Follieri, Initia Hymnorum Ecclesiae Graecae, Studi e testi, 211-215bis (Vatican City, 1960-1966)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13v0f52"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s17t1h",
+    "reconstruction": false,
+    "label": "Lectionary",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "locus": "ff. 1r-45v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19g9q"
+    ]
+}

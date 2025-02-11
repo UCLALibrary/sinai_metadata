@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1rm2g",
+    "reconstruction": false,
+    "label": "Psalms 3 : 7-53-6",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary of Old Testament",
+            "locus": "ff. 1r-214r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1z03h"
+    ]
+}

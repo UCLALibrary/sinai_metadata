@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1dd42",
+    "reconstruction": false,
+    "label": "Psalter",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1d886"
+            },
+            "locus": "ff. 1v-12v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1g34k"
+    ]
+}

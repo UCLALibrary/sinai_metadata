@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s11q1m",
+    "reconstruction": false,
+    "label": "Selections from the Bible with Commentary",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Selections from the Bible with Commentary",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-130v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1732n"
+    ]
+}

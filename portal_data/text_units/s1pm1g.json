@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1pm1g",
+    "reconstruction": false,
+    "label": "Mimars by St. John Chyrsostom for Lent and some feast days",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars by St. John Chyrsostom for Lent and some feast days",
+                "creator": [
+                    "ark:/21198/s1x303"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-293r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1w03w"
+    ]
+}

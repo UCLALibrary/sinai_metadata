@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s19375",
+    "reconstruction": false,
+    "label": "Liturgies for Holy Week and Resurrection",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Liturgies for Holy Week and Resurrection",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1gg98"
+    ]
+}

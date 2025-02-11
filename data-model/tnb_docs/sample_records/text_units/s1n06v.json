@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1n06v",
+    "reconstruction": false,
+    "label": "Commentary on Exodus",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Commentary on Exodus",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-160v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1tc7k"
+    ]
+}

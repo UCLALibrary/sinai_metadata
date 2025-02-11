@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1xk9b",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 23, Overtext (Serto, Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                },
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "ff. 1r-8v are written in a 9th-10th c. mixed script"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown",
+                "red"
+            ],
+            "note": [
+                "Red used for rubrics"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vw9t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c.",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1m34mxk"
+    ]
+}

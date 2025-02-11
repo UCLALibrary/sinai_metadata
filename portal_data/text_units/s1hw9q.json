@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1hw9q",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "chri1239",
+            "label": "CPA"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary of Gospels",
+            "locus": "ff. 3r-153v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1q91p"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1467n",
+    "reconstruction": false,
+    "label": "Four Gospels",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1qk5z"
+            },
+            "alt_title": "Typikon Jerusalem",
+            "locus": "ff. 6r-146r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "as_written": "و أعفوا الكاتب […]"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19k8c"
+    ]
+}

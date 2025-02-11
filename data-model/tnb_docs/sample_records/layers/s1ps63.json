@@ -1,0 +1,38 @@
+{
+    "ark": "ark:/21198/s1ps63",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF X 2, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n38n",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_name": [
+        {
+            "id": "ark:/21198/s1t598",
+            "role": {
+                "id": "scribe",
+                "label": "Scribe"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1bs0rqf"
+    ]
+}

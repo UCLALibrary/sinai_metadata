@@ -1,0 +1,65 @@
+{
+    "ark": "ark:/21198/s1gs80",
+    "reconstruction": false,
+    "label": "Sinai Greek 925, Undertext (Greek minuscule)",
+    "locus": "ff. 80v–87",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "23 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14x20",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Text identification by Sophia Kotzabassi"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Dieter Harlfinger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1s477kk"
+    ]
+}

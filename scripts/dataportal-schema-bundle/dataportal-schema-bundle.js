@@ -10,7 +10,7 @@ const schemaOutputDirectory = 'scripts/dataportal-schema-bundle/out/';
 /* CHANGE FILE NAMES AS NEEDED */
 const schemaFileNames = 
 {
-  "msObj": "ms-obj.json",
+  "msObj": "ms_obj.json",
   "layer": "layer.json",
   "textUnit": "text_unit.json",
   "agent": "agent.json",

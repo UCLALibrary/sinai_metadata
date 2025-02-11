@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s15923",
+    "reconstruction": false,
+    "label": "Sinai Slavonic NF M 3, Undertext (Undetermined (Cyrillic))",
+    "locus": "ff. 141av, 141bv, stub-141br",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cyrilic-undetermined",
+                    "label": "Undetermined (Cyrillic)",
+                    "writing_system": "Cyrillic"
+                }
+            ],
+            "note": [
+                "Cyrillic majuscule (ustav)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Number of lines of the original manuscript is undetermined"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t988",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "mid 11th c. ",
+            "iso": {
+                "not_before": "1025",
+                "not_after": "1075"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Sinai",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Only headings and initials are preserved"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Heinz Miklas"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Miklas, et al., pp. 117-131 (full description of the MedFol); 124-125, 134, 136, 138, and 140 (remarks on the Latin and Glagolitic palimpsests); 298-301 (images of MedFol); 301 (multispectral image of palimpsest-layer on f. 141av)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rb7dmv"
+    ]
+}

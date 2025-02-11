@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s1t96h",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "locus": "ff. 1v-105v"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Ff. 106-114 in Αrabic"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10p8m"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "ark": "ark:/21198/s10k6t",
+    "reconstruction": false,
+    "label": "Sinai Arabic 99, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1t64q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 211r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من نسخة يوم الجمعة ثامن وعشرين من حزيران سنة ستة آلاف وسبعمائة وأربعة وتسعين للعالم وذلك بدير طور سيناء المقدس الرب ينفع بي مقتنيه آمين ",
+            "translation": [
+                "Copying finished on Friday 28 in the month of Ḥazīrān [June] in the Year of the World [Anno Mundi] 6794, which was at Holy Mount Sinai Monastery"
+            ],
+            "assoc_place": [
+                {
+                    "value": "Holy Mount Sinai Monastery",
+                    "event": {
+                        "id": "origin",
+                        "label": "Place of Origin"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 28 Huzayran 6794 (world) :: Friday, June 28, 1285 CE",
+                    "iso": {
+                        "not_before": "1285-06-28"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1286",
+            "iso": {
+                "not_before": "1286"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Saint Catherine's Monastery (Sinai)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            },
+            "note": [
+                "F. 211r"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1g1746k"
+    ]
+}

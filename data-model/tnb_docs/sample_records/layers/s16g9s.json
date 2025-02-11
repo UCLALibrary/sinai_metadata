@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s16g9s",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF frag 68a, Undertext (Christian Palestinian Aramaic)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Christian Palestinian Aramaic"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1vh6w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "St. Catherine's Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Göttingen, Syr. 23, fol. 4r, lines 1–9 + Sinai Georgian NF frag. 68a r, lines  12–22; Göttingen, Syr. 23, fol. 4v, lines 1–9 + Sinai Georgian NF frag. 68a v, lines 12–22"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: H. Duensing, Nachlese christlich-palästinisch aramäischer Fragmente, NAWG, phil.-hist. Kl. 5, Göttingen: Vandenhoeck & Ruprecht, 1955 ; A. Desreumaux, “Ephraim in Christian Palestinian Aramaic,” in Hugoye 1 (1998), pp. 221-226 ; S. P. Brock, “Sinai: A Meeting Point of Georgian with Syriac and Christian Palestinian Aramaic,” in The Caucasus between East & West, Tbilisi: National Centre of Manuscripts, 2012, pp. 482–494 ; C. Müller-Kessler, “Piecing together Christian Palestinian Aramaic Texts under Georgian Manuscripts (St Petersburg, NLR, Syr. 16; Sinai, Georg. NF 19, 71; Oslo, Martin Schøyen MS 35, 37; Princeton, Garrett MS 24; Göttingen, Syr. 17, 19, 23, 25),” Digital Kartvelology 1 (2022), pp. 1-25 [https://adh.ge/en/digital-kartvelology/]"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1960050"
+    ]
+}

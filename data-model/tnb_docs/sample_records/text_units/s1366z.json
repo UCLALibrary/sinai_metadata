@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1366z",
+    "reconstruction": false,
+    "label": "Services and Makarismatarion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Services and Makarismatarion",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-203r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18k7p"
+    ]
+}

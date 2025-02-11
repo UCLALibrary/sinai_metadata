@@ -1,0 +1,49 @@
+{
+    "ark": "ark:/21198/s15k7r",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 7, Overtext (Christian Palestinian Aramaic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10661",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ht2zc3"
+    ]
+}

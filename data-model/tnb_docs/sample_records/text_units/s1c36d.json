@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1c36d",
+    "reconstruction": false,
+    "label": "Teaching and Homilies of St. Theodore, Abbot of the Monastery of Stodion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Teaching and Homilies of St. Theodore, Abbot of the Monastery of Stodion",
+                "creator": [
+                    "ark:/21198/s1d01s"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-214v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 214v",
+                    "as_written": "نجزت"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1jg8h"
+    ]
+}

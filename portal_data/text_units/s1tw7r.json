@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1tw7r",
+    "reconstruction": false,
+    "label": "Lectionary (Acts and Epistles)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Acts and Epistles)",
+            "locus": "ff. 58r-233r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1188s"
+    ]
+}

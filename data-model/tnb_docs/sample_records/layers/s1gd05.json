@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s1gd05",
+    "reconstruction": false,
+    "label": "Sinai Arabic 699, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1908h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Anthropomorphic decoration, f. 1v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t45bq5"
+    ]
+}

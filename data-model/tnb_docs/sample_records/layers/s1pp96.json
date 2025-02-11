@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1pp96",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 55, Undertext (Erkatagir)",
+    "locus": "f. 64",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Nonslanted"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Number of columns and lines unknown; fragment is too small to decide"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bq2s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 64r, 64v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This UTO is not part of the UTO of the Pauline Epistles with Euthalian apparatus as the script style is different and the text passage identified overlaps with that contained in the undertext of Sinai Georgian NF M 13, fol. 62; it also overlaps with the UTO Hebrews in Sinai Syriac 7"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1d50wzn"
+    ]
+}

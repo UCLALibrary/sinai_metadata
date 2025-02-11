@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s19w5b",
+    "reconstruction": false,
+    "label": "Sinai Syriac 44, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14h37",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c.",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Heavily ornamented throughout including ornate headpieces, decorated initials and possible chyrsography ff. 159v, 166r, 169r, 197r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1fv04p5"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s11s9b",
+    "reconstruction": false,
+    "label": "Mimars by St. Ephraem",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars by St. Ephraem",
+                "creator": [
+                    "ark:/21198/s1v887"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-48v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17619"
+    ]
+}

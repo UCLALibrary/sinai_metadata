@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1393v",
+    "reconstruction": false,
+    "label": "Sinai Syriac 30, Undertext (Greek majuscule)",
+    "locus": "ff. 171, 172r, 176–177, 181,182r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Contrast between thick and thin strokes; presence of serifs at the ends of thin strokes; the vertical strokes of rho, ypsilon, and phi end with a curve to the left; beta is maximized and has round curves; the oblique strokes of kappa are detached from the vertical stroke; the central strokes of mu are merged into a curve; omega has rounded curves; angle of inclination ca. 118°"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "30 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1r96w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 176r, 176v, 182r (= pastedown), 181v, 181r, 172v,  172r, 171v, 171r, 177r, 177v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The UTOs of Ps. Marcarius/Symeon, Epistula magna (ff. 171, 172, 176, 177, 181, 182) and Ephraem Syrus, Sermo asceticus (ff. 173, 174, 175, 178, 179, 180) were copied by the same scribe and were part of the same original codex"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: W. Jaeger (ed.), Two rediscovered works of ancient Christian literature: Gregory of Nyssa and Macarius (Leiden, 1954) ; A. Hjelt (ed.), Syrus sinaiticus (Helsingfors, 1930), p. 15 ; S. J. Voicu, Frammenti di un palinsesto greco di Efrem (Sinaiticus Syr. 30, f. 171ff.), Scriptorium 38 (1984), pp. 77-78"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n5hwt"
+    ]
+}

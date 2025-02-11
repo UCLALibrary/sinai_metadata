@@ -1,0 +1,95 @@
+{
+    "ark": "ark:/21198/s1zw6m",
+    "reconstruction": false,
+    "label": "Sinai Greek 930, Undertext (Kufic)",
+    "locus": "ff. 2–5, 7v, 12r, 22v, 23v, 26v, 27v, 56v, 66v, 73r, 101v, 102r, 112r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Late kufi"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "16 lines",
+            "note": [
+                "The full number of lines is not always preserved",
+                "The Arabic undertext runs at a right angle to the overtext"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mx2b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th or 11th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Africa",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 56v (1:1-?), 4r (2:9-13), 3v (2:14-17), 4v (2:18-23), 3r (2:24-3:4), 22v (4:5-7), 12r (5:23 - 6:3), 7v (6:4-?), 112r (9:28-33), 101v (10:19-?), 102r (10:?-28), 26v (11:9 - 12:4), 23v (12:15-19), 5v (12:40-47), 2r (12:48 - 13:4), 5r (13:5-10), 2v (13:11-15), 66v (13:16-19)"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "There are certainly other folios in this palimpsest with text from Exodus, where it is not sufficiently legible to be identified"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Translated by the same translator and copied by the same scribe as the UTO Genesis in this manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alexander Treiger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v9962j"
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "ark": "ark:/21198/s1g64m",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 19, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 4–5",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1469d",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 4r, 4v, 5r, 5v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler 2019, pp. 81-98 ; Müller-Kessler 2018b, pp. 69-95"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d68k3"
+    ]
+}

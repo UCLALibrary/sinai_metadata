@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1wt1d",
+    "reconstruction": false,
+    "label": "Menologion (Kānūn II)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (Kānūn II)",
+            "locus": "ff. 1v-341r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13612"
+    ]
+}

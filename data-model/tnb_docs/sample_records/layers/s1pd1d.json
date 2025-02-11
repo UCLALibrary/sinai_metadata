@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1pd1d",
+    "reconstruction": false,
+    "label": "Sinai Greek 925, Overtext (Greek minuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Change in scribal hand from ff. 80-87"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "light-brown"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1h08c",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th-11th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Dating of manuscript supplied by by Harlfinger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1s477kk"
+    ]
+}

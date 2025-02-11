@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s15w7v",
+    "reconstruction": false,
+    "label": "Canons and Theotokia",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Canons and Theotokia",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-134v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1c898"
+    ]
+}

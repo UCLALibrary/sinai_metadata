@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1x34m",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Undertext (Greek majuscule)",
+    "locus": "ff. 128–131",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Systematic use of punctuation"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns, reconstructed",
+            "lines": "ca. 16-17 lines, reconstructed"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1k40b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "late 11th-early 12th c. ",
+            "iso": {
+                "not_before": "1075",
+                "not_after": "1125"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Jerusalem",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 130v, 129r, 129v, 130r, 131v, 128r, 128v, 131r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The original manuscript had folios with text in 2 columns. Later, it was cut so that now each folio includes only part of one or the other column"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Vasilios Katsaros"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: J.-P.Migne P.G.53:21-385; 54:385-580"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

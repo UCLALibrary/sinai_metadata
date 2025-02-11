@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s12d26",
+    "reconstruction": false,
+    "label": "Epistles",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n88c"
+            },
+            "locus": "ff. 3v-267av"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17s49"
+    ]
+}

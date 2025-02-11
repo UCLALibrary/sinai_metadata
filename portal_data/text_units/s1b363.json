@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1b363",
+    "reconstruction": false,
+    "label": "Prophetologion for Lent and the Holy Week",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1j30p"
+            },
+            "alt_title": "Prophetologion for Lent and the Holy Week",
+            "locus": "ff. 2r-148v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1hg86"
+    ]
+}

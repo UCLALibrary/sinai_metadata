@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1hh28",
+    "reconstruction": false,
+    "label": "St. Nicon the Hermit: Pandectes",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1z885"
+            },
+            "alt_title": "St. Nicon the Hermit: Pandectes",
+            "locus": "ff. 1r-431v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1q02z"
+    ]
+}

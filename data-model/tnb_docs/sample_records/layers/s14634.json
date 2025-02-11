@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s14634",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 16, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1–2",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "10 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s68x",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "5th-7th c. ",
+            "iso": {
+                "not_before": "0401",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v, 2r, 2v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Sinai CPA NF frag 16, fol. 1 + St. Petersburg, Syr. no. 16, fol. 50"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Fragment belongs to Codex Sinaiticus Rescriptus; parts of this codex are now in the National Library of Russia, the Schoyen Collection, and St. Catherine's Monastery"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler 2014, pp. 263-309, esp. 272-275 ; Müller-Kessler and Sokoloff, pp. 149-152"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z18c9x9s"
+    ]
+}

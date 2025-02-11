@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1f90t",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF X 4, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17s96",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 19r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكتب الخاطئ المسكين ثاودوس غفر الله له ولوالديه ولمن ترحم عليه ولجميع بني المعمودية وذلك في يوم السبت رابع كانون تم كتبته سنة ستة الف وسبع مائه "
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1192",
+            "iso": {
+                "not_before": "1192"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative cross on f. 56v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1h726vd"
+    ]
+}

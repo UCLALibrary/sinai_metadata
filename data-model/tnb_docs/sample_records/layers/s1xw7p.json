@@ -1,0 +1,93 @@
+{
+    "ark": "ark:/21198/s1xw7p",
+    "reconstruction": false,
+    "label": "Sinai Greek 966, Undertext (Greek majuscule)",
+    "locus": "ff. 56, 61",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "27-29 lines, reconstructed",
+            "note": [
+                "Each (reconstructed) folio had 28/29 lines of text, with 8 mm between and arranged in a single column",
+                "One bifolio of Sin. gr. 966 corresponds to one original folio (61v+56r, 61r+56v), which measured approximately 255x180 mm. The Schriftspiegel is approximately 200x120 mm. The upper margin measures 15 mm (fol. 61r), the outer 40 mm (fol. 61r), the internal one 25 mm (f. 61r), and the lower 50 mm (fol. 56v)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kx21",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. CE",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 61v+56r, 61r+56v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Sinai Greek NF M 21, f. 7 contains sections of this same erased text"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Lower (older) layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Ernst Gamillscheg, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Rossetto 2023a"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1cz3pr7"
+    ]
+}

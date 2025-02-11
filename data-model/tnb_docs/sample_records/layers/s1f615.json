@@ -1,0 +1,99 @@
+{
+    "ark": "ark:/21198/s1f615",
+    "reconstruction": false,
+    "label": "Sinai Arabic 223, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17s8t",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 137v-138r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان الفراغ من تأخذ هذه القنداق المبارك يوم الجمعة المبارك في 12 تشرين الثاني يوم عيد دخول السيدة الى الهيكل من 1774 ألف وسبعمائة وأربعة وسبعين للتجسد الإلهي الموافق الى 28 شهر رمضان سنة 1188 ونرتجي كل كاهن قدس في هذه الكتاب أن يذكر في الخدمة الالهية ولوالديه ولا تنسونا من الرحمة والدعاء والمجد لله دائما ",
+            "note": [
+                "Attested dates: Friday 12 Tishrin II 1774 (incarnation) ; Friday 28 Ramadan 1188"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1774",
+            "iso": {
+                "not_before": "1774"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Elaborate head and tail pieces with gold illumination on ff. 3v, 8r, 15r, 15v, 44r, 47r, 47v, 48r, 60r, 60v, some with star and frond decorations ; Text surrounded by red and blue 3-line border"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1b583hq"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1r93r",
+    "reconstruction": false,
+    "label": "Lectionary (Gospels)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary (Gospels)",
+            "locus": "ff. 1v-434v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xp4g"
+    ]
+}

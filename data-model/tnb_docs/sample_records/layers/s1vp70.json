@@ -1,0 +1,83 @@
+{
+    "ark": "ark:/21198/s1vp70",
+    "reconstruction": false,
+    "label": "Sinai Syriac 81, Overtext (Melkite, East Syriac)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                },
+                {
+                    "id": "east-syriac",
+                    "label": "East Syriac",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Melkite with some limited East Syriac vocalization"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1p95w",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "189r-v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ]
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "195r-v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1232",
+            "iso": {
+                "not_before": "1232"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17673rw"
+    ]
+}

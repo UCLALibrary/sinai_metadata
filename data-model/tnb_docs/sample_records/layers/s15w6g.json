@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s15w6g",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 46, Undertext (Estrangela)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early Estrangela"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "9 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1tx1t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Syria or Mesopotamia",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff.1v, 1r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "There are different possibilities; the sequence above fits the years 582-3 (= fol. 1v) and 585-6 (= fol. 1r)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Brock 1995, pp. 44-47, 119-121"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zw1vxc"
+    ]
+}

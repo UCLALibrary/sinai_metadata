@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1v929",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 90, Undertext (Asomtavruli)",
+    "locus": "ff. 30–37",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Large majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "23 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1h98g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 35r+34v, 36v+37r, 36r+37v, 35v+34r; 32v+33r, 31r+30v, 31v+30r, 32r+33v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "One folio of the original has yielded four folios of the palimpsest. The eight extant folios thus constituted two folios (probably one bifolio) of the original"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "All folios are double palimpsest, with fragments from the Life of St. Febronia as the upper palimpsest layer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: L. Kajaia, Khanmet'i t'ekst'ebi, nak'veti I (Tbilisi, 1984)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb24tz"
+    ]
+}

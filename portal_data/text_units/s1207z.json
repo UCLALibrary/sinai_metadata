@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1207z",
+    "reconstruction": false,
+    "label": "Five Mimars by St. Gregory the Theologian",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Five Mimars by St. Gregory the Theologian",
+                "creator": [
+                    "ark:/21198/s12s3c"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 2v-76v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17c8p"
+    ]
+}

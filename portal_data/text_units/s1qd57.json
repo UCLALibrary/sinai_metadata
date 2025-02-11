@@ -1,0 +1,73 @@
+{
+    "ark": "ark:/21198/s1qd57",
+    "reconstruction": false,
+    "label": "Menologion (1st Ilūl - 5 Kānūn I)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Menologion (1st Ilūl - 5 Kānūn I)",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-251v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 001r",
+                    "as_written": "ܕܐܒܐ ܓܢܝܙܐ. ܘܠܥܘܫܢܗ ܕܡ݁ܘܬ܇ ܫ݂ܪܐ ܘܒ̇ܛܠ ܘܫ̇ܟܢ ܚܝ̈ܐ. ܘܩܝܡܬܐ ܠܓܢܣܢ ܒܪܚܡܬ ܐܢܫܘܬܐ ܕܝܠܗ܀"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 251v",
+                    "as_written": "ܐܢܬ ܗܘ ܗܘ ܥܘܫܢܐ: ܙܝܢܐ ܠܐ ܡܙܕܟܝܐ."
+                }
+            ],
+            "contents": [
+                {
+                    "label": "Ēlūl (September) (f. 1r)"
+                },
+                {
+                    "label": "Teshrīn I (October) (f. 85r)"
+                },
+                {
+                    "label": "Teshrīn II (November) (f. 158r)"
+                },
+                {
+                    "label": "Kānūn I (December) (f. 239r)"
+                }
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Contributor(s): Michael Wingert"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ws5k"
+    ]
+}

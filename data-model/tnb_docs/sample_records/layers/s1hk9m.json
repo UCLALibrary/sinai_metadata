@@ -1,0 +1,87 @@
+{
+    "ark": "ark:/21198/s1hk9m",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Roman))",
+    "locus": "ff. 14v, 15, 18–19v, 24r, 25, 26v, 27",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ],
+            "note": [
+                "Small cursive Insular pointed minuscule which resembles Wearmouth/Jarrow Phase II minuscule of the compact rounded / tending to pointed variety introduced in the Moore Bede in the 740s-750s. There is a dedication cross at the top left of fol. 25, a feature found in Insular scriptural manuscripts from Wearmouth-Jarrow, and their derivatives, in the 8th century. The display capitals with multi-coloured infills and backgrounds (including a slate blue typical of the Mercian Tiberius group), however, resemble Mercian Tiberius group work of c. 800 (seen in Bodleian Hatton 93). The initial E formed of a Persian senmurv (a beast incorporating animal, bird, and fish features) on fol. 15v is of oriental style, with a ‘puzzle’ body recalling Frankish work but with a 'brontosaurus beast' Mercian Tiberius group animal head, reminiscent of those found in the Barberini Gospels and the Book of Cerne around 800-830. A senmurv also appears as a zoomorphic initial in the Mercian Royal Prayerbook (BL, Royal 2.A.xx) of c. 800. The style of script recalls Mercian Tiberius group mss of c. 800 also in the pointed aspect. This mixture of influences is typical of Latin manuscripts from Sinai which were probably made there. This is probably part of the same Insular Gospel book as that found on fols. 15, 19, 25r, 26 and 27 (Brown)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "9-10 lines",
+            "note": [
+                "The remaining fragments indicate that this was a bifolium from a small format Gospel book of Insular pocket type. Its layout is somewhat squat, inclining to square rather than rectangular page layout, which is unusual in western manuscripts (but not eastern) (Brown)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15m3k",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 8th - early 9th c. ",
+            "iso": {
+                "not_before": "0775",
+                "not_after": "0825"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Sinai",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. fols. 18r/15v, col. b; 15r; 18v; 25v; 15v; 18r/15v, col. a; 19v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz, Daniela Mairhofer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: M. P. Brown, The Book of Cerne, London and Toronto: BL and University of Toronto, 1996 ; M. P. Brown, \"Writing in the Insular World,\" in A History of the Book in Britain, Vol. 1: From the Romans to the Normans, ed. R. G. Gameson, Cambridge: Cambridge University Press, 2011 ; M. P. Brown, \"Mercian Manuscripts: the implications of the Staffordshire Hoard, other recent discoveries, and the ‘new materiality’, Inaugural Lecture to the Chair of Medieval Manuscript Studies, School of Advanced Study, University of London, 22 June 2010,\" in Writing in Context: Insular Manuscript Culture, 500-1200, ed. E. Kwakkel, Leiden: Leiden University Press, 2013, pp. 23-66 ; M. P. Brown, \"The Eastwardness of Things: Relationships between the Christian Cultures of the Middle East and the Insular World,\" in The Genesis of Books: Studies in the Interactions of Words, Text, and Print in Honor of A. Doane, eds. M. Hussey, J. D. Niles, Turnhout: Brepols, 2011 ;  M. P. Brown, \"Imagining, Imaging and Experiencing the East in Insular and Anglo-Saxon Cultures: New Evidence for Contact,\" in Proceedings of the ISAS conference, Madison, 2012, ed. J. D. Niles, et al., Arizona University Press, 2016 ; M. P. Brown,\"The Bridge in the Desert: towards establishing an historical context for the newly discovered Latin manuscripts of St Catherine’s Sinai,\" Rivista degli Studi Orientali (Supplement, 2018) ; M.P. Brown, \"Were early medieval picture cycles recycled from late Antiquity? New evidence for a lost archetype of the Apollonius Pictus - an illustrated classic,\" in Illuminating the Middle Ages: Tributes to Prof. John Lowden from his Students, Friends and Colleagues, ed. A. Bovey, L. Cleaver, L. Donkin (Amsterdam: Brill, 2020), pp.4-18 ; M. P. Brown, The Latin Manuscripts of the Holy Monastery of St Catherine’s, Sinai (forthcoming) ; P. McGurk, Latin Gospel Books from A.D. 400 to A.D. 800 (Paris: Aux Editions Erasme SA, 1961) ; M. B. Parkes, The scriptorium of Wearmouth-Jarrow, Jarrow lecture, Newcastle-upon-Tyne, 1982 ; G. Boudalis, G. Rossetto, Colour Mapping of Sin. ar. NF 8 + Sin. ar. NF 28, in The Apollonius of Tyre Fragment in Arabic NF 8: Studies of a Latin Palimpsest at St Catherine’s Monastery, Sinai, eds. M. P. Brown, J. Lockhart (forthcoming)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

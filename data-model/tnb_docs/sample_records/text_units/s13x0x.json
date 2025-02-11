@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s13x0x",
+    "reconstruction": false,
+    "label": "Discourse of Mar Gregorios on the hour of death and the separation of the soul from the body",
+    "lang": [
+        {
+            "id": "chri1239",
+            "label": "CPA"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Discourse of Mar Gregorios on the hour of death and the separation of the soul from the body",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19c9p"
+    ]
+}

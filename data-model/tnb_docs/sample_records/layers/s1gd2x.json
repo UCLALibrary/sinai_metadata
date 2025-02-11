@@ -1,0 +1,62 @@
+{
+    "ark": "ark:/21198/s1gd2x",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 56, Undertext (Christian Palestinian Aramaic)",
+    "locus": "f. 30",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "CPA ancient calligraphy or formal script"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14d6b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "late 6th C. - 7th C. ?",
+            "iso": {
+                "not_before": "0550",
+                "not_after": "0750"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Possibly belongs to one of the CPA UTOs containing the Gospel of Matthew or of Mark"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17d3457"
+    ]
+}

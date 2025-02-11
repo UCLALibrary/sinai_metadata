@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s13w43",
+    "reconstruction": false,
+    "label": "Sinai Arabic 206, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xh1m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 153v-154r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ نهار الثلاثاء عاشر يوم  من آذار سنة ستة آلاف وثمانمائة واثنا عشر للعالم / نسخ بدير القديس العظيم مار يوحنا المعمدان بأرض جلجول  وهي برسم الراهب… انبا متى ابن الشيخ منصور الكركي نفعه الله بما فيه آمين / يبقا الكتاب وبتبلا في التراب يدك وكم بلى في الثري من يد … وكم أبادت صروف الدهر من أجل قد كان للعالم جماع مخطيء  (؟)",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Tuesday 10 Adhar 6812 (world)"
+                }
+            ],
+            "note": [
+                "Attested places:  Monastery of John the Baptist in Gilgal"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1304",
+            "iso": {
+                "not_before": "1304"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1001qkk"
+    ]
+}

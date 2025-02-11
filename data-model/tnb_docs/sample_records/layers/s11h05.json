@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s11h05",
+    "reconstruction": false,
+    "label": "Sinai Slavonic NF M 3, Undertext (Carolingian majuscule, Carolingian minuscule)",
+    "locus": "f. 141av",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "carolingian-maj",
+                    "label": "Carolingian majuscule",
+                    "writing_system": "Roman"
+                },
+                {
+                    "id": "carolingian-min",
+                    "label": "Carolingian minuscule",
+                    "writing_system": "Roman"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Number of lines of the original manuscript is undetermined"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ph4k",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Heinz Miklas"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Miklas, et al., pp. 117-131 (full description of the MedFol); 124-125, 134, 136, 138, and 140 (remarks on the Latin and Glagolitic palimpsests); 298-301 (images of MedFol); 301 (multispectral image of palimpsest-layer on f. 141av)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rb7dmv"
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "ark": "ark:/21198/s16g8d",
+    "reconstruction": false,
+    "label": "Sinai Syriac 197, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11382",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-anthropomorph",
+            "label": "Decoration, Anthropomorphic"
+        },
+        {
+            "id": "deco-calligraphic",
+            "label": "Decoration, Calligraphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "illumination",
+            "label": "Illumination(s)"
+        },
+        {
+            "id": "illustration",
+            "label": "Illustration(s)"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "miniature",
+            "label": "Miniature(s)"
+        },
+        {
+            "id": "signatures",
+            "label": "Signatures"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "238v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܫܬܡܠܝ ܕܝܢ ܟܬܒܐ ܗܢܐ ܕܬܡ̈ܢܝܐ ܪ̈ܟܢܐ܀ ܐܝܟ ܛܟ̈ܣܐ ܕܝܘ̈ܢܝܐ ܕܡܫܬܡܗ ܠܘܬܗܘܢ. ܐܩܛܘܐ ܝܟܘܣ. ܕܐܬܦܫ̇ܩ̇ ܚܕܬܐ ܡܢ ܠܫܢܗܘܢ ܠܣܘܪܝܝܐ ܒܥܘܕܪܢ ܡܪܢܝܫܘܥܡܫܝܚܐ. ܐܝܟ ܕܠܗܕܪܐ ܘܬܫ̄ܒܘ ܘܐܝܩܪܐ ܕܬܠܝܬܝܘܬܐ ܩܕܝܫܬܐ ܘܫܘܝܬ ܒܐܘܣܝܐ ܘܒܡ݂ܬܘܡ̇ܝܘܬܐ ܐܒܐ ܘܒܪܐ ܘܪܘܚܩ̄ܘܕ. ܚܕ ܐܠܗܐܘܬܐ ܘܡܪܘܬܐ ܕܠܗ ܣܓܕܬܐ ܘܫ̄ܘ ܘܪܘܡܪܡܐ ܡܢ ܟܠܗܝܢ ܒܪ̈ܝܬܐ ܠܥܠܡ ܥܠܡܝܢ ܐܡܝܢ ܘܐܡܝܢ܀ ܐܬܟܬܒ ܕܝܢ ܒܩܪܝܬܐ ܪܚܡܬ̤ ܠܡܫܝܚܐ ܕܝܪܐ ܕܒܘܚܙ ܡܢ ܟܘܪܝܐ ܕܛܪܝܦܘܠܝܣ ܡܕܝܢܬܐ. ܟܬܒܗ ܟܘܪܝ ܝܘܚܢܢ ܒܪ ܒܪܬܠܡܘܣ ܡܢܝ̣ܚ ܢܦܫܗ ܘܢܦ̈ܬܐ ܕܐܒܗܘܝ ܒܫܢܬܐ ܐܠܦ ܘܚ̈ܡܫܡ̈ܐܐ ܘܐܝܫ̈ܬܝܢ ܘܐܪ̈ܒܥܐ ܒܝܪ̈ܚܐ ܚܙܝ̇ܪܢ ܒ̄ܕ ܝܘ̈ܡܝܢ ܒܗ ܝܘܡ ܫܒܬ̣ܐ ܒܫ̈ܬ ܫ̈ܥܝܢ ܕܝܘܡܐ.",
+            "assoc_name": [
+                {
+                    "value": "Yuhannon bar Bartolomeos",
+                    "as_written": "ܝܘܚܢܢ ܒܪ ܒܪܬܠܡܘܣ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1252",
+            "iso": {
+                "not_before": "1252"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Heavily ornamented from ff. 1v-232v including decorative calligraphy with bird elements, ff. 98r- 154r, human figures and faces"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornamented foliation, f. 74r, zoomorphic, ff. 89v, 98r, feline, f. 47v, serpentine; anthropomorphic, between ff. 178r-232v, ornate cross motif"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Ornate elements including peacock ff. 81 v-82r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Zoomorphic headpieces, ff. 200r, 203v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1s19m41"
+    ]
+}

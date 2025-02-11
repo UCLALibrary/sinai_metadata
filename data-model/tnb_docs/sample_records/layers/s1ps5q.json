@@ -1,0 +1,73 @@
+{
+    "ark": "ark:/21198/s1ps5q",
+    "reconstruction": false,
+    "label": "Sinai Syriac 126, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "locus": "ff. 177r-215r",
+            "color": [
+                "green",
+                "yellow"
+            ],
+            "note": [
+                "Occasional rubrication in green or yellow ink"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hd40",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces and tailpieces, ff. 23r, 139v, 151v, 174r, 176v, 205v, 217r, 224r, 229v, 236v | Minor geometric decoration, ff. 10v, 22r, 26r, 26v, 29r, 29v, 34r 34v, 43r, 45v, 50v, 113v, 159r | Ornate headpiece on f. 177r, geometric motif in red, yellow, and green ink | Unfinished headpieces, ff. 4r, 87r, 89v, 107r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1g74j17"
+    ]
+}

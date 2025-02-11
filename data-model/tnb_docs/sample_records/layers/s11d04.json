@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s11d04",
+    "reconstruction": false,
+    "label": "Sinai CPA NF frag 7, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 5bis, 5–6",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1pd7p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 5v+6r, 5r+6v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Sequence is probable, based on the general sense of the passage"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler 2023, pp. 5-15"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ht2zc3"
+    ]
+}

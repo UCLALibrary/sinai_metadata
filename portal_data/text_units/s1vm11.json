@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1vm11",
+    "reconstruction": false,
+    "label": "Unidentified",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Unidentified",
+                "genre": [
+                    {
+                        "id": "poetry",
+                        "label": "Poetry"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-24r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 1v",
+                    "as_written": " حي الفؤاد إلى الأرض القدس / يا أحلى يا ليتها من بلاد الله لي وطني / او ليتني زرتها قبل الممات  عشار في السما في كرامتها يخلصني"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 24r",
+                    "as_written": "يا رب اغفر لمن هذه مقالة واغفر لمن هو بالإيمان قد أنمي"
+                }
+            ],
+            "contents": [
+                {
+                    "label": "Poem 1 (ff. 1v-4v), Incipit (f. 1b), Desinit (f. 4v)"
+                },
+                {
+                    "label": "Poem 2 (ff. 4v-10r), On the First Miracle of Saint George, Incipit (f. 4v), Desinit (f. 10r)"
+                },
+                {
+                    "label": "Poem 3 (ff. 10v-13r), On the Second Miracle of Saint George, Incipit (f. 10v), Desinit (f. 13r)"
+                },
+                {
+                    "label": "Poem 4 (ff. 13r-14v)"
+                },
+                {
+                    "label": "Poem 5 (ff. 15r-17r), Incipit (f. 15r), Desinit (f. 17r)"
+                },
+                {
+                    "label": "Poem 6 (ff. 17v-19v), Incipit (f. 17v), Desinit (f. 19v), Subscription (f. 19v)"
+                },
+                {
+                    "label": "Poem 7 (ff. 20r-23r), Incipit (f. 20r), Desinit (f. 22v), Subscription (f. 23r)"
+                },
+                {
+                    "label": "Poem 8 (ff. 23r-24r), To Our Lady, Incipit (f. 23r), Desinit (f. 24r)"
+                }
+            ],
+            "note": [
+                "This is a collection of poems apparently by a single author. The poems and the collection are untitled: 1. My heart yearns for the land of Jerusalem, my abode, may it please God to make it my homeland; 2. Lord, I am concerned with the marvels of George ...; 3. The second marvel of St. George ...; 4. The nature of the fast; 5. Praise God, O all peoples, praise God day and night; 6. O my eyes, do not weep for the dead ...; 7. Praise God, O all peoples, the Lord of Lords, the Omniscient; 8. I beheld the birth of the Virgin ...."
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Rubric on f. 1v: بسم الله الحي الأزلي على بركة الله"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Contributor(s): Chris PreJean"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1203f"
+    ]
+}

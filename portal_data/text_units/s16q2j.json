@@ -1,0 +1,21 @@
+{
+    "ark": "ark:/21198/s16q2j",
+    "reconstruction": false,
+    "label": "Apostolos",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1c01g"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1d326"
+    ]
+}

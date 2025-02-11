@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1w08s",
+    "reconstruction": false,
+    "label": "Long treatise on Logic",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Long treatise on Logic",
+                "genre": [
+                    {
+                        "id": "philosophical-works",
+                        "label": "Philosophical works"
+                    }
+                ]
+            },
+            "locus": "ff. 1av-179v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12g85"
+    ]
+}

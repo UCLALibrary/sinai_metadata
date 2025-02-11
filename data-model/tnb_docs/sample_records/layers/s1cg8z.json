@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1cg8z",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 48, Overtext (Kufic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16076",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10w1pcf"
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "ark": "ark:/21198/s19w3k",
+    "reconstruction": false,
+    "label": "Sinai Arabic 116, Overtext (Undetermined (Arabic), Greek majuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Kufic elements"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14h1g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 205v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وتراهب في هذا الموضع في سنة أربع وسبعين وثلاثمائة من سنين العرب / اذكر يا رب عبدك الخاطئ بحنس القسيس بطور سينا (؟) الدمياطي كتبه لنفسه ولمن تقرأ فيه من بعده وهو سئل كل من قرأ فيه أن يترحم عليه وكتب في سنة خمس وثمانين وثلثة مائة من سنين العرب",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "385h"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "985",
+            "iso": {
+                "not_before": "0985"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Border, ff. 2r, 107r I Geometric headpieces and minor headpieces throughout I Decorated Greek initials throughout"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vt2wgq"
+    ]
+}

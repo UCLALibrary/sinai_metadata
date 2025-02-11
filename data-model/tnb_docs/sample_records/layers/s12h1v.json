@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s12h1v",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 32, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1–12, 17–19",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "28 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qh58",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th–7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 3v/6r+18r, 3r/6v+18, 1v/2r, 1r/2v, 4v/5r+17r, 4r/5v+17v, 9v/8r, 9r/8v, 7v/10r, 7r/10v, 11v/12r, 11r/12v, 19r, 19v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Folio order of the undertext follows the Armenian Jerusalem Lectionary"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: A. S. Lewis, A Palestinian Syriac Lectionary containing lessons from the Pentateuch, Job, Proverbs, Acts and Epistles (London: C.J. Clay and Sons, 1899) ; H. Duensing, Christlich-palästinisch-aramäische Texte (Göttingen: Vandenhoeck & Ruprecht, 1906), pp. 153-158 ; A. S. Lewis, M. D. Gibson, Supplement to a Palestinian Syriac Lectionary (Cambridge: Cambridge University Press, 1907) ; A. Roux, Le codex arménien Jérusalem 121, Patrologia Orientalis 163, 32.2 (Turnhout: Brepols, 1971) ; C. Müller-Kessler, “The Early Lectionary Tradition in Christian Palestinian Aramaic: Lections Containing Unattested Old Testament Passages (Sinai, Greek NF MG 32),” Le Muséon"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1fx7khn"
+    ]
+}

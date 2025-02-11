@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s15q27",
+    "reconstruction": false,
+    "label": "Octoechos",
+    "lang": [
+        {
+            "id": "nucl1302",
+            "label": "Georgian"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tg7m"
+            },
+            "alt_title": "Iadgari"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1c61j"
+    ]
+}

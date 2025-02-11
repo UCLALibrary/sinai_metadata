@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s11s8z",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Undertext (Naskh)",
+    "locus": "ff. 28–29",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Combination of early Naskh and Maghribi scripts | Same script as UTO Homily on the Dormition. Large bowls with sweeping curves for a number of descending strokes. Occasionally the stems of the letter alif have a club-like extension to the left of their top point. Many times the loop of letter Ḍād and ṣād has no “tooth”. The base stroke of the initial letter ‘ayn is elongated backward to the right. Sporadic diacritical marks"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1pt1j",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th-beginning 11th c. ",
+            "iso": {
+                "not_before": "0975",
+                "not_after": "1150"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Palestine or North Africa",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 29v, 28r, 29r, 28v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Hikmat Kashouh"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

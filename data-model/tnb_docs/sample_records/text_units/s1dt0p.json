@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1dt0p",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "locus": "ff. 2r-94v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1m91r"
+    ]
+}

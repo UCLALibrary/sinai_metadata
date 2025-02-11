@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/s1635g",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 11, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 105–109, 110r, 111v, 112",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early small CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "30 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1v39w",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly St. Catherine's Monastery",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 109r, 112v, 108v, 105r, 108r, 105v, 109v, 112r, 107v, 106r, 107r, 106v, 110r, 111v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler 2021, pp. 25-66"
+        }
+    ],
+    "parent": [
+        "ark:/21198/r1vd6wc9"
+    ]
+}

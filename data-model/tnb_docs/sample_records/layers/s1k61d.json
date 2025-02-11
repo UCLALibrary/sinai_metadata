@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1k61d",
+    "reconstruction": false,
+    "label": "Sinai Syriac 91, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ct0c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "312v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܘܨܠܝ ܥܠ ܟܬܘܒܐ ܒܬܟܫ ܕܝܠܕܬ ܐܠܗܐ ܐܚܝ ܨܠܝ ܥܠ ܟܬܘܒܗ+"
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "92v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1286",
+            "iso": {
+                "not_before": "1286"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1224cf3"
+    ]
+}

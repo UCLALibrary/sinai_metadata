@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1dw9s",
+    "reconstruction": false,
+    "label": "Lives of Saints",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of Saints",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    },
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    }
+                ]
+            },
+            "alt_title": "Hagiographical Collection"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1mc9g"
+    ]
+}

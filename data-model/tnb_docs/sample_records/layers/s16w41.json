@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s16w41",
+    "reconstruction": false,
+    "label": "Sinai Arabic 382, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11h1j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 224v-225r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان النجاز من نساخة هذا الكتاب الشريف في اليوم الثالث والعشرون من شهر نيسان عيد القديس جاورجيس سنة ثالث عشر وثمانمائة وألف مسيحية سنة 1813 بيد عبد الفقير المدعى بالعجز والتقصير يعقوب ولد المرحوم جرجودة تسبون العكاوي وهو طالب من كل ناظر فيه بأن يدعو له بمغفرة خطاياه ومسامحة جناياه ولوالديه  وله نظير ذلك ثم ولله المجد",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "23 Nisan, Feast of Saint George 1838"
+                }
+            ],
+            "note": [
+                "Attested places:  Jacob son of Jarjuda Tasbun of Akka"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1813",
+            "iso": {
+                "not_before": "1813"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1m91cz2"
+    ]
+}

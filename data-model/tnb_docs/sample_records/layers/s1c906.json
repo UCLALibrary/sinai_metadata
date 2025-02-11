@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1c906",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF X 37, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s15w9m",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10k484c"
+    ]
+}

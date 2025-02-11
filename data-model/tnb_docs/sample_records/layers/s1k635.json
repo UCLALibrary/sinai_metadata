@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/s1k635",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Undetermined (Arabic))",
+    "locus": "ff. 57–62, 64–65, 67–73, 78–95, 112–119r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "The script is characteristic of 10th century Melkite manuscripts. Two diagonal strokes are used for punctuation. Occasionally, one can see a diacritical dot under the letter /q/ — a fairly common feature in Melkite manuscripts (see, e.g., J. Monferrer-Sala, \"Once Again on the Earliest Christian Arabic Apology: Remarks on a Palaeographic Singularity,\" Journal of Near Eastern Studies 69.2 (2010): 195-197"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1769b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Fol. 85 may contain a colophon in which the month of September (Aylul) is mentioned, but this is far from certain"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alexander Treiger"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: J. Monferrer-Sala, \"Once Again on the Earliest Christian Arabic Apology: Remarks on a Palaeographic Singularity,\" Journal of Near Eastern Studies 69.2 (2010): 195-197"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

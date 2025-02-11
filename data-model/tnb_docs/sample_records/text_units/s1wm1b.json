@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1wm1b",
+    "reconstruction": false,
+    "label": "Lives of the monks of Palestine",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1bp46"
+            },
+            "locus": "ff. 1r-9v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13044"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1564t",
+    "reconstruction": false,
+    "label": "Lectionary (Epistles)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "alt_title": "Lectionary (Epistles)",
+            "locus": "ff. 4r-192v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1bk5j"
+    ]
+}

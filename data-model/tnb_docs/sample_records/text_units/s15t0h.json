@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s15t0h",
+    "reconstruction": false,
+    "label": "Parakletiki",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Parakletiki",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-201r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1c62x"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "ark": "ark:/21198/s1734d",
+    "reconstruction": false,
+    "label": "Sinai Syriac 30, Undertext (Greek majuscule)",
+    "locus": "ff. 142, 144, 147, 149",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Biblical majuscule | Similar to Vindob. theol. gr. 31, Paris. suppl. gr. 1286, and Codex Purpureus Rossanensis, suggesting a date in the sixth century (501-600 CE) and a place of origin in the region of Syria or Antioch (cf. G. Cavallo, Ricerche sulla maiuscola biblica (Florence, 1967), pp. 98-104; P. Orsini, Manoscritti in maiuscola biblica. Materiali per un aggiornamento (Cassino, 2005), pp. 176-177, 201-203, 210-211"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "25 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1w404",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Syria or Antioch",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 142r, 142v, 144v, 144r, 147v, 147r, 149r, 149v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: R. L. Bensly, J. R. Harris, and F. C. Burkitt, The Four Gospels in Syriac Transcribed from the Sinaitic Palimpsest (Cambridge, 1894), p. xvi ; Α. S. Lewis, Select Narratives of Holy Women: From the Syro-Antiochene or Sinai palimpsest as written above the old Syriac Gospels by John Stylite, of Beth-mari-qanūn in A.D. 778, I, Syriac text (London, 1900), pp. 45-46 ; A. Hjelt (ed.), Syrus sinaiticus, Helsingfors 1930, p. 15 ; C. Guignard, “0323: A Forgotten 4th or 5th Century Greek Fragment of the Gospel of John in the Syrus Sinaiticus,” Novum Testamentum 57 (2015), pp. 311-319 ; The original quaternion must have been as follows: I (142rv), II (144vr), III (folio lost), IV (folio lost) | V (folio lost), VI (folio lost), VII (147vr), VIII (149rv)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n5hwt"
+    ]
+}

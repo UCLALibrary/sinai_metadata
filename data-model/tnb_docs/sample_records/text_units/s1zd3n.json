@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1zd3n",
+    "reconstruction": false,
+    "label": "Inspired sayings from the Old and New Testament",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1q59b"
+            },
+            "alt_title": "Inspired sayings from the Old and New Testament",
+            "locus": "ff. 1r-37v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s14s64"
+    ]
+}

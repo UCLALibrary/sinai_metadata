@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1t954",
+    "reconstruction": false,
+    "label": "Lives of Saints ; Encomium on the Theotokos",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of Saints ; Encomium on the Theotokos",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10p77"
+    ]
+}

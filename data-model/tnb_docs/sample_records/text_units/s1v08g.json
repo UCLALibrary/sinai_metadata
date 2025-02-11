@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1v08g",
+    "reconstruction": false,
+    "label": "Sayings of St. Dorotheus. Different Mimars",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Sayings of St. Dorotheus. Different Mimars",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-266v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11c8t"
+    ]
+}

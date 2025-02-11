@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1xh4r",
+    "reconstruction": false,
+    "label": "Sticherarion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1ms4q"
+            },
+            "locus": "ff. 5r-189r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13w6v"
+    ]
+}

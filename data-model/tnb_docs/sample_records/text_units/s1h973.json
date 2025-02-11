@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1h973",
+    "reconstruction": false,
+    "label": "Octoechos",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tg7m"
+            },
+            "alt_title": "Octoechos, the Eight Tones (Modes) of the Byzantine Rite",
+            "locus": "ff. 3v-162r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1k04g"
+    ]
+}

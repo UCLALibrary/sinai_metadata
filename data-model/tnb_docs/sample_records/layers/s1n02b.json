@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1n02b",
+    "reconstruction": false,
+    "label": "Sinai Arabic 405, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fm19",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 236v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز هذا الكتاب المبارك وهو شهرين أيار وحزيران في العشر الأوسط من كانون الأول سنة ستة آلاف وثمانمائة وثلاثة وأربعين وذلك في أيام الأب السيد الاسقف كير جرمانوس رحمنا الله بصلاته بدير طور سيناء المقدس بكنيسة السيدة المعروفة بالسريان فمن غيره عنها كانت السيدة خصمه يوم الدينونة وكان خطه مع يودس الاسخريوطي غفر الرب لمن اهتم",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "6843"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1335",
+            "iso": {
+                "not_before": "1335"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces and minor headpieces/tailpieces throughout | Cross ornaments on f. 237r-v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1zw2q8k"
+    ]
+}

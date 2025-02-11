@@ -1,0 +1,104 @@
+{
+    "ark": "ark:/21198/s1zg7v",
+    "reconstruction": false,
+    "label": "Sinai Arabic 384, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1s07g",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 203r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كتبه افثيمي الخاطئ المسكين الدميري وأنا أسأل كل من قرأ في هذا المصحف ان يطلب إلى السيد المسيح أن يغفر خطاياي ما تقدم منها وما تأخر لعلى احد بصلواتكم رحمه عند المسيح آمين / وكان الفراغ منه يوم الخميس ثالث عشر من شهر أيار سنة ستة آلاف وسبعمائة وتسعة وعشرين للعالم",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "13 Ayyar 6729"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1221",
+            "iso": {
+                "not_before": "1221"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Greek text, f. 203r; ff.209r-209v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Knotted vine headpiece, f. 76v;  f. 1r, with ascending cross and Greek initials; f.112v, with zoomorphic head"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17s96d8"
+    ]
+}

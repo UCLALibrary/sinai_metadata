@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1bg78",
+    "reconstruction": false,
+    "label": "Sinai Arabic 214, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1506h",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 127v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "تمت بعون الله تعالى السواعي ووافق فراغها يوم الثلثاء ثامن شهر أيار سنة ستة الاف وسبعمائه وثمانيه وأربعين لأبينا آدم / الموافق لسنة الاكسندر ابن فيلبس اليوناني الف وخمس مائه واحد وخمسين / والموافق التجسد ألف ومائتين وثمانية وأربعين / الموافق للعرب سنة ستة مائه وثمانية وثلثين // كتبنا افرام العمراني لجراسيم  النشاد المقيمين يومئذ كليمي في دير الانبياء ماري موسى طور سيناء غفر الله الكاتب والقارئ  والسامع ولمن قال آمين",
+            "note": [
+                "Attested places:  Mount Sinai",
+                "Attested dates: Tuesday 8 Ayar 6748 (adam) ; 1551 (Alexander) ; 1248 (incarnation) ; 638 Arab"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1248",
+            "iso": {
+                "not_before": "1248"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kp9kt8"
+    ]
+}

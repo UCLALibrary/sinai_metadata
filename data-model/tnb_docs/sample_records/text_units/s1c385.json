@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1c385",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary of Gospels for the whole year",
+            "locus": "ff. 2r-219r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1jh0t"
+    ]
+}

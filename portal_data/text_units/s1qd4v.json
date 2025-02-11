@@ -1,0 +1,53 @@
+{
+    "ark": "ark:/21198/s1qd4v",
+    "reconstruction": false,
+    "label": "Mimars of St. John Climax",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars of St. John Climax",
+                "creator": [
+                    "ark:/21198/s1d30f"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-208v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 1r",
+                    "as_written": "نبتدي بعون الله و حسن تأييده و إرشاده نكتب"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 208v",
+                    "as_written": "كملت هذه النّسخة"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ws46"
+    ]
+}

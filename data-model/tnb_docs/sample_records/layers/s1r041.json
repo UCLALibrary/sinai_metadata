@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1r041",
+    "reconstruction": false,
+    "label": "Sinai Georgian 10, Undertext (Asomtavruli)",
+    "locus": "ff. 262, 266",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1d114",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 266r+262v, 266v+262r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Unclear relation to the UTO Lectionary in this same manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: For the homily cf. CPG 3800 and M. van Esbroeck, Les plus anciens homéliaires géorgiens: Étude descriptive et historique (Louvain-La-Neuve, 1973), 68-69"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pc3j0n"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "ark": "ark:/21198/s16d0p",
+    "reconstruction": false,
+    "label": "Sinai Greek 212, Overtext (Greek majuscule)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Large, angular, slightly inclined uncial, with accents and breathings"
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black",
+                "red"
+            ],
+            "note": [
+                "Initials and titles in red"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s11081",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17m15vx"
+    ]
+}

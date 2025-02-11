@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s17s5p",
+    "reconstruction": false,
+    "label": "Sinai Arabic 408, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12d3k",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 163v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز الجزء التاسع من الدولاب وهو شهر آب بمعونة الله حسن توفيقه نهار الاربعاء من الشبه الصغيرة في الصوم المقدس السادس شهر آذار التاريخ الأول الجاري في سنة ستة آلاف وسبعمائة وستة وستين  لأبينا آدم بمدينة أنطاكية المحروسة  ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Wednesday 6 Adhar 6766 (Adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Antioch"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1258",
+            "iso": {
+                "not_before": "1258"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1k087nm"
+    ]
+}

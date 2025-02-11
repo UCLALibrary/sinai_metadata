@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1k669",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "locus": "ff. 1r-173v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1rk71"
+    ]
+}

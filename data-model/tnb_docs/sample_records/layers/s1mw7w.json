@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1mw7w",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 19, Undertext (Christian Palestinian Aramaic)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "23 lines, unclear"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18x0g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 1v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This undertext of Codex Sinaiticus Rescriptus i is found under Georgian NF 19; St. Petersburg, Syr. no. 16; Oslo, Martin Schøyen MS 35: (1) Syr. no. 16, fol. 84/85r, Matthew 18:9b-14, La 1875:120/213; Mt 1998a:56; Syr. no. 16, fol. 84/85v, Matthew 18:15-21a. La 1875:213; Mü-So 1998a:57; (2) MS 35, fol. 54/49r, Matthew 23:4b-12a, Des 1997:100; Mü-So 1998a:58; MS 35, fol. 54/49v, Matthew 23:12b-17a, Des 1997:101; Mü-So 1998a:59; (3) Georgian NF 19, fol. 1r, Matthew 23:19, unpublished; Georgian NF 19, fol. 1v, Matthew 23: unpublished; (4) MS 35, fol. 43/44r, Matthew 23:29-35a, Des 1997:102; Mü-So 1998a:60; MS 35, fol. 43/44v, Matthew 23:35b-24:2, Des 1997:103; Mü-So 1998a:61; (5) MS 35, fol. 45/46r, Matthew 24:3-8, Des 1997:104; Mü-So 1998a:62; MS 35, fol. 45/46v, Matthew 24:9-18a, Des 1997:105; Mü-So 1998a:63; (6) MS 35, fol. 39/40r, Matthew 24:45b-25:3a, Des 1997:106 (unread); Mü-So 1998a:64; MS 35, fol. 39/40v, Matthew 25:3b-11a, Des 1997:107; Mü-So 1998a:65; (7) MS 35, fol. 59/66r, Matthew 27:7b-15a, Des 1997:61; Mü-So 1998a:66; MS 35, fol. 59/66v, Matthew 27:15b-22a, Des 1997:61; Mü-So 1998a:67; (8) MS 35, fol. ?/57r (former fol. 58/59), Mark 5:26b-28a; 30b-31, Des 1997:114 (unread); Mü-So 1998a:98; MS 35, fol. ?/57v (former fol. 58/59), Mark 5:32-39a, Due 1906:133; Des 1997:115; Mü-So 1998a:99; (9) MS 35, fol. 38/41r, Mark 6:35b-41a, Des 1997:116 (unread); Mü-So 1998a:100; MS 35, fol. 38/41v, Mark 6:41b-50a, Due 1906:134; Des 1997:117; Mü-So 1998a:101; (10) MS 35, fol. 48/55r, Mark 7:6b-14a, Des 1997:118 [unread]; Mü-So 1998a:102; MS 35, fol. 48/55v, Mark 7:14b-21, Due 1906:135; Des 1997:119; Mü-So 1998a:103; (11) Syr. no. 16, fol. 113/112r, Mark 7:36b-8:6a, La 1875:140; Mü-So 1998a:104; Syr. no. 16, fol. 113/112v, Mark 8:6b-14a, La 1875:140; Mü-So 1998a:105; (12) MS 35, fol. 37/42r, Mark 9:2-8a, Due 1906:137; Des 1997:120; Mü-So 1998a:106; MS 35, fol. 37/42v, Mark 9:8b-14a, Due 1906:138; Des 1997:121; Mü-So 1998a:107; (13) Syr. no. 16, fol. 3/125r, Mark 9:27b-33a, La 1875:141; Mü-So 1998a:108; Syr. no. 16, fol. 3/125v, Mark 9:33b-40a, La 1875:142/216 (pl. II); Mü-So 1998a:109; (14) MS 35, fol. 58/?r (former fol. 57/60), Mark 10:44b-46a; 47b-48, Des 1997:128; Mü-So 1998a:110; MS 35, fol. 58/?v (former fol. 57/60), Mark 10:51-52a; 11:2b-3a, Des 1997:128; Mü-So 1998a:111; (15) Syr. no. 16, fol. 88/89r, Mark 11:18-24a, La 1875:142/216; Mü-So 1998a:112; Syr. no. 16, fol. 88/89v, Mark 11:24b-31a, La 1875:216/7; Mü-So 1998a:113; (16) MS 35, fol. 14/11r, Mark 12:35-41a, Des 1997:122; Mü-So 1998a:114; MS 35, fol. 14/11v, Mark 12:41b-13:2a, Des 1997:123; Mü-So 1998a:115; (17) Syr. no. 16, fol. 93/98r, Mark 13:14b-21a, La 1875:127/214; Mü-So 1998a:116; Syr. no. 16, fol. 93/98v, Mark 13:21b-29a, La 1875:214/5; Mü-So 1998a:117; 918) Syr. no. 16, fol. 92/99r, Mark 14:33b-40a, La 1875:133; Mü-So 1998a:118; Syr. no. 16, fol. 92/99v, Mark 14:40b-47a, Mü-So 1998a:119; (19) Syr. no. 16, fol. 55r, Mark 14:49b-51a; 53b-54a, La 1875:217; Mü-So 1998a:120; Syr. no. 16, fol. 55v, Mark 14:56b-57a; 61a, Mü-So 1998a:121; (20) MS 35, fol. 50/53r, Mark 14:72b-15:7a, Due 1906:140; Des 1997:124; Mü-So 1998a:122; MS 35, fol. 50/53v, Mark 15:7b-15a, Due 1906:141; Des 1997:125; Mü-So 1998a:123; (21) MS 35, fol. 65/60r, Mark 15:15b-21a, Due 1906:142; Des 1997:126; Mü-So 1998a:124; MS 35, fol. 65/60v, Mark 15:21b-31a, Due 1906:144; Des 1997:127; Mü-So 1998a:125; (22) St Catherine, Sp. 7, fol. 1v+4r, Luke 9:38-43, Mü-So 1998a:157; St Catherine, Sp. 7, fol. 4v+1r, Luke 9:44-50a, Mü-So 1998a:158; (23) St Catherine, Sp. 7, fol. 2v+3r, Luke 17:15b-22a, Mü-So 1998a:159; St Catherine, Sp. 7, fol. 3v+2r, Luke 17:22b-28a, Mü-So 1998a:160; (24) Syr. no. 16, fol. 12/121r, John 11:27b-33a, La 1875:203/4/221; Mü-So 1998a:172; Syr. no. 16, fol. 12/121v, John 11:33b-42a, La 1875:221/222; Mü-So 1998a:173."
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: C. Müller-Kessler, M. Sokoloff, The Christian Palestinian New Testament Version from the Early Period: Gospels (A Corpus of Christian Palestinian Aramaic. Vol. 2A, Groningen: STYX Publishers, 1998) ; A. Desreumaux, Codex sinaiticus Zosimi rescriptus (Lausanne: Éditions du Zèbre, 1997) ; H. Duensing, Christlich-palästinisch-aramäische Texte und Fragmente (Göttingen: Vandenhoeck & Ruprecht, 1906) ; J. P. N. Land, Anecdota Syriaca. Vol 4 (Leiden: Brill, 1875) ; C. Müller-Kessler, “Codex Sinaiticus Rescriptus (CSRG/O/P/S): A Collection of Christian Palestinian Aramaic Manuscripts,” Le Muséon 127 (2014), pp. 263-309 [DOI: 10.2143/MUS.127.3.3062095] ; Müller-Kessler and Sokoloff ; Desreumaux 1997 ; Müller-Kessler 2014, pp. 263-309"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d68k3"
+    ]
+}

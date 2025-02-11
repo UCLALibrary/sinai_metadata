@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s11m1k",
+    "reconstruction": false,
+    "label": "Homilies on the Gospel of St. Matthew (Chrysostom)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1cg66"
+            },
+            "alt_title": "Commentary on the Gospel of St. Matthew",
+            "locus": "ff. 1r-323v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s17017"
+    ]
+}

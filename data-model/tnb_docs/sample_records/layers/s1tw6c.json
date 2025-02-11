@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1tw6c",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 56, 63, 72–80, 82, 96–97, 100, 102–106, 109–112, 114, 116–117, 119",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "30 lines, reconstructed (Rossetto)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1gx0b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 102v (col. a), 97r (col. a), 102v (col. b), 97r (col. b), 76r (col. a), 106v (col. a), 76r (col. b), 106v (col. b), 75r (col. a), 76v (col. a), 106r (col. a), 75r (col. b), 76v (col. b), 106r (col. b), 112r, 80r (col. a), 119v, 80r (col. b), 119r, 80v (col. a), 112v, 80v (col. b), 114v, 82v (col. a), 117r, 82v (col. b), 117v, 82r (col. a), 114r, 82r (col. b), 111v, 74r (col. a), 116v, 116r, 111r, 105r, 116v, 110v, 100v, 110r, 103v (col. a), 109v (col. a), 77v, 109v (col. b), 74r, 56r (col. a), 63v (col. a), 56r (col. b), 63v (col. b), 56v (col. a), 63r (col. a), 56v (col. b), 63r (col. b), 78r, 73v, 73r, 76v (col. a), 78v, 76v (col. b), 79v, 104r (col. a), 72r, 104r (col. b), 78v, 104v (col. a), 103v (col. b)+96r (col. a), 96r (col. b), 96v (col. a), 96v (col.b)+103r (col. a) (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This UTO was written by the same scribe who wrote the UTO Gospel of Matthew. These two UTOs belonged to the same original manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The following fragments could possibly also belong to the Gospel of Matthew: 66r (narrow outer piece), 66v (narrow outer piece), 68r (narrow outer piece), 68v (narrow outer piece), 71r (narrow outer piece), 71v (narrow outer piece), 90r (lower outer piece), 90v? (lower outer piece), 92r (upper and lower outer piece), 92v (upper and lower outer piece), 94r (upper and lower outer piece), 94v (upper and lower outer piece), 95r (upper and lower outer piece), 95v (upper and lower outer piece), 115r (both inner pieces), 115v (both inner pieces) (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

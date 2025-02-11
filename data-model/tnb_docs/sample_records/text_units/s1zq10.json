@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1zq10",
+    "reconstruction": false,
+    "label": "Heirmologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1sp47"
+            },
+            "locus": "ff. 1r-155v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1561p"
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "ark": "ark:/21198/s19c7x",
+    "reconstruction": false,
+    "label": "Sinai Arabic 11, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14066",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "table",
+            "label": "Table(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "ff. 136r-136v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ من هذا المصحف الخمسة وعشرين من شهر نيسان الرومي على يد الحقير القس سابا لسنة ست ألف وستمائة سنة وأربعة وعشرون سنة من سنة أبينا آدم عليه السلام الموافق لخمسمائة وتسع سنين في سنة الهجرة أنا أسأل من كل من قرأ في هذا المصحف أن يترحم على ضعفى أنا الخاطئ وإن كان فيه غلط أوردات خط فهو في قلة فهمي وضعفي وشغل خاطري الرب يغفر لمن كتب ولمن قرأ  ولمن سمع بشفاعة السيدة أم النور وجميع القديسين آمين آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "1116",
+                    "iso": {
+                        "not_before": "1116"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1116",
+            "iso": {
+                "not_before": "1116"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces, knotted motif with ascending cross, 1f. 139v, 177v | Minor headpieces ff. 3r-138v,  knotted vine, geometric line work and Fleur de Lis motifs"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Bordered roundel with geometric decoration and text, f. 159r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z11g24xj"
+    ]
+}

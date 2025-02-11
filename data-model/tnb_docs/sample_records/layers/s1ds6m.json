@@ -1,0 +1,80 @@
+{
+    "ark": "ark:/21198/s1ds6m",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Arabic), Coptic)",
+    "locus": "ff. 30–39",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "coptic",
+                    "label": "Coptic",
+                    "writing_system": "Coptic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12t1z",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "November 744 ",
+            "iso": {
+                "not_before": "0744",
+                "not_after": "0744"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Ramla",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The Arabic undertext appears on only one side of the folios, suggesting that the undertext comes from a scroll (Kashouh)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Hikmat Kashouh, Alexander Treiger"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

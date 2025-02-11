@@ -1,0 +1,98 @@
+{
+    "ark": "ark:/21198/s1g04j",
+    "reconstruction": false,
+    "label": "Sinai Syriac 195, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18m24",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "314ar",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܩܠ ܣܟܐ ܘܫܘܡܠܝܐ ܐܝܟ ܕܠܗܕܪ ܐܘ ܐܝܩܪܐ ܕܬܠܝܬܝ̄ܘ ܩܕܝ̄ܫ ܘܫܘܝܬ ܒܐܘܣܝܐ ܕܐܒܐ ܘܕܒܪܐ ܘܕܪܘܚܐ ܕܩܘ̄ܕ ܐܠܗܘܬܐ ܚܕܐ ܒܬܠܬܐ ܩܢܘܡ̈ܐ ܟܬܒܐ ܗܕܐܡܢܐܘܢ܀ ܝܘܡ ܐܪܒܥܐ ܒܙ̄: ܒܝܪܚܐ ܐܒ : ܫܢܬܐ ܫܬ ܐܠܦ̈ܝܢ ܘܫܒ̈ܥܡܐܐ ܘܫܬܝܢ ܘܫܬܐ ܠܐܒܘܢ ܐܕܡ܀ ܡܢ ܫ̈ܢܝܐ ܐܠܟܣܢܕܪܘ̄ ܫܢܬ ܠܐܦ ܘܚܡܣܡܐܐ ܘܫܬܝܢ ܘܛ̄: ܘܝܠܝܕܘܬܗ ܕܡܪܢ ܘܐܠܗܢ ܝܫܘܥ ܡܫܝܚܐ ܒܦܓܪ ܫܢܬ ܐܠܦ ܘܡ̈ܐܬܝܢ ܘܫܬܝܢ ܘܫܬܐ ܒܕܝܪܐ ܘܡܩܕܫܐ ܛܘܪ ܣܢܢܐ ܬܐܝܕܝ ܐܢܫ ܚܛܝܐ ܘܒܨܝܪ ܡܢ ܟܠܗܘܢ ܒܢܝܢܫܐ ܕܠܐ ܫ̇ܘܐ ܢܬܩܪܐ ܕܝܪܝܐ ܝܘܚܢܢ ܒܪ ܡܢܨܘܪ ܠܥܕܬܐ ܩܕܝܫܬܐ ܕܝܠܕܬ ܐܠܗܐ ܒܗ ܒܕܝܪܐ. ܐܠܗܐ ܢܚܣܐ ܠܗ ܘܠܐ ܒܗ̈ܘܗܝ ܒܬܟܫ̈ܦܬܐ ܕܝܠܕܬܐܠܗܐ ܘܡܘܫܐ ܘܓܠܝܐ ܘܟܠܗܘܢ ܩ̈ܕܝܫܐ ܐܡܝܢ",
+            "assoc_name": [
+                {
+                    "value": "Yuhannon bar Mansour",
+                    "as_written": "ܝܘܚܢܢ ܒܪ ܡܢܨܘܪ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1257",
+            "iso": {
+                "not_before": "1257"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces/tailpieces throughout, beginning on f. 16r | Border, f. 172v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z190375z"
+    ]
+}

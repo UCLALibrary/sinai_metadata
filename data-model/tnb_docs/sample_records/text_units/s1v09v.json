@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s1v09v",
+    "reconstruction": false,
+    "label": "Mimars by St. Ephraem the Syrian",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars by St. Ephraem the Syrian",
+                "creator": [
+                    "ark:/21198/s1v887"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-89v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11c96"
+    ]
+}

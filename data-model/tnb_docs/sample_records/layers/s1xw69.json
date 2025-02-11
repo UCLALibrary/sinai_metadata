@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1xw69",
+    "reconstruction": false,
+    "label": "Sinai Syriac 230, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rh46",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces, knotted vine motif, ff. 229r, 278v, 304v, 489r; chevron motif, f. 340r."
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Knotted Rosette, f. 487; pair, 1rI~IBordered text, full page, f. 182r; text, f. 382v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14b4jz8"
+    ]
+}

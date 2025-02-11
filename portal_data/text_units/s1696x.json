@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s1696x",
+    "reconstruction": false,
+    "label": "Homilies on John, Homily 20 (Chrysostom)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n01z"
+            },
+            "alt_title": "John Chrysostom, Commentary on John, Homily 20",
+            "note": [
+                "Only the end of this homily is preserved, earlier portions are contained in Syriac NF frag 74"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1cs69"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1b918",
+    "reconstruction": false,
+    "label": "Sinai Syriac 196, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s14t1k",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "253r-253v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܬܟܬܒ ܘܐܫܬܡܠܝ ܟܬܒܐ ܗܢܐ ܝܘܡ ܕ̄: ܒ̄ܝܐ ܡܢ ܝܪܚ ܐܕܪ. ܒܫܢܬ ܫܬܐ ܐܠܦܝܢ ܘܬܡܢܐܐ ܡܐܐ ܘܚܕܐ ܠܐܒܘܢ ܐܕܡ܀܀ ܘܡܢ ܫܢܝܐ ܕܐܠܟܣܢܕܪܘܣ. ܐܠܦ ܘܫܬܡܐܐ ܘܐܪܒܥ܀ ܐܝܟ ܪܠܗܕܕܐ ܘܬܫ̄ܒܘ ܘܐܝܩܪܐ ܕܬܠܝܠܝ̄ܘ ܩܕܝܫܬܐ ܘܫܘܝܬ ܒܐܘܣܝܐ ܕܐܒܐ ܘܒܪܐ ܘܪܘܚܐ ܕܩܘܕܫܐ܀ ܐܬܟܬܒ ܒܕܝܪܐ ܩܕܝܫܐ ܛܘܪ ܣܝܢܝ ܠܥܕܬܐ ܩܕܝܫܬܐ ܕܝܠܕܬ ܐܠܗܐ ܒܕܝܪܐ ܡܩܕܝܫܐ܀ ܒܐܝܕܝ ܐܢܫܐ ܚܛܝܐ ܘܕܘܐܡܢ ܟܠܢܫ ܘܠܐ ܫܘܐ ܕܢܬܩܪܐ ܫܡܗ܆ ܟܗܢܐ ܫܡܥܘܢ ܒܪ ܝܘܣܦ..",
+            "assoc_name": [
+                {
+                    "value": "Shem'un bar Yosef",
+                    "as_written": "ܫܡܥܘܢ ܒܪ ܝܘܣܦ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1292",
+            "iso": {
+                "not_before": "1292"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces, knotted vine, f. 113v; ff. 55r, f. 171, red and black"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1wt0bw1"
+    ]
+}

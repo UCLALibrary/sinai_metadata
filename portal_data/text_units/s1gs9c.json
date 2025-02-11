@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1gs9c",
+    "reconstruction": false,
+    "label": "Lectionary (Gospels), with introduction and commentary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary (Gospels), with introduction and commentary",
+            "locus": "ff. 5v-320v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1p591"
+    ]
+}

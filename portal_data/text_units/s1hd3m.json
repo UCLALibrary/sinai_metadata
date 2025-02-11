@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1hd3m",
+    "reconstruction": false,
+    "label": "Synaxarium for the whole year",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium for the whole year",
+            "locus": "ff. 1r-306v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1ps4b"
+    ]
+}

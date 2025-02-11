@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s14d02",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Roman))",
+    "locus": "ff. 12r, 18",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ],
+            "note": [
+                "High quality majuscule script (Rome?) (Brown)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "note": [
+                "The scale of the text is large and, by analogy with other de luxe late antique illustrated works (such as the Vatican Virgil), it is likely to have been laid out in single columns with images (outline drawings) arranged as column pictures and some perhaps as full-page miniatures. In the illustration on fol. 18r, only the heads of what would probably have been full-length standing figures remain, indicating the very large scale of the original page. The text in the Ottonian copy from Werden (now in Budapest) has two columns, but in smaller Carolingian minuscule script and was probably reconfigured"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1sd5v",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Rome",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz, Daniela Mairhofer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Biliography: For online textual edition, see Corpus Corporum www.mlat.uzh.ch ; S. Ammirati, Sul libro latino antico, Pisa - Rome: Fabrizio Serra Editore, 2015 ; E. Archibald, Apollonius of Tyre. Medieval and Renaissance Themes and Variations, Including the Text of the Historia Apollonii Regis Tyri with an English Translation, Cambridge:  D.S. Brewer, 1991 ; A. Boreczky, A. Németh (eds), Apollonius Pictus: an illustrated late antique romance around 1000; Facsimile edition of the Historia Apollonii Regis Tyri, Budapest: National Széchényi Library, 2011 ; A. Boreczky, “The Illustrated Life of Apollonius and Tarsia: a ’Papyrus-style’ Narrative in Ottonian Art,” Convivium 3/1 (2016), pp. 76-91 ; M. P. Brown, \"The Eastwardness of Things: Relationships between the Christian Cultures of the Middle East and the Insular World,\" in The Genesis of Books: Studies in the Interactions of Words, Text, and Print in Honor of A. Doane, ed. M. Hussey, J. D. Niles, Turnhout: Brepols, 2011, pp. 17-49 ; M. P. Brown, \"Imagining, Imaging and Experiencing the East in Insular and Anglo-Saxon Cultures: New Evidence for Contact, in Proceedings of the ISAS conference, Madison, 2012, ed. J. D. Niles, et al., Tempe: Arizona Univ. Press, 2016, pp. 49-88 ; M. P. Brown,\"The Bridge in the Desert: towards establishing an historical context for the newly discovered Latin manuscripts of St Catherine’s Sinai,\" Rivista degli Studi Orientali 90 (Suppl. 1, 2017), pp. 73-98 ; M. P. Brown, \"Were early medieval picture cycles recycled from late Antiquity? New evidence for a lost archetype of the Apollonius Pictus - an illustrated classic,\" in Illuminating the Middle Ages: Tributes to Prof. John Lowden from his Students, Friends and Colleagues, ed. by A. Bovey, L. Cleaver, L. Donkin, Leiden - Boston: Brill, 2020, pp. 4-18 ; M. P. Brown, The Latin Manuscripts of the Holy Monastery of St Catherine’s, Sinai (forthcoming) ; G. Boudalis, G. Rossetto, Colour Mapping of Sin. ar. NF 8 + Sin. ar. NF 28, in The Apollonius of Tyre Fragment in Arabic NF 8: Studies of a Latin Palimpsest at St Catherine’s Monastery, Sinai, ed. M. P. Brown, J. Lockhart (forthcoming)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

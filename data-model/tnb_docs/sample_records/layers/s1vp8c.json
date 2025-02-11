@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1vp8c",
+    "reconstruction": false,
+    "label": "Sinai Georgian 10, Undertext (Asomtavruli)",
+    "locus": "ff. 216–218, 221–223, 240, 247",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Ninth century majuscule"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hq2b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 221r+218v, 221v+218r(?), 223r+216v, 223v+216r(?), 222r+217v, 222v+217r, 240v+247r, 240r+247v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: M. Tarchnischvili, ed., Le grand lectionnaire de l'Église de Jérusalem, vols. 1-2. Louvain, 1959-1960"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pc3j0n"
+    ]
+}

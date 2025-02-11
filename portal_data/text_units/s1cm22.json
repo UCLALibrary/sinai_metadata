@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1cm22",
+    "reconstruction": false,
+    "label": "Triodion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1030q"
+            },
+            "alt_title": "Triodion containing all the proper rights for the offices of the Great Lent (the Great Fast)",
+            "locus": "ff. 1v-58v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1f92k"
+    ]
+}

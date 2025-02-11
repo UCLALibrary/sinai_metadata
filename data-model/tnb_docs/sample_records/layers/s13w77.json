@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s13w77",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 19, Undertext (Christian Palestinian Aramaic)",
+    "locus": "f. 59",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rx0t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 59v, 59r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Since a Vorlage text is unknown, the sequence of the undertext folio order cannot be established"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Belongs to the MS CSRO/P/S k in the following sequence: (1) Oslo, MS 35, fol. 32r; Oslo, MS 35, fol. 32v; (2) St. Petersburg, Syr. no. 16, fol. 45r; St. Petersburg, Syr. no. 16, fol. 45v;(3) Oslo, MS 35, fol. 33r; Oslo, MS 35, fol. 33v; (4) Sinai, Georgian NF 19, fol. 59r; Sinai, Georgian NF 19, fol. 59v; (5) St. Petersburg, Syr. no. 16, fol. 44r; St. Petersburg, Syr. no. 16, fol. 44v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler 2014, pp. 293-296"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d68k3"
+    ]
+}

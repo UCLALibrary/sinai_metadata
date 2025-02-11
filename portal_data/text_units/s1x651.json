@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1x651",
+    "reconstruction": false,
+    "label": "Commentary on the Song of Songs by St. Gregory of Nyssa",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Commentary on the Song of Songs by St. Gregory of Nyssa",
+                "creator": [
+                    "ark:/21198/s1z30d"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-111v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13k74"
+    ]
+}

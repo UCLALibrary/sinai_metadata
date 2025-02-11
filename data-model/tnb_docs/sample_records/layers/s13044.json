@@ -1,0 +1,73 @@
+{
+    "ark": "ark:/21198/s13044",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 66, Overtext (Kufic)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1wm1b",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "First quarter 10th c.",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "0925"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Mar Saba Monastery (Jerusalem)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative use of red ink in overtext"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dv21gp"
+    ]
+}

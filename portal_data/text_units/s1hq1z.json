@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1hq1z",
+    "reconstruction": false,
+    "label": "Sayings of SS. Macarius, John Carpatheus, Isaac of Nineveh and Gregory Nazienzis",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s11c7f"
+            },
+            "alt_title": "Psalms 3 : 7-53-6",
+            "locus": "ff. 2r-47v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1q320"
+    ]
+}

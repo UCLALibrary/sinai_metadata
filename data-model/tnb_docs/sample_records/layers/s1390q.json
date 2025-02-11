@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s1390q",
+    "reconstruction": false,
+    "label": "Sinai Arabic 347, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ww7c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 198v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "هذا الكتاب برسم الراهب المنبجي رحم الله من قرأ فيه  وترحم على الخاطئ التي هو بالاسم راهب مكار الخاطئ رحم الله ورحم والديه امين"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1223",
+            "iso": {
+                "not_before": "1223"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1gt75xb"
+    ]
+}

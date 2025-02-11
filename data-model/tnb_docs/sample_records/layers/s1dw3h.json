@@ -1,0 +1,42 @@
+{
+    "ark": "ark:/21198/s1dw3h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 86, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17d2r",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "14th c.",
+            "iso": {
+                "not_before": "1301",
+                "not_after": "1400"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z169932d"
+    ]
+}

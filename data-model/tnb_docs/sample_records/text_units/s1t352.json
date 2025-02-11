@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1t352",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary (Gospels)",
+            "locus": "ff. 2v-283v"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Tables of contents on ff. 284r-285v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s10g6s"
+    ]
+}

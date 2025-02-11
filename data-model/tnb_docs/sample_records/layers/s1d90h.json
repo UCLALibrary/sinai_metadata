@@ -1,0 +1,116 @@
+{
+    "ark": "ark:/21198/s1d90h",
+    "reconstruction": false,
+    "label": "Sinai Arabic 434, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s16w8j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 181v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان فراغ نسخة يوم السبت الحادي عشر من شوال سنة ثلث وثلثين وخمس مائه رحم الله من قرأ وسمع ودعا الكاتبة بالرحمة والمغفرة آمين رب العالمين والشكر لله دائما ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 11 Shawwal 533"
+                }
+            ]
+        },
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 193v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان فراغ ذلك يوم الثلاثاء النصف وربيع الأول سنة اثنين وثلثين وخمسمائه  رحم الله من قرأ ودعا الكاتب قسطة بشفاعة السيدة الطاهرة والقديسين بربارة ويوليانى وجميع القديسين آمين ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Tuesday 15 Rabi’ I 532"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1137",
+            "iso": {
+                "not_before": "1137"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpiece on f. 220r, vine motif with elevated crosses"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z13b73gf"
+    ]
+}

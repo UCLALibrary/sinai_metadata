@@ -1,0 +1,38 @@
+{
+    "ark": "ark:/21198/s1r66v",
+    "reconstruction": false,
+    "label": "Mimars of St. Macarius",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars of St. Macarius",
+                "creator": [
+                    "ark:/21198/s1mk51"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-281v",
+            "note": [
+                "Begins with Mimar 2 and ends with Mimar 26"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xk66"
+    ]
+}

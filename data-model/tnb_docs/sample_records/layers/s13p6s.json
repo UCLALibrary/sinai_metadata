@@ -1,0 +1,53 @@
+{
+    "ark": "ark:/21198/s13p6s",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 59, Overtext (Nuskhurimt)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown",
+                "red"
+            ],
+            "note": [
+                "Red used for some initials"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x67s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th-12th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1200"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z18d059m"
+    ]
+}

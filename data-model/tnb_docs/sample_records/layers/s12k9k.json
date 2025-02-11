@@ -1,0 +1,78 @@
+{
+    "ark": "ark:/21198/s12k9k",
+    "reconstruction": false,
+    "label": "Sinai Greek 962, Undertext (Perlschrift)",
+    "locus": "ff. 182, 187",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "perlschrift",
+                    "label": "Perlschrift",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Elegant, very small upright minuscule, resembling the earliest examples of “Perlschrift”"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "36 lines",
+            "note": [
+                "One folio of Sin. gr. 962 corresponds to one quarter of the original folio with the Chrysostom text. The original manuscript was of large size, measuring approximately 300x200 mm"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1qm4x",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th - early 11th c. CE",
+            "iso": {
+                "not_before": "0951",
+                "not_after": "1050"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 187r+182v, 182r+187v"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Rossetto 2023a"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qj8f7g"
+    ]
+}

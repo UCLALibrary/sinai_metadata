@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s12m28",
+    "reconstruction": false,
+    "label": "Prophetologion for Lent",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1j30p"
+            },
+            "alt_title": "Prophetologion for Lent",
+            "locus": "ff. 1r-112v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1802x"
+    ]
+}

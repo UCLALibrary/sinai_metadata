@@ -1,0 +1,91 @@
+{
+    "ark": "ark:/21198/s1xh07",
+    "reconstruction": false,
+    "label": "Sinai Georgian 49, Undertext (Greek minuscule, Greek majuscule)",
+    "locus": "ff. 50–52, 56, 63, 74–77, 96–106, 109–110",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-min",
+                    "label": "Greek minuscule",
+                    "writing_system": "Greek"
+                },
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Upright minuscule, hastily executed;  \"Auszeichnungsschift\" for liturgical rubrics: sloping pointed majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 column",
+            "note": [
+                "Parchment scroll, with a long writing column"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kh4n",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Sinai or Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 76v, 75r, 63r inner portion, 56v, 52v, 51r, 106v, 109r, 100r, 99v, 74v, 77r inner portion, 50v, 102v, 97r, 96v, 103, 101v, 98r, 110v, 105r, 77v outer portion (here the 'recto' of the roll ends), 77r outer portion (here the 'verso' of the roll starts), 105v, 110r, 98v, 101r, 103v, 96r, 97v, 102r, 50r, 77v inner portion, 74r, 99r, 100v, 109v outer portion, 106r, 51v, 52r, 56r, 63v inner portion, 75v, 76r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Bibliograpy: B.-Ch. Mercier, La liturgie de Saint Jacques. édition critique du texte grec avec traduction latine, Patrologia Orientalis, XXVI.2 (Paris, 1946)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12v3d24"
+    ]
+}

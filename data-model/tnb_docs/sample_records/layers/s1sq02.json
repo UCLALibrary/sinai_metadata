@@ -1,0 +1,98 @@
+{
+    "ark": "ark:/21198/s1sq02",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF frag 65, Undertext (Serto)",
+    "locus": "f. 1",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Script used by the Syrian Orthodox communities"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "19 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fq2q",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "9th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Probably Syro-Mesopotamian region",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1v, 1r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "The folio order of the undertext is established based on a study of the main part of the manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The manuscript to which this folio belongs is now in a private  collection in the USA. A number of folios from that manuscript are  scattered among different libraries"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Grigory Kessel"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Bhayro, et al. 2012, pp. 261-264 ; Bhayro, et al. 2013, pp. 131-148 ; Hawley, pp. 237-272 ; Brock 1995, pp. 63-64"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1t448qz"
+    ]
+}

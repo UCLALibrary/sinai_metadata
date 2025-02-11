@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1cd3c",
+    "reconstruction": false,
+    "label": "Octoechos",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tg7m"
+            },
+            "locus": "ff. 1r-145v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1js5g"
+    ]
+}

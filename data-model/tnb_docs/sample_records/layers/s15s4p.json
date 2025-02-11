@@ -1,0 +1,88 @@
+{
+    "ark": "ark:/21198/s15s4p",
+    "reconstruction": false,
+    "label": "Sinai Arabic 423, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10d3z",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 619r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "وكان النجاز من نساخة هذا الكتاب المبارك في الخامس وعشرين من شهر أيار سنة ستة سبعة آلاف مائه اربعة وثلاثين لكون العالم على يد أحقر العباد و أرذلهم سيماون باسم شماس فهو يسأل لكلمن قرأ فيه ووجد شيئا من النقص أو الغلط واصلحه اصلح الله تعالى دنياه واخرت لان الكمال الله وحده وكل انسان ناقص كما قيل النقص في نفس الطبيعة كائنا وبنو الطبيعة نقصهم لا ينكر ومن مجال بأن ترى احدا حوى وصف الكمال ووصفه متعدد / وقد كتبه لنفسه ليتعزا به في قلايته وانه فيما بعد اوهبه الولد العزيز نقولا … المعلم يوحنا ابن درغام في خامسة عشرين …نيسان سنة سبعة آلاف مائه وخمسين …",
+            "translation": [
+                "The completion of the copying of this blessed book occurred on the 25[th] in the month of Iyār [May] in the Year of the Existence of the World [Anno Mundi] 7134 by … Simon the Deacon …"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Simon the Deacon (f. 619r)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "25 Ayar 7134 (creation world)"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1626",
+            "iso": {
+                "not_before": "1626"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1dz1cqm"
+    ]
+}

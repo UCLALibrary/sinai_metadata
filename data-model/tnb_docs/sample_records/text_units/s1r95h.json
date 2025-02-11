@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1r95h",
+    "reconstruction": false,
+    "label": "Lectionary of Old Testament",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vc88"
+            },
+            "alt_title": "Troparia (for the Apostles)",
+            "locus": "ff. 1r-17v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1xp67"
+    ]
+}

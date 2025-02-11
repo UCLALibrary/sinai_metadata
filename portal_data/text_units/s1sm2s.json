@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s1sm2s",
+    "reconstruction": false,
+    "label": "Triodion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1030q"
+            },
+            "locus": "ff. 1r-237v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1005k"
+    ]
+}

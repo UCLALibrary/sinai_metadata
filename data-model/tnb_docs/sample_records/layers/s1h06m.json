@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1h06m",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 71, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 4–5",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "16 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1509n",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 4v, 5r, 4r, 5v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Fols. 4v+5r represent upper outer part, with ends of lines and left margin of the original recto with a single column. Fols. 4r+5v represent upper part of the original verso with beginnings of lines and right margin. Since the bottom of the original folio is lost, the total number of lines per page is not discernible"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler, Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Müller-Kessler and Sokoloff ; Desreumaux 1997"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z32wm6"
+    ]
+}

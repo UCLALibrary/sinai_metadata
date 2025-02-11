@@ -1,0 +1,34 @@
+{
+    "ark": "ark:/21198/s1tt0d",
+    "reconstruction": false,
+    "label": "Sayings of John Chrysostom",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Sayings of John Chrysostom",
+                "creator": [
+                    "ark:/21198/s1x303"
+                ],
+                "genre": [
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-6v",
+            "note": [
+                "Sayings of John Chrysostom, beginning, ‘I beseech you, O brothers, that you might desire to stand before Christ neither filthy nor unclean …’"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1162t"
+    ]
+}

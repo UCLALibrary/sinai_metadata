@@ -1,0 +1,117 @@
+{
+    "ark": "ark:/21198/s1mp52",
+    "reconstruction": false,
+    "label": "Sinai Arabic 483, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f95q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 380v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كمل نسخ هذا الكتاب المقدس بمعونة الله وحسن توفيقه آخر نهار يوم الأربعاء السابع من شهر حزيران سنة ألف وأربعمائة وتسعة وثمانين الاسكندر بن فيلبس الرومي وبالله التوفيق / بخزانة الأب القديس أنبا يوحنا ابن … بطول مدا عمره  وحرس سائر رعيته بصالح صلوته ودعوته ولمتولى خلاصنا السبح دائما وعلينا رحمته آمين / في يدي الخاطئ المسكين الذليل الحقير الملتجي إلى رحمته الله بالاسم ولا بالفعال المشي قس يوسف بن بركات من قرية قلحات غفر الله له ولوالديه ولجميع بني المعمودية النصارى الملكية بشفاعة السيدة وجميع القديسين آمين",
+            "translation": [
+                "The copying of this holy book was completed … at the end of Wednesday 7 in the month of Ḥazīrān [June] in the Year of Alexander son of Philip the Roman 1489"
+            ],
+            "assoc_name": [
+                {
+                    "value": "Joseph Ibn Barakat of Qalhat/Kelhat/Kelhatt (copyist)",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Wednesday Huzayran 1489 (Seleucid)"
+                }
+            ],
+            "note": [
+                "Some portions of the colophon are unclear.",
+                "Attested places:  Qalhat/Kelhat/Kelhatt (Lebanon)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1177",
+            "iso": {
+                "not_before": "1177"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric and vegetative headpieces throughout, including knots, chain motifs, and quatrefoils, beginning f. 2v, | Minor headpieces and tailpieces throughout beginning, f. 22r I Decorated Greek intials, f. 119r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16d6xc8"
+    ]
+}

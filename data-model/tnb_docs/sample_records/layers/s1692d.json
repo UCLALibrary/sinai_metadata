@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1692d",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Undetermined (Roman))",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "roman-undetermined",
+                    "label": "Undetermined (Roman)",
+                    "writing_system": "Roman"
+                }
+            ],
+            "note": [
+                "Half-uncial with uncial G and long, straight ascenders and descenders. It would appear to be by a scribe trained in the West (perhaps insular), but they could be working in the Levant. Note the curious straight backed d with slightly detached round bow, as if the Latin letter-form has not been fully understood during copying (a feature that occurs in other early Latin manuscripts at St Catherine’s and which may suggest that scribes unfamiliar with details of western scripts were copying them) (Brown)"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1v96t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Levant",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Middle layer of double palimpsest"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Michelle P. Brown, David Ganz, Daniela Mairhofer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

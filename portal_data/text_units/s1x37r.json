@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1x37r",
+    "reconstruction": false,
+    "label": "Synaxarium for whole year [Sunaksarin, teksa d yawnaye (Brock)]",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h30c"
+            },
+            "alt_title": "Synaxarium for whole year [Sunaksarin, teksa d yawnaye (Brock)]",
+            "locus": "ff. 3r-237r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s13g8g"
+    ]
+}

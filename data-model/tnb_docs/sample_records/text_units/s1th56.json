@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1th56",
+    "reconstruction": false,
+    "label": "Menologion (month of Ab)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Ab)",
+            "locus": "ff. 1r-260v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1105w"
+    ]
+}

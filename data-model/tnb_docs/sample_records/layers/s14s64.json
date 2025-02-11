@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s14s64",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF X 29, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zd3n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "border-deco",
+            "label": "Border(s), Decorative"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative borders (f. 22r)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1s2022f"
+    ]
+}

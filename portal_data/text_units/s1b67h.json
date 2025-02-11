@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1b67h",
+    "reconstruction": false,
+    "label": "Menologion (8 Kānūn II - 15 Ab)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (8 Kānūn II - 15 Ab)",
+            "locus": "ff. 1r-172v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1hk87"
+    ]
+}

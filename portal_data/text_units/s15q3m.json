@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s15q3m",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary of Gospels",
+            "locus": "ff. 2r-261v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1c34n"
+    ]
+}

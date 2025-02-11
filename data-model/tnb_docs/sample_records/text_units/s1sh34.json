@@ -1,0 +1,33 @@
+{
+    "ark": "ark:/21198/s1sh34",
+    "reconstruction": false,
+    "label": "Homilies on the Book of Genesis (Chrysostom)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1rp59"
+            },
+            "alt_title": "Commentary on the Book of Genesis by St. John Chrysostom",
+            "locus": "ff. 1r-385r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 385r",
+                    "as_written": "تمّ بمعونة الله تعالیٰ"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1zw3g"
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "ark": "ark:/21198/s1h057",
+    "reconstruction": false,
+    "label": "Sinai Syriac 186, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "locus": "beginning f. 8v ",
+            "color": [
+                "green"
+            ],
+            "note": [
+                "Green ink throughout"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s19m2f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "222v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܠܡ: ܟܬ݂ܒ݂ܐ: ܗܢܐ: :ܩܕܝܫܐ: ܥܠ: ܐܝ̈ܕܝ: ܐܢܫ : ܡܚܝܠܐ :ܘܚ̇ܛܝܐ: :ܘܛ̇ܥܝܐ :ܠܦܘܩ̈ܕܝܢܐ :ܕܡܪܗ :ܘܐܠ̤ܗܗ̣ : ܫܡܥܘܢ :ܒܪܝ : :ܡܘܥܠܐ: ܒܪܝ: ܦܘܠܦܕܠ : ܡܢ: ܩܪܝܬܐ: ܢܛܪܕܬ̤ : ܡ̣ܢ : : ܐܠܗܐ : ܡܥܠܘܠܐ : ܡ̣ܢ ܥܡܠܐ ܕܪܡܣܘܩ : ܡܢ ܛܘܪ ܐ: : ܕܣܢܝܪ : ܡ܆ܢ ܩܠܝܡܐ : ܕܚܠܒܘܢ : ܠܐܦ̈ܝ : ܬܠ̈ܬ: ܫ̈ܥܝ̣ܢ: : ܝܘܡ : ܕ̄ : ܒ̄ : ܝܘܡ̈ܝܢ : ܐܪܠ : ܡ̣ܢ : ܝܪܚܐ : ܐܝܠܘܠ : ܫܢܬ : : ܘ̄ : ܐܠܦ̈ܝܢ : ܘ̄ܙ ݊ ܡ̈ܐܐ : ܘܡ̄ :ܘ̄ : ܠܐܒܘܢ : ܐܕܡ :: ܟܬܒܗ̣ : ܠܢܦܫܗ̣ : ܡܚܝܠܬܐ : ܒܫܪܐ : ܕܡܘܫܐ ܢܒܝܐ : : ܒܕܘܟܬܐ : ܕܡܬܩܪܝܐ : ܫܪܐ ܕܒܢ̈ܝ : ܥܪܘܗ ݊ ܒܗܝܟܠܗ̣ : ܕܡܪܝ : ܝܘܚܢܢ : ܡܥܡܕܢܐ : ܨ̈ܠܘܬܗ̣ : ܥܡܢ : ܒܟ̄ܠܢ : : ܠܥܠܡ : ݊ ܥܠܡܝܢ : ܐܡܝܢ : ܘܐܡܝܢ܀ ܘܗܘ̣ ܡܦ݂ܝ̣ܣ : ܘܡܬܟܫܦ ܠܟܠ ܡܢ: ܕܡܨܠܐ : ܒܗ: ܐܘ ܩܪܐ ܒܗ : ܐܘ ܦܓܥ ܒܗ̣ : ܘܡܫܟܚ: ܒܗ̣: :ܦܘܕܐ: ܐܘ ܒܘܨܪܢܐ: ܐܘ ܝܨܪܢܐ : ܢܫܒܘܩ: ܘܢܨܠܐ: : ܥܠ : ܚ̇ܛܝܐ : ܘܡܣܟܢܐ: ܟܬܘܒܐ: ܕܟܠ ܡܪܝܐ: : ܒܨܝܪܐ: ܗܘ̣܀ ܐܚ̈ܝ ܘܐܒܗ̈ܝ: ܨ̈ܠܘ: ܥܠ ܟܬܘܒܐ: ܚܛܝܐ: ܡܛܠ ܡܪܢ: ܝܫܘܥ݊ ܡܫܝܚܐ ܠܗ̣ ܬ̄ܫܒܘ ܘܣܓܝ̣ܐܐ :ܠܥ̄: ܥ̄: ܐܡܝܢ܀܀܀",
+            "assoc_name": [
+                {
+                    "value": "Shem'un bar Mow'ala bar PWLPDL",
+                    "as_written": "ܫܡܥܘܢ :ܒܪܝ : :ܡܘܥܠܐ: ܒܪܝ: ܦܘܠܦܕܠ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1238",
+            "iso": {
+                "not_before": "1238"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric and vegetative headpieces/tailpieces, beginning f. 8v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1863ksx"
+    ]
+}

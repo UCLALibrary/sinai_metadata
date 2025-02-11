@@ -1,0 +1,35 @@
+{
+    "ark": "ark:/21198/s1jd49",
+    "reconstruction": false,
+    "label": "Covenant of the Prophet",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "nucl1301",
+            "label": "Turkish"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Covenant of the Prophet",
+                "genre": [
+                    {
+                        "id": "charters",
+                        "label": "Charters"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-8r",
+            "note": [
+                "Copy of the Covenant of the Prophet. Same as MS. no 599 [695] in Arabic and Turkish"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1qw52"
+    ]
+}

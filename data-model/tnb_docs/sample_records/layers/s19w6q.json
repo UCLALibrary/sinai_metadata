@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s19w6q",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 28, Undertext (Greek majuscule)",
+    "locus": "ff. 128–130v, 133–137, 139, 143",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "21 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1zx0p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 130v, 130r, 135v, 135r, 128v, 128r, 133r, 133v, 134r, 134v, 129r, 129v, 137v, 137r, 136r, 136v, 143r, 143v, 139v, 139r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The original manuscript also included the UTO Genesis from Sinai Arabic NF 28 and the UTOs Genesis and Exodus from Sinai Arabic NF 8 (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1n02zkr"
+    ]
+}

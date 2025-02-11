@@ -1,0 +1,29 @@
+{
+    "ark": "ark:/21198/s1zd0h",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 48, Overtext (Serto)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "serto",
+                    "label": "Serto",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1wq1c",
+            "label": "Item 1"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pg529p"
+    ]
+}

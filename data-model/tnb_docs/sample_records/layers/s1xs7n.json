@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1xs7n",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 8–9, 58, 61",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Round biblical majuscule. Copied by the same hand as the UTO “Hippocrates, Epidemics” (Rossetto)"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "42-43 lines, reconstructed (Rossetto)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kt1m",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 8r+58r (col. a), 9v+61v (col. a), 51r (col. b), 61v (col. b), 58v (col. a), 61r (col. a), 58v (col. b)+8v, 61r (col. b)+9r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Original recto: 8r top+58r (col. a), 9v top+61v (col. a), 58r (col. b), 61v (col. b); original verso: 58v (col. a), 61r (col. a), 58v (col. b)+8v top, 61r (col. b )+9r top (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "To the same original manuscript belong also folios from Sinai Arabic NF M 27 (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Common codicological and palaeographical features suggest that the three Hippocratic UTOs and the two other medical UTOs in this codex (\"Antyllus?, Recipes for different diseases\" and \"Treatise on medical terms\") belonged to the same original manuscript. The following folios could also possibly belong to \"Hippocrates' Letters\": 8r (middle piece), 8v (middle piece), 9r (middle piece), 9v (middle piece) (Rossetto)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Boudalis and Rossetto ; Rossetto 2023b"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}

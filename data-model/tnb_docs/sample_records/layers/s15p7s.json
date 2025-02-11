@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s15p7s",
+    "reconstruction": false,
+    "label": "Sinai Arabic 469, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Ff. 81–97 without margins"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10949",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Geometric decoration with elevated cross, on f. 49r, decending cross, f. 60v | Minor geometric headpieces on f. 67r, f. 70r with ascending cross; ff. 83v, 86v, 102r, thin line with loops | Minor zoomorphic headpieces on ff. 114r, 118r I Minor geometric decoration, cross, f. 36r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1fn29g7"
+    ]
+}

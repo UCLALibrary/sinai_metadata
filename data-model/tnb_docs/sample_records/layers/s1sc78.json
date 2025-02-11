@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1sc78",
+    "reconstruction": false,
+    "label": "Sinai Arabic 15, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1m06j",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "14th c.",
+            "iso": {
+                "not_before": "1301",
+                "not_after": "1400"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Vegetative headpiece, f. 1r, knotted vine with dots and tail; f. 99v, knotted vine | Minor headpiece, 135r, line work"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Small cross, black, f. 100v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb2rjt"
+    ]
+}

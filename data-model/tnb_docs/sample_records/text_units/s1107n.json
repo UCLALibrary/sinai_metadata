@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1107n",
+    "reconstruction": false,
+    "label": "Homilies on the Gospel of St. Matthew (Chrysostom), Part II",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1cg66"
+            },
+            "alt_title": "Commentary on the Gospel of St. Matthew by St. John Chrysostom, Part II",
+            "locus": "ff. 1r-191v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s16c8c"
+    ]
+}

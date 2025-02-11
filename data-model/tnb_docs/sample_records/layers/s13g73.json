@@ -1,0 +1,114 @@
+{
+    "ark": "ark:/21198/s13g73",
+    "reconstruction": false,
+    "label": "Sinai Arabic 314, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1x36c",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 223r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ من نساخة هذا الكتاب المبارك كتاب أبينا الجليل في القديسين كنز العلوم ومأوى الفضائل أبينا القديس مار افرام السرياني رحمنا الرب بصلواته المقدسة آمين على يد العبد الفقير الذليل المحتاج إلى رحمة الله تعالى وغفره العبد الخاطئ حبيب بإسم قسيس ابن الأب السيد الأسقف كير مقاريوس ابن حبيب من مدينة قارا وذلك نهار السبت المبارك أول تشرين الثاني سنة ستة آلاف وتسعمائة اثنين وتسعين لأبينا آدم عليه السلام وكان المهتم والمعتني بهذا الكتاب المقدس العبد الفقير إلى رحمة الله تعالى فرح الله ابن المرحوم يوسف الشهير بالراهب غفر الله له ولوالديه ولجميع بني المعمودية الارثوذكسية آمين / أيها المتأمل لأجل السيد المسيح  ان وجدت نقص وقلة فهم وغباه من الكتاب المسكين فأصلحه لأجل الله فان كل أحد ناقص والتهام لله وحده والرب الإله المسيح لكل لسان يغفر للكاتب المسكين والقارئ والسامع والقائل امين بشفاعة الست السيدة والقديس العظيم مار افرام السرياني صاحب هذا الكتاب المقدس وجميع القديسين والشهداء والرسل والأنبياء ورئيسا الكهنة والقديسات وكل القديسين الذين ذكرناهم والذين لم نذكرهم آمين آمين آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Saturday 1 Tishrin II 6992 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Qara (Syria)"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1484",
+            "iso": {
+                "not_before": "1484"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Codex consisting of two sets of works: 1 - the Works of St. Ephraem the Syrian, with an introduction on his life. 2 - Works of Bishop Dionysius the Areopagite. The latter part is the older of the two"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Zoomorphic, geometrical headpieces, bird motif ff. 89r, 121r, 189v | Minor vegetative headpiece, ff. 29v, 134v; knotted vine motif, f. 194v"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Knot motif in red throughout beginning f. 13v; f. 95v, with palmetteI~IGeometric decoration on quire signatures beginning f. 8v with catchwords occasionally used at quire boundaries; ff. 174v-175r, 184v, 185r, facing decorative quire signatures."
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qg0bgn"
+    ]
+}

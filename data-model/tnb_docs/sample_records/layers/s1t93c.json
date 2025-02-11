@@ -1,0 +1,62 @@
+{
+    "ark": "ark:/21198/s1t93c",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF frag 73a, Undertext (Greek majuscule)",
+    "locus": "ff. 1–4",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Sloping pointed majuscule | Light contrast between thick and thin strokes; omega (in some cases also omicron) raised above the base line"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1g97s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "mid 6th- mid 7th c. ",
+            "iso": {
+                "not_before": "0551",
+                "not_after": "0650"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "The Greek UTOs of Sinai Georgian 49, ff. 57r-73v, 78r-95v, 112r-119v also belong to this manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Pasquale Orsini"
+        }
+    ],
+    "parent": [
+        "ark:/21198/r2sf2t3c"
+    ]
+}

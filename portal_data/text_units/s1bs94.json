@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s1bs94",
+    "reconstruction": false,
+    "label": "Menologion. For the month of Tishrin II (November)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion. Lives of Saints for the month of Tishrin II (November)",
+            "locus": "ff. 2r-270r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 2r",
+                    "as_written": "نبتدي بعون الله و …[ن‍]كتب"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "locus": "f. 270r",
+                    "as_written": "نجز"
+                }
+            ],
+            "note": [
+                "Menologion. Lives of Saints for the month of Tishrin II (November), beginning on the 24th with the life of the Apostle Philips and ending on the 30th with the Disciples Matthew and Andrew"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1j613"
+    ]
+}

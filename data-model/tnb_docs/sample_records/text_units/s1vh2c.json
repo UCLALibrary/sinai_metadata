@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1vh2c",
+    "reconstruction": false,
+    "label": "Church services",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Church services",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 2v-387v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11w2q"
+    ]
+}

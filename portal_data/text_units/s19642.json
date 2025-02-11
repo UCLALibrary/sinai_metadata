@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s19642",
+    "reconstruction": false,
+    "label": "Four Gospels",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels",
+            "locus": "ff. 1r-293r",
+            "note": [
+                "Followed by chapter index and divided according to Greek Calendar"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1gp5t"
+    ]
+}

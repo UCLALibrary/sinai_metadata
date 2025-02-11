@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1404f",
+    "reconstruction": false,
+    "label": "Sinai Syriac 114, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1xm21",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "72r-72v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܐܬܟܬܒ ܘܐܫܬܡܠܝ܆ ܣܚ̇ܚܐ ܗ̇ܢܐ ܕܡܪ ܒܣܝܠܝܘܣ ܪܒܐ.. ܝܘܡ ܬܪ̈ܢ ܒܫܒܬܐ ܕܒܣܪܐ ܡܢ ܫܒܛ ܫܝܬܐܠܦ ܘܬܫܥ ܩ̄ ܘܬܠܬܢ ܘܬܪܬܢ ܡܢ ܡܢܝܢܐ ܕܫܢܝ ܐܒܘܢ ܐܕܡ ܒܕܝܪܐ ܛܘܪ ܣܝܢܐ ܡܩܕܫܐ ܥܠ ܒܝܕܝ ܚܛܝܐ ܘܫܦܠܐ ܘܡܚܝܠܐ. ܟܗܢܐ ܕܝܪܝܐ ܒܫܡܐ ܘܠܐ ܒܥܒܕܐ. ܒܪ ܢܥܡܗ ܡܢ ܩܪܐ ܕܡܬ̤ܝܕܥ ܒܛܘܪ ܣܢܝܪ ܡܚܝܢܝ ܢܦܫܗ ܐܠܗܐ.. ܘܗܘ݂ ܒܥܐ ܘܡܬܟܫܦ.. ܠܟܠܡܢ ܕܩܪܐ ܒܗ. ܢܨܠܐ ܥܠܘ̄.. ܘܬܘܒ ܫ̇ܐܠ ܘܡ̇ܦܝܣ ܠܟܠ ܟ̄ܗ. ܕܡܫܡܫ ܒܗ. ܡܛܠ ܐܠܗܐ. ܐܢܬܪܟܪ ܠܗ ܒܟܘܗܢܗ ܕܒܕܘܟܬܐ ܕܟܬܒ ܫܡܗ. ܘܟܠܚܕ ܐܝܟ ܨܠܘܬܗ ܢܬܦܪܥ ܐܠܗܐ ܐܒܐ ܕܪ̈ܚܡܐ ܢܚܣܐ ܠܟܬܘܒܐ ܘܥܩܪܘܝܐ ܘܠܟ̈ܗ̄ ܕܡܫܡܫܝܢ ܒܗ. ܒܨ̈ܠܘܬܐ ܕܝܠܕܬ ܐܠܗܐ ܘܪܝܫ ܟ̄ܗ ܒܣܝܠܝܣ ܪܒܐ. ܘܟܠܗܘܢ ܩ̈ܝܫܐ ܐܡܝܢ.",
+            "note": [
+                "Attested places:  on Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1620",
+            "iso": {
+                "not_before": "1620"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qn7rfj"
+    ]
+}

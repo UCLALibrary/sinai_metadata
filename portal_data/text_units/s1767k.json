@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1767k",
+    "reconstruction": false,
+    "label": "Four Gospels",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1n01z"
+            },
+            "alt_title": "Commentary on Gospel of St. John by John Chrysostom",
+            "locus": "ff. 1r-60v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1dp6k"
+    ]
+}

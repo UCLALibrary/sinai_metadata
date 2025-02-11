@@ -1,0 +1,57 @@
+{
+    "ark": "ark:/21198/s1n32c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 687, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fq0z",
+            "label": "Item 1"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 109v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "17th c.",
+            "iso": {
+                "not_before": "1601",
+                "not_after": "1700"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1km118r"
+    ]
+}

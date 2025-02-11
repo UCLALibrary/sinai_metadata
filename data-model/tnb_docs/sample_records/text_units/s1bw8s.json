@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1bw8s",
+    "reconstruction": false,
+    "label": "Evangelion",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s19p4w"
+            },
+            "alt_title": "Lectionary (Gospels)",
+            "locus": "ff. 1v-375v",
+            "note": [
+                "With commentary on some lessons by St. John Chrysostom"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1j89t"
+    ]
+}

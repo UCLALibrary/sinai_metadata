@@ -1,0 +1,46 @@
+{
+    "ark": "ark:/21198/s17d1c",
+    "reconstruction": false,
+    "label": "Sinai Greek 929, Undertext (Undetermined (Arabic))",
+    "locus": "front pastedown",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1wd65",
+            "label": "Item 1"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "This is the recto of the pastedown at the beginning of the codex, i.e., the side that was originally glued to the upper board. There is no Arabic writing on its conjoin, i.e., flyleaf verso (here labeled as fol. 1v)"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alexander Treiger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1nc6gtd"
+    ]
+}

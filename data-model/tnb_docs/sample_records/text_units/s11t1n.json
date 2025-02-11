@@ -1,0 +1,25 @@
+{
+    "ark": "ark:/21198/s11t1n",
+    "reconstruction": false,
+    "label": "Euchologion",
+    "lang": [
+        {
+            "id": "chur1257",
+            "label": "Church Slavonic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tp4j"
+            },
+            "alt_title": "Liturgiarium sive Euchologium glagoliticum secundum (olim Missale)",
+            "note": [
+                "Missal (according to Tarnanidis)"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1790z"
+    ]
+}

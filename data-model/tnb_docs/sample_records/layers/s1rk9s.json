@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1rk9s",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 13, Undertext (Erkatagir)",
+    "locus": "ff. 52–53, 62–63, 71–72",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Slanted majuscules"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "20 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1dm5h",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 72v-71r, 72r-72v, [NF 55: 29r-28v, 29v-28r, 38r-37v, 38v-37r], 62v-63r, 62r-63v, 53r-52v, 53v-52r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "References to Sin. geo. NF 55 added to show the original distribution"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "To the same original manuscript belongs also the UTO of the Pauline Epistles with Euthalian apparatus containing fragments from the Euthalian prologue, Hebrews and Philemon found in Sinai Georgian NF M 55"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: SIBE 2/3"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1ww8090"
+    ]
+}

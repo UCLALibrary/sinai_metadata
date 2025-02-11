@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1jk8j",
+    "reconstruction": false,
+    "label": "Sinai Syriac 234, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1c66f",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "123r-123v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫ̄ܘ ܠܐܒܐ ܕܓܕܪ ܘܠܒܪܐ ܕܣܝܕ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܕܓܠܝ ܘܫܡܠܝ. ܗܫܐ ܘܒܟܠܙܒܢ ܘܠܥܠܡ ܥܡܠܝܢ ܐܡܝܢ܀ ܫܠܡ ܒܥܘܕܪܢ ܡܪܢ ܟܬܒܐ ܗܢܐ ܕܩܪܝܢܐ ܕܚܘܕܪܐ ܕܟܠܗ̇ ܫܢܬܐ ܐܝܟ ܛܟܣܐ ܕܝܘܢܐ ܕܡܫܬܡܗ ܠܘܬܗܘܢ ܦܪܡܘܢ܀ ܫܢܬ̤ ܐܠܦ ܘܚܡܫܡܐܐ ܟ̄ܘ. ܡܢ ܫܢ̈ܝܐ ܕܠܟܣ ܕܠܟܣܢܕܪܘܣ ܡܩܕܘܢܝܐ. ܝܘܡ ܫ̄ܒ ܒ̄ܫ. ܟ̄ܓ ܒܝܪܚ ܐܕܪ ܠܐܦܝ ܫ̈ܢܬ̤ ܫ̈ܥܝܢ ܒܘܢܡܐ. ܒܩܪܝܬܐ ܪܚܡܬ̤ ܠܡܫܝܚܐ ܒܬܪܘܡܝܢ. ܒܟܘܪܐ ܕܛܪܘܦܘܠܝܣ ܡܕܝܢܬܐ ܕܣܘܪܝܐ. ܟܬܒܗ ܕܝܢ ܐܢܫ ܚܛܝܐ ܘܕܘܝܐ ܡܦܠܦܠ ܒܟܢܙܗ̈ܝܢ ܣܢ̈ܝܬܐ ܘܣ̣̈ܡ̣̈ܕ ܘܣܢܝܩ ܥܠ ܪ̈ܚܡܐ ܕܡܪܝܐ ܩܫܝܫܐ ܡܬܝ ܘܠܐ ܫܘܝܐ ܕܢܬܩܪܐ ܟܗܢܐ. ܐܠܐ ܐܠܗܐ ܐܒܐ ܕܟܠ ܪ̈ܚܡܐ ܢܚܣܐ ܚܘܒܘܗ̈ܝ ܘܢܫܒܘܩ ܚܛܘ̈ܗܝ ܘܢܢܛܪ ܠܝܚܘܪ̈ܘܝ ܘܢܢܝܥ ܠܠܚܕܘ̈ܝ ܒܨ̄ܠܘ ܕܝܠܕܬ ܐܠܗܐ ܡܪܝܡ ܘܕܡܪܝ ܝܘܚܢܢ ܡܢܡܕܢܐ ܘܕܢܒ̈ܝܐ ̱ ܘܕܫܠܝܚ̈ܐ ܘܕܘܗܕܐ ܘܚܣܝܐ ܘܢ̈ܫܐ ܩܕ̈ܝܫܬܐ ܐܡܝ̈ܢ܀ ܦܓܘܕܐ ܐܘ ܓܠܛܐ. ܐܣܪܘܚܘ ܠܝ ܫܘܒܩܢܐ ܡܛܠ ܐܠܗܐ ܘܨܠܘ ܥܠܝ ܕܐܬܚܢܢ ܒܝܘܡ ܕܝܢܐ. ܘܟܠܢܫ ܐܝܟ ܣܠܘܬܗ ܡܬܦܪܥ ܐܡܝܢ x ܐܠܗܐ ܢܚܣܐ ܠܟܠܡܢ ܕܐܬ ܠܗ̣ ܒܗ ܫܘܬܦܘܬܐ ܒܨܠܘܬܐ ܕܝܠܕܬ ܐܠܗܐ ܘܕܟܡܗܘܢ ܩܕܝܫܐ ܐܡܝܢ++++++++",
+            "assoc_name": [
+                {
+                    "value": "Priest Mattai",
+                    "as_written": "ܩܫܝܫܐ ܡܬܝ",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "note": [
+                "Smudged and difficult to discern text. A Garshuni template follows.",
+                "Attested places:  Tripolis"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1214",
+            "iso": {
+                "not_before": "1214"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces throughout, beginning on f. 13v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z10k3cz0"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "ark": "ark:/21198/s1s62n",
+    "reconstruction": false,
+    "label": "Sinai Syriac 241, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1kq2z",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "border",
+            "label": "Border(s)"
+        },
+        {
+            "id": "deco-architectural",
+            "label": "Decoration, Architectural"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "236v-237r",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܢܣܒ ܘܫܬܡܠܝ ܟܬܒܐ ܗܢܐ ܡܙܡܘܪܐ ܕܕܘܝܕ܀ ܕܗ̈ܘܝܢ ܒܡܢܝܐ ܩܢ܀ ܝܘܡ ܠܪ̈ܘܒܬܐ܀ ܕܓܣܪ̈ܝܢ ܘܒ̄ܐ܀ ܒܝܪܚܐ܀ ܐܒ̄܀ ܫܢܬ ܘ̄ܐܠܐܦ ܘܚ̄ ܡܐܐ܀ ܓܥ̈ܐ܀ ܠܐܒܘܢ ܐܕܡ܀ ܥܠ ܐܝܕܝ܀ ܐܢܫ ܚܛܝܐ ܟܗܢܐ܀ ܓܪܐܣ̄܀ ܡ̄܀ ܗ̄܀ ܒܪܝ ܕܡܬܪܝܐ܀ ܡܢ ܪܩܝܬܐ ܒܙܝܙܐ܀ ܡܢ ܐܬܪܐܕܐܛܪܐܦܠܘܣ܀ ܐܬܟܬܒ܀ ܬܕܝܪܐ ܕܩܪܝܬܢ ܝܠܕܬ ܐܠܗܐ܀ ܚܡܐ ܛܘܪܐ܀ ܐܠܗܐ ܡܢܝܚܐ ܢܦܫܗ ܒܡܠܟܘܬܗ ܕܫܡܝܐ܀ ܒܨܠܘܬܐ ܕܩܪܬܢ ܝܠܕܬ ܐܠܗܐ ܘܕܟܠܗܘܢ ܩܕܝܫ̈ܐ ܐܡܝܢ܀ ܘܐܡܝܢ܀",
+            "note": [
+                "Attested places:  in monastery of Theotokos in mountain of Hama"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1365",
+            "iso": {
+                "not_before": "1365"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Bordered geometric and vegetative headpieces between ff.1r-106r, ff. 212r, 237r; f. 1r, Arch; f. 22v, with decorated initial; f. 106r, with Arabic script"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Rosette, f. 237v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1c83tzp"
+    ]
+}

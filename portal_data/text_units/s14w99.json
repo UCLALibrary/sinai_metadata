@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s14w99",
+    "reconstruction": false,
+    "label": "Prayers",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Prayers",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-100v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1b89z"
+    ]
+}

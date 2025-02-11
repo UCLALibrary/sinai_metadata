@@ -1,0 +1,90 @@
+{
+    "ark": "ark:/21198/s18c9c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 268, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s12w89",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 314v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز بمعونة الله وحسن توفيقه مصحف ديونوسيوس القاضي ورئاسة الكهنوت البيعية والله مشكور أمسح محمود قال مترجم هذا الكتاب من اللغة اليونانية الى اللغة العربية قد تكلفت أمرا في ترجمة هذا الكتاب صعب على مرامه لعجزي وقصوري عن غاية الصواب ونهاية السداد والذي حداني على الاقدام على ذلك مسئلة من رسم ترجمته بحسب الامكان وهو يسأل الواقف عليه ان يتجاوز عن ذلفه ويتهم نقيصته بكماله ويستر عواره  بفضله ويسأل ان يدعو للمترجم بالرحمة والمغفرة في حياه وبعد متات استنقلت انا جورجس بن يوحنا بن سهل بن إبراهيم الدمشقي المعروف بابن اليبرودي  لسيارني أبي علي عيسى الكاتب المعروف بابن سحقون ايده الله لهذا الكتاب الذي لديونوسيوس في الكهنوت البعيعية  وهو من الاشياء المعدومة لأنه لم ينقل الى العربي هذه النسخة فمن وقع في يده فيعرف قدرة وصعوبة ما لحفتي من التعب على نقله لا بيد له الا كل من منحه الله العقل والعلم فإن هذا الكتاب لا يصلح الا للأفاضل من الناس ولمن كان من الافاضل حسن البصيرة بعلوم الفلسفة ومن كان على غير ما ذكرته فانه لا ينتفع به إلا أن يحب الله تبارك اسمه ان يرقه قوة فهمية وكتب الأصل في صفر سنة أربع مائه ولله الحمد ما وهبه من نعمة على فهم المعاني الشريفة / وكان الفراغ من هذه النسخة في العشر الأوسط  من ايلول سنة ستالف وسبعمائه أربعة ثلثين لكون العالم الموافق العشر الأواسط من شهر رمضان لسنة اثنين عشرين وستمائه العرب وكتب الخاطئ الأثيم يمين بكنيسة السيدة بدمشق",
+            "assoc_name": [
+                {
+                    "value": "George Ibn John Ibn Sahl Ibn Ibrahim al-Dimashqi, known as Ibn al-Yabrudi, Abu al-Faraj al-Yabrudi, Syriac doctor",
+                    "role": {
+                        "id": "scribe",
+                        "label": "Scribe"
+                    }
+                }
+            ],
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "15 Aylul 7634 (world) :: 15 Ramadan 622 (arab)"
+                }
+            ],
+            "note": [
+                "cf. Sinai Arabic 252",
+                "Attested names: Ibn Sahqun (see also Sinai Arabic 252), known as Isa Ibn Ishaq al-Homsi, Ibn Sahqun",
+                "Attested places:  Church of Our Lady, Damascus"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1225",
+            "iso": {
+                "not_before": "1225"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1qj95sq"
+    ]
+}

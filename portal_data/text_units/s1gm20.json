@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1gm20",
+    "reconstruction": false,
+    "label": "Six discourses on Priesthood derived from debates between St. Basil and St. John Chrysostom",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Six discourses on Priesthood derived from debates between St. Basil and St. John Chrysostom",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-109v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1p332"
+    ]
+}

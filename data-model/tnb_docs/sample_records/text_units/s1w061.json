@@ -1,0 +1,53 @@
+{
+    "ark": "ark:/21198/s1w061",
+    "reconstruction": false,
+    "label": "Lectionary with commentary on some lessons by John Chrysostom",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lectionary with commentary on some lessons by John Chrysostom",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    },
+                    {
+                        "id": "lectionaries",
+                        "label": "Lectionaries"
+                    },
+                    {
+                        "id": "biblical-texts",
+                        "label": "Biblical texts"
+                    },
+                    {
+                        "id": "gospel-books",
+                        "label": "Gospel books"
+                    },
+                    {
+                        "id": "commentaries",
+                        "label": "Commentaries"
+                    }
+                ]
+            },
+            "locus": "ff. 2r-238r"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Contributor(s): Justin Arnwine"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s12c84"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "ark": "ark:/21198/s1c050",
+    "reconstruction": false,
+    "label": "Sinai Greek NF MG 14, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 16, 21, 28",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large CPA | Large letter 'waw' at the beginning of a new line and new verse"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "22 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1110b",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 28r, 28v, 16r+21v, 16v+21r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Each of the three CPA UTOs in this manuscript is written by a different hand"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: P. Nicolopoulos, The New Finds: Holy Monastery and Archdiocese of Sinai, Athens, 1999, p. 144 ; C. Müller-Kessler, \"1.4.9 Christian Palestinian Aramaic Translation,\" in A. Lange and E. Tov (eds.), Textual History of the Hebrew Bible, Leiden: Brill, 2016, pp. 447-456 ; C. Müller-Kessler, “New Palimpsest Fragments for 1 Kingdoms with Lucian and Origen Additions in a Christian Palestinian Aramaic Witness (Sinai, Greek NF MG 14),” Revue Biblique 129:1 (2022)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1pk1d26"
+    ]
+}

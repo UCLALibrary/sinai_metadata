@@ -1111,7 +1111,7 @@ try:
 except OSError:
     print("ERROR: Incorrect path to csv, the file may not exist in the provided directory")
 except IndexError:
-     print("Please be sure to enter both command arguments the path to the CSV you would like to transform and the type (agents or works)")
+     print(f"Please be sure to enter both command arguments the path to the CSV you would like to transform and the type {RECORD_TYPES}")
 except ValueError:
      print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
 
@@ -1120,6 +1120,11 @@ path_to_ref_instances_csv = input("Please input a path to the CSV containing the
 # path_to_ref_instances_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv" # testing remove this line
 if path_to_ref_instances_csv:
     ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
+    ref_instances_missing_col = check_csv_columns_against_standard_list('bib_fields.txt', "References", ref_instances.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+    user_response = input("Please press enter to continue with the migration script")
+    for col in ref_instances_missing_col:
+        ref_instances[col] = pd.Series(dtype='string')
 else:
     ref_instances = None
 
@@ -1127,6 +1132,11 @@ path_to_paracontents_csv = input("Please input a path to the CSV containing the 
 # path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
 if path_to_paracontents_csv:
     paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
+    paracontents_missing_col = check_csv_columns_against_standard_list('para_fields.txt', "Paracontents", paracontents_table.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+    user_response = input("Please press enter to continue with the migration script")
+    for col in paracontents_missing_col:
+        paracontents_table[col] = pd.Series(dtype='string')
 else:
     paracontents_table = None
 
@@ -1135,6 +1145,7 @@ if record_type == "text_units":
 # path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
     workwits_table = pd.read_csv(path_to_workwits_csv, index_col='ID')
     workwits_missing_col = check_csv_columns_against_standard_list('work_wit_fields.txt', "Work Witnesses", workwits_table.columns)
+    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
     user_response = input("Please press enter to continue with the migration script")
     for col in workwits_missing_col:
         workwits_table[col] = pd.Series(dtype='string')
@@ -1154,17 +1165,16 @@ user_response = input("Continue with the migration script? (y/n)")
 accept_input = user_response == 'y'
 
 # for each row, create a JSON file of the corresponding record type
-
-# Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
-out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
-if out_dir == "":
-    out_dir = f"out/{record_type}/"
-if not os.path.exists(out_dir):
-    os.makedirs(out_dir)
 if accept_input:
     # add in the missing columns to the DataFrame as empty
     for col in missing_columns:
         csv_file[col] = pd.Series(dtype='string')
+    # Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
+    out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
+    if out_dir == "":
+        out_dir = f"out/{record_type}/"
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
     for i, row in csv_file.iterrows():
         record = transform_row_to_json(row, record_type)
         # print(type(row))

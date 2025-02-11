@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1437m",
+    "reconstruction": false,
+    "label": "Horologion",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1dg6h"
+            },
+            "alt_title": "Book of Hours, written by Mar George, from the Hebrew village of Egad in 1599 A.D.",
+            "locus": "ff. 1r-54v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s15s7t"
+    ]
+}

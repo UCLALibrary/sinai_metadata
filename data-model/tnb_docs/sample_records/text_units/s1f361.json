@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s1f361",
+    "reconstruction": false,
+    "label": "Lives of SS. Elias, Sabas, and John of the Golden Gospel",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Lives of SS. Elias, Sabas, and John of the Golden Gospel",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-149r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1mk85"
+    ]
+}

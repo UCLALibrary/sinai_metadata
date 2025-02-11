@@ -1,0 +1,107 @@
+{
+    "ark": "ark:/21198/s1ps4b",
+    "reconstruction": false,
+    "label": "Sinai Arabic 419, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "locus": "ff. 307-312v",
+            "color": [
+                "red"
+            ],
+            "note": [
+                "Uses a different shade of red ink"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1hd3m",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 306v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ من نسخة يوم الجمعة السادس عشر في حزيران سنة ستة آلاف وثمانمائة وخمسة عشر لأبينا آدم بجبل الله كور سيناء في الدير المقدس المحروس من الله ",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Friday 16 Huzayran 6815 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Saint Catherine’s Monastery, Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1307",
+            "iso": {
+                "not_before": "1307"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpiece on f. 79r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z15t4pt8"
+    ]
+}

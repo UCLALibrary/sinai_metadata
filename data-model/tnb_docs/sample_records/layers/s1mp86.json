@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1mp86",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 71, Undertext (Christian Palestinian Aramaic)",
+    "locus": "ff. 1, 8",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "cpa",
+                    "label": "Christian Palestinian Aramaic",
+                    "writing_system": "Syriac"
+                }
+            ],
+            "note": [
+                "Early large CPA"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18t1t",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "6th-7th c. ",
+            "iso": {
+                "not_before": "0501",
+                "not_after": "0700"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 1r, 8v, 8r, 1v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Original text in two columns extends over conjoint folios. Only the top half of each original folio is preserved. Fols. 1r+8v represent the top half of the original folio in two columns. Fols. 8r+1v represent the top half of the original folio in two column"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "For a possible reconstruction of the sequence of this text, see Müller-Kessler 2014, pp. 263-309: 1. Syr. no. 16, fol. 108r Deut. 6:4-5a; 7b-10a    Syr. no. 16, fol. 108v Deut. 6:11b-12a; 14b-16a 2. Syr. no. 16, fol. 127r Deut. 7:25-26; Job 6:1b-4a    Syr. no. 16, fol. 127v Job 6:5b-13a 3. Syr. no. 16, fol. 109r Job 7:21b; Is. 40:1-5a    Syr. no. 16, fol. 109v Is. 40:6b-7 4. Syr. no. 16, fol. 63/68r Job 9:12b-23a    Syr. no. 16, fol. 63/68v Job 9:23b-34 5. Syr. no. 16, fol. 38/106r Deut. 13:6b-12a    Syr. no. 16, fol. 38/106v Deut. 13:12b-17a 6. Syr. no. 16, fol. 107/48r Deut. 13:17b; Job 21:1-12a    Syr. no. 16, fol. 107/48v Job 21:12b-22 7. Syr. no. 16, fol. 41/60r Prov. 9:1-9a    Syr. no. 16, fol. 41/60v Prov. 9:9b-11; Is. 40:9-12a 8. MS 35, fol. 27r Dan. 3:24b-26; 28-30b    MS 35, fol. 27v Dan. 3:32-33a; 35b-37 9. MS 35, fol. 62/63r Prov. 1:15b-19; Jer. 1:11-13a    MS 35, fol. 62/63v Jer. 1:13b-17; Ps. 26(27):7 10. Georgian NF 71, fol. 1r/8v Ex. 4:3–5:1; 3–4a    Georgian NF 71, fol. 1v/8r Ex. 5:6–7a; 6b–10"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Probably belongs to Codex Sinaiticus Rescriptus (St. Petersburg/Oslo) (= Codex Sinaiticus Rescriptus (St. Petersburg b/Codex Sinaiticus Zosimi Rescriptus I) Lectionary"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Christa Müller-Kessler, Sebastian Brock"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Bibliograpy: C. Müller-Kessler, \"Codex Sinaiticus Rescriptus (CSRG/O/P/S): A collection of Christian Palestinian Aramaic manuscripts,\" Le Muséon 127 (2014), pp. 263-309 ; C. Müller-Kessler, M. Sokoloff, (eds.), A corpus of Christian Palestinian Aramaic. Vol. I: The Christian Palestinian Aramaic version of the Old Testament and Apocrypha from the early period, Groningen: Styx, 1997 ; C. Müller-Kessler, “Piecing together Christian Palestinian Aramaic Texts under Georgian Manuscripts (St Petersburg, NLR, Syr. 16; Sinai, Georg. NF 19, 71; Oslo, Martin Schøyen MS 35, 37; Princeton, Garrett MS 24; Göttingen, Syr. 17, 19, 23, 25),” Digital Kartvelology 1 (2022), pp. 1-25 [https://adh.ge/en/digital-kartvelology/] ; Müller-Kessler 2014, pp. 263-309 ; Müller-Kessler 2022, pp. 1-25"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z32wm6"
+    ]
+}

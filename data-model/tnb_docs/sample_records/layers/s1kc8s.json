@@ -1,0 +1,69 @@
+{
+    "ark": "ark:/21198/s1kc8s",
+    "reconstruction": false,
+    "label": "Sinai Arabic 352, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1cw7q",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "deco-zoomorph",
+            "label": "Decoration, Zoomorphic"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decoration on f. 49r, cross shape with vines and bird (in pencil) | Minor geometric headpieces on ff. 118r, 143v, with fleur de lis in blue and red ink; ff. 144v, 145v, 126v, with fleurons; other minor headpieces throughout | Ornate headpieces on ff. 139r, blue volutes with flowers and leaves, fluerons on the edges; 162r, fleur de lis, volutes and vines with leaves, in light blue and red"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14b44n8"
+    ]
+}

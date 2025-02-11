@@ -1,0 +1,32 @@
+{
+    "ark": "ark:/21198/s14h2v",
+    "reconstruction": false,
+    "label": "A modern summary of the Paradise of the Fathers",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "A modern summary of the Paradise of the Fathers",
+                "genre": [
+                    {
+                        "id": "historical-works",
+                        "label": "Historical works"
+                    },
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-131r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1b03x"
+    ]
+}

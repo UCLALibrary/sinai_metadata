@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s15957",
+    "reconstruction": false,
+    "label": "Menologion (month of Shbāt)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Shbāt)",
+            "locus": "ff. 1r-233v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1bp6z"
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "ark": "ark:/21198/s1qc9d",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 84, Overtext (Nuskhurimt)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "nuskhurimt",
+                    "label": "Nuskhurimt",
+                    "writing_system": "Georgian"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black-brown",
+                "red"
+            ],
+            "note": [
+                "Initials and titles in red"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1j08p",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "initials-deco",
+            "label": "Initial(s), Decorated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th-11th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Decorative bars in red and black"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z14m9dms"
+    ]
+}

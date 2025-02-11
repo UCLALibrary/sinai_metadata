@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1mm3m",
+    "reconstruction": false,
+    "label": "Typikon Jerusalem",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1zp4s"
+            },
+            "alt_title": "Hexaëmeron by Basil",
+            "locus": "ff. 2v-117v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1t04n"
+    ]
+}

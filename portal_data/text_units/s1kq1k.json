@@ -1,0 +1,31 @@
+{
+    "ark": "ark:/21198/s1kq1k",
+    "reconstruction": false,
+    "label": "Sermons on Song of Songs",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Sermons on Song of Songs",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-65v",
+            "note": [
+                "Homily 6 (ff. 6r–9r, acephalous), Homily 7 (ff. 9r–25v, incomplete), Homily 9 (acephalous, ff. 26r–30v), Homily 10 (ff. 30v–39r), Homily 11 (ff. 39r–51r), Homily 12 (ff. 51v–65v), (lacuna of ca. 3 quires), Homily 15 (ff. 1r–5v, incomplete in the beginning and end)"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1s330"
+    ]
+}

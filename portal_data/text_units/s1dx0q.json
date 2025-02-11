@@ -1,0 +1,28 @@
+{
+    "ark": "ark:/21198/s1dx0q",
+    "reconstruction": false,
+    "label": "Index of New Testament lections for the moveable cycle",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Index of Lections",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "alt_title": "Index of New Testament lections for the moveable cycle"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1m924"
+    ]
+}

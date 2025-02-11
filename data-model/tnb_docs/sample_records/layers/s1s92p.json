@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s1s92p",
+    "reconstruction": false,
+    "label": "Sinai Greek 468, Undertext (Naskh)",
+    "locus": "ff. 5–27, 30–32",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Combination of early Naskh and Maghribi scripts | Same script as UTO Homily on the Rich and the Poor. Large bowls with sweeping curves for a number of descending strokes. Occasionally the stems of letter alif have a club-like extension to the left of their top point, and the loop of letter Ḍād and letter ṣād has no “tooth”. The base stroke of the initial letter ‘ayn is elongated backward to the right. Sporadic diacritical marks"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1f97g",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "Late 10th-beginning 11th c. ",
+            "iso": {
+                "not_before": "0975",
+                "not_after": "1050"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Palestine or North Africa",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 5r, 14v, 5v, 14r; 6r, 13v, 6v, 13r; 7r, 12v, 7v, 12r; 11v, 8r, 11r, 8v; 9r, 10v, 9v, 10r; 15r, 24v, 15v, 24r; 16r, 23v, 16v, 23r; 22v, 17r, 22r, 17v; 21v, 18r, 21r, 18v; 19r, 20v, 19v, 20r; 25r, 32v, 25v, 32r; 31v, 26r, 31r, 26v; 27r, 30v, 27v, 30r"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Impossible to establish. The following list is based on codicological examination"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Hikmat Kashouh"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Stephen J. Shoemaker, Ancient Traditions of the Virgin Mary’s Dormition and Assumption. Oxford: University Press, 2002 ; Graf, Geschichte, Vol. 1, 249-251 ; Maximilian Enger, Akhbär Yühanna as-salîh fi-naqlat umm al-Masih, id est Joannis Apostoli de transitu Beatae Mariae Virginis Liber (Eberfeld: R. L. Friderichs, 1854)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1029pgj"
+    ]
+}

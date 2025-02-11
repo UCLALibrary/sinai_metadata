@@ -1,0 +1,89 @@
+{
+    "ark": "ark:/21198/s1006z",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 90, Undertext (Asomtavruli)",
+    "locus": "ff. 1–18, 23, 24, 26r–27, 38",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Mid-sized majuscule"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "19 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1n090",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 7th-8th c. ",
+            "iso": {
+                "not_before": "0601",
+                "not_after": "0800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 23r+18v, 23v+18r; 24r+17v, 24v+17r; 27r, 27v; 26r, 26v; 15r+10v, 15v+10r; 16r+9v, 16v+9r; 38v, 38r; 14r+11v, 14v+11r; 13r+12v, 13v+12r; 5r+4v, 5v+4r, 6r+3v, 6v+3r; 7r+2v, 7v+2r, 8r+1v, 8v+1r [Georgian NF 84: 7v+6r, 7r+6v]"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "All folios are double palimpsest, with fragments from the Life of St. Febronia, the homilies of John Chrysostom, or the unidentified undertext as the upper palimpsest layer"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "From the same original manuscript as the UTO Khanmeti-Haemeti Psalter in Sinai Georgian NF M 84"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: M. Shanidze, Psalmunis dzveli kartuli redakciebi (Tbilisi, 1960) ; J. Gippert, B. Outtier, The Oldest Georgian Psalter - A Preliminary Account, Mravaltavi 23 (Tbilisi, 2021)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb24tz"
+    ]
+}

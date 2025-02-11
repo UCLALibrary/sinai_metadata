@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s1mc9g",
+    "reconstruction": false,
+    "label": "Sinai Syriac 30, Overtext (Estrangela)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "estrangela",
+                    "label": "Estrangela",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "ink": [
+        {
+            "color": [
+                "black"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1dw9s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "779 ",
+            "iso": {
+                "not_before": "0779"
+            }
+        }
+    ],
+    "assoc_name": [
+        {
+            "value": "John of Mar Conon, Ma'arret Misrin (Syria)",
+            "role": {
+                "id": "scribe",
+                "label": "Scribe"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Ma‘arret Mesrin (northern Syria)",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Black and red dots, in the shape of a cross or other shapes, mark titles or new segments of text"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z12n5hwt"
+    ]
+}

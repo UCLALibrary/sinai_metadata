@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s16h13",
+    "reconstruction": false,
+    "label": "Homilies on the Epistle to the Hebrews",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1h884"
+            },
+            "locus": "ff. 1r-330v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1d03j"
+    ]
+}

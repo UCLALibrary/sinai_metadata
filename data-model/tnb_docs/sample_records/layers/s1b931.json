@@ -1,0 +1,96 @@
+{
+    "ark": "ark:/21198/s1b931",
+    "reconstruction": false,
+    "label": "Sinai Georgian NF M 90, Undertext (Asomtavruli)",
+    "locus": "ff. 26–27, 30r, 30–37",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "asomtavruli",
+                    "label": "Asomtavruli",
+                    "writing_system": "Georgian"
+                }
+            ],
+            "note": [
+                "Small, clumsy and slightly slanted"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "18 lines, uncertain"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1097f",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "ca. 9th-10th c. ",
+            "iso": {
+                "not_before": "0801",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 27r, 27v, 26r, 26v, 32r+31v, 32v+31r, 34r+37v, 34v+37r, 35r+36v, 35v+36r, 30v+33r, 30r+33v"
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Lower parts of folios 27 and 26 are missing"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Probably from the same hand and original as the UTOs containing the homilies by John Chrysostom and the Unidentified Asomtavruli text in this manuscript. Probably from the same original as the other parts of the UTO Life of Febronia in Sinai Georgian NF M 84"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Upper palimpsest layer over the Haemeti Psalter and the Khanmeti Gospels"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert, Bernard Outtier"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Gérard Garitte, Catalogue des manuscrits géorgiens littéraires du Mont Sinaï, Louvain 1956, p. 18"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tb24tz"
+    ]
+}

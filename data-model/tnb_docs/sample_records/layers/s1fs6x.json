@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1fs6x",
+    "reconstruction": false,
+    "label": "Sinai Arabic 534, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s18d4t",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "deco-vegetative",
+            "label": "Decoration, Vegetative"
+        },
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "13th c.",
+            "iso": {
+                "not_before": "1201",
+                "not_after": "1300"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Headpieces, knotted vine motif, ff. 52v, 1004, 204r, 249r 333v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1k37c9f"
+    ]
+}

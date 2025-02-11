@@ -1,0 +1,64 @@
+{
+    "ark": "ark:/21198/s1zs8b",
+    "reconstruction": false,
+    "label": "Sinai Arabic 588, Undertext (Kufic)",
+    "locus": "f. 39",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Late Kufi Palestine-Sinai style"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1mt29",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1000"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Possibly Sinai or Palestine",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by André Binggeli"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z16m44r0"
+    ]
+}

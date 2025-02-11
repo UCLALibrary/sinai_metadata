@@ -1,0 +1,79 @@
+{
+    "ark": "ark:/21198/s1dw4w",
+    "reconstruction": false,
+    "label": "Sinai Arabic 293, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s17h2s",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 291v",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "نجز نسخ الكتاب المقدس يوم الأربعاء ثامن وعشرين شهر حزيران سنة ست آلاف وسبعمائة وثلاث وخمسون من سنين أبينا آدم عليه السلام كتبت لنفسه نيلس المدعوا بالاسم لا بالفعل راهب كتبه يومئذ وهو مقيم في جبل طور سيناء المقدس وهو يسأل كل من قرأ فيه أو نسخ منه أن يدعوا له ولجميع النصارى المستقيمين الايمان بالرحمة والغفران غفر الرب لمن فعل ذلك آمين",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "Wednesday 28 Huzayran 6753 (adam)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1245",
+            "iso": {
+                "not_before": "1245"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1tt5vbb"
+    ]
+}

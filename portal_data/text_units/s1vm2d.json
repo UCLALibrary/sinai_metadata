@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s1vm2d",
+    "reconstruction": false,
+    "label": "Anaphora of St. John Chrysostom",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        },
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1r59n"
+            },
+            "alt_title": "Fragment of a bilingual anaphora of the Byzantine liturgy by Saint John Chrysostom",
+            "locus": "ff. 1r-8v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1x92x"
+    ]
+}

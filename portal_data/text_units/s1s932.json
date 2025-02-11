@@ -1,0 +1,45 @@
+{
+    "ark": "ark:/21198/s1s932",
+    "reconstruction": false,
+    "label": "Mimars by St. Ephraem",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Mimars by St. Ephraem",
+                "creator": [
+                    "ark:/21198/s1v887"
+                ],
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "mimars",
+                        "label": "Mimars"
+                    }
+                ]
+            },
+            "locus": "ff. 1v-239v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "locus": "f. 1r",
+                    "as_written": "نبتدي بعون الله سبحانه و تعالیٰ نكتب"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1zs4t"
+    ]
+}

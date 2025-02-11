@@ -1,0 +1,103 @@
+{
+    "ark": "ark:/21198/s14k62",
+    "reconstruction": false,
+    "label": "Sinai Arabic 270, Overtext (Undetermined (Arabic))",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z65b",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        },
+        {
+            "id": "illustration",
+            "label": "Illustration(s)"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 469r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كان الفراغ من نساخة هذا الكتاب المبارك وهو من أقوال أبينا النبيل في القديسين باسيليوس الكبير في العاشر من شهر آذار سنة سبعة آلاف ومائة ثلثة وثلثين لكون العالم وكتب في دير طور سيناء المقدس في أيام رئاسة الأب الأقدس والإناء الطاهر المقدس السيد الاسقف كير يواصف أدام الرب الاله رئاسته وكاتبة العبد الأثيم والمرء الدميم  سيماون باسم شماس من مدينة حمص المحروسة ويبتهل ويتضرع لكل من قرأ فيه ووجد شيء من النقص والغلط وأصلحه يصلح الرب أحواله وقد جعله بان يكون بعد عينه وقفا على الدير المذكور فكل من سرقة أو اختلسه يكون تحت لعنات الأباء الثلاثمائة وثمانية عشر ويكون النبي العظيم ماري موسى خصمه فالويل ثم الويل لمن رضي لنفسه ذلك",
+            "assoc_date": [
+                {
+                    "type": {
+                        "id": "origin",
+                        "label": "Date of Origin"
+                    },
+                    "value": "10 Adhar 7133 (creation)"
+                }
+            ],
+            "note": [
+                "Attested places:  Mount Sinai"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1625",
+            "iso": {
+                "not_before": "1625"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Illustration of a figure with headpiece holding a vessel with radial markings surrounding both on f. 245r | Geometric tailpiece, f. 244v | Geometric decoration, f. 469r"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Manicule, f. 324v, in red ink, f. 366r, in black ink"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1p85g5s"
+    ]
+}

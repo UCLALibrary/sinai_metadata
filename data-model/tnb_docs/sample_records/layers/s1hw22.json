@@ -1,0 +1,94 @@
+{
+    "ark": "ark:/21198/s1hw22",
+    "reconstruction": false,
+    "label": "Sinai Arabic 18, Overtext (Naskh)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "naskh",
+                    "label": "Naskh",
+                    "writing_system": "Arabic"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1bh1b",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "f. 248r",
+            "lang": [
+                {
+                    "id": "arab1395",
+                    "label": "Arabic"
+                }
+            ],
+            "as_written": "كمل فراغ النبوات المقروءة  لطول السنة بتوفيق الله وإرشاده على الكمل والتمام مستهل شهر آذار المبارك سنة ست ألف وثمان مائة ثمانية وعشرين لأبينا آدم عليه السلام وهي برسم العبد الخاطئ عبد عبيد المسيح القس افرام بالذي راهب السيناوي غفر الله له ولمن دعا له بالمغفرة آمين ومن أخرجها عند كان تحت المنع والسبح لله دائما وعلينا رحمته آمين",
+            "assoc_name": [
+                {
+                    "value": "Abd Ubayd al-Masih, Ephrem, Priest of Sinai",
+                    "as_written": "عبد عبيد المسيح القس افرام",
+                    "role": {
+                        "id": "undetermined",
+                        "label": "Undetermined"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1350",
+            "iso": {
+                "not_before": "1350"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces throughout, ff. 6v-101v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1xs6ztt"
+    ]
+}

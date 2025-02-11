@@ -1,0 +1,70 @@
+{
+    "ark": "ark:/21198/s1q621",
+    "reconstruction": false,
+    "label": "Sinai Syriac 260, Overtext (Melkite)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1ht10",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "dated",
+            "label": "Dated"
+        },
+        {
+            "id": "colophon",
+            "label": "Colophon"
+        }
+    ],
+    "para": [
+        {
+            "type": {
+                "id": "colophon",
+                "label": "Colophon"
+            },
+            "locus": "119r-119v",
+            "lang": [
+                {
+                    "id": "class1252",
+                    "label": "Syriac"
+                }
+            ],
+            "as_written": "ܫܩܠ ܟܝܬ ܫܘܡܠܝܐ ܟܬܒܐ ܗܢܐ ܕܡ̈ܙ̄ܡܘ. ܫ̈ܢܐ ܐܠܦ ܘܪܒܥ ܡ̈ܐܐ ܘܬܫ̈ܥܝܢ ܘܫܒܥ ܒܕܝܘ̈ܢܝܐ.. ܐܝܟ ܡܝܢܝܢܐ ܕܐܠܟܫܢܕܪܘܣ. ܒܪ ܦܝܠܦܘܣ.. ܒܝܪܚ. ܐܝܪ. ܟܪ. ܒܗ. ܣܡ ܫܒܬܐ. ܐܬܢܬ ܐܬܟܬܒ ܕܝܢ ܒܕܝܪܐ ܩܕ̄ ܕܝܠܕܬ ܐܠܗܐ ܒܨܕܢܝܐ. ܒܐܝܕܝ ܐܢܫ ܡܚܝܠܐ ܘܚܛܝܐ. ܘܣܢܝܩ ܥܠ ܪ̈ܚܡܐ ܕܡܪܝܐ.. ܐܠܐ ܬܒܥ ܐܢܐ ܐܚ̈ܝ ܡܢ ܟܠ ܕܦܓܥ ܒܟܬܒܐ ܗܢܐ. ܕܐܢ ܐܢܬ ܦܘܕܐ. ܐܘ ܓܠܛܐ ܕܡܕܡ ܗܘ ܢ̇ܬܪܨ ܒܡܘܗܪܘܬܚ ܘܠܝ ܫܘܒܩܢܐ ܢܣܪܚ. ܟܬܒܗ ܕܝܢ ܝܬܚܢܢ. ܒܪ ܟܬܝܪ ܡܢܚܝ ܡܪܝܐ ܢܦܫܗ..",
+            "note": [
+                "Attested places:  in monastery of Virgin at Saidnaya"
+            ]
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "1182",
+            "iso": {
+                "not_before": "1182"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1z33hdb"
+    ]
+}

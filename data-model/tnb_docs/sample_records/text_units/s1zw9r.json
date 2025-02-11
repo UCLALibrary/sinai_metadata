@@ -1,0 +1,64 @@
+{
+    "ark": "ark:/21198/s1zw9r",
+    "reconstruction": false,
+    "label": "Four Gospels",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Sayings of the Fathers",
+                "genre": [
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    },
+                    {
+                        "id": "apophthegmata",
+                        "label": "Apophthegmata"
+                    }
+                ]
+            },
+            "alt_title": "Sayings of SS. Macarius, John Carpatheus, Isaac of Nineveh and Gregory Nazienzis",
+            "locus": "ff. 1v-182r",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "as_written": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܕܫܐ - ܗܫܐ ܘܒܟܠܙܒܢ ܘܠܥܠܡ ܥܠܡܝܢ ܐܡܝܢ",
+                    "translation": [
+                        "Glory to the Father and to the Son and to the Holy Spirit, now, always, and forever, amen."
+                    ]
+                }
+            ],
+            "note": [
+                "Macarius the Egyptian, Questions of the brethren (ff. 1r–19v, 64r–v, 20r–23v, 48r–54v) ; John Cassian, Ad Castorem de octo malitiae cogitationibus (excerpts; incomplete) (ff. 54v–57v) ; <John Cassian>, First Contribution by Abba Serenus (= Conferences VII) (extracts; incomplete) (ff. 62r–63v, 58r–v) ; John of Karpathos, Capita hortatoria ad monachos in India / To the Monks of India (selection, incomplete) (f. 58v) ; <Ephraem Graecus>, De iudicio et compunctione (abridgement; incomplete) (f. 59r–v) ; <Nilus of Ancyra>, De vita monastica (ff. 24r–27v) ; John Climacus, Ladder of Divine Ascent (Scala paradisi) (extracts) (ff. 27v–47v) ; Isaac of Nineveh, First Part (extracts, incomplete) (ff. 65r–73v, 78r–93v, 102r–104v, 75rv, 76rv, 105–107, 74) ; <Philoxenus of Mabbug>, Letter to Patricius (selection from an abridged version, incomplete) (ff. 74v, 60r–61v, 77r) ; <John of Dalyatha>, Homilies (extracts, incomplete) (ff. 77r–v, 108r–113r) ; Shemʿon <d-Ṭaybuteh>, Treatise on monastic life (extracts) (ff. 113r–114r) ; Isaac (?), Extracts dealing with monastic way of live (unidentified) (ff. 114r–116r?) ; Shemʿon <d-Ṭaybuteh>, Book of Grace (ff. 116r–117v) ; <Shemʿon d-Ṭaybuteh>, Treatise on monastic life (extract) (ff. 117v–118r) ; <Abraham> (of Nathpar?), ‘On compulsion’ (f. 118r–v) ; Anonymous, ‘Epistle to someone’ (unidentified) (ff. 118v–119r) ; Isaac <of Nineveh>, Second Part (extracts) (ff. 119r–128r) ; Philosophical sayings attributed to Plato (ff. 128r–v) ; History of the philosopher Dandamis (ff. 128v–129v) ; Summary of the life of Secundus the Silent Philosopher (f. 129v) ; On the 107 philosophers who maintained silence following the teaching of Pythagoras (ff. 129v–130r) ; Themistius, On virtue (excerpts) (ff. 130r–131r) ; Gregory of Nazianzus, Epistle 114 (to Celeusius) (f. 131r) ; Cyril <of Alexandria>, Commentary on Luke, Homily 79 (extract) (f. 131r–v) ; Philosophical sayings (ff. 131v–132v) ; The teaching and XII Instructions of Stomathalassa (excerpt) (ff. 132v–133r) ; Ps. Aristotle, On Virtues and Vices / De virtutibus et vitiis and Divisiones (abbreviated version) (ff. 133r–135v) ; Life of John the Armenian (ff. 135v–140v) ; Autobiography of Dionysius the Areopagite (ff. 141r–143r) ; Diadochus of Photice, 100 Practical Chapters of Knowledge and Spiritual Discernment (selection) (ff. 143v–147v) ; Life of Serapion the Sindonite (excerpt) (ff. 147v–150r) ; Collection of sayings by various Greek philosophers on the soul (ff. 150v–151v) ; Mark the Monk, Disputatio cum quodam causidico (excerpt) and two other unidentified extracts (ff. 151v–152v) ; Apophthegmata patrum (ff. 153r–155r) ; Ephrem of Nisibis, Sermo de Fide I (paraphrase ?) (ff. 155r–157v) ; Extracts attributed to John Chrysostom, Cyril <of Alexandria>, Athanasius <of Alexandria>, Ps.-Julius of Rome / Apollinaris of Laodicea, Ps.-Justin Martyr / Theodoret of Cyrus, Basil <of Caesarea>, Atticus of Constantinople, Theodoret of Cyrus, Severian <of Gabala> (?). (ff. 157v–164v) ; Gregory of Nyssa, De virginitate (extracts) (ff. 94r–95v) ; Isaac of Antioch, On the love of learning (extract) (ff. 95v–96v) ; Abba Isaiah, Ascetic Discourses 7, 11, 13 (extracts) (ff. 96v–99r) ; Stories about monks and holy men (unidentified). (ff. 99r–101r) ; <Michael Badoqa> (excerpt) (ff. 101r–v) ; Ephraem Graecus, Sermo compunctorius I (abridgement) (ff. 165r–166v) ; Ephraem Graecus, Sermo paranaeticus (abridgement) (ff. 166v–167r) ; Ephraem Graecus, Beatitudines aliae, capita uiginti (abridgement) (ff. 167r–169r) ; Ephraem Graecus, Sermo de communi resurrection, de paenitentia et de caritate, et in secundum aduentum d.n. I. C. (abridgement) (ff. 169r–171r) ; Ephraem Graecus, Sermo de virtutibus et vitiis (abridgement) (ff. 171r–176v) ; Story of Pawla the Priest (abridgement) (ff. 177r–178r) ; <Anastasius of Sinai>, Narrationes (excerpts) (ff. 178r–182v) ; Isaac of Nineveh, First Part (Discourses 2, 3, incomplete) (f. 183)"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "para",
+                "label": "Paracontent Note"
+            },
+            "value": "Rubric: ܥܠ ܚܝܠܗ ܕܡܪܢ ܘܐܠܗܢ ܘܦܪܘܩܢ ܝܫܘܥ ܡܫܝܚܐ ܡܫܪܝܢܢ ܕܢܟܬܘܒ ܟܘܢܫܐ ܡܢ ܟ̈ܬܒܐ ܩ̈ܕܝܫܐ ܐܝܟ ܕܠܝܘܬܪܢܐ ܕܢܦܫ̈ܬܐ ܩܕܡܝܐܝܬ ܡܢ ܩܕܝܫܐ ܡܪܝ ܡܩܪܝܣ ܪܒܐ ܘܡܨܪܝܐ ܡܢ ܫ̈ܐܠܝܢ ܗܘܘ ܠܗ ܐܚ̈ܐ ܫܘܐܠܐ ܩܕܡܝܐ ܗܟܢܐ  |  By the power of our Lord and God and Saviour Jesus Christ, we begin writing the a collection from the books of the saints as are for the benefit of souls, firstly from St. Mar Makarios the Great and Egyptian, from the brothers having questioned him; the first question being thus:"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Contributor(s): Michael Wingert"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1590b"
+    ]
+}

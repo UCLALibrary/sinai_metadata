@@ -1,0 +1,85 @@
+{
+    "ark": "ark:/21198/s17q03",
+    "reconstruction": false,
+    "label": "Portions of liturgical services including readings from the Gospels and Epistles (Greek and Arabic parallel)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Portions of liturgical services including readings from the Gospels and Epistles (Greek and Arabic parallel)",
+                "genre": [
+                    {
+                        "id": "liturgical-texts",
+                        "label": "Liturgical texts"
+                    }
+                ]
+            },
+            "locus": "ff. 1r-255v",
+            "contents": [
+                {
+                    "label": "Portions of a prayer for those receiving the Eucharist, ff. 1r-15v"
+                },
+                {
+                    "label": "Prayer of anointing, ff. 16r- 22v"
+                },
+                {
+                    "label": "Prayer of baptism, ff. 23r-70r"
+                },
+                {
+                    "label": "Conclusion of the Eucharist, ff. 70v-78r"
+                },
+                {
+                    "label": "Service of the holy crown, ff. 78v-108v"
+                },
+                {
+                    "label": "Service for those who marry again, ff. 108v-116r"
+                },
+                {
+                    "label": "Prayer for the household of brides, ff. 116r-121r"
+                },
+                {
+                    "label": "Prayer for the bride and bridegroom before placing the crown on their heads, f. 121v (single column; no Greek)"
+                },
+                {
+                    "label": "Colophon, f. 122r (single column; no Greek)"
+                },
+                {
+                    "label": "Commandment after crowning the bride and groom, ff. 122v-127r (single column; no Greek)"
+                },
+                {
+                    "label": "Service for blessing the waters of the Nile River, ff. 127v-175v"
+                },
+                {
+                    "label": "Service for Pentecost Sunday, ff. 176r-187v"
+                },
+                {
+                    "label": "Prayers for Vespers, ff. 188r-255v"
+                }
+            ],
+            "note": [
+                "Liturgical miscellany containing Baptism and Marriage Prayers, Genuflection Service, and an Ordo for Blessing Nile water before Pentecost"
+            ]
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Contributor(s): Justin Arnwine"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1f314"
+    ]
+}

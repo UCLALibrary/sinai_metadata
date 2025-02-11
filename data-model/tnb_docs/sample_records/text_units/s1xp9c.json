@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s1xp9c",
+    "reconstruction": false,
+    "label": "Pauline Epistles",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1hg6f"
+            },
+            "alt_title": "Pauline Epistles",
+            "locus": "ff. 2r-131v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1430z"
+    ]
+}

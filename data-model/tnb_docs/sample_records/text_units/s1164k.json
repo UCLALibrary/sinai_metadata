@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1164k",
+    "reconstruction": false,
+    "label": "Pentateuch",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s18w2w"
+            },
+            "locus": "ff. 1r-372v",
+            "excerpt": [
+                {
+                    "type": {
+                        "id": "incipit",
+                        "label": "Incipit"
+                    },
+                    "as_written": "بسم الله الرّحمٰن الرّحيم نبتدي بعون الله تعالیٰ بكتب"
+                },
+                {
+                    "type": {
+                        "id": "explicit",
+                        "label": "Explicit"
+                    },
+                    "as_written": "تمّ سْفر يشوع ابن نون تلميذَ مُوسیٰ. و مانح العطايا و غافر الخطايا و مجزل الخيرات و سابغ النّعم المجد و الاكرام الی الدّهر […]. اللّهم سامح القاري و السّامع و الكاتب و القاني […]."
+                }
+            ],
+            "contents": [
+                {
+                    "label": "Preface, ff. 2v - 23v"
+                },
+                {
+                    "label": "First book of the Torah, ff. 24v - 104r"
+                },
+                {
+                    "label": "The book of the exodus of the sons of Israel from Egypt, the second book of the Torah, ff. 104v-165r"
+                },
+                {
+                    "label": "The third book of the Torah, Leviticus, ff. 165v-207v"
+                },
+                {
+                    "label": "The fourth book of the Torah, Numbers, ff. 208v-272r"
+                },
+                {
+                    "label": "The fifth book of the Torah, Deuteronomy, ff. 272v-330v"
+                },
+                {
+                    "label": "The book of Joshua, ff. 331v-372v"
+                }
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s16k6p"
+    ]
+}

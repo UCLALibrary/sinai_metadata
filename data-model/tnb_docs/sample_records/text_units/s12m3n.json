@@ -1,0 +1,27 @@
+{
+    "ark": "ark:/21198/s12m3n",
+    "reconstruction": false,
+    "label": "Life of St. Mary of Egypt",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Life of St. Mary of Egypt",
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18039"
+    ]
+}

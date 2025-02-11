@@ -1,0 +1,21 @@
+{
+    "ark": "ark:/21198/s16m2h",
+    "reconstruction": false,
+    "label": "Troparion",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1vc88"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1d059"
+    ]
+}

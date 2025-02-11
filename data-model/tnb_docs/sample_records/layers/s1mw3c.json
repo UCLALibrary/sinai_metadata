@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1mw3c",
+    "reconstruction": false,
+    "label": "Sinai Arabic 199, Overtext (Undetermined (Arabic), Thuluth)",
+    "state": {
+        "id": "overtext",
+        "label": "Overtext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "arabic-undetermined",
+                    "label": "Undetermined (Arabic)",
+                    "writing_system": "Arabic"
+                },
+                {
+                    "id": "thuluth",
+                    "label": "Thuluth",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Sections headings written in thuluth: f. 1v, 10r, 13v, 14r, 18r, 23v, 25v, 26v, 28v, 30r, 33r, 52v, 54v, 60v, 65v, 70v, 75v, 81r, 84v, 86r, 88r, 94v, 99r, 102v, 129v, 132r, 135v, 142r"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1fh2n",
+            "label": "Item 1"
+        }
+    ],
+    "features": [
+        {
+            "id": "headpiece",
+            "label": "Headpiece(s)"
+        },
+        {
+            "id": "deco-geometric",
+            "label": "Decoration, Geometric"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "18th c.",
+            "iso": {
+                "not_before": "1701",
+                "not_after": "1800"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Greek text, f. 45r"
+        },
+        {
+            "type": {
+                "id": "ornamentation",
+                "label": "Ornamentation Note"
+            },
+            "value": "Minor geometric headpieces, red dot and floral motif ff. 14v, 18r, 33r; black dot work f. 35r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1vh6s4d"
+    ]
+}

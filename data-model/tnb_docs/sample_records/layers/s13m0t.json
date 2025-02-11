@@ -1,0 +1,95 @@
+{
+    "ark": "ark:/21198/s13m0t",
+    "reconstruction": false,
+    "label": "Sinai Greek 930, Undertext (Kufic)",
+    "locus": "ff. 1, 6, 8–11, 14v, 16–19, 21v, 24–25, 29v, 36v, 37v, 38, 39v, 43r, 45r, 61r, 68v, 71r, 74v, 75r, 77, 78, 80–81, 82v, 94v, 103r, 109v, 117v, 118v, 120r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "kufic",
+                    "label": "Kufic",
+                    "writing_system": "Arabic"
+                }
+            ],
+            "note": [
+                "Late kufi"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "16 lines",
+            "note": [
+                "The full number of lines is not always preserved",
+                "The Arabic undertext runs at a right angle to the overtext"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1rm3v",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th or 11th c. ",
+            "iso": {
+                "not_before": "0901",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "North Africa",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 77v (translator’s introduction, acephalous), 78r (translator’s introduction), 77r (end of translator’s introduction; 1:1-4), 78v (1:5-?), 80r (2:1-3), 75r (2:?-9), 80v (2:9-14), 37v (3:8-13), 38r (3:14-?), 38v (3:22-4:1), 8r (4:1-5), 11v (4:6-10), 8v (4:11-15), 11r (4:15-19), 71r (5:4-10), 68v (5:?-17), 18v (5:19-23), 17r (5:24-29), 18r (5:30 - 6:2), 17v (6:3-5), 43r (6:9-13), 109v (6:-22), 16v (7:18-23), 19r (7:23 - 8:3), 16r (8:4-8), 19v (8:9-11), 9v (9:7-12), 10r (9:12-15), 9r (9:16-22), 10v (9:23-27), 36v (9:28-10:5), 39v (10:18-24), 74v (11:?-25), 81r (11:27-31), 81v (12:4-7), 117v (12:10-?), 29v (14:14-?), 118v (16:4-7), 45r (17:14-?), 94v (23:1-?), 61r (24:?-10), 6r (26:5-9), 1v (26:9-13), 6v (26:14-18), 1r (26:19-?), 25r (29:20-26), 24r (29:27-31), 25v (29:31-?), 82v (32:26-31), 103r (45:11-16), 21v (46:31-?), 14v (47:27-?."
+        },
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "There are certainly other folios in this palimpsest with text from Genesis, where it is not sufficiently legible to be identified"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Translated by the same translator and copied by the same scribe as the UTO Exodus in this manuscript"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alexander Treiger"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1v9962j"
+    ]
+}

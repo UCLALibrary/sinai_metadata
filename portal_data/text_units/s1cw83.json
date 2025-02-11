@@ -1,0 +1,39 @@
+{
+    "ark": "ark:/21198/s1cw83",
+    "reconstruction": false,
+    "label": "Four Gospels",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s10k5f"
+            },
+            "alt_title": "Four Gospels",
+            "locus": "ff. 3v-123r"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Preceded by index and short introduction, followed by table of Gospel lessons to be recited throughout the year"
+        },
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Tables of contents on ff. 37r-38r; ff. 59r- 61r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1k902"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "ark": "ark:/21198/s1bp8q",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 56, Undertext (Melkite)",
+    "locus": "ff. 85–87, 87a, 88–90, 91–96, 96a, 97–110",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "melkite",
+                    "label": "Melkite",
+                    "writing_system": "Syriac"
+                }
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "26 lines",
+            "note": [
+                "Four dots forming a cross on the upper outer corner of the verso of some folios. Some folios seem to have vertical and horizontal ruled lines"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s10q32",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th C. ?",
+            "iso": {
+                "not_before": "0651",
+                "not_after": "0950"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Alain J. Desreumaux"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17d3457"
+    ]
+}

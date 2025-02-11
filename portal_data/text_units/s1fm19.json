@@ -1,0 +1,26 @@
+{
+    "ark": "ark:/21198/s1fm19",
+    "reconstruction": false,
+    "label": "Menologion for the months of Iyar (May) and Haziran (June)",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion for the months of Iyar (May) and Haziran (June)",
+            "locus": "ff. 1r-236v",
+            "note": [
+                "Beginning on the 5th of Iyar with the martyrdom of St. Irene, martyred under the emperor Licinius, and ending on the 29th of Haziran with an encomium by St. John Chrysostom on the Apostles Peter and Paul"
+            ]
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1n02b"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "ark": "ark:/21198/s1v95f",
+    "reconstruction": false,
+    "label": "Euchologion",
+    "lang": [
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1tp4j"
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s11p65"
+    ]
+}

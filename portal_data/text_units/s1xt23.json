@@ -1,0 +1,34 @@
+{
+    "ark": "ark:/21198/s1xt23",
+    "reconstruction": false,
+    "label": "Life of Ephrem ; Ephrem, Against Heresies",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "Life of Ephrem ; Ephrem, Against Heresies",
+                "creator": [
+                    "ark:/21198/s1v887"
+                ],
+                "genre": [
+                    {
+                        "id": "hagiographies",
+                        "label": "Hagiographies"
+                    },
+                    {
+                        "id": "theological-works",
+                        "label": "Theological works"
+                    }
+                ]
+            }
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1492s"
+    ]
+}

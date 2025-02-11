@@ -1,0 +1,37 @@
+{
+    "ark": "ark:/21198/s10t0z",
+    "reconstruction": false,
+    "label": "The diseases of the eye and their treatment by ‘Alī ibn Īsā",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "desc_title": "The diseases of the eye and their treatment by ‘Alī ibn Īsā",
+                "genre": [
+                    {
+                        "id": "scientific-works",
+                        "label": "Scientific works"
+                    }
+                ]
+            },
+            "locus": "ff. 3r-58v"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Table of contents on ff. 1v, 2v, 2r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s1660m"
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "ark": "ark:/21198/s1906r",
+    "reconstruction": false,
+    "label": "Sinai Slavonic NF M 3, Undertext (Glagolitic)",
+    "locus": "ff. 141a, stub-141a, 141b, stub-141b, 141c, stub-141c",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "glagolitic",
+                    "label": "Glagolitic",
+                    "writing_system": "Glagolitic"
+                }
+            ],
+            "note": [
+                "Round Glagolica"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "note": [
+                "Number of lines of the original manuscript is undetermined"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1z09s",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "11th c. ",
+            "iso": {
+                "not_before": "1001",
+                "not_after": "1100"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Only initials are preserved"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Heinz Miklas"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Miklas, et al., pp. 117-131 (full description of the MedFol); 124-125, 134, 136, 138, and 140 (remarks on the Latin and Glagolitic palimpsests); 298-301 (images of MedFol); 301 (multispectral image of palimpsest-layer on f. 141av)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1rb7dmv"
+    ]
+}

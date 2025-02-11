@@ -1,0 +1,77 @@
+{
+    "ark": "ark:/21198/s1ws8q",
+    "reconstruction": false,
+    "label": "Sinai Slavonic NF M 5, Undertext (Glagolitic)",
+    "locus": "ff. 8, 9v, 12r, 13v, 17, 18v, 19v, 20v, 21r, 23v, 24, 27v, 28r, 29r, 30, 32r, 32v, 33r, 34–37, 38v, 39–40, 41v, 42r, 44v, 47v, 50r, 51r, 52r, 53v, 54–56, 57v, 58r, 59v, 60, 61r, 62v, 63, 64v, 66r, 69v, 71, 72r, 73–74, 77v, 78v, 79–80, 81v, 83–84, 86r, 87r, 88, 90v, 92v, 93, 94v, 96r, 97r, 98r, 99, 101v, 102v, 106",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "glagolitic",
+                    "label": "Glagolitic",
+                    "writing_system": "Glagolitic"
+                }
+            ],
+            "note": [
+                "Possibility of multiple hands"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "1 columns",
+            "lines": "25 lines"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1jt4f",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "10th-11th c.?",
+            "iso": {
+                "not_before": "0875",
+                "not_after": "1125"
+            }
+        }
+    ],
+    "assoc_place": [
+        {
+            "value": "Bulgaria or Sinai",
+            "event": {
+                "id": "origin",
+                "label": "Place of Origin"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Heinz Miklas"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Miklas 2000, pp. 117-129"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1mk6nxk"
+    ]
+}

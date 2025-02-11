@@ -1,0 +1,22 @@
+{
+    "ark": "ark:/21198/s13960",
+    "reconstruction": false,
+    "label": "Psalms",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s11c7f"
+            },
+            "locus": "ff. 1r-190v"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18s50"
+    ]
+}

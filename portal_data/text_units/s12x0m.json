@@ -1,0 +1,23 @@
+{
+    "ark": "ark:/21198/s12x0m",
+    "reconstruction": false,
+    "label": "Menologion (month of Tamūz)",
+    "lang": [
+        {
+            "id": "class1252",
+            "label": "Syriac"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s16s3m"
+            },
+            "alt_title": "Menologion (month of Tamūz)",
+            "locus": "ff. 1r-200r"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s18908"
+    ]
+}

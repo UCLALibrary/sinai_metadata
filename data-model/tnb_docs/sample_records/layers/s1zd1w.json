@@ -1,0 +1,71 @@
+{
+    "ark": "ark:/21198/s1zd1w",
+    "reconstruction": false,
+    "label": "Sinai Syriac NF M 56, Undertext (Erkatagir)",
+    "locus": "ff. 91r, 94r",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "erkatagir",
+                    "label": "Erkatagir",
+                    "writing_system": "Armenian"
+                }
+            ],
+            "note": [
+                "Upright, not slanted. No abbreviations discernible"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "2 columns",
+            "lines": "24 lines",
+            "note": [
+                "On fol. 94r three lines are clipped off at the bottom"
+            ]
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1md6p",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "8th-9th c. ",
+            "iso": {
+                "not_before": "0701",
+                "not_after": "0900"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "foliation",
+                "label": "Foliation Note"
+            },
+            "value": "Reconstructed folio order, ff. 94r; 91r|~Both undertexts are mirrored, which means that they pertain to the respective verso faces"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Jost Gippert"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z17d3457"
+    ]
+}

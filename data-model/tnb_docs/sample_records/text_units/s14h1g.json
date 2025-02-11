@@ -1,0 +1,44 @@
+{
+    "ark": "ark:/21198/s14h1g",
+    "reconstruction": false,
+    "label": "Lectionary",
+    "lang": [
+        {
+            "id": "arab1395",
+            "label": "Arabic"
+        },
+        {
+            "id": "gree1276",
+            "label": "Greek"
+        }
+    ],
+    "work_wit": [
+        {
+            "work": {
+                "id": "ark:/21198/s1088g"
+            },
+            "locus": "ff. 2r-205v",
+            "note": [
+                "Begins with lesson from St. John XXI, 24, 25 and ends with lesson from St. Luke III, 21, 22."
+            ]
+        }
+    ],
+    "features": [
+        {
+            "id": "parallel-text",
+            "label": "Parallel text"
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "contents",
+                "label": "Contents Note"
+            },
+            "value": "Parallel text (Arabic and Greek)"
+        }
+    ],
+    "parent": [
+        "ark:/21198/s19w3k"
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "ark": "ark:/21198/s10k9z",
+    "reconstruction": false,
+    "label": "Sinai Arabic NF M 8, Undertext (Greek majuscule)",
+    "locus": "ff. 16–17",
+    "state": {
+        "id": "undertext",
+        "label": "Undertext"
+    },
+    "writing": [
+        {
+            "script": [
+                {
+                    "id": "greek-maj",
+                    "label": "Greek majuscule",
+                    "writing_system": "Greek"
+                }
+            ],
+            "note": [
+                "Loose majuscule of small size"
+            ]
+        }
+    ],
+    "layout": [
+        {
+            "columns": "Number of lines per page is impossible to reconstruct (Rossetto)"
+        }
+    ],
+    "text_unit": [
+        {
+            "id": "ark:/21198/s1nm3x",
+            "label": "Item 1"
+        }
+    ],
+    "assoc_date": [
+        {
+            "type": {
+                "id": "origin",
+                "label": "Date of Origin"
+            },
+            "value": "5th-6th c. ",
+            "iso": {
+                "not_before": "0401",
+                "not_after": "0600"
+            }
+        }
+    ],
+    "note": [
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Description of undertext by Agamemnon Tselikas, Nigel Wilson, Giulia Rossetto"
+        },
+        {
+            "type": {
+                "id": "general",
+                "label": "Other Notes"
+            },
+            "value": "Bibliography: Biliography: Wellmann M. 1958 (ed.), Pedanii Dioscuridis Anazarbei De Materia Medica Libri quinque, I–III, Berlin ; G. Boudalis, G. Rossetto, Colour Mapping of Sin. ar. NF 8 + Sin. ar. NF 28, in: The Apollonius of Tyre Fragment in Arabic NF 8: Studies of a Latin Palimpsest at St Catherine’s Monastery, Sinai, ed. M. P. Brown, J. Lockhart. Forthcoming ; G. Rossetto, Classical Texts Among the Palimpsests of the Monastery of St. Catherine (Sinai): An Overview, in: New Light on Old Manuscripts: The Sinai Palimpsests and Other Advances in Palimpsest Studies, ed. C. Rapp – G. Rossetto – J. Grusková – G. Kessel. Forthcoming"
+        }
+    ],
+    "parent": [
+        "ark:/21198/z1kd1z25"
+    ]
+}
