@@ -432,7 +432,7 @@
 				},
 				{
 					"id": "7ec89768-a7f2-4156-8642-67f2c64362bb",
-					"name": "dig_provenance (tbd)",
+					"name": "dig_provenance",
 					"datatype": "6b377f99-57ef-48e5-88df-9dab6dfa45b0",
 					"param": "",
 					"pk": false,
@@ -2755,7 +2755,7 @@
 				{
 					"id": "db71463f-86ac-462a-a22d-6e3f48860886",
 					"name": "image_rights",
-					"datatype": "objectId",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -2771,7 +2771,7 @@
 				{
 					"id": "7565964e-ac64-40e8-8b3c-e5e205bff2e0",
 					"name": "metadata_rights",
-					"datatype": "objectId",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -8253,7 +8253,7 @@
 				{
 					"id": "7c239afb-44a3-4178-9477-332864de49f9",
 					"name": "imaging_date",
-					"datatype": "date",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
@@ -8329,6 +8329,22 @@
 					"pattern": false,
 					"estimatedSize": "",
 					"any": ""
+				},
+				{
+					"id": "ebf38c16-ca6a-4d92-aba2-24aa6e25f011",
+					"name": "note",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": true,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
 				}
 			],
 			"relations": [],
@@ -8371,7 +8387,7 @@
 					"param": "",
 					"pk": false,
 					"nn": true,
-					"list": true,
+					"list": false,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -8533,7 +8549,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1730233809722,
+		"lastSaved": 1731971113200,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
