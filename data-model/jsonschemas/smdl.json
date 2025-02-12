@@ -1,0 +1,922 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/smdl.json",
+    "title": "Manuscript Object",
+    "description": "A manuscript or codex, either real or a hypothetical reconstruction",
+    "type": "object",
+    "properties": {
+        "ark": {
+            "$ref": "#/$defs/ark"
+        },
+        "reconstruction": {
+            "type": "boolean"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "Manuscript",
+                "Digital Rebinding",
+                "Undertext Object"
+            ]
+        },
+        "shelfmark": {
+            "type": "string",
+            "minLength": 1
+        },
+        "ms_date": {
+            "$ref": "#/$defs/iso_date",
+            "$comment": "Generate from earliest to latest date from overtext layers. if single date, yyyy, if range, yyyy/yyyy"
+        },
+        "summary": {
+            "type": "string"
+        },
+        "extent": {
+            "type": "string"
+        },
+        "weight": {
+            "type": "string"
+        },
+        "dim": {
+            "type": "string"
+        },
+        "state": {
+            "type": "string"
+        },
+        "fol": {
+            "type": "string"
+        },
+        "coll": {
+            "type": "string"
+        },
+        "genre": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "string"
+            },
+            "unevaluatedItems": false
+        },
+        "features": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "string"
+            },
+            "unevaluatedItems": false
+        },
+        "part": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/part"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "uto": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/uto"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "guest_layer": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/layer"
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
+        },
+        "para": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/paracontent"
+            },
+            "unevaluatedItems": false
+        },
+        "related_mss": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/related_mss"
+            },
+            "unevaluatedItems": false
+        },
+        "has_bind": {
+            "type": "boolean"
+        },
+        "location": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "repository": {
+                        "type": "string"
+                    },
+                    "collection": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "repository"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_date": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/assoc_date"
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_name": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/assoc_name"
+            },
+            "unevaluatedItems": false
+        },
+        "assoc_place": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/assoc_place"
+            },
+            "unevaluatedItems": false
+        },
+        "viscodex": {
+            "$comment": "TBD: typed 'data visualization' property instead?",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                },
+                "required": [
+                    "type",
+                    "label",
+                    "url"
+                ],
+                "unevaluatedProperties": false
+
+            },
+            "unevaluatedItems": false
+        },
+        "bib": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/bib"
+            },
+            "unevaluatedItems": false
+        },
+        "note": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/typed_note"
+            },
+            "unevaluatedItems": false
+        },
+        "iiif": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "manifest": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "manifest",
+                    "type"
+                ],
+                "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
+        },
+        "cataloguer": {
+            "$comment": "TBD: finalize structure of this element",
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/change_log_entry"
+            },
+            "unevaluatedItems": false
+        },
+        "dig_provenance": {
+            "$comment": "TBD. Should it be required?"
+        },
+        "reconstructed_from": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/ark"
+            },
+            "unevaluatedItems": false
+        }
+    },
+    "required": [
+        "ark",
+        "reconstruction",
+        "type",
+        "shelfmark",
+        "ms_date",
+        "extent",
+        "state",
+        "part",
+        "location"
+    ],
+    "unevaluatedProperties": false,
+    "$defs": {
+        "ark": {
+            "description": "A unique Archival Resource Key (ARK)",
+            "type": "string",
+            "pattern": "^ark:/21198/([a-z]|[0-9])+"
+        },
+        "assoc_date": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "iso": {
+                    "$ref": "#/$defs/iso_date"
+                },
+                "as_written": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "$comment": "TBD, check required fields: type, value, iso??",
+            "required": [
+                "type"
+            ],
+            "unevaluatedProperties": false
+        },
+        "assoc_name": {
+            "type": "object",
+            "properties": {
+                "pref_name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "as_written": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "role"
+            ],
+            "unevaluatedProperties": false,
+            "$comment": "TBD: review required fields"
+        },
+        "assoc_place": {
+            "type": "object",
+            "properties": {
+                "pref_name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "as_written": {
+                    "type": "string"
+                },
+                "event": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "event"
+            ],
+            "unevaluatedProperties": false,
+            "$comment": "TBD: review required fields"
+        },
+        "bib": {
+            "type": "object",
+            "properties": {
+                "shortcode": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "range": {
+                    "type": "string"
+                },
+                "alt_shelf": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "shortcode",
+                "type"
+            ],
+            "unevaluatedProperties": false
+        },
+        "iso_date": {
+            "type": "string",
+            "pattern": "^[0-9]{4}(\/[0-9]{4})?",
+            "$comment": "TBD regex refinement"
+        },
+        "layer": {
+            "type": "object",
+            "properties": {
+                "ark": {
+                    "$ref": "#/$defs/ark"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "locus": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "extent": {
+                    "type": "string"
+                },
+                "writing": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "script": {
+                                "$ref": "#/$defs/script"
+                            },
+                            "locus": {
+                                "type": "string"
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "required": [
+                            "script"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "ink": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "locus": {
+                                "type": "string"
+                            },
+                            "color": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "layout": {
+                    "$comment": "TBD, waiting on resolution of questions about the concatenating of col, lines, and dim here"
+                },
+                "text_unit": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/text_unit"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "para": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_date": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_date"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_name": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_name"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_place": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_place"
+                    },
+                    "unevaluatedItems": false
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/typed_note"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "ark",
+                "type",
+                "writing",
+                "text_unit"
+            ],
+            "unevaluatedProperties": false
+        },
+        "paracontent": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "locus": {
+                    "type": "string"
+                },
+                "script": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/script"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "lang": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "as_written": {
+                    "type": "string"
+                },
+                "translation": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_name": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_name"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_place": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_place"
+                    },
+                    "unevaluatedItems": false
+                },
+                "assoc_date": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/assoc_date"
+                    },
+                    "unevaluatedItems": false
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "type",
+                "locus",
+                "script",
+                "lang"
+            ],
+            "unevaluatedProperties": false
+        },
+        "part": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "locus": {
+                    "type": "string"
+                },
+                "support": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "extent": {
+                    "type": "string"
+                },
+                "dim": {
+                    "type": "string"
+                },
+                "ot_layer": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/layer"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "uto": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/uto"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "guest_layer": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/layer"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "para": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/typed_note"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "label",
+                "support",
+                "ot_layer"
+            ],
+            "unevaluatedProperties": false,
+            "$comment": "TBD, review the required fields. Label required?",
+            "$comment": "TBD, rel mss at this level?"
+        },
+        "related_mss": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                },
+                "mss": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "$ref": "#/$defs/ark"
+                            },
+                            "url": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [
+                            "label"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "type",
+                "label",
+                "mss"
+            ],
+            "unevaluatedProperties": false
+        },
+        "script": {
+            "type": "object",
+            "properties": {
+                "script": {
+                    "type": "string"
+                },
+                "system": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "script",
+                "system"
+            ],
+            "unevaluatedProperties": false
+        },
+        "text_unit": {
+            "type": "object",
+            "properties": {
+                "ark": {
+                    "$ref": "#/$defs/ark"
+                },
+                "locus": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "lang": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "work_wit": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "locus": {
+                                "type": "string"
+                            },
+                            "pref_title": {
+                                "type": "string"
+                            },
+                            "descriptive_title": {
+                                "type": "string"
+                            },
+                            "alt_title": {
+                                "type": "string"
+                            },
+                            "as_written": {
+                                "type": "string"
+                            },
+                            "creator": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pref_name": {
+                                            "type": "string"
+                                        },
+                                        "role": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "pref_name"
+                                    ],
+                                    "unevaluatedProperties": false,
+                                    "$comment": "TBD: require role as well? Use 'creator' if from `work_wit.work.creator`?"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "excerpt": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "locus": {
+                                            "type": "string"
+                                        },
+                                        "as_written": {
+                                            "type": "string"
+                                        },
+                                        "translation": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            },
+                                            "unevaluatedItems": false
+                                        },
+                                        "note": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            },
+                                            "unevaluatedItems": false
+                                        }
+                                    },
+                                    "required": [
+                                        "type",
+                                        "locus"
+                                    ],
+                                    "unevaluatedProperties": false
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "contents": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pref_title": {
+                                            "type": "string"
+                                        },
+                                        "descriptive_title": {
+                                            "type": "string"
+                                        },
+                                        "locus": {
+                                            "type": "string"
+                                        },
+                                        "note": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            },
+                                            "unevaluatedItems": false
+                                        }
+                                    },
+                                    "unevaluatedProperties": false
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "unevaluatedProperties": false,
+                        "$comment": "TBD, required fields? X-or?"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "para": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/typed_note"
+                    },
+                    "unevaluatedItems": false
+                },
+                "bib": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/bib"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "ark",
+                "lang",
+                "work_wit"
+            ],
+            "unevaluatedProperties": false
+        },
+        "typed_note": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "value"
+            ],
+            "unevaluatedProperties": false
+        },
+        "uto": {
+            "type": "object",
+            "properties": {
+                "ms_ark": {
+                    "$ref": "#/$defs/ark"
+                },
+                "uto_ark": {
+                    "$ref": "#/$defs/ark"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "script": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/script"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "lang": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "unevaluatedItems": false
+                },
+                "orig_date": {
+                    "$ref": "#/$defs/iso_date"
+                }
+            }
+        }
+    }
+}
