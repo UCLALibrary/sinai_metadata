@@ -440,7 +440,7 @@
                         },
                         "unevaluatedProperties": false
                     },
-                    "unevaluatedItems": 1
+                    "unevaluatedItems": false
                 },
                 "layout": {
                     "$comment": "TBD, waiting on resolution of questions about the concatenating of col, lines, and dim here"
