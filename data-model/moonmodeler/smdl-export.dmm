@@ -256,7 +256,7 @@
 					"datatype": "2aabc27f-4f4f-4e94-a4fe-c2f499a08196",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
 					"comment": "",
 					"data": "",
@@ -273,7 +273,7 @@
 					"datatype": "d6fb4fd6-84dd-4f2d-b527-eeec189b15ae",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
 					"comment": "",
 					"data": "",
@@ -1058,7 +1058,7 @@
 					"datatype": "fafa1c5a-fd4c-4aa7-8675-d4c083b20698",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
 					"comment": "",
 					"data": "",
@@ -1075,7 +1075,7 @@
 					"datatype": "4ef13d28-8846-498d-97e0-f046a64f6500",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"list": true,
 					"comment": "",
 					"data": "",
@@ -1549,7 +1549,7 @@
 				},
 				{
 					"id": "284603ef-c7c4-4abc-8b7f-928f14d24aee",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "a3986923-7635-4caf-96dc-bbba3c3afefe",
 					"param": "",
 					"pk": false,
@@ -3590,7 +3590,7 @@
 			"cols": [
 				{
 					"id": "b492057b-a425-4ef7-9324-18686f354b2b",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "c0158d37-76ff-4acb-b812-5e81a583c830",
 					"param": "",
 					"pk": false,
@@ -5563,7 +5563,7 @@
 				},
 				{
 					"id": "f3efa181-2be7-4ed1-9e92-9489b7841ca2",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "50d1229c-8375-403b-9682-0f22b62611ee",
 					"param": "",
 					"pk": false,
@@ -8975,7 +8975,7 @@
 				},
 				{
 					"id": "a0114923-8c1a-4876-a6de-3ee68dd8a977",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "f04c2a88-e943-4939-b095-80ab4598ac3b",
 					"param": "",
 					"pk": false,
@@ -10367,7 +10367,7 @@
 			"cols": [
 				{
 					"id": "5173257b-9a83-4889-8e29-7d075cd8799a",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "bd735d60-5f7c-4211-9b94-e329bb3c9a9a",
 					"param": "",
 					"pk": false,
@@ -12340,7 +12340,7 @@
 				},
 				{
 					"id": "fb1672df-f561-4e71-894f-3a4a152b3941",
-					"name": "scripts",
+					"name": "script",
 					"datatype": "64e9d3f2-b60f-41c5-9580-362a2aeb0b5f",
 					"param": "",
 					"pk": false,
@@ -13297,7 +13297,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1739317090815,
+		"lastSaved": 1739389982663,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -13327,7 +13327,7 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 158,
 					"y": 54,
-					"gHeight": 4131,
+					"gHeight": 4108,
 					"gWidth": 284,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -13734,7 +13734,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"c0158d37-76ff-4acb-b812-5e81a583c830": {
 					"referencedItemId": "c0158d37-76ff-4acb-b812-5e81a583c830",
@@ -13955,7 +13955,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"50d1229c-8375-403b-9682-0f22b62611ee": {
 					"referencedItemId": "50d1229c-8375-403b-9682-0f22b62611ee",
@@ -14332,7 +14332,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"f04c2a88-e943-4939-b095-80ab4598ac3b": {
 					"referencedItemId": "f04c2a88-e943-4939-b095-80ab4598ac3b",
@@ -14696,7 +14696,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"64e9d3f2-b60f-41c5-9580-362a2aeb0b5f": {
 					"referencedItemId": "64e9d3f2-b60f-41c5-9580-362a2aeb0b5f",
