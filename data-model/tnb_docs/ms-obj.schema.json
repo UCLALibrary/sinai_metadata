@@ -1233,12 +1233,6 @@
       },
       "unevaluatedItems": false
     },
-    "has_bind": {
-      "type": [
-        "boolean",
-        "null"
-      ]
-    },
     "location": {
       "type": "array",
       "items": {
