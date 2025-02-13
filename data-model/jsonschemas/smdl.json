@@ -12,12 +12,7 @@
             "type": "boolean"
         },
         "type": {
-            "type": "string",
-            "enum": [
-                "Manuscript",
-                "Digital Rebinding",
-                "Undertext Object"
-            ]
+            "type": "string"
         },
         "shelfmark": {
             "type": "string",
@@ -49,14 +44,14 @@
             "type": "string"
         },
         "genre": {
-            "type": ["array", "null"],
+            "type": "array",
             "items": {
                 "type": "string"
             },
             "unevaluatedItems": false
         },
         "features": {
-            "type": ["array", "null"],
+            "type": "array",
             "items": {
                 "type": "string"
             },
@@ -100,9 +95,6 @@
             },
             "unevaluatedItems": false
         },
-        "has_bind": {
-            "type": "boolean"
-        },
         "location": {
             "type": "array",
             "items": {
@@ -120,6 +112,7 @@
                 ],
                 "unevaluatedProperties": false
             },
+            "minItems": 1,
             "unevaluatedItems": false
         },
         "assoc_date": {
@@ -166,14 +159,29 @@
                     "url"
                 ],
                 "unevaluatedProperties": false
-
             },
             "unevaluatedItems": false
         },
         "bib": {
             "type": "array",
             "items": {
-                "$ref": "#/$defs/bib"
+                "type": "object",
+                "allOf": [
+                    {
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type"
+                        ]
+                    },
+                    {
+                        "$ref": "#/$defs/bib"
+                    }
+                ],
+                "unevaluatedProperties": false
             },
             "unevaluatedItems": false
         },
@@ -206,18 +214,14 @@
             "unevaluatedItems": false
         },
         "cataloguer": {
-            "$comment": "TBD: finalize structure of this element",
-            "type": [
-                "array",
-                "null"
-            ],
+            "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/change_log_entry"
+                "type": "string"
             },
             "unevaluatedItems": false
         },
         "dig_provenance": {
-            "$comment": "TBD. Should it be required?"
+            "$comment": "TBD. Should it be required? | what gets included in this obj?"
         },
         "reconstructed_from": {
             "type": "array",
@@ -225,6 +229,11 @@
                 "$ref": "#/$defs/ark"
             },
             "unevaluatedItems": false
+        },
+        "last_modified": {
+            "type": "string",
+            "format": "date",
+            "$comment": "TBD: use date-time? Q for t&b about what the | also verify if should be required"
         }
     },
     "required": [
@@ -236,7 +245,8 @@
         "extent",
         "state",
         "part",
-        "location"
+        "location",
+        "last_modified"
     ],
     "unevaluatedProperties": false,
     "$defs": {
@@ -338,9 +348,6 @@
                 "shortcode": {
                     "type": "string"
                 },
-                "type": {
-                    "type": "string"
-                },
                 "range": {
                     "type": "string"
                 },
@@ -360,10 +367,8 @@
                 }
             },
             "required": [
-                "shortcode",
-                "type"
-            ],
-            "unevaluatedProperties": false
+                "shortcode"
+            ]
         },
         "iso_date": {
             "type": "string",
@@ -443,7 +448,33 @@
                     "unevaluatedItems": false
                 },
                 "layout": {
-                    "$comment": "TBD, waiting on resolution of questions about the concatenating of col, lines, and dim here"
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": 
+                        {
+                            "locus": {
+                                "type": "string"
+                            },
+                            "columns": {
+                                "type": "string"
+                            },
+                            "lines": {
+                                "type": "string"
+                            },
+                            "dim": {
+                                "type": "string"
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "unevaluatedProperties": false
+                    }
                 },
                 "text_unit": {
                     "type": "array",
@@ -832,6 +863,14 @@
                                     "unevaluatedProperties": false
                                 },
                                 "unevaluatedItems": false
+                            },
+                            "edition": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/$defs/bib",
+                                    "unevaluatedProperties": false
+                                },
+                                "unevaluatedItems": false
                             }
                         },
                         "unevaluatedProperties": false,
@@ -854,10 +893,11 @@
                     },
                     "unevaluatedItems": false
                 },
-                "bib": {
+                "edition": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/bib"
+                        "$ref": "#/$defs/bib",
+                        "unevaluatedProperties": false
                     },
                     "unevaluatedItems": false
                 }
@@ -914,7 +954,7 @@
                     "unevaluatedItems": false
                 },
                 "orig_date": {
-                    "$ref": "#/$defs/iso_date"
+                    "type": "string"
                 }
             }
         }
