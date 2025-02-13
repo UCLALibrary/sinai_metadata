@@ -185,6 +185,9 @@
             },
             "unevaluatedItems": false
         },
+        "dig_provenance": {
+            "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/dig_provenance"
+        },
         "cataloguer": {
             "type": [
                 "array",
