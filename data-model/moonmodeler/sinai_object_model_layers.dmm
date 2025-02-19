@@ -8235,6 +8235,22 @@
 			"estimatedSize": "",
 			"cols": [
 				{
+					"id": "04f542f1-9248-4f49-858b-9dac687a0cc2",
+					"name": "program",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
 					"id": "f7e2825d-aeb4-4e02-97a3-ca09823d1efb",
 					"name": "camera_operator",
 					"datatype": "string",
@@ -8299,8 +8315,8 @@
 					"any": ""
 				},
 				{
-					"id": "04f542f1-9248-4f49-858b-9dac687a0cc2",
-					"name": "program",
+					"id": "1c1f5b02-401b-41ed-bc96-80d5f1abb5d4",
+					"name": "condition_category",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -8315,8 +8331,8 @@
 					"any": ""
 				},
 				{
-					"id": "1c1f5b02-401b-41ed-bc96-80d5f1abb5d4",
-					"name": "condition_category",
+					"id": "0f111b1e-744d-4c5f-b075-d7dcaad46ea6",
+					"name": "imaging_system",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -8549,7 +8565,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1731971113200,
+		"lastSaved": 1739395650566,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -8569,7 +8585,7 @@
 			"id": "201c3c44-34f2-4204-a31f-393015dc6f9f",
 			"keysgraphics": true,
 			"linegraphics": "detailed",
-			"zoom": 1.1,
+			"zoom": 1.3,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -8593,7 +8609,7 @@
 					"referencedItemId": "3c9e4fbf-132c-4a3e-94b3-8d94c02e1b39",
 					"x": 1203,
 					"y": 40,
-					"gHeight": 1833,
+					"gHeight": 1932,
 					"gWidth": 231,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -9171,7 +9187,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"a54494f0-71af-4c3a-8493-d8520bc1de97": {
 					"referencedItemId": "a54494f0-71af-4c3a-8493-d8520bc1de97",
