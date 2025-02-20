@@ -19,8 +19,7 @@
             "minLength": 1
         },
         "ms_date": {
-            "$ref": "#/$defs/iso_date",
-            "$comment": "Generate from earliest to latest date from overtext layers. if single date, yyyy, if range, yyyy/yyyy"
+            "$ref": "#/$defs/aggregated_date"
         },
         "summary": {
             "type": "string"
@@ -137,7 +136,6 @@
             "unevaluatedItems": false
         },
         "viscodex": {
-            "$comment": "TBD: typed 'data visualization' property instead?",
             "type": "array",
             "items": {
                 "type": "object",
@@ -233,7 +231,7 @@
         "last_modified": {
             "type": "string",
             "format": "date",
-            "$comment": "TBD: use date-time? Q for t&b about what the | also verify if should be required"
+            "$comment": "TBD: use date-time? Q for t&b about what the data will look lik | also verify if should be required"
         }
     },
     "required": [
@@ -246,10 +244,50 @@
         "state",
         "part",
         "location",
+        "iiif",
+        "dig_provenance",
         "last_modified"
     ],
     "unevaluatedProperties": false,
     "$defs": {
+        "aggregated_date": {
+            "type": "object",
+            "properties": {
+                "iso": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "not_before": {
+                                "type": "string",
+                                "pattern": "[0-9]{4}"
+                            },
+                            "not_after": {
+                                "type": "string",
+                                "pattern": "[0-9]{4}"
+                            }
+                        },
+                        "required": [
+                            "not_before"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false,
+                    "minItems": 1
+                },
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "iso"
+            ],
+            "unevaluatedProperties": false
+        },
         "ark": {
             "description": "A unique Archival Resource Key (ARK)",
             "type": "string",
@@ -264,9 +302,6 @@
                 "value": {
                     "type": "string"
                 },
-                "iso": {
-                    "$ref": "#/$defs/iso_date"
-                },
                 "as_written": {
                     "type": "string"
                 },
@@ -278,7 +313,6 @@
                     "unevaluatedItems": false
                 }
             },
-            "$comment": "TBD, check required fields: type, value, iso??",
             "required": [
                 "type"
             ],
@@ -310,8 +344,7 @@
             "required": [
                 "role"
             ],
-            "unevaluatedProperties": false,
-            "$comment": "TBD: review required fields"
+            "unevaluatedProperties": false
         },
         "assoc_place": {
             "type": "object",
@@ -339,8 +372,7 @@
             "required": [
                 "event"
             ],
-            "unevaluatedProperties": false,
-            "$comment": "TBD: review required fields"
+            "unevaluatedProperties": false
         },
         "bib": {
             "type": "object",
@@ -370,11 +402,6 @@
                 "shortcode"
             ]
         },
-        "iso_date": {
-            "type": "string",
-            "pattern": "^[0-9]{4}(\/[0-9]{4})?",
-            "$comment": "TBD regex refinement"
-        },
         "layer": {
             "type": "object",
             "properties": {
@@ -382,7 +409,11 @@
                     "$ref": "#/$defs/ark"
                 },
                 "type": {
-                    "type": "string"
+                    "type": "string",
+                    "$comment": "TBD: is this needed in layer since we have dedicated fields in ms and part for ot and guest?"
+                },
+                "origin_date": {
+                    "$comment": "TBD: is this an aggregated date, just iso, just value?"
                 },
                 "locus": {
                     "type": "string"
@@ -474,7 +505,8 @@
                             }
                         },
                         "unevaluatedProperties": false
-                    }
+                    },
+                    "unevaluatedItems": false
                 },
                 "text_unit": {
                     "type": "array",
@@ -526,6 +558,7 @@
                 "writing",
                 "text_unit"
             ],
+            "$comment": "TBD: if type removed, remove from required",
             "unevaluatedProperties": false
         },
         "paracontent": {
@@ -598,7 +631,6 @@
             "required": [
                 "type",
                 "locus",
-                "script",
                 "lang"
             ],
             "unevaluatedProperties": false
@@ -611,6 +643,9 @@
                 },
                 "summary": {
                     "type": "string"
+                },
+                "part_date": {
+                    "$ref": "#/$defs/aggregated_date"
                 },
                 "locus": {
                     "type": "string"
@@ -669,12 +704,10 @@
                 }
             },
             "required": [
-                "label",
                 "support",
                 "ot_layer"
             ],
             "unevaluatedProperties": false,
-            "$comment": "TBD, review the required fields. Label required?",
             "$comment": "TBD, rel mss at this level?"
         },
         "related_mss": {
@@ -873,8 +906,7 @@
                                 "unevaluatedItems": false
                             }
                         },
-                        "unevaluatedProperties": false,
-                        "$comment": "TBD, required fields? X-or?"
+                        "unevaluatedProperties": false
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -928,19 +960,22 @@
         "uto": {
             "type": "object",
             "properties": {
-                "ms_ark": {
+                "uto_ms_ark": {
                     "$ref": "#/$defs/ark"
                 },
-                "uto_ark": {
+                "uto_layer_ark": {
                     "$ref": "#/$defs/ark"
                 },
                 "label": {
                     "type": "string"
                 },
+                "locus": {
+                    "type": "string"
+                },
                 "script": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/script"
+                        "type": "string"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -956,7 +991,13 @@
                 "orig_date": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "uto_layer_ark",
+                "label",
+                "script",
+                "lang"
+            ]
         }
     }
 }
