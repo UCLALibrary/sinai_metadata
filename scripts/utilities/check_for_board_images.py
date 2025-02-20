@@ -30,7 +30,7 @@ for name in filenames:
                 if not(has_front_board_images):
                     has_front_board_images = "Front Board" in row["Title"]
                 if not(has_back_board_images):
-                        has_back_board_images = "Front Board" in row["Title"]
+                        has_back_board_images = "Back Board" in row["Title"]
             manuscripts.append(
                 {
                     "shelfmark": shelfmark,
