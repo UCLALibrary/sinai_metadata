@@ -201,6 +201,10 @@
                     },
                     "type": {
                         "type": "string"
+                    },
+                    "thumbnail": {
+                        "type": "string",
+                        "format": "uri"
                     }
                 },
                 "required": [
@@ -430,7 +434,12 @@
                         "type": "object",
                         "properties": {
                             "script": {
-                                "$ref": "#/$defs/script"
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/$defs/script"
+                                },
+                                "minItems": 1,
+                                "unevaluatedItems": false
                             },
                             "locus": {
                                 "type": "string"
@@ -902,6 +911,13 @@
                                 "items": {
                                     "$ref": "#/$defs/bib",
                                     "unevaluatedProperties": false
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
                                 },
                                 "unevaluatedItems": false
                             }
