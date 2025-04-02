@@ -1,0 +1,119 @@
+{ 
+    "ark": "ark:/21198/ten0p1ul2", 
+    "reconstruction": false, 
+    "state": { 
+        "id": "undertext", 
+        "label": "Undertext" 
+    }, 
+    "label": "Arabic NF M 28, Part 1, Undertext 2", 
+    "locus": "ff. 131-132, 138, 140-142", 
+    "summary": "Genesis (6th c. Greek majuscule)", 
+    "extent": "16 ff.", 
+    "writing": [
+        { 
+            "script": [
+                { 
+                    "id": "greek-maj", 
+                    "label": "Greek majuscule" ,
+                    "writing_system": "Greek"
+                } 
+            ], 
+            "locus": "ff. 131-132, 138, 140-142" ,
+            "note": [
+                "Round biblical majuscule"
+            ]
+        } 
+    ], 
+    "text_unit": [
+        { 
+            "id": "ark:/21198/ten0p1ul2t1", 
+            "label": "Primary Text Unit 1", 
+            "locus": "ff. 131-132, 138, 140-142" 
+        } 
+    ], 
+    "assoc_date": [
+        { 
+            "type": { 
+                "id": "origin", 
+                "label": "Origin Date" 
+            }, 
+            "note": [ 
+                "Paleographic dating" 
+            ], 
+            "value": "6th c. CE", 
+            "iso": { 
+                "not_before": "0501", 
+                "not_after": "0600" 
+            } 
+        } 
+    ], 
+    "related_mss": [
+        {
+            "type": {
+                "id": "disjecta",
+                "label": "Disjecta Membra"
+            },
+            "label": "UTOs from Arabic NF M 8",
+            "mss": [
+                {
+                    "label": "Sinai Arabic NF 8",
+                    "id": "ark:/21198/z1kd1z25"
+                }
+            ],
+            "note": [
+                "The original manuscript also included the UTO Genesis from Arabic NF 28 and the UTOs Genesis and Exodus from Arabic NF 8 (Rossetto)"
+            ]
+        }
+    ], 
+    "note": [
+        { 
+            "type": { 
+                "id": "foliation", 
+                "label": "Foliation" 
+            }, 
+            "value": "Folios in order of reconstructed undertext: 138v, 138r, 142v, 142r, 140r, 140v, 141v, 141r, 132v, 132r, 131v, 131r" 
+        } 
+    ], 
+    "bib": [
+        {
+            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "type": {
+                "id": "ref",
+                "label": "Reference Work"
+            },
+            "range": "p. 29",
+            "note": [
+                "Kamil"
+            ]
+        },
+        {
+            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "28-57",
+            "note": [
+                "Kashouh article"
+            ]
+        },
+        {
+            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
+            "type": {
+                "id": "cite",
+                "label": "Citation"
+            },
+            "range": "28-57",
+            "note": [
+                "Kashouh book"
+            ]
+        }
+    ], 
+    "parent": [ 
+        "ark:/21198/ten02zkr" ,
+        "ark:/21198/ten0uto2"
+    ], 
+    "internal": [ 
+        "Test record for development purposes; please delete." 
+    ] 
+}
