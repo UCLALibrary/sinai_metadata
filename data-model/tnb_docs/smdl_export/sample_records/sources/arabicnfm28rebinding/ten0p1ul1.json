@@ -49,7 +49,7 @@
     ], 
     "assoc_name": [
         {
-            "id": "ark:/21198/tev887",
+            "id": "ark:/21198/s1v887",
             "role": {
                 "id": "scribe",
                 "label": "Scribe"
@@ -61,7 +61,7 @@
     ],
     "assoc_place": [
         {
-            "id": "ark:/21198/tesuryan",
+            "value": "Deir al-Suryan",
             "event": {
                 "id": "origin",
                 "label": "Origin Place"

@@ -127,7 +127,7 @@
             ],
             "assoc_place": [
                 {
-                    "id": "ark:/21198/tenisibis",
+                    "value": "Nisibis",
                     "as_written": "ܐܝܟ",
                     "event": {
                         "id": "reading",
