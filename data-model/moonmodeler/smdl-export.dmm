@@ -3340,23 +3340,6 @@
 					"fk": false
 				},
 				{
-					"id": "16f9abcc-b60a-4c11-a606-b76488b20654",
-					"name": "type",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": "",
-					"fk": false
-				},
-				{
 					"id": "864538db-dafb-406f-9498-573c45b9e7bc",
 					"name": "origin_date* (iso)",
 					"datatype": "string",
@@ -6815,23 +6798,6 @@
 					"fk": false
 				},
 				{
-					"id": "684bf347-2ce4-40f1-81b8-3be22beee3ee",
-					"name": "type",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": "",
-					"fk": false
-				},
-				{
 					"id": "61cdf884-269d-444c-b402-f614901a1559",
 					"name": "origin_date* (iso)",
 					"datatype": "string",
@@ -10207,23 +10173,6 @@
 				{
 					"id": "d524be32-5b76-440d-ad0b-7382c7ac6bd0",
 					"name": "ark",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"list": false,
-					"comment": "",
-					"data": "",
-					"enum": "",
-					"validation": "",
-					"pattern": false,
-					"estimatedSize": "",
-					"any": "",
-					"fk": false
-				},
-				{
-					"id": "9c984285-0aa2-4c87-b7f4-2ee7a3106565",
-					"name": "type",
 					"datatype": "string",
 					"param": "",
 					"pk": false,
@@ -13775,7 +13724,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1740693331681,
+		"lastSaved": 1744063391518,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -13805,7 +13754,7 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 139,
 					"y": 59,
-					"gHeight": 4997,
+					"gHeight": 5606,
 					"gWidth": 436,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -14197,7 +14146,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"29641154-39bf-4026-b3cd-b4fa95c2c3c4": {
 					"referencedItemId": "29641154-39bf-4026-b3cd-b4fa95c2c3c4",
