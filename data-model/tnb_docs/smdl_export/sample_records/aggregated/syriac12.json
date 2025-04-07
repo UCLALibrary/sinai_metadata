@@ -27,7 +27,7 @@
     "fol": "ff. 1-2a, 2b-45, 45bis-144",
     "coll": "Fly-leaves: Front board inside (pastedown), ff. 1-2b | Part 1: <I>: ff. 3–10; <II>: ff. 11–16; <III>: ff. 17–23; IV: ff. 24–31; V: ff. 32–39; VI: ff. 40–46; VII: ff. 47–54 | Part 2: <I>: ff. 55–63; <II>: ff. 64–72; <III>: ff. 73–82; <IV>: ff. 83–92; <V>: ff. 93–102; <VI>: ff. 103–112; <VII>: ff. 113–122; <VIII>: ff. 123–132; IX: ff. 133–142; <X>: ff. 143–144",
     "genre": [
-        " Liturgical texts",
+        "Liturgical texts",
         "Hagiographies",
         "Biblical texts",
         "Gospel books",
@@ -261,7 +261,7 @@
                                     ],
                                     "assoc_place": [
                                         {
-                                            "pref_name": "Nisibis",
+                                            "value": "Nisibis",
                                             "as_written": "ܐܝܟ",
                                             "event": "Place of Reading",
                                             "note": [
@@ -318,7 +318,7 @@
                             ],
                             "assoc_name": [
                                 {
-                                    "pref_name": "Ephrem the Syrian",
+                                    "pref_name": "Ephrem",
                                     "value": "Ephraim",
                                     "as_written": "ܝܘܚܢܢ ܒܪܝ ܬܐܘܕܘܪܘܣ",
                                     "role": "Scribe",
@@ -329,7 +329,6 @@
                             ],
                             "assoc_place": [
                                 {
-                                    "pref_name": "Sinai Monastery",
                                     "value": "The Holy Monastery on Mt. Sinai",
                                     "as_written": "ܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪ ܣܢܐ",
                                     "event": "Origin",
@@ -404,7 +403,7 @@
                     ],
                     "assoc_name": [
                         {
-                            "pref_name": "Ephrem the Syrian",
+                            "pref_name": "Ephrem",
                             "role": "Scribe",
                             "note": [
                                 "Top-level associated name"
@@ -413,7 +412,7 @@
                     ],
                     "assoc_place": [
                         {
-                            "pref_name": "Sinai Monastery",
+                            "value": "Sinai Monastery",
                             "event": "Origin",
                             "note": [
                                 "Top-level associated place"
@@ -422,11 +421,11 @@
                     ],
                     "note": [
                         {
-                            "type": "Ornamentation note",
+                            "type": "Ornamentation",
                             "value": "Decorative headpieces throughout"
                         },
                         {
-                            "type": "Condition note",
+                            "type": "Condition",
                             "value": "Several damaged folios were repaired and reinforced more recently"
                         }
                     ]
@@ -434,19 +433,19 @@
             ],
             "note": [
                 {
-                    "type": "Support Note",
+                    "type": "Support",
                     "value": "Oriental paper"
                 },
                 {
-                    "type": "Collation Note",
+                    "type": "Collation",
                     "value": "Quire signatures in the first part are marked in the bottom margin on the recto side of the first folio of a quire; quires of 8 ff. with the exception of quire II (6 ff.)"
                 },
                 {
-                    "type": "Collation Note",
+                    "type": "Collation",
                     "value": "F. 11 may be a replacement"
                 },
                 {
-                    "type": "Collation Note",
+                    "type": "Collation",
                     "value": "One f. missing after f. 17"
                 }
             ]
@@ -654,7 +653,7 @@
                             ],
                             "assoc_place": [
                                 {
-                                    "pref_name": "Sinai Monastery",
+                                    "value": "Sinai Monastery",
                                     "as_written": "ܕܝܪܐ ܩܕܝܫܐ ܕܛܘܪ ܣܢܐ",
                                     "event": "Origin",
                                     "note": [
@@ -738,7 +737,7 @@
                     ],
                     "assoc_place": [
                         {
-                            "pref_name": "Jerusalem",
+                            "value": "Jerusalem",
                             "as_written": "Ἰεροσολύμοις",
                             "event": "Place of Ownwership Transfer",
                             "note": [
@@ -810,7 +809,7 @@
             ],
             "note": [
                 {
-                    "type": "General Note",
+                    "type": "General",
                     "value": "The reinforcement strips on which this layer is written are from a paper manuscript"
                 }
             ]
@@ -844,7 +843,7 @@
                             "descriptive_title": "Unidentified text of Ephrem",
                             "creator": [
                                 {
-                                    "pref_name": "Ephrem the Syrian",
+                                    "pref_name": "Ephrem",
                                     "role": "Author"
                                 }
                             ]
@@ -854,7 +853,7 @@
             ],
             "note": [
                 {
-                    "type": "General Note",
+                    "type": "General",
                     "value": "The reinforcement strips on which this layer is written are from a parchment manuscript"
                 }
             ]
@@ -891,7 +890,7 @@
             ],
             "note": [
                 {
-                    "type": "General Note",
+                    "type": "General",
                     "value": "The reinforcement strips on which this layer is written are from a parchment manuscript"
                 }
             ]
@@ -949,7 +948,7 @@
             ],
             "assoc_place": [
                 {
-                    "pref_name": "Nisibis",
+                    "value": "Nisibis",
                     "as_written": "ܢܨܝܒܝܢ",
                     "event": "Unknown",
                     "note": [
@@ -957,7 +956,7 @@
                     ]
                 },
                 {
-                    "pref_name": "Amid",
+                    "value": "Amid",
                     "as_written": "ܐܡܕ",
                     "event": "Place of Birth",
                     "note": [
@@ -1006,7 +1005,7 @@
     ],
     "assoc_place": [
         {
-            "pref_name": "Deir al-Suryan",
+            "value": "Deir al-Suryan",
             "event": "Previous Repository",
             "note": [
                 "Formed part of the collection of Moses of Nisibis while he was abbat at Deir al-Suryan, before it was eventually transferred to Sinai"
@@ -1015,23 +1014,23 @@
     ],
     "note": [
         {
-            "type": "Binding Note",
+            "type": "Binding",
             "value": "Two binding boards"
         },
         {
-            "type": "Foliation Note",
+            "type": "Foliation",
             "value": "Ff. 1-2b are paper fly-leaves"
         },
         {
-            "type": "Binding Note",
+            "type": "Binding",
             "value": "Reinforcement strips derive from a Melkite paper manuscript (ff. 58–64, 142–144), a Syriac parchment codex (ff. 64–66, 70–72, 105–106, 110–111, 113–114), and a parchment Arabic (?) codex (ff. 55–56, 57–58, 58–59)"
         },
         {
-            "type": "Ornamentation Note",
+            "type": "Ornamentation",
             "value": "Illustration, St. Matthew in a scriptorium, front board inside"
         },
         {
-            "type": "Note",
+            "type": "Ornamentation",
             "value": "Decoration on Back Board Inside, triangle with radiating lines"
         },
         {
@@ -1133,7 +1132,7 @@
             "type": "Other Digital Version",
             "url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038917380205171/NLI",
             "note": [
-                "Using CPG UUID, since we didn't have NLI's yet"
+                "Using CPG ID for dev purposes since we are missing a bibl for NLI..."
             ]
         }
     ],
