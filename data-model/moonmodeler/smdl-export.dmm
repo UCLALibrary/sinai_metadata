@@ -13775,11 +13775,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-<<<<<<< HEAD
 		"lastSaved": 1740693331681,
-=======
-		"lastSaved": 1740071661089,
->>>>>>> adfc0d16213ba4e7505ab3b4ad41ea7d9465b1ac
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -13807,15 +13803,9 @@
 			"diagramItems": {
 				"56894fe5-0a18-4ada-ad8f-cbb3b56ae68a": {
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
-<<<<<<< HEAD
 					"x": 139,
 					"y": 59,
 					"gHeight": 4997,
-=======
-					"x": 138,
-					"y": 60,
-					"gHeight": 2213,
->>>>>>> adfc0d16213ba4e7505ab3b4ad41ea7d9465b1ac
 					"gWidth": 436,
 					"color": "#ffffff",
 					"background": "#03a9f4",
