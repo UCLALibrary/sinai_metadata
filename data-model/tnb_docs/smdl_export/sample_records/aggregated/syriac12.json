@@ -70,7 +70,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/te5fp1ol",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -473,7 +472,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/te5fp2ol",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -779,7 +777,6 @@
     "guest_layer": [
         {
             "ark": "ark:/21198/te5fmsg1",
-            "type": "Guest Content",
             "locus": "ff. 58–64, 142–144",
             "summary": "Reinforcement strips from a Melkite paper codex",
             "writing": [
@@ -816,7 +813,6 @@
         },
         {
             "ark": "ark:/21198/te5fmsg2",
-            "type": "Guest Content",
             "locus": "ff. 64–66, 70–72, 105–106, 110–111, 113–114",
             "summary": "Reinforcement strips from a Syriac parchment codex",
             "writing": [
@@ -860,7 +856,6 @@
         },
         {
             "ark": "ark:/21198/te5fmsg3",
-            "type": "Guest Content",
             "locus": "ff. 55–56, 57–58, 58–59",
             "summary": "Reinforcement strips from an Arabic (?) parchment codex",
             "writing": [

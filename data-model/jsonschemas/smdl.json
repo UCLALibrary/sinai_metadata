@@ -234,8 +234,7 @@
         },
         "last_modified": {
             "type": "string",
-            "format": "date",
-            "$comment": "TBD: use date-time? Q for t&b about what the data will look lik | also verify if should be required"
+            "format": "date"
         }
     },
     "required": [
@@ -411,10 +410,6 @@
                 "ark": {
                     "$ref": "#/$defs/ark"
                 },
-                "type": {
-                    "type": "string",
-                    "$comment": "TBD: is this needed in layer since we have dedicated fields in ms and part for ot and guest?"
-                },
                 "origin_date": {
                     "$comment": "TBD: is this an aggregated date, just iso, just value?"
                 },
@@ -562,11 +557,9 @@
             },
             "required": [
                 "ark",
-                "type",
                 "writing",
                 "text_unit"
             ],
-            "$comment": "TBD: if type removed, remove from required",
             "unevaluatedProperties": false
         },
         "paracontent": {
