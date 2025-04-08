@@ -46,25 +46,7 @@
                 "not_after": "0600" 
             } 
         } 
-    ], 
-    "related_mss": [
-        {
-            "type": {
-                "id": "disjecta",
-                "label": "Disjecta Membra"
-            },
-            "label": "UTOs from Arabic NF M 8",
-            "mss": [
-                {
-                    "label": "Sinai Arabic NF 8",
-                    "id": "ark:/21198/z1kd1z25"
-                }
-            ],
-            "note": [
-                "The original manuscript also included the UTO Genesis from Arabic NF 28 and the UTOs Genesis and Exodus from Arabic NF 8 (Rossetto)"
-            ]
-        }
-    ], 
+    ],
     "note": [
         { 
             "type": { 

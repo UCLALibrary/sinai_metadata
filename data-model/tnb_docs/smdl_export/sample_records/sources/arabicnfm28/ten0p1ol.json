@@ -51,29 +51,7 @@
                 "not_after": "0900" 
             } 
         } 
-    ], 
-    "related_mss": [
-        {
-            "type": {
-                "id": "disjecta",
-                "label": "Disjecta Membra"
-            },
-            "label": "Arabic NF M 28 + Arabic NF M 27 + Arabic NF M 8",
-            "mss": [
-                {
-                    "label": "Sinai Arabic NF 8",
-                    "id": "ark:/21198/z1kd1z25"
-                },
-                {
-                    "label": "Sinai Arabic NF 27"
-                }
-            ],
-            "note": [
-                "Text continues from Arabic NF 8",
-                "Arabic NF 8, Arabic NF 27, and Arabic NF 28 originally belonged to the same ms"
-            ]
-        }
-    ], 
+    ],
     "note": [
         { 
             "type": { 
