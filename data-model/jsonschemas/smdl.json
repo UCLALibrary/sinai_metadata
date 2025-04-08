@@ -715,8 +715,7 @@
                 "support",
                 "ot_layer"
             ],
-            "unevaluatedProperties": false,
-            "$comment": "TBD, rel mss at this level?"
+            "unevaluatedProperties": false
         },
         "related_mss": {
             "type": "object",
