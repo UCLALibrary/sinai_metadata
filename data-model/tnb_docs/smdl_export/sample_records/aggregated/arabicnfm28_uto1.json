@@ -121,7 +121,7 @@
                     ],
                     "assoc_place": [
                         {
-                            "pref_name": "Deir al-Suryan",
+                            "value": "Deir al-Suryan",
                             "event": "Origin Place",
                             "note": [
                                 "Written in Deir al-Suryan"
