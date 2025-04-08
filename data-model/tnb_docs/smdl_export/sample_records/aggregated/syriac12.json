@@ -839,8 +839,7 @@
                             "descriptive_title": "Unidentified text of Ephrem",
                             "creator": [
                                 {
-                                    "pref_name": "Ephrem",
-                                    "role": "Author"
+                                    "pref_name": "Ephrem"
                                 }
                             ]
                         }

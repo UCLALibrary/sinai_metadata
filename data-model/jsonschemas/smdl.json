@@ -829,8 +829,7 @@
                                     "required": [
                                         "pref_name"
                                     ],
-                                    "unevaluatedProperties": false,
-                                    "$comment": "TBD: require role as well? Use 'creator' if from `work_wit.work.creator`?"
+                                    "unevaluatedProperties": false
                                 },
                                 "unevaluatedItems": false
                             },
