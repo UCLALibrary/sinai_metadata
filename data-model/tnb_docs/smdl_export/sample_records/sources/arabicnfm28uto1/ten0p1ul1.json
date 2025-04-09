@@ -70,7 +70,7 @@
                 "Written in Deir al-Suryan"
             ]
         }
-    ],
+    ], 
     "note": [
         { 
             "type": { 
@@ -103,36 +103,22 @@
     ], 
     "bib": [
         {
-            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "id": "d943377f-b641-4984-bcb1-0f859e11616f",
             "type": {
                 "id": "ref",
                 "label": "Reference Work"
             },
-            "range": "p. 29",
-            "note": [
-                "Kamil"
-            ]
+            "range": "p. 1-57"
         },
         {
-            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
+            "id": "4693593d-2e88-4784-ab3d-501539acf1a0",
             "type": {
                 "id": "cite",
                 "label": "Citation"
             },
-            "range": "28-57",
+            "range": "v. 1, pp. 55-90",
             "note": [
                 "Kashouh article"
-            ]
-        },
-        {
-            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
-            "type": {
-                "id": "cite",
-                "label": "Citation"
-            },
-            "range": "28-57",
-            "note": [
-                "Kashouh book"
             ]
         }
     ], 

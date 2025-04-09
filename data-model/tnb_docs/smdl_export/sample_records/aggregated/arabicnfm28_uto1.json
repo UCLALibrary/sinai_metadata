@@ -200,6 +200,26 @@
             "note": [
                 "Kashouh book"
             ]
+        },
+        {
+            "shortcode": "Bhayro, et al. 2012",
+            "type": "Reference Work",
+            "range": "p. 1-57"
+        },
+        {
+            "shortcode": "Balageorgos and Kriticou",
+            "type": "Citation",
+            "range": "v. 1, pp. 55-90",
+            "note": [
+                "Kashouh article"
+            ]
+        },
+        {
+            "shortcode": "Boudalis and Rossetto",
+            "type": "Citation",
+            "note": [
+                "Boudalis and Rossetto"
+            ]
         }
     ],
     "iiif": [

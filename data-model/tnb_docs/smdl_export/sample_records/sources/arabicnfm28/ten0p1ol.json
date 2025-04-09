@@ -70,37 +70,12 @@
     ], 
     "bib": [
         {
-            "id": "cb8b8b52-569b-4d1f-8d5c-adf911afd205",
+            "id": "36ac2d29-349f-496d-b4ea-aff4e605c4ba",
             "type": {
                 "id": "ref",
                 "label": "Reference Work"
             },
-            "range": "p. 29",
-            "note": [
-                "Kamil"
-            ]
-        },
-        {
-            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
-            "type": {
-                "id": "cite",
-                "label": "Citation"
-            },
-            "range": "28-57",
-            "note": [
-                "Kashouh article"
-            ]
-        },
-        {
-            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
-            "type": {
-                "id": "cite",
-                "label": "Citation"
-            },
-            "range": "28-57",
-            "note": [
-                "Kashouh book"
-            ]
+            "range": "p. 48-90"
         }
     ], 
     "parent": [ 
