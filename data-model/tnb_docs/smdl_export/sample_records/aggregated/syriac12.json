@@ -613,9 +613,9 @@
                             ],
                             "edition": [
                                 {
-                                    "shortcode": "Müller-Kessler 2017",
+                                    "shortcode": "Rossetto 2023b",
                                     "note": [
-                                        "Müller-Kessler 2017"
+                                        "Rossetto 2023b"
                                     ]
                                 }
                             ]
@@ -1127,6 +1127,68 @@
             "url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038917380205171/NLI",
             "note": [
                 "Using CPG ID for dev purposes since we are missing a bibl for NLI..."
+            ]
+        },
+        { 
+            "shortcode": "Perria", 
+            "type": "Citation",
+            "range": "nos. 1-3", 
+            "note": [ 
+                "Perria" 
+            ] 
+        },
+        {
+            "shortcode": "Kashouh 2012",
+            "type": "Edition",
+            "range": "28-57",
+            "note": [
+                "Kashouh book"
+            ]
+        },
+        {
+            "shortcode": "Binggeli",
+            "type": "Citation",
+            "range": "pp. 43-687",
+            "note": [
+                "Binggeli"
+            ]
+        },
+        {
+            "id": "Müller-Kessler 2017",
+            "type": "Edition",
+            "note": [
+                "Müller-Kessler 2017"
+            ]
+        },
+        {
+            "shortcode": "Lewis",
+            "type": "Citation",
+            "range": "p. 16-17, 129",
+            "note": [
+                "Lewis 1894"
+            ]
+        },
+        {
+            "shortcode": "Clark",
+            "type": "Citation",
+            "range": "p. 17",
+            "note": [
+                "Clark 1952"
+            ]
+        },
+        {
+            "shortcode": "Binggeli",
+            "type": "Citation",
+            "range": "pp. 43-687",
+            "note": [
+                "Binggeli"
+            ]
+        },
+        {
+            "shortcode": "Rossetto 2023b",
+            "type": "Edition",
+            "note": [
+                "Rossetto 2023b"
             ]
         }
     ],
