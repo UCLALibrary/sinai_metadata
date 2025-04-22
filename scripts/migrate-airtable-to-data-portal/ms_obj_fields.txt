@@ -17,6 +17,9 @@ Feature ID
 Feature Labels
 Portal Part IDs
 Part Label
+Part Summary
+Part Locus
+Part Extent
 Support ID
 Support Label
 Support note
@@ -30,6 +33,7 @@ Part UTO Locus
 Part Guest ARKs
 Part Guest Labels
 Part Guest Locus
+Part Paracontents
 Part Collation note
 MS UTO ARKs
 MS UTO Labels

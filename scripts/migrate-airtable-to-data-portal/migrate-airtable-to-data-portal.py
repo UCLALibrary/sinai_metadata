@@ -337,6 +337,12 @@ def create_part_from_row(row: pd.Series):
     if not(pd.isnull(row["Part Label"])):
         part_data["label"] = str(row["Part Label"])
 
+    if not(pd.isnull(row["Part Summary"])):
+        part_data["summary"] = str(row["Part Summary"])
+
+    if not(pd.isnull(row["Part Locus"])):
+        part_data["locus"] = str(row["Part Locus"])
+
     # Collate and add support data
     support_labels = parse_rolled_up_field(str(row["Support Label"]), ",", '"')
     support_ids = parse_rolled_up_field(str(row["Support ID"]), ",", '"')
@@ -349,8 +355,14 @@ def create_part_from_row(row: pd.Series):
         supports.append(sup)
     part_data["support"] = supports
 
+    if not(pd.isnull(row["Part Extent"])):
+        part_data["extent"] = str(row["Part Extent"])
+    
     if not(pd.isnull(row["Part Dimensions"])):
         part_data["dim"] = str(row["Part Dimensions"])
+
+    if not(pd.isnull(row["Part Paracontents"])):
+        part_data["para"] = create_paracontent_from_row(row, "Part Paracontents", paracontents_table)
 
     part_data["layer"] = create_layer_reference_from_row(row, True)
     

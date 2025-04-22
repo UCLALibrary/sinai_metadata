@@ -1,5 +1,8 @@
 ID
 Part Label
+Part Summary
+Part Locus
+Part Extent
 Support ID
 Support Label
 Support note
@@ -13,6 +16,7 @@ Part UTO Locus
 Part Guest ARKs
 Part Guest Labels
 Part Guest Locus
+Part Paracontents
 Part Collation note
 Related MSS Level
 Related MSS Type
