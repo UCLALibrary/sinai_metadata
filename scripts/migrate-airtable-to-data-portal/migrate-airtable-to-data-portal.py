@@ -119,7 +119,17 @@ def transform_row_to_json(row, record_type):
         data.pop("features")
 
     if record_type == "ms_objs":
-        data["part"] = [create_part_from_row(row)]
+        # if part data referenced in separate parts csv, and that csv exists, use data there
+        if (not(pd.isnull(row["Portal Part IDs"]))) and (parts is not None):
+            # CHANGE THE BELOW LINE
+            data["part"] = []
+            part_refs = pd.read_csv(StringIO(str(row["Portal Part IDs"])), header=None).iloc[0]
+            for id in part_refs:
+                part_data = parts.loc[id]
+                data["part"].append(create_part_from_row(part_data))
+        # otherwise use the data for parts encoded in the ms objs csv
+        else:     
+            data["part"] = [create_part_from_row(row)]
 
     # TBD: this may not be used for the ms_objs level
     if record_type == "ms_objs":
@@ -1114,6 +1124,21 @@ except IndexError:
      print(f"Please be sure to enter both command arguments the path to the CSV you would like to transform and the type {RECORD_TYPES}")
 except ValueError:
      print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
+
+# Get the path to a CSV of part data for multi-part records; set the index of the DataFrame as the ID column, useful for accessing by ID
+# Note: for single-parts, the script will use part data from the ms object CSV itself; a separate CSV is required only if one or more ms_obj rows is multi-part
+# Only checked if record type is ms_objs b/c only relevant for this record type
+if record_type == "ms_objs":
+    path_to_parts_csv = input("Please input a path to the CSV containing the part records for creating the part field (or leave blank if unused):")
+    if path_to_parts_csv:
+        parts = pd.read_csv(path_to_parts_csv, index_col='ID')
+        parts_missing_col = check_csv_columns_against_standard_list('part_fields.txt', "Parts", parts.columns)
+        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+        user_response = input("Please press enter to continue with the migration script")
+        for col in parts_missing_col:
+            parts[col] = pd.Series(dtype='string')
+    else:
+        parts = None
 
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
 path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field (or leave blank if unused):")

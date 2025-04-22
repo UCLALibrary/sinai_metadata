@@ -15,6 +15,7 @@ Collation
 Collation note
 Feature ID
 Feature Labels
+Portal Part IDs
 Part Label
 Support ID
 Support Label

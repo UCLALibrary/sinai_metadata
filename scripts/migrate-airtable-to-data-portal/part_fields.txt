@@ -1,0 +1,22 @@
+ID
+Part Label
+Support ID
+Support Label
+Support note
+Part Dimensions
+Overtext ARKs
+Overtext Labels
+Overtext Locus
+Part UTO ARKs
+Part UTO Labels
+Part UTO Locus
+Part Guest ARKs
+Part Guest Labels
+Part Guest Locus
+Part Collation note
+Related MSS Level
+Related MSS Type
+Related MSS Type Label
+Related MSS Label
+Related MSS JSON
+Related MSS Note
