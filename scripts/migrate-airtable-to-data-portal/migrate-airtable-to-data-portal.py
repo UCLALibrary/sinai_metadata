@@ -121,9 +121,9 @@ def transform_row_to_json(row, record_type):
 
     if record_type == "ms_objs":
         # if part data referenced in separate parts csv, and that csv exists, use data there
-        if (not(pd.isnull(row["Portal Part IDs"]))) and (parts is not None):
+        if (not(pd.isnull(row["Part IDs"]))) and (parts is not None):
             data["part"] = []
-            part_refs = pd.read_csv(StringIO(str(row["Portal Part IDs"])), header=None).iloc[0]
+            part_refs = pd.read_csv(StringIO(str(row["Part IDs"])), header=None).iloc[0]
             part_data = get_side_csv_data(ids=part_refs, csv=parts, sort_by_sequence=True)
             for i, part in part_data.iterrows():
                 data["part"].append(create_part_from_row(part))

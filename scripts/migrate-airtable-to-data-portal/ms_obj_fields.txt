@@ -15,7 +15,7 @@ Collation
 Collation note
 Feature ID
 Feature Labels
-Portal Part IDs
+Part IDs
 Part Label
 Part Summary
 Part Locus
