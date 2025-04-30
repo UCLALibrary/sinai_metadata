@@ -59,7 +59,8 @@ def transform_row_to_json(row, record_type):
     # add work_wits for text_units
     if record_type == "text_units":
         work_wit_ids = parse_rolled_up_field(str(row["Work Witnesses"]), ",", '"')
-        data["work_wit"] = create_work_witnesses_from_row(work_wit_ids, workwits_table)
+        work_wit_data = get_side_csv_data(ids=work_wit_ids, csv=workwits_table, sort_by_sequence=True)
+        data["work_wit"] = create_work_witnesses_from_row(work_wit_data)
 
     # add extent
     if record_type != "text_units" and not(pd.isnull(row["Extent"])):
@@ -121,12 +122,11 @@ def transform_row_to_json(row, record_type):
     if record_type == "ms_objs":
         # if part data referenced in separate parts csv, and that csv exists, use data there
         if (not(pd.isnull(row["Portal Part IDs"]))) and (parts is not None):
-            # CHANGE THE BELOW LINE
             data["part"] = []
             part_refs = pd.read_csv(StringIO(str(row["Portal Part IDs"])), header=None).iloc[0]
-            for id in part_refs:
-                part_data = parts.loc[id]
-                data["part"].append(create_part_from_row(part_data))
+            part_data = get_side_csv_data(ids=part_refs, csv=parts, sort_by_sequence=True)
+            for i, part in part_data.iterrows():
+                data["part"].append(create_part_from_row(part))
         # otherwise use the data for parts encoded in the ms objs csv
         else:     
             data["part"] = [create_part_from_row(row)]
@@ -935,12 +935,11 @@ def create_layout_from_row(row: pd.Series):
         layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
     return layout
 
-def create_work_witnesses_from_row(work_wit_ids: list, workwits_table: pd.DataFrame):
+def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
     work_wits = []
-    for id in work_wit_ids:
+    for work_wit_row in work_wits_data:
         # paracontent_table.loc[int(id), "Type ID"]
         wit = {}
-        work_wit_row = workwits_table.loc[int(id)]
         wit["work"] = {}
         # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
         if not(pd.isnull(work_wit_row["Work ID"])):
@@ -1077,6 +1076,15 @@ def create_associated_place(id: str, value: str, as_written: str, event: object,
     return place
 
 # UTILITY FUNCTIONS
+
+# Returns a Data Frame from a CSV file, filtered by a list of IDs, optionally sorted by a "Sequence" field
+# Used to pre-process "side" CSVs referenced from the main CSV, e.g. for work witnesses
+
+def get_side_csv_data(ids: list, csv: pd.DataFrame, sort_by_sequence: bool):
+    data = csv.loc[ids]
+    if sort_by_sequence:
+        return data.sort_values("Sequence")
+    return data
 
 # Returns a list of values parsed out of a rolled-up field, such as the Features field
 # Restriction: fails if a quoted field has the quotechar within it, but should not occur in SMDL data
