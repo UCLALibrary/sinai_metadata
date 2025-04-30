@@ -1118,6 +1118,18 @@ def parse_rolled_up_field(data: str, delimiter: str, quotechar: str):
                 vals.append(x.strip())
     return vals
 
+def setup_side_csv(path_to_allowed_fields_doc: str, property_key: str, property_label: str):
+    path_to_csv = input(f"Please input a path to the CSV containing the rows for creating the {property_key} field (or leave blank if unused):")
+    if path_to_csv:
+        csv = pd.read_csv(path_to_csv, index_col='ID')
+        missing_col = check_csv_columns_against_standard_list(path_to_allowed_fields_doc, property_label, csv.columns)
+        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+        user_response = input("Please press enter to continue with the migration script")
+        for col in missing_col:
+            csv[col] = pd.Series(dtype='string')
+    else:
+        csv = None
+    return csv
 def check_csv_columns_against_standard_list(columns_list_doc: str, record_type: str, csv_columns: list):
     with open(columns_list_doc) as f:
         expected_cols = f.read().splitlines()
@@ -1160,67 +1172,22 @@ except ValueError:
 # Note: for single-parts, the script will use part data from the ms object CSV itself; a separate CSV is required only if one or more ms_obj rows is multi-part
 # Only checked if record type is ms_objs b/c only relevant for this record type
 if record_type == "ms_objs":
-    path_to_parts_csv = input("Please input a path to the CSV containing the part records for creating the part field (or leave blank if unused):")
-    if path_to_parts_csv:
-        parts = pd.read_csv(path_to_parts_csv, index_col='ID')
-        parts_missing_col = check_csv_columns_against_standard_list('part_fields.txt', "Parts", parts.columns)
-        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-        user_response = input("Please press enter to continue with the migration script")
-        for col in parts_missing_col:
-            parts[col] = pd.Series(dtype='string')
-    else:
-        parts = None
+    parts = setup_side_csv("part_fields.txt", "part", "Parts")
 
 # Get the path to a CSV of related mansucripts data; set the index of the DataFrame as the ID column, useful for accessing by ID
 # Only checked if record type is ms_objs or layers b/c only relevant for these record types
 if record_type == "ms_objs" or record_type == "layers":
-    path_to_related_mss_csv = input("Please input a path to the CSV containing the related manuscript records for creating the related_mss field (or leave blank if unused):")
-    if path_to_related_mss_csv:
-        related_mss_csv = pd.read_csv(path_to_related_mss_csv, index_col='ID')
-        related_mss_missing_col = check_csv_columns_against_standard_list('related_mss_fields.txt', "Related MSS", related_mss_csv.columns)
-        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-        user_response = input("Please press enter to continue with the migration script")
-        for col in related_mss_missing_col:
-            related_mss_csv[col] = pd.Series(dtype='string')
-    else:
-        related_mss_csv = None
-
+    related_mss_csv = setup_side_csv("related_mss_fields.txt", "related_mss", "Related Manuscripts")
 
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
-path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field (or leave blank if unused):")
-# path_to_ref_instances_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv" # testing remove this line
-if path_to_ref_instances_csv:
-    ref_instances = pd.read_csv(path_to_ref_instances_csv, index_col='ID')
-    ref_instances_missing_col = check_csv_columns_against_standard_list('bib_fields.txt', "References", ref_instances.columns)
-    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-    user_response = input("Please press enter to continue with the migration script")
-    for col in ref_instances_missing_col:
-        ref_instances[col] = pd.Series(dtype='string')
-else:
-    ref_instances = None
+ref_instances = setup_side_csv("bib_fields.txt", "bib", "References")
 
-path_to_paracontents_csv = input("Please input a path to the CSV containing the paracontents info for creating the paracontents field (or leave blank if unused):")
-# path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
-if path_to_paracontents_csv:
-    paracontents_table = pd.read_csv(path_to_paracontents_csv, index_col='ID')
-    paracontents_missing_col = check_csv_columns_against_standard_list('para_fields.txt', "Paracontents", paracontents_table.columns)
-    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-    user_response = input("Please press enter to continue with the migration script")
-    for col in paracontents_missing_col:
-        paracontents_table[col] = pd.Series(dtype='string')
-else:
-    paracontents_table = None
+# Get the path to a CSV of paracontents for creating paracontent records; set the index of the DataFrame as the ID column, useful for accessing by ID
+paracontents_table = setup_side_csv("para_fields.txt", "para", "Paracontents")
 
+# For text units, get the path to a CSV of work witnesses for creating work_wit records; set the index of the DataFrame as the ID column, useful for accessing by ID
 if record_type == "text_units":
-    path_to_workwits_csv = input("Please input a path to the CSV containing the work witness info for creating the work witnesses field (required for text units):")
-# path_to_paracontents_csv = "/Users/wpotter/Desktop/SMDP-Migration/csvs/colophons_TEST.csv" # testing remove this line
-    workwits_table = pd.read_csv(path_to_workwits_csv, index_col='ID')
-    workwits_missing_col = check_csv_columns_against_standard_list('work_wit_fields.txt', "Work Witnesses", workwits_table.columns)
-    print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-    user_response = input("Please press enter to continue with the migration script")
-    for col in workwits_missing_col:
-        workwits_table[col] = pd.Series(dtype='string')
-
+    workwits_table = setup_side_csv("work_wit_fields.txt", "work_wit", "Work Witnesses")
 
 # Check that all of the columns are present, or added, for a given record type
 # Report the mismatched fields; missing fields will be populated as empty
