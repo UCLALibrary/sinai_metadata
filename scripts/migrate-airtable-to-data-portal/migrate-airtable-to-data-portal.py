@@ -238,8 +238,14 @@ def transform_row_to_json(row, record_type):
         data.pop("note")
 
     # Add related_mss field if it is not flagged as being at the part level
-    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) != "part":
-        data["related_mss"] = create_related_mss_from_row(row)
+    if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS"])):
+            data["related_mss"] = []
+            rel_mss_refs = pd.read_csv(StringIO(str(row["Related MSS"])), header=None).iloc[0]
+            rel_mss_data = get_side_csv_data(ids=rel_mss_refs, csv=related_mss_csv, sort_by_sequence=False)
+            for i, rel_mss in rel_mss_data.iterrows():
+                # filter for only the ms obj level related mss
+                if str(rel_mss["Related MSS Level"]) == "ms":
+                    data["related_mss"].append(create_related_mss_from_row(rel_mss))
     # remove related_mss field if none were created
     if "related_mss" in data and len(data["related_mss"]) == 0:
         data.pop("related_mss")
@@ -371,10 +377,16 @@ def create_part_from_row(row: pd.Series):
     if len(part_data["note"]) == 0:
         part_data.pop("note")
     
-    # Add related_mss field if non-empty and flagged as being at the part level
-    if not(pd.isnull(row["Related MSS JSON"])) and str(row["Related MSS Level"]) == "part":
-        part_data["related_mss"] = create_related_mss_from_row(row)
-    
+    # Add related_mss data if non-empty and flagged as being at the part level
+    if not(pd.isnull(row["Related MSS"])):
+        part_data["related_mss"] = []
+        rel_mss_refs = pd.read_csv(StringIO(str(row["Related MSS"])), header=None).iloc[0]
+        rel_mss_data = get_side_csv_data(ids=rel_mss_refs, csv=related_mss_csv, sort_by_sequence=False)
+        for i, rel_mss in rel_mss_data.iterrows():
+            # filter for only the ms obj level related mss
+            if str(rel_mss["Related MSS Level"]) == "part":
+                part_data["related_mss"].append(create_related_mss_from_row(rel_mss))
+
     return part_data
 
 
@@ -846,22 +858,21 @@ def create_notes_from_specific_columns(notes_by_type: list):
                 )
     return all_notes
 
-# TBD: finalize field names here
-# take a row and parse the fields related to the related_mss object
-def create_related_mss_from_row(row: pd.Series):
-    related = {}
-    related["type"] = {
-        "id": str(row["Related MSS Type"]),
-        "label": str(row["Related MSS Type Label"])
+# take a row and parse the fields to create a related_mss object
+def create_related_mss_from_row(related_data: pd.Series):
+    related_mss = {}
+    related_mss["type"] = {
+        "id": str(related_data["Related MSS Type"]),
+        "label": str(related_data["Related MSS Type Label"])
     }
-    related["label"] = str(row["Related MSS Label"])
+    related_mss["label"] = str(related_data["Related MSS Label"])
 
-    if not(pd.isnull(row["Related MSS Note"])):
-        related["note"] = parse_rolled_up_field(str(row["Related MSS Note"]), "|~|", "#")
-    
-    mss = json.loads(str(row["Related MSS JSON"]))
-    related["mss"] = mss["mss"]
-    return [related]
+    if not(pd.isnull(related_data["Related MSS Note"])):
+        related_mss["note"] = parse_rolled_up_field(str(related_data["Related MSS Note"]), "|~|", "#")
+    if not(pd.isnull(related_data["Related MSS JSON"])):
+        mss = json.loads(str(related_data["Related MSS JSON"]))
+        related_mss["mss"] = mss["mss"]
+    return related_mss
 
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
@@ -1159,6 +1170,21 @@ if record_type == "ms_objs":
             parts[col] = pd.Series(dtype='string')
     else:
         parts = None
+
+# Get the path to a CSV of related mansucripts data; set the index of the DataFrame as the ID column, useful for accessing by ID
+# Only checked if record type is ms_objs or layers b/c only relevant for these record types
+if record_type == "ms_objs" or record_type == "layers":
+    path_to_related_mss_csv = input("Please input a path to the CSV containing the related manuscript records for creating the related_mss field (or leave blank if unused):")
+    if path_to_related_mss_csv:
+        related_mss_csv = pd.read_csv(path_to_related_mss_csv, index_col='ID')
+        related_mss_missing_col = check_csv_columns_against_standard_list('related_mss_fields.txt', "Related MSS", related_mss_csv.columns)
+        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
+        user_response = input("Please press enter to continue with the migration script")
+        for col in related_mss_missing_col:
+            related_mss_csv[col] = pd.Series(dtype='string')
+    else:
+        related_mss_csv = None
+
 
 # Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
 path_to_ref_instances_csv = input("Please input a path to the CSV containing the reference instances for creating the bibliography field (or leave blank if unused):")

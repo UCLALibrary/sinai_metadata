@@ -40,12 +40,7 @@ Foliation note
 Contents note
 General note
 Ornamentation note
-Related MSS Level
-Related MSS Type
-Related MSS Type Label
-Related MSS Label
-Related MSS JSON
-Related MSS Note
+Related MSS
 Reference Instances
 Reconstructed From
 Parent ARKs
