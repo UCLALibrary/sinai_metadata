@@ -70,7 +70,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/te5fp1ol",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -473,7 +472,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/te5fp2ol",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -615,9 +613,9 @@
                             ],
                             "edition": [
                                 {
-                                    "shortcode": "Müller-Kessler 2017",
+                                    "shortcode": "Rossetto 2023b",
                                     "note": [
-                                        "Müller-Kessler 2017"
+                                        "Rossetto 2023b"
                                     ]
                                 }
                             ]
@@ -779,7 +777,6 @@
     "guest_layer": [
         {
             "ark": "ark:/21198/te5fmsg1",
-            "type": "Guest Content",
             "locus": "ff. 58–64, 142–144",
             "summary": "Reinforcement strips from a Melkite paper codex",
             "writing": [
@@ -816,7 +813,6 @@
         },
         {
             "ark": "ark:/21198/te5fmsg2",
-            "type": "Guest Content",
             "locus": "ff. 64–66, 70–72, 105–106, 110–111, 113–114",
             "summary": "Reinforcement strips from a Syriac parchment codex",
             "writing": [
@@ -843,8 +839,7 @@
                             "descriptive_title": "Unidentified text of Ephrem",
                             "creator": [
                                 {
-                                    "pref_name": "Ephrem",
-                                    "role": "Author"
+                                    "pref_name": "Ephrem"
                                 }
                             ]
                         }
@@ -860,7 +855,6 @@
         },
         {
             "ark": "ark:/21198/te5fmsg3",
-            "type": "Guest Content",
             "locus": "ff. 55–56, 57–58, 58–59",
             "summary": "Reinforcement strips from an Arabic (?) parchment codex",
             "writing": [
@@ -996,7 +990,7 @@
     ],
     "assoc_name": [
         {
-            "pref_name": "Moses of Nisibis",
+            "value": "Moses of Nisibis",
             "role": "Former Owner",
             "note": [
                 "From external accounts of the library of Moses of Nisibis, it appears he was once an owner of this manuscript in its current form"
@@ -1063,7 +1057,7 @@
         },
         {
             "type": "Disjecta Membra",
-            "label": "Disjecta Membra from the final quire",
+            "label": "Part 2. Disjecta Membra from the final quire",
             "note": [
                 "The last 4 folios are today Biblioteca Ambrosiana, A 296 inf., ff. 70–73 = Chabot 20 (4 ff.) + Mingana Syr. 632 (1 f.)",
                 "Identification of disjecta membra by Rossetto"
@@ -1133,6 +1127,68 @@
             "url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990038917380205171/NLI",
             "note": [
                 "Using CPG ID for dev purposes since we are missing a bibl for NLI..."
+            ]
+        },
+        { 
+            "shortcode": "Perria", 
+            "type": "Citation",
+            "range": "nos. 1-3", 
+            "note": [ 
+                "Perria" 
+            ] 
+        },
+        {
+            "shortcode": "Kashouh 2012",
+            "type": "Edition",
+            "range": "28-57",
+            "note": [
+                "Kashouh book"
+            ]
+        },
+        {
+            "shortcode": "Binggeli",
+            "type": "Citation",
+            "range": "pp. 43-687",
+            "note": [
+                "Binggeli"
+            ]
+        },
+        {
+            "shortcode": "Müller-Kessler 2017",
+            "type": "Edition",
+            "note": [
+                "Müller-Kessler 2017"
+            ]
+        },
+        {
+            "shortcode": "Lewis",
+            "type": "Citation",
+            "range": "p. 16-17, 129",
+            "note": [
+                "Lewis 1894"
+            ]
+        },
+        {
+            "shortcode": "Clark",
+            "type": "Citation",
+            "range": "p. 17",
+            "note": [
+                "Clark 1952"
+            ]
+        },
+        {
+            "shortcode": "Binggeli",
+            "type": "Citation",
+            "range": "pp. 43-687",
+            "note": [
+                "Binggeli"
+            ]
+        },
+        {
+            "shortcode": "Rossetto 2023b",
+            "type": "Edition",
+            "note": [
+                "Rossetto 2023b"
             ]
         }
     ],

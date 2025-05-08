@@ -1,2 +1,5 @@
 .DS_Store
 scripts/airtable-export/.python-version
+# Ignore Python cache files
+__pycache__/
+*.pyc

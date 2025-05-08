@@ -164,20 +164,7 @@
             }, 
             "value": "Recent foliation in Syriac numerals covering the 1st part (ff. 55–144). The foliation was added after a replacement folio (f. 68) was attached but before two parts were bound together" 
         } 
-    ], 
-    "bib": [
-        { 
-            "id": "deb668b6-feec-4828-8749-a97441881226", 
-            "type": { 
-                "id": "cite", 
-                "label": "Citation" 
-            }, 
-            "range": "[50], pg. 152", 
-            "note": [ 
-                "Kamil" 
-            ] 
-        } 
-    ], 
+    ],
     "parent": [ 
         "ark:/21198/te5f0f9b" 
     ], 

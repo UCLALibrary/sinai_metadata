@@ -3,13 +3,6 @@
     "reconstruction": false,
     "type": "Manuscript",
     "shelfmark": "Sinai Arabic NF X 42",
-    "ms_date": {
-        "iso": [
-            {
-                "not_before": "0400"
-            }
-        ]
-    },
     "extent": "14 ff.",
     "state": "Codex",
     "part": [
@@ -20,7 +13,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/tebvp1ol",
-                    "type": "Overtext",
                     "writing": [
                         {
                             "script": [

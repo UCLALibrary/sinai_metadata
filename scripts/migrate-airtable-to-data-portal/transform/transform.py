@@ -1,12 +1,18 @@
-import pandas as pd, json, sys, os, datetime
+'''
+This module contains the main functions used for transforming the CSV data to JSON
+'''
+import pandas as pd
+import json, datetime
+import transform.config as config
+import transform.helpers as helpers
 from io import StringIO
 
-# Function Declarations
+
 """
 Takes a Pandas Data Frame representing a CSV row; and a string representing a data portal record type
 Transforms the CSV data into a Python dictionary to be serialized as a JSON record following the Data Portal data model
 """
-def transform_row_to_json(row, record_type):
+def transform_row_to_json(row: pd.DataFrame, record_type: str):
     """
      Based on the mapping of CSV column headers to JSON fields, create a json file from the data row
     """
@@ -45,8 +51,8 @@ def transform_row_to_json(row, record_type):
 
     # add language for text_units
     if record_type == "text_units":
-        lang_ids = parse_rolled_up_field(str(row["Language ID"]), ",", '"')
-        lang_labels = parse_rolled_up_field(str(row["Language Label"]), ",", '"')
+        lang_ids = helpers.parse_rolled_up_field(str(row["Language ID"]), ",", '"')
+        lang_labels = helpers.parse_rolled_up_field(str(row["Language Label"]), ",", '"')
         data["lang"] = []
         for i in range(0, len(lang_ids)):
             data["lang"].append(
@@ -58,8 +64,8 @@ def transform_row_to_json(row, record_type):
 
     # add work_wits for text_units
     if record_type == "text_units":
-        work_wit_ids = parse_rolled_up_field(str(row["Work Witnesses"]), ",", '"')
-        work_wit_data = get_side_csv_data(ids=work_wit_ids, csv=workwits_table, sort_by_sequence=True)
+        work_wit_ids = helpers.parse_rolled_up_field(str(row["Work Witnesses"]), ",", '"')
+        work_wit_data = helpers.get_side_csv_data(ids=work_wit_ids, csv=config.other_csvs["work_wits"]["data"], sort_by_sequence=True)
         data["work_wit"] = create_work_witnesses_from_row(work_wit_data)
 
     # add extent
@@ -105,8 +111,8 @@ def transform_row_to_json(row, record_type):
     
     # Collate and add features data if any
     if not(pd.isnull(row["Feature Labels"])) and not(pd.isnull(row["Feature ID"])):
-        feature_labels = parse_rolled_up_field(str(row["Feature Labels"]), ",", '"')
-        feature_ids = parse_rolled_up_field(str(row["Feature ID"]), ",", '"')
+        feature_labels = helpers.parse_rolled_up_field(str(row["Feature Labels"]), ",", '"')
+        feature_ids = helpers.parse_rolled_up_field(str(row["Feature ID"]), ",", '"')
         features = []
         for i in range(0, len(feature_ids)):
             feat = {
@@ -121,10 +127,10 @@ def transform_row_to_json(row, record_type):
 
     if record_type == "ms_objs":
         # if part data referenced in separate parts csv, and that csv exists, use data there
-        if (not(pd.isnull(row["Part IDs"]))) and (parts is not None):
+        if (not(pd.isnull(row["Part IDs"]))) and (config.other_csvs["parts"]["data"] is not None):
             data["part"] = []
             part_refs = pd.read_csv(StringIO(str(row["Part IDs"])), header=None).iloc[0]
-            part_data = get_side_csv_data(ids=part_refs, csv=parts, sort_by_sequence=True)
+            part_data = helpers.get_side_csv_data(ids=part_refs, csv=config.other_csvs["parts"]["data"], sort_by_sequence=True)
             for i, part in part_data.iterrows():
                 data["part"].append(create_part_from_row(part))
         # otherwise use the data for parts encoded in the ms objs csv
@@ -145,7 +151,7 @@ def transform_row_to_json(row, record_type):
 
     # add colophons as paracontent objects for layers
     if record_type == "layers" and not(pd.isnull(row["Colophon"])):
-        data["para"] += create_paracontent_from_row(row, "Colophon", paracontents_table)
+        data["para"] += create_paracontent_from_row(row, "Colophon", config.other_csvs["paracontents"]["data"])
 
     # TBD: has_bind -- waiting to see how the data will look
     if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
@@ -170,7 +176,7 @@ def transform_row_to_json(row, record_type):
 
     # add assoc_date for origin date in layers
     if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
-        notes = parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
+        notes = helpers.parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
         if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
             notes = []
         data["assoc_date"].append(create_associated_date(
@@ -183,13 +189,13 @@ def transform_row_to_json(row, record_type):
     # add assoc_name for scribes
     if record_type == "layers":
         if not(pd.isnull(row["Scribe ID"])):
-            scribe_arks = parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
-            values = parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
+            scribe_arks = helpers.parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
+            values = helpers.parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
             if len(values) <= 1 and values[0] == "nan":
                 values = []
                 for i in range(0, len(scribe_arks)):
                     values.append('')
-            notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
             if len(notes) <= 1 and notes[0] == "nan":
                 notes = []
                 for i in range(0, len(scribe_arks)):
@@ -206,7 +212,7 @@ def transform_row_to_json(row, record_type):
                     note=n
                 ))
         elif not(pd.isnull(row["Scribe Value"])):
-            notes = parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
+            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
             if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
                 notes = []
             data["assoc_name"].append(create_associated_name(
@@ -220,7 +226,7 @@ def transform_row_to_json(row, record_type):
     # add assoc_place for origin place
     # TBD: if we have ARKs ever, rewrite this; currently only have a value field
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
-        notes = parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
+        notes = helpers.parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
         if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
             notes = []
         data["assoc_place"].append(create_associated_place(
@@ -241,7 +247,7 @@ def transform_row_to_json(row, record_type):
     if record_type in ["ms_objs", "layers"] and not(pd.isnull(row["Related MSS"])):
             data["related_mss"] = []
             rel_mss_refs = pd.read_csv(StringIO(str(row["Related MSS"])), header=None).iloc[0]
-            rel_mss_data = get_side_csv_data(ids=rel_mss_refs, csv=related_mss_csv, sort_by_sequence=False)
+            rel_mss_data = helpers.get_side_csv_data(ids=rel_mss_refs, csv=config.other_csvs["related_mss"]["data"], sort_by_sequence=False)
             for i, rel_mss in rel_mss_data.iterrows():
                 # filter for only the ms obj level related mss
                 if str(rel_mss["Related MSS Level"]) == "ms":
@@ -263,7 +269,7 @@ def transform_row_to_json(row, record_type):
         data["viscodex"] = [viscodex]
     
     if not(pd.isnull(row["Reference Instances"])):
-        data["bib"] = create_bibs_from_row(row, ref_instances)
+        data["bib"] = create_bibs_from_row(row, config.other_csvs["bibs"]["data"])
     # remove bib field if none were created
     if "bib" in data and len(data["bib"]) == 0:
         data.pop("bib")
@@ -298,9 +304,9 @@ def transform_row_to_json(row, record_type):
     if not(pd.isnull(row["Contributor Name"])):
         timestamp = datetime.datetime.now()
         # parse the rolled up fields containing change log info
-        contributors = parse_rolled_up_field(str(row["Contributor Name"]), ",", "#")
-        messages = parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
-        orcids = parse_rolled_up_field(str(row["Contributor ORCiD"]), ",", "#")
+        contributors = helpers.parse_rolled_up_field(str(row["Contributor Name"]), ",", "#")
+        messages = helpers.parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
+        orcids = helpers.parse_rolled_up_field(str(row["Contributor ORCiD"]), ",", "#")
 
         # for each listed contribution, add the change log info
         change_log = []
@@ -317,12 +323,12 @@ def transform_row_to_json(row, record_type):
 
     # reconstructed from, only used for records that are reconstructions
     if data["reconstruction"]:
-        data["reconstructed_from"] = parse_rolled_up_field(str(row["Reconstructed From"]), ",", "#")
+        data["reconstructed_from"] = helpers.parse_rolled_up_field(str(row["Reconstructed From"]), ",", "#")
 
 
     # Parent, for records that are not ms_objs
     if record_type != "ms_objs":
-        data["parent"] = parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
+        data["parent"] = helpers.parse_rolled_up_field(str(row["Parent ARKs"]), ",", "#")
     
     # Remove empty paracontents if no data was added
     if "para" in data and len(data["para"]) == 0:
@@ -337,93 +343,165 @@ def transform_row_to_json(row, record_type):
    
     return data
 
-def create_part_from_row(row: pd.Series):
-    part_data = {}
+def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
+    work_wits = []
+    for work_wit_row in work_wits_data:
+        # paracontent_table.loc[int(id), "Type ID"]
+        wit = {}
+        wit["work"] = {}
+        # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
+        if not(pd.isnull(work_wit_row["Work ID"])):
+            wit["work"]["id"] = str(work_wit_row["Work ID"])
+        else:
+            wit["work"]["desc_title"] = str(work_wit_row["Work Descriptive Title"])
+            if not(pd.isnull(work_wit_row["Work Creator"])):
+                wit["work"]["creator"] = helpers.parse_rolled_up_field(str(work_wit_row["Work Creator"]), ",", '"')
+            if not(pd.isnull(work_wit_row["Work Genre ID"])):
+                genre_ids = helpers.parse_rolled_up_field(str(work_wit_row["Work Genre ID"]), ",", '"')
+                genre_labels = helpers.parse_rolled_up_field(str(work_wit_row["Work Genre Label"]), ",", '"')
+                wit["work"]["genre"] = []
+                for i in range(0, len(genre_ids)):
+                    wit["work"]["genre"].append(
+                        {
+                            "id": genre_ids[i],
+                            "label": genre_labels[i]
+                        }
+                    )
+            
+        if not(pd.isnull(work_wit_row["Alternative Title"])):
+            wit["alt_title"] = str(work_wit_row["Alternative Title"])
+        if not(pd.isnull(work_wit_row["As Written"])):
+            wit["as_written"] = str(work_wit_row["As Written"])
+        if not(pd.isnull(work_wit_row["Locus"])):
+            wit["locus"] = str(work_wit_row["Locus"])
 
-    if not(pd.isnull(row["Part Label"])):
-        part_data["label"] = str(row["Part Label"])
+        # Create excerpts for incipit and explicit
+        wit["excerpt"] = []
+        if not(pd.isnull(work_wit_row["Incipit As Written"])):
+            inc_type = {"id": "incipit", "label": "Incipit"}
+            wit["excerpt"].append(create_excerpt(work_wit_row, inc_type, "Incipit "))
+        if not(pd.isnull(work_wit_row["Explicit As Written"])):
+            expl_type = {"id": "explicit", "label": "Explicit"}
+            wit["excerpt"].append(create_excerpt(work_wit_row, expl_type, "Explicit "))
 
-    if not(pd.isnull(row["Part Summary"])):
-        part_data["summary"] = str(row["Part Summary"])
+        # If no excerpts created, remove the field
+        if "excerpt" in wit and len(wit["excerpt"]) == 0:
+            wit.pop("excerpt")
 
-    if not(pd.isnull(row["Part Locus"])):
-        part_data["locus"] = str(row["Part Locus"])
+        
+        # TBD: contents, partially implemented, sufficient for first migration pass
+        # hacked together to create the contents label, but should also support other fields in contents...
+        if not(pd.isnull(work_wit_row["Contents Label"])):
+            contents = []
+            labels = helpers.parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
+            for i in range(0, len(labels)):
+                contents.append(
+                    {
+                        "label": labels[i]
+                    }
+                )
+            wit["contents"] = contents
+        
+        # Add notes, if any
+        if not(pd.isnull(work_wit_row["Note"])):
+            wit["note"] = helpers.parse_rolled_up_field(str(work_wit_row["Note"]), "|~|", "#")
 
-    # Collate and add support data
-    support_labels = parse_rolled_up_field(str(row["Support Label"]), ",", '"')
-    support_ids = parse_rolled_up_field(str(row["Support ID"]), ",", '"')
-    supports = []
-    for i in range(0, len(support_ids)):
-        sup = {
-            "id": support_ids[i],
-            "label": support_labels[i]
+        # Add bib, if any, using reference instances table
+        if not(pd.isnull(work_wit_row["Reference Instances"])):
+            wit["bib"] = create_bibs_from_row(work_wit_row, config.other_csvs["bibs"]["data"])
+        # remove bib field if none were created
+        if "bib" in wit and len(wit["bib"]) == 0:
+            wit.pop("bib")
+
+        work_wits.append(wit)
+
+    return work_wits
+
+def create_excerpt(data_row: pd.Series, type: object, column_prefix: str):
+    excerpt = {}
+    excerpt["type"] = type # TBD: make generic, so can supply type or look for it from the row columns
+
+    if not(pd.isnull(data_row[column_prefix + "Locus"])):
+            excerpt["locus"] = str(data_row[column_prefix + "Locus"])
+    if not(pd.isnull(data_row[column_prefix + "As Written"])):
+            excerpt["as_written"] = str(data_row[column_prefix + "As Written"])
+    if not(pd.isnull(data_row[column_prefix + "Translation"])):
+            excerpt["translation"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Translation"]), "|~|", "#")
+    if not(pd.isnull(data_row[column_prefix + "Note"])):
+            excerpt["note"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Note"]), "|~|", "#")
+    
+    return excerpt
+
+def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
+    bibs = []
+    ref_instance_ids = pd.read_csv(StringIO(str(row["Reference Instances"])), header=None).iloc[0]
+    for id in ref_instance_ids:
+        # ref_info = ref_instances.loc[ref_instances["ID"] == id]
+        bib_data = {}
+        bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
+        bib_data["type"] = {
+            "id": str(ref_instances.loc[int(id), "Type ID"]),
+            "label": str(ref_instances.loc[int(id), "Type Label"])
         }
-        supports.append(sup)
-    part_data["support"] = supports
+        if not(pd.isnull(ref_instances.loc[int(id), "Range"])):
+            bib_data["range"] = str(ref_instances.loc[int(id), "Range"])
+        
+        if not(pd.isnull(ref_instances.loc[int(id), "Alt shelfmark"])):
+            bib_data["alt_shelf"] = str(ref_instances.loc[int(id), "Alt shelfmark"])
 
-    if not(pd.isnull(row["Part Extent"])):
-        part_data["extent"] = str(row["Part Extent"])
-    
-    if not(pd.isnull(row["Part Dimensions"])):
-        part_data["dim"] = str(row["Part Dimensions"])
+        # url is required for otherdigversion, otherwise only use if not blank
+        if str(ref_instances.loc[int(id), "Type ID"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
+            bib_data["url"] = str(ref_instances.loc[int(id), "URL"])
+        
+        if not(pd.isnull(ref_instances.loc[int(id), "Notes"])):
+            bib_data["note"] = helpers.parse_rolled_up_field(str(ref_instances.loc[int(id), "Notes"]), "|~|", "#")
 
-    if not(pd.isnull(row["Part Paracontents"])):
-        part_data["para"] = create_paracontent_from_row(row, "Part Paracontents", paracontents_table)
+        bibs.append(bib_data)
+    return bibs
 
-    part_data["layer"] = create_layer_reference_from_row(row, True)
-    
-    part_data["note"] = create_notes_from_row(row, "ms_objs", 1)
-    # remove notes field if none were created
-    if len(part_data["note"]) == 0:
-        part_data.pop("note")
-    
-    # Add related_mss data if non-empty and flagged as being at the part level
-    if not(pd.isnull(row["Related MSS"])):
-        part_data["related_mss"] = []
-        rel_mss_refs = pd.read_csv(StringIO(str(row["Related MSS"])), header=None).iloc[0]
-        rel_mss_data = get_side_csv_data(ids=rel_mss_refs, csv=related_mss_csv, sort_by_sequence=False)
-        for i, rel_mss in rel_mss_data.iterrows():
-            # filter for only the ms obj level related mss
-            if str(rel_mss["Related MSS Level"]) == "part":
-                part_data["related_mss"].append(create_related_mss_from_row(rel_mss))
+def create_writing_from_row(row: pd.Series):
+    writing = {}
+    scripts = []
+    script_ids = helpers.parse_rolled_up_field(str(row["Script ID"]), ',', "#")
+    script_labels = helpers.parse_rolled_up_field(str(row["Script Label"]), ',', "#")
+    writing_systems = helpers.parse_rolled_up_field(str(row["Writing System"]), ',', "#")
+    for i in range(0, len(script_ids)):
+        obj = {}
+        obj["id"] = script_ids[i]
+        obj["label"] = script_labels[i]
+        obj["writing_system"] = writing_systems[i]
+        scripts.append(obj)
+    writing["script"] = scripts
 
-    return part_data
+    if not(pd.isnull(row["Writing Locus"])):
+        writing["locus"] = str(row["Writing Locus"])
+    if not(pd.isnull(row["Writing Note"])):
+        writing["note"] = helpers.parse_rolled_up_field(str(row["Writing Note"]), '|~|', "#")
+    return writing
 
+def create_ink_from_row(row: pd.Series):
+    ink = {}
+    if not(pd.isnull(row["Ink Locus"])):
+        ink["locus"] = str(row["Ink Locus"])
+    if not(pd.isnull(row["Ink Color"])):
+        ink["color"] = helpers.parse_rolled_up_field(str(row["Ink Color"]), "|~|", "#")
+    if not(pd.isnull(row["Ink Note"])):
+        ink["note"] = helpers.parse_rolled_up_field(str(row["Ink Note"]), "|~|", "#")
+    return ink
 
-# Takes a row from a CSV and a boolean indicating if is called by a part or not
-# Creates the overtext, undertext, and guest content layers
-def create_layer_reference_from_row(row: pd.Series, is_part: bool):
-    layers = []
-    column_prefix = "MS "
-    # include overtexts and use part columns if called by a part; overtext is required if part
-    if is_part:
-       overtext_data = get_layer_data(arks=str(row["Overtext ARKs"]), 
-                                      labels=str(row["Overtext Labels"]), 
-                                      locus=str(row["Overtext Locus"]), 
-                                      sep="\|~\|", quotechar="#")
-       layers += create_layer_object(overtext_data,
-                                        type={"id": "overtext", "label": "Overtext"})
-       column_prefix = "Part " # prefix will be 'Part ' otherwise stays "MS "
-    
-    # UTOs, optional
-    if not(pd.isnull(row[column_prefix + "UTO ARKs"])):
-        undertext_data = get_layer_data(arks=str(row[column_prefix + "UTO ARKs"]), 
-                                      labels=str(row[column_prefix + "UTO Labels"]), 
-                                      locus=str(row[column_prefix + "UTO Locus"]), 
-                                      sep="\|~\|", quotechar="#")
-        layers += create_layer_object(undertext_data,
-                                type={"id": "undertext", "label": "Undertext"})
-
-    # Guest Content, optional
-    if not(pd.isnull(row[column_prefix + "Guest ARKs"])):
-        guest_data = get_layer_data(arks=str(row[column_prefix + "Guest ARKs"]), 
-                                      labels=str(row[column_prefix + "Guest Labels"]), 
-                                      locus=str(row[column_prefix + "Guest Locus"]), 
-                                      sep="\|~\|", quotechar="#")
-        layers += create_layer_object(guest_data,
-                                    type={"id": "guest", "label": "Guest Content"})
-
-    return layers
+def create_layout_from_row(row: pd.Series):
+    layout = {}
+    if not(pd.isnull(row["Layout Locus"])):
+        layout["locus"] = str(row["Layout Locus"])
+    if not(pd.isnull(row["Layout Columns"])):
+        layout["columns"] = str(row["Layout Columns"])
+    if not(pd.isnull(row["Layout Lines"])):
+        layout["lines"] = str(row["Layout Lines"])
+    if not(pd.isnull(row["Layout Dimensions"])):
+        layout["dim"] = str(row["Layout Dimensions"])
+    if not(pd.isnull(row["Layout Note"])):
+        layout["note"] = helpers.parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
+    return layout
 
 def get_layer_data(arks, labels, locus, sep, quotechar):
     layer_data = {}
@@ -442,23 +520,6 @@ def get_layer_data(arks, labels, locus, sep, quotechar):
 # restriction: relies on exact match of arks and labels
 # TBD: throw exception if lengths of ark and label arrays don't match?
 # Given a dictionary of lists of arks, labels, locus; and a type object return a list of layer objects
-def create_layer_object(layer_data, type):
-    layers = []
-    for i in range(0, len(layer_data["arks"])):
-        if layer_data["arks"][i] == "" or layer_data["arks"][i] == "nan":
-            continue
-        layer = {}
-        layer["id"] = layer_data["arks"][i]
-        layer["label"] = layer_data["labels"][i]
-        layer["type"] = type
-
-        # add locus only if it exists for this pairing
-        if "locus" in layer_data and layer_data["locus"][i] != "<NA>" and layer_data["locus"][i] != "nan" and layer_data["locus"][i] != "":
-            layer["locus"] = layer_data["locus"][i]
-        
-        layers.append(layer)
-    return layers
-
 def create_text_unit_reference_from_row(row):
     # reusing the get_layer_data function since the same info is required
     text_unit_data = get_layer_data(arks=str(row["Text Unit ARKs"]),
@@ -468,7 +529,6 @@ def create_text_unit_reference_from_row(row):
                                     quotechar="#")
     # TBD: could make the create_*_object function more generic by giving 'type' as optional param
     return create_text_unit_object(text_unit_data)
-    
 
 def create_text_unit_object(text_unit_data):
     text_units = []
@@ -486,6 +546,59 @@ def create_text_unit_object(text_unit_data):
         text_units.append(text_unit)
     return text_units
 
+def create_part_from_row(row: pd.Series):
+    part_data = {}
+
+    if not(pd.isnull(row["Part Label"])):
+        part_data["label"] = str(row["Part Label"])
+
+    if not(pd.isnull(row["Part Summary"])):
+        part_data["summary"] = str(row["Part Summary"])
+
+    if not(pd.isnull(row["Part Locus"])):
+        part_data["locus"] = str(row["Part Locus"])
+
+    # Collate and add support data
+    support_labels = helpers.parse_rolled_up_field(str(row["Support Label"]), ",", '"')
+    support_ids = helpers.parse_rolled_up_field(str(row["Support ID"]), ",", '"')
+    supports = []
+    for i in range(0, len(support_ids)):
+        sup = {
+            "id": support_ids[i],
+            "label": support_labels[i]
+        }
+        supports.append(sup)
+    part_data["support"] = supports
+
+    if not(pd.isnull(row["Part Extent"])):
+        part_data["extent"] = str(row["Part Extent"])
+    
+    if not(pd.isnull(row["Part Dimensions"])):
+        part_data["dim"] = str(row["Part Dimensions"])
+
+    if not(pd.isnull(row["Part Paracontents"])):
+        part_data["para"] = create_paracontent_from_row(row, "Part Paracontents", config.other_csvs["paracontents"]["data"])
+
+    part_data["layer"] = create_layer_reference_from_row(row, True)
+    
+    part_data["note"] = create_notes_from_row(row, "ms_objs", 1)
+    # remove notes field if none were created
+    if len(part_data["note"]) == 0:
+        part_data.pop("note")
+    
+    # Add related_mss data if non-empty and flagged as being at the part level
+    if not(pd.isnull(row["Related MSS"])):
+        part_data["related_mss"] = []
+        rel_mss_refs = pd.read_csv(StringIO(str(row["Related MSS"])), header=None).iloc[0]
+        rel_mss_data = helpers.get_side_csv_data(ids=rel_mss_refs, csv=config.other_csvs["related_mss"]["data"], sort_by_sequence=False)
+        for i, rel_mss in rel_mss_data.iterrows():
+            # filter for only the ms obj level related mss
+            if str(rel_mss["Related MSS Level"]) == "part":
+                part_data["related_mss"].append(create_related_mss_from_row(rel_mss))
+
+    return part_data
+
+
 def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_table: pd.DataFrame):
     paracontents = []
     para_refs = pd.read_csv(StringIO(str(row[column_name])), header=None).iloc[0]
@@ -498,8 +611,8 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
         if not(pd.isnull(paracontent_table.loc[int(id), "Locus"])):
             para_data["locus"] = str(paracontent_table.loc[int(id), "Locus"])
         
-        lang_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language ID"]), ",", '#')
-        lang_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language Label"]), ",", '#')
+        lang_ids = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language ID"]), ",", '#')
+        lang_labels = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Language Label"]), ",", '#')
         para_data["lang"] = []
         for i in range(0, len(lang_ids)):
             para_data["lang"].append(
@@ -511,9 +624,9 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
         
         # script, optional. Array of objects
         if not(pd.isnull(paracontent_table.loc[int(id), "Script ID"])):
-            script_ids = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script ID"]), ",", '#')
-            script_labels = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script Label"]), ",", '#')
-            writing_systems = parse_rolled_up_field(str(paracontent_table.loc[int(id), "Writing System"]), ",", '#')
+            script_ids = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script ID"]), ",", '#')
+            script_labels = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Script Label"]), ",", '#')
+            writing_systems = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Writing System"]), ",", '#')
             para_data["script"] = []
             for i in range(0, len(script_ids)):
                 para_data["script"].append(
@@ -532,7 +645,7 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
 
         # translation: optional, array of strings
         if not(pd.isnull(paracontent_table.loc[int(id), "Translation"])):
-            para_data["translation"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Translation"], "|~|", "#")
+            para_data["translation"] = helpers.parse_rolled_up_field(paracontent_table.loc[int(id), "Translation"], "|~|", "#")
         
         # assoc_*: optional, array of objects, need to be created via other function
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Name Role ID"])):
@@ -547,7 +660,7 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
 
         # note: optional, array of strings
         if not(pd.isnull(paracontent_table.loc[int(id), "Notes"])):
-            para_data["note"] = parse_rolled_up_field(paracontent_table.loc[int(id), "Notes"], "|~|", "#")
+            para_data["note"] = helpers.parse_rolled_up_field(paracontent_table.loc[int(id), "Notes"], "|~|", "#")
         
         paracontents.append(para_data)
 
@@ -669,7 +782,132 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
             )
             
     return data
+
+def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
+    date = {}
+    date["type"] = type
+    date["value"] = value
     
+    if iso != "":
+        not_before = iso.split("/")[0]
+        if len(iso.split("/")) > 1:
+            not_after = iso.split("/")[1]
+        else:
+            not_after = ""
+        date["iso"] = {}
+        date["iso"]["not_before"] = not_before.zfill(4)
+        # only add not_after property if the ISO date is a range
+        if not_after != "":
+            date["iso"]["not_after"] = not_after.zfill(4)
+
+    if as_written != "":
+        date["as_written"] = as_written
+    if len(note) > 0:
+        date["note"] = note
+    
+    return date
+
+def create_associated_name(id: str, value: str, as_written: str, role: object, note: list):
+    name = {}
+    if id != "":
+        name["id"] = id
+    if value != "":
+        name["value"] = value
+    if as_written != "":
+        name["as_written"] = as_written
+    name["role"] = role
+    if len(note) > 0:
+        name["note"] = note
+    return name
+
+def create_associated_place(id: str, value: str, as_written: str, event: object, note: list):
+    place = {}
+    if id != "":
+        place["id"] = id
+    if value != "":
+        place["value"] = value
+    if as_written != "":
+        place["as_written"] = as_written
+    place["event"] = event
+    if len(note) > 0:
+        place["note"] = note
+    return place
+
+
+# Takes a row from a CSV and a boolean indicating if is called by a part or not
+# Creates the overtext, undertext, and guest content layers
+def create_layer_reference_from_row(row: pd.Series, is_part: bool):
+    layers = []
+    column_prefix = "MS "
+    # include overtexts and use part columns if called by a part; overtext is required if part
+    if is_part:
+       overtext_data = get_layer_data(arks=str(row["Overtext ARKs"]), 
+                                      labels=str(row["Overtext Labels"]), 
+                                      locus=str(row["Overtext Locus"]), 
+                                      sep="\|~\|", quotechar="#")
+       layers += create_layer_object(overtext_data,
+                                        type={"id": "overtext", "label": "Overtext"})
+       column_prefix = "Part " # prefix will be 'Part ' otherwise stays "MS "
+    
+    # UTOs, optional
+    if not(pd.isnull(row[column_prefix + "UTO ARKs"])):
+        undertext_data = get_layer_data(arks=str(row[column_prefix + "UTO ARKs"]), 
+                                      labels=str(row[column_prefix + "UTO Labels"]), 
+                                      locus=str(row[column_prefix + "UTO Locus"]), 
+                                      sep="\|~\|", quotechar="#")
+        layers += create_layer_object(undertext_data,
+                                type={"id": "undertext", "label": "Undertext"})
+
+    # Guest Content, optional
+    if not(pd.isnull(row[column_prefix + "Guest ARKs"])):
+        guest_data = get_layer_data(arks=str(row[column_prefix + "Guest ARKs"]), 
+                                      labels=str(row[column_prefix + "Guest Labels"]), 
+                                      locus=str(row[column_prefix + "Guest Locus"]), 
+                                      sep="\|~\|", quotechar="#")
+        layers += create_layer_object(guest_data,
+                                    type={"id": "guest", "label": "Guest Content"})
+
+    return layers
+
+
+# restriction: relies on exact match of arks and labels
+# TBD: throw exception if lengths of ark and label arrays don't match?
+# Given a dictionary of lists of arks, labels, locus; and a type object return a list of layer objects
+def create_layer_object(layer_data, type):
+    layers = []
+    for i in range(0, len(layer_data["arks"])):
+        if layer_data["arks"][i] == "" or layer_data["arks"][i] == "nan":
+            continue
+        layer = {}
+        layer["id"] = layer_data["arks"][i]
+        layer["label"] = layer_data["labels"][i]
+        layer["type"] = type
+
+        # add locus only if it exists for this pairing
+        if "locus" in layer_data and layer_data["locus"][i] != "<NA>" and layer_data["locus"][i] != "nan" and layer_data["locus"][i] != "":
+            layer["locus"] = layer_data["locus"][i]
+        
+        layers.append(layer)
+    return layers
+
+
+# take a row and parse the fields to create a related_mss object
+def create_related_mss_from_row(related_data: pd.Series):
+    related_mss = {}
+    related_mss["type"] = {
+        "id": str(related_data["Related MSS Type"]),
+        "label": str(related_data["Related MSS Type Label"])
+    }
+    related_mss["label"] = str(related_data["Related MSS Label"])
+
+    if not(pd.isnull(related_data["Related MSS Note"])):
+        related_mss["note"] = helpers.parse_rolled_up_field(str(related_data["Related MSS Note"]), "|~|", "#")
+    if not(pd.isnull(related_data["Related MSS JSON"])):
+        mss = json.loads(str(related_data["Related MSS JSON"]))
+        related_mss["mss"] = mss["mss"]
+    return related_mss
+
+
 # takes a row (pandas Series); record_type string; and a boolean indicating whether the context is ms_obj.part or not
 # uses the record type and is_part to determine which columns to pass to the function that creates the typed note fields
 def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
@@ -843,11 +1081,12 @@ def create_notes_from_row(row: pd.Series, record_type: str, is_part: bool):
 
     return create_notes_from_specific_columns(cols)
 
+
 # Take a list of dictionaries representing notes data organized by types, return a series of data portal note
 def create_notes_from_specific_columns(notes_by_type: list):
     all_notes = []
     for note_type in notes_by_type:
-        for note in parse_rolled_up_field(note_type["data"], "|~|", "#"):
+        for note in helpers.parse_rolled_up_field(note_type["data"], "|~|", "#"):
             # skip empty, but create note objects for each delimited note field
             if note != "<NA>" and note != "" and note != "nan":
                 all_notes.append(
@@ -857,370 +1096,3 @@ def create_notes_from_specific_columns(notes_by_type: list):
                     }
                 )
     return all_notes
-
-# take a row and parse the fields to create a related_mss object
-def create_related_mss_from_row(related_data: pd.Series):
-    related_mss = {}
-    related_mss["type"] = {
-        "id": str(related_data["Related MSS Type"]),
-        "label": str(related_data["Related MSS Type Label"])
-    }
-    related_mss["label"] = str(related_data["Related MSS Label"])
-
-    if not(pd.isnull(related_data["Related MSS Note"])):
-        related_mss["note"] = parse_rolled_up_field(str(related_data["Related MSS Note"]), "|~|", "#")
-    if not(pd.isnull(related_data["Related MSS JSON"])):
-        mss = json.loads(str(related_data["Related MSS JSON"]))
-        related_mss["mss"] = mss["mss"]
-    return related_mss
-
-
-def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
-    bibs = []
-    ref_instance_ids = pd.read_csv(StringIO(str(row["Reference Instances"])), header=None).iloc[0]
-    for id in ref_instance_ids:
-        # ref_info = ref_instances.loc[ref_instances["ID"] == id]
-        bib_data = {}
-        bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
-        bib_data["type"] = {
-            "id": str(ref_instances.loc[int(id), "Type ID"]),
-            "label": str(ref_instances.loc[int(id), "Type Label"])
-        }
-        if not(pd.isnull(ref_instances.loc[int(id), "Range"])):
-            bib_data["range"] = str(ref_instances.loc[int(id), "Range"])
-        
-        if not(pd.isnull(ref_instances.loc[int(id), "Alt shelfmark"])):
-            bib_data["alt_shelf"] = str(ref_instances.loc[int(id), "Alt shelfmark"])
-
-        # url is required for otherdigversion, otherwise only use if not blank
-        if str(ref_instances.loc[int(id), "Type ID"]) == "otherdigversion" or not(pd.isnull(ref_instances.loc[int(id), "URL"])):
-            bib_data["url"] = str(ref_instances.loc[int(id), "URL"])
-        
-        if not(pd.isnull(ref_instances.loc[int(id), "Notes"])):
-            bib_data["note"] = parse_rolled_up_field(str(ref_instances.loc[int(id), "Notes"]), "|~|", "#")
-
-        bibs.append(bib_data)
-    return bibs
-
-def create_writing_from_row(row: pd.Series):
-    writing = {}
-    scripts = []
-    script_ids = parse_rolled_up_field(str(row["Script ID"]), ',', "#")
-    script_labels = parse_rolled_up_field(str(row["Script Label"]), ',', "#")
-    writing_systems = parse_rolled_up_field(str(row["Writing System"]), ',', "#")
-    for i in range(0, len(script_ids)):
-        obj = {}
-        obj["id"] = script_ids[i]
-        obj["label"] = script_labels[i]
-        obj["writing_system"] = writing_systems[i]
-        scripts.append(obj)
-    writing["script"] = scripts
-
-    if not(pd.isnull(row["Writing Locus"])):
-        writing["locus"] = str(row["Writing Locus"])
-    if not(pd.isnull(row["Writing Note"])):
-        writing["note"] = parse_rolled_up_field(str(row["Writing Note"]), '|~|', "#")
-    return writing
-
-def create_ink_from_row(row: pd.Series):
-    ink = {}
-    if not(pd.isnull(row["Ink Locus"])):
-        ink["locus"] = str(row["Ink Locus"])
-    if not(pd.isnull(row["Ink Color"])):
-        ink["color"] = parse_rolled_up_field(str(row["Ink Color"]), "|~|", "#")
-    if not(pd.isnull(row["Ink Note"])):
-        ink["note"] = parse_rolled_up_field(str(row["Ink Note"]), "|~|", "#")
-    return ink
-
-def create_layout_from_row(row: pd.Series):
-    layout = {}
-    if not(pd.isnull(row["Layout Locus"])):
-        layout["locus"] = str(row["Layout Locus"])
-    if not(pd.isnull(row["Layout Columns"])):
-        layout["columns"] = str(row["Layout Columns"])
-    if not(pd.isnull(row["Layout Lines"])):
-        layout["lines"] = str(row["Layout Lines"])
-    if not(pd.isnull(row["Layout Dimensions"])):
-        layout["dim"] = str(row["Layout Dimensions"])
-    if not(pd.isnull(row["Layout Note"])):
-        layout["note"] = parse_rolled_up_field(str(row["Layout Note"]), "|~|", "#")
-    return layout
-
-def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
-    work_wits = []
-    for work_wit_row in work_wits_data:
-        # paracontent_table.loc[int(id), "Type ID"]
-        wit = {}
-        wit["work"] = {}
-        # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
-        if not(pd.isnull(work_wit_row["Work ID"])):
-            wit["work"]["id"] = str(work_wit_row["Work ID"])
-        else:
-            wit["work"]["desc_title"] = str(work_wit_row["Work Descriptive Title"])
-            if not(pd.isnull(work_wit_row["Work Creator"])):
-                wit["work"]["creator"] = parse_rolled_up_field(str(work_wit_row["Work Creator"]), ",", '"')
-            if not(pd.isnull(work_wit_row["Work Genre ID"])):
-                genre_ids = parse_rolled_up_field(str(work_wit_row["Work Genre ID"]), ",", '"')
-                genre_labels = parse_rolled_up_field(str(work_wit_row["Work Genre Label"]), ",", '"')
-                wit["work"]["genre"] = []
-                for i in range(0, len(genre_ids)):
-                    wit["work"]["genre"].append(
-                        {
-                            "id": genre_ids[i],
-                            "label": genre_labels[i]
-                        }
-                    )
-            
-        if not(pd.isnull(work_wit_row["Alternative Title"])):
-            wit["alt_title"] = str(work_wit_row["Alternative Title"])
-        if not(pd.isnull(work_wit_row["As Written"])):
-            wit["as_written"] = str(work_wit_row["As Written"])
-        if not(pd.isnull(work_wit_row["Locus"])):
-            wit["locus"] = str(work_wit_row["Locus"])
-
-        # Create excerpts for incipit and explicit
-        wit["excerpt"] = []
-        if not(pd.isnull(work_wit_row["Incipit As Written"])):
-            inc_type = {"id": "incipit", "label": "Incipit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, inc_type, "Incipit "))
-        if not(pd.isnull(work_wit_row["Explicit As Written"])):
-            expl_type = {"id": "explicit", "label": "Explicit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, expl_type, "Explicit "))
-
-        # If no excerpts created, remove the field
-        if "excerpt" in wit and len(wit["excerpt"]) == 0:
-            wit.pop("excerpt")
-
-        
-        # TBD: contents, partially implemented, sufficient for first migration pass
-        # hacked together to create the contents label, but should also support other fields in contents...
-        if not(pd.isnull(work_wit_row["Contents Label"])):
-            contents = []
-            labels = parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
-            for i in range(0, len(labels)):
-                contents.append(
-                    {
-                        "label": labels[i]
-                    }
-                )
-            wit["contents"] = contents
-        
-        # Add notes, if any
-        if not(pd.isnull(work_wit_row["Note"])):
-            wit["note"] = parse_rolled_up_field(str(work_wit_row["Note"]), "|~|", "#")
-
-        # Add bib, if any, using reference instances table
-        if not(pd.isnull(work_wit_row["Reference Instances"])):
-            wit["bib"] = create_bibs_from_row(work_wit_row, ref_instances)
-        # remove bib field if none were created
-        if "bib" in wit and len(wit["bib"]) == 0:
-            wit.pop("bib")
-
-        work_wits.append(wit)
-
-    return work_wits
-
-def create_excerpt(data_row: pd.Series, type: object, column_prefix: str):
-    excerpt = {}
-    excerpt["type"] = type # TBD: make generic, so can supply type or look for it from the row columns
-
-    if not(pd.isnull(data_row[column_prefix + "Locus"])):
-            excerpt["locus"] = str(data_row[column_prefix + "Locus"])
-    if not(pd.isnull(data_row[column_prefix + "As Written"])):
-            excerpt["as_written"] = str(data_row[column_prefix + "As Written"])
-    if not(pd.isnull(data_row[column_prefix + "Translation"])):
-            excerpt["translation"] = parse_rolled_up_field(str(data_row[column_prefix + "Translation"]), "|~|", "#")
-    if not(pd.isnull(data_row[column_prefix + "Note"])):
-            excerpt["note"] = parse_rolled_up_field(str(data_row[column_prefix + "Note"]), "|~|", "#")
-    
-    return excerpt
-
-
-def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
-    date = {}
-    date["type"] = type
-    date["value"] = value
-    
-    if iso != "":
-        not_before = iso.split("/")[0]
-        if len(iso.split("/")) > 1:
-            not_after = iso.split("/")[1]
-        else:
-            not_after = ""
-        date["iso"] = {}
-        date["iso"]["not_before"] = not_before.zfill(4)
-        # only add not_after property if the ISO date is a range
-        if not_after != "":
-            date["iso"]["not_after"] = not_after.zfill(4)
-
-    if as_written != "":
-        date["as_written"] = as_written
-    if len(note) > 0:
-        date["note"] = note
-    
-    return date
-
-def create_associated_name(id: str, value: str, as_written: str, role: object, note: list):
-    name = {}
-    if id != "":
-        name["id"] = id
-    if value != "":
-        name["value"] = value
-    if as_written != "":
-        name["as_written"] = as_written
-    name["role"] = role
-    if len(note) > 0:
-        name["note"] = note
-    return name
-
-def create_associated_place(id: str, value: str, as_written: str, event: object, note: list):
-    place = {}
-    if id != "":
-        place["id"] = id
-    if value != "":
-        place["value"] = value
-    if as_written != "":
-        place["as_written"] = as_written
-    place["event"] = event
-    if len(note) > 0:
-        place["note"] = note
-    return place
-
-# UTILITY FUNCTIONS
-
-# Returns a Data Frame from a CSV file, filtered by a list of IDs, optionally sorted by a "Sequence" field
-# Used to pre-process "side" CSVs referenced from the main CSV, e.g. for work witnesses
-
-def get_side_csv_data(ids: list, csv: pd.DataFrame, sort_by_sequence: bool):
-    data = csv.loc[ids]
-    if sort_by_sequence:
-        return data.sort_values("Sequence")
-    return data
-
-# Returns a list of values parsed out of a rolled-up field, such as the Features field
-# Restriction: fails if a quoted field has the quotechar within it, but should not occur in SMDL data
-# TBD: check that notes don't fail this restriction
-def parse_rolled_up_field(data: str, delimiter: str, quotechar: str):
-    vals = []
-    # chunk data string first by the quote character
-    temp = data.split(quotechar)
-    # parse the chunks
-    for i in range(0, len(temp)):
-        # treat odd indices as 
-        if i % 2 != 0:
-            vals.append(temp[i])
-        # treat even indices as needing additional splitting by the delimiter
-        else:
-            for x in temp[i].split(delimiter):
-                # this allows skipping of the empty trailing whitespaces
-                if(x.strip() == ""):
-                    continue
-                vals.append(x.strip())
-    return vals
-
-def setup_side_csv(path_to_allowed_fields_doc: str, property_key: str, property_label: str):
-    path_to_csv = input(f"Please input a path to the CSV containing the rows for creating the {property_key} field (or leave blank if unused):")
-    if path_to_csv:
-        csv = pd.read_csv(path_to_csv, index_col='ID')
-        missing_col = check_csv_columns_against_standard_list(path_to_allowed_fields_doc, property_label, csv.columns)
-        print("Note: 'ID' may be erroneously reported as missing since it is used as the DataFrame index column, if the script did not report a failure, it is okay to ignore this")
-        user_response = input("Please press enter to continue with the migration script")
-        for col in missing_col:
-            csv[col] = pd.Series(dtype='string')
-    else:
-        csv = None
-    return csv
-def check_csv_columns_against_standard_list(columns_list_doc: str, record_type: str, csv_columns: list):
-    with open(columns_list_doc) as f:
-        expected_cols = f.read().splitlines()
-    missing_columns = []
-    extra_columns = []
-    for c in csv_columns:
-        if c not in expected_cols:
-            extra_columns.append(c)
-
-    for c in expected_cols:
-        if c not in csv_columns:
-            missing_columns.append(c)
-
-    print(f"The following '{record_type}' CSV columns will be ignored:")
-    print(extra_columns)
-    print("\n")
-    print(f"The following expected columns are missing from the '{record_type}' CSV and will be supplied as null values:")
-    print(missing_columns)
-    print("\n")
-    return missing_columns
-
-# CONSTANTS
-RECORD_TYPES = ["ms_objs", "layers", "text_units"]
-
-# Check to see if user entered path to csv file and valid command line argument
-# Read in the input CSV file as a data frame
-try:
-    csv_file = pd.read_csv(sys.argv[1])
-    record_type = sys.argv[2]
-    if record_type not in RECORD_TYPES:
-            raise ValueError
-except OSError:
-    print("ERROR: Incorrect path to csv, the file may not exist in the provided directory")
-except IndexError:
-     print(f"Please be sure to enter both command arguments the path to the CSV you would like to transform and the type {RECORD_TYPES}")
-except ValueError:
-     print(f"'{record_type}' is not a valid type, must be one of {RECORD_TYPES}")
-
-# Get the path to a CSV of part data for multi-part records; set the index of the DataFrame as the ID column, useful for accessing by ID
-# Note: for single-parts, the script will use part data from the ms object CSV itself; a separate CSV is required only if one or more ms_obj rows is multi-part
-# Only checked if record type is ms_objs b/c only relevant for this record type
-if record_type == "ms_objs":
-    parts = setup_side_csv("part_fields.txt", "part", "Parts")
-
-# Get the path to a CSV of related mansucripts data; set the index of the DataFrame as the ID column, useful for accessing by ID
-# Only checked if record type is ms_objs or layers b/c only relevant for these record types
-if record_type == "ms_objs" or record_type == "layers":
-    related_mss_csv = setup_side_csv("related_mss_fields.txt", "related_mss", "Related Manuscripts")
-
-# Get the path to a CSV of reference instances for creating bibliography records; set the index of the DataFrame as the ID column, useful for accessing by ID
-ref_instances = setup_side_csv("bib_fields.txt", "bib", "References")
-
-# Get the path to a CSV of paracontents for creating paracontent records; set the index of the DataFrame as the ID column, useful for accessing by ID
-paracontents_table = setup_side_csv("para_fields.txt", "para", "Paracontents")
-
-# For text units, get the path to a CSV of work witnesses for creating work_wit records; set the index of the DataFrame as the ID column, useful for accessing by ID
-if record_type == "text_units":
-    workwits_table = setup_side_csv("work_wit_fields.txt", "work_wit", "Work Witnesses")
-
-# Check that all of the columns are present, or added, for a given record type
-# Report the mismatched fields; missing fields will be populated as empty
-if record_type == "ms_objs":
-    missing_columns = check_csv_columns_against_standard_list('ms_obj_fields.txt', "Manuscript Objects", csv_file.columns)
-elif record_type == "layers":
-    missing_columns = check_csv_columns_against_standard_list('layer_fields.txt', "Layers", csv_file.columns)
-elif record_type == "text_units":
-    missing_columns = check_csv_columns_against_standard_list('text_unit_fields.txt', "Text Units", csv_file.columns)
-
-# confirm that the user wants to continue the script
-user_response = input("Continue with the migration script? (y/n)")
-accept_input = user_response == 'y'
-
-# for each row, create a JSON file of the corresponding record type
-if accept_input:
-    # add in the missing columns to the DataFrame as empty
-    for col in missing_columns:
-        csv_file[col] = pd.Series(dtype='string')
-    # Prompt user for the output directory, otherwise save to a sub-directory of the script's directory, based on the record type
-    out_dir = input(f"Enter an ouptut directory (defaults to out/{record_type}/): ")
-    if out_dir == "":
-        out_dir = f"out/{record_type}/"
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
-    for i, row in csv_file.iterrows():
-        record = transform_row_to_json(row, record_type)
-        # print(type(row))
-        ark = str(row["Item ARK"])
-        filename = ark.split("/")[2]
-        filepath = f'{out_dir}/{filename}.json'
-        with open(filepath, 'w+') as f:
-            json.dump(record, f, ensure_ascii=False, indent=4)
-            print("File saved to " + filepath)
-else:
-    print("Transform cancelled")

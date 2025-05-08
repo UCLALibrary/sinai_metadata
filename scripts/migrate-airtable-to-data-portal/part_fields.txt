@@ -1,0 +1,22 @@
+ID
+Sequence
+Part Label
+Part Summary
+Part Locus
+Part Extent
+Support ID
+Support Label
+Support note
+Part Dimensions
+Overtext ARKs
+Overtext Labels
+Overtext Locus
+Part UTO ARKs
+Part UTO Labels
+Part UTO Locus
+Part Guest ARKs
+Part Guest Labels
+Part Guest Locus
+Part Paracontents
+Part Collation note
+Related MSS

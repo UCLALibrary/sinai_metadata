@@ -46,29 +46,6 @@
             "value": "The Gospels continue in Arabic NF M 8 and NF M 27"
         }
     ],
-    "bib": [
-        {
-            "id": "ebe32f6b-ad60-472c-aceb-d86913448530",
-            "type": {
-                "id": "cite",
-                "label": "Citation"
-            },
-            "note": [
-                "Kashouh 2008"
-            ]
-        },
-        {
-            "id": "01d4a639-d314-4271-b7f8-3f559c6c744c",
-            "type": {
-                "id": "cite",
-                "label": "Citation"
-            },
-            "range": "p. 76",
-            "note": [
-                "Kashouh 2012"
-            ]
-        }
-    ],
     "parent": [
         "ark:/21198/ten0p1ol"
     ],

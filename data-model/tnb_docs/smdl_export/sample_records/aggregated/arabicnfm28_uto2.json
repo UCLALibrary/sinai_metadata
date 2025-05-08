@@ -48,7 +48,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/ten0p1ul2",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -171,12 +170,13 @@
             ]
         },
         {
-            "shortcode": "Kashouh 2012",
-            "type": "Citation",
-            "range": "28-57",
-            "note": [
-                "Kashouh book"
-            ]
+            "shortcode": "Rossetto 2021",
+            "type": "Reference Work",
+            "range": "p. 29-30"
+        },
+        {
+            "shortcode": "Géhin 2009",
+            "type": "Citation"
         }
     ],
     "iiif": [

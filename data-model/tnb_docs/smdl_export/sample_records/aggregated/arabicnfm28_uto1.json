@@ -48,7 +48,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/ten0p1ul1",
-                    "type": "Overtext",
                     "origin_date": {
                             "iso": [
                                 {
@@ -121,7 +120,7 @@
                     ],
                     "assoc_place": [
                         {
-                            "pref_name": "Deir al-Suryan",
+                            "value": "Deir al-Suryan",
                             "event": "Origin Place",
                             "note": [
                                 "Written in Deir al-Suryan"
@@ -200,6 +199,26 @@
             "range": "28-57",
             "note": [
                 "Kashouh book"
+            ]
+        },
+        {
+            "shortcode": "Bhayro, et al. 2012",
+            "type": "Reference Work",
+            "range": "p. 1-57"
+        },
+        {
+            "shortcode": "Balageorgos and Kriticou",
+            "type": "Citation",
+            "range": "v. 1, pp. 55-90",
+            "note": [
+                "Kashouh article"
+            ]
+        },
+        {
+            "shortcode": "Boudalis and Rossetto",
+            "type": "Citation",
+            "note": [
+                "Boudalis and Rossetto"
             ]
         }
     ],

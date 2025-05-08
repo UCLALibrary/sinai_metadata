@@ -46,7 +46,6 @@
             "ot_layer": [
                 {
                     "ark": "ark:/21198/s18d1p",
-                    "type": "Overtext",
                     "origin_date": {
                         "iso": [
                             {
@@ -105,7 +104,7 @@
                     ]
                 }
             ],
-            "utos": [
+            "uto": [
                 {
                     "uto_layer_ark": "ark:/21198/s1gh06",
                     "label": "Georgian Undertext: Iadgari, Assumption",
@@ -123,7 +122,7 @@
                     "orig_date": ""
                 },
                 {
-                    "id": "ark:/21198/s1705r",
+                    "uto_layer_ark": "ark:/21198/s1705r",
                     "label": "Georgian Undertext: Unidentified text",
                     "locus": "rear pastedown",
                     "script": ["Nuskhurimt"],
@@ -131,7 +130,7 @@
                     "orig_date": "ca. 9th-10th c. CE"
                 },
                 {
-                    "id": "ark:/21198/s1362f",
+                    "uto_layer_ark": "ark:/21198/s1362f",
                     "label": "Georgian Undertext: Hymns",
                     "locus": "ff. 130–131, 143, 146",
                     "script": ["Nuskhurimt"],
@@ -139,7 +138,7 @@
                     "orig_date": "ca. 9th-10th c. CE"
                 },
                 {
-                    "id": "ark:/21198/s1zh1x",
+                    "uto_layer_ark": "ark:/21198/s1zh1x",
                     "label": "Greek Undertext: Unidentified text",
                     "locus": "ff, 206–207",
                     "script": ["Undetermined (Greek)"],
