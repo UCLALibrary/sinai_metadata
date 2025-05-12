@@ -41,6 +41,7 @@ MS UTO Locus
 MS Guest ARKs
 MS Guest Labels
 MS Guest Locus
+Paracontents
 Paracontent note
 Binding note
 Location ID

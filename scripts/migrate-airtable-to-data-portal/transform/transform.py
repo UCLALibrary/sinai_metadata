@@ -147,12 +147,13 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     # add paracontent stub, which may be removed later if none are created
     data["para"] = []
 
-    # TBD: paracontent for ms objs and text units, and for layers that aren't colophons
-
     # add colophons as paracontent objects for layers
     if record_type == "layers" and not(pd.isnull(row["Colophon"])):
         data["para"] += create_paracontent_from_row(row, "Colophon", config.other_csvs["paracontents"]["data"])
 
+    # add paracontent objects (not colophons, see preceding) for any record type if exists
+    if not(pd.isnull(row["Paracontents"])):
+        data["para"] += create_paracontent_from_row(row, "Paracontents", config.other_csvs["paracontents"]["data"])
 
     # add location if an ms_obj
     if record_type == "ms_objs":
@@ -290,7 +291,6 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
         
         data["iiif"] = [iiif]
     
-    #TBD: internal (from admin notes)
     """
     TBD: Cataloguer field not needed at the ms_obj level. TBD for layers
     # TBD cataloguer field for running the script (set in a config for who runs the script?)
