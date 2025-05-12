@@ -153,10 +153,6 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     if record_type == "layers" and not(pd.isnull(row["Colophon"])):
         data["para"] += create_paracontent_from_row(row, "Colophon", config.other_csvs["paracontents"]["data"])
 
-    # TBD: has_bind -- waiting to see how the data will look
-    if record_type == "ms_objs" and not(pd.isnull(row["Has Binding"])):
-        data["has_bind"] = str(row["Has Binding"]) == "true"
-    
 
     # add location if an ms_obj
     if record_type == "ms_objs":

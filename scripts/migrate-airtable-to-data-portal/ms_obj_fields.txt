@@ -42,7 +42,6 @@ MS Guest ARKs
 MS Guest Labels
 MS Guest Locus
 Paracontent note
-Has Binding
 Binding note
 Location ID
 Repository
