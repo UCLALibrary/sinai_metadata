@@ -13740,7 +13740,7 @@
 				{
 					"id": "15898877-91da-4ff8-ad4d-2299d1863fc0",
 					"name": "rights",
-					"datatype": "59ffe41d-ff57-47ef-a2d5-fb0622fba6c8",
+					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": false,
@@ -13957,39 +13957,6 @@
 			"max": "",
 			"validation": "",
 			"capped": false
-		},
-		"59ffe41d-ff57-47ef-a2d5-fb0622fba6c8": {
-			"id": "59ffe41d-ff57-47ef-a2d5-fb0622fba6c8",
-			"visible": false,
-			"name": "object",
-			"desc": "",
-			"estimatedSize": "",
-			"cols": [],
-			"relations": [],
-			"lines": [],
-			"keys": [
-				{
-					"id": "3b06d042-d3f8-4736-912c-93f9a16e9e4e",
-					"name": "Primary key",
-					"isPk": true,
-					"cols": []
-				}
-			],
-			"indexes": [],
-			"embeddable": true,
-			"generate": true,
-			"generateCustomCode": true,
-			"customCode": "",
-			"beforeScript": "",
-			"afterScript": "",
-			"validationLevel": "na",
-			"validationAction": "na",
-			"collation": "",
-			"others": "",
-			"size": "",
-			"max": "",
-			"validation": "",
-			"capped": false
 		}
 	},
 	"relations": {},
@@ -14019,7 +13986,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1747344527195,
+		"lastSaved": 1747346701639,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -15602,19 +15569,6 @@
 				},
 				"d9f64f84-9caa-4f46-b563-1eafaba61aad": {
 					"referencedItemId": "d9f64f84-9caa-4f46-b563-1eafaba61aad",
-					"x": -1,
-					"y": -1,
-					"gHeight": -1,
-					"gWidth": -1,
-					"color": "#ffffff",
-					"background": "transparent",
-					"resized": false,
-					"autoExpand": true,
-					"backgroundOpacity": "10",
-					"collapsed": false
-				},
-				"59ffe41d-ff57-47ef-a2d5-fb0622fba6c8": {
-					"referencedItemId": "59ffe41d-ff57-47ef-a2d5-fb0622fba6c8",
 					"x": -1,
 					"y": -1,
 					"gHeight": -1,
