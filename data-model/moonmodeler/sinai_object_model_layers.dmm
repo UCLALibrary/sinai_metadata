@@ -12768,7 +12768,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1747345832476,
+		"lastSaved": 1747346291747,
 		"writeFileParam": false,
 		"modelHTMLReportDir": "/Users/kirschbombe/Sites/mss-model",
 		"authorName": "",
@@ -12798,7 +12798,7 @@
 					"referencedItemId": "56894fe5-0a18-4ada-ad8f-cbb3b56ae68a",
 					"x": 2171,
 					"y": 30,
-					"gHeight": 605,
+					"gHeight": 902,
 					"gWidth": 274,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -13044,7 +13044,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"a15958b5-1683-4d27-9504-c2aa090be6ea": {
 					"referencedItemId": "a15958b5-1683-4d27-9504-c2aa090be6ea",
@@ -14461,7 +14461,7 @@
 					"resized": false,
 					"autoExpand": true,
 					"backgroundOpacity": "10",
-					"collapsed": true
+					"collapsed": false
 				},
 				"f6d6666e-cea1-4510-b45f-464a2cecca5a": {
 					"referencedItemId": "f6d6666e-cea1-4510-b45f-464a2cecca5a",
