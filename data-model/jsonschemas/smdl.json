@@ -845,7 +845,7 @@
         "script": {
             "type": "object",
             "properties": {
-                "script": {
+                "label": {
                     "type": "string"
                 },
                 "system": {
