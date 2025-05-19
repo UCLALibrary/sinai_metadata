@@ -607,6 +607,19 @@
             "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz15f0f9b%2Fp161m45m/full/!200,200/0/default.jpg" 
         } 
     ],
+    "desc_provenance": {
+        "program": [
+            {
+                "label": "Sinai Library Digitization Project, Phase 1",
+                "description": "Described as part of the Sinai Library Digitization Project, Phase 1 (2018-2022). The Sinai Library Digitization Project was sponsored by St. Catherine’s Monastery of the Sinai in partnership with the Early Manuscripts Electronic Library and the UCLA Library, and with funding from The Ahmanson Foundation, Arcadia, and the Steinmetz Family Foundation. Phase 1 of the Sinai Library Digitization Project aimed to supply minimal metadata to accompany high-resolution images of the Arabic and Syriac manuscripts held in the Monastery’s library."
+            },
+            {
+                "label": "Syriac Parchment Descriptions Project",
+                "description": "Described as part of the Syriac Parchment Descriptions Project (2022-2025). The Syriac Parchment Descriptions Project was funded by a National Endowment for the Humanities grant. It aimed to provide full and detailed cataloguing of the Syriac manuscripts on parchment in the Sinai collection. Lead Cataloguer: Grigory Kessel; Research Associates: Natalia Smelova and Vevian Zaki."
+            }
+        ],
+        "rights": "UUnless otherwise indicated all metadata associated with this manuscript is copyright the authors and released under Creative Commons Attribution 4.0 International License."
+    },
     "image_provenance": {
         "program": [
             {
