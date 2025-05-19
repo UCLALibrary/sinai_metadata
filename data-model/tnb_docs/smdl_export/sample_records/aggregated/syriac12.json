@@ -88,7 +88,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Melkite",
+                                    "label": "Melkite",
                                     "system": "Syriac"
                                 }
                             ],
@@ -101,7 +101,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Estrangela",
+                                    "label": "Estrangela",
                                     "system": "Syriac"
                                 }
                             ],
@@ -243,7 +243,7 @@
                                     ],
                                     "script": [
                                         {
-                                            "script": "Melkite",
+                                            "label": "Melkite",
                                             "system": "Syriac"
                                         }
                                     ],
@@ -307,7 +307,7 @@
                             ],
                             "script": [
                                 {
-                                    "script": "Melkite",
+                                    "label": "Melkite",
                                     "system": "Syriac"
                                 }
                             ],
@@ -360,7 +360,7 @@
                             ],
                             "script": [
                                 {
-                                    "script": "Naskh",
+                                    "label": "Naskh",
                                     "system": "Arabic"
                                 }
                             ],
@@ -378,7 +378,7 @@
                             ],
                             "script": [
                                 {
-                                    "script": "Naskh",
+                                    "label": "Naskh",
                                     "system": "Arabic"
                                 }
                             ],
@@ -490,7 +490,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Estrangela",
+                                    "label": "Estrangela",
                                     "system": "Syriac"
                                 }
                             ],
@@ -594,7 +594,7 @@
                                     ],
                                     "script": [
                                         {
-                                            "script": "Estrangela",
+                                            "label": "Estrangela",
                                             "system": "Syriac"
                                         }
                                     ],
@@ -631,7 +631,7 @@
                             ],
                             "script": [
                                 {
-                                    "script": "Melkite",
+                                    "label": "Melkite",
                                     "system": "Syriac"
                                 }
                             ],
@@ -706,7 +706,7 @@
                     ],
                     "script": [
                         {
-                            "script": "Greek minuscule",
+                            "label": "Greek minuscule",
                             "system": "Greek"
                         }
                     ],
@@ -783,7 +783,7 @@
                 {
                     "script": [
                         {
-                            "script": "Melkite",
+                            "label": "Melkite",
                             "system": "Syriac"
                         }
                     ]
@@ -819,7 +819,7 @@
                 {
                     "script": [
                         {
-                            "script": "Undetermined Syriac script",
+                            "label": "Undetermined Syriac script",
                             "system": "Syriac"
                         }
                     ]
@@ -861,7 +861,7 @@
                 {
                     "script": [
                         {
-                            "script": "Undetermined Arabic script",
+                            "label": "Undetermined Arabic script",
                             "system": "Arabic"
                         }
                     ]
@@ -900,7 +900,7 @@
             ],
             "script": [
                 {
-                    "script": "Naskh",
+                    "label": "Naskh",
                     "system": "Arabic"
                 }
             ],
@@ -921,7 +921,7 @@
             ],
             "script": [
                 {
-                    "script": "Melkite",
+                    "label": "Melkite",
                     "system": "Syriac"
                 }
             ],

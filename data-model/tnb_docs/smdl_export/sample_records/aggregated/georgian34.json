@@ -60,7 +60,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Undetermined (Georgian)",
+                                    "label": "Undetermined (Georgian)",
                                     "system": "Georgian"
                                 }
                             ]

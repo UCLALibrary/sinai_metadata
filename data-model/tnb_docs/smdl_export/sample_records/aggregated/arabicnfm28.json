@@ -48,7 +48,7 @@
                         { 
                             "script": [
                                 { 
-                                    "script": "Kufic",
+                                    "label": "Kufic",
                                     "system": "Arabic"
                                 } 
                             ], 

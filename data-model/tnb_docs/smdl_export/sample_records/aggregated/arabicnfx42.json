@@ -32,7 +32,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Naskh",
+                                    "label": "Naskh",
                                     "system": "Arabic"
                                 }
                             ]
