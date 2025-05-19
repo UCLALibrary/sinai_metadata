@@ -1199,8 +1199,37 @@
             "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz15f0f9b%2Fp161m45m/full/!200,200/0/default.jpg"
         }
     ],
-    "dig_provenance": {
-
+    "image_provenance": {
+        "program": [
+            {
+                "label": "Sinai Palimpests Project",
+                "description": "Imaged as part of the Sinai Palimpsests Project (2006-2017). Digitization for the Sinai Palimpsests Project was sponsored by St. Catherine’s Monastery of the Sinai in partnership with the Early Manuscripts Electronic Library and the UCLA Library, and with funding from Arcadia. The Sinai Palimpsests Project aimed to provide multispectral images of the Undertext Objects in a subset of palimpsested manuscripts in the Sinai collection, as such images may only be available for palimpsested folios.",
+                "camera_operator": [
+                    "Damianos Kasotakis"
+                ],
+                "imaging_date": "2009-01",
+                "delivery": "spp_2",
+                "msi_processing": [
+                    "Keith Knox"
+                ],
+                "condition_category": "2",
+                "imaging_system": "Preservation Book Cradle by Stokes Imaging",
+                "note": [
+                    "Automated processing techniques combine two or more raw images into a single processed image by simple arithmetic."                ]
+            },
+            {
+                "label": "Sinai Library Digitization Project, Phase 1",
+                "description": "Imaged as part of the Sinai Library Digitization Project, Phase 1 (2018-2022). Digitization for the Sinai Library Digitization Project was sponsored by St. Catherine’s Monastery of the Sinai in partnership with the Early Manuscripts Electronic Library and the UCLA Library, and with funding from The Ahmanson Foundation, Arcadia, and the Steinmetz Family Foundation. Phase 1 of the Sinai Library Digitization Project aimed to provide high-resolution images of the Arabic and Syriac manuscripts held in the Monastery’s library.",
+                "camera_operator": [
+                    "Lampros Galanis"
+                ],
+                "imaging_date": "2020-01-22/2020-01-23",
+                "delivery": "6.3",
+                "condition_category": "1",
+                "imaging_system": "BC100 - 1 cam."
+            }
+        ],
+        "rights": "Contact the Monastery of St. Catherine's of the Sinai."
     },
     "last_modified": "2025-03-27"
 }
