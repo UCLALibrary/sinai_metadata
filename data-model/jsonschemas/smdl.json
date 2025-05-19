@@ -331,7 +331,6 @@
         "part",
         "location",
         "iiif",
-        "dig_provenance",
         "last_modified"
     ],
     "unevaluatedProperties": false,
