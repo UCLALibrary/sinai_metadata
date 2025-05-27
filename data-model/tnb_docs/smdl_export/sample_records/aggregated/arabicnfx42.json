@@ -32,7 +32,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Naskh",
+                                    "label": "Naskh",
                                     "system": "Arabic"
                                 }
                             ]
@@ -76,6 +76,5 @@
             "thumbnail": "https://iiif.sinaimanuscripts.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fz1bv9g4m%2F3t51rk3w/full/!200,200/0/default.jpg"
         }
     ],
-    "dig_provenance": {},
     "last_modified": "2025-03-27"
 }

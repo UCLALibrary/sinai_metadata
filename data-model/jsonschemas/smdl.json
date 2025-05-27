@@ -222,8 +222,92 @@
             },
             "unevaluatedItems": false
         },
-        "dig_provenance": {
-            "$comment": "TBD. Should it be required? | what gets included in this obj?"
+        "desc_provenance": {
+            "type": "object",
+            "properties": {
+                "program": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "label",
+                            "description"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "rights": {
+                    "type": "string"
+                }
+            },
+            "unevaluatedProperties": false
+        },
+        "image_provenance": {
+            "type": "object",
+            "properties": {
+                "program": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "camera_operator": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "imaging_date": {
+                                "type": "string",
+                                "$comment": "Because we may have only months, will not enforce `format` of `date`"
+                            },
+                            "delivery": {
+                                "type": "string"
+                            },
+                            "msi_processing": {
+                                "description": "Names of the person(s) responsible for processing the MSI data for this record",
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "condition_category": {
+                                "type": "string"
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "rights": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "unevaluatedProperties": false
         },
         "reconstructed_from": {
             "type": "array",
@@ -247,7 +331,6 @@
         "part",
         "location",
         "iiif",
-        "dig_provenance",
         "last_modified"
     ],
     "unevaluatedProperties": false,
@@ -761,7 +844,7 @@
         "script": {
             "type": "object",
             "properties": {
-                "script": {
+                "label": {
                     "type": "string"
                 },
                 "system": {

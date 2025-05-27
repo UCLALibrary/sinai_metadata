@@ -60,7 +60,7 @@
                         {
                             "script": [
                                 {
-                                    "script": "Undetermined (Georgian)",
+                                    "label": "Undetermined (Georgian)",
                                     "system": "Georgian"
                                 }
                             ]
@@ -194,6 +194,37 @@
             "thumbnail": "https://sinai-images.library.ucla.edu/iiif/ark:%2F21198%2Fz17m10fg/0,1022,6132,6132/150,150/0/default.jpg"
         }
     ],
-    "dig_provenance": {},
+    "desc_provenance": {
+        "program": [
+            {
+                "label": "Sinai Palimpests Project",
+                "description": "Described as part of the Sinai Palimpsests Project (2006-2017). The Sinai Palimpsests Project was sponsored by St. Catherine’s Monastery of the Sinai in partnership with the Early Manuscripts Electronic Library and the UCLA Library, and with funding from Arcadia. The Project provides scholarly identification and description of the undertext objects in a subset of palimpsested manuscripts in the Sinai collection, with minimal metadata for the overtexts of the host manuscripts."
+            }
+        ]
+    },
+    "image_provenance": {
+        "program": [
+            {
+                "label": "Sinai Palimpests Project",
+                "description": "Imaged as part of the Sinai Palimpsests Project (2006-2017). Digitization for the Sinai Palimpsests Project was sponsored by St. Catherine’s Monastery of the Sinai in partnership with the Early Manuscripts Electronic Library and the UCLA Library, and with funding from Arcadia. The Sinai Palimpsests Project aimed to provide multispectral images of the Undertext Objects in a subset of palimpsested manuscripts in the Sinai collection, as such images may only be available for palimpsested folios.",
+                "camera_operator": [
+                    "Damianos Kasotakis",
+                    "Michael Phelps"
+                ],
+                "imaging_date": "2008-06",
+                "delivery": "spp_1",
+                "msi_processing": [
+                    "Keith Knox"
+                ],
+                "condition_category": "1",
+                "imaging_system": "Preservation Book Cradle by Stokes Imaging",
+                "note": [
+                    "Automated processing techniques combine two or more raw images into a single processed image by simple arithmetic.",
+                    "Imaging scientists will review the raw images and manually apply other image processing methods to recover the erased layer of the more intractable palimpsest folios. Manual methods analyze the ensemble of spectral differences obtained from multiple illumination modalities in order to increase the legibility of the erased text."
+                ]
+            }
+        ],
+        "rights": "Contact the Monastery of St. Catherine's of the Sinai."
+    },
     "last_modified": "2025-03-27"
 }

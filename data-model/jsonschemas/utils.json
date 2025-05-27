@@ -142,88 +142,34 @@
                 "value"
             ]
         },
-        "dig_provenance": {
+        "desc_provenance": {
             "type": "object",
             "properties": {
-                "images": {
+                "program": {
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
-                            "camera_operator": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "imaging_date": {
-                                "type": "string",
-                                "$comment": "Because we may have only months, will not enforce `format` of `date`"
-                            },
-                            "delivery": {
+                            "label": {
                                 "type": "string"
                             },
-                            "msi_processing": {
-                                "description": "Names of the person(s) responsible for processing the MSI data for this record",
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "program": {
+                            "description": {
                                 "type": "string"
-                            },
-                            "condition_category": {
-                                "type": "string"
-                            },
-                            "note": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "unevaluatedItems": false
                             }
                         },
+                        "required": [
+                            "label",
+                            "description"
+                        ],
                         "unevaluatedProperties": false
                     },
                     "unevaluatedItems": false
                 },
-                "descriptions": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "program": {
-                                "type": "string"
-                            },
-                            "note": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "unevaluatedItems": false
-                            }
-                        },
-                        "required": [
-                            "program"
-                        ]
-                    }
-                },
-                "image_rights": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "metadata_rights": {
-                    "type": "string",
-                    "minLength": 1
+                "rights": {
+                    "type": "string"
                 }
             },
-            "required": [
-                "image_rights",
-                "metadata_rights"
-            ]
+            "unevaluatedProperties": false
         },
         "dim": {
             "description": "A string expression of an object's dimensions, whether manuscript block, folio, or writing area",
@@ -247,6 +193,64 @@
         "id": {
             "description": "A unique identifer, supplied by the database",
             "type": "integer"
+        },
+        "image_provenance": {
+            "type": "object",
+            "properties": {
+                "program": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "camera_operator": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "imaging_date": {
+                                "type": "string",
+                                "$comment": "Because we may have only months, will not enforce `format` of `date`"
+                            },
+                            "delivery": {
+                                "type": "string"
+                            },
+                            "msi_processing": {
+                                "description": "Names of the person(s) responsible for processing the MSI data for this record",
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "condition_category": {
+                                "type": "string"
+                            },
+                            "note": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "unevaluatedItems": false
+                            }
+                        },
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "rights": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "unevaluatedProperties": false
         },
         "locus": {
             "type": "string",

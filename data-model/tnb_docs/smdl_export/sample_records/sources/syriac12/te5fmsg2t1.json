@@ -37,5 +37,13 @@
     ],
     "parent": [
         "ark:/21198/te5fmsg2"
-    ]
+    ],
+    "desc_provenance": {
+        "program": [
+            {
+                "label": "Syriac Parchment Descriptions Project",
+                "description": "Described as part of the Syriac Parchment Descriptions Project (2022-2025). The Syriac Parchment Descriptions Project was funded by a National Endowment for the Humanities grant. It aimed to provide full and detailed cataloguing of the Syriac manuscripts on parchment in the Sinai collection. Lead Cataloguer: Grigory Kessel; Research Associates: Natalia Smelova and Vevian Zaki."
+            }
+        ]
+    }
 }
