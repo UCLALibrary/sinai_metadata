@@ -70,8 +70,14 @@ other_csvs = {
         "key": "work_wit",
         "label": "Work Witnesses",
         "scope": ["text_units"]
+    },
+    "excerpts": {
+        "file_path": "",
+        "data": None,
+        "key": "excerpt",
+        "label": "Excerpts",
+        "scope": ["text_units"]
     }
-    
 }
 
 
@@ -86,7 +92,8 @@ field_names = {
     "work_wits": "work_wit_fields.txt",
     "bibs": "bib_fields.txt",
     "paracontents": "para_fields.txt",
-    "related_mss": "related_mss_fields.txt"
+    "related_mss": "related_mss_fields.txt",
+    "excerpts": "excerpt_fields.txt"
 }
 
 

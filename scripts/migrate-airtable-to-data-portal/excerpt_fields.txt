@@ -1,0 +1,7 @@
+ID
+Type ID
+Type Label
+Locus
+As Written
+Translation
+Note

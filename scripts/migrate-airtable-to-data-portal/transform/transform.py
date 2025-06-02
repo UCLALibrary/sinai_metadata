@@ -373,21 +373,25 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
 
         # Create excerpts for incipit and explicit
         wit["excerpt"] = []
-        if not(pd.isnull(work_wit_row["Incipit As Written"])):
-            inc_type = {"id": "incipit", "label": "Incipit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, inc_type, "Incipit "))
-        if not(pd.isnull(work_wit_row["Explicit As Written"])):
-            expl_type = {"id": "explicit", "label": "Explicit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, expl_type, "Explicit "))
+        # add 
+        if not(pd.isnull(work_wit_row["Excerpts"])):
+            excerpts = helpers.get_side_csv_data(ids=work_wit_row["Excerpts"], csv=config.other_csvs["excerpts"]["data"], sort_by_sequence=False)
+            for excerpt in excerpts:
+                wit["excerpt"].append(create_excerpt(excerpt))
 
         # If no excerpts created, remove the field
         if "excerpt" in wit and len(wit["excerpt"]) == 0:
             wit.pop("excerpt")
 
         
-        # TBD: contents, partially implemented, sufficient for first migration pass
-        # hacked together to create the contents label, but should also support other fields in contents...
-        if not(pd.isnull(work_wit_row["Contents Label"])):
+        # Check if using a side-chain CSV for full contents generation, otherwise check for basic contents field (label only). Pre-sort by sequence field
+        if not(pd.isnull(work_wit_row["Contents"])):
+            contents = helpers.get_side_csv_data(ids=work_wit_row["Contents"], csv=config.other_csvs["contents"]["data"], sort_by_sequence=True)
+            wit["contents"] = []
+            for cont in contents:
+                wit["contents"].append(create_toc_item(cont))
+        # Retain functionality for simple contents, only used if no "Contents" column referencing another CSV
+        elif not(pd.isnull(work_wit_row["Contents Label"])):
             contents = []
             labels = helpers.parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
             for i in range(0, len(labels)):
@@ -413,20 +417,45 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
 
     return work_wits
 
-def create_excerpt(data_row: pd.Series, type: object, column_prefix: str):
+def create_excerpt(data_row: pd.Series):
     excerpt = {}
-    excerpt["type"] = type # TBD: make generic, so can supply type or look for it from the row columns
+    excerpt["type"] = {
+        "id": str(data_row["Type ID"]),
+        "label": str(data_row["Type Label"])
+    }
+    if not(pd.isnull(data_row["Locus"])):
+        excerpt["locus"] = str(data_row["Locus"])
 
-    if not(pd.isnull(data_row[column_prefix + "Locus"])):
-            excerpt["locus"] = str(data_row[column_prefix + "Locus"])
-    if not(pd.isnull(data_row[column_prefix + "As Written"])):
-            excerpt["as_written"] = str(data_row[column_prefix + "As Written"])
-    if not(pd.isnull(data_row[column_prefix + "Translation"])):
-            excerpt["translation"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Translation"]), "|~|", "#")
-    if not(pd.isnull(data_row[column_prefix + "Note"])):
-            excerpt["note"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Note"]), "|~|", "#")
+    if not(pd.isnull(data_row["As Written"])):
+        excerpt["as_written"] = str(data_row["As Written"])
     
+    # TBD: hard-coded delimiter...
+    if not(pd.isnull(data_row["Translation"])):
+        excerpt["translation"] = str(data_row["Translation"]).split("|~|")
+    # TBD: hard-coded delimiter...
+    if not(pd.isnull(data_row["Note"])):
+        excerpt["note"] = str(data_row["Note"]).split("|~|")
+
     return excerpt
+
+# Takes a Pandas Series with column names corresponding to toc_fields.txt
+# Returns a dictionary for a contents item (work id, label, locus, notes)
+def create_toc_item(data_row: pd.Series):
+    item = {}
+    if not(pd.isnull(data_row["Work ID"])):
+        item["work_id"] = str(data_row["Work ID"])
+
+    if not(pd.isnull(data_row["Label"])):
+        item["label"] = str(data_row["Label"])
+    
+    if not(pd.isnull(data_row["Locus"])):
+        item["locus"] = str(data_row["Locus"])
+    
+    # TBD: hard-coded delimiter
+    if not(pd.isnull(data_row["Note"])):
+        item["note"] = str(data_row["Note"]).split("|~|")
+    
+    return item
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
     bibs = []
