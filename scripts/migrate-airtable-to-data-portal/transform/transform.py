@@ -542,32 +542,61 @@ def get_layer_data(arks, labels, locus, sep, quotechar):
             layer_data["locus"].append("nan")
     return layer_data
 
-# restriction: relies on exact match of arks and labels
-# TBD: throw exception if lengths of ark and label arrays don't match?
-# Given a dictionary of lists of arks, labels, locus; and a type object return a list of layer objects
-def create_text_unit_reference_from_row(row):
-    # reusing the get_layer_data function since the same info is required
-    text_unit_data = get_layer_data(arks=str(row["Text Unit ARKs"]),
-                                    labels=str(row["Text Unit Labels"]),
-                                    locus=str(row["Text Unit Locus"]),
-                                    sep="\|~\|",
-                                    quotechar="#")
-    # TBD: could make the create_*_object function more generic by giving 'type' as optional param
-    return create_text_unit_object(text_unit_data)
+# Given a layer row, create the text unit object referencing the child texts
+def create_text_unit_reference_from_row(row: pd.Series, delimiter: str):
+    # Gather the data for arks, labels, locus, and sequence
+    # arks are required
+    arks = str(row["Text Unit ARKs"]).split(delimiter)
+    # Labels and locus may be empty
+    if not(pd.isnull(row["Text Unit Labels"])):
+        labels = str(row["Text Unit Labels"]).split(delimiter)
+    else:
+        labels = []
+    if not(pd.isnull(row["Text Unit Locus"])):
+        locus = str(row["text Unit Locus"]).split(delimiter)
+    else:
+        locus = []
+    
+    # sequence required
+    seq = str(row["Text Unit Sequence"]).split(delimiter)
+    # raise an exception if sequence and arks are not the same length
+    if len(seq) != len(arks):
+        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: Not all ARKs have an assigned sequence")
+  
+    # If labels and locus are empty, supply "" for each up to the length of the arks list
+    if len(labels) == 0:
+        for i in range(0, len(arks)):
+            labels[i] = ""
+    if len(locus) == 0:
+        for i in range(0, len(arks)):
+            locus[i] = ""
+    
+    # Labels and locus are optional, but should have the same number as arks if present. Since already handled cases of empty lists, just compare lengths
+    if len(labels) != len(arks) or len(locus) != len(arks):
+        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: The number of Text Unit locus or label values does not match the number of Text Unit ARKs")
+    
+    return create_text_unit_object(arks, labels, locus, seq)
 
-def create_text_unit_object(text_unit_data):
+def create_text_unit_object(arks: list, labels: list, locus: list, seq: list):
     text_units = []
-    for i in range(0, len(text_unit_data["arks"])):
-        if text_unit_data["arks"][i] == "" or text_unit_data["arks"][i] == "nan":
-            continue
-        text_unit = {}
-        text_unit["id"] = text_unit_data["arks"][i]
-        text_unit["label"] = text_unit_data["labels"][i]
+    
+    # reorder each object according to the sequence
+    arks = [arks[i-1] for i in seq]
+    labels = [labels[i-1] for i in seq]
+    locus = [locus[i-1] for i in seq]
 
-        # add locus only if it exists for this pairing
-        if "locus" in text_unit_data and text_unit_data["locus"][i] != "<NA>" and text_unit_data["locus"][i] != "nan" and text_unit_data["locus"][i] != "":
-            text_unit["locus"] = text_unit_data["locus"][i]
-        
+    # create the objects
+    for i in range(0, len(arks)):
+        text_unit = {}
+        text_unit["id"] = arks[i]
+        # if no label supplied, label the text unit based on the ordering
+        if labels[i] != "":
+            text_unit["label"] = labels[i]
+        else:
+            text_unit["label"] = "Item " + str(i+1)
+        if locus[i] != "":
+            text_unit["label"] = locus[i]
+
         text_units.append(text_unit)
     return text_units
 

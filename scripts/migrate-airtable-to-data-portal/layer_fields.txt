@@ -24,6 +24,7 @@ Feature Labels
 Text Unit ARKs
 Text Unit Labels
 Text Unit Locus
+Text Unit Sequence
 Colophon
 Scribe ID
 Scribe Value
