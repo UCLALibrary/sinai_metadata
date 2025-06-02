@@ -12,7 +12,7 @@
             "type": "boolean"
         },
         "type": {
-            "type": "string"
+            "$ref": "#/$defs/controlled_term"
         },
         "shelfmark": {
             "type": "string",
@@ -34,7 +34,7 @@
             "type": "string"
         },
         "state": {
-            "type": "string"
+            "$ref": "#/$defs/controlled_term"
         },
         "fol": {
             "type": "string"
@@ -99,6 +99,9 @@
             "items": {
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "string"
+                    },
                     "repository": {
                         "type": "string"
                     },
@@ -107,6 +110,7 @@
                     }
                 },
                 "required": [
+                    "id",
                     "repository"
                 ],
                 "unevaluatedProperties": false
@@ -141,7 +145,7 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "label": {
                         "type": "string"
@@ -163,23 +167,7 @@
         "bib": {
             "type": "array",
             "items": {
-                "type": "object",
-                "allOf": [
-                    {
-                        "properties": {
-                            "type": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "type"
-                        ]
-                    },
-                    {
-                        "$ref": "#/$defs/bib"
-                    }
-                ],
-                "unevaluatedProperties": false
+                "$ref": "#/$defs/bib"
             },
             "unevaluatedItems": false
         },
@@ -200,6 +188,12 @@
                         "format": "uri"
                     },
                     "type": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "text_direction": {
+                        "type": "string"
+                    },
+                    "behavior": {
                         "type": "string"
                     },
                     "thumbnail": {
@@ -382,10 +376,25 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "value": {
                     "type": "string"
+                },
+                "iso": {
+                    "type": "object",
+                    "properties": {
+                        "not_before": {
+                            "type": "string"
+                        },
+                        "not_after": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "not_before"
+                    ],
+                    "unevaluatedProperties": false
                 },
                 "as_written": {
                     "type": "string"
@@ -406,6 +415,9 @@
         "assoc_name": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "pref_name": {
                     "type": "string"
                 },
@@ -416,7 +428,7 @@
                     "type": "string"
                 },
                 "role": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "note": {
                     "type": "array",
@@ -434,6 +446,9 @@
         "assoc_place": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "pref_name": {
                     "type": "string"
                 },
@@ -444,7 +459,7 @@
                     "type": "string"
                 },
                 "event": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "note": {
                     "type": "array",
@@ -462,8 +477,14 @@
         "bib": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "shortcode": {
                     "type": "string"
+                },
+                "type": {
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "range": {
                     "type": "string"
@@ -484,8 +505,26 @@
                 }
             },
             "required": [
-                "shortcode"
+                "id",
+                "shortcode",
+                "type"
             ]
+        },
+        "controlled_term": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "unevaluatedProperties": false
         },
         "layer": {
             "type": "object",
@@ -649,7 +688,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "label": {
                     "type": "string"
@@ -668,7 +707,7 @@
                 "lang": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -737,7 +776,7 @@
                 "support": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -797,7 +836,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "label": {
                     "type": "string"
@@ -844,15 +883,19 @@
         "script": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "label": {
                     "type": "string"
                 },
-                "system": {
+                "writing_system": {
                     "type": "string"
                 }
             },
             "required": [
-                "script",
+                "id",
+                "label",
                 "system"
             ],
             "unevaluatedProperties": false
@@ -872,7 +915,7 @@
                 "lang": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -922,7 +965,7 @@
                                     "type": "object",
                                     "properties": {
                                         "type": {
-                                            "type": "string"
+                                            "$ref": "#/$defs/controlled_term"
                                         },
                                         "locus": {
                                             "type": "string"
@@ -1034,7 +1077,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "value": {
                     "type": "string"
