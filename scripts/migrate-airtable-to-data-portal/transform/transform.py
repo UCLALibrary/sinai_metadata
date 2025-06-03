@@ -744,33 +744,25 @@ def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
         # parse arks, supply empty strings if the cell is blank
         arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
         # if cell was blank, add empty strings up to the length of types
-        if len(arks) <= 1 and arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            arks = []
-            for i in range(0, len(type_ids)):
-                arks.append("")
+        if len(arks) <= 1 or arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            arks = [""] * len(type_ids)
 
          # parse values, supply empty strings if the cell is blank
         values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
         # if cell was blank, add empty strings up to the length of types
-        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            values = []
-            for i in range(0, len(type_ids)):
-                values.append("")
+        if len(values) <= 1 or values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
+            values = [""] * len(type_ids)
 
         as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
         # if cell was blank, add empty strings up to the length of types
         if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
+            as_written = [""] * len(type_ids)
 
         # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
         notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
         # if cell was blank, add empty strings up to the length of types
         if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            notes = []
-            for i in range(0, len(type_ids)):
-                notes.append("")
+            notes = [""] * len(type_ids)
 
 
         for i in range(0, len(type_ids)):
