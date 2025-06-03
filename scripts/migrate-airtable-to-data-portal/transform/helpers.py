@@ -86,3 +86,12 @@ def parse_rolled_up_field(data: str, delimiter: str, quotechar: str):
                     continue
                 vals.append(x.strip())
     return vals
+
+# Takes an unoredered list and a list of integers representing the correct sequence
+# Returns a list that has been reordered according to the sequence
+def order_list_by_sequence(unordered: list, seq: list):
+    # initialize a list of the same length as the unordered list
+    ordered = [None] * len(unordered)
+    for i in range(0, len(seq)):
+        ordered[seq[i]-1] = unordered[i]
+    return ordered

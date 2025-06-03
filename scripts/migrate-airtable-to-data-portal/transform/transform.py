@@ -100,8 +100,9 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
         data["layout"] = [create_layout_from_row(row)]
 
     # Add text_unit object to layers
+    # TBD: hard-coding the delimiter...
     if record_type == "layers":
-        data["text_unit"] = create_text_unit_reference_from_row(row)
+        data["text_unit"] = create_text_unit_reference_from_row(row, "|~|")
     
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
@@ -553,12 +554,13 @@ def create_text_unit_reference_from_row(row: pd.Series, delimiter: str):
     else:
         labels = []
     if not(pd.isnull(row["Text Unit Locus"])):
-        locus = str(row["text Unit Locus"]).split(delimiter)
+        locus = str(row["Text Unit Locus"]).split(delimiter)
     else:
         locus = []
     
     # sequence required
     seq = str(row["Text Unit Sequence"]).split(delimiter)
+    seq = list(map(int, seq))
     # raise an exception if sequence and arks are not the same length
     if len(seq) != len(arks):
         raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: Not all ARKs have an assigned sequence")
@@ -566,14 +568,14 @@ def create_text_unit_reference_from_row(row: pd.Series, delimiter: str):
     # If labels and locus are empty, supply "" for each up to the length of the arks list
     if len(labels) == 0:
         for i in range(0, len(arks)):
-            labels[i] = ""
+            labels.append("")
     if len(locus) == 0:
         for i in range(0, len(arks)):
-            locus[i] = ""
+            locus.append("")
     
     # Labels and locus are optional, but should have the same number as arks if present. Since already handled cases of empty lists, just compare lengths
     if len(labels) != len(arks) or len(locus) != len(arks):
-        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: The number of Text Unit locus or label values does not match the number of Text Unit ARKs")
+        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: The number of Text Unit locus ({len(locus)}) or label ({len(labels)}) values does not match the number of Text Unit ARKs ({len(arks)})")
     
     return create_text_unit_object(arks, labels, locus, seq)
 
@@ -581,21 +583,21 @@ def create_text_unit_object(arks: list, labels: list, locus: list, seq: list):
     text_units = []
     
     # reorder each object according to the sequence
-    arks = [arks[i-1] for i in seq]
-    labels = [labels[i-1] for i in seq]
-    locus = [locus[i-1] for i in seq]
+    arks_ordered = helpers.order_list_by_sequence(arks, seq)
+    labels_ordered = helpers.order_list_by_sequence(labels, seq)
+    locus_ordered = helpers.order_list_by_sequence(locus, seq)
 
     # create the objects
-    for i in range(0, len(arks)):
+    for i in range(0, len(arks_ordered)):
         text_unit = {}
-        text_unit["id"] = arks[i]
+        text_unit["id"] = arks_ordered[i]
         # if no label supplied, label the text unit based on the ordering
-        if labels[i] != "":
-            text_unit["label"] = labels[i]
+        if labels_ordered[i] != "":
+            text_unit["label"] = labels_ordered[i]
         else:
             text_unit["label"] = "Item " + str(i+1)
         if locus[i] != "":
-            text_unit["label"] = locus[i]
+            text_unit["locus"] = locus_ordered[i]
 
         text_units.append(text_unit)
     return text_units
