@@ -95,3 +95,16 @@ def order_list_by_sequence(unordered: list, seq: list):
     for i in range(0, len(seq)):
         ordered[seq[i]-1] = unordered[i]
     return ordered
+
+def parse_iso_date(iso: str):
+    not_before = str(iso).split("/")[0]
+    if len(str(iso).split("/")) > 1:
+        not_after = str(iso).split("/")[1]
+    else:
+        not_after = ""
+    date = {}
+    date["not_before"] = not_before.zfill(4)
+    # only add not_after property if the ISO date is a range
+    if not_after != "":
+        date["not_after"] = not_after.zfill(4)
+    return date

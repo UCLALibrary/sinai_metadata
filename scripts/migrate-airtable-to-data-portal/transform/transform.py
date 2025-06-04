@@ -705,13 +705,13 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
         
         # assoc_*: optional, array of objects, need to be created via other function
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Name Role ID"])):
-            para_data["assoc_name"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_name")
+            para_data["assoc_name"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Name ", "name", ["id", "value", "as_written", "role", "note"])
         
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Place Event ID"])):
-            para_data["assoc_place"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_place")
+            para_data["assoc_place"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Place ", "place", ["id", "value", "as_written", "event", "note"])
 
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Date Type ID"])):
-            para_data["assoc_date"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_date")
+            para_data["assoc_date"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Date ", "date", ["type", "value", "iso", "as_written", "note"])
 
 
         # note: optional, array of strings
@@ -721,6 +721,94 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
         paracontents.append(para_data)
 
     return paracontents
+
+def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: str, field_order: list=None, sep: str="\|~\|", quotechar: str="#"):
+    # set type info based on the kind of assoc thing
+    if assoc_type == "name":
+        type_column_prefix = "Role "
+        type_field = "role"
+    elif assoc_type == "place":
+        type_column_prefix = "Event "
+        type_field = "event"
+    elif assoc_type == "date":
+        type_column_prefix = "Type "
+        type_field = "type"
+    else:
+        raise ValueError("Invalid associated type, must be 'name', 'place', or 'event'")
+
+    # TBD: option to supply the type for things like scribe, orig date, orig place...
+    type_ids = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+    type_labels = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+
+    # values
+    values = pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(values) <= 1 and str(values[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        values = [""] * len(type_ids)
+
+    # as_writtens
+    as_written = pd.read_csv(StringIO(str(data[column_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(as_written) <= 1 and str(as_written[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        as_written = [""] * len(type_ids)
+
+    # notes
+    # TBD: does this become an array?
+    notes = pd.read_csv(StringIO(str(data[column_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(notes) <= 1 and str(notes[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        notes = [""] * len(type_ids)
+
+    # If a name or place, check for ARKs, supplying empty strings if not
+    arks = []
+    if assoc_type in ["name", "place"]:
+        arks = pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+        if len(arks) <= 1 and str(arks[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+            arks = [""] * len(type_ids)
+    # If a date, check for ISO, supplying empty strings if not
+    iso = []
+    if assoc_type in ["date"]:
+        iso = pd.read_csv(StringIO(str(data[column_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+        if len(iso) <= 1 and str(iso[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+            iso = [""] * len(type_ids)
+
+    associated_list = [] 
+    # For each associated thing
+    for i in range(0, len(type_ids)):
+    
+        # Create an object with the shared props of type/role/event, value, and note
+        assoc_obj = {}
+        assoc_obj[type_field] = {
+            "id": type_ids[i],
+            "label": type_labels[i]
+        }
+        if values[i] != "":
+            assoc_obj["value"] = values[i]
+        
+        if as_written[i] != "":
+            assoc_obj["as_written"] = as_written[i]
+        
+        # TBD: Notes handling for multiple...
+        if notes[i] != "":
+            assoc_obj["note"] = [notes[i]]
+
+        # If the associated is a name or place, add an id for the agent/place ARK
+        if assoc_type in ["name", "place"] and arks[i] != "":
+            assoc_obj["id"] = arks[i]
+
+        if assoc_type in ["date"] and iso[i] != "":
+            assoc_obj["iso"] = helpers.parse_iso_date(iso[i])
+        
+        # if a field order is specified, reorder keys according to that order, otherwise return as is
+        # ignores keys not in the obj, since not all fields required
+        if field_order:
+            ordered = {k: assoc_obj[k] for k in field_order if k in assoc_obj}
+            associated_list.append(ordered)
+        else:
+            associated_list.append(assoc_obj)
+
+    return associated_list
+
 
 def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
     data = []
