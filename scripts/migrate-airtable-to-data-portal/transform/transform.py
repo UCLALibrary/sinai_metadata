@@ -182,6 +182,14 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     # add assoc_place for origin place
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
         data["assoc_place"] += create_list_of_associated(data=row, column_prefix="Origin Place ", assoc_type="place", field_order=["id", "value", "as_written", "event", "note"], type_override={"id": "origin", "label": "Place of Origin"})
+    
+    # add generic associated date, place, and name info, if non-empty
+    if not(pd.isnull(row["Associated Date Type ID"])):
+        data["assoc_date"] += create_list_of_associated(data=row, column_prefix="Associated Date ", assoc_type="date", field_order=["type", "value", "iso", "as_written", "note"])
+    if not(pd.isnull(row["Associated Name Role ID"])):
+        data["assoc_name"] += create_list_of_associated(data=row, column_prefix="Associated Name ", assoc_type="name", field_order=["id", "value", "as_written", "role", "note"])
+    if not(pd.isnull(row["Associated Place Event ID"])):
+        data["assoc_place"] += create_list_of_associated(data=row, column_prefix="Associated Place ", assoc_type="place", field_order=["id", "value", "as_written", "event", "note"])
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)

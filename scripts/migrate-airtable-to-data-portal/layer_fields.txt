@@ -38,6 +38,24 @@ Origin Place ARKs
 Origin Place Value
 Origin Place As Written
 Origin Place Note
+Associated Name ARKs
+Associated Name Value
+Associated Name As Written
+Associated Name Role ID
+Associated Name Role Label
+Associated Name Note
+Associated Place ARKs
+Associated Place Value
+Associated Place As Written
+Associated Place Event ID
+Associated Place Event Label
+Associated Place Note
+Associated Date Value
+Associated Date ISO
+Associated Date As Written
+Associated Date Note
+Associated Date Type ID
+Associated Date Type Label
 Paracontents
 Paracontent note
 Provenance note
