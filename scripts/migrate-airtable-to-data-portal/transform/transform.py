@@ -298,8 +298,7 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
 
 def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
     work_wits = []
-    for work_wit_row in work_wits_data:
-        # paracontent_table.loc[int(id), "Type ID"]
+    for (i, work_wit_row) in work_wits_data.iterrows():
         wit = {}
         wit["work"] = {}
         # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
@@ -332,8 +331,9 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
         wit["excerpt"] = []
         # add 
         if not(pd.isnull(work_wit_row["Excerpts"])):
-            excerpts = helpers.get_side_csv_data(ids=work_wit_row["Excerpts"], csv=config.other_csvs["excerpts"]["data"], sort_by_sequence=False)
-            for excerpt in excerpts:
+            excerpt_ids = str(work_wit_row["Excerpts"]).split(",")
+            excerpts = helpers.get_side_csv_data(ids=excerpt_ids, csv=config.other_csvs["excerpts"]["data"], sort_by_sequence=False)
+            for (i, excerpt) in excerpts.iterrows():
                 wit["excerpt"].append(create_excerpt(excerpt))
 
         # If no excerpts created, remove the field
@@ -343,9 +343,10 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
         
         # Check if using a side-chain CSV for full contents generation, otherwise check for basic contents field (label only). Pre-sort by sequence field
         if not(pd.isnull(work_wit_row["Contents"])):
-            contents = helpers.get_side_csv_data(ids=work_wit_row["Contents"], csv=config.other_csvs["contents"]["data"], sort_by_sequence=True)
+            contents_ids = str(work_wit_row["Contents"]).split(",")
+            contents = helpers.get_side_csv_data(ids=contents_ids, csv=config.other_csvs["contents"]["data"], sort_by_sequence=True)
             wit["contents"] = []
-            for cont in contents:
+            for (i, cont) in contents.iterrows():
                 wit["contents"].append(create_toc_item(cont))
         # Retain functionality for simple contents, only used if no "Contents" column referencing another CSV
         elif not(pd.isnull(work_wit_row["Contents Label"])):

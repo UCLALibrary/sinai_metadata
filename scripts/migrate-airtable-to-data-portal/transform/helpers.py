@@ -61,7 +61,7 @@ def initialize_side_csv(path_to_csv: str, path_to_allowed_fields_doc: str):
 # Used to pre-process "side" CSVs referenced from the main CSV, e.g. for work witnesses
 
 def get_side_csv_data(ids: list, csv: pd.DataFrame, sort_by_sequence: bool):
-    data = csv.loc[ids]
+    data = csv.loc[list(map(int, ids))]
     if sort_by_sequence:
         return data.sort_values("Sequence")
     return data
