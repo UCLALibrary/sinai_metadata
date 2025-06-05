@@ -173,67 +173,15 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     data["assoc_place"] = []
 
     # add assoc_date for origin date in layers
-    if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
-        notes = helpers.parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
-        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-            notes = []
-        data["assoc_date"].append(create_associated_date(
-            type= {"id": "origin", "label": "Date of Origin"},
-            as_written="",
-            value=str(row["Origin Date"]),
-            iso=str(row["Origin Date ISO"]),
-            note=notes
-        ))
+    if record_type == "layers" and not(pd.isnull(row["Origin Date Value"])):
+        data["assoc_date"] += create_list_of_associated(data=row, column_prefix="Origin Date ", assoc_type="date", field_order=["type", "value", "iso", "as_written", "note"], type_override={"id": "origin", "label": "Date of Origin"})
     # add assoc_name for scribes
     if record_type == "layers":
-        if not(pd.isnull(row["Scribe ID"])):
-            scribe_arks = helpers.parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
-            values = helpers.parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
-            if len(values) <= 1 and values[0] == "nan":
-                values = []
-                for i in range(0, len(scribe_arks)):
-                    values.append('')
-            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
-            if len(notes) <= 1 and notes[0] == "nan":
-                notes = []
-                for i in range(0, len(scribe_arks)):
-                    notes.append('')
-            for i in range(0, len(scribe_arks)):
-                n = []
-                if notes[i] != "":
-                    n.append(notes[i])
-                data["assoc_name"].append(create_associated_name(
-                    id=scribe_arks[i],
-                    value=values[i],
-                    as_written="",
-                    role={"id": "scribe", "label": "Scribe"},
-                    note=n
-                ))
-        elif not(pd.isnull(row["Scribe Value"])):
-            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
-            if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-                notes = []
-            data["assoc_name"].append(create_associated_name(
-                    id="",
-                    value=str(row["Scribe Value"]),
-                    as_written="",
-                    role={"id": "scribe", "label": "Scribe"},
-                    note=notes
-                ))
+        data["assoc_name"] += create_list_of_associated(data=row, column_prefix="Scribe ", assoc_type="name", field_order=["id", "value", "as_written", "role", "note"], type_override={"id": "scribe", "label": "Scribe"})
                 
     # add assoc_place for origin place
-    # TBD: if we have ARKs ever, rewrite this; currently only have a value field
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
-        notes = helpers.parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
-        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-            notes = []
-        data["assoc_place"].append(create_associated_place(
-            id="",
-            value=str(row["Origin Place Value"]),
-            as_written="",
-            event={"id": "origin", "label": "Place of Origin"},
-            note=notes
-        ))
+        data["assoc_place"] += create_list_of_associated(data=row, column_prefix="Origin Place ", assoc_type="place", field_order=["id", "value", "as_written", "event", "note"], type_override={"id": "origin", "label": "Place of Origin"})
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -722,7 +670,7 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
 
     return paracontents
 
-def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: str, field_order: list=None, sep: str="\|~\|", quotechar: str="#"):
+def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: str, field_order: list=None, sep: str="\|~\|", quotechar: str="#", type_override: dict={}):
     # set type info based on the kind of assoc thing
     if assoc_type == "name":
         type_column_prefix = "Role "
@@ -734,27 +682,39 @@ def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: s
         type_column_prefix = "Type "
         type_field = "type"
     else:
-        raise ValueError("Invalid associated type, must be 'name', 'place', or 'event'")
+        raise ValueError("Invalid associated type, must be 'name', 'place', or 'date'")
 
-    # TBD: option to supply the type for things like scribe, orig date, orig place...
-    type_ids = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-    type_labels = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+    # used for orig date, scribe, and orig place where type is supplied
+    # number of objects to create is based on the size of parsed value or id field
+    if len(type_override) > 0:
+        # most likely value field will set the number of objects
+        assoc_list_length = len(pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0])
+        # for names and places, check that ARKs aren't the deciding field
+        if assoc_type in ["name", "place"]:
+            assoc_list_length = max(assoc_list_length,
+                                    len(pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0])
+                                    )
+        type_ids = [type_override["id"]] * assoc_list_length
+        type_labels = [type_override["label"]] * assoc_list_length
+    # used for general case, where the type sets the number of objects to create
+    else:
+        type_ids = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        type_labels = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
 
     # values
-    values = pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    values = pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
     # if cell was blank, add empty strings up to the length of types
     if len(values) <= 1 and str(values[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
         values = [""] * len(type_ids)
 
     # as_writtens
-    as_written = pd.read_csv(StringIO(str(data[column_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    as_written = pd.read_csv(StringIO(str(data[column_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
     # if cell was blank, add empty strings up to the length of types
     if len(as_written) <= 1 and str(as_written[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
         as_written = [""] * len(type_ids)
 
     # notes
-    # TBD: does this become an array?
-    notes = pd.read_csv(StringIO(str(data[column_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+    notes = pd.read_csv(StringIO(str(data[column_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
     # if cell was blank, add empty strings up to the length of types
     if len(notes) <= 1 and str(notes[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
         notes = [""] * len(type_ids)
@@ -762,13 +722,13 @@ def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: s
     # If a name or place, check for ARKs, supplying empty strings if not
     arks = []
     if assoc_type in ["name", "place"]:
-        arks = pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+        arks = pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
         if len(arks) <= 1 and str(arks[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
             arks = [""] * len(type_ids)
     # If a date, check for ISO, supplying empty strings if not
     iso = []
     if assoc_type in ["date"]:
-        iso = pd.read_csv(StringIO(str(data[column_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0].values.flatten().tolist()
+        iso = pd.read_csv(StringIO(str(data[column_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
         if len(iso) <= 1 and str(iso[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
             iso = [""] * len(type_ids)
 
@@ -782,21 +742,21 @@ def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: s
             "id": type_ids[i],
             "label": type_labels[i]
         }
-        if values[i] != "":
+        if values[i] not in ["", "nan"]:
             assoc_obj["value"] = values[i]
         
-        if as_written[i] != "":
+        if as_written[i] not in ["", "nan"]:
             assoc_obj["as_written"] = as_written[i]
         
         # TBD: Notes handling for multiple...
-        if notes[i] != "":
+        if notes[i] not in ["", "nan"]:
             assoc_obj["note"] = [notes[i]]
 
         # If the associated is a name or place, add an id for the agent/place ARK
-        if assoc_type in ["name", "place"] and arks[i] != "":
+        if assoc_type in ["name", "place"] and arks[i] not in ["", "nan"]:
             assoc_obj["id"] = arks[i]
 
-        if assoc_type in ["date"] and iso[i] != "":
+        if assoc_type in ["date"] and iso[i] not in ["", "nan"]:
             assoc_obj["iso"] = helpers.parse_iso_date(iso[i])
         
         # if a field order is specified, reorder keys according to that order, otherwise return as is
@@ -808,167 +768,6 @@ def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: s
             associated_list.append(assoc_obj)
 
     return associated_list
-
-
-def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
-    data = []
-    sep = "\|~\|"
-    quotechar = "#"
-    # assoc_name and assoc_place share most similarities
-    if assoc_type == "assoc_name" or assoc_type == "assoc_place":
-        # set the column prefix
-        if assoc_type == "assoc_name":
-            col_prefix = "Associated Name "
-            # parse role id and labels (as 'type')
-            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Role ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Role Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            
-        elif assoc_type == "assoc_place":
-            col_prefix = "Associated Place "
-            # parse event id and labels (as 'type')
-            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Event ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Event Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        
-        # parse arks, supply empty strings if the cell is blank
-        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(arks) <= 1 or arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            arks = [""] * len(type_ids)
-
-         # parse values, supply empty strings if the cell is blank
-        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(values) <= 1 or values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            values = [""] * len(type_ids)
-
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            as_written = [""] * len(type_ids)
-
-        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
-        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            notes = [""] * len(type_ids)
-
-
-        for i in range(0, len(type_ids)):
-            if assoc_type == "assoc_name":
-                data.append(create_associated_name(
-                    id=arks[i],
-                    value=values[i],
-                    as_written=as_written[i],
-                    role={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes[i]
-                ))
-            elif assoc_type == "assoc_place":
-                data.append(create_associated_place(
-                    id=arks[i],
-                    value=values[i],
-                    as_written=as_written[i],
-                    event={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes[i]
-                ))
-    elif assoc_type == "assoc_date":
-        col_prefix = "Associated Date "
-        type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Type ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Type Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
-        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            values = []
-            for i in range(0, len(type_ids)):
-                values.append("")
-        
-        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        if len(iso) <= 1 and iso[0] == 'nan':
-            iso = []
-            for i in range(0, len(type_ids)):
-                iso.append("")
-
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        if len(as_written) <= 1 and as_written[0] == 'nan':
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
-        
-        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
-        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            notes = []
-            for i in range(0, len(type_ids)):
-                notes.append("")
-
-        for i in range(0, len(type_ids)):
-            data.append(create_associated_date(
-                type={"id": type_ids[i], "label": type_labels[i]},
-                as_written=str(as_written[i]),
-                value=str(values[i]),
-                iso=str(iso[i]),
-                note=notes[i]
-                )
-            )
-            
-    return data
-
-def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
-    date = {}
-    date["type"] = type
-    date["value"] = value
-    
-    if iso != "":
-        not_before = iso.split("/")[0]
-        if len(iso.split("/")) > 1:
-            not_after = iso.split("/")[1]
-        else:
-            not_after = ""
-        date["iso"] = {}
-        date["iso"]["not_before"] = not_before.zfill(4)
-        # only add not_after property if the ISO date is a range
-        if not_after != "":
-            date["iso"]["not_after"] = not_after.zfill(4)
-
-    if as_written != "":
-        date["as_written"] = as_written
-    if len(note) > 0:
-        date["note"] = note
-    
-    return date
-
-def create_associated_name(id: str, value: str, as_written: str, role: object, note: list):
-    name = {}
-    if id != "":
-        name["id"] = id
-    if value != "":
-        name["value"] = value
-    if as_written != "":
-        name["as_written"] = as_written
-    name["role"] = role
-    if len(note) > 0:
-        name["note"] = note
-    return name
-
-def create_associated_place(id: str, value: str, as_written: str, event: object, note: list):
-    place = {}
-    if id != "":
-        place["id"] = id
-    if value != "":
-        place["value"] = value
-    if as_written != "":
-        place["as_written"] = as_written
-    place["event"] = event
-    if len(note) > 0:
-        place["note"] = note
-    return place
-
 
 # Takes a row from a CSV and a boolean indicating if is called by a part or not
 # Creates the overtext, undertext, and guest content layers

@@ -26,14 +26,17 @@ Text Unit Labels
 Text Unit Locus
 Text Unit Sequence
 Colophon
-Scribe ID
+Scribe ARKs
 Scribe Value
+Scribe As Written
 Scribe Note
-Origin Date
+Origin Date Value
 Origin Date ISO
+Origin Date As Written
 Origin Date Note
-Origin Place ID
+Origin Place ARKs
 Origin Place Value
+Origin Place As Written
 Origin Place Note
 Paracontents
 Paracontent note
