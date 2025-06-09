@@ -65,5 +65,7 @@ General note
 Ornamentation note
 Related MSS
 Reference Instances
+Description Program Labels
+Description Program Descriptions
 Reconstructed From
 Parent ARKs

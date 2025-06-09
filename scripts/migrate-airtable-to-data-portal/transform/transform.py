@@ -248,6 +248,29 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
         
         data["iiif"] = [iiif]
     
+    data["desc_provenance"] = {}
+    # Add Desc Provenance, if provided
+    if not(pd.isnull(row["Description Program Labels"])):
+        programs = []
+        # parse through the program labels and descriptions
+        prog_labels = helpers.parse_rolled_up_field(str(row["Description Program Labels"]), "|~|", "#")
+        prog_descs = helpers.parse_rolled_up_field(str(row["Description Program Descriptions"]), "|~|", "#")
+        for i in range(0, len(prog_labels)):
+            programs.append(
+                {
+                    "label": prog_labels[i],
+                    "description": prog_descs[i]
+                }
+            )
+        data["desc_provenance"]["program"] = programs
+    
+    # Add the rights from a config
+    data["desc_provenance"]["rights"] = config.METADATA_RIGHTS
+
+    # For MS Objs, add image provenance
+    if record_type == "ms_objs" and not(pd.isnull(row["Image Program Labels"])):
+        data["image_provenance"] = create_image_provenance_from_row(row)
+
     """
     TBD: Cataloguer field not needed at the ms_obj level. TBD for layers
     # TBD cataloguer field for running the script (set in a config for who runs the script?)
@@ -1040,3 +1063,75 @@ def create_notes_from_specific_columns(notes_by_type: list):
                     }
                 )
     return all_notes
+
+def create_image_provenance_from_row(row: pd.Series):
+    field_map = {
+        "label": {
+            "column_header": "Image Program Labels",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "description": {
+            "column_header": "Image Program Descriptions",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "camera_operator": {
+            "column_header": "Image Program Camera Operators",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": ","
+        },
+        "imaging_date": {
+            "column_header": "Image Program Imaging Date",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "delivery": {
+            "column_header": "Image Program Delivery",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "msi_processing": {
+            "column_header": "Image Program MSI Processing",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": ","
+        },
+        "condition_category": {
+            "column_header": "Image Program Condition Category",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "note": {
+            "column_header": "Image Program Note",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": "|"
+        }
+    }
+
+    provenance = {}
+    provenance["program"] = helpers.collate_rolled_up_fields(data=row,
+                                                             field_map=field_map,
+                                                             length_determining_field="label")
+
+    # Add the rights from a config
+    provenance["rights"] = config.IMAGE_RIGHTS
+    return provenance

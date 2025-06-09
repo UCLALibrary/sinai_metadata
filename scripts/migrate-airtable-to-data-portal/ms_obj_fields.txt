@@ -78,4 +78,14 @@ IIIF Manifest URL
 IIIF Behavior
 IIIF Text Direction
 IIIF Thumbnail URL
+Description Program Labels
+Description Program Descriptions
+Image Program Labels
+Image Program Descriptions
+Image Program Camera Operators
+Image Program Imaging Date
+Image Program Delivery
+Image Program MSI Processing
+Image Program Condition Category
+Image Program Note
 Reconstructed From

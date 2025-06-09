@@ -32,5 +32,7 @@ Paracontent note
 Ornamentation note
 General note
 Reference Instances
+Description Program Labels
+Description Program Descriptions
 Reconstructed From
 Parent ARKs

@@ -14,6 +14,10 @@ RECORD_LABELS = {
     "text_units": "Text Units"
 }
 
+METADATA_RIGHTS = ""
+
+IMAGE_RIGHTS = ""
+
 # The record type for a given pass
 record_type = ""
 
