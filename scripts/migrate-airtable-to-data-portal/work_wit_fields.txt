@@ -8,6 +8,7 @@ Work Genre Label
 Alternative Title
 As Written
 Locus
+Excerpts
 Incipit Locus
 Incipit As Written
 Incipit Translation
@@ -16,6 +17,7 @@ Explicit Locus
 Explicit As Written
 Explicit Translation
 Explicit Note
+Contents
 Contents Label
 Contents Work ID
 Contents Locus

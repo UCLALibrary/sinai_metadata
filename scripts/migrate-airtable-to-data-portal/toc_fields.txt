@@ -1,0 +1,6 @@
+ID
+Sequence
+Label
+Work ID
+Locus
+Note

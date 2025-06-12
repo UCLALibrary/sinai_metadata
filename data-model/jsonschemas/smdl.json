@@ -12,7 +12,7 @@
             "type": "boolean"
         },
         "type": {
-            "type": "string"
+            "$ref": "#/$defs/controlled_term"
         },
         "shelfmark": {
             "type": "string",
@@ -34,7 +34,7 @@
             "type": "string"
         },
         "state": {
-            "type": "string"
+            "$ref": "#/$defs/controlled_term"
         },
         "fol": {
             "type": "string"
@@ -99,6 +99,9 @@
             "items": {
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "string"
+                    },
                     "repository": {
                         "type": "string"
                     },
@@ -107,6 +110,7 @@
                     }
                 },
                 "required": [
+                    "id",
                     "repository"
                 ],
                 "unevaluatedProperties": false
@@ -141,7 +145,7 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "label": {
                         "type": "string"
@@ -163,23 +167,7 @@
         "bib": {
             "type": "array",
             "items": {
-                "type": "object",
-                "allOf": [
-                    {
-                        "properties": {
-                            "type": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "type"
-                        ]
-                    },
-                    {
-                        "$ref": "#/$defs/bib"
-                    }
-                ],
-                "unevaluatedProperties": false
+                "$ref": "#/$defs/bib"
             },
             "unevaluatedItems": false
         },
@@ -200,6 +188,12 @@
                         "format": "uri"
                     },
                     "type": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "text_direction": {
+                        "type": "string"
+                    },
+                    "behavior": {
                         "type": "string"
                     },
                     "thumbnail": {
@@ -382,10 +376,25 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "value": {
                     "type": "string"
+                },
+                "iso": {
+                    "type": "object",
+                    "properties": {
+                        "not_before": {
+                            "type": "string"
+                        },
+                        "not_after": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "not_before"
+                    ],
+                    "unevaluatedProperties": false
                 },
                 "as_written": {
                     "type": "string"
@@ -406,6 +415,9 @@
         "assoc_name": {
             "type": "object",
             "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
                 "pref_name": {
                     "type": "string"
                 },
@@ -416,7 +428,7 @@
                     "type": "string"
                 },
                 "role": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "note": {
                     "type": "array",
@@ -434,6 +446,9 @@
         "assoc_place": {
             "type": "object",
             "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
                 "pref_name": {
                     "type": "string"
                 },
@@ -444,7 +459,7 @@
                     "type": "string"
                 },
                 "event": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "note": {
                     "type": "array",
@@ -462,8 +477,14 @@
         "bib": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "shortcode": {
                     "type": "string"
+                },
+                "type": {
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "range": {
                     "type": "string"
@@ -484,8 +505,26 @@
                 }
             },
             "required": [
-                "shortcode"
+                "id",
+                "shortcode",
+                "type"
             ]
+        },
+        "controlled_term": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "unevaluatedProperties": false
         },
         "layer": {
             "type": "object",
@@ -636,6 +675,13 @@
                         "$ref": "#/$defs/typed_note"
                     },
                     "unevaluatedItems": false
+                },
+                "bib": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/bib"
+                    },
+                    "unevaluatedItems": false
                 }
             },
             "required": [
@@ -649,7 +695,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "label": {
                     "type": "string"
@@ -668,7 +714,7 @@
                 "lang": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -737,7 +783,7 @@
                 "support": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -797,7 +843,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "label": {
                     "type": "string"
@@ -844,15 +890,19 @@
         "script": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string"
+                },
                 "label": {
                     "type": "string"
                 },
-                "system": {
+                "writing_system": {
                     "type": "string"
                 }
             },
             "required": [
-                "script",
+                "id",
+                "label",
                 "system"
             ],
             "unevaluatedProperties": false
@@ -872,7 +922,7 @@
                 "lang": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -880,122 +930,7 @@
                 "work_wit": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "properties": {
-                            "locus": {
-                                "type": "string"
-                            },
-                            "pref_title": {
-                                "type": "string"
-                            },
-                            "descriptive_title": {
-                                "type": "string"
-                            },
-                            "alt_title": {
-                                "type": "string"
-                            },
-                            "as_written": {
-                                "type": "string"
-                            },
-                            "creator": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "pref_name": {
-                                            "type": "string"
-                                        },
-                                        "role": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [
-                                        "pref_name"
-                                    ],
-                                    "unevaluatedProperties": false
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "excerpt": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "type": {
-                                            "type": "string"
-                                        },
-                                        "locus": {
-                                            "type": "string"
-                                        },
-                                        "as_written": {
-                                            "type": "string"
-                                        },
-                                        "translation": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "string"
-                                            },
-                                            "unevaluatedItems": false
-                                        },
-                                        "note": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "string"
-                                            },
-                                            "unevaluatedItems": false
-                                        }
-                                    },
-                                    "required": [
-                                        "type",
-                                        "locus"
-                                    ],
-                                    "unevaluatedProperties": false
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "contents": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "pref_title": {
-                                            "type": "string"
-                                        },
-                                        "descriptive_title": {
-                                            "type": "string"
-                                        },
-                                        "locus": {
-                                            "type": "string"
-                                        },
-                                        "note": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "string"
-                                            },
-                                            "unevaluatedItems": false
-                                        }
-                                    },
-                                    "unevaluatedProperties": false
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "edition": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "#/$defs/bib",
-                                    "unevaluatedProperties": false
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "note": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "unevaluatedItems": false
-                            }
-                        },
-                        "unevaluatedProperties": false
+                        "$ref": "#/$defs/work_witness"
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
@@ -1014,7 +949,7 @@
                     },
                     "unevaluatedItems": false
                 },
-                "edition": {
+                "bib": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/bib",
@@ -1034,7 +969,7 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "$ref": "#/$defs/controlled_term"
                 },
                 "value": {
                     "type": "string"
@@ -1087,6 +1022,152 @@
                 "script",
                 "lang"
             ]
+        },
+        "work_witness": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "locus": {
+                        "type": "string"
+                    },
+                    "work": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "$ref": "#/$defs/ark"
+                            },
+                            "pref_title": {
+                                "type": "string"
+                            },
+                            "desc_title": {
+                                "type": "string"
+                            },
+                            "creator": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "$ref": "#/$defs/ark"
+                                        },
+                                        "pref_name": {
+                                            "type": "string"
+                                        },
+                                        "role": {
+                                            "$ref": "#/$defs/controlled_term"
+                                        }
+                                    },
+                                    "required": [
+                                        "id",
+                                        "pref_name"
+                                    ],
+                                    "unevaluatedProperties": false
+                                },
+                                "unevaluatedItems": false
+                            },
+                            "genre": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/$defs/controlled_term"
+                                },
+                                "unevaluatedItems": false     
+                            }
+                        },
+                        "unevaluatedProperties": false
+                    },
+                    "alt_title": {
+                        "type": "string"
+                    },
+                    "as_written": {
+                        "type": "string"
+                    },
+                    "excerpt": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "$ref": "#/$defs/controlled_term"
+                                },
+                                "locus": {
+                                    "type": "string"
+                                },
+                                "as_written": {
+                                    "type": "string"
+                                },
+                                "translation": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "unevaluatedItems": false
+                                },
+                                "note": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "unevaluatedItems": false
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "locus"
+                            ],
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "contents": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "work_id": {
+                                    "$ref": "#/$defs/ark"
+                                },
+                                "pref_title": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "type": "string"
+                                },
+                                "locus": {
+                                    "type": "string"
+                                },
+                                "note": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "unevaluatedItems": false
+                                }
+                            },
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "bib": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/$defs/bib",
+                            "unevaluatedProperties": false
+                        },
+                        "unevaluatedItems": false
+                    },
+                    "note": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "unevaluatedItems": false
+                    }
+                },
+                "unevaluatedProperties": false
+            },
+            "minItems": 1,
+            "unevaluatedItems": false
         }
     }
 }

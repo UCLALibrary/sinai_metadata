@@ -100,8 +100,9 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
         data["layout"] = [create_layout_from_row(row)]
 
     # Add text_unit object to layers
+    # TBD: hard-coding the delimiter...
     if record_type == "layers":
-        data["text_unit"] = create_text_unit_reference_from_row(row)
+        data["text_unit"] = create_text_unit_reference_from_row(row, "|~|")
     
     if record_type == "ms_objs" and not(pd.isnull(row["Foliation"])):
         data["fol"] = str(row["Foliation"])
@@ -172,67 +173,23 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     data["assoc_place"] = []
 
     # add assoc_date for origin date in layers
-    if record_type == "layers" and not(pd.isnull(row["Origin Date"])):
-        notes = helpers.parse_rolled_up_field(str(row["Origin Date Note"]), "|~|", "#")
-        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-            notes = []
-        data["assoc_date"].append(create_associated_date(
-            type= {"id": "origin", "label": "Date of Origin"},
-            as_written="",
-            value=str(row["Origin Date"]),
-            iso=str(row["Origin Date ISO"]),
-            note=notes
-        ))
+    if record_type == "layers" and not(pd.isnull(row["Origin Date Value"])):
+        data["assoc_date"] += create_list_of_associated(data=row, column_prefix="Origin Date ", assoc_type="date", field_order=["type", "value", "iso", "as_written", "note"], type_override={"id": "origin", "label": "Date of Origin"})
     # add assoc_name for scribes
     if record_type == "layers":
-        if not(pd.isnull(row["Scribe ID"])):
-            scribe_arks = helpers.parse_rolled_up_field(str(row["Scribe ID"]), ",", "#")
-            values = helpers.parse_rolled_up_field(str(row["Scribe Value"]), "|~|", "#")
-            if len(values) <= 1 and values[0] == "nan":
-                values = []
-                for i in range(0, len(scribe_arks)):
-                    values.append('')
-            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
-            if len(notes) <= 1 and notes[0] == "nan":
-                notes = []
-                for i in range(0, len(scribe_arks)):
-                    notes.append('')
-            for i in range(0, len(scribe_arks)):
-                n = []
-                if notes[i] != "":
-                    n.append(notes[i])
-                data["assoc_name"].append(create_associated_name(
-                    id=scribe_arks[i],
-                    value=values[i],
-                    as_written="",
-                    role={"id": "scribe", "label": "Scribe"},
-                    note=n
-                ))
-        elif not(pd.isnull(row["Scribe Value"])):
-            notes = helpers.parse_rolled_up_field(str(row["Scribe Note"]), "|~|", "#")
-            if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-                notes = []
-            data["assoc_name"].append(create_associated_name(
-                    id="",
-                    value=str(row["Scribe Value"]),
-                    as_written="",
-                    role={"id": "scribe", "label": "Scribe"},
-                    note=notes
-                ))
+        data["assoc_name"] += create_list_of_associated(data=row, column_prefix="Scribe ", assoc_type="name", field_order=["id", "value", "as_written", "role", "note"], type_override={"id": "scribe", "label": "Scribe"})
                 
     # add assoc_place for origin place
-    # TBD: if we have ARKs ever, rewrite this; currently only have a value field
     if record_type == "layers" and not(pd.isnull(row["Origin Place Value"])):
-        notes = helpers.parse_rolled_up_field(str(row["Origin Place Note"]), "|~|", "#")
-        if len(notes) <= 1 and (notes[0] == "nan" or notes[0] == "<NA>"):
-            notes = []
-        data["assoc_place"].append(create_associated_place(
-            id="",
-            value=str(row["Origin Place Value"]),
-            as_written="",
-            event={"id": "origin", "label": "Place of Origin"},
-            note=notes
-        ))
+        data["assoc_place"] += create_list_of_associated(data=row, column_prefix="Origin Place ", assoc_type="place", field_order=["id", "value", "as_written", "event", "note"], type_override={"id": "origin", "label": "Place of Origin"})
+    
+    # add generic associated date, place, and name info, if non-empty
+    if not(pd.isnull(row["Associated Date Type ID"])):
+        data["assoc_date"] += create_list_of_associated(data=row, column_prefix="Associated Date ", assoc_type="date", field_order=["type", "value", "iso", "as_written", "note"])
+    if not(pd.isnull(row["Associated Name Role ID"])):
+        data["assoc_name"] += create_list_of_associated(data=row, column_prefix="Associated Name ", assoc_type="name", field_order=["id", "value", "as_written", "role", "note"])
+    if not(pd.isnull(row["Associated Place Event ID"])):
+        data["assoc_place"] += create_list_of_associated(data=row, column_prefix="Associated Place ", assoc_type="place", field_order=["id", "value", "as_written", "event", "note"])
 
     # Add notes field
     data["note"] = create_notes_from_row(row, record_type, 0)
@@ -291,6 +248,29 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
         
         data["iiif"] = [iiif]
     
+    data["desc_provenance"] = {}
+    # Add Desc Provenance, if provided
+    if not(pd.isnull(row["Description Program Labels"])):
+        programs = []
+        # parse through the program labels and descriptions
+        prog_labels = helpers.parse_rolled_up_field(str(row["Description Program Labels"]), "|~|", "#")
+        prog_descs = helpers.parse_rolled_up_field(str(row["Description Program Descriptions"]), "|~|", "#")
+        for i in range(0, len(prog_labels)):
+            programs.append(
+                {
+                    "label": prog_labels[i],
+                    "description": prog_descs[i]
+                }
+            )
+        data["desc_provenance"]["program"] = programs
+    
+    # Add the rights from a config
+    data["desc_provenance"]["rights"] = config.METADATA_RIGHTS
+
+    # For MS Objs, add image provenance
+    if record_type == "ms_objs" and not(pd.isnull(row["Image Program Labels"])):
+        data["image_provenance"] = create_image_provenance_from_row(row)
+
     """
     TBD: Cataloguer field not needed at the ms_obj level. TBD for layers
     # TBD cataloguer field for running the script (set in a config for who runs the script?)
@@ -341,8 +321,7 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
 
 def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
     work_wits = []
-    for work_wit_row in work_wits_data:
-        # paracontent_table.loc[int(id), "Type ID"]
+    for (i, work_wit_row) in work_wits_data.iterrows():
         wit = {}
         wit["work"] = {}
         # work field should just have the work's ARK if available, otherwise it needs a desc_title and optional creators and genre array
@@ -373,21 +352,27 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
 
         # Create excerpts for incipit and explicit
         wit["excerpt"] = []
-        if not(pd.isnull(work_wit_row["Incipit As Written"])):
-            inc_type = {"id": "incipit", "label": "Incipit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, inc_type, "Incipit "))
-        if not(pd.isnull(work_wit_row["Explicit As Written"])):
-            expl_type = {"id": "explicit", "label": "Explicit"}
-            wit["excerpt"].append(create_excerpt(work_wit_row, expl_type, "Explicit "))
+        # add 
+        if not(pd.isnull(work_wit_row["Excerpts"])):
+            excerpt_ids = str(work_wit_row["Excerpts"]).split(",")
+            excerpts = helpers.get_side_csv_data(ids=excerpt_ids, csv=config.other_csvs["excerpts"]["data"], sort_by_sequence=False)
+            for (i, excerpt) in excerpts.iterrows():
+                wit["excerpt"].append(create_excerpt(excerpt))
 
         # If no excerpts created, remove the field
         if "excerpt" in wit and len(wit["excerpt"]) == 0:
             wit.pop("excerpt")
 
         
-        # TBD: contents, partially implemented, sufficient for first migration pass
-        # hacked together to create the contents label, but should also support other fields in contents...
-        if not(pd.isnull(work_wit_row["Contents Label"])):
+        # Check if using a side-chain CSV for full contents generation, otherwise check for basic contents field (label only). Pre-sort by sequence field
+        if not(pd.isnull(work_wit_row["Contents"])):
+            contents_ids = str(work_wit_row["Contents"]).split(",")
+            contents = helpers.get_side_csv_data(ids=contents_ids, csv=config.other_csvs["contents"]["data"], sort_by_sequence=True)
+            wit["contents"] = []
+            for (i, cont) in contents.iterrows():
+                wit["contents"].append(create_toc_item(cont))
+        # Retain functionality for simple contents, only used if no "Contents" column referencing another CSV
+        elif not(pd.isnull(work_wit_row["Contents Label"])):
             contents = []
             labels = helpers.parse_rolled_up_field(str(work_wit_row["Contents Label"]), "|~|", "#")
             for i in range(0, len(labels)):
@@ -413,20 +398,45 @@ def create_work_witnesses_from_row(work_wits_data: pd.DataFrame):
 
     return work_wits
 
-def create_excerpt(data_row: pd.Series, type: object, column_prefix: str):
+def create_excerpt(data_row: pd.Series):
     excerpt = {}
-    excerpt["type"] = type # TBD: make generic, so can supply type or look for it from the row columns
+    excerpt["type"] = {
+        "id": str(data_row["Type ID"]),
+        "label": str(data_row["Type Label"])
+    }
+    if not(pd.isnull(data_row["Locus"])):
+        excerpt["locus"] = str(data_row["Locus"])
 
-    if not(pd.isnull(data_row[column_prefix + "Locus"])):
-            excerpt["locus"] = str(data_row[column_prefix + "Locus"])
-    if not(pd.isnull(data_row[column_prefix + "As Written"])):
-            excerpt["as_written"] = str(data_row[column_prefix + "As Written"])
-    if not(pd.isnull(data_row[column_prefix + "Translation"])):
-            excerpt["translation"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Translation"]), "|~|", "#")
-    if not(pd.isnull(data_row[column_prefix + "Note"])):
-            excerpt["note"] = helpers.parse_rolled_up_field(str(data_row[column_prefix + "Note"]), "|~|", "#")
+    if not(pd.isnull(data_row["As Written"])):
+        excerpt["as_written"] = str(data_row["As Written"])
     
+    # TBD: hard-coded delimiter...
+    if not(pd.isnull(data_row["Translation"])):
+        excerpt["translation"] = str(data_row["Translation"]).split("|~|")
+    # TBD: hard-coded delimiter...
+    if not(pd.isnull(data_row["Note"])):
+        excerpt["note"] = str(data_row["Note"]).split("|~|")
+
     return excerpt
+
+# Takes a Pandas Series with column names corresponding to toc_fields.txt
+# Returns a dictionary for a contents item (work id, label, locus, notes)
+def create_toc_item(data_row: pd.Series):
+    item = {}
+    if not(pd.isnull(data_row["Work ID"])):
+        item["work_id"] = str(data_row["Work ID"])
+
+    if not(pd.isnull(data_row["Label"])):
+        item["label"] = str(data_row["Label"])
+    
+    if not(pd.isnull(data_row["Locus"])):
+        item["locus"] = str(data_row["Locus"])
+    
+    # TBD: hard-coded delimiter
+    if not(pd.isnull(data_row["Note"])):
+        item["note"] = str(data_row["Note"]).split("|~|")
+    
+    return item
 
 def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
     bibs = []
@@ -513,32 +523,62 @@ def get_layer_data(arks, labels, locus, sep, quotechar):
             layer_data["locus"].append("nan")
     return layer_data
 
-# restriction: relies on exact match of arks and labels
-# TBD: throw exception if lengths of ark and label arrays don't match?
-# Given a dictionary of lists of arks, labels, locus; and a type object return a list of layer objects
-def create_text_unit_reference_from_row(row):
-    # reusing the get_layer_data function since the same info is required
-    text_unit_data = get_layer_data(arks=str(row["Text Unit ARKs"]),
-                                    labels=str(row["Text Unit Labels"]),
-                                    locus=str(row["Text Unit Locus"]),
-                                    sep="\|~\|",
-                                    quotechar="#")
-    # TBD: could make the create_*_object function more generic by giving 'type' as optional param
-    return create_text_unit_object(text_unit_data)
+# Given a layer row, create the text unit object referencing the child texts
+def create_text_unit_reference_from_row(row: pd.Series, delimiter: str):
+    # Gather the data for arks, labels, locus, and sequence
+    # arks are required
+    arks = str(row["Text Unit ARKs"]).split(delimiter)
+    # Labels and locus may be empty
+    if not(pd.isnull(row["Text Unit Labels"])):
+        labels = str(row["Text Unit Labels"]).split(delimiter)
+    else:
+        labels = []
+    if not(pd.isnull(row["Text Unit Locus"])):
+        locus = str(row["Text Unit Locus"]).split(delimiter)
+    else:
+        locus = []
+    
+    # sequence required
+    seq = str(row["Text Unit Sequence"]).split(delimiter)
+    seq = list(map(int, seq))
+    # raise an exception if sequence and arks are not the same length
+    if len(seq) != len(arks):
+        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: Not all ARKs have an assigned sequence")
+  
+    # If labels and locus are empty, supply "" for each up to the length of the arks list
+    if len(labels) == 0:
+        for i in range(0, len(arks)):
+            labels.append("")
+    if len(locus) == 0:
+        for i in range(0, len(arks)):
+            locus.append("")
+    
+    # Labels and locus are optional, but should have the same number as arks if present. Since already handled cases of empty lists, just compare lengths
+    if len(labels) != len(arks) or len(locus) != len(arks):
+        raise ValueError(f"For {row['Label']}, ARK={row['Item ARK']}: The number of Text Unit locus ({len(locus)}) or label ({len(labels)}) values does not match the number of Text Unit ARKs ({len(arks)})")
+    
+    return create_text_unit_object(arks, labels, locus, seq)
 
-def create_text_unit_object(text_unit_data):
+def create_text_unit_object(arks: list, labels: list, locus: list, seq: list):
     text_units = []
-    for i in range(0, len(text_unit_data["arks"])):
-        if text_unit_data["arks"][i] == "" or text_unit_data["arks"][i] == "nan":
-            continue
-        text_unit = {}
-        text_unit["id"] = text_unit_data["arks"][i]
-        text_unit["label"] = text_unit_data["labels"][i]
+    
+    # reorder each object according to the sequence
+    arks_ordered = helpers.order_list_by_sequence(arks, seq)
+    labels_ordered = helpers.order_list_by_sequence(labels, seq)
+    locus_ordered = helpers.order_list_by_sequence(locus, seq)
 
-        # add locus only if it exists for this pairing
-        if "locus" in text_unit_data and text_unit_data["locus"][i] != "<NA>" and text_unit_data["locus"][i] != "nan" and text_unit_data["locus"][i] != "":
-            text_unit["locus"] = text_unit_data["locus"][i]
-        
+    # create the objects
+    for i in range(0, len(arks_ordered)):
+        text_unit = {}
+        text_unit["id"] = arks_ordered[i]
+        # if no label supplied, label the text unit based on the ordering
+        if labels_ordered[i] != "":
+            text_unit["label"] = labels_ordered[i]
+        else:
+            text_unit["label"] = "Item " + str(i+1)
+        if locus[i] != "":
+            text_unit["locus"] = locus_ordered[i]
+
         text_units.append(text_unit)
     return text_units
 
@@ -645,13 +685,13 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
         
         # assoc_*: optional, array of objects, need to be created via other function
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Name Role ID"])):
-            para_data["assoc_name"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_name")
+            para_data["assoc_name"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Name ", "name", ["id", "value", "as_written", "role", "note"])
         
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Place Event ID"])):
-            para_data["assoc_place"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_place")
+            para_data["assoc_place"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Place ", "place", ["id", "value", "as_written", "event", "note"])
 
         if not(pd.isnull(paracontent_table.loc[int(id), "Associated Date Type ID"])):
-            para_data["assoc_date"] = create_list_of_para_associated(paracontent_table.loc[int(id)], "assoc_date")
+            para_data["assoc_date"] = create_list_of_associated(paracontent_table.loc[int(id)], "Associated Date ", "date", ["type", "value", "iso", "as_written", "note"])
 
 
         # note: optional, array of strings
@@ -662,173 +702,104 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
 
     return paracontents
 
-def create_list_of_para_associated(para_row: pd.Series, assoc_type: str):
-    data = []
-    sep = "\|~\|"
-    quotechar = "#"
-    # assoc_name and assoc_place share most similarities
-    if assoc_type == "assoc_name" or assoc_type == "assoc_place":
-        # set the column prefix
-        if assoc_type == "assoc_name":
-            col_prefix = "Associated Name "
-            # parse role id and labels (as 'type')
-            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Role ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Role Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            
-        elif assoc_type == "assoc_place":
-            col_prefix = "Associated Place "
-            # parse event id and labels (as 'type')
-            type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Event ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-            type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Event Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        
-        # parse arks, supply empty strings if the cell is blank
-        arks = pd.read_csv(StringIO(str(para_row[col_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(arks) <= 1 and arks[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            arks = []
-            for i in range(0, len(type_ids)):
-                arks.append("")
+def create_list_of_associated(data: pd.Series, column_prefix: str, assoc_type: str, field_order: list=None, sep: str="\|~\|", quotechar: str="#", type_override: dict={}):
+    # set type info based on the kind of assoc thing
+    if assoc_type == "name":
+        type_column_prefix = "Role "
+        type_field = "role"
+    elif assoc_type == "place":
+        type_column_prefix = "Event "
+        type_field = "event"
+    elif assoc_type == "date":
+        type_column_prefix = "Type "
+        type_field = "type"
+    else:
+        raise ValueError("Invalid associated type, must be 'name', 'place', or 'date'")
 
-         # parse values, supply empty strings if the cell is blank
-        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            values = []
-            for i in range(0, len(type_ids)):
-                values.append("")
+    # used for orig date, scribe, and orig place where type is supplied
+    # number of objects to create is based on the size of parsed value or id field
+    if len(type_override) > 0:
+        # most likely value field will set the number of objects
+        assoc_list_length = len(pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0])
+        # for names and places, check that ARKs aren't the deciding field
+        if assoc_type in ["name", "place"]:
+            assoc_list_length = max(assoc_list_length,
+                                    len(pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0])
+                                    )
+        type_ids = [type_override["id"]] * assoc_list_length
+        type_labels = [type_override["label"]] * assoc_list_length
+    # used for general case, where the type sets the number of objects to create
+    else:
+        type_ids = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
+        type_labels = pd.read_csv(StringIO(str(data[column_prefix + type_column_prefix + "Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
 
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
+    # values
+    values = pd.read_csv(StringIO(str(data[column_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(values) <= 1 and str(values[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        values = [""] * len(type_ids)
 
-        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
-        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            notes = []
-            for i in range(0, len(type_ids)):
-                notes.append("")
+    # as_writtens
+    as_written = pd.read_csv(StringIO(str(data[column_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(as_written) <= 1 and str(as_written[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        as_written = [""] * len(type_ids)
 
+    # notes
+    notes = pd.read_csv(StringIO(str(data[column_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+    # if cell was blank, add empty strings up to the length of types
+    if len(notes) <= 1 and str(notes[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+        notes = [""] * len(type_ids)
 
-        for i in range(0, len(type_ids)):
-            if assoc_type == "assoc_name":
-                data.append(create_associated_name(
-                    id=arks[i],
-                    value=values[i],
-                    as_written=as_written[i],
-                    role={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes[i]
-                ))
-            elif assoc_type == "assoc_place":
-                data.append(create_associated_place(
-                    id=arks[i],
-                    value=values[i],
-                    as_written=as_written[i],
-                    event={"id": type_ids[i], "label": type_labels[i]},
-                    note=notes[i]
-                ))
-    elif assoc_type == "assoc_date":
-        col_prefix = "Associated Date "
-        type_ids = pd.read_csv(StringIO(str(para_row[col_prefix + "Type ID"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        type_labels = pd.read_csv(StringIO(str(para_row[col_prefix + "Type Label"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).iloc[0]
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(as_written) <= 1 and as_written[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
-        values = pd.read_csv(StringIO(str(para_row[col_prefix + "Value"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(values) <= 1 and values[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            values = []
-            for i in range(0, len(type_ids)):
-                values.append("")
-        
-        iso = pd.read_csv(StringIO(str(para_row[col_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        if len(iso) <= 1 and iso[0] == 'nan':
-            iso = []
-            for i in range(0, len(type_ids)):
-                iso.append("")
+    # If a name or place, check for ARKs, supplying empty strings if not
+    arks = []
+    if assoc_type in ["name", "place"]:
+        arks = pd.read_csv(StringIO(str(data[column_prefix + "ARKs"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+        if len(arks) <= 1 and str(arks[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+            arks = [""] * len(type_ids)
+    # If a date, check for ISO, supplying empty strings if not
+    iso = []
+    if assoc_type in ["date"]:
+        iso = pd.read_csv(StringIO(str(data[column_prefix + "ISO"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+        if len(iso) <= 1 and str(iso[0]) == "nan": # 'nan' would be returned as the only value if cell is empty
+            iso = [""] * len(type_ids)
 
-        as_written = pd.read_csv(StringIO(str(para_row[col_prefix + "As Written"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        if len(as_written) <= 1 and as_written[0] == 'nan':
-            as_written = []
-            for i in range(0, len(type_ids)):
-                as_written.append("")
-        
-        # TBD: treating notes as a one-to-one with assoc_* object, update to allow multiple delimiter types if needing more than one note per object
-        notes = pd.read_csv(StringIO(str(para_row[col_prefix + "Note"])), sep=sep, quotechar=quotechar, skipinitialspace=True, engine='python', keep_default_na=False, header=None).iloc[0].values.flatten().tolist()
-        # if cell was blank, add empty strings up to the length of types
-        if len(notes) <= 1 and notes[0] == "nan": # 'nan' would be returned as the only value if cell is empty
-            notes = []
-            for i in range(0, len(type_ids)):
-                notes.append("")
-
-        for i in range(0, len(type_ids)):
-            data.append(create_associated_date(
-                type={"id": type_ids[i], "label": type_labels[i]},
-                as_written=str(as_written[i]),
-                value=str(values[i]),
-                iso=str(iso[i]),
-                note=notes[i]
-                )
-            )
-            
-    return data
-
-def create_associated_date(type: object, as_written: str, value: str, iso: str, note: list):
-    date = {}
-    date["type"] = type
-    date["value"] = value
+    associated_list = [] 
+    # For each associated thing
+    for i in range(0, len(type_ids)):
     
-    if iso != "":
-        not_before = iso.split("/")[0]
-        if len(iso.split("/")) > 1:
-            not_after = iso.split("/")[1]
+        # Create an object with the shared props of type/role/event, value, and note
+        assoc_obj = {}
+        assoc_obj[type_field] = {
+            "id": type_ids[i],
+            "label": type_labels[i]
+        }
+        if values[i] not in ["", "nan"]:
+            assoc_obj["value"] = values[i]
+        
+        if as_written[i] not in ["", "nan"]:
+            assoc_obj["as_written"] = as_written[i]
+        
+        # TBD: Notes handling for multiple...
+        if notes[i] not in ["", "nan"]:
+            assoc_obj["note"] = [notes[i]]
+
+        # If the associated is a name or place, add an id for the agent/place ARK
+        if assoc_type in ["name", "place"] and arks[i] not in ["", "nan"]:
+            assoc_obj["id"] = arks[i]
+
+        if assoc_type in ["date"] and iso[i] not in ["", "nan"]:
+            assoc_obj["iso"] = helpers.parse_iso_date(iso[i])
+        
+        # if a field order is specified, reorder keys according to that order, otherwise return as is
+        # ignores keys not in the obj, since not all fields required
+        if field_order:
+            ordered = {k: assoc_obj[k] for k in field_order if k in assoc_obj}
+            associated_list.append(ordered)
         else:
-            not_after = ""
-        date["iso"] = {}
-        date["iso"]["not_before"] = not_before.zfill(4)
-        # only add not_after property if the ISO date is a range
-        if not_after != "":
-            date["iso"]["not_after"] = not_after.zfill(4)
+            associated_list.append(assoc_obj)
 
-    if as_written != "":
-        date["as_written"] = as_written
-    if len(note) > 0:
-        date["note"] = note
-    
-    return date
-
-def create_associated_name(id: str, value: str, as_written: str, role: object, note: list):
-    name = {}
-    if id != "":
-        name["id"] = id
-    if value != "":
-        name["value"] = value
-    if as_written != "":
-        name["as_written"] = as_written
-    name["role"] = role
-    if len(note) > 0:
-        name["note"] = note
-    return name
-
-def create_associated_place(id: str, value: str, as_written: str, event: object, note: list):
-    place = {}
-    if id != "":
-        place["id"] = id
-    if value != "":
-        place["value"] = value
-    if as_written != "":
-        place["as_written"] = as_written
-    place["event"] = event
-    if len(note) > 0:
-        place["note"] = note
-    return place
-
+    return associated_list
 
 # Takes a row from a CSV and a boolean indicating if is called by a part or not
 # Creates the overtext, undertext, and guest content layers
@@ -1092,3 +1063,75 @@ def create_notes_from_specific_columns(notes_by_type: list):
                     }
                 )
     return all_notes
+
+def create_image_provenance_from_row(row: pd.Series):
+    field_map = {
+        "label": {
+            "column_header": "Image Program Labels",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "description": {
+            "column_header": "Image Program Descriptions",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "camera_operator": {
+            "column_header": "Image Program Camera Operators",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": ","
+        },
+        "imaging_date": {
+            "column_header": "Image Program Imaging Date",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "delivery": {
+            "column_header": "Image Program Delivery",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "msi_processing": {
+            "column_header": "Image Program MSI Processing",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": ","
+        },
+        "condition_category": {
+            "column_header": "Image Program Condition Category",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "note": {
+            "column_header": "Image Program Note",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "array",
+            "array_delimiter": "|"
+        }
+    }
+
+    provenance = {}
+    provenance["program"] = helpers.collate_rolled_up_fields(data=row,
+                                                             field_map=field_map,
+                                                             length_determining_field="label")
+
+    # Add the rights from a config
+    provenance["rights"] = config.IMAGE_RIGHTS
+    return provenance

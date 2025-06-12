@@ -3,6 +3,7 @@ Utilities and other helper functions for transforming CSV to JSON
 """
 import pandas as pd
 import transform.config as config
+from io import StringIO
 
 def setup_main_csv(path_to_csv: str, log: bool):
     csv_file = pd.read_csv(path_to_csv)
@@ -61,7 +62,7 @@ def initialize_side_csv(path_to_csv: str, path_to_allowed_fields_doc: str):
 # Used to pre-process "side" CSVs referenced from the main CSV, e.g. for work witnesses
 
 def get_side_csv_data(ids: list, csv: pd.DataFrame, sort_by_sequence: bool):
-    data = csv.loc[ids]
+    data = csv.loc[list(map(int, ids))]
     if sort_by_sequence:
         return data.sort_values("Sequence")
     return data
@@ -86,3 +87,76 @@ def parse_rolled_up_field(data: str, delimiter: str, quotechar: str):
                     continue
                 vals.append(x.strip())
     return vals
+
+# Takes an unoredered list and a list of integers representing the correct sequence
+# Returns a list that has been reordered according to the sequence
+def order_list_by_sequence(unordered: list, seq: list):
+    # initialize a list of the same length as the unordered list
+    ordered = [None] * len(unordered)
+    for i in range(0, len(seq)):
+        ordered[seq[i]-1] = unordered[i]
+    return ordered
+
+def parse_iso_date(iso: str):
+    not_before = str(iso).split("/")[0]
+    if len(str(iso).split("/")) > 1:
+        not_after = str(iso).split("/")[1]
+    else:
+        not_after = ""
+    date = {}
+    date["not_before"] = not_before.zfill(4)
+    # only add not_after property if the ISO date is a range
+    if not_after != "":
+        date["not_after"] = not_after.zfill(4)
+    return date
+
+"""
+Takes a row of data and a dictionary mapping JSON keys to column headers and other config options
+Based on the key supplied as the "length_determining_field",
+Return an object with keys 
+
+field_map should look like:
+{
+    "key": {
+        "column_header": "string",
+        "required": "boolean",
+        "delimiter": "string",
+        "quotechar": "string",
+        "data_type": "string, array",
+        "array_delimiter": "string (optional)"
+    },
+    "key2": {
+        ...
+    },
+    ...
+}
+"""
+def collate_rolled_up_fields(data: pd.Series, field_map: dict, length_determining_field):
+    collated_data = {}
+    
+    collated_data[length_determining_field] = pd.read_csv(StringIO(str(data[field_map[length_determining_field]["column_header"]])), sep=field_map[length_determining_field]["delimiter"], quotechar=field_map[length_determining_field]["quotechar"], skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+
+    length = len(collated_data[length_determining_field])
+
+    for key in field_map.keys():
+        # skip the length determining field, since it's already been parsed
+        if key == length_determining_field:
+            continue
+        values = pd.read_csv(StringIO(str(data[field_map[key]["column_header"]])), sep=field_map[key]["delimiter"], quotechar=field_map[key]["quotechar"], skipinitialspace=True, engine='python', header=None).astype(str).fillna("").iloc[0].values.flatten().tolist()
+
+        # if the value is optional, it's possible the column is blank, so add empty to the length
+        if not(field_map[key]["required"]) and len(values) <= 1 and str(values[0]) == "nan":
+            values = [""] * length
+        collated_data[key] = values
+        
+        # handle multi-level arrays, like for note fields
+        if field_map[key]["data_type"] == "array":
+            for i in range(len(values)):
+                values[i] = values[i].split(field_map[key]["array_delimiter"])
+                values[i] = [v for v in values[i] if v not in ["nan", ""]]
+                # arr = array.array('i', [x for x in arr if x != 2])
+
+
+    # convert the dictionary of arrays into an array of dictionaries
+    return [{k : v[i] for k, v in collated_data.items() if (str(v[i]) not in ["", "nan"]) and len(v[i]) > 0}
+         for i in range(0, length)]
