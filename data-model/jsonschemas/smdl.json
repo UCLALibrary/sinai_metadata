@@ -1124,8 +1124,7 @@
                                 }
                             },
                             "required": [
-                                "type",
-                                "locus"
+                                "type"
                             ],
                             "unevaluatedProperties": false
                         },
