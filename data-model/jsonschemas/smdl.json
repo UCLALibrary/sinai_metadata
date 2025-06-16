@@ -52,7 +52,7 @@
         "features": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "#/$defs/controlled_term"
             },
             "unevaluatedItems": false
         },
@@ -648,6 +648,13 @@
                     },
                     "unevaluatedItems": false
                 },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "unevaluatedItems": false
+                },
                 "assoc_date": {
                     "type": "array",
                     "items": {
@@ -939,6 +946,13 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "unevaluatedItems": false
                 },
