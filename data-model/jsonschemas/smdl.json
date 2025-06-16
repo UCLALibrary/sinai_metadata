@@ -910,7 +910,7 @@
             "required": [
                 "id",
                 "label",
-                "system"
+                "writing_system"
             ],
             "unevaluatedProperties": false
         },
