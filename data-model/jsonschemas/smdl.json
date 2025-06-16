@@ -1024,9 +1024,7 @@
             ]
         },
         "work_witness": {
-            "type": "array",
-            "items": {
-                "type": "object",
+            "type": "object",
                 "properties": {
                     "locus": {
                         "type": "string"
@@ -1165,9 +1163,6 @@
                     }
                 },
                 "unevaluatedProperties": false
-            },
-            "minItems": 1,
-            "unevaluatedItems": false
         }
     }
 }
