@@ -1077,8 +1077,7 @@
                                     "required": [
                                         "id",
                                         "pref_name"
-                                    ],
-                                    "unevaluatedProperties": false
+                                    ]
                                 },
                                 "unevaluatedItems": false
                             },
@@ -1089,8 +1088,7 @@
                                 },
                                 "unevaluatedItems": false     
                             }
-                        },
-                        "unevaluatedProperties": false
+                        }
                     },
                     "alt_title": {
                         "type": "string"
