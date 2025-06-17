@@ -1,5 +1,7 @@
 ID
 UUID
+Short Code
+Citation
 Type ID
 Type Label
 Range

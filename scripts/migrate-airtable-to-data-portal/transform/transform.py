@@ -427,6 +427,9 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
         # ref_info = ref_instances.loc[ref_instances["ID"] == id]
         bib_data = {}
         bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
+        bib_data["shortcode"] = str(ref_instances.loc[int(id), "Short Code"])
+        bib_data["citation"] = str(ref_instances.loc[int(id), "Citation"])
+        
         bib_data["type"] = {
             "id": str(ref_instances.loc[int(id), "Type ID"]),
             "label": str(ref_instances.loc[int(id), "Type Label"])
