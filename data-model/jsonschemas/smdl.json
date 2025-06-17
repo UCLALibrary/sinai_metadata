@@ -483,6 +483,9 @@
                 "shortcode": {
                     "type": "string"
                 },
+                "citation": {
+                    "type": "string"
+                },
                 "type": {
                     "$ref": "#/$defs/controlled_term"
                 },
@@ -507,6 +510,7 @@
             "required": [
                 "id",
                 "shortcode",
+                "citation",
                 "type"
             ]
         },
