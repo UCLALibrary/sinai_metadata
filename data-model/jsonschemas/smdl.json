@@ -846,6 +846,13 @@
                     },
                     "unevaluatedItems": false
                 },
+                "related_mss": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/related_mss"
+                    },
+                    "unevaluatedItems": false
+                },
                 "note": {
                     "type": "array",
                     "items": {
