@@ -200,33 +200,7 @@
             "unevaluatedItems": false
         },
         "desc_provenance": {
-            "type": "object",
-            "properties": {
-                "program": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "label": {
-                                "type": "string"
-                            },
-                            "description": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "label",
-                            "description"
-                        ],
-                        "unevaluatedProperties": false
-                    },
-                    "unevaluatedItems": false
-                },
-                "rights": {
-                    "type": "string"
-                }
-            },
-            "unevaluatedProperties": false
+            "$ref": "#/$defs/desc_provenance"
         },
         "image_provenance": {
             "type": "object",
@@ -539,11 +513,49 @@
             ],
             "unevaluatedProperties": false
         },
+        "desc_provenance": {
+            "type": "object",
+            "properties": {
+                "program": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "label",
+                            "description"
+                        ],
+                        "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "rights": {
+                    "type": "string"
+                }
+            },
+            "unevaluatedProperties": false
+        },
         "layer": {
             "type": "object",
             "properties": {
                 "ark": {
                     "$ref": "#/$defs/ark"
+                },
+                "reconstruction": {
+                    "type": "boolean"
+                },
+                "state": {
+                    "$ref": "#/$defs/controlled_term"
+                },
+                "label": {
+                    "type": "string"
                 },
                 "locus": {
                     "type": "string"
@@ -693,6 +705,13 @@
                     },
                     "unevaluatedItems": false
                 },
+                "related_mss": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/related_mss"
+                    },
+                    "unevaluatedItems": false
+                },
                 "bib": {
                     "type": "array",
                     "items": {
@@ -700,18 +719,37 @@
                     },
                     "unevaluatedItems": false
                 },
+                "desc_provenance": {
+                    "$ref": "#/$defs/desc_provenance"
+                },
                 "cataloguer": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/cataloguer"
                     },
                     "unevaluatedItems": false
+                },
+                "parent": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ark"
+                    }
+                },
+                "reconstructed_from": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ark"
+                    }
                 }
             },
             "required": [
                 "ark",
+                "reconstruction",
+                "state",
+                "label",
                 "writing",
-                "text_unit"
+                "text_unit",
+                "parent"
             ],
             "unevaluatedProperties": false
         },
