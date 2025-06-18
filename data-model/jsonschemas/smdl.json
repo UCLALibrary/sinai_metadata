@@ -545,6 +545,33 @@
         "layer": {
             "type": "object",
             "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/$defs/controlled_term"
+                },
+                "locus": {
+                    "type": "string"
+                },
+                "record": {
+                    "$ref": "#/$defs/layer_record"
+                }
+            },
+            "required": [
+                "id",
+                "label",
+                "type",
+                "record"
+            ],
+            "unevaluatedProperties": false
+        },
+        "layer_record": {
+            "type": "object",
+            "properties": {
                 "ark": {
                     "$ref": "#/$defs/ark"
                 },
@@ -658,7 +685,27 @@
                 "text_unit": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/text_unit"
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "$ref": "#/$defs/ark"
+                            },
+                            "label": {
+                                "type": "string"
+                            },
+                            "locus": {
+                                "type": "string"
+                            },
+                            "record": {
+                                "$ref": "#/$defs/text_unit"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "label",
+                            "record"
+                        ],
+                        "unevaluatedProperties": false
                     },
                     "minItems": 1,
                     "unevaluatedItems": false
