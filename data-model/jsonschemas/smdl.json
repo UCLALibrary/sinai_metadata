@@ -979,6 +979,12 @@
                 "ark": {
                     "$ref": "#/$defs/ark"
                 },
+                "reconstruction": {
+                    "type": "boolean"
+                },
+                "label": {
+                    "type": "string"
+                },
                 "locus": {
                     "type": "string"
                 },
@@ -1030,18 +1036,38 @@
                     },
                     "unevaluatedItems": false
                 },
+                "desc_provenance": {
+                    "$ref": "#/$defs/desc_provenance"
+                },
                 "cataloguer": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/cataloguer"
                     },
                     "unevaluatedItems": false
+                },
+                "reconstructed_from": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ark"
+                    },
+                    "unevaluatedItems": false
+                },
+                "parent": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ark"
+                    },
+                    "unevaluatedItems": false
                 }
             },
             "required": [
                 "ark",
+                "reconstruction",
+                "label",
                 "lang",
-                "work_wit"
+                "work_wit",
+                "parent"
             ],
             "unevaluatedProperties": false
         },
