@@ -271,31 +271,13 @@ def transform_row_to_json(row: pd.DataFrame, record_type: str):
     if record_type == "ms_objs" and not(pd.isnull(row["Image Program Labels"])):
         data["image_provenance"] = create_image_provenance_from_row(row)
 
-    """
-    TBD: Cataloguer field not needed at the ms_obj level. TBD for layers
+    
     # TBD cataloguer field for running the script (set in a config for who runs the script?)
     data["cataloguer"] = [] # TBD: this initiates the field for use in the Contributo info; otherwise replace with the contributor data for who runs the script
 
     # Cataloguer info from Contributor field
     if not(pd.isnull(row["Contributor Name"])):
-        timestamp = datetime.datetime.now()
-        # parse the rolled up fields containing change log info
-        contributors = helpers.parse_rolled_up_field(str(row["Contributor Name"]), ",", "#")
-        messages = helpers.parse_rolled_up_field(str(row["Change Log Message"]), "|~|", "#")
-        orcids = helpers.parse_rolled_up_field(str(row["Contributor ORCiD"]), ",", "#")
-
-        # for each listed contribution, add the change log info
-        change_log = []
-        for i in range(0, len(contributors)):
-            change = {}
-            change["message"] = messages[i]
-            change["contributor"] = contributors[i]
-            change["added_by"] = orcids[i]
-            change["timestamp"] = timestamp
-            change_log.append(change)
-        
-        data["cataloguer"] += change_log
-    """
+        data["cataloguer"] += create_cataloguer_from_row(row)
 
     # reconstructed from, only used for records that are reconstructions
     if data["reconstruction"]:
@@ -445,6 +427,9 @@ def create_bibs_from_row(row: pd.Series, ref_instances: pd.DataFrame):
         # ref_info = ref_instances.loc[ref_instances["ID"] == id]
         bib_data = {}
         bib_data["id"] = str(ref_instances.loc[int(id), "UUID"])
+        bib_data["shortcode"] = str(ref_instances.loc[int(id), "Short Code"])
+        bib_data["citation"] = str(ref_instances.loc[int(id), "Citation"])
+        
         bib_data["type"] = {
             "id": str(ref_instances.loc[int(id), "Type ID"]),
             "label": str(ref_instances.loc[int(id), "Type Label"])
@@ -1135,3 +1120,33 @@ def create_image_provenance_from_row(row: pd.Series):
     # Add the rights from a config
     provenance["rights"] = config.IMAGE_RIGHTS
     return provenance
+
+def create_cataloguer_from_row(row: pd.Series):
+    field_map = {
+        "message": {
+            "column_header": "Change Log Message",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "contributor": {
+            "column_header": "Contributor Name",
+            "required": False,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        },
+        "added_by": {
+            "column_header": "Contributor ORCiD",
+            "required": True,
+            "delimiter": "\|~\|",
+            "quotechar": "#",
+            "data_type": "string"
+        }
+    }
+    cataloguers = helpers.collate_rolled_up_fields(data=row, field_map=field_map, length_determining_field="contributor")
+
+    for i in range(0, len(cataloguers)):
+        cataloguers[i]["timestamp"] = datetime.datetime.now()
+    return cataloguers

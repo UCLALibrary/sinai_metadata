@@ -9,6 +9,13 @@
             "type": "string",
             "format": "uuid"
         },
+        "shortcode": {
+            "type": "string"
+
+        },
+        "citation": {
+            "type": "string"
+        },
         "type": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/controlled_term"
         },
@@ -43,6 +50,8 @@
     },
     "required": [
         "id",
+        "shortcode",
+        "citation",
         "type"
     ],
     "if": {
@@ -69,6 +78,8 @@
         },
         "required": [
             "id",
+            "shortcode",
+            "citation",
             "type",
             "url"
         ]

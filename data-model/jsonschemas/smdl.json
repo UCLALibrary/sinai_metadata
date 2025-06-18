@@ -52,7 +52,7 @@
         "features": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "#/$defs/controlled_term"
             },
             "unevaluatedItems": false
         },
@@ -483,6 +483,9 @@
                 "shortcode": {
                     "type": "string"
                 },
+                "citation": {
+                    "type": "string"
+                },
                 "type": {
                     "$ref": "#/$defs/controlled_term"
                 },
@@ -507,6 +510,7 @@
             "required": [
                 "id",
                 "shortcode",
+                "citation",
                 "type"
             ]
         },
@@ -645,6 +649,13 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "unevaluatedItems": false
                 },
@@ -903,7 +914,7 @@
             "required": [
                 "id",
                 "label",
-                "system"
+                "writing_system"
             ],
             "unevaluatedProperties": false
         },
@@ -939,6 +950,13 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/paracontent"
+                    },
+                    "unevaluatedItems": false
+                },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
                     },
                     "unevaluatedItems": false
                 },
@@ -1024,9 +1042,7 @@
             ]
         },
         "work_witness": {
-            "type": "array",
-            "items": {
-                "type": "object",
+            "type": "object",
                 "properties": {
                     "locus": {
                         "type": "string"
@@ -1061,8 +1077,7 @@
                                     "required": [
                                         "id",
                                         "pref_name"
-                                    ],
-                                    "unevaluatedProperties": false
+                                    ]
                                 },
                                 "unevaluatedItems": false
                             },
@@ -1073,8 +1088,7 @@
                                 },
                                 "unevaluatedItems": false     
                             }
-                        },
-                        "unevaluatedProperties": false
+                        }
                     },
                     "alt_title": {
                         "type": "string"
@@ -1112,8 +1126,7 @@
                                 }
                             },
                             "required": [
-                                "type",
-                                "locus"
+                                "type"
                             ],
                             "unevaluatedProperties": false
                         },
@@ -1165,9 +1178,6 @@
                     }
                 },
                 "unevaluatedProperties": false
-            },
-            "minItems": 1,
-            "unevaluatedItems": false
         }
     }
 }

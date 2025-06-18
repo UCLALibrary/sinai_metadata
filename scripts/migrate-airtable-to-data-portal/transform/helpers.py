@@ -144,6 +144,8 @@ def collate_rolled_up_fields(data: pd.Series, field_map: dict, length_determinin
             continue
         values = pd.read_csv(StringIO(str(data[field_map[key]["column_header"]])), sep=field_map[key]["delimiter"], quotechar=field_map[key]["quotechar"], skipinitialspace=True, engine='python', header=None).astype(str).fillna("").iloc[0].values.flatten().tolist()
 
+        if len(values) > 0 and len(values) != length:
+            raise ValueError(f"The number of entries for the {field_map[key]["column_header"]} ({len(values)}) does not match the number of entries for {field_map[length_determining_field]["column_header"]} ({length})")
         # if the value is optional, it's possible the column is blank, so add empty to the length
         if not(field_map[key]["required"]) and len(values) <= 1 and str(values[0]) == "nan":
             values = [""] * length
