@@ -18,9 +18,6 @@
             "type": "string",
             "minLength": 1
         },
-        "ms_date": {
-            "$ref": "#/$defs/aggregated_date"
-        },
         "summary": {
             "type": "string"
         },
@@ -41,13 +38,6 @@
         },
         "coll": {
             "type": "string"
-        },
-        "genre": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "unevaluatedItems": false
         },
         "features": {
             "type": "array",
@@ -555,9 +545,6 @@
                 "ark": {
                     "$ref": "#/$defs/ark"
                 },
-                "origin_date": {
-                    "$comment": "TBD: is this an aggregated date, just iso, just value?"
-                },
                 "locus": {
                     "type": "string"
                 },
@@ -810,9 +797,6 @@
                 },
                 "summary": {
                     "type": "string"
-                },
-                "part_date": {
-                    "$ref": "#/$defs/aggregated_date"
                 },
                 "locus": {
                     "type": "string"
