@@ -209,13 +209,6 @@
             },
             "unevaluatedItems": false
         },
-        "cataloguer": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "unevaluatedItems": false
-        },
         "desc_provenance": {
             "type": "object",
             "properties": {
@@ -310,9 +303,12 @@
             },
             "unevaluatedItems": false
         },
-        "last_modified": {
-            "type": "string",
-            "format": "date"
+        "cataloguer": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/cataloguer"
+            },
+            "unevaluatedItems": false
         }
     },
     "required": [
@@ -324,8 +320,7 @@
         "state",
         "part",
         "location",
-        "iiif",
-        "last_modified"
+        "iiif"
     ],
     "unevaluatedProperties": false,
     "$defs": {
@@ -514,6 +509,30 @@
                 "type"
             ]
         },
+        "cataloguer": {
+            "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    },
+                    "contributor": {
+                        "type": "string"
+                    },
+                    "added_by": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "required": [
+                    "message",
+                    "added_by",
+                    "timestamp"
+                ],
+                "unevaluatedProperties": false
+        },
         "controlled_term": {
             "type": "object",
             "properties": {
@@ -691,6 +710,13 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/bib"
+                    },
+                    "unevaluatedItems": false
+                },
+                "cataloguer": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/cataloguer"
                     },
                     "unevaluatedItems": false
                 }
@@ -972,6 +998,13 @@
                     "items": {
                         "$ref": "#/$defs/bib",
                         "unevaluatedProperties": false
+                    },
+                    "unevaluatedItems": false
+                },
+                "cataloguer": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/cataloguer"
                     },
                     "unevaluatedItems": false
                 }
