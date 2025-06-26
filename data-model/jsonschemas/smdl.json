@@ -1285,6 +1285,26 @@
                         "$ref": "#/$defs/controlled_term"
                     },
                     "unevaluatedItems": false     
+                },
+                "refno": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string"
+                        },
+                        "idno": {
+                            "type": "string"
+                        },
+                        "source": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "idno",
+                        "source"
+                    ],
+                    "unevaluatedProperties": false
                 }
             }
         },
