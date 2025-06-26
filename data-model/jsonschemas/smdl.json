@@ -1166,7 +1166,24 @@
                     "unevaluatedItems": false
                 },
                 "orig_date": {
-                    "type": "string"
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "type": "string"
+                        },
+                        "iso": {
+                            "type": "object",
+                            "properties": {
+                                "not_before": {
+                                    "type": "string"
+                                },
+                                "not_after": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "unevaluatedProperties": false
                 }
             },
             "required": [
@@ -1174,7 +1191,8 @@
                 "label",
                 "script",
                 "lang"
-            ]
+            ],
+            "unevaluatedProperties": false
         },
         "work_witness": {
             "type": "object",
