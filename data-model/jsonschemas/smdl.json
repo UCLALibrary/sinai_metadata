@@ -1206,6 +1206,13 @@
                 "desc_title": {
                     "type": "string"
                 },
+                "alt_title": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                },
                 "creator": {
                     "type": "array",
                     "items": {
