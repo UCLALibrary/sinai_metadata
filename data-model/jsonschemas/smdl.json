@@ -288,6 +288,24 @@
     ],
     "unevaluatedProperties": false,
     "$defs": {
+        "agent_record": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
+                "pref_name": {
+                    "type": "string"
+                },
+                "alt_name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            }
+        },
         "aggregated_date": {
             "type": "object",
             "properties": {
@@ -377,8 +395,8 @@
                 "id": {
                     "$ref": "#/$defs/ark"
                 },
-                "pref_name": {
-                    "type": "string"
+                "agent_record": {
+                    "$ref": "#/$defs/agent_record"
                 },
                 "value": {
                     "type": "string"
@@ -1221,8 +1239,8 @@
                             "id": {
                                 "$ref": "#/$defs/ark"
                             },
-                            "pref_name": {
-                                "type": "string"
+                            "agent_record": {
+                                "$refs": "#/$defs/agent_record"
                             },
                             "role": {
                                 "$ref": "#/$defs/controlled_term"
