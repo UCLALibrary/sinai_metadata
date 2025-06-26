@@ -291,7 +291,7 @@
         "agent_record": {
             "type": "object",
             "properties": {
-                "id": {
+                "ark": {
                     "$ref": "#/$defs/ark"
                 },
                 "pref_name": {
@@ -304,7 +304,11 @@
                     },
                     "unevaluatedItems": false
                 }
-            }
+            },
+            "required": [
+                "ark",
+                "pref_name"
+            ]
         },
         "aggregated_date": {
             "type": "object",
@@ -426,8 +430,8 @@
                 "id": {
                     "$ref": "#/$defs/ark"
                 },
-                "pref_name": {
-                    "type": "string"
+                "place_record": {
+                    "$ref": "#/$defs/place_record"
                 },
                 "value": {
                     "type": "string"
@@ -969,6 +973,28 @@
                 "ot_layer"
             ],
             "unevaluatedProperties": false
+        },
+        "place_record": {
+            "type": "object",
+            "properties": {
+                "ark": {
+                    "$refs": "#/$defs/ark"
+                },
+                "pref_name": {
+                    "type": "string"
+                },
+                "alt_name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "unevaluatedItems": false
+                }
+            },
+            "required": [
+                "ark",
+                "pref_name"
+            ]
         },
         "related_mss": {
             "type": "object",
