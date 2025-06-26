@@ -1194,6 +1194,49 @@
             ],
             "unevaluatedProperties": false
         },
+        "work_record": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
+                "pref_title": {
+                    "type": "string"
+                },
+                "desc_title": {
+                    "type": "string"
+                },
+                "creator": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "$ref": "#/$defs/ark"
+                            },
+                            "pref_name": {
+                                "type": "string"
+                            },
+                            "role": {
+                                "$ref": "#/$defs/controlled_term"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "pref_name"
+                        ]
+                    },
+                    "unevaluatedItems": false
+                },
+                "genre": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "unevaluatedItems": false     
+                }
+            }
+        },
         "work_witness": {
             "type": "object",
                 "properties": {
@@ -1201,47 +1244,7 @@
                         "type": "string"
                     },
                     "work": {
-                        "type": "object",
-                        "properties": {
-                            "id": {
-                                "$ref": "#/$defs/ark"
-                            },
-                            "pref_title": {
-                                "type": "string"
-                            },
-                            "desc_title": {
-                                "type": "string"
-                            },
-                            "creator": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "id": {
-                                            "$ref": "#/$defs/ark"
-                                        },
-                                        "pref_name": {
-                                            "type": "string"
-                                        },
-                                        "role": {
-                                            "$ref": "#/$defs/controlled_term"
-                                        }
-                                    },
-                                    "required": [
-                                        "id",
-                                        "pref_name"
-                                    ]
-                                },
-                                "unevaluatedItems": false
-                            },
-                            "genre": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "#/$defs/controlled_term"
-                                },
-                                "unevaluatedItems": false     
-                            }
-                        }
+                        "$ref": "#/$defs/work_record"
                     },
                     "alt_title": {
                         "type": "string"
