@@ -579,7 +579,7 @@
                 "locus": {
                     "type": "string"
                 },
-                "record": {
+                "layer_record": {
                     "$ref": "#/$defs/layer_record"
                 }
             },
@@ -587,7 +587,7 @@
                 "id",
                 "label",
                 "type",
-                "record"
+                "layer_record"
             ],
             "unevaluatedProperties": false
         },
@@ -718,14 +718,14 @@
                             "locus": {
                                 "type": "string"
                             },
-                            "record": {
+                            "text_unit_record": {
                                 "$ref": "#/$defs/text_unit"
                             }
                         },
                         "required": [
                             "id",
                             "label",
-                            "record"
+                            "text_unit_record"
                         ],
                         "unevaluatedProperties": false
                     },
@@ -1274,7 +1274,7 @@
                         },
                         "required": [
                             "id",
-                            "pref_name"
+                            "agent_record"
                         ]
                     },
                     "unevaluatedItems": false
