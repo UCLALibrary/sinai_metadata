@@ -1213,23 +1213,27 @@
                     "unevaluatedItems": false
                 },
                 "orig_date": {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": "string"
-                        },
-                        "iso": {
-                            "type": "object",
-                            "properties": {
-                                "not_before": {
-                                    "type": "string"
-                                },
-                                "not_after": {
-                                    "type": "string"
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "string"
+                            },
+                            "iso": {
+                                "type": "object",
+                                "properties": {
+                                    "not_before": {
+                                        "type": "string"
+                                    },
+                                    "not_after": {
+                                        "type": "string"
+                                    }
                                 }
                             }
                         }
-                    }
+                    },
+                    "unevaluatedItems": false
                 }
             },
             "required": [
