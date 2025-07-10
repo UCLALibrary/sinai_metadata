@@ -233,6 +233,9 @@
                             "condition_category": {
                                 "type": "string"
                             },
+                            "imaging_system": {
+                                "type": "string"
+                            },
                             "note": {
                                 "type": "array",
                                 "items": {

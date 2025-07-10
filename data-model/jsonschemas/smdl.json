@@ -241,6 +241,9 @@
                             "condition_category": {
                                 "type": "string"
                             },
+                            "imaging_system": {
+                                "type": "string"
+                            },
                             "note": {
                                 "type": "array",
                                 "items": {
@@ -366,10 +369,10 @@
                     "type": "object",
                     "properties": {
                         "not_before": {
-                            "type": "string"
+                            "type": "integer"
                         },
                         "not_after": {
-                            "type": "string"
+                            "type": "integer"
                         }
                     },
                     "required": [
@@ -1224,10 +1227,10 @@
                                 "type": "object",
                                 "properties": {
                                     "not_before": {
-                                        "type": "string"
+                                        "type": "integer"
                                     },
                                     "not_after": {
-                                        "type": "string"
+                                        "type": "integer"
                                     }
                                 }
                             }
