@@ -423,6 +423,12 @@
                   "type": "string",
                   "format": "uuid"
                 },
+                "shortcode": {
+                  "type": "string"
+                },
+                "citation": {
+                  "type": "string"
+                },
                 "type": {
                   "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
                   "type": "object",
@@ -476,6 +482,8 @@
               },
               "required": [
                 "id",
+                "shortcode",
+                "citation",
                 "type"
               ],
               "if": {
@@ -504,6 +512,8 @@
                 },
                 "required": [
                   "id",
+                  "shortcode",
+                  "citation",
                   "type",
                   "url"
                 ]
@@ -534,6 +544,24 @@
         "type": "object",
         "properties": {
           "type": {
+            "enum": [
+              {
+                "id": "history",
+                "label": "History"
+              },
+              {
+                "id": "guest",
+                "label": "Guest"
+              },
+              {
+                "id": "framing",
+                "label": "Framing"
+              },
+              {
+                "id": "misc",
+                "label": "Miscellaneous"
+              }
+            ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
             "type": "object",
             "properties": {
@@ -551,6 +579,29 @@
               "label"
             ],
             "unevaluatedProperties": false
+          },
+          "subtype": {
+            "type": "array",
+            "items": {
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
           },
           "locus": {
             "type": "string",
@@ -967,6 +1018,12 @@
             "type": "string",
             "format": "uuid"
           },
+          "shortcode": {
+            "type": "string"
+          },
+          "citation": {
+            "type": "string"
+          },
           "type": {
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
             "type": "object",
@@ -1020,6 +1077,8 @@
         },
         "required": [
           "id",
+          "shortcode",
+          "citation",
           "type"
         ],
         "if": {
@@ -1048,6 +1107,8 @@
           },
           "required": [
             "id",
+            "shortcode",
+            "citation",
             "type",
             "url"
           ]
@@ -1055,6 +1116,35 @@
         "unevaluatedProperties": false
       },
       "unevaluatedItems": false
+    },
+    "desc_provenance": {
+      "type": "object",
+      "properties": {
+        "program": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "description"
+            ],
+            "unevaluatedProperties": false
+          },
+          "unevaluatedItems": false
+        },
+        "rights": {
+          "type": "string"
+        }
+      },
+      "unevaluatedProperties": false
     },
     "cataloguer": {
       "type": [
