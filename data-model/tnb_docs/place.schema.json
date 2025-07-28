@@ -234,6 +234,12 @@
             "type": "string",
             "format": "uuid"
           },
+          "shortcode": {
+            "type": "string"
+          },
+          "citation": {
+            "type": "string"
+          },
           "type": {
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
             "type": "object",
@@ -287,6 +293,8 @@
         },
         "required": [
           "id",
+          "shortcode",
+          "citation",
           "type"
         ],
         "if": {
@@ -315,6 +323,8 @@
           },
           "required": [
             "id",
+            "shortcode",
+            "citation",
             "type",
             "url"
           ]

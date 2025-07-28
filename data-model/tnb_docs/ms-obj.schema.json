@@ -314,6 +314,24 @@
               "type": "object",
               "properties": {
                 "type": {
+                  "enum": [
+                    {
+                      "id": "history",
+                      "label": "History"
+                    },
+                    {
+                      "id": "guest",
+                      "label": "Guest"
+                    },
+                    {
+                      "id": "framing",
+                      "label": "Framing"
+                    },
+                    {
+                      "id": "misc",
+                      "label": "Miscellaneous"
+                    }
+                  ],
                   "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
                   "type": "object",
                   "properties": {
@@ -331,6 +349,29 @@
                     "label"
                   ],
                   "unevaluatedProperties": false
+                },
+                "subtype": {
+                  "type": "array",
+                  "items": {
+                    "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "label": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "label"
+                    ],
+                    "unevaluatedProperties": false
+                  },
+                  "unevaluatedItems": false
                 },
                 "locus": {
                   "type": "string",
@@ -889,6 +930,24 @@
         "type": "object",
         "properties": {
           "type": {
+            "enum": [
+              {
+                "id": "history",
+                "label": "History"
+              },
+              {
+                "id": "guest",
+                "label": "Guest"
+              },
+              {
+                "id": "framing",
+                "label": "Framing"
+              },
+              {
+                "id": "misc",
+                "label": "Miscellaneous"
+              }
+            ],
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
             "type": "object",
             "properties": {
@@ -906,6 +965,29 @@
               "label"
             ],
             "unevaluatedProperties": false
+          },
+          "subtype": {
+            "type": "array",
+            "items": {
+              "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ],
+              "unevaluatedProperties": false
+            },
+            "unevaluatedItems": false
           },
           "locus": {
             "type": "string",
@@ -1708,6 +1790,12 @@
             "type": "string",
             "format": "uuid"
           },
+          "shortcode": {
+            "type": "string"
+          },
+          "citation": {
+            "type": "string"
+          },
           "type": {
             "description": "A reference to a controlled term that is stored in a database table, referenced via ID but including a human-readable label",
             "type": "object",
@@ -1761,6 +1849,8 @@
         },
         "required": [
           "id",
+          "shortcode",
+          "citation",
           "type"
         ],
         "if": {
@@ -1789,6 +1879,8 @@
           },
           "required": [
             "id",
+            "shortcode",
+            "citation",
             "type",
             "url"
           ]
@@ -1879,14 +1971,49 @@
       },
       "unevaluatedItems": false
     },
-    "dig_provenance": {
+    "desc_provenance": {
       "type": "object",
       "properties": {
-        "images": {
+        "program": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
+              "label": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "description"
+            ],
+            "unevaluatedProperties": false
+          },
+          "unevaluatedItems": false
+        },
+        "rights": {
+          "type": "string"
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "image_provenance": {
+      "type": "object",
+      "properties": {
+        "program": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
               "camera_operator": {
                 "type": "array",
                 "items": {
@@ -1909,10 +2036,10 @@
                 },
                 "unevaluatedItems": false
               },
-              "program": {
+              "condition_category": {
                 "type": "string"
               },
-              "condition_category": {
+              "imaging_system": {
                 "type": "string"
               },
               "note": {
@@ -1927,40 +2054,12 @@
           },
           "unevaluatedItems": false
         },
-        "descriptions": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "program": {
-                "type": "string"
-              },
-              "note": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                },
-                "unevaluatedItems": false
-              }
-            },
-            "required": [
-              "program"
-            ]
-          }
-        },
-        "image_rights": {
-          "type": "string",
-          "minLength": 1
-        },
-        "metadata_rights": {
+        "rights": {
           "type": "string",
           "minLength": 1
         }
       },
-      "required": [
-        "image_rights",
-        "metadata_rights"
-      ]
+      "unevaluatedProperties": false
     },
     "cataloguer": {
       "type": [
