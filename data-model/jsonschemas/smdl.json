@@ -831,6 +831,13 @@
                 "type": {
                     "$ref": "#/$defs/controlled_term"
                 },
+                "subtype": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "unevaluatedItems": false
+                },
                 "label": {
                     "type": "string"
                 },
