@@ -629,6 +629,20 @@ def create_paracontent_from_row(row: pd.Series, column_name: str, paracontent_ta
             "id": str(paracontent_table.loc[int(id), "Type ID"]),
             "label": str(paracontent_table.loc[int(id), "Type Label"])
         }
+
+        # Subtypes, array of id/label objects
+        if not(pd.isnull(paracontent_table.loc[int(id), "Locus"])):
+            subtype_ids = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Subtype ID"]), ",", '#')
+            subtype_labels = helpers.parse_rolled_up_field(str(paracontent_table.loc[int(id), "Subtype Label"]), ",", '#')
+            para_data["subtype"] = []
+            for i in range(0, len(subtype_ids)):
+                para_data["subtype"].append(
+                    {
+                        "id": subtype_ids[i],
+                        "label": subtype_labels[i]
+                    }
+                )
+
         if not(pd.isnull(paracontent_table.loc[int(id), "Locus"])):
             para_data["locus"] = str(paracontent_table.loc[int(id), "Locus"])
         
