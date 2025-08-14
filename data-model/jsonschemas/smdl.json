@@ -266,7 +266,7 @@
         "reconstructed_from": {
             "type": "array",
             "items": {
-                "$ref": "#/$defs/ark"
+                "$ref": "#/$defs/recon_from"
             },
             "unevaluatedItems": false
         },
@@ -812,7 +812,7 @@
                 "reconstructed_from": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/ark"
+                        "$ref": "#/$defs/recon_from"
                     }
                 }
             },
@@ -1008,6 +1008,18 @@
                 "pref_name"
             ]
         },
+        "recon_from": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
+                "shelfmark": {
+                    "type": "string"
+                }
+            },
+            "unevaluatedProperties": false
+        },
         "related_mss": {
             "type": "object",
             "properties": {
@@ -1152,7 +1164,7 @@
                 "reconstructed_from": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/ark"
+                        "$ref": "#/$defs/recon_from"
                     },
                     "unevaluatedItems": false
                 },
