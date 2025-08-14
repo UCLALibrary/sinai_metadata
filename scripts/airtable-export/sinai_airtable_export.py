@@ -67,7 +67,7 @@ namesTableName = 'Names'
 uniformtitlesTableName = 'Uniform titles'
 textDirectionTableName = 'text direction'
 viewingHintTableName = 'viewingHint'
-CollectionTableName = 'Collection'
+CollectionTableName = 'Locations'
 programTableName = 'Program'
 
 
@@ -446,7 +446,8 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
 
     final_Collection = ''
     if row['Collection']:
-        final_Collection = airTableEntry(row['Collection'], 'Name', CollectionTable)
+        final_Collection = airTableEntry(row['Collection id'], 'Collection', CollectionTable)
+        # final_Collection = row["Collection"]
 
     final_viscodex = ''
     if row['Viscodex']:
@@ -530,4 +531,4 @@ for index, row in dfDelivery.sort_values('Shelfmark').iterrows():
 
 batchNum = batchNum.replace(".", "-")
 
-dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False, line_terminator='\n', encoding='utf-8')
+dfWorkbook.to_csv("works{batchNum}.csv".format(batchNum = batchNum), quoting=csv.QUOTE_ALL, index=False, lineterminator='\n', encoding='utf-8')
