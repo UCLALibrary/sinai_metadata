@@ -1,0 +1,144 @@
+{
+  "id": "ark:/99999/z1999997",
+  "type": "text_art",
+  "label": "Sinai Arabic 320, ff. 196r-209v. Ten Questions",
+  "foliation": [
+    "ff. 196r-209v"
+  ],
+  "extent": "14 ff.",
+  "embodies": "https://sinaiportal.library.ucla.edu/work/998",
+  "attested_title": {
+    "transcription": [
+      {
+        "ar": "مسائل سأل عنهم بعض التلاميذ من معلميه"
+      }
+    ],
+    "translation": [
+      {
+        "en": "Questions that one of the disciples asked of his master"
+      }
+    ],
+    "locus": "f. 196r"
+  },
+  "supplied_title": "Ten questions that one of the disciples asked of his master\n",
+  "condition": {
+    "note": [
+      "The text is incomplete at the end. It is missing after question 7"
+    ],
+    "features": null
+  },
+  "contents": null,
+  "events": null,
+  "paratexts": {
+    "rubric": [
+      {
+        "id": "ark:/99999/z1999997/parat1",
+        "type": "rubric",
+        "locus": "f. 196r",
+        "transcription": {
+          "ar": "مسائل سأل عنهم بعض التلاميذ من معلميه"
+        },
+        "translation": {
+          "en": "Questions that one of the disciples asked of his master"
+        },
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "prologue": null,
+    "incipit": [
+      {
+        "id": "ark:/99999/z1999997/parat2",
+        "type": "incipit",
+        "locus": "f. 196v",
+        "transcription": {
+          "ar": " قال التلميذ لجب منك يا معلّم كلام تختصر بيان العلماء يبيّن القليلين المعرفة الشيء المعني قولنا أنّ المسيح ابن الله وابن مريم العذري لان الحنفاء اذا سمعونا نقول ذلك يظنّوا ان(نا)  نعتقد ان الله بروح مريم"
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "explicit": null,
+    "subscription": null,
+    "marginalia": null
+  },
+  "associated_person": null,
+  "associated_place": null,
+  "associated_date": null,
+  "features": [
+    "Rubrication"
+  ],
+  "note": null,
+  "references": [
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
+      "citation_key": "Kamil",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "511"
+        },
+        {
+          "unit": "page",
+          "range": "42"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "bibliography": [
+    {
+      "uri": "$$$",
+      "citation_key": "CMR",
+      "cited_range": [
+        {
+          "unit": "volume",
+          "range": "3"
+        },
+        {
+          "unit": "page",
+          "range": "287-289"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F99999%2Fz1999997/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged"
+  },
+  "related_objects": {
+    "contained_in": [
+      {
+        "type": "primary_text_of",
+        "object": "ark:/99999/z1999999"
+      }
+    ]
+  },
+  "meta": {
+    "contributor": [
+      "William Potter",
+      "Chris PreJean"
+    ],
+    "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "EDITED: Added features data"
+      },
+      {
+        "date": "2022-10-24T08:44:09.96-07:00",
+        "contributor": "Chris PreJean",
+        "change": "CREATED: Textual Artifact ark:/99999/z1999998 for Sinai Arabic 320"
+      }
+    ],
+    "created": "2022-10-24T08:44:09.96-07:00"
+  }
+}
