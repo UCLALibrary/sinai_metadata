@@ -26,6 +26,13 @@
         "desc": {
             "$ref": "https://raw.githubusercontent.com/UCLALibrary/sinai_metadata/master/data-model/jsonschemas/utils.json#/$defs/summary"
         },
+        "geojson": {
+            "type": "array",
+            "items": {
+                "$ref": "https://geojson.org/schema/GeoJSON.json"
+            },
+            "unevaluatedItems": false
+        },
         "rel_con": {
             "type": ["array", "null"],
             "items": {
