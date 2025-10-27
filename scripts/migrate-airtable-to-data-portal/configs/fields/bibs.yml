@@ -1,0 +1,38 @@
+# Note to self: don't include the ID field if also listed as index_col in the table config
+uuid:
+  name: UUID
+  csv: text
+  airtable: text
+shortcode:
+  name: Short Code
+  csv: text
+  airtable: text
+citation:
+  name: Citation
+  csv: text
+  airtable: text
+range:
+  name: Range
+  csv: text
+  airtable: text
+type_id:
+  name: Type ID
+  csv: text
+  airtable: text
+type_label:
+  name: Type Label
+  csv: text
+  airtable: text
+url:
+  name: URL
+  csv: text
+  airtable: text
+alt_shelf:
+  name: Alt shelfmark
+  csv: text
+  airtable: text
+note:
+  name: Notes
+  csv: text+
+  airtable: text+
+  delimiter: ["$"]

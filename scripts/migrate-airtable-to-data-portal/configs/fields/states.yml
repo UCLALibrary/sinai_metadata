@@ -1,0 +1,8 @@
+label:
+  name: Name
+  csv: text
+  airtable: text
+id:
+  name: Portal ID
+  csv: text
+  airtable: text
