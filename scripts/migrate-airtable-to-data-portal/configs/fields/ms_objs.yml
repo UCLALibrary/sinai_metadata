@@ -42,7 +42,7 @@ state_label:
   name: State Label
   csv: text
   airtable: record
-  lookup_table: states
+  lookup: states.label
 fol:
   name: Foliation
   csv: text
@@ -71,13 +71,13 @@ feature_label:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: features
+  lookup: features
 part_id:
   name: Part IDs
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup_table: parts
+  lookup: parts
 part_label:
   name: Part Label
   csv: text
@@ -104,7 +104,7 @@ support_label:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: supports
+  lookup: supports
 support_note:
   name: Support note
   csv: text+
@@ -118,7 +118,7 @@ overtext_ark: # may be text+ and record+ technically?
   name: Overtext ARKs
   csv: text
   airtable: record
-  lookup_table: layers
+  lookup: layers
 overtext_label: # may be text+
   name: Overtext Labels
   csv: text
@@ -132,7 +132,7 @@ other_layer_ark:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: layers
+  lookup: layers
 other_layer_label:
   name: Other Layer Labels
   csv: text+
@@ -153,7 +153,7 @@ paracontent:
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup_table: paracontents
+  lookup: paracontents
 para_note:
   name: Paracontent note
   csv: text
@@ -167,7 +167,7 @@ location_id:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: locations
+  lookup: locations
 repository:
   name: Repository
   csv: text+
@@ -208,7 +208,7 @@ assoc_name_ark:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: names
+  lookup: names
 assoc_name_value:
   name: Associated Name Value
   csv: text+
@@ -239,7 +239,7 @@ assoc_place_ark:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup_table: places
+  lookup: places
 assoc_place_value:
   name: Associated Place Value
   csv: text+
@@ -255,7 +255,7 @@ assoc_place_event_id:
   csv: text+
   airtable: text+
   delimiter: [","]
-assoc_name_event_label:
+assoc_place_event_label:
   name: Associated Place Event Label
   csv: text+
   airtable: text+
@@ -300,7 +300,7 @@ related_mss:
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup_table: related_mss
+  lookup: related_mss
 viscodex_label:
   name: Viscodex Label
   csv: text+
@@ -316,7 +316,7 @@ bibs:
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup_table: bibs
+  lookup: bibs.*
 # tbd: allow multiple with a type??
 iiif_manifest_url:
   name: IIIF Manifest URL
