@@ -18,8 +18,6 @@ def transform_single_record(record, record_type, fields):
     # TODO: raise exception if not in main table types?
     result = {}
 
-    # TODO: drop conditions/delete empty
-
     # Add the ARK
     result['ark'] = parse.get_data_from_field(source=record, field_config=fields['ark'])
 
@@ -27,6 +25,7 @@ def transform_single_record(record, record_type, fields):
     reconstruction = parse.get_data_from_field(source=record, field_config=fields['reconstruction'])
     result['reconstruction'] = reconstruction == 'true'
 
+    # TODO: ms obj and layer only? or maybe just ms obj?
     result['type'] = {
         "id": parse.get_data_from_field(source=record, field_config=fields['type_id']),
         "label": parse.get_data_from_field(source=record, field_config=fields['type_label'])
@@ -43,7 +42,10 @@ def transform_single_record(record, record_type, fields):
 
     result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
 
-    # TODO: STATE --> first lookup for airtable record...
+    state = {}
+    state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
+    state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
+    result["state"] = state
 
     result["fol"] = parse.get_data_from_field(source=record, field_config=fields['fol'])
 
@@ -77,7 +79,10 @@ def transform_single_record(record, record_type, fields):
 
     # TODO: viscodex (label and url) - easy, but need to get both, then for each
 
-    # TODO: bibs...
+    bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
+    
+    if bibs and len(bibs) > 0:
+        result["bib"] = [transform_bib_data(bibs)]
 
     iiif = {}
     iiif["manifest"] = parse.get_data_from_field(source=record, field_config=fields['iiif_manifest_url'])
@@ -91,9 +96,24 @@ def transform_single_record(record, record_type, fields):
 
     # TODO: reconstructed from (waiting on config)
 
-    return del_none(result)
+    return del_none(result) # TODO: reorder based on an established order?
 
+def transform_bib_data(bibs):
+    for bib in bibs:
+        return {
+            "id": bib["uuid"],
+            "shortcode": bib["shortcode"],
+            "citation": bib["citation"],
+            "type": {
+                "id": bib["type_id"],
+                "label": bib["type_label"]
+            },
+            "range": bib["range"],
+            "alt_shelf": bib["alt_shelf"],
+            "note": bib["note"]
+        }
 
+# TODO: handl arrays...
 def del_none(d):
     """
     Delete keys with the value ``None`` in a dictionary, recursively.
@@ -103,4 +123,4 @@ def del_none(d):
             del d[key]
         elif isinstance(value, dict):
             del_none(value)
-    return d  # For convenience
+    return d

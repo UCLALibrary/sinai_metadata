@@ -40,7 +40,7 @@ def get_table_data_from_csv(table_info):
                 # Otherwise, add the field as a key/value pair
                 else:
                    row_data[column_index] = column
-            data[row_index] = row_data
+            data[str(row_index)] = row_data
         table_info["data"] = data
 
 def get_table_data_from_airtable(table_info, airtable_client):
@@ -58,6 +58,7 @@ def get_table_data_from_airtable(table_info, airtable_client):
 
 """
 Assumes that URL looks like https://airtable.com/appiXmKhPFEVmVQrD/tblKIvl8xqSkze5jF/viwn0c2SSDH6oXvyq
+The view URL is optional
 """
 def parse_airtable_url(url):
     # get the list of keys from the URL path portion
@@ -72,9 +73,3 @@ def parse_airtable_url(url):
         keys.append(None)
 
     return keys
-"""
-- for each in config of tables, get the airtable records
-- calls a get single table
-- passes to a processor that takes them and makes a dict with keys as record IDs
-- returns to the for each function
-"""

@@ -9,13 +9,24 @@ from io import StringIO
 def get_data_from_field(source, field_config):
     field_info = field_config
     field_info["mode"] = field_config[config.MODE]
-    field_info["data"] = source[field_config["name"]]
+    field_info["data"] = source.get(field_config["name"])
     return get_data(**field_info)
 
 def preprocess(func):
     def wrapper(*args, **kwargs):
-        if(kwargs["mode"] in ["text+", "record+"]): # TODO: change to first check if it's text+; elif record+ and data is a string rather than an array
-            kwargs["data"] = split_by_delim(kwargs["data"], kwargs["delim"])
+        # if data is empty, return an empty bit of data
+        if(not(kwargs["data"]) or len(kwargs["data"]) == 0):
+            return None
+        # pre-process delmited strings into arrays
+        if(kwargs["mode"] in ["text+", "record+"] and isinstance(kwargs["data"], str)):
+            kwargs["data"] = split_by_delim(kwargs["data"], kwargs["delimiter"])
+        
+        # pre-process record lookups into dictionaries containing those records' data for each record
+        if(kwargs["mode"] in ["record", "record+"]):
+            if(isinstance(kwargs["data"], str)):
+                kwargs["data"] = get_data_from_lookup(kwargs["data"], kwargs["lookup"])
+            else:
+                kwargs["data"] = [get_data_from_lookup(rec_id, kwargs["lookup"]) for rec_id in kwargs["data"]]
         return func(*args, **kwargs)
     return wrapper
 
@@ -54,3 +65,26 @@ def string_split_with_escape(to_split: str, delim, quotechar=None):
 @preprocess
 def get_data(*args, **kwargs):
     return kwargs["data"]
+
+def get_data_from_lookup(rec_id, lookup_info):
+    table_name = lookup_info.split(".")[0]
+    field_names = lookup_info.split(".")[1]
+    
+    table = config.TABLES[table_name]
+    record = table["data"][rec_id]
+
+    # Use this as "all fields", TODO: maybe default as well to 'None', so if we just give a lookup table name it defaults to pulling in all of the fields?
+    if field_names == "*":
+        field_data = {}
+        for field in table["fields"]:
+            field_data[field] = get_data_from_field(source=record, field_config=table["fields"][field])
+        return field_data
+
+    if isinstance(field_names, str):
+        return get_data_from_field(source=record, field_config=table["fields"][field_names])
+    """
+    - if field_names is '*', get all of the fields from the lookup table
+    - if it's an array, get all of those fields from the lookup table
+        - recursively...
+    - if it's just a string
+    """
