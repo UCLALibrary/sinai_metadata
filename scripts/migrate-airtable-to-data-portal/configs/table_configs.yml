@@ -4,44 +4,48 @@ tables:
     csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/ms_objs_TEST.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblKIvl8xqSkze5jF/viwn0c2SSDH6oXvyq
     fields: fields/ms_objs.yml
-  parts:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
-    fields: fields/parts.yml
-  layers:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
-    fields: fields/layers.yml
-  text_units:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
-    fields: fields/text_units.yml
-  work_witnesses:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl4GHImkuUX4vqiv/viw4famYFZOE2tneE
-    fields: fields/work_witnesses.yml
-  tocs:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl432sctnSStKoAE/viw4P7I6hmC8gDPZn
-    fields: fields/tocs.yml
-  excerpts:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEw9T9JaH32tw2r/viwtlkkryeOK9hMSJ
-    fields: fields/excerpts.yml
+  # parts:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
+  #   fields: fields/parts.yml
+  # layers:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
+  #   fields: fields/layers.yml
+  # text_units:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
+  #   fields: fields/text_units.yml
+  # work_witnesses:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl4GHImkuUX4vqiv/viw4famYFZOE2tneE
+  #   fields: fields/work_witnesses.yml
+  # tocs:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl432sctnSStKoAE/viw4P7I6hmC8gDPZn
+  #   fields: fields/tocs.yml
+  # excerpts:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEw9T9JaH32tw2r/viwtlkkryeOK9hMSJ
+  #   fields: fields/excerpts.yml
   bibs:
-    csv: 
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblR1vJqQgSdekSyn/viw2dWnShOOyRvWXE
     fields: fields/bibs.yml
-  paracontents:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
-    fields: fields/paracontents.yml
-  related_mss:
-    csv: 
-    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
-    fields: fields/related_mss.yml
+    index_col: ID
+  # paracontents:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
+  #   fields: fields/paracontents.yml
+  # related_mss:
+  #   csv: 
+  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
+  #   fields: fields/related_mss.yml
 # The following are needed for airtable JSON...
-# - states:
+  states:
+    csv: 
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOC6jmN3TJoD33g/viww5WCKYjQRkCeDe
+    fields: fields/states.yml
 #  - features:
 #  - supports:
 #  - locations:
