@@ -3,11 +3,18 @@ This module contains functions related to parsing the input data fields into
 forms usable by the main transform module
 """
 import pandas as pd
+import migrate.config as config
 from io import StringIO
+
+def get_data_from_field(source, field_config):
+    field_info = field_config
+    field_info["mode"] = field_config[config.MODE]
+    field_info["data"] = source[field_config["name"]]
+    return get_data(**field_info)
 
 def preprocess(func):
     def wrapper(*args, **kwargs):
-        if(kwargs["mode"] == "text+"):
+        if(kwargs["mode"] in ["text+", "record+"]): # TODO: change to first check if it's text+; elif record+ and data is a string rather than an array
             kwargs["data"] = split_by_delim(kwargs["data"], kwargs["delim"])
         return func(*args, **kwargs)
     return wrapper
@@ -42,3 +49,8 @@ def string_split_with_escape(to_split: str, delim, quotechar=None):
 
     # return the resulting list, replacing 'nan' with an empty string
     return list(map(lambda x: '' if x == 'nan' else x, split_data))
+
+
+@preprocess
+def get_data(*args, **kwargs):
+    return kwargs["data"]
