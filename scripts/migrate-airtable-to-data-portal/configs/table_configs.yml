@@ -46,7 +46,10 @@ tables:
     csv: 
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOC6jmN3TJoD33g/viww5WCKYjQRkCeDe
     fields: fields/states.yml
-#  - features:
+  features:
+    csv: 
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNFF7Qr3lUOjdDv/viwhxenTxpOURDuoc
+    fields: fields/features.yml
 #  - supports:
 #  - locations:
 #  - scripts:
