@@ -27,21 +27,22 @@ def get_data():
             get_table_data_from_airtable(config.TABLES[table], airtable_client)
 
 def get_table_data_from_csv(table_info):
-    with open(table_info["csv"]) as fh:
-        table_data = pd.read_csv(fh, index_col=table_info.get("index_col"))
-        data = {}
-        # Parse the DataFrame into a 2-dim dictionary to match how Airtable will be parsed
-        for row_index, row in table_data.iterrows():
-            row_data = {}
-            for column_index, column in row.items():
-                # Replace nan with None
-                if(pd.isna(column)):
-                   row_data[column_index] = None
-                # Otherwise, add the field as a key/value pair
-                else:
-                   row_data[column_index] = column
-            data[str(row_index)] = row_data
-        table_info["data"] = data
+    if table_info.get("csv"):
+        with open(table_info["csv"]) as fh:
+            table_data = pd.read_csv(fh, index_col=table_info.get("index_col"))
+            data = {}
+            # Parse the DataFrame into a 2-dim dictionary to match how Airtable will be parsed
+            for row_index, row in table_data.iterrows():
+                row_data = {}
+                for column_index, column in row.items():
+                    # Replace nan with None
+                    if(pd.isna(column)):
+                        row_data[column_index] = None
+                    # Otherwise, add the field as a key/value pair
+                    else:
+                        row_data[column_index] = column
+                data[str(row_index)] = row_data
+            table_info["data"] = data
 
 def get_table_data_from_airtable(table_info, airtable_client):
     # get and parse the URL into the base, table, and view keys

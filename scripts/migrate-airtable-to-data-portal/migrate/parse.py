@@ -34,6 +34,9 @@ def split_by_delim(data, delim, quotechar=None):
     depth = len(delim)
     if(depth == 0):
         return data
+    # if delim is a comma, set quotechar to " as the quote char unless otherwise specified
+    if delim[0] == "," and not(quotechar):
+        quotechar = '"'
     agg_data = []
     if(isinstance(data, str)):
         for frag in string_split_with_escape(to_split=data, delim=delim[0], quotechar=quotechar):

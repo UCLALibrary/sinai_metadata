@@ -71,7 +71,7 @@ feature_label:
   csv: text+
   airtable: record+
   delimiter: [","]
-  lookup: features
+  lookup: features.label
 part_id:
   name: Part IDs
   csv: record+

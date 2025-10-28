@@ -42,6 +42,7 @@ def transform_single_record(record, record_type, fields):
 
     result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
 
+    # TODO: airtable record not unpacking the array; need to handle...
     state = {}
     state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
     state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
@@ -50,6 +51,7 @@ def transform_single_record(record, record_type, fields):
     result["fol"] = parse.get_data_from_field(source=record, field_config=fields['fol'])
 
     result["coll"] = parse.get_data_from_field(source=record, field_config=fields['coll'])
+    
     # TODO: notes
     """
     - fol_note
@@ -63,7 +65,19 @@ def transform_single_record(record, record_type, fields):
     - ornamentation_note
     """
 
-    # TODO: features (record+ for airtable)
+    # Add features; will throw an error if for some reason the id/label lengths are mismatched
+    features = []
+    feature_ids = parse.get_data_from_field(source=record, field_config=fields['feature_id'])
+    feature_labels = parse.get_data_from_field(source=record,field_config=fields['feature_label'])
+    if feature_ids and len(feature_ids) > 0:
+        for i in range(0, len(feature_ids)):
+            features.append(
+                {
+                    "id": feature_ids[i],
+                    "label": feature_labels[i]
+                }
+            )
+    result["feature"] = features
 
     # TODO: parts...
     """
@@ -98,6 +112,9 @@ def transform_single_record(record, record_type, fields):
 
     return del_none(result) # TODO: reorder based on an established order?
 
+"""
+Takes the returned bib data from the parser and reorganizes it into the correct output fields
+"""
 def transform_bib_data(bibs):
     for bib in bibs:
         return {
