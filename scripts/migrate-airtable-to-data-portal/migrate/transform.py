@@ -113,14 +113,21 @@ def transform_bib_data(bibs):
             "note": bib["note"]
         }
 
-# TODO: handl arrays...
 def del_none(d):
     """
-    Delete keys with the value ``None`` in a dictionary, recursively.
+    Delete keys with the value ``None`` in a mixed list and/or dictionary, recursively.
     """
-    for key, value in list(d.items()):
-        if value is None:
-            del d[key]
-        elif isinstance(value, dict):
-            del_none(value)
+    if(isinstance(d, list)):
+        for item in d:
+            item = del_none(item)
+            if item is None or len(item) == 0:
+                d.remove(item)
+    elif(isinstance(d, dict)):
+        for key, value in list(d.items()):
+            if value is None:
+                del d[key]
+            elif isinstance(value, dict) or isinstance(value, list):
+                del_none(value)
+                if len(d[key]) == 0:
+                    del d[key]
     return d
