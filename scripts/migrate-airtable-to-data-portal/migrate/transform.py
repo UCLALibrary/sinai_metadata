@@ -160,6 +160,71 @@ def get_part_data_from_ms_table(record, fields):
 """
 Transform part data into the part object needed for output
 """
+# TODO: refactor to split out some of the mess, e.g. for layers and such
+def transform_part_data(part_data):
+    part = {}
+    part["label"] = part_data["part_label"]
+    part["summary"] = part_data["part_summary"]
+    part["locus"] = part_data["part_locus"]
+    part["extent"] = part_data["part_extent"]
+
+    part["support"] = []
+    for i in range(0, len(part_data["support_id"])):
+        part["support"].append(
+            {
+                "id": part_data["support_id"][i],
+                "label": part_data["support_label"][i]
+            }
+        )
+
+    part["dim"] = part_data["part_dim"]
+
+    # TODO: refactor to make this a reusable pattern, esp. the None filling
+    # TODO: also need to have a helper function for dealing with when a string should be treated as an array of 1 item but also a string sometimes...or some other way of doing this...jesus christ.
+    part["layer"] = []
+    # set the number of layers. If overtext arks is a string, it should remain 1 otherwise set to lenght of arks array
+    number_of_ot_layers = 1
+    if isinstance(part_data["overtext_ark"], list):
+        number_of_ot_layers = len(part_data["overtext_ark"])
+
+        if(len(part_data["overtext_locus"]) == 0):
+            part_data["overtext_locus"] = [None] * len(number_of_ot_layers)
+
+        for i in range(0, number_of_ot_layers):
+            part["layer"].append(
+                {
+                    "id": part_data["overtext_ark"][i],
+                    "label": part_data["overtext_label"][i],
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": part_data["overtext_locus"][i],
+                }
+            )
+    else:
+        part["layer"].append(
+                {
+                    "id": part_data["overtext_ark"],
+                    "label": part_data["overtext_label"],
+                    "type": {
+                        "id": "overtext",
+                        "label": "Overtext"
+                    },
+                    "locus": part_data["overtext_locus"],
+                }
+            )
+
+    # layer += for each other layer with level of part -> possibly pass the ms list of other layers as optional props?
+
+    
+    # para??
+    # note = support note; part collation note?
+    # related mss...TODO possibly pass this as an optional prop from the ms list?
+
+    return part
+
+"""
 Takes the returned bib data from the parser and reorganizes it into the correct output fields
 """
 def transform_bib_data(bibs):
