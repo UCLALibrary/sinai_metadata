@@ -42,7 +42,6 @@ def transform_single_record(record, record_type, fields):
 
     result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
 
-    # TODO: airtable record not unpacking the array; need to handle...
     state = {}
     state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
     state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
@@ -85,19 +84,53 @@ def transform_single_record(record, record_type, fields):
     - else this involves: part_label, part_summary, part_locus, part_extent, support(id and labe), notes (support, ), part_dim, overtext parsing (and other layers parsing), maybe related mss, maybe paracontent
     """
 
-    # TODO: location (id, repository, collection) (record+ for airtable)]
+    # add location info
+    # TODO: MS obj only
+    location_ids =  parse.get_data_from_field(source=record,field_config=fields['location_id'])
+    repositories =  parse.get_data_from_field(source=record,field_config=fields['repository'])
+    collections =  parse.get_data_from_field(source=record,field_config=fields['collection'])
+    result["location"] = []
+    for i in range(0, len(location_ids)):
+        result["location"].append(
+            {
+                "id": location_ids[i],
+                "repository": repositories[i],
+                "collection": collections[i]
+            }
+        )
 
     # TODO: assoc_* (needs a sub-function)
     
-    # TODO: related mss (and for parts...)
+    # TODO: related mss (and for parts...) -> maybe put before parts, just so you can reuse there based on level?
+    # -> get all of them, then list comprehension for ms level ones; and a separate one for part level ones?
 
-    # TODO: viscodex (label and url) - easy, but need to get both, then for each
+    # Add viscodex
+    # TODO: ms obj only
+    # TODO: move to its own function
+    # TODO: type is hard-coded
+    viscodex_label = parse.get_data_from_field(source=record, field_config=fields['viscodex_label'])
+    viscodex_url = parse.get_data_from_field(source=record, field_config=fields['viscodex_url'])
+    result["viscodex"] = []
+    if viscodex_url and len(viscodex_url) > 0:
+        for i in range(0, len(viscodex_label)):
+            result["viscodex"].append(
+                {
+                    "type": {
+                        "id": "manuscript",
+                        "label": "Manuscript"
+                    },
+                    "label": viscodex_label[i],
+                    "url": viscodex_url[i]
+                }
+            )
 
     bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
     
     if bibs and len(bibs) > 0:
         result["bib"] = [transform_bib_data(bibs)]
 
+    # TODO: ms obj
+    # TODO: hard-code type or get from data?
     iiif = {}
     iiif["manifest"] = parse.get_data_from_field(source=record, field_config=fields['iiif_manifest_url'])
     iiif["text_direction"] = parse.get_data_from_field(source=record, field_config=fields['iiif_text_direction'])

@@ -46,7 +46,6 @@ def split_by_delim(data, delim, quotechar=None):
             agg_data.append(split_by_delim(frag, delim[0], quotechar))
     return agg_data
 
-
 # This function simplifies the parsing of delimited strings that also contain quote characters for escaping the delimiter, just in case
 # Returns a list of the strings, divided at the delimiter
 # current implementation uses StringIO and reads it with pands.read_csv, as this has proven most reliable with escape characters, 
@@ -67,7 +66,12 @@ def string_split_with_escape(to_split: str, delim, quotechar=None):
 
 @preprocess
 def get_data(*args, **kwargs):
-    return kwargs["data"]
+    # handle cases where airtable records are returned as an array with single value
+    # TODO: throw an error if len of data is > 1?
+    if kwargs["mode"] in ["text", "record"] and isinstance(kwargs["data"], list):
+        return kwargs["data"][0]
+    else:
+        return kwargs["data"]
 
 def get_data_from_lookup(rec_id, lookup_info):
     table_name = lookup_info.split(".")[0]
