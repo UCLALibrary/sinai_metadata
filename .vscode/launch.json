@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": "--mode airtable --config /Users/wpotter/Documents/GitHub/sinai_metadata/scripts/migrate-airtable-to-data-portal/configs"
+            "args": "--mode csv --config /Users/wpotter/Documents/GitHub/sinai_metadata/scripts/migrate-airtable-to-data-portal/configs"
         }
     ]
 }

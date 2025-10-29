@@ -87,11 +87,17 @@ def get_data_from_lookup(rec_id, lookup_info):
             field_data[field] = get_data_from_field(source=record, field_config=table["fields"][field])
         return field_data
 
+    # if there is a comma in the field names, treat as a sequence of names and get data for each field
+    if "," in field_names:
+        field_data = {}
+        for field in field_names.split(","):
+            return get_data_from_multiple_fields(source=record, field_config=table["fields"][field])
+
     if isinstance(field_names, str):
         return get_data_from_field(source=record, field_config=table["fields"][field_names])
-    """
-    - if field_names is '*', get all of the fields from the lookup table
-    - if it's an array, get all of those fields from the lookup table
-        - recursively...
-    - if it's just a string
-    """
+
+def get_data_from_multiple_fields(source, fields, field_list):
+    field_data = {}
+    for field in field_list:
+        field_data[field] = get_data_from_field(source=source, field_config=fields[field])
+    return field_data

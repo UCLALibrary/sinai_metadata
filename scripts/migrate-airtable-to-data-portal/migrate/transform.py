@@ -78,11 +78,16 @@ def transform_single_record(record, record_type, fields):
             )
     result["feature"] = features
 
-    # TODO: parts...
-    """
-    - if part_ids, use that
-    - else this involves: part_label, part_summary, part_locus, part_extent, support(id and labe), notes (support, ), part_dim, overtext parsing (and other layers parsing), maybe related mss, maybe paracontent
-    """
+    # Process part data
+    # TODO: ms obj only
+    # If there are any referenced parts, use that data table; otherwise use the part fields in the ms obj record
+    parts = parse.get_data_from_field(source=record,field_config=fields['part_id'])
+    if parts and len(parts) > 0:
+        result["part"] = []
+        for part in parts:
+            result["parts"].append(transform_part_data(part_data=part))
+    else:
+        result["part"] = get_part_data_from_ms_table(record=record, fields=fields)
 
     # add location info
     # TODO: MS obj only
@@ -145,6 +150,15 @@ def transform_single_record(record, record_type, fields):
 
     return del_none(result) # TODO: reorder based on an established order?
 
+def get_part_data_from_ms_table(record, fields):
+    # TODO: should this be in a config somewhere???
+    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "support_note", "part_dim", "overtext_ark", "overtext_label", "overtext_locus"]
+    # TODO: figure out how best to include other layers, related mss, paracontent if at the part level
+
+    part_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=part_fields)
+    return transform_part_data(part_data)
+"""
+Transform part data into the part object needed for output
 """
 Takes the returned bib data from the parser and reorganizes it into the correct output fields
 """
