@@ -1,0 +1,210 @@
+{
+  "id": "ark:/99999/z1999998",
+  "type": "text_art",
+  "label": "Sinai Arabic 320, ff. 3r-195r. Barlaam and Joasaph",
+  "foliation": [
+    "ff. 3r-195r"
+  ],
+  "extent": "193 ff.",
+  "embodies": "https://sinaiportal.library.ucla.edu/work/999",
+  "attested_title": null,
+  "supplied_title": null,
+  "condition": null,
+  "contents": {
+    "note": [
+      "Preceded by a Table of Contents, perhaps added later"
+    ],
+    "features": [
+      "Table of Contents"
+    ],
+    "toc": null
+  },
+  "events": null,
+  "paratexts": {
+    "rubric": [
+      {
+        "id": "ark:/99999/z1999998/parat1",
+        "type": "rubric",
+        "locus": "f. 3r",
+        "transcription": null,
+        "translation": null,
+        "note": [
+          "A rubricated abstract precedes the prologue"
+        ],
+        "attested_person": [
+          {
+            "relation": "attributed_author",
+            "id": "https://sinaiportal.library.ucla.edu/person/998",
+            "attested_name": {
+              "transcription": [
+                {
+                  "ar": "يحنا الراهب"
+                }
+              ],
+              "translation": [
+                {
+                  "en": "John the Monk"
+                }
+              ]
+            },
+            "note": null
+          }
+        ],
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "prologue": [
+      {
+        "id": "ark:/99999/z1999998/parat2",
+        "type": "prologue",
+        "locus": "ff. 3r-4r",
+        "transcription": null,
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "incipit": [
+      {
+        "id": "ark:/99999/z1999998/parat3",
+        "type": "incipit",
+        "locus": "f. 4r",
+        "transcription": {
+          "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "explicit": [
+      {
+        "id": "ark:/99999/z1999998/parat4",
+        "type": "explicit",
+        "locus": "f. 194",
+        "transcription": {
+          "ar": "وكل الذين عاينوا وسمعوا سيد يواصيف المشاهبة الملائكة وشوقه الى الله الخار الذي منذ صبايه تعجبوا ومجدوا على كل حال الله الذي يعاين محبيه دائما وبجاء فيهم يمواهب"
+        },
+        "translation": null,
+        "note": null,
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "subscription": [
+      {
+        "id": "ark:/99999/z1999998/parat5",
+        "type": "subscription",
+        "locus": "ff. 194v-195r",
+        "transcription": {
+          "ar": "هذا بلد صقعه موضوعا بعيد من مصر وهو عظيم كثير الناس تحيط به البحار واللجج "
+        },
+        "translation": null,
+        "note": [
+          "The long subscription, beginning on 194v, has been only partially transcribed. It is preceded by a scribal colophon"
+        ],
+        "attested_person": null,
+        "attested_place": null,
+        "attested_date": null
+      }
+    ],
+    "marginalia": null
+  },
+  "associated_person": null,
+  "associated_place": null,
+  "associated_date": null,
+  "features": null,
+  "note": [
+    "The text has a long history of adaptation into different languages, all seemingly adapted from the story Kitāb Bilawhar wa-Yūdāsaf ( Būd̲h̲āsaf ). The origins and original languages of the story are contested: the proposals are that the Arabic versions, of which this Christian version in AR320 is one, came into Arabic from Pahlavi or from Central Asian Manicheans (writing in New Persian in Manichean script)."
+  ],
+  "references": [
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
+      "citation_key": "Kamil",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "511"
+        },
+        {
+          "unit": "page",
+          "range": "42"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "bibliography": [
+    {
+      "uri": "$$$$",
+      "citation_key": "EI 3",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "Barlaam and Josaphat"
+        },
+        {
+          "unit": "doi",
+          "range": "http://dx.doi.org/10.1163/1573-3912_ei3_COM_24301"
+        }
+      ],
+      "note": [
+        null
+      ]
+    },
+    {
+      "uri": "$$$$",
+      "citation_key": "EI 2",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "Bilawhar Wa-Yūdāsaf"
+        },
+        {
+          "unit": "doi",
+          "range": "http://dx.doi.org/10.1163/1573-3912_islam_COM_0120"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F99999%2Fz1999998/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged"
+  },
+  "related_objects": {
+    "contained_in": [
+      {
+        "type": "primary_text_of",
+        "object": "ark:/99999/z1999999"
+      }
+    ]
+  },
+  "meta": {
+    "contributor": [
+      "William Potter",
+      "Chris PreJean"
+    ],
+    "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "EDITED: Added features data"
+      },
+      {
+        "date": "2022-10-24T08:44:09.96-07:00",
+        "contributor": "Chris PreJean",
+        "change": "CREATED: Textual Artifact ark:/99999/z1999998 for Sinai Arabic 320"
+      }
+    ],
+    "created": "2022-10-24T08:44:09.96-07:00"
+  }
+}
