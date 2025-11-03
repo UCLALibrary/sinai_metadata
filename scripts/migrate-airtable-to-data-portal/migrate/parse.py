@@ -64,7 +64,7 @@ def string_split_with_escape(to_split: str, delim, quotechar=None):
         split_data = pd.read_csv(StringIO(to_split), sep=delim, quoting=3, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
 
     # return the resulting list, replacing 'nan' with an empty string
-    return list(map(lambda x: '' if x == 'nan' else x, split_data))
+    return list(map(lambda x: None if x == 'nan' else x, split_data))
 
 
 @preprocess
