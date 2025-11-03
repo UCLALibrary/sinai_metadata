@@ -104,7 +104,7 @@ def transform_single_record(record, record_type, fields):
         result["part"] = []
         for part in parts:
             # TODO: get other layers and related mss data to pass to this function from each referenced part
-            result["parts"].append(transform_part_data(part_data=part))
+            result["part"].append(transform_part_data(part_data=part))
     else:
         result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
 
@@ -223,7 +223,9 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None)
         "locus": "other_layer_locus",
         "level": "other_layer_level"
     }
-    part["layer"] += transform_layer_reference_data(record=other_layer_data,
+    # Add other layer info if it exists
+    if(other_layer_data):
+        part["layer"] += transform_layer_reference_data(record=other_layer_data,
                                                     field_map=other_layer_field_map,
                                                     has_multiple_layers=isinstance(other_layer_data["other_layer_ark"], list),
                                                     level_filter="part")
