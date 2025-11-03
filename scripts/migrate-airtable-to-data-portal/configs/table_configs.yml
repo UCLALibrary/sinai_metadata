@@ -37,10 +37,11 @@ tables:
   #   csv: 
   #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
   #   fields: fields/paracontents.yml
-  # related_mss:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
-  #   fields: fields/related_mss.yml
+  related_mss:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/related_mss_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
+    fields: fields/related_mss.yml
+    index_col: ID
 # The following are needed for airtable JSON...
   states:
     csv: 

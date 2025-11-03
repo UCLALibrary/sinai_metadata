@@ -1,0 +1,25 @@
+type_id:
+  name: Related MSS Type
+  csv: text
+  airtable: text
+type_label:
+  name: Related MSS Type Label
+  csv: text
+  airtable: text
+label:
+  name: Related MSS Label
+  csv: text
+  airtable: text
+note:
+  name: Related MSS Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+mss:
+  name: Related MSS JSON
+  csv: text # JSON?
+  airtable: text # JSON?
+level:
+  name: Related MSS Level
+  csv: text
+  airtable: text
