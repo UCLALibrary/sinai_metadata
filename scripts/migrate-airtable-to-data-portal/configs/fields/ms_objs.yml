@@ -133,6 +133,16 @@ other_layer_ark:
   airtable: record+
   delimiter: [","]
   lookup: layers
+other_layer_type_id: # Other Layer Locus	Other Layer Level	Other Layer Type ID	Other Layer Type Label
+  name: Other Layer Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_type_label:
+  name: Other Layer Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
 other_layer_label:
   name: Other Layer Labels
   csv: text+
@@ -147,7 +157,7 @@ other_layer_level:
   name: Other Layer Level
   csv: text+
   airtable: text+
-  delimiter: ["|~|"]
+  delimiter: [","]
 paracontent:
   name: Paracontents
   csv: record+
@@ -300,7 +310,7 @@ related_mss:
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup: related_mss
+  lookup: related_mss.*
 viscodex_label:
   name: Viscodex Label
   csv: text+
