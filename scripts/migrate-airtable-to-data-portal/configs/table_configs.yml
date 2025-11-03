@@ -1,13 +1,14 @@
 airtable_base: appiXmKhPFEVmVQrD
 tables:
   manuscript_objects:
-    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/ms_objs_TEST.csv
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/multi-part-ms_objects-test.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblKIvl8xqSkze5jF/viwn0c2SSDH6oXvyq
     fields: fields/ms_objs.yml
-  # parts:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
-  #   fields: fields/parts.yml
+  parts:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/parts_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
+    fields: fields/parts.yml
+    index_col: ID
   # layers:
   #   csv: 
   #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92

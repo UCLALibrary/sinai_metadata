@@ -1,0 +1,86 @@
+part_label:
+  name: Part Label
+  csv: text
+  airtable: text
+part_summary:
+  name: Part Summary
+  csv: text
+  airtable: text
+part_locus:
+  name: Part Locus
+  csv: text
+  airtable: text
+part_extent:
+  name: Part Extent
+  csv: text
+  airtable: text
+support_id:
+  name: Support ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+support_label:
+  name: Support Label
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: supports
+support_note:
+  name: Support note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+part_dim:
+  name: Part Dimensions
+  csv: text
+  airtable: text
+overtext_ark: # may be text+ and record+ technically?
+  name: Overtext ARKs
+  csv: text
+  airtable: record
+  lookup: layers
+overtext_label: # may be text+
+  name: Overtext Labels
+  csv: text
+  airtable: text
+overtext_locus: # may be text+
+  name: Overtext Locus
+  csv: text
+  airtable: text
+other_layer_ark:
+  name: Other Layer ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: layers
+other_layer_type_id: # Other Layer Locus	Other Layer Level	Other Layer Type ID	Other Layer Type Label
+  name: Other Layer Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_type_label:
+  name: Other Layer Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_label:
+  name: Other Layer Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_locus:
+  name: Other Layer Locus
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_level:
+  name: Other Layer Level
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+paracontent:
+  name: Part Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents
