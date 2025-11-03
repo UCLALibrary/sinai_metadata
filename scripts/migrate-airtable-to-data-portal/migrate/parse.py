@@ -50,6 +50,9 @@ def split_by_delim(data, delim, quotechar=None):
 # Returns a list of the strings, divided at the delimiter
 # current implementation uses StringIO and reads it with pands.read_csv, as this has proven most reliable with escape characters, 
 def string_split_with_escape(to_split: str, delim, quotechar=None):
+    # provides a regex-friendly version of the common pipe-tilde-pipe delim
+    if delim == "|~|":
+        delim = "\|~\|"
     split_data = []
     # if the split string is empty, return an empty array
     if len(to_split) == 0:

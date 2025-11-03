@@ -3,6 +3,7 @@ This module holds the main logic for converting records into Portal JSON files
 """
 import migrate.config as config
 import migrate.parse as parse
+import json
 
 # the main transformation function
 def transform_records(table_name: str):
@@ -11,7 +12,7 @@ def transform_records(table_name: str):
         transformed_record = transform_single_record(record=main_table["data"].get(record), 
                                                      record_type=table_name,
                                                      fields=config.TABLES[table_name]["fields"])
-        print(transformed_record) #TODO: save this to a file instead
+        print(json.dumps(transformed_record, indent=2))
 
 def transform_single_record(record, record_type, fields):
 
@@ -78,6 +79,23 @@ def transform_single_record(record, record_type, fields):
             )
     result["feature"] = features
 
+    other_layers = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["other_layer_ark", "other_layer_label", "other_layer_type_id", "other_layer_type_label", "other_layer_locus", "other_layer_level"])
+    
+    # add ms-obj level layer info
+    other_layer_field_map = {
+        "id": "other_layer_ark",
+        "label": "other_layer_label",
+        "type_id": "other_layer_type_id",
+        "type_label": "other_layer_type_label",
+        "locus": "other_layer_locus",
+        "level": "other_layer_level"
+    }
+    result["layer"] = transform_layer_reference_data(record=other_layers, field_map=other_layer_field_map, has_multiple_layers=isinstance(other_layers["other_layer_ark"], list), level_filter="ms")
+    
+
+    related_mss = parse.get_data_from_field(source=record, field_config=fields['related_mss'])
+
+    result["related_mss"] = transform_related_mss_data(related_mss_data=related_mss, level_filter="ms")
     # Process part data
     # TODO: ms obj only
     # If there are any referenced parts, use that data table; otherwise use the part fields in the ms obj record
@@ -85,9 +103,10 @@ def transform_single_record(record, record_type, fields):
     if parts and len(parts) > 0:
         result["part"] = []
         for part in parts:
+            # TODO: get other layers and related mss data to pass to this function from each referenced part
             result["parts"].append(transform_part_data(part_data=part))
     else:
-        result["part"] = get_part_data_from_ms_table(record=record, fields=fields)
+        result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
 
     # add location info
     # TODO: MS obj only
@@ -106,8 +125,6 @@ def transform_single_record(record, record_type, fields):
 
     # TODO: assoc_* (needs a sub-function)
     
-    # TODO: related mss (and for parts...) -> maybe put before parts, just so you can reuse there based on level?
-    # -> get all of them, then list comprehension for ms level ones; and a separate one for part level ones?
 
     # Add viscodex
     # TODO: ms obj only
@@ -136,7 +153,12 @@ def transform_single_record(record, record_type, fields):
 
     # TODO: ms obj
     # TODO: hard-code type or get from data?
-    iiif = {}
+    iiif = {
+        "type": {
+            "id": "main",
+            "label": "Main"
+        }
+    }
     iiif["manifest"] = parse.get_data_from_field(source=record, field_config=fields['iiif_manifest_url'])
     iiif["text_direction"] = parse.get_data_from_field(source=record, field_config=fields['iiif_text_direction'])
     iiif["behavior"] = parse.get_data_from_field(source=record, field_config=fields['iiif_behavior'])
@@ -150,18 +172,18 @@ def transform_single_record(record, record_type, fields):
 
     return del_none(result) # TODO: reorder based on an established order?
 
-def get_part_data_from_ms_table(record, fields):
+def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
     part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "support_note", "part_dim", "overtext_ark", "overtext_label", "overtext_locus"]
     # TODO: figure out how best to include other layers, related mss, paracontent if at the part level
 
     part_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=part_fields)
-    return transform_part_data(part_data)
+    return transform_part_data(part_data, other_layer_data=other_layer_data, related_mss_data=related_mss_data)
 """
 Transform part data into the part object needed for output
 """
 # TODO: refactor to split out some of the mess, e.g. for layers and such
-def transform_part_data(part_data):
+def transform_part_data(part_data, other_layer_data=None, related_mss_data=None):
     part = {}
     part["label"] = part_data["part_label"]
     part["summary"] = part_data["part_summary"]
@@ -181,48 +203,115 @@ def transform_part_data(part_data):
 
     # TODO: refactor to make this a reusable pattern, esp. the None filling
     # TODO: also need to have a helper function for dealing with when a string should be treated as an array of 1 item but also a string sometimes...or some other way of doing this...jesus christ.
-    part["layer"] = []
-    # set the number of layers. If overtext arks is a string, it should remain 1 otherwise set to lenght of arks array
-    number_of_ot_layers = 1
-    if isinstance(part_data["overtext_ark"], list):
-        number_of_ot_layers = len(part_data["overtext_ark"])
+    overtext_layer_field_map = {
+        "id": "overtext_ark",
+        "label": "overtext_label",
+        "type_id": None,
+        "type_label": None,
+        "locus": "overtext_locus"
+    }
+    part["layer"] = transform_layer_reference_data(record=part_data,
+                                                   field_map=overtext_layer_field_map,
+                                                   has_multiple_layers=isinstance(part_data["overtext_ark"], list),
+                                                   type_override={"id": "overtext", "label": "Overtext"})
 
-        if(len(part_data["overtext_locus"]) == 0):
-            part_data["overtext_locus"] = [None] * len(number_of_ot_layers)
-
-        for i in range(0, number_of_ot_layers):
-            part["layer"].append(
-                {
-                    "id": part_data["overtext_ark"][i],
-                    "label": part_data["overtext_label"][i],
-                    "type": {
-                        "id": "overtext",
-                        "label": "Overtext"
-                    },
-                    "locus": part_data["overtext_locus"][i],
-                }
-            )
-    else:
-        part["layer"].append(
-                {
-                    "id": part_data["overtext_ark"],
-                    "label": part_data["overtext_label"],
-                    "type": {
-                        "id": "overtext",
-                        "label": "Overtext"
-                    },
-                    "locus": part_data["overtext_locus"],
-                }
-            )
-
-    # layer += for each other layer with level of part -> possibly pass the ms list of other layers as optional props?
-
+    other_layer_field_map = {
+        "id": "other_layer_ark",
+        "label": "other_layer_label",
+        "type_id": "other_layer_type_id",
+        "type_label": "other_layer_type_label",
+        "locus": "other_layer_locus",
+        "level": "other_layer_level"
+    }
+    part["layer"] += transform_layer_reference_data(record=other_layer_data,
+                                                    field_map=other_layer_field_map,
+                                                    has_multiple_layers=isinstance(other_layer_data["other_layer_ark"], list),
+                                                    level_filter="part")
     
     # para??
     # note = support note; part collation note?
-    # related mss...TODO possibly pass this as an optional prop from the ms list?
+
+    part["related_mss"] = transform_related_mss_data(related_mss_data=related_mss_data, level_filter="part")
 
     return part
+
+"""
+Takes a record and a mapping of fields, along with an optional type override, to create an array of layer reference object
+"""
+def transform_layer_reference_data(record, field_map: dict, has_multiple_layers: bool, level_filter=None, type_override=None):
+    layers = []
+    if has_multiple_layers:
+        number_of_layers = len(record[field_map["id"]])
+        # None-fill the optional fields if length is 0
+        if(len(record[field_map["locus"]]) == 0):
+            record[field_map["locus"]] = [None] * len(number_of_layers)
+
+        for i in range(0, number_of_layers):
+            # if filtering by level, skip any that are not for part of that level
+            if level_filter and record[field_map["level"]][i] != level_filter:
+                continue
+            else:
+                if type_override:
+                    layer_type = type_override
+                else:
+                    layer_type = {
+                        "id": record[field_map["type_id"]][i],
+                        "label": record[field_map["type_label"]][i]
+                    }
+                layers.append(
+                    {
+                        "id": record[field_map["id"]][i],
+                        "label": record[field_map["label"]][i],
+                        "type": layer_type,
+                        "locus": record[field_map["locus"]][i],
+                    }
+                )
+    else:
+        if level_filter and record[field_map["level"]] != level_filter:
+            return layers
+        else:
+            if type_override:
+                layer_type = type_override
+            else:
+                layer_type = {
+                    "id": record[field_map["type_id"]],
+                    "label": record[field_map["type_label"]]
+                }
+            layers.append(
+                    {
+                        "id": record[field_map["id"]],
+                        "label": record[field_map["label"]],
+                        "type": {
+                            "id": "overtext",
+                            "label": "Overtext"
+                        },
+                        "locus": record[field_map["locus"]],
+                    }
+                )
+    return layers
+
+def transform_related_mss_data(related_mss_data, level_filter: None):
+    if related_mss_data:
+        related_mss = []
+        for related in related_mss_data:
+            # If filtering by level, filter out the ones not at that level
+            if level_filter and related["level"] != level_filter:
+                continue
+            else:
+                if related["mss"]:
+                    mss = json.loads(related["mss"])
+                related_mss.append(
+                    {
+                        "type": {
+                            "id": related["type_id"],
+                            "label": related["type_label"]
+                        },
+                        "label": related["label"],
+                        "note": related["note"],
+                        **mss
+                    }
+                )
+        return related_mss
 
 """
 Takes the returned bib data from the parser and reorganizes it into the correct output fields
