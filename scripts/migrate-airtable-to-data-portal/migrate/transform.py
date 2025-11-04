@@ -12,7 +12,10 @@ def transform_records(table_name: str):
         transformed_record = transform_single_record(record=main_table["data"].get(record), 
                                                      record_type=table_name,
                                                      fields=config.TABLES[table_name]["fields"])
-        print(json.dumps(transformed_record, indent=2))
+        file_path = "/Users/wpotter/Desktop/SMDP-Script-Tests/ms_objs/" + transformed_record["ark"][10:]+".json" 
+        with open(file_path, mode="w") as fh:
+            json.dump(transformed_record, fh, indent=2, ensure_ascii=False)
+        # print(json.dumps(transformed_record, indent=2))
 
 def transform_single_record(record, record_type, fields):
 
@@ -103,7 +106,6 @@ def transform_single_record(record, record_type, fields):
     if parts and len(parts) > 0:
         result["part"] = []
         for part in parts:
-            # TODO: get other layers and related mss data to pass to this function from each referenced part
             result["part"].append(transform_part_data(part_data=part))
     else:
         result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
@@ -179,6 +181,7 @@ def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_m
 
     part_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=part_fields)
     return transform_part_data(part_data, other_layer_data=other_layer_data, related_mss_data=related_mss_data)
+
 """
 Transform part data into the part object needed for output
 """
@@ -229,19 +232,30 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None)
                                                     field_map=other_layer_field_map,
                                                     has_multiple_layers=isinstance(other_layer_data["other_layer_ark"], list),
                                                     level_filter="part")
-    
+    # If there is no other layer data, then see if it's in the part info already
+    else:
+        part["layer"] += transform_layer_reference_data(record=part_data,
+                                                    field_map=other_layer_field_map,
+                                                    has_multiple_layers=isinstance(part_data["other_layer_ark"], list))
+
     # para??
     # note = support note; part collation note?
 
-    part["related_mss"] = transform_related_mss_data(related_mss_data=related_mss_data, level_filter="part")
+    if related_mss_data:
+        part["related_mss"] = transform_related_mss_data(related_mss_data=related_mss_data, level_filter="part")
+    else:
+        part["related_mss"] = transform_related_mss_data(related_mss_data=part_data["related_mss"], level_filter=None)
 
     return part
 
 """
 Takes a record and a mapping of fields, along with an optional type override, to create an array of layer reference object
 """
-def transform_layer_reference_data(record, field_map: dict, has_multiple_layers: bool, level_filter=None, type_override=None):
+def transform_layer_reference_data(record, field_map: dict, has_multiple_layers: bool, level_filter=None, type_override=None):   
     layers = []
+    # return if empty of layer data
+    if(not(record[field_map["id"]]) or len(record[field_map["id"]]) == 0 ):
+        return layers
     if has_multiple_layers:
         number_of_layers = len(record[field_map["id"]])
         # None-fill the optional fields if length is 0
@@ -293,6 +307,7 @@ def transform_layer_reference_data(record, field_map: dict, has_multiple_layers:
     return layers
 
 def transform_related_mss_data(related_mss_data, level_filter: None):
+
     if related_mss_data:
         related_mss = []
         for related in related_mss_data:
@@ -300,6 +315,7 @@ def transform_related_mss_data(related_mss_data, level_filter: None):
             if level_filter and related["level"] != level_filter:
                 continue
             else:
+                mss = {}
                 if related["mss"]:
                     mss = json.loads(related["mss"])
                 related_mss.append(
