@@ -55,18 +55,8 @@ def transform_single_record(record, record_type, fields):
 
     result["coll"] = parse.get_data_from_field(source=record, field_config=fields['coll'])
     
-    # TODO: notes
-    """
-    - fol_note
-    - coll_note
-    - para_note
-    - binding_note
-    - provenance_note
-    - condition_note
-    - contents_note
-    - general_note
-    - ornamentation_note
-    """
+    notes_data = parse.get_typed_notes_data(source=record, note_fields=fields['typed_notes'])
+    result["notes"] = transform_notes_data(notes_data)
 
     # Add features; will throw an error if for some reason the id/label lengths are mismatched
     features = []
@@ -176,17 +166,18 @@ def transform_single_record(record, record_type, fields):
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
-    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "support_note", "part_dim", "overtext_ark", "overtext_label", "overtext_locus"]
+    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus"]
     # TODO: figure out how best to include other layers, related mss, paracontent if at the part level
+    part_notes_data = parse.get_typed_notes_data(source=record, note_fields=fields["part_typed_notes"])
 
     part_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=part_fields)
-    return transform_part_data(part_data, other_layer_data=other_layer_data, related_mss_data=related_mss_data)
+    return transform_part_data(part_data, other_layer_data=other_layer_data, related_mss_data=related_mss_data, notes_data=part_notes_data)
 
 """
 Transform part data into the part object needed for output
 """
 # TODO: refactor to split out some of the mess, e.g. for layers and such
-def transform_part_data(part_data, other_layer_data=None, related_mss_data=None):
+def transform_part_data(part_data, other_layer_data=None, related_mss_data=None, notes_data=None):
     part = {}
     part["label"] = part_data["part_label"]
     part["summary"] = part_data["part_summary"]
@@ -239,7 +230,10 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None)
                                                     has_multiple_layers=isinstance(part_data["other_layer_ark"], list))
 
     # para??
-    # note = support note; part collation note?
+    if(notes_data):
+        part["note"] = transform_notes_data(notes_data)
+    else:
+        part["note"] = transform_notes_data(part_data["part_typed_notes"])
 
     if related_mss_data:
         part["related_mss"] = transform_related_mss_data(related_mss_data=related_mss_data, level_filter="part")
@@ -330,6 +324,27 @@ def transform_related_mss_data(related_mss_data, level_filter: None):
                     }
                 )
         return related_mss
+
+"""
+Transforms the notes information.
+Takes a dictionary of note types with merged in data and creates the array of typed notes
+"""
+def transform_notes_data(notes_data):
+    notes = []
+    for type in notes_data:
+        if not(notes_data[type]["data"]) or len(notes_data[type]["data"]) == 0:
+            continue
+        for value in notes_data[type]["data"]:
+            notes.append(
+                {
+                    "type": {
+                        "id": type,
+                        "label": notes_data[type]["label"]
+                    },
+                    "value": value
+                }
+            )
+    return notes
 
 """
 Takes the returned bib data from the parser and reorganizes it into the correct output fields

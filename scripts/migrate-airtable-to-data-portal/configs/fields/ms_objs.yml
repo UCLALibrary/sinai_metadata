@@ -47,20 +47,10 @@ fol:
   name: Foliation
   csv: text
   airtable: text
-fol_note:
-  name: Foliation note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
 coll:
   name: Collation
   csv: text
   airtable: text
-coll_note:
-  name: Collation note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
 feature_id:
   name: Feature ID
   csv: text+
@@ -105,11 +95,6 @@ support_label:
   airtable: record+
   delimiter: [","]
   lookup: supports
-support_note:
-  name: Support note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
 part_dim:
   name: Part Dimensions
   csv: text
@@ -158,20 +143,25 @@ other_layer_level:
   csv: text+
   airtable: text+
   delimiter: [","]
+part_typed_notes:
+  support:
+    label: Support Note
+    name: Support note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Part Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
 paracontent:
   name: Paracontents
   csv: record+
   airtable: record+
   delimiter: [","]
   lookup: paracontents
-para_note:
-  name: Paracontent note
-  csv: text
-  airtable: text
-binding_note:
-  name: Binding note
-  csv: text
-  airtable: text
 location_id:
   name: Location ID
   csv: text+
@@ -188,31 +178,61 @@ collection:
   csv: text+
   airtable: text+
   delimiter: [","]
-provenance_note:
-  name: Provenance note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
-condition_note:
-  name: Condition note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
-contents_note:
-  name: Contents note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
-general_note:
-  name: General note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
-ornamentation_note:
-  name: Ornamentation note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
+typed_notes:
+  fol:
+    label: Foliation Note
+    name: Foliation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  para:
+    label: Paracontent Note
+    name: Paracontent note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  binding:
+    label: Binding Note
+    name: Binding note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  provenance:
+    label: Provenance Note
+    name: Provenance note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  condition:
+    label: Condition Note
+    name: Condition note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  contents:
+    label: Contents Note
+    name: Contents note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  general:
+    label: General Note
+    name: General note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  ornamentation:
+    label: Ornamentation note
+    name: Ornamentation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
 assoc_name_ark:
   name: Associated Name ARKs
   csv: text+

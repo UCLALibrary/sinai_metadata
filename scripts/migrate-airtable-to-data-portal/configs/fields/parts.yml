@@ -25,11 +25,6 @@ support_label:
   airtable: record+
   delimiter: [","]
   lookup: supports
-support_note:
-  name: Support note
-  csv: text+
-  airtable: text+
-  delimiter: ["|~|"]
 part_dim:
   name: Part Dimensions
   csv: text
@@ -53,7 +48,7 @@ other_layer_ark:
   airtable: record+
   delimiter: [","]
   lookup: layers
-other_layer_type_id: # Other Layer Locus	Other Layer Level	Other Layer Type ID	Other Layer Type Label
+other_layer_type_id:
   name: Other Layer Type ID
   csv: text+
   airtable: text+
@@ -78,6 +73,19 @@ other_layer_level:
   csv: text+
   airtable: text+
   delimiter: [","]
+part_typed_notes:
+  support:
+    label: Support Note
+    name: Support note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Part Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
 paracontent:
   name: Part Paracontents
   csv: record+

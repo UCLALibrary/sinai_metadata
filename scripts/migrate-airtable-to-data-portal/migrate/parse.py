@@ -87,7 +87,11 @@ def get_data_from_lookup(rec_id, lookup_info):
     if field_names == "*":
         field_data = {}
         for field in table["fields"]:
-            field_data[field] = get_data_from_field(source=record, field_config=table["fields"][field])
+            # process typed notes
+            if field in ["typed_notes", "part_typed_notes"]:
+                field_data[field] = get_typed_notes_data(source=record, note_fields=table["fields"][field])
+            else:
+                field_data[field] = get_data_from_field(source=record, field_config=table["fields"][field])
         return field_data
 
     # if there is a comma in the field names, treat as a sequence of names and get data for each field
@@ -102,5 +106,16 @@ def get_data_from_lookup(rec_id, lookup_info):
 def get_data_from_multiple_fields(source, fields, field_list):
     field_data = {}
     for field in field_list:
-        field_data[field] = get_data_from_field(source=source, field_config=fields[field])
+        # process typed notes
+        if field in ["typed_notes", "part_typed_notes"]:
+            get_typed_notes_data(source=source, note_fields=fields[field])
+        else:
+            field_data[field] = get_data_from_field(source=source, field_config=fields[field])
     return field_data
+
+def get_typed_notes_data(source, note_fields):
+    notes_data = {}
+    for note_type in note_fields:
+        note_fields[note_type]["data"] = get_data_from_field(source, note_fields[note_type])
+        notes_data[note_type] = note_fields[note_type]
+    return notes_data
