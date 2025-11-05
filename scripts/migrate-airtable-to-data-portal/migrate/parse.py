@@ -5,6 +5,7 @@ forms usable by the main transform module
 import pandas as pd
 import migrate.config as config
 from io import StringIO
+import copy
 
 def get_data_from_field(source, field_config):
     field_info = field_config
@@ -26,7 +27,12 @@ def preprocess(func):
             if(isinstance(kwargs["data"], str)):
                 kwargs["data"] = get_data_from_lookup(kwargs["data"], kwargs["lookup"])
             else:
-                kwargs["data"] = [get_data_from_lookup(rec_id, kwargs["lookup"]) for rec_id in kwargs["data"]]
+                records = []
+                for rec_id in kwargs["data"]:
+                    record = get_data_from_lookup(rec_id, kwargs["lookup"])
+                    # get a deep copy of the looked up record to avoid overwriting note values
+                    records.append(copy.deepcopy(record))
+                kwargs["data"] = records
         return func(*args, **kwargs)
     return wrapper
 
@@ -108,7 +114,7 @@ def get_data_from_multiple_fields(source, fields, field_list):
     for field in field_list:
         # process typed notes
         if field in ["typed_notes", "part_typed_notes"]:
-            get_typed_notes_data(source=source, note_fields=fields[field])
+           field_data[field] = get_typed_notes_data(source=source, note_fields=fields[field])
         else:
             field_data[field] = get_data_from_field(source=source, field_config=fields[field])
     return field_data
