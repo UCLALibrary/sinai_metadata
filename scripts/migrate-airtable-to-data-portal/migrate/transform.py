@@ -143,6 +143,40 @@ def transform_single_record(record, record_type, fields):
     if bibs and len(bibs) > 0:
         result["bib"] = [transform_bib_data(bibs)]
 
+    # Associated things
+    result["assoc_name"] = transform_associated_entity_data(
+        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_name_ark"]),
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_name_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_name_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_name_note"]),
+        iso=None,
+        entity_type="name"
+    )
+
+    result["assoc_place"] = transform_associated_entity_data(
+        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_place_ark"]),
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_place_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_place_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_place_note"]),
+        iso=None,
+        entity_type="place"
+    )
+
+    result["assoc_date"] = transform_associated_entity_data(
+        arks=None,
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_date_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_date_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_date_note"]),
+        iso=parse.get_data_from_field(source=record, field_config=fields["assoc_date_iso"]),
+        entity_type="date"
+    )
+
     # TODO: ms obj
     # TODO: hard-code type or get from data?
     iiif = {
@@ -363,6 +397,67 @@ def transform_bib_data(bibs):
             "alt_shelf": bib["alt_shelf"],
             "note": bib["note"]
         }
+
+"""
+Takes returned data about associated entities from the parser and converts to the associated entity object
+"""
+def transform_associated_entity_data(arks, iso, values, as_written, type_id, type_label, notes, entity_type: str):
+    entities = []
+
+    # dump out if no entities to parse
+    if not(type_id):
+        return entities
+
+    num_entities = len(type_id)
+
+    # fill the optional fields (all but the type)
+    if not(arks) and entity_type in ["name", "place"]:
+        arks = [None] * num_entities
+    if not(iso) and entity_type == "date":
+        iso = [None] * num_entities
+    if not(values):
+        values = [None] * num_entities
+    if not(as_written):
+        as_written = [None] * num_entities
+    if not(notes):
+        notes = [None] * num_entities
+
+    # process each entity into its object
+    for i in range(0, len(type_id)):
+        e = {}
+        if entity_type in ["name", "place"]:
+            e["ark"] = arks[i]
+        e["value"] = values[i]
+        if entity_type == "date":
+            e["iso"] = process_iso_string(iso[i])
+        e["as_written"] = as_written[i]
+        type_obj = {
+            "id": type_id[i],
+            "label": type_label[i]
+        }
+        if entity_type == "name":
+            e["role"] = type_obj
+        elif entity_type == "place":
+            e["event"] = type_obj
+        elif entity_type == "date":
+            e["type"] = type_obj
+        
+        e["note"] = notes[i]
+
+        entities.append(e)
+        
+    return entities
+    
+def process_iso_string(iso):
+    date = iso.split("/")
+    not_before = date[0].zfill(4)
+    not_after = None
+    if(len(date) > 1):
+        not_after = date[1].zfill(4)
+    return {
+        "not_before": not_before,
+        "not_after": not_after
+    }
 
 def del_none(d):
     """
