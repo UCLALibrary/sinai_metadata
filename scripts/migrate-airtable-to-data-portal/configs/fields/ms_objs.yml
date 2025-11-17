@@ -259,7 +259,7 @@ assoc_name_role_label:
   csv: text+
   airtable: text+
   delimiter: [","]
-associated_name_note:
+assoc_name_note:
   name: Associated Name Note
   csv: text+
   airtable: text+
@@ -290,7 +290,7 @@ assoc_place_event_label:
   csv: text+
   airtable: text+
   delimiter: [","]
-associated_place_note:
+assoc_place_note:
   name: Associated Place Note
   csv: text+
   airtable: text+
@@ -320,7 +320,7 @@ assoc_date_type_label:
   csv: text+
   airtable: text+
   delimiter: [","]
-associated_date_note:
+assoc_date_note:
   name: Associated Date Note
   csv: text+
   airtable: text+
