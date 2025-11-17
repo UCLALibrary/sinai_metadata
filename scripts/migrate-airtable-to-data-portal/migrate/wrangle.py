@@ -29,7 +29,7 @@ def get_data():
 def get_table_data_from_csv(table_info):
     if table_info.get("csv"):
         with open(table_info["csv"]) as fh:
-            table_data = pd.read_csv(fh, index_col=table_info.get("index_col"))
+            table_data = pd.read_csv(fh, index_col=table_info.get("index_col"), dtype=str)
             data = {}
             # Parse the DataFrame into a 2-dim dictionary to match how Airtable will be parsed
             for row_index, row in table_data.iterrows():
