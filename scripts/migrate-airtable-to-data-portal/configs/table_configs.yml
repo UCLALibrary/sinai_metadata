@@ -34,10 +34,11 @@ tables:
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblR1vJqQgSdekSyn/viw2dWnShOOyRvWXE
     fields: fields/bibs.yml
     index_col: ID
-  # paracontents:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
-  #   fields: fields/paracontents.yml
+  paracontents:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/paracontents.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
+    fields: fields/paracontents.yml
+    index_col: ID
   related_mss:
     csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/related_mss_TEST.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP

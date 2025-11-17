@@ -86,12 +86,12 @@ part_typed_notes:
     csv: text+
     airtable: text+
     delimiter: ["|~|"]
-paracontent:
+part_paracontent:
   name: Part Paracontents
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup: paracontents
+  lookup: paracontents.*
 related_mss:
   name: Related MSS
   csv: record+

@@ -112,6 +112,12 @@ overtext_locus: # may be text+
   name: Overtext Locus
   csv: text
   airtable: text
+part_paracontent:
+  name: Part Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents.*
 other_layer_ark:
   name: Other Layer ARKs
   csv: text+
@@ -161,7 +167,7 @@ paracontent:
   csv: record+
   airtable: record+
   delimiter: [","]
-  lookup: paracontents
+  lookup: paracontents.*
 location_id:
   name: Location ID
   csv: text+
