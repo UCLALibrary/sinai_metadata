@@ -115,33 +115,9 @@ def transform_single_record(record, record_type, fields):
             }
         )
 
-    # TODO: assoc_* (needs a sub-function)
-    
-
-    # Add viscodex
-    # TODO: ms obj only
-    # TODO: move to its own function
-    # TODO: type is hard-coded
-    viscodex_label = parse.get_data_from_field(source=record, field_config=fields['viscodex_label'])
-    viscodex_url = parse.get_data_from_field(source=record, field_config=fields['viscodex_url'])
-    result["viscodex"] = []
-    if viscodex_url and len(viscodex_url) > 0:
-        for i in range(0, len(viscodex_label)):
-            result["viscodex"].append(
-                {
-                    "type": {
-                        "id": "manuscript",
-                        "label": "Manuscript"
-                    },
-                    "label": viscodex_label[i],
-                    "url": viscodex_url[i]
-                }
-            )
-
-    bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
-    
-    if bibs and len(bibs) > 0:
-        result["bib"] = [transform_bib_data(bibs)]
+    # Paracontents
+    paracontents_data = parse.get_data_from_field(source=record, field_config=fields["paracontent"])
+    result["para"] = transform_paracontents_data(paracontents_data)
 
     # Associated things
     result["assoc_name"] = transform_associated_entity_data(
@@ -177,6 +153,32 @@ def transform_single_record(record, record_type, fields):
         entity_type="date"
     )
 
+    # Add viscodex
+    # TODO: ms obj only
+    # TODO: move to its own function
+    # TODO: type is hard-coded
+    viscodex_label = parse.get_data_from_field(source=record, field_config=fields['viscodex_label'])
+    viscodex_url = parse.get_data_from_field(source=record, field_config=fields['viscodex_url'])
+    result["viscodex"] = []
+    if viscodex_url and len(viscodex_url) > 0:
+        for i in range(0, len(viscodex_label)):
+            result["viscodex"].append(
+                {
+                    "type": {
+                        "id": "manuscript",
+                        "label": "Manuscript"
+                    },
+                    "label": viscodex_label[i],
+                    "url": viscodex_url[i]
+                }
+            )
+
+    bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
+    
+    if bibs and len(bibs) > 0:
+        result["bib"] = [transform_bib_data(bibs)]
+
+
     # TODO: ms obj
     # TODO: hard-code type or get from data?
     iiif = {
@@ -200,7 +202,7 @@ def transform_single_record(record, record_type, fields):
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
-    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus"]
+    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus", "part_paracontent"]
     # TODO: figure out how best to include other layers, related mss, paracontent if at the part level
     part_notes_data = parse.get_typed_notes_data(source=record, note_fields=fields["part_typed_notes"])
 
@@ -264,6 +266,8 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None,
                                                     has_multiple_layers=isinstance(part_data["other_layer_ark"], list))
 
     # para??
+    part["para"] = transform_paracontents_data(part_data["part_paracontent"])
+
     if(notes_data):
         part["note"] = transform_notes_data(notes_data)
     else:
@@ -333,6 +337,94 @@ def transform_layer_reference_data(record, field_map: dict, has_multiple_layers:
                     }
                 )
     return layers
+
+def transform_paracontents_data(paracontents_data):
+    paracontents = []
+
+    # dump out if empty
+    if not(paracontents_data):
+        return paracontents
+    
+    for record in paracontents_data:
+        para = {}
+        para_type = {
+            "id": record["type_id"],
+            "label": record["type_label"]
+        }
+        para["type"] = para_type
+
+        para["subtype"] = []
+        if record["subtype_id"]:
+            for i in range(0, len(record["subtype_id"])):
+                para["subtype"].append({
+                    "id": record["subtype_id"][i],
+                    "label": record["subtype_label"][i]
+                })
+
+        para["locus"] = record["locus"]
+
+        # lang is required
+        para["lang"] = []
+        for i in range(0, len(record["lang_id"])):
+            para["lang"].append({
+                "id": record["lang_id"][i],
+                "label": record["lang_label"][i]
+            })
+        
+        # script is optional
+        para["script"] = []
+        if record["script_id"]:
+            for i in range(0, len(record["script_id"])):
+                para["script"].append({
+                    "id": record["script_id"][i],
+                    "label": record["script_label"][i],
+                    "writing_system": record["script_system"][i]
+                })
+
+        para["label"] = record["label"]
+
+        para["as_written"] = record["as_written"]
+
+        para["translation"] = record["translation"]
+
+        para["assoc_name"] = transform_associated_entity_data(
+            arks=record["assoc_name_ark"],
+            iso=None,
+            values=record["assoc_name_value"],
+            as_written=record["assoc_name_as_written"],
+            type_id=record["assoc_name_role_id"],
+            type_label = record["assoc_name_role_label"],
+            notes=record["assoc_name_note"],
+            entity_type="name"
+        )
+
+        para["assoc_place"] = transform_associated_entity_data(
+            arks=record["assoc_place_ark"],
+            iso=None,
+            values=record["assoc_place_value"],
+            as_written=record["assoc_place_as_written"],
+            type_id=record["assoc_place_event_id"],
+            type_label = record["assoc_place_event_label"],
+            notes=record["assoc_place_note"],
+            entity_type="place"
+        )
+
+        para["assoc_date"] = transform_associated_entity_data(
+            arks=None,
+            iso=record["assoc_date_iso"],
+            values=record["assoc_date_value"],
+            as_written=record["assoc_date_as_written"],
+            type_id=record["assoc_date_type_id"],
+            type_label = record["assoc_date_type_label"],
+            notes=record["assoc_date_note"],
+            entity_type="date"
+        )
+
+        para["note"] = record["note"]
+
+        paracontents.append(para)
+    
+    return paracontents
 
 def transform_related_mss_data(related_mss_data, level_filter: None):
 
