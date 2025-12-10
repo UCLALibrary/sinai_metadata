@@ -381,4 +381,10 @@ iiif_thumbnail_url:
 # Image Program MSI Processing
 # Image Program Condition Category
 # Image Program Note
-# Reconstructed From
+reconstructed_from:
+  name: Reconstructed From
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: ms_objs.ark
+# TBD: change log info

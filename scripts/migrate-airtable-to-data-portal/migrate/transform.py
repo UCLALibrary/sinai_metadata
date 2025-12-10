@@ -29,31 +29,9 @@ def transform_single_record(record, record_type, fields):
     reconstruction = parse.get_data_from_field(source=record, field_config=fields['reconstruction'])
     result['reconstruction'] = reconstruction == 'true'
 
-    # TODO: ms obj and layer only? or maybe just ms obj?
-    result['type'] = {
-        "id": parse.get_data_from_field(source=record, field_config=fields['type_id']),
-        "label": parse.get_data_from_field(source=record, field_config=fields['type_label'])
-    }
-
-    # TODO: ms obj specific
-    result["shelfmark"] = parse.get_data_from_field(source=record, field_config=fields['shelfmark'])
-
     result["summary"] = parse.get_data_from_field(source=record, field_config=fields['summary'])
 
     result["extent"] = parse.get_data_from_field(source=record, field_config=fields['extent'])
-
-    result["weight"] = parse.get_data_from_field(source=record, field_config=fields['weight'])
-
-    result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
-
-    state = {}
-    state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
-    state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
-    result["state"] = state
-
-    result["fol"] = parse.get_data_from_field(source=record, field_config=fields['fol'])
-
-    result["coll"] = parse.get_data_from_field(source=record, field_config=fields['coll'])
     
     notes_data = parse.get_typed_notes_data(source=record, note_fields=fields['typed_notes'])
     result["notes"] = transform_notes_data(notes_data)
@@ -71,49 +49,6 @@ def transform_single_record(record, record_type, fields):
                 }
             )
     result["feature"] = features
-
-    other_layers = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["other_layer_ark", "other_layer_label", "other_layer_type_id", "other_layer_type_label", "other_layer_locus", "other_layer_level"])
-    
-    # add ms-obj level layer info
-    other_layer_field_map = {
-        "id": "other_layer_ark",
-        "label": "other_layer_label",
-        "type_id": "other_layer_type_id",
-        "type_label": "other_layer_type_label",
-        "locus": "other_layer_locus",
-        "level": "other_layer_level"
-    }
-    result["layer"] = transform_layer_reference_data(record=other_layers, field_map=other_layer_field_map, has_multiple_layers=isinstance(other_layers["other_layer_ark"], list), level_filter="ms")
-    
-
-    related_mss = parse.get_data_from_field(source=record, field_config=fields['related_mss'])
-
-    result["related_mss"] = transform_related_mss_data(related_mss_data=related_mss, level_filter="ms")
-    # Process part data
-    # TODO: ms obj only
-    # If there are any referenced parts, use that data table; otherwise use the part fields in the ms obj record
-    parts = parse.get_data_from_field(source=record,field_config=fields['part_id'])
-    if parts and len(parts) > 0:
-        result["part"] = []
-        for part in parts:
-            result["part"].append(transform_part_data(part_data=part))
-    else:
-        result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
-
-    # add location info
-    # TODO: MS obj only
-    location_ids =  parse.get_data_from_field(source=record,field_config=fields['location_id'])
-    repositories =  parse.get_data_from_field(source=record,field_config=fields['repository'])
-    collections =  parse.get_data_from_field(source=record,field_config=fields['collection'])
-    result["location"] = []
-    for i in range(0, len(location_ids)):
-        result["location"].append(
-            {
-                "id": location_ids[i],
-                "repository": repositories[i],
-                "collection": collections[i]
-            }
-        )
 
     # Paracontents
     paracontents_data = parse.get_data_from_field(source=record, field_config=fields["paracontent"])
@@ -153,8 +88,91 @@ def transform_single_record(record, record_type, fields):
         entity_type="date"
     )
 
+    bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
+    
+    if bibs and len(bibs) > 0:
+        result["bib"] = [transform_bib_data(bibs)]
+
+    # TODO: description program (waiting on config)
+
+    # TODO: reconstructed from (waiting on config)
+    result["reconstructed_from"] = parse.get_data_from_field(source=record, field_config=fields['reconstructed_from'])
+
+    # TODO: change log (waiting on config)
+
+    if(record_type == "manuscript_objects"):
+        transform_manuscript_object_fields(record, result, fields)
+        # TODO: reorder keys based on ms obj preferred order (a config?)
+
+    return del_none(result) # TODO: reorder based on an established order?
+
+# This function handles the ms-obj-specific transforms
+# A result object should be passed in, which is the current record being transformed
+def transform_manuscript_object_fields(record, result, fields):
+
+    result['type'] = {
+        "id": parse.get_data_from_field(source=record, field_config=fields['type_id']),
+        "label": parse.get_data_from_field(source=record, field_config=fields['type_label'])
+    }
+
+    result["shelfmark"] = parse.get_data_from_field(source=record, field_config=fields['shelfmark'])
+
+    result["weight"] = parse.get_data_from_field(source=record, field_config=fields['weight'])
+
+    result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
+
+    state = {}
+    state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
+    state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
+    result["state"] = state
+
+    result["fol"] = parse.get_data_from_field(source=record, field_config=fields['fol'])
+
+    result["coll"] = parse.get_data_from_field(source=record, field_config=fields['coll'])
+
+
+    other_layers = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["other_layer_ark", "other_layer_label", "other_layer_type_id", "other_layer_type_label", "other_layer_locus", "other_layer_level"])
+    
+    # add ms-obj level layer info
+    other_layer_field_map = {
+        "id": "other_layer_ark",
+        "label": "other_layer_label",
+        "type_id": "other_layer_type_id",
+        "type_label": "other_layer_type_label",
+        "locus": "other_layer_locus",
+        "level": "other_layer_level"
+    }
+    result["layer"] = transform_layer_reference_data(record=other_layers, field_map=other_layer_field_map, has_multiple_layers=isinstance(other_layers["other_layer_ark"], list), level_filter="ms")
+    
+
+    related_mss = parse.get_data_from_field(source=record, field_config=fields['related_mss'])
+
+    result["related_mss"] = transform_related_mss_data(related_mss_data=related_mss, level_filter="ms")
+    # Process part data
+    # If there are any referenced parts, use that data table; otherwise use the part fields in the ms obj record
+    parts = parse.get_data_from_field(source=record,field_config=fields['part_id'])
+    if parts and len(parts) > 0:
+        result["part"] = []
+        for part in parts:
+            result["part"].append(transform_part_data(part_data=part))
+    else:
+        result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
+
+    # add location info
+    location_ids =  parse.get_data_from_field(source=record,field_config=fields['location_id'])
+    repositories =  parse.get_data_from_field(source=record,field_config=fields['repository'])
+    collections =  parse.get_data_from_field(source=record,field_config=fields['collection'])
+    result["location"] = []
+    for i in range(0, len(location_ids)):
+        result["location"].append(
+            {
+                "id": location_ids[i],
+                "repository": repositories[i],
+                "collection": collections[i]
+            }
+        )
+
     # Add viscodex
-    # TODO: ms obj only
     # TODO: move to its own function
     # TODO: type is hard-coded
     viscodex_label = parse.get_data_from_field(source=record, field_config=fields['viscodex_label'])
@@ -173,13 +191,6 @@ def transform_single_record(record, record_type, fields):
                 }
             )
 
-    bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
-    
-    if bibs and len(bibs) > 0:
-        result["bib"] = [transform_bib_data(bibs)]
-
-
-    # TODO: ms obj
     # TODO: hard-code type or get from data?
     iiif = {
         "type": {
@@ -193,12 +204,6 @@ def transform_single_record(record, record_type, fields):
     iiif["thumbnail"] = parse.get_data_from_field(source=record, field_config=fields['iiif_thumbnail_url'])
 
     result["iiif"] = iiif
-
-    # TODO: description and image program (waiting on config)
-
-    # TODO: reconstructed from (waiting on config)
-
-    return del_none(result) # TODO: reorder based on an established order?
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
