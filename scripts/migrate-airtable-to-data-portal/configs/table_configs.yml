@@ -13,22 +13,25 @@ tables:
     csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/layers_TEST.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
     fields: fields/layers.yml
-  # text_units:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
-  #   fields: fields/text_units.yml
-  # work_witnesses:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl4GHImkuUX4vqiv/viw4famYFZOE2tneE
-  #   fields: fields/work_witnesses.yml
-  # tocs:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl432sctnSStKoAE/viw4P7I6hmC8gDPZn
-  #   fields: fields/tocs.yml
-  # excerpts:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEw9T9JaH32tw2r/viwtlkkryeOK9hMSJ
-  #   fields: fields/excerpts.yml
+  text_units:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/text_units_DEV.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
+    fields: fields/text_units.yml
+  work_witnesses:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/work_wits_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl4GHImkuUX4vqiv/viw4famYFZOE2tneE
+    fields: fields/work_witnesses.yml
+    index_col: ID
+  tocs:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/toc_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl432sctnSStKoAE/viw4P7I6hmC8gDPZn
+    fields: fields/tocs.yml
+    index_col: ID
+  excerpts:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/excerpts_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEw9T9JaH32tw2r/viwtlkkryeOK9hMSJ
+    fields: fields/excerpts.yml
+    index_col: ID
   bibs:
     csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblR1vJqQgSdekSyn/viw2dWnShOOyRvWXE

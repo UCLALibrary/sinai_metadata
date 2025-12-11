@@ -1,0 +1,68 @@
+work_id:
+  name: Work ID
+  csv: text
+  airtable: text
+work_desc_title:
+  name: Work Descriptive Title
+  csv: text
+  airtable: text
+work_creator:
+  name: Work Creator
+  csv: text+
+  airtable: text+ # record? no b/c ARK is pulled in?
+  delimiter: [","]
+work_genre_id:
+  name: Work Genre ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+work_genre_label:
+  name: Work Genre Label
+  csv: text+
+  airtable: text+ # record?
+  delimiter: [","]
+alt_title:
+  name: Alternative Title
+  csv: text
+  airtable: text
+as_written:
+  name: As Written
+  csv: text
+  airtable: text
+locus:
+  name: Locus
+  csv: text
+  airtable: text
+excerpt_id:
+  name: Excerpts
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: excerpts.*
+content_id:
+  name: Contents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: tocs.*
+content_label:
+  name: Contents Label
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+content_note:
+  name: Contents Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+note:
+  name: Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+bibs:
+  name: Reference Instances
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: bibs.*

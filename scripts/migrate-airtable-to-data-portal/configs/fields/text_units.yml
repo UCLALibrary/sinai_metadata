@@ -1,0 +1,107 @@
+ark:
+  name: Item ARK
+  csv: text
+  airtable: text
+reconstruction:
+  name: Reconstruction
+  csv: text
+  airtable: text
+label:
+  name: Label
+  csv: text
+  airtable: text
+locus:
+  name: Locus
+  csv: text
+  airtable: text
+summary:
+  name: Summary
+  csv: text
+  airtable: text
+language_id:
+  name: Language ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+language_label:
+  name: Language Label
+  csv: text+
+  airtable: text+ # record?
+  delimiter: [","]
+work_wit_id:
+  name: Work Witnesses
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: work_witnesses.*
+# work wit
+paracontent:
+  name: Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents.*
+feature_id:
+  name: Feature ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+feature_label:
+  name: Feature Labels
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: features.label
+typed_notes:
+  contents:
+    label: Contents Note
+    name: Contents note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  para:
+    label: Paracontent Note
+    name: Paracontent note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  general:
+    label: General Note
+    name: General note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  ornamentation:
+    label: Ornamentation note
+    name: Ornamentation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+bibs:
+  name: Reference Instances
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: bibs.*
+desc_program_labels:
+  name: Description Program Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+desc_program_descs:
+  name: Description Program Statements
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+reconstructed_from:
+  name: Reconstructed From
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: ms_objs.ark
+parent_arks:
+  name: Parent ARKs
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+# TBD: change log info

@@ -1,0 +1,21 @@
+sequence:
+  name: Sequence
+  csv: text
+  airtable: text
+label:
+  name: Label
+  csv: text
+  airtable: text
+work_id:
+  name: Work ID
+  csv: text
+  airtable: text
+locus:
+  name: Locus
+  csv: text
+  airtable: text
+note:
+  name: Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]

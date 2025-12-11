@@ -1,0 +1,26 @@
+type_id:
+  name: Type ID
+  csv: text
+  airtable: text
+type_label:
+  name: Type Label
+  csv: text
+  airtable: text
+locus:
+  name: Locus
+  csv: text
+  airtable: text
+as_written:
+  name: As Written
+  csv: text
+  airtable: text
+translation:
+  name: Translation
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+note:
+  name: Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
