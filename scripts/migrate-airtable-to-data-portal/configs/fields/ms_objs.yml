@@ -370,17 +370,61 @@ iiif_thumbnail_url:
   name: IIIF Thumbnail URL
   csv: text
   airtable: text
-# TBD on the following:
-# Description Program Labels
-# Description Program Descriptions
-# Image Program Labels
-# Image Program Descriptions
-# Image Program Camera Operators
-# Image Program Imaging Date
-# Image Program Delivery
-# Image Program MSI Processing
-# Image Program Condition Category
-# Image Program Note
+desc_program_labels:
+  name: Description Program Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+desc_program_descs:
+  name: Description Program Statements
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_labels: 
+  name: Image Program Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_descs:
+  name: Image Program Statements
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_camera_operators:
+  name: Image Program Camera Operators
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+image_program_imaging_date:
+  name: Image Program Imaging Date
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_delivery:
+  name: Image Program Delivery
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_msi_processing:
+  name: Image Program MSI Processing
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+image_program_condition_category:
+  name: Image Program Condition Category
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_imaging_system:
+  name: Image Program Imaging System
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_note:
+  name: Image Program Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
 reconstructed_from:
   name: Reconstructed From
   csv: text+

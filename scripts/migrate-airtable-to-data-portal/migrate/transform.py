@@ -93,9 +93,14 @@ def transform_single_record(record, record_type, fields):
     if bibs and len(bibs) > 0:
         result["bib"] = [transform_bib_data(bibs)]
 
-    # TODO: description program (waiting on config)
+    # Add description program and provenance
+    desc_programs =  parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["desc_program_labels", "desc_program_descs"])
+    result["desc_provenance"] = {
+        "program": transform_program_data(desc_programs, "desc") if desc_programs["desc_program_labels"] else None, # process program info only if there is at least one label | TODO: technically not a schema requirement, so other way around?
+        "rights": ""
+    } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
 
-    # TODO: reconstructed from (waiting on config)
+    # Add reconstructed_from
     result["reconstructed_from"] = parse.get_data_from_field(source=record, field_config=fields['reconstructed_from'])
 
     # TODO: change log (waiting on config)
@@ -204,6 +209,12 @@ def transform_manuscript_object_fields(record, result, fields):
     iiif["thumbnail"] = parse.get_data_from_field(source=record, field_config=fields['iiif_thumbnail_url'])
 
     result["iiif"] = iiif
+
+    image_programs =  parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["image_program_labels", "image_program_descs", "image_program_camera_operators", "image_program_imaging_date", "image_program_delivery", "image_program_msi_processing", "image_program_condition_category", "image_program_imaging_system", "image_program_note"])
+    result["image_provenance"] = {
+        "program": transform_program_data(image_programs, "image") if image_programs["image_program_labels"] else None, # process program info only if there is at least one label | TODO: technically not a schema requirement, so other way around?
+        "rights": ""
+    } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
@@ -556,6 +567,26 @@ def process_iso_string(iso):
         "not_after": not_after
     }
 
+def transform_program_data(programs, type: str):
+    data = []
+
+    count_programs = len(programs[f"{type}_program_labels"])
+    for i in range(0, count_programs):
+        d = {}
+        d["label"] = get_element(programs[f"{type}_program_labels"], i)
+        d["description"] = get_element(programs[f"{type}_program_descs"], i)
+        # the following are only for image type programs
+        if type == "image":
+            d["camera_operator"] = get_element(programs[f"{type}_program_camera_operators"], i)
+            d["imaging_date"] = get_element(programs[f"{type}_program_imaging_date"], i)
+            d["delivery"] = get_element(programs[f"{type}_program_delivery"], i)
+            d["msi_processing"] = get_element(programs[f"{type}_program_msi_processing"], i)
+            d["condition_category"] = get_element(programs[f"{type}_program_condition_category"], i)
+            d["imaging_system"] = get_element(programs[f"{type}_program_imaging_system"], i)
+            d["note"] = get_element(programs[f"{type}_program_note"], i)
+        data.append(d)
+    return data
+
 def del_none(d):
     """
     Delete keys with the value ``None`` in a mixed list and/or dictionary, recursively.
@@ -574,3 +605,13 @@ def del_none(d):
                 if len(d[key]) == 0:
                     del d[key]
     return d
+
+"""
+This function is a helper to handle the many cases where a multi-column field may have empty fields. It handles the TypeError that results from using bracket notation on a None value
+TODO: could add a wrapper or alternative or flag that handles when it's required or not, i.e. if it's a required field missing any data it should raise an error?
+"""
+def get_element(iterable, index, fallback=None):
+    try:
+        return iterable[index]
+    except TypeError:
+        return fallback
