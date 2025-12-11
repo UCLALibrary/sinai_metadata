@@ -9,10 +9,10 @@ tables:
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
     fields: fields/parts.yml
     index_col: ID
-  # layers:
-  #   csv: 
-  #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
-  #   fields: fields/layers.yml
+  layers:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/layers_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
+    fields: fields/layers.yml
   # text_units:
   #   csv: 
   #   airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
