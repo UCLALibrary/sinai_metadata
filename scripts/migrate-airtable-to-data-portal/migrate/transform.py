@@ -30,8 +30,6 @@ def transform_single_record(record, record_type, fields):
     result['reconstruction'] = reconstruction == 'true'
 
     result["summary"] = parse.get_data_from_field(source=record, field_config=fields['summary'])
-
-    result["extent"] = parse.get_data_from_field(source=record, field_config=fields['extent'])
     
     notes_data = parse.get_typed_notes_data(source=record, note_fields=fields['typed_notes'])
     result["notes"] = transform_notes_data(notes_data)
@@ -53,40 +51,6 @@ def transform_single_record(record, record_type, fields):
     # Paracontents
     paracontents_data = parse.get_data_from_field(source=record, field_config=fields["paracontent"])
     result["para"] = transform_paracontents_data(paracontents_data)
-
-    # Associated things
-    result["assoc_name"] = transform_associated_entity_data(
-        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_name_ark"]),
-        values=parse.get_data_from_field(source=record, field_config=fields["assoc_name_value"]),
-        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_name_as_written"]),
-        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_id"]),
-        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_label"]),
-        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_name_note"]),
-        iso=None,
-        entity_type="name"
-    )
-
-    result["assoc_place"] = transform_associated_entity_data(
-        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_place_ark"]),
-        values=parse.get_data_from_field(source=record, field_config=fields["assoc_place_value"]),
-        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_place_as_written"]),
-        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_id"]),
-        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_label"]),
-        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_place_note"]),
-        iso=None,
-        entity_type="place"
-    )
-
-    result["assoc_date"] = transform_associated_entity_data(
-        arks=None,
-        values=parse.get_data_from_field(source=record, field_config=fields["assoc_date_value"]),
-        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_date_as_written"]),
-        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_id"]),
-        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_label"]),
-        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_date_note"]),
-        iso=parse.get_data_from_field(source=record, field_config=fields["assoc_date_iso"]),
-        entity_type="date"
-    )
 
     bibs = parse.get_data_from_field(source=record, field_config=fields['bibs'])
     
@@ -111,6 +75,9 @@ def transform_single_record(record, record_type, fields):
     if(record_type == "layers"):
         transform_layer_fields(record, result, fields)
         # TODO: reorder keys based on layer preferred order (a config?)
+    if(record_type == "text_units"):
+        transform_text_unit_fields(record, result, fields)
+        # TODO: reorder keys based on layer preferred order (a config?)
 
     return del_none(result) # TODO: reorder based on an established order?
 
@@ -125,6 +92,8 @@ def transform_manuscript_object_fields(record, result, fields):
 
     result["shelfmark"] = parse.get_data_from_field(source=record, field_config=fields['shelfmark'])
 
+    result["extent"] = parse.get_data_from_field(source=record, field_config=fields['extent'])
+    
     result["weight"] = parse.get_data_from_field(source=record, field_config=fields['weight'])
 
     result["dim"] = parse.get_data_from_field(source=record, field_config=fields['ms_dim'])
@@ -180,6 +149,8 @@ def transform_manuscript_object_fields(record, result, fields):
             }
         )
 
+    # Add the associated entities (ms and layers only)
+    create_associated_entities(result, record, fields)
     # Add viscodex
     # TODO: move to its own function
     # TODO: type is hard-coded
@@ -220,6 +191,7 @@ def transform_manuscript_object_fields(record, result, fields):
     } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
 
 def transform_layer_fields(record, result, fields):
+    # TODO: ? add related mss??
     state = {}
     state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
     state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
@@ -227,6 +199,8 @@ def transform_layer_fields(record, result, fields):
 
     result["label"] = parse.get_data_from_field(source=record, field_config=fields['label'])
 
+    result["extent"] = parse.get_data_from_field(source=record, field_config=fields['extent'])
+    
     result["locus"] = parse.get_data_from_field(source=record, field_config=fields['locus'])
 
     # writing; TODO: only handles creating a single writing object...update config for locus and note to be text+, and multi-level, if needed; same with scripts...
@@ -246,9 +220,68 @@ def transform_layer_fields(record, result, fields):
     text_unit_reference_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["text_unit_ark", "text_unit_label", "text_unit_locus"])
     result["text_unit"] = transform_text_unit_reference_data(text_unit_reference_data)
 
+    # Add the associated entities (ms and layers only)
+    create_associated_entities(result, record, fields)
+
+    result["parent"] = parse.get_data_from_field(source=record, field_config=fields['parent_arks'])
+
+def transform_text_unit_fields(record, result, fields):
+    result["label"] = parse.get_data_from_field(source=record, field_config=fields['label'])
+
+    result["locus"] = parse.get_data_from_field(source=record, field_config=fields['locus'])
+
+    # lang
+    lang_ids = parse.get_data_from_field(source=record, field_config=fields['language_id'])
+    lang_labels = parse.get_data_from_field(source=record, field_config=fields['language_label'])
+    result["lang"] = []
+    for i in range(0, len(lang_ids)):
+        result["lang"].append({
+            "id": lang_ids[i],
+            "label": lang_labels[i]
+        })
+
+    # work wit
+    work_wit_data = parse.get_data_from_field(source=record, field_config=fields["work_wit_id"])
+    result["work_wit"] = transform_work_wit_data(work_wit_data)
+
     result["parent"] = parse.get_data_from_field(source=record, field_config=fields['parent_arks'])
 
 
+"""A handle function for abstracting the associate_* creation """
+def create_associated_entities(result, record, fields):
+    # Associated things
+    result["assoc_name"] = transform_associated_entity_data(
+        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_name_ark"]),
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_name_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_name_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_name_role_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_name_note"]),
+        iso=None,
+        entity_type="name"
+    )
+
+    result["assoc_place"] = transform_associated_entity_data(
+        arks=parse.get_data_from_field(source=record, field_config=fields["assoc_place_ark"]),
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_place_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_place_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_place_event_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_place_note"]),
+        iso=None,
+        entity_type="place"
+    )
+
+    result["assoc_date"] = transform_associated_entity_data(
+        arks=None,
+        values=parse.get_data_from_field(source=record, field_config=fields["assoc_date_value"]),
+        as_written=parse.get_data_from_field(source=record, field_config=fields["assoc_date_as_written"]),
+        type_id=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_id"]),
+        type_label=parse.get_data_from_field(source=record, field_config=fields["assoc_date_type_label"]),
+        notes=parse.get_data_from_field(source=record, field_config=fields["assoc_date_note"]),
+        iso=parse.get_data_from_field(source=record, field_config=fields["assoc_date_iso"]),
+        entity_type="date"
+    )
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
@@ -675,6 +708,10 @@ def transform_text_unit_reference_data(text_unit_reference_data):
         }
         tu_refs.append(tu)
     return tu_refs
+
+def transform_work_wit_data(work_wit_data):
+    # return work_wit_data
+    pass
 
 def del_none(d):
     """
