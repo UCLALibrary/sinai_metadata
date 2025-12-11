@@ -12,7 +12,7 @@ def transform_records(table_name: str):
         transformed_record = transform_single_record(record=main_table["data"].get(record), 
                                                      record_type=table_name,
                                                      fields=config.TABLES[table_name]["fields"])
-        file_path = "/Users/wpotter/Desktop/SMDP-Script-Tests/ms_objs/" + transformed_record["ark"][10:]+".json" 
+        file_path = f"/Users/wpotter/Desktop/SMDP-Script-Tests/{table_name}/" + transformed_record["ark"][10:]+".json" 
         with open(file_path, mode="w") as fh:
             json.dump(transformed_record, fh, indent=2, ensure_ascii=False)
         # print(json.dumps(transformed_record, indent=2))
@@ -108,6 +108,9 @@ def transform_single_record(record, record_type, fields):
     if(record_type == "manuscript_objects"):
         transform_manuscript_object_fields(record, result, fields)
         # TODO: reorder keys based on ms obj preferred order (a config?)
+    if(record_type == "layers"):
+        transform_layer_fields(record, result, fields)
+        # TODO: reorder keys based on layer preferred order (a config?)
 
     return del_none(result) # TODO: reorder based on an established order?
 
@@ -215,6 +218,37 @@ def transform_manuscript_object_fields(record, result, fields):
         "program": transform_program_data(image_programs, "image") if image_programs["image_program_labels"] else None, # process program info only if there is at least one label | TODO: technically not a schema requirement, so other way around?
         "rights": ""
     } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
+
+def transform_layer_fields(record, result, fields):
+    state = {}
+    state["id"] = parse.get_data_from_field(source=record, field_config=fields['state_id'])
+    state["label"] = parse.get_data_from_field(source=record,field_config=fields['state_label'])
+    result["state"] = state
+
+    result["label"] = parse.get_data_from_field(source=record, field_config=fields['label'])
+
+    result["locus"] = parse.get_data_from_field(source=record, field_config=fields['locus'])
+
+    # writing; TODO: only handles creating a single writing object...update config for locus and note to be text+, and multi-level, if needed; same with scripts...
+    # other option is to let this just be a limitation of the script that is documented, since a rare case
+    writing_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["script_id", "script_label", "script_system", "writing_locus", "writing_note"])
+    result["writing"] = [transform_writing_data(writing_data)]
+
+    # ink
+    ink_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["ink_locus", "ink_color", "ink_note"])
+    result["ink"] = transform_ink_data(ink_data)
+
+    # layout
+    layout_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["layout_locus", "layout_columns", "layout_lines", "layout_dim", "layout_note"])
+    result["layout"] = transform_layout_data(layout_data)
+
+    # text unit reference: id, label, locus (id and label required)
+    text_unit_reference_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["text_unit_ark", "text_unit_label", "text_unit_locus"])
+    result["text_unit"] = transform_text_unit_reference_data(text_unit_reference_data)
+
+    result["parent"] = parse.get_data_from_field(source=record, field_config=fields['parent_arks'])
+
+
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
@@ -587,6 +621,61 @@ def transform_program_data(programs, type: str):
         data.append(d)
     return data
 
+def transform_writing_data(writing_data):
+    writing = {}
+    writing["script"] = []
+    for i in range(0, len(writing_data["script_id"])):
+        script = {
+            "id": get_element(writing_data["script_id"], i),
+            "label": get_element(writing_data["script_label"], i),
+            "writing_system": get_element(writing_data["script_system"], i),
+        }
+        writing["script"].append(script)
+    
+    writing["locus"] = writing_data["writing_locus"]
+
+    writing["note"] = writing_data["writing_note"]
+    return writing
+
+def transform_ink_data(ink_data):
+    inks = []
+    ink_count = get_length_from_optional_fields(ink_data)
+    for i in range(0, ink_count):
+        ink = {
+            "locus": get_element(ink_data["ink_locus"], i),
+            "color": get_element(ink_data["ink_color"], i),
+            "note": get_element(ink_data["ink_note"], i),
+        }
+        inks.append(ink)
+    return inks
+
+def transform_layout_data(layout_data):
+    layouts = []
+    layout_count = get_length_from_optional_fields(layout_data)
+    for i in range(0, layout_count):
+        layout = {
+            "locus": get_element(layout_data["layout_locus"], i),
+            "columns": get_element(layout_data["layout_columns"], i),
+            "lines": get_element(layout_data["layout_lines"], i),
+            "dim": get_element(layout_data["layout_dim"], i),
+            "note": get_element(layout_data["layout_note"], i),
+        }
+        layouts.append(layout)
+    return layouts
+
+def transform_text_unit_reference_data(text_unit_reference_data):
+    tu_refs = []
+    tu_count = len(text_unit_reference_data["text_unit_ark"])
+
+    for i in range(0, tu_count):
+        tu = {
+            "id": get_element(text_unit_reference_data["text_unit_ark"], i),
+            "label": get_element(text_unit_reference_data["text_unit_label"], i),
+            "locus": get_element(text_unit_reference_data["text_unit_locus"], i)
+        }
+        tu_refs.append(tu)
+    return tu_refs
+
 def del_none(d):
     """
     Delete keys with the value ``None`` in a mixed list and/or dictionary, recursively.
@@ -615,3 +704,16 @@ def get_element(iterable, index, fallback=None):
         return iterable[index]
     except TypeError:
         return fallback
+
+"""
+This helper function gets the length from a set of iterable fields when all are optional
+Returns 0 if all are None, but if any have data, returns the max length
+Assumes the field is either None or an array
+TODO: check that this works if there's a string in there...or confirm it's always arrays or None
+"""
+def get_length_from_optional_fields(fields):
+    length = 0
+    for name in fields:
+        # if the field exists and its length is 
+        length = len(fields[name]) if fields[name] and len(fields[name]) > length else length
+    return length
