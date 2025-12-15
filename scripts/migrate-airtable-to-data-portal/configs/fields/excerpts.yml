@@ -1,3 +1,7 @@
+sequence:
+  name: Sequence
+  csv: text
+  airtable: text
 type_id:
   name: Type ID
   csv: text

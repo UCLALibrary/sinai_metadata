@@ -711,7 +711,99 @@ def transform_text_unit_reference_data(text_unit_reference_data):
 
 def transform_work_wit_data(work_wit_data):
     # return work_wit_data
-    pass
+    wits = []
+    wits_sequence = [int(w["sequence"]) for w in work_wit_data]
+    for w in work_wit_data:
+        wit = {}
+
+        # get genre info, if it exists
+        genres = [] 
+        genre_count = get_length_from_optional_fields({k: w[k] for k in ("work_genre_id", "work_genre_label")})
+        for i in range(0, genre_count):
+            genres.append ({
+                "id": get_element(w["work_genre_id"], i),
+                "label": get_element(w["work_genre_label"], i)
+            })
+        # create the work_wit.work property
+        wit["work"] = {
+            "id": w["work_id"],
+            "desc_title": w["work_desc_title"],
+            "creator": w["work_creator"],
+            "genre": genres
+        }
+
+
+        wit["alt_title"] = w["alt_title"]
+        wit["as_written"] = w["as_written"]
+        wit["locus"] = w["locus"]
+
+        # excerpts
+        if(w["excerpt_id"]): #TODO: should you pass the seq and do the reorder in the funct?
+            excerpts_sequence = [int(e["sequence"]) for e in w["excerpt_id"]]
+            # transform excerpts
+            excerpts =  transform_excerpts(w["excerpt_id"])
+            # order by sequence and add to to wit obj
+            wit["excerpt"] = order_list_by_sequence(excerpts, excerpts_sequence)
+
+        # contents
+        if(w["content_id"]):
+            tocs_sequence = [int(c["sequence"]) for c in w["content_id"]]
+            tocs = transform_tocs_from_table(w["content_id"])
+
+            wit["contents"] = order_list_by_sequence(tocs, tocs_sequence)
+        # otherwise use contents label and notes fields for inline data
+        elif(w["content_label"]):
+            wit["contents"] = []
+            for i in range(0, len(w["content_label"])):
+                wit["contents"].append(
+                    {
+                        "label": get_element(w["content_label"], i),
+                        "note": get_element(w["content_note"], i)
+                    }
+                )
+
+
+        wit["note"] = w["note"]
+
+        # bibs
+        bibs = w["bibs"]
+        if bibs and len(bibs) > 0:
+            wit["bib"] = [transform_bib_data(bibs)]
+
+        wits.append(wit)
+
+    # return the list of wits, ordering by sequence
+    return order_list_by_sequence(wits, wits_sequence)
+    # return work_wit_data # use this for testing purposes
+
+def transform_excerpts(excerpts):
+    data = []
+    for exc in excerpts:
+        data.append({
+            "type": {
+                "id": exc["type_id"],
+                "label": exc["type_label"]
+            },
+            "locus": exc["locus"],
+            "as_written": exc["as_written"],
+            "translation": exc["translation"],
+            "note": exc["note"]
+        })
+    return data
+
+def transform_tocs_from_table(contents):
+    toc = []
+    for c in contents:
+        toc.append(
+            {
+                "label": c["label"],
+                "work_id": c["work_id"],
+                "locus": c["locus"],
+                "note": c["note"]
+            }
+        )
+    return toc
+
 
 def del_none(d):
     """
@@ -754,3 +846,10 @@ def get_length_from_optional_fields(fields):
         # if the field exists and its length is 
         length = len(fields[name]) if fields[name] and len(fields[name]) > length else length
     return length
+
+def order_list_by_sequence(unordered: list, seq: list):
+    # initialize a list of the same length as the unordered list
+    ordered = [None] * len(unordered)
+    for i in range(0, len(seq)):
+        ordered[seq[i]-1] = unordered[i]
+    return ordered
