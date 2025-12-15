@@ -875,7 +875,7 @@ should become
 def reduce_sequence(seq):
     seq_copy = seq.copy()
     # creates a map of the existing values in the sequence and their reduced versions
-    seq_map = reduce_sequence(seq_copy, 0, {})
+    seq_map = map_sequence_order(seq_copy, 0, {})
     return [seq_map[v] for v in seq]
 
 # Recursive function for mapping a sequence of integers to its ascending
@@ -895,7 +895,7 @@ def map_sequence_order(seq, i, seq_map):
         ind = seq.index(min_val)
         seq_map[min_val] = i
         del(seq[ind])
-        return reduce_sequence(seq, i+1, seq_map)
+        return map_sequence_order(seq, i+1, seq_map)
     # if no further seq items to process, return the map
     else:
         return seq_map
