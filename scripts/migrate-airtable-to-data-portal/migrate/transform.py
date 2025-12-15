@@ -286,7 +286,7 @@ def create_associated_entities(result, record, fields):
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
     part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus", "part_paracontent"]
-    # TODO: figure out how best to include other layers, related mss, paracontent if at the part level
+
     part_notes_data = parse.get_typed_notes_data(source=record, note_fields=fields["part_typed_notes"])
 
     part_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=part_fields)
@@ -738,7 +738,7 @@ def transform_work_wit_data(work_wit_data):
         wit["locus"] = w["locus"]
 
         # excerpts
-        if(w["excerpt_id"]): #TODO: should you pass the seq and do the reorder in the funct?
+        if(w["excerpt_id"]):
             excerpts_sequence = [int(e["sequence"]) for e in w["excerpt_id"]]
             # transform excerpts
             excerpts =  transform_excerpts(w["excerpt_id"])
@@ -847,9 +847,55 @@ def get_length_from_optional_fields(fields):
         length = len(fields[name]) if fields[name] and len(fields[name]) > length else length
     return length
 
+"""
+Assumptions:
+1. The length of unordered and seq are equal (i.e., every item in unordered has a corresponding sequence)
+2. The values of seq are unique (i.e., no sequence number repeats)
+
+Orders the unordered list based on the associated sequence, ascending
+Reduces the sequence, first, to handle gaps in the sequence or cases where the sequence does not start at a 0-index
+"""
 def order_list_by_sequence(unordered: list, seq: list):
     # initialize a list of the same length as the unordered list
     ordered = [None] * len(unordered)
-    for i in range(0, len(seq)):
-        ordered[seq[i]-1] = unordered[i]
+    # reduce the sequence to a contiguous set from 0 -> len(unordered)
+    reduced_seq = reduce_sequence(seq)
+    for i in range(0, len(reduced_seq)):
+        ordered[reduced_seq[i]] = unordered[i]
     return ordered
+
+# Takes a sequence and reduces it to a contiguous set of values from 0 -> len(seq)
+"""
+Example:
+[8, 4, 6]
+
+should become
+[2, 0, 1]
+"""
+def reduce_sequence(seq):
+    seq_copy = seq.copy()
+    # creates a map of the existing values in the sequence and their reduced versions
+    seq_map = reduce_sequence(seq_copy, 0, {})
+    return [seq_map[v] for v in seq]
+
+# Recursive function for mapping a sequence of integers to its ascending
+# value order
+"""
+For the sequence, [8, 4, 6] it will return a dictionary:
+{
+  8: 2,
+  4: 0,
+  6: 1
+}
+"""
+def map_sequence_order(seq, i, seq_map):
+    # if there is a non-empty sequence, get its minimum value and add to the map
+    if(len(seq) > 0):
+        min_val = min(seq)
+        ind = seq.index(min_val)
+        seq_map[min_val] = i
+        del(seq[ind])
+        return reduce_sequence(seq, i+1, seq_map)
+    # if no further seq items to process, return the map
+    else:
+        return seq_map
