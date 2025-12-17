@@ -175,18 +175,8 @@ def transform_manuscript_object_fields(record, result, fields):
             )
 
     # TODO: hard-code type or get from data? Multiples!
-    iiif = {
-        "type": {
-            "id": "main",
-            "label": "Main"
-        }
-    }
-    iiif["manifest"] = parse.get_data_from_field(source=record, field_config=fields['iiif_manifest_url'])
-    iiif["text_direction"] = parse.get_data_from_field(source=record, field_config=fields['iiif_text_direction'])
-    iiif["behavior"] = parse.get_data_from_field(source=record, field_config=fields['iiif_behavior'])
-    iiif["thumbnail"] = parse.get_data_from_field(source=record, field_config=fields['iiif_thumbnail_url'])
-
-    result["iiif"] = iiif
+    iiif_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["iiif_type_id", "iiif_type_label", "iiif_label", "iiif_manifest_url", "iiif_behavior", "iiif_text_direction", "iiif_thumbnail_url"])
+    result["iiif"] = transform_iiif_data(iiif_data)
 
     # Image rights and programs
     image_rights = parse.get_data_from_field(source=record, field_config=fields['image_rights'])
@@ -828,6 +818,22 @@ def transform_change_log_data(change_log_data):
             "timestamp": get_element(change_log_data["change_log_timestamp"], i)
         })
     return logs
+
+def transform_iiif_data(iiif_data):
+    iiif = []
+    for i in range(0, len(iiif_data["iiif_manifest_url"])):
+        iiif_type = {
+            "id": get_element(iiif_data["iiif_type_id"], i),
+            "label": get_element(iiif_data["iiif_type_label"], i)
+        }
+        iiif.append({
+            "type": iiif_type,
+            "manifest": get_element(iiif_data["iiif_manifest_url"], i),
+            "text_direction": get_element(iiif_data["iiif_text_direction"], i),
+            "behavior": get_element(iiif_data["iiif_behavior"], i),
+            "thumbnail": get_element(iiif_data["iiif_thumbnail_url"], i)
+        })
+    return iiif
 
 def del_none(d):
     """

@@ -353,23 +353,41 @@ bibs:
   airtable: record+
   delimiter: [","]
   lookup: bibs.*
-# tbd: allow multiple with a type??
+iiif_type_id:
+  name: IIIF Manifest type
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_type_label:
+  name: IIIF Manifest type label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_label:
+  name: IIIF Manifest label
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
 iiif_manifest_url:
   name: IIIF Manifest URL
-  csv: text
-  airtable: text
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
 iiif_behavior:
   name: IIIF Behavior
-  csv: text
-  airtable: text
+  csv: text+
+  airtable: text+
+  delimiter: [","]
 iiif_text_direction:
   name: IIIF Text Direction
-  csv: text
-  airtable: text
+  csv: text+
+  airtable: text+
+  delimiter: [","]
 iiif_thumbnail_url:
   name: IIIF Thumbnail URL
-  csv: text
-  airtable: text
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
 desc_program_labels:
   name: Description Program Labels
   csv: text+
