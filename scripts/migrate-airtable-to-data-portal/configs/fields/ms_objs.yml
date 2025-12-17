@@ -380,6 +380,14 @@ desc_program_descs:
   csv: text+
   airtable: text+
   delimiter: ["|~|"]
+metadata_rights:
+  name: Metadata Rights
+  csv: text
+  airtable: text
+image_rights:
+  name: Metadata Rights
+  csv: text
+  airtable: text
 image_program_labels: 
   name: Image Program Labels
   csv: text+

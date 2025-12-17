@@ -15,6 +15,10 @@ MODE = ""
 AIRTABLE_BASE = ""
 AIRTABLE_USER_KEY = ""
 
+# Default metadata and image rights statements
+# TODO: does this need to be set in the config file?
+METADATA_RIGHTS = ""
+IMAGE_RIGHTS = ""
 
 def set_configs(args):
     # set the global MODE config variable based on the arguments

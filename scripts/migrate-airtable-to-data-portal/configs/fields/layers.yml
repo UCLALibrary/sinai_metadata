@@ -279,6 +279,10 @@ desc_program_descs:
   csv: text+
   airtable: text+
   delimiter: ["|~|"]
+metadata_rights:
+  name: Metadata Rights
+  csv: text
+  airtable: text
 reconstructed_from:
   name: Reconstructed From
   csv: text+

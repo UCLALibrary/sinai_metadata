@@ -58,16 +58,18 @@ def transform_single_record(record, record_type, fields):
         result["bib"] = [transform_bib_data(bibs)]
 
     # Add description program and provenance
+    metadata_rights = parse.get_data_from_field(source=record, field_config=fields['metadata_rights'])
+    metadata_rights = metadata_rights if metadata_rights else config.METADATA_RIGHTS
     desc_programs =  parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["desc_program_labels", "desc_program_descs"])
     result["desc_provenance"] = {
         "program": transform_program_data(desc_programs, "desc") if desc_programs["desc_program_labels"] else None, # process program info only if there is at least one label | TODO: technically not a schema requirement, so other way around?
-        "rights": ""
+        "rights": metadata_rights
     } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
 
     # Add reconstructed_from
     result["reconstructed_from"] = parse.get_data_from_field(source=record, field_config=fields['reconstructed_from'])
 
-    # TODO: change log (waiting on config)
+    # change log
     change_log = parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["change_log_message", "change_log_contributor", "change_log_added_by", "change_log_timestamp"])
     result["cataloguer"] = transform_change_log_data(change_log)
 
@@ -186,10 +188,14 @@ def transform_manuscript_object_fields(record, result, fields):
 
     result["iiif"] = iiif
 
+    # Image rights and programs
+    image_rights = parse.get_data_from_field(source=record, field_config=fields['image_rights'])
+    image_rights = image_rights if image_rights else config.IMAGE_RIGHTS
+
     image_programs =  parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["image_program_labels", "image_program_descs", "image_program_camera_operators", "image_program_imaging_date", "image_program_delivery", "image_program_msi_processing", "image_program_condition_category", "image_program_imaging_system", "image_program_note"])
     result["image_provenance"] = {
         "program": transform_program_data(image_programs, "image") if image_programs["image_program_labels"] else None, # process program info only if there is at least one label | TODO: technically not a schema requirement, so other way around?
-        "rights": ""
+        "rights": image_rights
     } # TODO: hard-code or add a config variable for the image rights statement? Or should it be a part of the spreadsheets?
 
 def transform_layer_fields(record, result, fields):
