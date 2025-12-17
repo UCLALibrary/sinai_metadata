@@ -30,6 +30,12 @@ extent:
   name: Extent
   csv: text
   airtable: text
+writing_id:
+  name: Writing IDs
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: writing.*
 script_id:
   name: Script ID
   csv: text+

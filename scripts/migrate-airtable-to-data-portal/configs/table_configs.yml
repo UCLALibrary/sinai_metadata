@@ -47,6 +47,11 @@ tables:
     airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
     fields: fields/related_mss.yml
     index_col: ID
+  writing:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/writing_TEST.csv
+    airtable:
+    fields: fields/writing.yml
+    index_col: ID
 # The following are needed for airtable JSON...
   states:
     csv: 
