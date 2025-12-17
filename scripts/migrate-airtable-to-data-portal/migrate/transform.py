@@ -68,6 +68,8 @@ def transform_single_record(record, record_type, fields):
     result["reconstructed_from"] = parse.get_data_from_field(source=record, field_config=fields['reconstructed_from'])
 
     # TODO: change log (waiting on config)
+    change_log = parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["change_log_message", "change_log_contributor", "change_log_added_by", "change_log_timestamp"])
+    result["cataloguer"] = transform_change_log_data(change_log)
 
     if(record_type == "manuscript_objects"):
         transform_manuscript_object_fields(record, result, fields)
@@ -170,7 +172,7 @@ def transform_manuscript_object_fields(record, result, fields):
                 }
             )
 
-    # TODO: hard-code type or get from data?
+    # TODO: hard-code type or get from data? Multiples!
     iiif = {
         "type": {
             "id": "main",
@@ -804,6 +806,16 @@ def transform_tocs_from_table(contents):
         )
     return toc
 
+def transform_change_log_data(change_log_data):
+    logs = []
+    for i in range(0, len(change_log_data["change_log_message"])):
+        logs.append({
+            "message": get_element(change_log_data["change_log_message"], i),
+            "contributor": get_element(change_log_data["change_log_contributor"], i),
+            "added_by": get_element(change_log_data["change_log_added_by"], i),
+            "timestamp": get_element(change_log_data["change_log_timestamp"], i)
+        })
+    return logs
 
 def del_none(d):
     """
