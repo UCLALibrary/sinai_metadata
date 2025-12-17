@@ -204,7 +204,7 @@ def transform_layer_fields(record, result, fields):
 
     # writing; TODO: only handles creating a single writing object...update config for locus and note to be text+, and multi-level, if needed; same with scripts...
     # other option is to let this just be a limitation of the script that is documented, since a rare case
-    writing_data = parse.get_data_from_field(source="record", field_config=fields["writing_id"])
+    writing_data = parse.get_data_from_field(source=record, field_config=fields["writing_id"])
     if writing_data and len(writing_data) > 0:
         result["writing"] = []
         for writing in writing_data:
