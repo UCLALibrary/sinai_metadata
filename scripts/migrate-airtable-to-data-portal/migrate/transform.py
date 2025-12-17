@@ -71,7 +71,8 @@ def transform_single_record(record, record_type, fields):
 
     # change log
     change_log = parse.get_data_from_multiple_fields(source=record,fields=fields, field_list=["change_log_message", "change_log_contributor", "change_log_added_by", "change_log_timestamp"])
-    result["cataloguer"] = transform_change_log_data(change_log)
+    if(change_log["change_log_message"] and len(change_log["change_log_message"]) < 0):
+        result["cataloguer"] = transform_change_log_data(change_log)
 
     if(record_type == "manuscript_objects"):
         transform_manuscript_object_fields(record, result, fields)
