@@ -117,6 +117,16 @@ text_unit_locus:
   csv: text+
   airtable: text+
   delimiter: ["|~|"]
+text_unit_sequence:
+  name: Text Unit Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+text_unit_sequence_override:
+  name: Text Unit Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
 paracontent:
   name: Paracontents
   csv: record+

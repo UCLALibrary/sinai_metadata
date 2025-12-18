@@ -99,19 +99,32 @@ part_dim:
   name: Part Dimensions
   csv: text
   airtable: text
-overtext_ark: # may be text+ and record+ technically?
+overtext_ark:
   name: Overtext ARKs
-  csv: text
-  airtable: record
+  csv: text+
+  airtable: record+
+  delimiter: [","]
   lookup: layers
-overtext_label: # may be text+
+overtext_label:
   name: Overtext Labels
-  csv: text
-  airtable: text
-overtext_locus: # may be text+
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_locus:
   name: Overtext Locus
-  csv: text
-  airtable: text
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_sequence:
+  name: Overtext Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+overtext_sequence_override:
+  name: Overtext Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
 part_paracontent:
   name: Part Paracontents
   csv: record+
@@ -124,7 +137,7 @@ other_layer_ark:
   airtable: record+
   delimiter: [","]
   lookup: layers
-other_layer_type_id: # Other Layer Locus	Other Layer Level	Other Layer Type ID	Other Layer Type Label
+other_layer_type_id:
   name: Other Layer Type ID
   csv: text+
   airtable: text+
@@ -146,6 +159,16 @@ other_layer_locus:
   delimiter: ["|~|"]
 other_layer_level:
   name: Other Layer Level
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence:
+  name: Other Layer Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence_override:
+  name: Other Layer Sequence Override
   csv: text+
   airtable: text+
   delimiter: [","]

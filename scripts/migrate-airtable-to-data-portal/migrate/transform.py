@@ -84,7 +84,7 @@ def transform_single_record(record, record_type, fields):
         transform_text_unit_fields(record, result, fields)
         result = {k: result.get(k) for k in config.TEXT_UNIT_FIELD_ORDER}
 
-    return del_none(result) # TODO: reorder based on an established order?
+    return del_none(result)
 
 # This function handles the ms-obj-specific transforms
 # A result object should be passed in, which is the current record being transformed
@@ -113,7 +113,7 @@ def transform_manuscript_object_fields(record, result, fields):
     result["coll"] = parse.get_data_from_field(source=record, field_config=fields['coll'])
 
 
-    other_layers = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["other_layer_ark", "other_layer_label", "other_layer_type_id", "other_layer_type_label", "other_layer_locus", "other_layer_level"])
+    other_layers = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["other_layer_ark", "other_layer_label", "other_layer_type_id", "other_layer_type_label", "other_layer_locus", "other_layer_level", "other_layer_sequence", "other_layer_sequence_override"])
     
     # add ms-obj level layer info
     other_layer_field_map = {
@@ -124,7 +124,11 @@ def transform_manuscript_object_fields(record, result, fields):
         "locus": "other_layer_locus",
         "level": "other_layer_level"
     }
-    result["layer"] = transform_layer_reference_data(record=other_layers, field_map=other_layer_field_map, has_multiple_layers=isinstance(other_layers["other_layer_ark"], list), level_filter="ms")
+    # get the other layers sequence, using the override or the regular sequence field
+    other_layers_seq = other_layers["other_layer_sequence_override"] if other_layers["other_layer_sequence_override"] else other_layers["other_layer_sequence"]
+    other_layers_seq = other_layers_seq.copy() if other_layers_seq else None
+
+    result["layer"] = transform_layer_reference_data(record=other_layers, field_map=other_layer_field_map, has_multiple_layers=isinstance(other_layers["other_layer_ark"], list), level_filter="ms", seq=other_layers_seq)
     
 
     related_mss = parse.get_data_from_field(source=record, field_config=fields['related_mss'])
@@ -138,7 +142,7 @@ def transform_manuscript_object_fields(record, result, fields):
         for part in parts:
             result["part"].append(transform_part_data(part_data=part))
     else:
-        result["part"] = get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)
+        result["part"] = [get_part_data_from_ms_table(record=record, fields=fields, other_layer_data=other_layers, related_mss_data=related_mss)]
 
     # add location info
     location_ids =  parse.get_data_from_field(source=record,field_config=fields['location_id'])
@@ -222,8 +226,12 @@ def transform_layer_fields(record, result, fields):
     result["layout"] = transform_layout_data(layout_data)
 
     # text unit reference: id, label, locus (id and label required)
-    text_unit_reference_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["text_unit_ark", "text_unit_label", "text_unit_locus"])
-    result["text_unit"] = transform_text_unit_reference_data(text_unit_reference_data)
+    text_unit_reference_data = parse.get_data_from_multiple_fields(source=record, fields=fields, field_list=["text_unit_ark", "text_unit_label", "text_unit_locus", "text_unit_sequence", "text_unit_sequence_override"])
+
+    tu_seq = text_unit_reference_data["text_unit_sequence_override"] if text_unit_reference_data["text_unit_sequence_override"] else text_unit_reference_data["text_unit_sequence"]
+    tu_seq = tu_seq.copy() if tu_seq else None
+
+    result["text_unit"] = transform_text_unit_reference_data(text_unit_reference_data, seq=tu_seq)
 
     # Add the associated entities (ms and layers only)
     create_associated_entities(result, record, fields)
@@ -290,7 +298,7 @@ def create_associated_entities(result, record, fields):
 
 def get_part_data_from_ms_table(record, fields, other_layer_data=None, related_mss_data=None):
     # TODO: should this be in a config somewhere???
-    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus", "part_paracontent"]
+    part_fields = ["part_label", "part_summary", "part_locus", "part_extent", "support_id", "support_label", "part_dim", "overtext_ark", "overtext_label", "overtext_locus", "overtext_sequence", "overtext_sequence_override", "part_paracontent"]
 
     part_notes_data = parse.get_typed_notes_data(source=record, note_fields=fields["part_typed_notes"])
 
@@ -328,10 +336,14 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None,
         "type_label": None,
         "locus": "overtext_locus"
     }
+    # get the overtext sequence, using the override if it exists or the regular otherwise
+    overtext_sequence = part_data["overtext_sequence_override"] if part_data["overtext_sequence_override"] else part_data["overtext_sequence"]
+    overtext_sequence = overtext_sequence.copy() if overtext_sequence else None
+
     part["layer"] = transform_layer_reference_data(record=part_data,
                                                    field_map=overtext_layer_field_map,
                                                    has_multiple_layers=isinstance(part_data["overtext_ark"], list),
-                                                   type_override={"id": "overtext", "label": "Overtext"})
+                                                   type_override={"id": "overtext", "label": "Overtext"}, seq=overtext_sequence)
 
     other_layer_field_map = {
         "id": "other_layer_ark",
@@ -341,17 +353,26 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None,
         "locus": "other_layer_locus",
         "level": "other_layer_level"
     }
+
+
     # Add other layer info if it exists
     if(other_layer_data):
+
+        other_layers_seq = other_layer_data["other_layer_sequence_override"] if other_layer_data["other_layer_sequence_override"] else other_layer_data["other_layer_sequence"]
+        other_layers_seq = other_layers_seq.copy() if other_layers_seq else None
+
         part["layer"] += transform_layer_reference_data(record=other_layer_data,
                                                     field_map=other_layer_field_map,
                                                     has_multiple_layers=isinstance(other_layer_data["other_layer_ark"], list),
-                                                    level_filter="part")
+                                                    level_filter="part", seq=other_layers_seq)
     # If there is no other layer data, then see if it's in the part info already
     else:
+        other_layers_seq = part_data["other_layer_sequence_override"] if part_data["other_layer_sequence_override"] else part_data["other_layer_sequence"]
+        other_layers_seq = other_layers_seq.copy() if other_layers_seq else None
+
         part["layer"] += transform_layer_reference_data(record=part_data,
                                                     field_map=other_layer_field_map,
-                                                    has_multiple_layers=isinstance(part_data["other_layer_ark"], list))
+                                                    has_multiple_layers=isinstance(part_data["other_layer_ark"], list), seq=other_layers_seq)
 
     # para??
     part["para"] = transform_paracontents_data(part_data["part_paracontent"])
@@ -371,20 +392,22 @@ def transform_part_data(part_data, other_layer_data=None, related_mss_data=None,
 """
 Takes a record and a mapping of fields, along with an optional type override, to create an array of layer reference object
 """
-def transform_layer_reference_data(record, field_map: dict, has_multiple_layers: bool, level_filter=None, type_override=None):   
+def transform_layer_reference_data(record, field_map: dict, has_multiple_layers: bool, level_filter=None, type_override=None, seq=None):   
     layers = []
+
     # return if empty of layer data
     if(not(record[field_map["id"]]) or len(record[field_map["id"]]) == 0 ):
         return layers
+    # TODO: refactor the below to remove the duplication...
     if has_multiple_layers:
         number_of_layers = len(record[field_map["id"]])
-        # None-fill the optional fields if length is 0
-        if(len(record[field_map["locus"]]) == 0):
-            record[field_map["locus"]] = [None] * len(number_of_layers)
 
         for i in range(0, number_of_layers):
             # if filtering by level, skip any that are not for part of that level
             if level_filter and record[field_map["level"]][i] != level_filter:
+                # remove the sequence items that don't match the layer level, then skip this layer data
+                if(seq):
+                    seq[i] = None
                 continue
             else:
                 if type_override:
@@ -399,9 +422,14 @@ def transform_layer_reference_data(record, field_map: dict, has_multiple_layers:
                         "id": record[field_map["id"]][i],
                         "label": record[field_map["label"]][i],
                         "type": layer_type,
-                        "locus": record[field_map["locus"]][i],
+                        "locus": get_element(record[field_map["locus"]], i),
                     }
                 )
+        # reorder the list of layers by the passed sequence
+        seq = [i for i in seq if i != None] if seq else seq
+        if(seq and len(seq) > 0):
+            layers = order_list_by_sequence(layers, seq)
+    
     else:
         if level_filter and record[field_map["level"]] != level_filter:
             return layers
@@ -417,10 +445,7 @@ def transform_layer_reference_data(record, field_map: dict, has_multiple_layers:
                     {
                         "id": record[field_map["id"]],
                         "label": record[field_map["label"]],
-                        "type": {
-                            "id": "overtext",
-                            "label": "Overtext"
-                        },
+                        "type": layer_type,
                         "locus": record[field_map["locus"]],
                     }
                 )
@@ -701,7 +726,7 @@ def transform_layout_data(layout_data):
         layouts.append(layout)
     return layouts
 
-def transform_text_unit_reference_data(text_unit_reference_data):
+def transform_text_unit_reference_data(text_unit_reference_data, seq=None):
     tu_refs = []
     tu_count = len(text_unit_reference_data["text_unit_ark"])
 
@@ -712,6 +737,8 @@ def transform_text_unit_reference_data(text_unit_reference_data):
             "locus": get_element(text_unit_reference_data["text_unit_locus"], i)
         }
         tu_refs.append(tu)
+    if(seq):
+        tu_refs = order_list_by_sequence(tu_refs, seq)
     return tu_refs
 
 def transform_work_wit_data(work_wit_data):

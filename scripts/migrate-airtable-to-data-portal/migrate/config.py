@@ -20,7 +20,8 @@ AIRTABLE_USER_KEY = ""
 METADATA_RIGHTS = ""
 IMAGE_RIGHTS = ""
 
-# TODO: add key order for object types here rather than table configs
+# Default key ordering for top-level objects
+# Note: lower-level objects' key ordering are set by the functions which create them (see transform.py if needing to edit)
 MS_OBJ_FIELD_ORDER = ["ark", "reconstruction", "type", "shelfmark", "summary", "extent", "weight", "dim", "state", "fol", "coll", "features", "part", "layer", "para", "location", "assoc_date", "assoc_name", "assoc_place", "note", "related_mss", "viscodex", "bib", "iiif", "internal", "desc_provenance", "image_provenance", "cataloguer", "reconstructed_from"]
 
 LAYER_FIELD_ORDER = ["ark", "reconstruction", "state", "label", "locus", "summary", "extent", "writing", "ink", "layout", "text_unit", "para", "assoc_date", "assoc_name", "assoc_place", "features", "related_mss", "note", "bib", "desc_provenance", "cataloguer", "reconstructed_from", "parent", "internal"]
