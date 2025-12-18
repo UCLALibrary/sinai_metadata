@@ -76,13 +76,13 @@ def transform_single_record(record, record_type, fields):
 
     if(record_type == "manuscript_objects"):
         transform_manuscript_object_fields(record, result, fields)
-        # TODO: reorder keys based on ms obj preferred order (a config?)
+        result = {k: result.get(k) for k in config.MS_OBJ_FIELD_ORDER}
     if(record_type == "layers"):
         transform_layer_fields(record, result, fields)
-        # TODO: reorder keys based on layer preferred order (a config?)
+        result = {k: result.get(k) for k in config.LAYER_FIELD_ORDER}
     if(record_type == "text_units"):
         transform_text_unit_fields(record, result, fields)
-        # TODO: reorder keys based on layer preferred order (a config?)
+        result = {k: result.get(k) for k in config.TEXT_UNIT_FIELD_ORDER}
 
     return del_none(result) # TODO: reorder based on an established order?
 

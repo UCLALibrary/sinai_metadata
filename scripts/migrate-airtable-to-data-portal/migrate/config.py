@@ -20,6 +20,14 @@ AIRTABLE_USER_KEY = ""
 METADATA_RIGHTS = ""
 IMAGE_RIGHTS = ""
 
+# TODO: add key order for object types here rather than table configs
+MS_OBJ_FIELD_ORDER = ["ark", "reconstruction", "type", "shelfmark", "summary", "extent", "weight", "dim", "state", "fol", "coll", "features", "part", "layer", "para", "location", "assoc_date", "assoc_name", "assoc_place", "note", "related_mss", "viscodex", "bib", "iiif", "internal", "desc_provenance", "image_provenance", "cataloguer", "reconstructed_from"]
+
+LAYER_FIELD_ORDER = ["ark", "reconstruction", "state", "label", "locus", "summary", "extent", "writing", "ink", "layout", "text_unit", "para", "assoc_date", "assoc_name", "assoc_place", "features", "related_mss", "note", "bib", "desc_provenance", "cataloguer", "reconstructed_from", "parent", "internal"]
+
+TEXT_UNIT_FIELD_ORDER = ["ark", "reconstruction", "label", "summary", "locus", "lang", "work_wit", "para", "features", "note", "bib", "desc_provenance", "cataloguer", "reconstructed_from", "parent", "internal"]
+
+
 def set_configs(args):
     # set the global MODE config variable based on the arguments
     set_mode(args.mode)
