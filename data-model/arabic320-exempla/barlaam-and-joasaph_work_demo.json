@@ -1,0 +1,88 @@
+{
+  "id": "https://sinaiportal.library.ucla.edu/smdp/work/99999",
+  "label": "Barlaam and Joasaph",
+  "type": "work",
+  "uniform_name": "Barlaam and Joasaph",
+  "ns_name": null,
+  "alt_name": ["Bilawhar wa-Būdhāsaf",
+    "Barlaam and Josaphat"
+  ],
+  "description": [
+    "Based on an Indian legend, which circulated in Central Asia and the Mediterranean world in various linguistic expressions."
+  ],
+  "authority_files": [
+    {
+      "id": "https://id.loc.gov/authorities/names/n84225321.html",
+      "label": "Barlaam and Joasaph",
+      "ns_label": null
+    },
+    {
+      "id": "http://viaf.org/viaf/303649316",
+      "label": "Barlaam and Joasaph",
+      "ns_label": null
+    },
+    {
+      "id": "https://w3id.org/haf/work/245679099007",
+      "label": "Barlaam and Joasaph",
+      "ns_label": null
+    }
+  ],
+  "related_persons": [
+      {
+      "relation": "commemorates",
+      "id": "https://sinaiportal.library.ucla.edu/smdp/person/99999",
+      "note": [
+        "Barlaam"
+      ]
+    },
+    {
+      "relation": "commemorates",
+      "id": "https://sinaiportal.library.ucla.edu/smdp/person/99998",
+      "note": [
+        "Joasaph"
+      ]
+    }
+  ],
+  "related_places": null,
+  "related_works": null,
+  "associated_dates": null,
+  "orig_language": null,
+  "expression": [ {
+      "id": "https://sinaiportal.library.ucla.edu/smdp/work/99999#11111",
+      "language": "ar",
+      "uniform_name": "Bilawhar wa-Būdhāsaf",
+      "ns_name": null,
+      "authority_files": null,
+      "related_persons": null,
+      "related_places": null,
+      "related_works": [
+        {
+          "relation": "expression_of",
+          "id": "https://sinaiportal.library.ucla.edu/smdp/work/99999",
+          "note": null
+        }
+      ]
+    }
+  ],
+  "genre": [
+    "Hagiographies"
+  ],
+  "note": null,
+  "references": null,
+  "bibliography": null,
+  "text_artifacts": [ "ark:/99999/z1999998"],
+  "meta": {
+    "contributor": [
+    "William Potter"
+  ],
+  "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "CREATED work authority file"
+      }
+    ],
+    "created": "2022-10-25T10:54:09.96-07:00"
+  }
+}

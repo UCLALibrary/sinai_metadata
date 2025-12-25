@@ -1,0 +1,80 @@
+{
+  "id": "https://sinaiportal.library.ucla.edu/smdp/person/9999",
+  "label": "Ephrem",
+  "type": "person",
+  "uniform_name": "Ephrem the Syrian, Saint, 303-373",
+  "ns_name": "ܐܦܪܝܡ",
+  "alt_name": [
+    "Ephraim",
+    "Ephrem",
+    "Mar Ephrem"
+  ],
+  "role": [
+    {
+      "type": "attributed_author",
+      "associated_objects": [
+        "ark://999999/z1f98765"
+      ]
+    }
+  ],
+  "description": null,
+  "authority_files": [
+    {
+      "id": "https://viaf.org/viaf/100177778/",
+      "uniform_name": "Ephraem, Syrus, Saint, 303-373"
+    },
+    {
+      "id": "https://w3id.org/haf/person/818572788967",
+      "uniform_name": "Ephrem, of Nisibis, 303-373"
+    },
+    {
+      "id": "http://syriaca.org/person/13",
+      "uniform_name": "Ephrem - ܐܦܪܝܡ"
+    }
+  ],
+  "related_persons": null,
+  "related_places": [
+    {
+      "relation": "dwelling",
+      "id": "https://sinaiportal.library.ucla.edu/smdp/place/99",
+      "note": [
+        "Nisibis"
+      ]
+    }
+  ],
+  "related_works": null,
+  "associated_dates": [
+    {
+      "date_type": "birth",
+      "date_human_readable": "303 CE",
+      "date_normalized": "0303",
+      "note": null
+    },
+    {
+      "date_type": "death",
+      "date_human_readable": "373 CE",
+      "date_normalized": "0373",
+      "note": null
+    }
+  ],
+  "sex": [
+    "male"
+  ],
+  "note": null,
+  "references": null,
+  "bibliography": null,
+  "meta": {
+    "contributor": [
+      "William Potter"
+    ],
+    "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "CREATED person authority file"
+      }
+    ],
+    "created": "2022-10-25T10:54:09.96-07:00"
+  }
+}
