@@ -1,0 +1,189 @@
+{
+  "id": "ark:/99999/z1999999",
+  "type": "cod_un",
+  "label": "Sinai Arabic 320, ff. 1a-216",
+  "foliation": [
+    "ff. 1a, 1b-216"
+  ],
+  "extent": "217 ff.",
+  "dimensions": "193 x 141 x 68 mm",
+  "support": [
+    {
+      "type": "parchment",
+      "note": [
+        "The first two folios, and four folios towards the end, are parchment while the rest are paper."
+      ],
+      "features": null,
+      "range": [
+        "ff. 1a-1b",
+        "ff. 210-213"
+      ]
+    },
+    {
+      "type": "paper",
+      "note": null,
+      "features": null,
+      "range": [
+        "ff. 2-209",
+        "ff. 214-216"
+      ]
+    }
+  ],
+  "condition": null,
+  "writing_and_hands": [
+    {
+      "language": "Arabic",
+      "writing_system": "Arabic",
+      "script": "Naskh",
+      "ink_color": null,
+      "note": [
+        "Ff. 1a-1b, 210-213, and 215 are free from writing"
+      ],
+      "corresponding_textual_artifacts": [
+        "ark:/99999/z1999998",
+        "ark:/99999/z1999997"
+      ],
+      "range": [
+        "ff. 1a-216"
+      ]
+    }
+  ],
+  "page_layout": [
+    {
+      "columns": "1",
+      "number_of_lines": "15",
+      "column_width": null,
+      "margin_width": null,
+      "note": null,
+      "features": null,
+      "range": [
+        "ff. 1a-216"
+      ]
+    }
+  ],
+  "collation": {
+    "viscodex": null,
+    "formula": null,
+    "note": null,
+    "features": null
+  },
+  "events": [
+    {
+      "id": "ark:/99999/z1999999/event1",
+      "type": "production",
+      "note": null,
+      "associated_dates": [
+        {
+          "date_human_readable": "1236 CE",
+          "date_normalized": "1236",
+          "note": null
+        }
+      ],
+      "sources": [
+        "ark:/99999/z1999999/parat1"
+      ]
+    }
+  ],
+  "paratexts": {
+    "colophon": [
+      {
+        "id": "ark:/99999/z1999999/parat1",
+        "type": "scribal-colophon",
+        "locus": "ff. 194v-195r",
+        "transcription": null,
+        "translation": null,
+        "note": [
+          "Colophon on 194v-195r. Scribe's name followed by two separate blessing, which include formulas about the scribe’s unworthiness and humility before God on (f. 195r)"
+        ],
+        "attested_entities": {
+          "attested_person": [
+            {
+              "relation": "copyist",
+              "id": "https://sinaiportal.library.ucla.edu/person/999999",
+              "name": "George b. Joseph b. Jacob",
+              "ns_name": "جرجي بن يوسف بن يعقوب",
+              "note": [
+                "f. 194v "
+              ]
+            }
+          ],
+          "attested_place": null
+        }
+      }
+    ],
+    "inscription": null
+  },
+  "associated_person": null,
+  "associated_place": null,
+  "associated_dates": null,
+  "decorations": null,
+  "features": [
+    "Rubrication",
+    "Dated",
+    "Colophon"
+  ],
+  "note": null,
+  "references": [
+    {
+      "uri": "https://www.zotero.org/groups/2276183/items/983U2DH9",
+      "citation_key": "Kamil",
+      "cited_range": [
+        {
+          "unit": "entry",
+          "range": "511"
+        },
+        {
+          "unit": "page",
+          "range": "42"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "bibliography": null,
+  "other_versions": null,
+  "iiif": {
+    "iiif_manifest": "https://iiif.library.ucla.edu/ark%3A%2F99999%2Fz1999999/manifest",
+    "text_direction": "right-to-left",
+    "viewing_hint": "paged"
+  },
+  "related_objects": {
+    "part_of": [
+      {
+        "object": "ark:/99999/z18s67k3"
+      }
+    ],
+    "has_content": [
+      {
+        "type": "primary_text",
+        "object": "ark:/99999/z1999998",
+        "position": "1"
+      },
+      {
+        "type": "primary_text",
+        "object": "ark:/99999/z1999997",
+        "position": "2"
+      }
+    ]
+  },
+  "meta": {
+    "contributor": [
+      "William Potter",
+      "Chris PreJean"
+    ],
+    "last_updated": "2022-10-25T10:54:09.96-07:00",
+    "change_log": [
+      {
+        "date": "2022-10-25T10:54:09.96-07:00",
+        "contributor": "William Potter",
+        "change": "EDITED: Added colophon as paratext"
+      },
+      {
+        "date": "2022-10-24T08:44:09.96-07:00",
+        "contributor": "Chris PreJean",
+        "change": "CREATED: Codicological Unit (1) ark:/99999/z1999999 for Sinai Arabic 320"
+      }
+    ],
+    "created": "2022-10-24T08:44:09.96-07:00"
+  }
+}
