@@ -241,6 +241,9 @@
                             "condition_category": {
                                 "type": "string"
                             },
+                            "imaging_system": {
+                                "type": "string"
+                            },
                             "note": {
                                 "type": "array",
                                 "items": {
@@ -263,7 +266,7 @@
         "reconstructed_from": {
             "type": "array",
             "items": {
-                "$ref": "#/$defs/ark"
+                "$ref": "#/$defs/recon_from"
             },
             "unevaluatedItems": false
         },
@@ -366,10 +369,12 @@
                     "type": "object",
                     "properties": {
                         "not_before": {
-                            "type": "string"
+                            "type": "string",
+                            "minLength": 4
                         },
                         "not_after": {
-                            "type": "string"
+                            "type": "string",
+                            "minLength": 4
                         }
                     },
                     "required": [
@@ -807,7 +812,7 @@
                 "reconstructed_from": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/ark"
+                        "$ref": "#/$defs/recon_from"
                     }
                 }
             },
@@ -827,6 +832,13 @@
             "properties": {
                 "type": {
                     "$ref": "#/$defs/controlled_term"
+                },
+                "subtype": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/controlled_term"
+                    },
+                    "unevaluatedItems": false
                 },
                 "label": {
                     "type": "string"
@@ -996,6 +1008,18 @@
                 "pref_name"
             ]
         },
+        "recon_from": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "#/$defs/ark"
+                },
+                "shelfmark": {
+                    "type": "string"
+                }
+            },
+            "unevaluatedProperties": false
+        },
         "related_mss": {
             "type": "object",
             "properties": {
@@ -1140,7 +1164,7 @@
                 "reconstructed_from": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/ark"
+                        "$ref": "#/$defs/recon_from"
                     },
                     "unevaluatedItems": false
                 },
@@ -1187,6 +1211,9 @@
                 "uto_layer_ark": {
                     "$ref": "#/$defs/ark"
                 },
+                "type": {
+                    "$ref": "#/$defs/controlled_term"
+                },
                 "label": {
                     "type": "string"
                 },
@@ -1210,24 +1237,27 @@
                     "unevaluatedItems": false
                 },
                 "orig_date": {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": "string"
-                        },
-                        "iso": {
-                            "type": "object",
-                            "properties": {
-                                "not_before": {
-                                    "type": "string"
-                                },
-                                "not_after": {
-                                    "type": "string"
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "string"
+                            },
+                            "iso": {
+                                "type": "object",
+                                "properties": {
+                                    "not_before": {
+                                        "type": "integer"
+                                    },
+                                    "not_after": {
+                                        "type": "integer"
+                                    }
                                 }
                             }
                         }
                     },
-                    "unevaluatedProperties": false
+                    "unevaluatedItems": false
                 }
             },
             "required": [

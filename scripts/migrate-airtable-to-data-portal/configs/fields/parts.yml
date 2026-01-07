@@ -1,0 +1,123 @@
+part_label:
+  name: Part Label
+  csv: text
+  airtable: text
+part_summary:
+  name: Part Summary
+  csv: text
+  airtable: text
+part_locus:
+  name: Part Locus
+  csv: text
+  airtable: text
+part_extent:
+  name: Part Extent
+  csv: text
+  airtable: text
+support_id:
+  name: Support ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+support_label:
+  name: Support Label
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: supports
+part_dim:
+  name: Part Dimensions
+  csv: text
+  airtable: text
+overtext_ark:
+  name: Overtext ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: layers
+overtext_label:
+  name: Overtext Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_locus:
+  name: Overtext Locus
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_sequence:
+  name: Overtext Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+overtext_sequence_override:
+  name: Overtext Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_ark:
+  name: Other Layer ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: layers
+other_layer_type_id:
+  name: Other Layer Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_type_label:
+  name: Other Layer Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_label:
+  name: Other Layer Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_locus:
+  name: Other Layer Locus
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_level:
+  name: Other Layer Level
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence:
+  name: Other Layer Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence_override:
+  name: Other Layer Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+part_typed_notes:
+  support:
+    label: Support Note
+    name: Support note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Part Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+part_paracontent:
+  name: Part Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents.*
+related_mss:
+  name: Related MSS
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: related_mss.*

@@ -6,41 +6,39 @@ const ajv = new Ajv({strict: "log", allErrors: true})
 const addFormats = require("ajv-formats")
 addFormats(ajv)
 
-schemaFilesDirectory = "/Users/wpotter/Documents/GitHub/sinai_metadata/data-model/jsonschemas/"
+schemaFilesDirectory = "/Users/wpotter/Documents/GitHub/sinai_metadata/scripts/dataportal-schema-bundle/schemas/"
 schemaFileNames = new Array
 
 fs.readdirSync(schemaFilesDirectory).forEach(file => {
   if(path.extname(file) == ".json") {
     schemaFileNames.push(file)
     json = JSON.parse(fs.readFileSync(schemaFilesDirectory+file))
+    console.log("Adding schema to Ajv")
+    console.log(file)
     ajv.addSchema(json, file)
   }
 });
 
 data = {
-  "ark": "ark:/21198/z1fere",
-  "label": "Sinai Test",
-  "reconstruction": false,
-  "state": {
-    "id": "overtext",
-    "label": "Overtext"
+  "ark": "ark:/21198/te5f0f9b",
+  "type": {
+    "id": "building",
+    "label": "Building"
   },
-  "writing": [
-    {
-      "script": [
-        {"id": "syriac", "label": "Syriac", "writing_system": "not a true one"}]
+  "pref_name": "Library of St. Catherine's Monastery",
+  "geojson": [{
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [125.6, 10.1]
+    },
+    "properties": {
+      "name": "Dinagat Islands"
     }
-  ],
-  "text_unit": [
-    {
-      "id": "ark:/21198/z1fer",
-      "label": "A text"
-    }
-  ],
-  "parent": ["ark:/21198/z1fer"]
+  }]
 }
 
 
-console.log(ajv.validate("text_unit.json", data))
+console.log(ajv.validate("place.json", data))
 
 console.log(JSON.stringify(ajv.errors, null, 2))

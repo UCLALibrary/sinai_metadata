@@ -1,0 +1,498 @@
+ark:
+  name: Item ARK
+  csv: text
+  airtable: text
+reconstruction:
+  name: Reconstruction
+  csv: text
+  airtable: text
+type_id:
+  name: Type ID
+  csv: text
+  airtable: text
+type_label:
+  name: Type Label
+  csv: text
+  airtable: text
+shelfmark:
+  name: Shelfmark
+  csv: text
+  airtable: text
+summary:
+  name: Summary
+  csv: text
+  airtable: text
+extent:
+  name: Extent
+  csv: text
+  airtable: text
+weight:
+  name: Weight
+  csv: text
+  airtable: text
+ms_dim:
+  name: MS Dimensions
+  csv: text
+  airtable: text
+state_id:
+  name: State ID
+  csv: text
+  airtable: text
+state_label:
+  name: State Label
+  csv: text
+  airtable: record
+  lookup: states.label
+fol:
+  name: Foliation
+  csv: text
+  airtable: text
+coll:
+  name: Collation
+  csv: text
+  airtable: text
+feature_id:
+  name: Feature ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+feature_label:
+  name: Feature Labels
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: features.label
+part_id:
+  name: Part IDs
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: parts.*
+part_label:
+  name: Part Label
+  csv: text
+  airtable: text
+part_summary:
+  name: Part Summary
+  csv: text
+  airtable: text
+part_locus:
+  name: Part Locus
+  csv: text
+  airtable: text
+part_extent:
+  name: Part Extent
+  csv: text
+  airtable: text
+support_id:
+  name: Support ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+support_label:
+  name: Support Label
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: supports
+part_dim:
+  name: Part Dimensions
+  csv: text
+  airtable: text
+overtext_ark:
+  name: Overtext ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: layers
+overtext_label:
+  name: Overtext Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_locus:
+  name: Overtext Locus
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+overtext_sequence:
+  name: Overtext Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+overtext_sequence_override:
+  name: Overtext Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+part_paracontent:
+  name: Part Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents.*
+other_layer_ark:
+  name: Other Layer ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: layers
+other_layer_type_id:
+  name: Other Layer Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_type_label:
+  name: Other Layer Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_label:
+  name: Other Layer Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_locus:
+  name: Other Layer Locus
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+other_layer_level:
+  name: Other Layer Level
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence:
+  name: Other Layer Sequence
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+other_layer_sequence_override:
+  name: Other Layer Sequence Override
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+part_typed_notes:
+  support:
+    label: Support Note
+    name: Support note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Part Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+paracontent:
+  name: Paracontents
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: paracontents.*
+location_id:
+  name: Location ID
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: locations
+repository:
+  name: Repository
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+collection:
+  name: Collection
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+typed_notes:
+  fol:
+    label: Foliation Note
+    name: Foliation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  coll:
+    label: Collation Note
+    name: Collation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  para:
+    label: Paracontent Note
+    name: Paracontent note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  binding:
+    label: Binding Note
+    name: Binding note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  provenance:
+    label: Provenance Note
+    name: Provenance note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  condition:
+    label: Condition Note
+    name: Condition note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  contents:
+    label: Contents Note
+    name: Contents note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  general:
+    label: General Note
+    name: General note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+  ornamentation:
+    label: Ornamentation note
+    name: Ornamentation note
+    csv: text+
+    airtable: text+
+    delimiter: ["|~|"]
+assoc_name_ark:
+  name: Associated Name ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: names
+assoc_name_value:
+  name: Associated Name Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_name_as_written:
+  name: Associated Name As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_name_role_id:
+  name: Associated Name Role ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_name_role_label:
+  name: Associated Name Role Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_name_note:
+  name: Associated Name Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+assoc_place_ark:
+  name: Associated Place ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: places
+assoc_place_value:
+  name: Associated Place Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_place_as_written:
+  name: Associated Place As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_place_event_id:
+  name: Associated Place Event ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_place_event_label:
+  name: Associated Place Event Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_place_note:
+  name: Associated Place Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+assoc_date_value:
+  name: Associated Date Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_date_iso:
+  name: Associated Date ISO
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_as_written:
+  name: Associated Date As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_date_type_id:
+  name: Associated Date Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_type_label:
+  name: Associated Date Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_note:
+  name: Associated Date Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+related_mss:
+  name: Related MSS
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: related_mss.*
+viscodex_label:
+  name: Viscodex Label
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+viscodex_url:
+  name: Viscodex URL
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+bibs:
+  name: Reference Instances
+  csv: record+
+  airtable: record+
+  delimiter: [","]
+  lookup: bibs.*
+iiif_type_id:
+  name: IIIF Manifest type
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_type_label:
+  name: IIIF Manifest type label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_label:
+  name: IIIF Manifest label
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+iiif_manifest_url:
+  name: IIIF Manifest URL
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+iiif_behavior:
+  name: IIIF Behavior
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_text_direction:
+  name: IIIF Text Direction
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+iiif_thumbnail_url:
+  name: IIIF Thumbnail URL
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+desc_program_labels:
+  name: Description Program Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+desc_program_descs:
+  name: Description Program Statements
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+metadata_rights:
+  name: Metadata Rights
+  csv: text
+  airtable: text
+image_rights:
+  name: Metadata Rights
+  csv: text
+  airtable: text
+image_program_labels: 
+  name: Image Program Labels
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_descs:
+  name: Image Program Statements
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_camera_operators:
+  name: Image Program Camera Operators
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+image_program_imaging_date:
+  name: Image Program Imaging Date
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_delivery:
+  name: Image Program Delivery
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_msi_processing:
+  name: Image Program MSI Processing
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+image_program_condition_category:
+  name: Image Program Condition Category
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_imaging_system:
+  name: Image Program Imaging System
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+image_program_note:
+  name: Image Program Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+reconstructed_from:
+  name: Reconstructed From
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: ms_objs.ark
+change_log_message:
+  name: Message
+  csv: text
+  airtable: text
+change_log_contributor:
+  name: Contributor
+  csv: text
+  airtable: text
+change_log_added_by:
+  name: Added by
+  csv: text
+  airtable: text
+change_log_timestamp:
+  name: Timestamp
+  csv: text
+  airtable: text

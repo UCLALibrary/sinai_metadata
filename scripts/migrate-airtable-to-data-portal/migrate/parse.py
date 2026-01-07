@@ -1,0 +1,127 @@
+"""
+This module contains functions related to parsing the input data fields into
+forms usable by the main transform module
+"""
+import pandas as pd
+import migrate.config as config
+from io import StringIO
+import copy
+
+def get_data_from_field(source, field_config):
+    field_info = field_config
+    field_info["mode"] = field_config[config.MODE]
+    field_info["data"] = source.get(field_config["name"])
+    return get_data(**field_info)
+
+def preprocess(func):
+    def wrapper(*args, **kwargs):
+        # if data is empty, return an empty bit of data
+        if(not(kwargs["data"]) or len(kwargs["data"]) == 0):
+            return None
+        # pre-process delmited strings into arrays
+        if(kwargs["mode"] in ["text+", "record+"] and isinstance(kwargs["data"], str)):
+            kwargs["data"] = split_by_delim(kwargs["data"], kwargs["delimiter"])
+        
+        # pre-process record lookups into dictionaries containing those records' data for each record
+        if(kwargs["mode"] in ["record", "record+"]):
+            if(isinstance(kwargs["data"], str)):
+                kwargs["data"] = get_data_from_lookup(kwargs["data"], kwargs["lookup"])
+            else:
+                records = []
+                for rec_id in kwargs["data"]:
+                    record = get_data_from_lookup(rec_id, kwargs["lookup"])
+                    # get a deep copy of the looked up record to avoid overwriting note values
+                    records.append(copy.deepcopy(record))
+                kwargs["data"] = records
+        return func(*args, **kwargs)
+    return wrapper
+
+def split_by_delim(data, delim, quotechar=None):
+    depth = len(delim)
+    if(depth == 0):
+        return data
+    # if delim is a comma, set quotechar to " as the quote char unless otherwise specified
+    if delim[0] == "," and not(quotechar):
+        quotechar = '"'
+    agg_data = []
+    if(isinstance(data, str)):
+        for frag in string_split_with_escape(to_split=data, delim=delim[0], quotechar=quotechar):
+            agg_data.append(split_by_delim(frag, delim[1:], quotechar))
+    else:
+        for frag in data:
+            agg_data.append(split_by_delim(frag, delim[0], quotechar))
+    return agg_data
+
+# This function simplifies the parsing of delimited strings that also contain quote characters for escaping the delimiter, just in case
+# Returns a list of the strings, divided at the delimiter
+# current implementation uses StringIO and reads it with pands.read_csv, as this has proven most reliable with escape characters, 
+def string_split_with_escape(to_split: str, delim, quotechar=None):
+    # provides a regex-friendly version of the common pipe-tilde-pipe delim
+    if delim == "|~|":
+        delim = "\|~\|"
+    split_data = []
+    # if the split string is empty, return an empty array
+    if len(to_split) == 0:
+        return split_data
+    if quotechar:
+        split_data = pd.read_csv(StringIO(to_split), sep=delim, quotechar=quotechar, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+    # if no quotechar, then assume quoting is off, which is set by quoting=3 per Pandas spec
+    else:
+        split_data = pd.read_csv(StringIO(to_split), sep=delim, quoting=3, skipinitialspace=True, engine='python', header=None).astype(str).iloc[0].values.flatten().tolist()
+
+    # return the resulting list, replacing 'nan' with an empty string
+    return list(map(lambda x: None if x == 'nan' else x, split_data))
+
+
+@preprocess
+def get_data(*args, **kwargs):
+    # handle cases where airtable records are returned as an array with single value
+    # TODO: throw an error if len of data is > 1?
+    if kwargs["mode"] in ["text", "record"] and isinstance(kwargs["data"], list):
+        return kwargs["data"][0]
+    else:
+        return kwargs["data"]
+
+def get_data_from_lookup(rec_id, lookup_info):
+    table_name = lookup_info.split(".")[0]
+    field_names = lookup_info.split(".")[1]
+    
+    table = config.TABLES[table_name]
+    record = table["data"][rec_id]
+
+    # Use this as "all fields", TODO: maybe default as well to 'None', so if we just give a lookup table name it defaults to pulling in all of the fields?
+    if field_names == "*":
+        field_data = {}
+        for field in table["fields"]:
+            # process typed notes
+            if field in ["typed_notes", "part_typed_notes"]:
+                field_data[field] = get_typed_notes_data(source=record, note_fields=table["fields"][field])
+            else:
+                field_data[field] = get_data_from_field(source=record, field_config=table["fields"][field])
+        return field_data
+
+    # if there is a comma in the field names, treat as a sequence of names and get data for each field
+    if "," in field_names:
+        field_data = {}
+        for field in field_names.split(","):
+            return get_data_from_multiple_fields(source=record, field_config=table["fields"][field])
+
+    if isinstance(field_names, str):
+        return get_data_from_field(source=record, field_config=table["fields"][field_names])
+
+def get_data_from_multiple_fields(source, fields, field_list):
+    field_data = {}
+    for field in field_list:
+        # process typed notes
+        if field in ["typed_notes", "part_typed_notes"]:
+           field_data[field] = get_typed_notes_data(source=source, note_fields=fields[field])
+        else:
+            field_data[field] = get_data_from_field(source=source, field_config=fields[field])
+    return field_data
+
+def get_typed_notes_data(source, note_fields):
+    notes_data = {}
+    for note_type in note_fields:
+        note_fields[note_type]["data"] = get_data_from_field(source, note_fields[note_type])
+        notes_data[note_type] = note_fields[note_type]
+    return notes_data

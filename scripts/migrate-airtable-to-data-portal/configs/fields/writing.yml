@@ -1,0 +1,25 @@
+script_id:
+  name: Script ID
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: scripts
+script_label:
+  name: Script Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+script_system:
+  name: Writing System
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+writing_locus:
+  name: Locus
+  csv: text
+  airtable: text
+writing_note:
+  name: Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]

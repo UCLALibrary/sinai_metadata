@@ -1,0 +1,74 @@
+airtable_base: appiXmKhPFEVmVQrD
+tables:
+  manuscript_objects:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/multi-part-ms_objects-test.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblKIvl8xqSkze5jF/viwn0c2SSDH6oXvyq
+    fields: fields/ms_objs.yml
+  parts:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/parts_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbljuZ2PH8wYsChj5/viwpgslb6xEuQIjLu
+    fields: fields/parts.yml
+    index_col: ID
+  layers:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/layers_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl9jQ6IrY0iPtkGl/viwMk2dy2oLm8Ag92
+    fields: fields/layers.yml
+  text_units:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/text_units_DEV.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOZAysKf4ArMtW8/viwspkSNNfS7vLTyP
+    fields: fields/text_units.yml
+  work_witnesses:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/work_wits_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl4GHImkuUX4vqiv/viw4famYFZOE2tneE
+    fields: fields/work_witnesses.yml
+    index_col: ID
+  tocs:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/toc_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tbl432sctnSStKoAE/viw4P7I6hmC8gDPZn
+    fields: fields/tocs.yml
+    index_col: ID
+  excerpts:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/excerpts_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEw9T9JaH32tw2r/viwtlkkryeOK9hMSJ
+    fields: fields/excerpts.yml
+    index_col: ID
+  bibs:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/reference_instances.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblR1vJqQgSdekSyn/viw2dWnShOOyRvWXE
+    fields: fields/bibs.yml
+    index_col: ID
+  paracontents:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/paracontents.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNBSbfXwoiNtmjA/viw07WOz7AKE5GKRf
+    fields: fields/paracontents.yml
+    index_col: ID
+  related_mss:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/related_mss_TEST.csv
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblEYkxLzEvtPi4Xy/viwVFrkGrHjZcjHmP
+    fields: fields/related_mss.yml
+    index_col: ID
+  writing:
+    csv: /Users/wpotter/Desktop/SMDP-Migration/csvs/writing_TEST.csv
+    airtable:
+    fields: fields/writing.yml
+    index_col: ID
+# The following are needed for airtable JSON...
+  states:
+    csv: 
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblOC6jmN3TJoD33g/viww5WCKYjQRkCeDe
+    fields: fields/states.yml
+  features:
+    csv: 
+    airtable: https://airtable.com/appiXmKhPFEVmVQrD/tblNFF7Qr3lUOjdDv/viwhxenTxpOURDuoc
+    fields: fields/features.yml
+#  - supports:
+#  - locations:
+#  - scripts:
+#  - writing_systems:
+#  - languages:
+#  - names: 
+#  - places: 
+#  - works: 
+#  - genres: 
+#  - contributors: 
+#  - programs: 

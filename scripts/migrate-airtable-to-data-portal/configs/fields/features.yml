@@ -1,0 +1,8 @@
+label:
+  name: Feature
+  csv: text
+  airtable: text
+id:
+  name: id
+  csv: text
+  airtable: text

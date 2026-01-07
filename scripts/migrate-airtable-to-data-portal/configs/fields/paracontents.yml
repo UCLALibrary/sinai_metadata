@@ -1,0 +1,159 @@
+type_id:
+  name: Type ID
+  csv: text
+  airtable: text
+type_label:
+  name: Type Label
+  csv: text
+  airtable: text
+subtype_id:
+  name: Subtype IDs
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+subtype_label:
+  name: Subtype Labels
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+locus:
+  name: Locus
+  csv: text
+  airtable: text
+lang_id:
+  name: Language ID
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: languages
+lang_label:
+  name: Language Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+script_id:
+  name: Script ID
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: scripts
+script_label:
+  name: Script Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+script_system:
+  name: Writing System
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+label:
+  name: Label
+  csv: text
+  airtable: text
+as_written:
+  name: As Written
+  csv: text
+  airtable: text
+translation:
+  name: Translation
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_name_ark:
+  name: Associated Name ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: names
+assoc_name_value:
+  name: Associated Name Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_name_as_written:
+  name: Associated Name As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_name_role_id:
+  name: Associated Name Role ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_name_role_label:
+  name: Associated Name Role Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_name_note:
+  name: Associated Name Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+assoc_place_ark:
+  name: Associated Place ARKs
+  csv: text+
+  airtable: record+
+  delimiter: [","]
+  lookup: places
+assoc_place_value:
+  name: Associated Place Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_place_as_written:
+  name: Associated Place As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_place_event_id:
+  name: Associated Place Event ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_place_event_label:
+  name: Associated Place Event Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_place_note:
+  name: Associated Place Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+assoc_date_value:
+  name: Associated Date Value
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_date_iso:
+  name: Associated Date ISO
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_as_written:
+  name: Associated Date As Written
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]
+assoc_date_type_id:
+  name: Associated Date Type ID
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_type_label:
+  name: Associated Date Type Label
+  csv: text+
+  airtable: text+
+  delimiter: [","]
+assoc_date_note:
+  name: Associated Date Note
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|", "#"]
+note:
+  name: Notes
+  csv: text+
+  airtable: text+
+  delimiter: ["|~|"]

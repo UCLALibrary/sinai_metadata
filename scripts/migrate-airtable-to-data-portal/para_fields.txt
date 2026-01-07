@@ -1,6 +1,8 @@
 ID
 Type ID
 Type Label
+Subtype ID
+Subtype Label
 Label
 Locus
 Language Label
